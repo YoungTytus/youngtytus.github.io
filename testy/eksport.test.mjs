@@ -150,3 +150,50 @@ test('formatowanie dat, kwot i oznaczeń dzienników', () => {
   assert.equal(liczbaZKwoty('77,00 zł / 106,00 zł'), null);
   assert.equal(typo('art. 6a ust. 1, 2520 zł'), 'art. 6a ust. 1, 2520 zł');
 });
+
+// Regresja kontraktu strona-0.4: dodatkowe pola prawidłowego eksportu nie mogą blokować aktualizacji.
+test('strona-0.4: wyliczenie pomocnicze, limit dodatku i brak etykiety są dozwolone', () => {
+  const d = przyklad();
+  const k = d.korzysci[0];
+  const dowod = k.przepis;
+  const podstawa = {
+    wartosc: '1978,49 zł', od: '2026-03-01', zrodlo: 'MP/2026/220',
+    wielkosc: 'najnizsza_renta_calkowita', dowod, lancuch: null,
+  };
+  const wyliczenie = {
+    wartosc: null,
+    warianty: [{ etykieta: 'Próg 95–100', udzial: '220 %', wartosc: '4353,00 zł' }],
+    od: '2026-03-01',
+    podstawa: { ...podstawa, dowod: null, wielkosc: null,
+      zrodlo: 'kwota wyliczona z innej korzyści',
+      lancuch: {
+        wartosc: '1978,49 zł', warianty: null, od: '2026-03-01', podstawa,
+        zaokraglenie: null, uwaga: 'wynik obliczenia', flagi: [], nieustalone: [],
+      },
+    },
+    zaokraglenie: { regula: 'w górę do pełnych złotych', dowod },
+    uwaga: 'wyliczenie pomocnicze', flagi: [], nieustalone: [],
+  };
+  k.ile.wyliczenie = wyliczenie;
+  k.ile.zwiekszenia = [{
+    warunek: 'spełnienie dodatkowego warunku', kwota: '80 zł', limit: '160 zł',
+    zrodlo: 'ustawa', dowod, dowod_limitu: dowod, nieustalone: [],
+  }];
+  k.komu = '';
+  const inny = d.korzysci[1];
+  inny.ile.regula = {
+    udzial: null, podstawa_id: null, opis: 'kwoty bazowej',
+    warianty: [{ etykieta: null, udzial: '85 %' }],
+  };
+  inny.ile.rozwiazanie = 'regula_procentowa';
+  const wynik = wczytajEksport({ katalog: null, przyklad: zapiszPrzyklad(d) });
+  assert.deepEqual(wynik.korzysci[0].ile.wyliczenie, wyliczenie);
+  assert.match(wynik.ostrzezenia.join('\n'), /komu: nie wskazano grupy uprawnionych/);
+  assert.match(wynik.ostrzezenia.join('\n'), /brak etykiety wariantu/);
+});
+
+test('strona-0.4: niewiadome pola wyliczenia nadal są odrzucane', () => {
+  const d = przyklad();
+  d.korzysci[0].ile.wyliczenie = { niespodziewana: true };
+  oczekujBledu(() => wczytajEksport({ katalog: null, przyklad: zapiszPrzyklad(d) }), /wyliczenie/);
+});

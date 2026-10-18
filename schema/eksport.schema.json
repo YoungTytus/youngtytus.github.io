@@ -249,7 +249,7 @@
                         ],
                         "properties": {
                           "etykieta": {
-                            "$ref": "#/$defs/tekst"
+                            "$ref": "#/$defs/tekstLubNull"
                           },
                           "udzial": {
                             "$ref": "#/$defs/tekst"
@@ -387,10 +387,45 @@
               },
               "dowod": {
                 "$ref": "#/$defs/Dowod"
+              },
+              "dowod_limitu": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "#/$defs/Dowod"
+                  }
+                ]
+              },
+              "nieustalone": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "pole",
+                    "powod"
+                  ],
+                  "properties": {
+                    "pole": {
+                      "$ref": "#/$defs/tekst"
+                    },
+                    "powod": {
+                      "$ref": "#/$defs/tekst"
+                    }
+                  },
+                  "patternProperties": {
+                    "^_": {}
+                  },
+                  "additionalProperties": false
+                }
               }
             },
             "additionalProperties": false
           }
+        },
+        "wyliczenie": {
+          "$ref": "#/$defs/Wyliczenie"
         }
       },
       "patternProperties": {
@@ -523,7 +558,7 @@
           ]
         },
         "komu": {
-          "$ref": "#/$defs/tekst"
+          "type": "string"
         },
         "opis_prosty": {
           "$ref": "#/$defs/tekstLubNull"
@@ -1037,6 +1072,181 @@
         "^_": {}
       },
       "additionalProperties": false
+    },
+    "PodstawaWyliczenia": {
+      "type": "object",
+      "required": [
+        "wartosc",
+        "od",
+        "zrodlo",
+        "wielkosc",
+        "dowod",
+        "lancuch"
+      ],
+      "properties": {
+        "wartosc": {
+          "$ref": "#/$defs/tekstLubNull"
+        },
+        "od": {
+          "$ref": "#/$defs/dataLubBrak"
+        },
+        "zrodlo": {
+          "$ref": "#/$defs/tekst"
+        },
+        "wielkosc": {
+          "$ref": "#/$defs/tekstLubNull"
+        },
+        "dowod": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/Dowod"
+            }
+          ]
+        },
+        "lancuch": {
+          "$ref": "#/$defs/Wyliczenie"
+        }
+      },
+      "patternProperties": {
+        "^_": {}
+      },
+      "additionalProperties": false
+    },
+    "Wyliczenie": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "wartosc",
+            "warianty",
+            "od",
+            "podstawa",
+            "zaokraglenie",
+            "uwaga",
+            "flagi",
+            "nieustalone"
+          ],
+          "properties": {
+            "wartosc": {
+              "$ref": "#/$defs/tekstLubNull"
+            },
+            "warianty": {
+              "oneOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "etykieta",
+                      "udzial",
+                      "wartosc"
+                    ],
+                    "properties": {
+                      "etykieta": {
+                        "$ref": "#/$defs/tekstLubNull"
+                      },
+                      "udzial": {
+                        "$ref": "#/$defs/tekst"
+                      },
+                      "wartosc": {
+                        "$ref": "#/$defs/tekst"
+                      }
+                    },
+                    "patternProperties": {
+                      "^_": {}
+                    },
+                    "additionalProperties": false
+                  }
+                }
+              ]
+            },
+            "od": {
+              "$ref": "#/$defs/dataLubBrak"
+            },
+            "podstawa": {
+              "oneOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/PodstawaWyliczenia"
+                }
+              ]
+            },
+            "zaokraglenie": {
+              "oneOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "object",
+                  "required": [
+                    "regula",
+                    "dowod"
+                  ],
+                  "properties": {
+                    "regula": {
+                      "$ref": "#/$defs/tekst"
+                    },
+                    "dowod": {
+                      "$ref": "#/$defs/Dowod"
+                    }
+                  },
+                  "patternProperties": {
+                    "^_": {}
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "uwaga": {
+              "$ref": "#/$defs/tekstLubNull"
+            },
+            "flagi": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/tekst"
+              }
+            },
+            "nieustalone": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "pole",
+                  "powod"
+                ],
+                "properties": {
+                  "pole": {
+                    "$ref": "#/$defs/tekst"
+                  },
+                  "powod": {
+                    "$ref": "#/$defs/tekst"
+                  }
+                },
+                "patternProperties": {
+                  "^_": {}
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "patternProperties": {
+            "^_": {}
+          },
+          "additionalProperties": false
+        }
+      ]
     }
   }
 }

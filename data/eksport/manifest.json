@@ -1,35 +1,41 @@
 {
  "kontrakt": "strona-0.4",
- "wygenerowano": "2026-10-18T11:58:27+00:00",
- "wersja_kodu": "db6762cd7ed82af44ea618ec51d7afd6d484d259+zmiany",
+ "wygenerowano": "2026-10-18T14:07:06+00:00",
+ "wersja_kodu": "d4637fa264a1ae381bb5438928a5292de25fb298+zmiany",
  "na_dzien": "2026-10-18",
  "pliki": {
-  "korzysci.json": "813500ed60f61d8b841b22bd480d320b6cc979a8bfa7c46a1ec036c0086da110",
-  "akty.json": "a3ebe87e1f95957bd47403b415d2e02afc4a07a43dab4fa4503b829bb3547775",
+  "korzysci.json": "ffa1fd661f9d0bc817fd57e4444a09664afde6bcb4a6819208861d71f0dd3453",
+  "akty.json": "fdb3d19afd0af20fe25860c9d45715670ebd71c2b765eaab584bd198b6ebc420",
   "slowniki.json": "aeecf35f0a29915bf783f64a410075ef618873bf2c8f64ba2dfe8c8a6ec344cc",
-  "akty/SHA256SUMS": "2d89a875f664661ea070032b4798cbff4c47dc34f2b9a2e2d2aac027bdc936cd"
+  "akty/SHA256SUMS": "acfb4ed8c617850d21c6e9e3002c972312a6ba18dee63b5644903f05c9a87213"
  },
  "zakres": [
   "DU/2022/1692",
   "DU/2023/1429",
   "DU/2003/1268",
   "DU/2016/195",
-  "DU/2003/2255"
+  "DU/2003/2255",
+  "DU/1998/1118",
+  "DU/1999/636",
+  "DU/1991/24",
+  "DU/2004/593",
+  "DU/2001/734",
+  "DU/2011/887",
+  "DU/2025/620",
+  "DU/2004/1252",
+  "DU/2007/1378",
+  "DU/2014/567"
  ],
  "liczby": {
-  "korzysci": 21,
-  "akty": 23,
-  "pliki_aktow": 28,
-  "teksty_naprawione": 2
+  "korzysci": 71,
+  "akty": 40,
+  "pliki_aktow": 55,
+  "teksty_naprawione": 6
  },
  "pominiete_nazwa_ogolna": [
   {
    "id": "DU-2016-195-art8-ust1-pkt4",
    "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-2003-2255-art10-ust3",
-   "nazwa": "świadczenia"
   },
   {
    "id": "DU-2003-2255-art15b-ust2",
@@ -48,12 +54,128 @@
    "nazwa": "zasiłek"
   },
   {
-   "id": "DU-2003-2255-art24-ust7",
+   "id": "DU-2003-2255-art24a-ust3",
    "nazwa": "świadczenia"
   },
   {
-   "id": "DU-2003-2255-art28-ust12",
+   "id": "DU-2003-2255-art27-ust3",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-1998-1118-art2-ust1",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-1998-1118-art76-ust1",
+   "nazwa": "dodatek"
+  },
+  {
+   "id": "DU-1998-1118-art81-ust1",
+   "nazwa": "zasiłek"
+  },
+  {
+   "id": "DU-1998-1118-art99",
+   "nazwa": "zasiłek"
+  },
+  {
+   "id": "DU-1998-1118-art114-ust2-pkt2",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-1998-1118-art131-ust4-pkt1",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-1998-1118-art194b-ust1",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-1991-24-art13-ust9-pkt1",
    "nazwa": "świadczenie"
+  },
+  {
+   "id": "DU-1991-24-art27a-ust1",
+   "nazwa": "dodatek"
+  },
+  {
+   "id": "DU-1991-24-art33-ust1",
+   "nazwa": "świadczenie"
+  },
+  {
+   "id": "DU-2004-593-art40-ust1b",
+   "nazwa": "zasiłek"
+  },
+  {
+   "id": "DU-2011-887-art75-ust4",
+   "nazwa": "świadczenie"
+  },
+  {
+   "id": "DU-2011-887-art80-ust1",
+   "nazwa": "świadczenie"
+  },
+  {
+   "id": "DU-2011-887-art81-ust1",
+   "nazwa": "dodatek"
+  },
+  {
+   "id": "DU-2011-887-art82-ust1",
+   "nazwa": "świadczenie"
+  },
+  {
+   "id": "DU-2011-887-art82-ust1a",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-2011-887-art87-ust1",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-2025-620-art121-ust1",
+   "nazwa": "dodatek"
+  },
+  {
+   "id": "DU-2025-620-art142-ust12",
+   "nazwa": "świadczenie"
+  },
+  {
+   "id": "DU-2025-620-art220-ust2",
+   "nazwa": "zasiłek"
+  },
+  {
+   "id": "DU-2025-620-art223-ust4",
+   "nazwa": "zasiłek"
+  },
+  {
+   "id": "DU-2025-620-art224-ust2",
+   "nazwa": "zasiłek"
+  },
+  {
+   "id": "DU-2025-620-art245-ust1",
+   "nazwa": "zasiłek"
+  },
+  {
+   "id": "DU-2007-1378-art1a-ust1",
+   "nazwa": "świadczenia z funduszu alimentacyjnego"
+  },
+  {
+   "id": "DU-2007-1378-art9-ust1",
+   "nazwa": "świadczenia z funduszu alimentacyjnego"
+  },
+  {
+   "id": "DU-2007-1378-art9-ust2a",
+   "nazwa": "świadczenie"
+  },
+  {
+   "id": "DU-2007-1378-art10-ust1",
+   "nazwa": "świadczenia z funduszu alimentacyjnego"
+  },
+  {
+   "id": "DU-2007-1378-art18-ust2",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-2014-567-art3-ust1",
+   "nazwa": "zasiłek"
   }
  ],
  "pominiete_przejsciowe": [
@@ -82,10 +204,22 @@
    "cytat": "Osoba otrzymująca, do dnia wejścia w życie ustawy, gwarantowany zasiłek okresowy na podstawie przepisów o pomocy społecznej nabywa prawo do dodatku do zasiłku rodzinnego, o którym mowa w art. 11."
   },
   {
+   "id": "DU-1991-24-art106-ust1",
+   "nazwa": "renty inwalidzkie",
+   "powod": "stan sprzed wejścia ustawy w życie",
+   "cytat": "Okresowe renty inwalidzkie, przyznane na podstawie dotychczasowych przepisów, przysługują na zasadach i w wysokości określonych w tych przepisach."
+  },
+  {
    "id": "DU-2003-2255-art60-ust2",
    "nazwa": "świadczenie",
    "powod": "stan sprzed wejścia ustawy w życie",
    "cytat": "Osoba pozostająca w związku małżeńskim otrzymująca na dzieci do dnia wejścia w życie ustawy świadczenie z funduszu alimentacyjnego nabywa prawo do dodatku, o którym mowa w art. 12, do dnia 31 sierpnia"
+  },
+  {
+   "id": "DU-2011-887-art234-ust5",
+   "nazwa": "dodatek",
+   "powod": "stan sprzed wejścia ustawy w życie",
+   "cytat": "Rodzinie zastępczej, o której mowa w ust. 1, w której przed dniem wejścia w życie niniejszej ustawy zostało umieszczone dziecko na podstawie ustawy z dnia 26 października 1982 r. o postępowaniu w spra"
   }
  ],
  "z_plikami_pdf": true

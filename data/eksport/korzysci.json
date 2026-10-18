@@ -29,6 +29,7 @@
    },
    "kwota_ustawowa_zastapiona": null,
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "3000 złotych",
@@ -172,6 +173,85 @@
    "aktualna": null,
    "kwota_ustawowa_zastapiona": null,
    "zwiekszenia": [],
+   "wyliczenie": {
+    "wartosc": null,
+    "warianty": [
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 95 do 100 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "220 %",
+      "wartosc": "4353,00 zł"
+     },
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 90 do 94 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "180 %",
+      "wartosc": "3562,00 zł"
+     },
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 85 do 89 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "120 %",
+      "wartosc": "2375,00 zł"
+     },
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 80 do 84 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "80 %",
+      "wartosc": "1583,00 zł"
+     },
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 75 do 79 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "60 %",
+      "wartosc": "1188,00 zł"
+     },
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 70 do 74 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "40 %",
+      "wartosc": "792,00 zł"
+     }
+    ],
+    "od": "2026-03-01",
+    "podstawa": {
+     "wartosc": "1978,49 zł",
+     "od": "2026-03-01",
+     "zrodlo": "kwota wyliczona korzyści DU-2003-1268-art4-ust1",
+     "wielkosc": null,
+     "dowod": null,
+     "lancuch": {
+      "wartosc": "1978,49 zł",
+      "warianty": null,
+      "od": "2026-03-01",
+      "podstawa": {
+       "wartosc": "1978,49 zł",
+       "od": "2026-03-01",
+       "zrodlo": "MP/2026/220",
+       "wielkosc": "najnizsza_renta_calkowita",
+       "dowod": {
+        "eli": "MP/2026/220",
+        "przepis": "tresc",
+        "cytat": "od dnia 1 marca 2026 r.: 1) kwoty najniższej emerytury i renty wynoszą: a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+        "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
+        "data_stanu": null
+       },
+       "lancuch": null
+      },
+      "zaokraglenie": null,
+      "uwaga": "kwota wyliczona przez skrypt: udział × kwota podstawy; nie stoi wprost w akcie",
+      "flagi": [],
+      "nieustalone": []
+     }
+    },
+    "zaokraglenie": {
+     "regula": "do pełnych złotych w górę",
+     "dowod": {
+      "eli": "DU/2023/1429",
+      "przepis": "art. 4 ust. 2",
+      "cytat": "zaokrągla się do pełnych złotych w górę",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+      "data_stanu": "2026-07-07"
+     }
+    },
+    "uwaga": "kwota wyliczona przez skrypt: udział × kwota podstawy; nie stoi wprost w akcie",
+    "flagi": [],
+    "nieustalone": []
+   },
    "os_czasu": [],
    "progi": [],
    "trasa": [
@@ -272,6 +352,17 @@
       "cytat": "Renta socjalna przysługuje osobie pełnoletniej całkowicie niezdolnej do pracy z powodu naruszenia sprawności organizmu, które powstało:",
       "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
       "data_stanu": "2026-04-17"
+     }
+    },
+    {
+     "krok": 10,
+     "opis": "wyliczenie: podstawa = kwota wyliczona korzyści DU-2003-1268-art4-ust1 1978,49 zł od 2026-03-01",
+     "dowod": {
+      "eli": "MP/2026/220",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2026 r.: 1) kwoty najniższej emerytury i renty wynoszą: a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
+      "data_stanu": null
      }
     }
    ]
@@ -413,6 +504,29 @@
    "aktualna": null,
    "kwota_ustawowa_zastapiona": null,
    "zwiekszenia": [],
+   "wyliczenie": {
+    "wartosc": "1978,49 zł",
+    "warianty": null,
+    "od": "2026-03-01",
+    "podstawa": {
+     "wartosc": "1978,49 zł",
+     "od": "2026-03-01",
+     "zrodlo": "MP/2026/220",
+     "wielkosc": "najnizsza_renta_calkowita",
+     "dowod": {
+      "eli": "MP/2026/220",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2026 r.: 1) kwoty najniższej emerytury i renty wynoszą: a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
+      "data_stanu": null
+     },
+     "lancuch": null
+    },
+    "zaokraglenie": null,
+    "uwaga": "kwota wyliczona przez skrypt: udział × kwota podstawy; nie stoi wprost w akcie",
+    "flagi": [],
+    "nieustalone": []
+   },
    "os_czasu": [],
    "progi": [],
    "trasa": [
@@ -448,6 +562,17 @@
       "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
       "data_stanu": "2026-04-17"
      }
+    },
+    {
+     "krok": 4,
+     "opis": "wyliczenie: kwota najniższej renty z tytułu całkowitej niezdolności do pracy 1978,49 zł od 2026-03-01 (MP/2026/220, na podstawie DU/1998/1118#arti_94-pass_2)",
+     "dowod": {
+      "eli": "MP/2026/220",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2026 r.: 1) kwoty najniższej emerytury i renty wynoszą: a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
+      "data_stanu": null
+     }
     }
    ]
   },
@@ -481,7 +606,7 @@
   "nieustalone": [
    {
     "pole": "regula.podstawa",
-    "powod": "podstawa reguły w akcie spoza pilotażu (DU/1998/1118)"
+    "powod": "podstawa reguły w DU/1998/1118: brak korzyści o tej nazwie"
    }
   ],
   "flagi": []
@@ -491,7 +616,7 @@
   "slug": "renta-socjalna-okresowa",
   "nazwa": "renta socjalna okresowa",
   "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "do_ustalenia",
+  "status": "obowiazuje",
   "komu": "przez okres wskazany w decyzji jednostki organizacyjnej Zakładu Ubezpieczeń Społecznych",
   "opis_prosty": null,
   "sytuacje": [],
@@ -504,11 +629,39 @@
    "data_stanu": "2026-04-17"
   },
   "ile": {
-   "rozwiazanie": "nieustalone",
-   "regula": null,
+   "rozwiazanie": "regula_procentowa",
+   "regula": {
+    "udzial": "100 %",
+    "warianty": null,
+    "podstawa_id": null,
+    "opis": "kwoty najniższej renty z tytułu całkowitej niezdolności do pracy"
+   },
    "aktualna": null,
    "kwota_ustawowa_zastapiona": null,
    "zwiekszenia": [],
+   "wyliczenie": {
+    "wartosc": "1978,49 zł",
+    "warianty": null,
+    "od": "2026-03-01",
+    "podstawa": {
+     "wartosc": "1978,49 zł",
+     "od": "2026-03-01",
+     "zrodlo": "MP/2026/220",
+     "wielkosc": "najnizsza_renta_calkowita",
+     "dowod": {
+      "eli": "MP/2026/220",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2026 r.: 1) kwoty najniższej emerytury i renty wynoszą: a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
+      "data_stanu": null
+     },
+     "lancuch": null
+    },
+    "zaokraglenie": null,
+    "uwaga": "kwota wyliczona przez skrypt: udział × kwota podstawy; nie stoi wprost w akcie",
+    "flagi": [],
+    "nieustalone": []
+   },
    "os_czasu": [],
    "progi": [],
    "trasa": [
@@ -521,6 +674,50 @@
       "cytat": "Renta socjalna okresowa przysługuje przez okres wskazany w decyzji jednostki organizacyjnej Zakładu Ubezpieczeń Społecznych, zwanego dalej „Zakładem”.",
       "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
       "data_stanu": "2026-04-17"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "korzyść nadrzędna w tym samym artykule: renta socjalna (DU-2003-1268-art4-ust1)",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 4 ust. 1",
+      "cytat": "Renta socjalna przysługuje osobie pełnoletniej całkowicie niezdolnej do pracy z powodu naruszenia sprawności organizmu, które powstało:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "art. 6 ust. 1: klauzula wysokości (po nazwie, inny artykuł)",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 6 ust. 1",
+      "cytat": "Renta socjalna wynosi 100 % kwoty najniższej renty z tytułu całkowitej niezdolności do pracy ustalonej i podwyższonej zgodnie z ustawą o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "podstawa reguły w akcie DU/1998/1118",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 6 ust. 1",
+      "cytat": "ustawą o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    },
+    {
+     "krok": 5,
+     "opis": "wyliczenie: kwota najniższej renty z tytułu całkowitej niezdolności do pracy 1978,49 zł od 2026-03-01 (MP/2026/220, na podstawie DU/1998/1118#arti_94-pass_2)",
+     "dowod": {
+      "eli": "MP/2026/220",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2026 r.: 1) kwoty najniższej emerytury i renty wynoszą: a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
+      "data_stanu": null
      }
     }
    ]
@@ -539,11 +736,13 @@
   },
   "nieustalone": [
    {
-    "pole": "ile",
-    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+    "pole": "regula.podstawa",
+    "powod": "podstawa reguły w DU/1998/1118: brak korzyści o tej nazwie"
    }
   ],
-  "flagi": []
+  "flagi": [
+   "kwota_jak_korzysc_nadrzedna"
+  ]
  },
  {
   "id": "DU-2003-1268-art6a-ust1",
@@ -576,6 +775,7 @@
    },
    "kwota_ustawowa_zastapiona": "2520 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "2610,72 zł",
@@ -743,6 +943,7 @@
    "aktualna": null,
    "kwota_ustawowa_zastapiona": null,
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [],
    "progi": [],
    "trasa": [
@@ -802,6 +1003,7 @@
    "aktualna": null,
    "kwota_ustawowa_zastapiona": null,
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [],
    "progi": [],
    "trasa": [
@@ -869,6 +1071,7 @@
    },
    "kwota_ustawowa_zastapiona": null,
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "800,00 zł",
@@ -998,6 +1201,7 @@
    "aktualna": null,
    "kwota_ustawowa_zastapiona": null,
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [],
    "progi": [],
    "trasa": [
@@ -1093,6 +1297,7 @@
    },
    "kwota_ustawowa_zastapiona": "1300,00 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "520,00 zł",
@@ -1437,6 +1642,7 @@
    },
    "kwota_ustawowa_zastapiona": "44,00 zł, 56,00 zł, 65,00 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": null,
@@ -2104,6 +2310,7 @@
    },
    "kwota_ustawowa_zastapiona": "1000,00 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "1000,00 zł",
@@ -2295,6 +2502,7 @@
    },
    "kwota_ustawowa_zastapiona": "400,00 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "400,00 zł",
@@ -2495,7 +2703,51 @@
     "do": null
    },
    "kwota_ustawowa_zastapiona": "170,00 zł, 340,00 zł",
-   "zwiekszenia": [],
+   "zwiekszenia": [
+    {
+     "warunek": "W przypadku dziecka legitymującego się orzeczeniem o niepełnosprawności lub orzeczeniem o znacznym stopniu niepełnosprawności",
+     "kwota": "80,00 zł",
+     "limit": "160,00 zł",
+     "zrodlo": "ustawa",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 11a ust. 4",
+      "cytat": "W przypadku dziecka legitymującego się orzeczeniem o niepełnosprawności lub orzeczeniem o znacznym stopniu niepełnosprawności kwotę dodatku zwiększa się o 80,00 zł na dziecko, niewięcej jednak niż o 160,00 zł na wszystkie dzieci.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     },
+     "dowod_limitu": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 11a ust. 4",
+      "cytat": "W przypadku dziecka legitymującego się orzeczeniem o niepełnosprawności lub orzeczeniem o znacznym stopniu niepełnosprawności kwotę dodatku zwiększa się o 80,00 zł na dziecko, niewięcej jednak niż o 160,00 zł na wszystkie dzieci.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     },
+     "nieustalone": []
+    },
+    {
+     "warunek": "W przypadku gdy dochód rodziny nie przekracza 50 % kwot, o których mowa w art. 5 ust. 1 i 2",
+     "kwota": "50,00 zł",
+     "limit": "100,00 zł",
+     "zrodlo": "ustawa",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 11a ust. 5",
+      "cytat": "W przypadku gdy dochód rodziny nie przekracza 50 % kwot, o których mowa w art. 5 ust. 1 i 2, kwotę dodatku zwiększa się o 50,00 zł na dziecko, niewięcej jednak niż o 100,00 zł na wszystkie dzieci.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     },
+     "dowod_limitu": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 11a ust. 5",
+      "cytat": "W przypadku gdy dochód rodziny nie przekracza 50 % kwot, o których mowa w art. 5 ust. 1 i 2, kwotę dodatku zwiększa się o 50,00 zł na dziecko, niewięcej jednak niż o 100,00 zł na wszystkie dzieci.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     },
+     "nieustalone": []
+    }
+   ],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": null,
@@ -2813,6 +3065,7 @@
    },
    "kwota_ustawowa_zastapiona": "50,00 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "80,00 zł",
@@ -3067,6 +3320,7 @@
    },
    "kwota_ustawowa_zastapiona": "50,00 zł, 70,00 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": null,
@@ -3407,6 +3661,7 @@
    },
    "kwota_ustawowa_zastapiona": "100,00 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "100,00 zł",
@@ -3573,7 +3828,7 @@
   "slug": "dodatek-z-tytulu-podjecia-przez-dziecko-nauki-w-szkole-poza-miejscem-zamieszkania",
   "nazwa": "dodatek z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania",
   "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "do_ustalenia",
+  "status": "obowiazuje",
   "komu": "matce lub ojcu dziecka",
   "opis_prosty": null,
   "sytuacje": [
@@ -3589,12 +3844,221 @@
    "data_stanu": "2026-10-12"
   },
   "ile": {
-   "rozwiazanie": "nieustalone",
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
    "regula": null,
-   "aktualna": null,
+   "aktualna": {
+    "wartosc": null,
+    "warianty": [
+     {
+      "etykieta": null,
+      "wartosc": "113,00 zł"
+     },
+     {
+      "etykieta": null,
+      "wartosc": "69,00 zł"
+     }
+    ],
+    "od": "2024-11-01",
+    "do": null
+   },
    "kwota_ustawowa_zastapiona": null,
    "zwiekszenia": [],
-   "os_czasu": [],
+   "wyliczenie": null,
+   "os_czasu": [
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "90,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "50,00 zł"
+      }
+     ],
+     "od": "2012-11-01",
+     "do": "2015-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania, o którym mowa w art. 15 ustawy, wynosi: a) \u000790,00 zł miesięcznie na dziecko w związku z zamieszkiwaniem w miejscowości, w której znajduje się siedziba szkoły ponadgimnazjalnej lub szkoły artystycznej, w której realizowany jest obowiązek szkolny i obowiązek nauki, a także szkoły podstawowej lub gimnazjum w przypadku dziecka lub osoby uczącej się, legitymującej się orzeczeniem o niepełnosprawności lub o stopniu niepełnosprawności, b) \u000750,00 zł miesięcznie na dziecko w związku z dojazdem z miejsca zamieszkania do miejscowości, w której znajduje się siedziba szkoły, w przypadku dojazdu do szkoły ponadgimnazjalnej, a także szkoły artystycznej, w której realizowany jest obowiązek szkolny i obowiązek nauki w zakresie odpowiadającym nauce w szkole ponadgimnazjalnej;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "105,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "63,00 zł"
+      }
+     ],
+     "od": "2015-11-01",
+     "do": "2016-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": [
+      "90,00 zł",
+      "50,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania, o którym mowa w art. 15 ustawy, wynosi: a) 105,00 zł miesięcznie na dziecko w związku z zamieszkiwaniem w miejscowości, w której znajduje się siedziba szkoły ponadgimnazjalnej lub szkoły artystycznej, w której realizowany jest obowiązek szkolny i obowiązek nauki, a także szkoły podstawowej lub gimnazjum w przypadku dziecka lub osoby uczącej się, legitymującej się orzeczeniem o niepełnosprawności lub o stopniu niepełnosprawności, b) 63,00 zł miesięcznie na dziecko w związku z dojazdem z miejsca zamieszkania do miejscowości, w której znajduje się siedziba szkoły, w przypadku dojazdu do szkoły ponadgimnazjalnej, a także szkoły artystycznej, w której realizowany jest obowiązek szkolny i obowiązek nauki w zakresie odpowiadającym nauce w szkole ponadgimnazjalnej. 2.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "113,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "69,00 zł"
+      }
+     ],
+     "od": "2016-11-01",
+     "do": "2017-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": [
+      "105,00 zł",
+      "63,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania, o którym mowa w art. 15 ustawy, wynosi: a) 113,00 zł miesięcznie na dziecko w związku z zamieszkiwaniem w miejscowości, w której znajduje się siedziba szkoły ponadgimnazjalnej lub szkoły artystycznej, w której realizowany jest obowiązek szkolny i obowiązek nauki, a także szkoły podstawowej lub gimnazjum w przypadku dziecka lub osoby uczącej się, legitymującej się orzeczeniem o niepełnosprawności lub o stopniu niepełnosprawności, b) 69,00 zł miesięcznie na dziecko w związku z dojazdem z miejsca zamieszkania do miejscowości, w której znajduje się siedziba szkoły, w przypadku dojazdu do szkoły ponadgimnazjalnej, a także szkoły artystycznej, w której realizowany jest obowiązek szkolny i obowiązek nauki w zakresie odpowiadającym nauce w szkole ponadgimnazjalnej. 3.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "120,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "75,00 zł"
+      }
+     ],
+     "od": "2017-11-01",
+     "do": "2018-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": [
+      "113,00 zł",
+      "69,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania, o którym mowa w art. 15 ustawy, wynosi: a) 120,00 zł miesięcznie na dziecko w związku z zamieszkiwaniem w miejscowości, w której znajduje się siedziba szkoły ponadgimnazjalnej lub szkoły artystycznej, w której realizowany jest obowiązek szkolny i obowiązek nauki, a także szkoły podstawowej lub gimnazjum w przypadku dziecka lub osoby uczącej się, legitymującej się orzeczeniem o niepełnosprawności lub o stopniu niepełnosprawności, b) 75,00 zł miesięcznie na dziecko w związku z dojazdem z miejsca zamieszkania do miejscowości, w której znajduje się siedziba szkoły, w przypadku dojazdu do szkoły ponadgimnazjalnej, a także szkoły artystycznej, w której realizowany jest obowiązek szkolny i obowiązek nauki w zakresie odpowiadającym nauce w szkole ponadgimnazjalnej.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "113,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "69,00 zł"
+      }
+     ],
+     "od": "2018-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": [
+      "120,00 zł",
+      "75,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania, o którym mowa w art. 15 ustawy, wynosi: a) 113,00 zł miesięcznie na dziecko w związku z zamieszkiwaniem w miejscowości, w której znajduje się siedziba szkoły ponadgimnazjalnej lub szkoły artystycznej, w której realizowany jest obowiązek szkolny i obowiązek nauki, a także szkoły podstawowej lub gimnazjum w przypadku dziecka lub osoby uczącej się, legitymującej się orzeczeniem o niepełnosprawności lub o stopniu niepełnosprawności, b) 69,00 zł miesięcznie na dziecko w związku z dojazdem z miejsca zamieszkania do miejscowości, w której znajduje się siedziba szkoły, w przypadku dojazdu do szkoły ponadgimnazjalnej, a także szkoły artystycznej, w której realizowany jest obowiązek szkolny i obowiązek nauki w zakresie odpowiadającym nauce w szkole ponadgimnazjalnej;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "113,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "69,00 zł"
+      }
+     ],
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "113,00 zł",
+      "69,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania, o którym mowa w art. 15 ustawy, wynosi: a) 113,00 zł miesięcznie na dziecko w związku z zamieszkiwaniem w miejscowości, w której znajduje się siedziba szkoły ponadpodstawowej lub szkoły artystycznej, w której jest realizowany obowiązek szkolny i obowiązek nauki, a także szkoły podstawowej w przypadku dziecka lub osoby uczącej się, legitymującej się orzeczeniem o niepełnosprawności lub o stopniu niepełnosprawności, b) 69,00 zł miesięcznie na dziecko w związku z dojazdem z miejsca zamieszkania do miejscowości, w której znajduje się siedziba szkoły, w przypadku dojazdu do szkoły ponadpodstawowej, a także szkoły artystycznej, w której jest realizowany obowiązek szkolny i obowiązek nauki w zakresie odpowiadającym nauce w szkole ponadpodstawowej;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "113,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "69,00 zł"
+      }
+     ],
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "113,00 zł",
+      "69,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania, o którym mowa w art. 15 ustawy, wynosi: a) 113,00 zł miesięcznie na dziecko w związku z zamieszkiwaniem w miejscowości, w której znajduje się siedziba szkoły ponadpodstawowej lub szkoły artystycznej, w której jest realizowany obowiązek szkolny i obowiązek nauki, a także szkoły podstawowej w przypadku dziecka lub osoby uczącej się, legitymującej się orzeczeniem o niepełnosprawności lub o stopniu niepełnosprawności, b) 69,00 zł miesięcznie na dziecko w związku z dojazdem z miejsca zamieszkania do miejscowości, w której znajduje się siedziba szkoły, w przypadku dojazdu do szkoły ponadpodstawowej, a także szkoły artystycznej, w której jest realizowany obowiązek szkolny i obowiązek nauki w zakresie odpowiadającym nauce w szkole ponadpodstawowej;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
    "progi": [],
    "trasa": [
     {
@@ -3607,10 +4071,36 @@
       "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
       "data_stanu": "2026-10-12"
      }
+    },
+    {
+     "krok": 2,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania, o którym mowa w art. 15 ustawy, wynosi: a) 113,00 zł miesięcznie na dziecko w związku z zamieszkiwaniem w miejscowości, w której znajduje się siedziba szkoły ponadpodstawowej lub szkoły artystycznej, w której jest realizowany obowiązek szkolny i obowiązek nauki, a także szkoły podstawowej w przypadku dziecka lub osoby uczącej się, legitymującej się orzeczeniem o niepełnosprawności lub o stopniu niepełnosprawności, b) 69,00 zł miesięcznie na dziecko w związku z dojazdem z miejsca zamieszkania do miejscowości, w której znajduje się siedziba szkoły, w przypadku dojazdu do szkoły ponadpodstawowej, a także szkoły artystycznej, w której jest realizowany obowiązek szkolny i obowiązek nauki w zakresie odpowiadającym nauce w szkole ponadpodstawowej;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
     }
    ]
   },
-  "do_kiedy": [],
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 113,00 zł, 69,00 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania, o którym mowa w art. 15 ustawy, wynosi: a) 113,00 zł miesięcznie na dziecko w związku z zamieszkiwaniem w miejscowości, w której znajduje się siedziba szkoły ponadpodstawowej lub szkoły artystycznej, w której jest realizowany obowiązek szkolny i obowiązek nauki, a także szkoły podstawowej w przypadku dziecka lub osoby uczącej się, legitymującej się orzeczeniem o niepełnosprawności lub o stopniu niepełnosprawności, b) 69,00 zł miesięcznie na dziecko w związku z dojazdem z miejsca zamieszkania do miejscowości, w której znajduje się siedziba szkoły, w przypadku dojazdu do szkoły ponadpodstawowej, a także szkoły artystycznej, w której jest realizowany obowiązek szkolny i obowiązek nauki w zakresie odpowiadającym nauce w szkole ponadpodstawowej;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
   "obowiazuje_od": {
    "data": "2004-05-01",
    "zrodlo": "wejscie_w_zycie_ustawy",
@@ -3622,13 +4112,11 @@
    "data_stanu": "2026-10-12",
    "tekst": "tekst ujednolicony (informacyjny)"
   },
-  "nieustalone": [
-   {
-    "pole": "ile",
-    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
-   }
-  ],
-  "flagi": []
+  "nieustalone": [],
+  "flagi": [
+   "anomalia_spadek",
+   "kwota_z_przodka"
+  ]
  },
  {
   "id": "DU-2003-2255-art16-ust2",
@@ -3661,6 +4149,7 @@
    },
    "kwota_ustawowa_zastapiona": "144,00 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "153,00 zł",
@@ -3885,6 +4374,7 @@
    },
    "kwota_ustawowa_zastapiona": "1000,00 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "1000,00 zł",
@@ -4009,6 +4499,3384 @@
   "flagi": []
  },
  {
+  "id": "DU-1998-1118-art194j-ust4",
+  "slug": "emerytura-w-ponownie-ustalonej-wysokosci",
+  "nazwa": "emerytura w ponownie ustalonej wysokości",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "od dnia",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc",
+   "senior"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 194j ust. 4",
+   "cytat": "Emerytura w ponownie ustalonej wysokości przysługuje od dnia, od którego podjęto wypłatę emerytury przyznanej na podstawie art. 24, a w przypadku gdy prawo do tej emerytury było zawieszone – od dnia, od którego mogłaby być podjęta jej wypłata.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 194j ust. 4: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 194j ust. 4",
+      "cytat": "Emerytura w ponownie ustalonej wysokości przysługuje od dnia, od którego podjęto wypłatę emerytury przyznanej na podstawie art. 24, a w przypadku gdy prawo do tej emerytury było zawieszone – od dnia, od którego mogłaby być podjęta jej wypłata.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "konkurujące klauzule wysokości: DU/1998/1118#arti_53-pass_1, DU/1998/1118#arti_183-pass_2, DU/1998/1118#arti_183-pass_3, DU/1998/1118#arti_183-pass_4, DU/1998/1118#arti_183-pass_5"
+   }
+  ],
+  "flagi": [
+   "kandydaci_wielu_artykulow"
+  ]
+ },
+ {
+  "id": "DU-1998-1118-art24a-ust1",
+  "slug": "renty",
+  "nazwa": "renty",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Emeryturę, o której mowa w art. 24",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc",
+   "senior"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 24a ust. 1",
+   "cytat": "Emeryturę, o której mowa w art. 24, przyznaje się z urzędu zamiast renty z tytułu niezdolności do pracy osobie, która osiągnęła wiek uprawniający do tej emerytury oraz podlegała ubezpieczeniu społecznemu albo ubezpieczeniom emerytalnemu i rentowym.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 24a ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 24a ust. 1",
+      "cytat": "Emeryturę, o której mowa w art. 24, przyznaje się z urzędu zamiast renty z tytułu niezdolności do pracy osobie, która osiągnęła wiek uprawniający do tej emerytury oraz podlegała ubezpieczeniu społecznemu albo ubezpieczeniom emerytalnemu i rentowym.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "konkurujące klauzule wysokości: DU/1998/1118#arti_62-pass_1, DU/1998/1118#arti_62-pass_2, DU/1998/1118#arti_64-pass_1, DU/1998/1118#arti_73-pass_1"
+   }
+  ],
+  "flagi": [
+   "kandydaci_wielu_artykulow"
+  ]
+ },
+ {
+  "id": "DU-1998-1118-art50-ust1",
+  "slug": "emerytury-kolejowej",
+  "nazwa": "emerytury kolejowej",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "pracownikom kolejowym urodzonym po dniu 31 grudnia 1948 r",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 50 ust. 1",
+   "cytat": "Prawo do emerytury kolejowej, o której mowa w art. 40, przysługuje pracownikom kolejowym urodzonym po dniu 31 grudnia 1948 r., a przed dniem 1 stycznia 1969 r., jeżeli spełniają łącznie następujące warunki:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 50 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 50 ust. 1",
+      "cytat": "Prawo do emerytury kolejowej, o której mowa w art. 40, przysługuje pracownikom kolejowym urodzonym po dniu 31 grudnia 1948 r., a przed dniem 1 stycznia 1969 r., jeżeli spełniają łącznie następujące warunki:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1998-1118-art57-ust1",
+  "slug": "renta-z-tytulu-niezdolnosci-do-pracy",
+  "nazwa": "renta z tytułu niezdolności do pracy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "ubezpieczonemu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 57 ust. 1",
+   "cytat": "Renta z tytułu niezdolności do pracy przysługuje ubezpieczonemu, który spełnił łącznie następujące warunki:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 57 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 57 ust. 1",
+      "cytat": "Renta z tytułu niezdolności do pracy przysługuje ubezpieczonemu, który spełnił łącznie następujące warunki:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1998-1118-art59-ust2",
+  "slug": "renta-okresowa",
+  "nazwa": "renta okresowa",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "przez okres wskazany w decyzji organu rentowego",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 59 ust. 2",
+   "cytat": "Renta okresowa przysługuje przez okres wskazany w decyzji organu rentowego.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 59 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 59 ust. 2",
+      "cytat": "Renta okresowa przysługuje przez okres wskazany w decyzji organu rentowego.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1998-1118-art60-ust1",
+  "slug": "renta-szkoleniowa",
+  "nazwa": "renta szkoleniowa",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "Osobie spełniającej warunki określone w art. 57, w stosunku do której orzeczono celowość przekwalifikowania zawodowego ze względu na niezdolność do pracy w dotychczasowym zawodzie",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 60 ust. 1",
+   "cytat": "Osobie spełniającej warunki określone w art. 57, w stosunku do której orzeczono celowość przekwalifikowania zawodowego ze względu na niezdolność do pracy w dotychczasowym zawodzie, przysługuje renta szkoleniowa przez okres 6 miesięcy, z zastrzeżeniem ust. 2 i 4.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "regula_procentowa",
+   "regula": {
+    "udzial": "75 %",
+    "warianty": null,
+    "podstawa_id": null,
+    "opis": "podstawy wymiaru renty"
+   },
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 60 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 60 ust. 1",
+      "cytat": "Osobie spełniającej warunki określone w art. 57, w stosunku do której orzeczono celowość przekwalifikowania zawodowego ze względu na niezdolność do pracy w dotychczasowym zawodzie, przysługuje renta szkoleniowa przez okres 6 miesięcy, z zastrzeżeniem ust. 2 i 4.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 64 ust. 1: klauzula wysokości (po nazwie, inny artykuł)",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 64 ust. 1",
+      "cytat": "Renta szkoleniowa wynosi 75 % podstawy wymiaru renty.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "regula.podstawa",
+    "powod": "podstawa reguły nierozpoznana"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1998-1118-art65-ust1",
+  "slug": "renta-rodzinna",
+  "nazwa": "renta rodzinna",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "uprawnionym członkom rodziny osoby",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 65 ust. 1",
+   "cytat": "Renta rodzinna przysługuje uprawnionym członkom rodziny osoby, która w chwili śmierci miała ustalone prawo do emerytury lub renty z tytułu niezdolności do pracy lub spełniała warunki wymagane do uzyskania jednego z tych świadczeń.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "regula_procentowa",
+   "regula": {
+    "udzial": null,
+    "warianty": [
+     {
+      "etykieta": null,
+      "udzial": "85 %"
+     },
+     {
+      "etykieta": null,
+      "udzial": "90 %"
+     },
+     {
+      "etykieta": null,
+      "udzial": "95 %"
+     }
+    ],
+    "podstawa_id": null,
+    "opis": "świadczenia, które przysługiwałoby zmarłemu"
+   },
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 65 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 65 ust. 1",
+      "cytat": "Renta rodzinna przysługuje uprawnionym członkom rodziny osoby, która w chwili śmierci miała ustalone prawo do emerytury lub renty z tytułu niezdolności do pracy lub spełniała warunki wymagane do uzyskania jednego z tych świadczeń.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 73 ust. 1: klauzula wysokości (po nazwie, inny artykuł)",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 73 ust. 1",
+      "cytat": "Renta rodzinna wynosi:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "art. 73 ust. 1 pkt 1: wariant",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 73 ust. 1 pkt 1",
+      "cytat": "dla jednej osoby uprawnionej – 85 % świadczenia, które przysługiwałoby zmarłemu;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "art. 73 ust. 1 pkt 2: wariant",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 73 ust. 1 pkt 2",
+      "cytat": "dla dwóch osób uprawnionych – 90 % świadczenia, które przysługiwałoby zmarłemu;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 5,
+     "opis": "art. 73 ust. 1 pkt 3: wariant",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 73 ust. 1 pkt 3",
+      "cytat": "dla trzech lub więcej osób uprawnionych – 95 % świadczenia, które przysługiwałoby zmarłemu.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "regula.podstawa",
+    "powod": "podstawa reguły nierozpoznana"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1998-1118-art77-ust1",
+  "slug": "zasilek-pogrzebowy-2",
+  "nazwa": "zasiłek pogrzebowy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "w razie śmierci:",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 77 ust. 1",
+   "cytat": "Zasiłek pogrzebowy przysługuje w razie śmierci:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "7000 zł",
+    "warianty": null,
+    "od": "2026-03-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "7000 zł",
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [
+    {
+     "wartosc": "6 227,72 zł",
+     "warianty": null,
+     "od": "2009-12-01",
+     "do": "2010-02-28",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "MP/2009/949",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 grudnia 2009 r. do dnia 28 lutego 2010 r. kwota zasiłku pogrzebowego wynosi 6 227,72 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/949",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "6 487,20 zł",
+     "warianty": null,
+     "od": "2010-03-01",
+     "do": "2010-05-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "6 227,72 zł",
+     "roznica": {
+      "kwota": "+259,48 zł",
+      "procent": "+4,17%"
+     },
+     "dowod": {
+      "eli": "MP/2010/109",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2010 r. do dnia 31 maja 2010 r. kwota zasiłku pogrzebowego wynosi 6 487,20 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/109",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "6 632,76 zł",
+     "warianty": null,
+     "od": "2010-06-01",
+     "do": "2010-08-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "6 487,20 zł",
+     "roznica": {
+      "kwota": "+145,56 zł",
+      "procent": "+2,24%"
+     },
+     "dowod": {
+      "eli": "MP/2010/597",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 czerwca 2010 r. do dnia 31 sierpnia 2010 r. kwota zasiłku pogrzebowego wynosi 6 632,76 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/597",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "6 395,70 zł",
+     "warianty": null,
+     "od": "2010-09-01",
+     "do": "2010-11-30",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "6 632,76 zł",
+     "roznica": {
+      "kwota": "−237,06 zł",
+      "procent": "−3,57%"
+     },
+     "dowod": {
+      "eli": "MP/2010/790",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 września 2010 r. do dnia 30 listopada 2010 r. kwota zasiłku pogrzebowego wynosi 6 395,70 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/790",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "6 406,16 zł",
+     "warianty": null,
+     "od": "2010-12-01",
+     "do": "2011-02-28",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "6 395,70 zł",
+     "roznica": {
+      "kwota": "+10,46 zł",
+      "procent": "+0,16%"
+     },
+     "dowod": {
+      "eli": "MP/2010/1038",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 grudnia 2010 r. do dnia 28 lutego 2011 r. kwota zasiłku pogrzebowego wynosi 6 406,16 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/1038",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "7000 zł",
+     "warianty": null,
+     "od": "2026-03-01",
+     "do": null,
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "6 406,16 zł",
+     "roznica": {
+      "kwota": "+593,84 zł",
+      "procent": "+9,27%"
+     },
+     "dowod": {
+      "eli": "MP/2026/150",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2026 r. kwota zasiłku pogrzebowego wynosi 7000 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/150",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 77 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 77 ust. 1",
+      "cytat": "Zasiłek pogrzebowy przysługuje w razie śmierci:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 80 ust. 1: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 80 ust. 1",
+      "cytat": "Zasiłek pogrzebowy przysługuje w wysokości 7000 zł.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "MP/2026/150: podstawa prawna (art. 80 ust. 6)",
+     "dowod": {
+      "eli": "MP/2026/150",
+      "przepis": "podstawa",
+      "cytat": "Na podstawie art. 80 ust. 6 ustawy z dnia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2025 r. poz. 1749 oraz z 2026 r. poz. 26) ogłasza się, że",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/150",
+      "data_stanu": null
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "MP/2026/150: kwota od 2026-03-01",
+     "dowod": {
+      "eli": "MP/2026/150",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2026 r. kwota zasiłku pogrzebowego wynosi 7000 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/150",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 7000 zł od 2026-03-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "MP/2026/150",
+     "przepis": "tresc",
+     "cytat": "od dnia 1 marca 2026 r. kwota zasiłku pogrzebowego wynosi 7000 zł",
+     "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/150",
+     "data_stanu": null
+    },
+    "od": "2026-03-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "anomalia_spadek",
+   "luka"
+  ]
+ },
+ {
+  "id": "DU-1998-1118-art85-ust6",
+  "slug": "emerytury-przyslugujacej",
+  "nazwa": "emerytury przysługującej",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "ona osobie",
+  "opis_prosty": null,
+  "sytuacje": [
+   "senior"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 85 ust. 6",
+   "cytat": "Emerytury przysługującej z Funduszu nie podwyższa się do kwoty najniższej emerytury, jeżeli przysługuje ona osobie, która ma ustalone prawo do emerytury wojskowej obliczonej według zasad określonych w art. 15a ustawy z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych oraz ich rodzin (Dz. U. z 2025 r. poz. 305) lub do emerytury policyjnej obliczonej według zasad określonych w art. 15a i art. 15d ustawy z dnia 18 lutego 1994 r. o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej, Służby Celno-Skarbowej i Służby Więziennej oraz ich rodzin (Dz. U. z 2024 r. poz. 1121, 1243, 1562 i 1871 oraz z 2025 r. poz. 1366).",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 85 ust. 6: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 85 ust. 6",
+      "cytat": "Emerytury przysługującej z Funduszu nie podwyższa się do kwoty najniższej emerytury, jeżeli przysługuje ona osobie, która ma ustalone prawo do emerytury wojskowej obliczonej według zasad określonych w art. 15a ustawy z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych oraz ich rodzin (Dz. U. z 2025 r. poz. 305) lub do emerytury policyjnej obliczonej według zasad określonych w art. 15a i art. 15d ustawy z dnia 18 lutego 1994 r. o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej, Służby Celno-Skarbowej i Służby Więziennej oraz ich rodzin (Dz. U. z 2024 r. poz. 1121, 1243, 1562 i 1871 oraz z 2025 r. poz. 1366).",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1999-636-art1-ust1",
+  "slug": "swiadczenia-pieniezne",
+  "nazwa": "świadczenia pieniężne",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "osobom objętym ubezpieczeniem społecznym w razie choroby i macierzyństwa określonym w ustawie z dnia 13 października 1998 r",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1999/636",
+   "przepis": "art. 1 ust. 1",
+   "cytat": "Świadczenia pieniężne na warunkach i w wysokości określonych ustawą przysługują osobom objętym ubezpieczeniem społecznym w razie choroby i macierzyństwa określonym w ustawie z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych (Dz. U. z 2026 r. poz. 199, 252, 426, 473, 507 i 734), zwanym dalej „ubezpieczonymi”.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "data_stanu": "2026-09-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1999/636 art. 1 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1999/636",
+      "przepis": "art. 1 ust. 1",
+      "cytat": "Świadczenia pieniężne na warunkach i w wysokości określonych ustawą przysługują osobom objętym ubezpieczeniem społecznym w razie choroby i macierzyństwa określonym w ustawie z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych (Dz. U. z 2026 r. poz. 199, 252, 426, 473, 507 i 734), zwanym dalej „ubezpieczonymi”.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+      "data_stanu": "2026-09-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-09-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-09-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1999-636-art6-ust1",
+  "slug": "zasilek-chorobowy",
+  "nazwa": "zasiłek chorobowy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "ubezpieczonemu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "ciaza_porod",
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1999/636",
+   "przepis": "art. 6 ust. 1",
+   "cytat": "Zasiłek chorobowy przysługuje ubezpieczonemu, który stał się niezdolny do pracy z powodu choroby w czasie trwania ubezpieczenia chorobowego.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "data_stanu": "2026-09-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1999/636 art. 6 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1999/636",
+      "przepis": "art. 6 ust. 1",
+      "cytat": "Zasiłek chorobowy przysługuje ubezpieczonemu, który stał się niezdolny do pracy z powodu choroby w czasie trwania ubezpieczenia chorobowego.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+      "data_stanu": "2026-09-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-09-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-09-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1999-636-art18-ust1",
+  "slug": "swiadczenie-rehabilitacyjne",
+  "nazwa": "świadczenie rehabilitacyjne",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "ubezpieczonemu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1999/636",
+   "przepis": "art. 18 ust. 1",
+   "cytat": "Świadczenie rehabilitacyjne przysługuje ubezpieczonemu, który po wyczerpaniu zasiłku chorobowego jest nadal niezdolny do pracy, a dalsze leczenie lub rehabilitacja lecznicza rokują odzyskanie zdolności do pracy.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "data_stanu": "2026-09-16"
+  },
+  "ile": {
+   "rozwiazanie": "regula_procentowa",
+   "regula": {
+    "udzial": "90 %",
+    "warianty": null,
+    "podstawa_id": null,
+    "opis": "podstawy wymiaru zasiłku chorobowego za okres pierwszych trzech miesięcy, 75 % tej podstawy za pozostały okres, a"
+   },
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1999/636 art. 18 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1999/636",
+      "przepis": "art. 18 ust. 1",
+      "cytat": "Świadczenie rehabilitacyjne przysługuje ubezpieczonemu, który po wyczerpaniu zasiłku chorobowego jest nadal niezdolny do pracy, a dalsze leczenie lub rehabilitacja lecznicza rokują odzyskanie zdolności do pracy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+      "data_stanu": "2026-09-16"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 19 ust. 1: klauzula wysokości (po nazwie, inny artykuł)",
+     "dowod": {
+      "eli": "DU/1999/636",
+      "przepis": "art. 19 ust. 1",
+      "cytat": "Świadczenie rehabilitacyjne wynosi 90 % podstawy wymiaru zasiłku chorobowego za okres pierwszych trzech miesięcy, 75 % tej podstawy za pozostały okres, a jeżeli niezdolność do pracy przypada w okresie ciąży – 100 % tej podstawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+      "data_stanu": "2026-09-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-09-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-09-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "regula.podstawa",
+    "powod": "podstawa reguły nierozpoznana"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1999-636-art23-ust1",
+  "slug": "zasilek-wyrownawczy",
+  "nazwa": "zasiłek wyrównawczy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "ubezpieczonemu będącemu pracownikiem ze zmniejszoną sprawnością do pracy",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1999/636",
+   "przepis": "art. 23 ust. 1",
+   "cytat": "Zasiłek wyrównawczy przysługuje ubezpieczonemu będącemu pracownikiem ze zmniejszoną sprawnością do pracy, wykonującemu pracę:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "data_stanu": "2026-09-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1999/636 art. 23 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1999/636",
+      "przepis": "art. 23 ust. 1",
+      "cytat": "Zasiłek wyrównawczy przysługuje ubezpieczonemu będącemu pracownikiem ze zmniejszoną sprawnością do pracy, wykonującemu pracę:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+      "data_stanu": "2026-09-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-09-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-09-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1999-636-art29-ust1",
+  "slug": "zasilek-macierzynski",
+  "nazwa": "zasiłek macierzyński",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "ubezpieczonej",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "ciaza_porod",
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1999/636",
+   "przepis": "art. 29 ust. 1",
+   "cytat": "Zasiłek macierzyński przysługuje ubezpieczonej, która w okresie ubezpieczenia chorobowego albo w okresie urlopu wychowawczego:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "data_stanu": "2026-09-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1999/636 art. 29 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1999/636",
+      "przepis": "art. 29 ust. 1",
+      "cytat": "Zasiłek macierzyński przysługuje ubezpieczonej, która w okresie ubezpieczenia chorobowego albo w okresie urlopu wychowawczego:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+      "data_stanu": "2026-09-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-09-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-09-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1999-636-art32-ust1",
+  "slug": "zasilek-opiekunczy",
+  "nazwa": "zasiłek opiekuńczy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "ubezpieczonemu zwolnionemu od wykonywania pracy z powodu konieczności osobistego sprawowania opieki nad:",
+  "opis_prosty": null,
+  "sytuacje": [
+   "opieka_nad_bliskim"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1999/636",
+   "przepis": "art. 32 ust. 1",
+   "cytat": "Zasiłek opiekuńczy przysługuje ubezpieczonemu zwolnionemu od wykonywania pracy z powodu konieczności osobistego sprawowania opieki nad:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "data_stanu": "2026-09-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1999/636 art. 32 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1999/636",
+      "przepis": "art. 32 ust. 1",
+      "cytat": "Zasiłek opiekuńczy przysługuje ubezpieczonemu zwolnionemu od wykonywania pracy z powodu konieczności osobistego sprawowania opieki nad:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+      "data_stanu": "2026-09-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-09-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-09-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1999-636-art33-ust1",
+  "slug": "zwolnienia",
+  "nazwa": "zwolnienia",
+  "rodzaj_korzysci": "zwolnienie",
+  "status": "do_ustalenia",
+  "komu": "Zasiłek opiekuńczy",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1999/636",
+   "przepis": "art. 33 ust. 1",
+   "cytat": "Zasiłek opiekuńczy przysługuje przez okres zwolnienia od wykonywania pracy z powodu konieczności osobistego sprawowania opieki, niedłużej jednak niż przez okres:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "data_stanu": "2026-09-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1999/636 art. 33 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1999/636",
+      "przepis": "art. 33 ust. 1",
+      "cytat": "Zasiłek opiekuńczy przysługuje przez okres zwolnienia od wykonywania pracy z powodu konieczności osobistego sprawowania opieki, niedłużej jednak niż przez okres:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+      "data_stanu": "2026-09-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-09-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-09-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art14-ust1",
+  "slug": "zasilek-chorobowy-2",
+  "nazwa": "zasiłek chorobowy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "ubezpieczonemu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 14 ust. 1",
+   "cytat": "Zasiłek chorobowy przysługuje ubezpieczonemu, który wskutek choroby jest niezdolny do pracy nieprzerwanie przez co najmniej 30 dni.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 14 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 14 ust. 1",
+      "cytat": "Zasiłek chorobowy przysługuje ubezpieczonemu, który wskutek choroby jest niezdolny do pracy nieprzerwanie przez co najmniej 30 dni.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art19-ust1",
+  "slug": "emerytura-rolnicza",
+  "nazwa": "emerytura rolnicza",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "ubezpieczonemu",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 19 ust. 1",
+   "cytat": "Emerytura rolnicza przysługuje ubezpieczonemu, który spełnia łącznie następujące warunki:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 19 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 19 ust. 1",
+      "cytat": "Emerytura rolnicza przysługuje ubezpieczonemu, który spełnia łącznie następujące warunki:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art21-ust1",
+  "slug": "renta-rolnicza-z-tytulu-niezdolnosci-do-pracy",
+  "nazwa": "renta rolnicza z tytułu niezdolności do pracy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "ubezpieczonemu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 21 ust. 1",
+   "cytat": "Renta rolnicza z tytułu niezdolności do pracy przysługuje ubezpieczonemu, który łącznie spełnia następujące warunki:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 21 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 21 ust. 1",
+      "cytat": "Renta rolnicza z tytułu niezdolności do pracy przysługuje ubezpieczonemu, który łącznie spełnia następujące warunki:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art21b-ust1",
+  "slug": "renta-rolnicza-szkoleniowa",
+  "nazwa": "renta rolnicza szkoleniowa",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Ubezpieczonemu spełniającemu warunki do uzyskania renty rolniczej z tytułu niezdolności do pracy określone w art. 21, w stosunku do którego orzeczono celowość przekwalifikowania zawodowego ze względu na trwałą całkowitą niezdolność do pracy w gospodarstwie rolnym",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 21b ust. 1",
+   "cytat": "Ubezpieczonemu spełniającemu warunki do uzyskania renty rolniczej z tytułu niezdolności do pracy określone w art. 21, w stosunku do którego orzeczono celowość przekwalifikowania zawodowego ze względu na trwałą całkowitą niezdolność do pracy w gospodarstwie rolnym, przysługuje przez okres 6 miesięcy renta rolnicza szkoleniowa.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 21b ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 21b ust. 1",
+      "cytat": "Ubezpieczonemu spełniającemu warunki do uzyskania renty rolniczej z tytułu niezdolności do pracy określone w art. 21, w stosunku do którego orzeczono celowość przekwalifikowania zawodowego ze względu na trwałą całkowitą niezdolność do pracy w gospodarstwie rolnym, przysługuje przez okres 6 miesięcy renta rolnicza szkoleniowa.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art22-ust1-renta-okresowa",
+  "slug": "renta-okresowa-2",
+  "nazwa": "renta okresowa",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "W pozostałych przypadkach renta rolnicza z tytułu niezdolności do pracy",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 22 ust. 1",
+   "cytat": " W pozostałych przypadkach renta rolnicza z tytułu niezdolności do pracy przysługuje jako renta okresowa przez okres wskazany w decyzji Prezesa Kasy.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 22 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 22 ust. 1",
+      "cytat": " W pozostałych przypadkach renta rolnicza z tytułu niezdolności do pracy przysługuje jako renta okresowa przez okres wskazany w decyzji Prezesa Kasy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "korzyść nadrzędna w tym samym artykule: rentę (DU-1991-24-art22-ust1)",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 22 ust. 1",
+      "cytat": "Rentę rolniczą z tytułu niezdolności do pracy przyznaje się jako rentę stałą, jeżeli całkowita niezdolność ubezpieczonego do pracy w gospodarstwie rolnym jest trwała i nie orzeczono celowości przekwalifikowania zawodowego.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "odesłanie kwoty do kilku jednostek: DU/1991/24#arti_22, DU/1991/24#arti_24, DU/1991/24#arti_25, DU/1991/24#arti_26, DU/1991/24#arti_27, DU/1991/24#arti_28"
+   }
+  ],
+  "flagi": [
+   "kwota_jak_korzysc_nadrzedna"
+  ]
+ },
+ {
+  "id": "DU-1991-24-art22-ust1",
+  "slug": "rente",
+  "nazwa": "rentę",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Rentę rolniczą z tytułu niezdolności do pracy",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 22 ust. 1",
+   "cytat": "Rentę rolniczą z tytułu niezdolności do pracy przyznaje się jako rentę stałą, jeżeli całkowita niezdolność ubezpieczonego do pracy w gospodarstwie rolnym jest trwała i nie orzeczono celowości przekwalifikowania zawodowego.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 22 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 22 ust. 1",
+      "cytat": "Rentę rolniczą z tytułu niezdolności do pracy przyznaje się jako rentę stałą, jeżeli całkowita niezdolność ubezpieczonego do pracy w gospodarstwie rolnym jest trwała i nie orzeczono celowości przekwalifikowania zawodowego.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "odesłanie kwoty do kilku jednostek: DU/1991/24#arti_22, DU/1991/24#arti_24, DU/1991/24#arti_25, DU/1991/24#arti_26, DU/1991/24#arti_27, DU/1991/24#arti_28"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art22-ust3",
+  "slug": "emeryture",
+  "nazwa": "emeryturę",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Osobom pobierającym renty rolnicze z tytułu niezdolności do pracy, które osiągnęły wiek 60 lat dla kobiet i 65 lat dla mężczyzn",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc",
+   "senior"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 22 ust. 3",
+   "cytat": "Osobom pobierającym renty rolnicze z tytułu niezdolności do pracy, które osiągnęły wiek 60 lat dla kobiet i 65 lat dla mężczyzn, przyznaje się z urzędu emeryturę rolniczą w wysokości nie niższej od dotychczas pobieranej renty z tytułu niezdolności do pracy, jeżeli osoba ta spełnia warunki określone w art. 19 ust. 1 pkt 2 ustawy.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 22 ust. 3: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 22 ust. 3",
+      "cytat": "Osobom pobierającym renty rolnicze z tytułu niezdolności do pracy, które osiągnęły wiek 60 lat dla kobiet i 65 lat dla mężczyzn, przyznaje się z urzędu emeryturę rolniczą w wysokości nie niższej od dotychczas pobieranej renty z tytułu niezdolności do pracy, jeżeli osoba ta spełnia warunki określone w art. 19 ust. 1 pkt 2 ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art27-ust1",
+  "slug": "dodatek-pielegnacyjny",
+  "nazwa": "dodatek pielęgnacyjny",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Do emerytury lub renty rolniczej z ubezpieczenia",
+  "opis_prosty": null,
+  "sytuacje": [
+   "opieka_nad_bliskim"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 27 ust. 1",
+   "cytat": "Do emerytury lub renty rolniczej z ubezpieczenia przysługuje dodatek pielęgnacyjny na zasadach i wysokości określonej w przepisach emerytalnych.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 27 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 27 ust. 1",
+      "cytat": "Do emerytury lub renty rolniczej z ubezpieczenia przysługuje dodatek pielęgnacyjny na zasadach i wysokości określonej w przepisach emerytalnych.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art29-ust1",
+  "slug": "renta-rodzinna-2",
+  "nazwa": "renta rodzinna",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "uprawnionym członkom rodziny zmarłego:",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 29 ust. 1",
+   "cytat": "Renta rodzinna przysługuje uprawnionym członkom rodziny zmarłego:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 29 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 29 ust. 1",
+      "cytat": "Renta rodzinna przysługuje uprawnionym członkom rodziny zmarłego:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art31-ust1",
+  "slug": "dodatek-przewidziany",
+  "nazwa": "dodatek przewidziany",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Do renty rodzinnej",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 31 ust. 1",
+   "cytat": "Do renty rodzinnej przysługuje dodatek przewidziany w art. 27 ust. 1 oraz dodatek dla sieroty zupełnej.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 31 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 31 ust. 1",
+      "cytat": "Do renty rodzinnej przysługuje dodatek przewidziany w art. 27 ust. 1 oraz dodatek dla sieroty zupełnej.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art31-ust2",
+  "slug": "dodatek-dla-sieroty-zupelnej",
+  "nazwa": "dodatek dla sieroty zupełnej",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 31 ust. 2",
+   "cytat": "Dodatek dla sieroty zupełnej przysługuje w wysokości określonej w przepisach emerytalnych.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 31 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 31 ust. 2",
+      "cytat": "Dodatek dla sieroty zupełnej przysługuje w wysokości określonej w przepisach emerytalnych.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "odesłanie kwoty bez celu w grafie"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art35-ust1",
+  "slug": "zasilek-pogrzebowy-3",
+  "nazwa": "zasiłek pogrzebowy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "osobie",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 35 ust. 1",
+   "cytat": "Zasiłek pogrzebowy przysługuje osobie, która poniosła koszty pogrzebu po śmierci:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 35 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 35 ust. 1",
+      "cytat": "Zasiłek pogrzebowy przysługuje osobie, która poniosła koszty pogrzebu po śmierci:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "odesłanie kwoty bez celu w grafie"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art35a-ust1",
+  "slug": "zasilek-macierzynski-2",
+  "nazwa": "zasiłek macierzyński",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "osobie ubezpieczonej",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 35a ust. 1",
+   "cytat": "Zasiłek macierzyński przysługuje osobie ubezpieczonej, która:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 35a ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 35a ust. 1",
+      "cytat": "Zasiłek macierzyński przysługuje osobie ubezpieczonej, która:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art35b-ust1",
+  "slug": "swiadczenia-rodzicielskiego",
+  "nazwa": "świadczenia rodzicielskiego",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Zasiłek macierzyński",
+  "opis_prosty": null,
+  "sytuacje": [
+   "ciaza_porod"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 35b ust. 1",
+   "cytat": "Zasiłek macierzyński przysługuje w wysokości świadczenia rodzicielskiego, o którym mowa w ustawie z dnia 28 listopada 2003 r. o świadczeniach rodzinnych.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 35b ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 35b ust. 1",
+      "cytat": "Zasiłek macierzyński przysługuje w wysokości świadczenia rodzicielskiego, o którym mowa w ustawie z dnia 28 listopada 2003 r. o świadczeniach rodzinnych.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "odesłanie kwoty bez celu w grafie"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art55-ust2",
+  "slug": "swiadczenie-przewidziane",
+  "nazwa": "świadczenie przewidziane",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 55 ust. 2",
+   "cytat": "Świadczenie przewidziane w ust. 1 przyznaje się w wysokości nieprzekraczającej wysokości odpowiedniego świadczenia z ubezpieczenia emerytalno-rentowego.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 55 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 55 ust. 2",
+      "cytat": "Świadczenie przewidziane w ust. 1 przyznaje się w wysokości nieprzekraczającej wysokości odpowiedniego świadczenia z ubezpieczenia emerytalno-rentowego.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2004-593-art37-ust1",
+  "slug": "zasilek-staly",
+  "nazwa": "zasiłek stały",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": ":",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2004/593",
+   "przepis": "art. 37 ust. 1",
+   "cytat": "Zasiłek stały przysługuje:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "data_stanu": "2026-07-29"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2004/593 art. 37 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 37 ust. 1",
+      "cytat": "Zasiłek stały przysługuje:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-07-29",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2004-593-art38-ust1",
+  "slug": "zasilek-okresowy",
+  "nazwa": "zasiłek okresowy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "w szczególności ze względu na długotrwałą chorobę",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc",
+   "utrata_pracy"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2004/593",
+   "przepis": "art. 38 ust. 1",
+   "cytat": "Zasiłek okresowy przysługuje w szczególności ze względu na długotrwałą chorobę, niepełnosprawność, bezrobocie, możliwość utrzymania lub nabycia uprawnień do świadczeń z innych systemów zabezpieczenia społecznego:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "data_stanu": "2026-07-29"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2004/593 art. 38 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 38 ust. 1",
+      "cytat": "Zasiłek okresowy przysługuje w szczególności ze względu na długotrwałą chorobę, niepełnosprawność, bezrobocie, możliwość utrzymania lub nabycia uprawnień do świadczeń z innych systemów zabezpieczenia społecznego:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "odesłanie kwoty do DU/2004/593#arti_38",
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 106 ust. 8",
+      "cytat": "art. 38",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "termin_wniosku",
+    "data": null,
+    "opis": "Jeżeli orzeczenie, o którym mowa w ust. 7, zostanie dostarczone w terminie 60 dni od dnia jego otrzymania, zawieszone postępowanie podejmuje się, a prawo do zasiłku stałego ustala się, począwszy od miesiąca, w którym złożono wniosek o przyznanie zasiłku stałego wraz z potwierdzeniem, o którym mowa w ust. 7. Do ustalenia kwoty zasiłku stałego za okres pobierania zasiłku okresowego w trakcie zawieszenia postępowania art. 37 ust. 6 nie stosuje się.",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2004/593",
+     "przepis": "art. 106 ust. 9",
+     "cytat": "w terminie 60 dni od dnia jego otrzymania, zawieszone postępowanie podejmuje się, a prawo do zasi",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+     "data_stanu": "2026-07-29"
+    },
+    "okres": "60 dni",
+    "zdarzenie": "jego otrzymania"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-07-29",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "odesłanie do DU/2004/593#arti_38 bez klauzuli wysokości"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2004-593-art106-ust3",
+  "slug": "swiadczenia-pieniezne-2",
+  "nazwa": "świadczenia pieniężne",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "i wypłaca za okres miesiąca kalendarzowego",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2004/593",
+   "przepis": "art. 106 ust. 3",
+   "cytat": "Świadczenia pieniężne z pomocy społecznej przyznaje się i wypłaca za okres miesiąca kalendarzowego, począwszy od miesiąca, w którym został złożony wniosek wraz z wymaganą dokumentacją, z zastrzeżeniem ust. 7–11.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "data_stanu": "2026-07-29"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2004/593 art. 106 ust. 3: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 106 ust. 3",
+      "cytat": "Świadczenia pieniężne z pomocy społecznej przyznaje się i wypłaca za okres miesiąca kalendarzowego, począwszy od miesiąca, w którym został złożony wniosek wraz z wymaganą dokumentacją, z zastrzeżeniem ust. 7–11.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "termin_wniosku",
+    "data": null,
+    "opis": "Jeżeli orzeczenie, o którym mowa w ust. 7, zostanie dostarczone w terminie 60 dni od dnia jego otrzymania, zawieszone postępowanie podejmuje się, a prawo do zasiłku stałego ustala się, począwszy od miesiąca, w którym złożono wniosek o przyznanie zasiłku stałego wraz z potwierdzeniem, o którym mowa w ust. 7. Do ustalenia kwoty zasiłku stałego za okres pobierania zasiłku okresowego w trakcie zawieszenia postępowania art. 37 ust. 6 nie stosuje się.",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2004/593",
+     "przepis": "art. 106 ust. 9",
+     "cytat": "w terminie 60 dni od dnia jego otrzymania, zawieszone postępowanie podejmuje się, a prawo do zasi",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+     "data_stanu": "2026-07-29"
+    },
+    "okres": "60 dni",
+    "zdarzenie": "jego otrzymania"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-07-29",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2004-593-art121-ust3c",
+  "slug": "swiadczenie-pracy-socjalnej",
+  "nazwa": "świadczenie pracy socjalnej",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "zwrot kosztów przejazdów z miejsca pracy do miejsc wykonywania przez niego czynności zawodowych",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2004/593",
+   "przepis": "art. 121 ust. 3c",
+   "cytat": "Pracownikowi socjalnemu, do którego obowiązków należy świadczenie pracy socjalnej w środowisku lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje zwrot kosztów przejazdów z miejsca pracy do miejsc wykonywania przez niego czynności zawodowych, w przypadku braku możliwości zapewnienia dojazdu środkami pozostającymi w dyspozycji zatrudniającego go pracodawcy.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "data_stanu": "2026-07-29"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2004/593 art. 121 ust. 3c: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 121 ust. 3c",
+      "cytat": "Pracownikowi socjalnemu, do którego obowiązków należy świadczenie pracy socjalnej w środowisku lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje zwrot kosztów przejazdów z miejsca pracy do miejsc wykonywania przez niego czynności zawodowych, w przypadku braku możliwości zapewnienia dojazdu środkami pozostającymi w dyspozycji zatrudniającego go pracodawcy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-07-29",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2001-734-art3-ust1",
+  "slug": "dodatek-mieszkaniowy",
+  "nazwa": "dodatek mieszkaniowy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "osobom",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niski_dochod",
+   "mieszkanie_energia"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2001/734",
+   "przepis": "art. 3 ust. 1",
+   "cytat": "Dodatek mieszkaniowy przysługuje osobom, o którym mowa w art. 2 ust. 1, jeżeli w okresie 3 miesięcy poprzedzających datę złożenia wniosku o jego przyznanie średni miesięczny dochód przypadający na jednego członka gospodarstwa domowego wnioskodawcy nie przekroczył w gospodarstwie:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2001/734",
+   "data_stanu": "2023-07-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2001/734 art. 3 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2001/734",
+      "przepis": "art. 3 ust. 1",
+      "cytat": "Dodatek mieszkaniowy przysługuje osobom, o którym mowa w art. 2 ust. 1, jeżeli w okresie 3 miesięcy poprzedzających datę złożenia wniosku o jego przyznanie średni miesięczny dochód przypadający na jednego członka gospodarstwa domowego wnioskodawcy nie przekroczył w gospodarstwie:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2001/734",
+      "data_stanu": "2023-07-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2002-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2001/734",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2023-07-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2001-734-art6-ust7",
+  "slug": "ryczalt",
+  "nazwa": "ryczałt",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Jeżeli lokal mieszkalny nie jest wyposażony w instalację doprowadzającą energię cieplną do celów ogrzewania, w instalację ciepłej wody lub gazu przewodowego z zewnętrznego źródła znajdującego się poza lokalem mieszkalnym, osobie uprawnionej do dodatku mieszkaniowego",
+  "opis_prosty": null,
+  "sytuacje": [
+   "mieszkanie_energia"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2001/734",
+   "przepis": "art. 6 ust. 7",
+   "cytat": "Jeżeli lokal mieszkalny nie jest wyposażony w instalację doprowadzającą energię cieplną do celów ogrzewania, w instalację ciepłej wody lub gazu przewodowego z zewnętrznego źródła znajdującego się poza lokalem mieszkalnym, osobie uprawnionej do dodatku mieszkaniowego przyznaje się ryczałt na zakup opału stanowiący część dodatku mieszkaniowego.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2001/734",
+   "data_stanu": "2023-07-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2001/734 art. 6 ust. 7: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2001/734",
+      "przepis": "art. 6 ust. 7",
+      "cytat": "Jeżeli lokal mieszkalny nie jest wyposażony w instalację doprowadzającą energię cieplną do celów ogrzewania, w instalację ciepłej wody lub gazu przewodowego z zewnętrznego źródła znajdującego się poza lokalem mieszkalnym, osobie uprawnionej do dodatku mieszkaniowego przyznaje się ryczałt na zakup opału stanowiący część dodatku mieszkaniowego.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2001/734",
+      "data_stanu": "2023-07-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2002-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2001/734",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2023-07-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2011-887-art120",
+  "slug": "swiadczenia-opieki-zdrowotnej",
+  "nazwa": "świadczenia opieki zdrowotnej",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "w rocznej stawce ustalonej ze starostą w miarę wystąpienia potrzeb",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2011/887",
+   "przepis": "art. 120",
+   "cytat": "Środki finansowe na świadczenia opieki zdrowotnej, które w całości lub w części nie są finansowane ze środków publicznych na zasadach określonych w przepisach o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych, lub na wyrównywanie opóźnień w nauce przysługują w rocznej stawce ustalonej ze starostą w miarę wystąpienia potrzeb, w wysokości poniesionych wydatków, w kwocie niewyższej niż 2685 zł na dziecko.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2011/887",
+   "data_stanu": "2026-07-29"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2011/887 art. 120: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2011/887",
+      "przepis": "art. 120",
+      "cytat": "Środki finansowe na świadczenia opieki zdrowotnej, które w całości lub w części nie są finansowane ze środków publicznych na zasadach określonych w przepisach o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych, lub na wyrównywanie opóźnień w nauce przysługują w rocznej stawce ustalonej ze starostą w miarę wystąpienia potrzeb, w wysokości poniesionych wydatków, w kwocie niewyższej niż 2685 zł na dziecko.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2011/887",
+      "data_stanu": "2026-07-29"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2012-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2011/887",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-07-29",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2025-620-art234-ust6",
+  "slug": "stypendium",
+  "nazwa": "stypendium",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "za dni nieobecności na szkoleniu w przypadku usprawiedliwienia tej nieobecności obowiązkiem stawiennictwa przed sądem lub organem administracji publicznej",
+  "opis_prosty": null,
+  "sytuacje": [
+   "edukacja"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2025/620",
+   "przepis": "art. 234 ust. 6",
+   "cytat": "Stypendium przysługuje za dni nieobecności na szkoleniu w przypadku usprawiedliwienia tej nieobecności obowiązkiem stawiennictwa przed sądem lub organem administracji publicznej.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "regula_procentowa",
+   "regula": {
+    "udzial": "60 %",
+    "warianty": null,
+    "podstawa_id": null,
+    "opis": "kwoty zasiłku"
+   },
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2025/620 art. 234 ust. 6: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2025/620",
+      "przepis": "art. 234 ust. 6",
+      "cytat": "Stypendium przysługuje za dni nieobecności na szkoleniu w przypadku usprawiedliwienia tej nieobecności obowiązkiem stawiennictwa przed sądem lub organem administracji publicznej.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 236 ust. 1: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2025/620",
+      "przepis": "art. 236 ust. 1",
+      "cytat": "przysługuje stypendium w wysokości 60 % kwoty zasiłku, o którym mowa w art. 224 ust. 1 pkt 1, wypłacane przez starostę.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2025-06-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "regula.podstawa",
+    "powod": "podstawa reguły nierozpoznana"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2025-620-art141-ust2",
+  "slug": "dofinansowanie-wynagrodzenia",
+  "nazwa": "dofinansowanie wynagrodzenia",
+  "rodzaj_korzysci": "dofinansowanie",
+  "status": "do_ustalenia",
+  "komu": "przez okres:",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2025/620",
+   "przepis": "art. 141 ust. 2",
+   "cytat": "Dofinansowanie wynagrodzenia przysługuje przez okres:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2025/620 art. 141 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2025/620",
+      "przepis": "art. 141 ust. 2",
+      "cytat": "Dofinansowanie wynagrodzenia przysługuje przez okres:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2025-06-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2025-620-art145-ust2",
+  "slug": "swiadczenie-aktywizacyjne",
+  "nazwa": "świadczenie aktywizacyjne",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "przez okres 12 miesięcy",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2025/620",
+   "przepis": "art. 145 ust. 2",
+   "cytat": "Świadczenie aktywizacyjne przysługuje przez okres 12 miesięcy w wysokości:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2025/620 art. 145 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2025/620",
+      "przepis": "art. 145 ust. 2",
+      "cytat": "Świadczenie aktywizacyjne przysługuje przez okres 12 miesięcy w wysokości:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2025-06-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2025-620-art146-ust2",
+  "slug": "refundacja",
+  "nazwa": "refundacja",
+  "rodzaj_korzysci": "dofinansowanie",
+  "status": "do_ustalenia",
+  "komu": "na okres do 6 miesięcy",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2025/620",
+   "przepis": "art. 146 ust. 2",
+   "cytat": "Refundacja, o której mowa w ust. 1, przysługuje na okres do 6 miesięcy.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2025/620 art. 146 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2025/620",
+      "przepis": "art. 146 ust. 2",
+      "cytat": "Refundacja, o której mowa w ust. 1, przysługuje na okres do 6 miesięcy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2025-06-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2025-620-art217-ust6",
+  "slug": "swiadczenie-szkoleniowe",
+  "nazwa": "świadczenie szkoleniowe",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "po rozwiązaniu stosunku pracy lub stosunku służbowego na czas udziału pracownika w szkoleniach",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2025/620",
+   "przepis": "art. 217 ust. 6",
+   "cytat": "Świadczenie szkoleniowe jest przyznawane przez pracodawcę na wniosek pracownika i przysługuje po rozwiązaniu stosunku pracy lub stosunku służbowego na czas udziału pracownika w szkoleniach, w okresie nie dłuższym niż 6 miesięcy.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2025/620 art. 217 ust. 6: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2025/620",
+      "przepis": "art. 217 ust. 6",
+      "cytat": "Świadczenie szkoleniowe jest przyznawane przez pracodawcę na wniosek pracownika i przysługuje po rozwiązaniu stosunku pracy lub stosunku służbowego na czas udziału pracownika w szkoleniach, w okresie nie dłuższym niż 6 miesięcy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2025-06-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2025-620-art218-ust3",
+  "slug": "zwolnieniu",
+  "nazwa": "zwolnieniu",
+  "rodzaj_korzysci": "zwolnienie",
+  "status": "do_ustalenia",
+  "komu": "prawo do zasiłku na okres skrócony o okres pobierania zasiłku przed pozbawieniem wolności i w trakcie przerw w odbywaniu kary",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2025/620",
+   "przepis": "art. 218 ust. 3",
+   "cytat": " W przypadku pozbawienia wolności w okresie pobierania zasiłku, po zwolnieniu z zakładu karnego lub aresztu śledczego przysługuje prawo do zasiłku na okres skrócony o okres pobierania zasiłku przed pozbawieniem wolności i w trakcie przerw w odbywaniu kary.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2025/620 art. 218 ust. 3: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2025/620",
+      "przepis": "art. 218 ust. 3",
+      "cytat": " W przypadku pozbawienia wolności w okresie pobierania zasiłku, po zwolnieniu z zakładu karnego lub aresztu śledczego przysługuje prawo do zasiłku na okres skrócony o okres pobierania zasiłku przed pozbawieniem wolności i w trakcie przerw w odbywaniu kary.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2025-06-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2025-620-art233-ust2",
+  "slug": "dodatek-aktywizacyjny",
+  "nazwa": "dodatek aktywizacyjny",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2025/620",
+   "przepis": "art. 233 ust. 2",
+   "cytat": "Dodatek aktywizacyjny przysługuje w wysokości 50 % zasiłku, o którym mowa w art. 224 ust. 1, przez połowę okresu, w jakim przysługiwałby bezrobotnemu zasiłek.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "regula_procentowa",
+   "regula": {
+    "udzial": "50 %",
+    "warianty": null,
+    "podstawa_id": null,
+    "opis": "zasiłku"
+   },
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2025/620 art. 233 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2025/620",
+      "przepis": "art. 233 ust. 2",
+      "cytat": "Dodatek aktywizacyjny przysługuje w wysokości 50 % zasiłku, o którym mowa w art. 224 ust. 1, przez połowę okresu, w jakim przysługiwałby bezrobotnemu zasiłek.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 233 ust. 2: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2025/620",
+      "przepis": "art. 233 ust. 2",
+      "cytat": "Dodatek aktywizacyjny przysługuje w wysokości 50 % zasiłku, o którym mowa w art. 224 ust. 1, przez połowę okresu, w jakim przysługiwałby bezrobotnemu zasiłek.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2025-06-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "regula.podstawa",
+    "powod": "podstawa reguły nierozpoznana"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2004-1252-art2-ust3",
+  "slug": "swiadczenie-przedemerytalne",
+  "nazwa": "świadczenie przedemerytalne",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "osobie określonej w ust",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2004/1252",
+   "przepis": "art. 2 ust. 3",
+   "cytat": "Świadczenie przedemerytalne przysługuje osobie określonej w ust. 1 po upływie co najmniej 180 dni pobierania zasiłku dla bezrobotnych, o którym mowa w ustawie z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia, jeżeli osoba ta spełnia łącznie następujące warunki:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252",
+   "data_stanu": "2026-02-11"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2004/1252 art. 2 ust. 3: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2004/1252",
+      "przepis": "art. 2 ust. 3",
+      "cytat": "Świadczenie przedemerytalne przysługuje osobie określonej w ust. 1 po upływie co najmniej 180 dni pobierania zasiłku dla bezrobotnych, o którym mowa w ustawie z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia, jeżeli osoba ta spełnia łącznie następujące warunki:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252",
+      "data_stanu": "2026-02-11"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2004-06-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-02-11",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2004-1252-art10-ust1-pkt2",
+  "slug": "zasilek-pogrzebowy-4",
+  "nazwa": "zasiłek pogrzebowy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "członka rodziny osoby, o której mowa w pkt 1, spełniającego warunki do uzyskania renty rodzinnej –",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2004/1252",
+   "przepis": "art. 10 ust. 1 pkt 2",
+   "cytat": "członka rodziny osoby, o której mowa w pkt 1, spełniającego warunki do uzyskania renty rodzinnej – przysługuje zasiłek pogrzebowy na zasadach i w wysokości określonych w ustawie o emeryturach i rentach z FUS.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252",
+   "data_stanu": "2026-02-11"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2004/1252 art. 10 ust. 1 pkt 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2004/1252",
+      "przepis": "art. 10 ust. 1 pkt 2",
+      "cytat": "członka rodziny osoby, o której mowa w pkt 1, spełniającego warunki do uzyskania renty rodzinnej – przysługuje zasiłek pogrzebowy na zasadach i w wysokości określonych w ustawie o emeryturach i rentach z FUS.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252",
+      "data_stanu": "2026-02-11"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2004-06-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-02-11",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "odesłanie kwoty bez celu w grafie"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2007-1378-art2-pkt12",
+  "slug": "swiadczenie-pielegnacyjne-2",
+  "nazwa": "świadczenie pielęgnacyjne",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "rodziców osoby uprawnionej, małżonka rodzica osoby uprawnionej, osobę, z którą rodzic osoby uprawnionej wychowuje wspólne dziecko, pozostające na ich utrzymaniu dzieci w wieku do ukończenia 25. roku życia oraz dziecko, które ukończyło 25. rok życia otrzymujące świadczenia z funduszu alimentacyjnego ",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "niepelnosprawnosc",
+   "opieka_nad_bliskim"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2007/1378",
+   "przepis": "art. 2 pkt 12",
+   "cytat": " rodziców osoby uprawnionej, małżonka rodzica osoby uprawnionej, osobę, z którą rodzic osoby uprawnionej wychowuje wspólne dziecko, pozostające na ich utrzymaniu dzieci w wieku do ukończenia 25. roku życia oraz dziecko, które ukończyło 25. rok życia otrzymujące świadczenia z funduszu alimentacyjnego lub legitymujące się orzeczeniem o znacznym stopniu niepełnosprawności, jeżeli w związku z tą niepełnosprawnością przysługuje świadczenie pielęgnacyjne lub specjalny zasiłek opiekuńczy, o których mowa w ustawie z dnia 28 listopada 2003 r. o świadczeniach rodzinnych (Dz. U. z 2025 r. poz. 1208) albo zasiłek dla opiekuna, o którym mowa w ustawie z dnia 4 kwietnia 2014 r. o ustaleniu i wypłacie zasiłków dla opiekunów (Dz. U. z 2024 r. poz. 246), a także osobę uprawnioną;",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
+   "data_stanu": "2026-02-03"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2007/1378 art. 2 pkt 12: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2007/1378",
+      "przepis": "art. 2 pkt 12",
+      "cytat": " rodziców osoby uprawnionej, małżonka rodzica osoby uprawnionej, osobę, z którą rodzic osoby uprawnionej wychowuje wspólne dziecko, pozostające na ich utrzymaniu dzieci w wieku do ukończenia 25. roku życia oraz dziecko, które ukończyło 25. rok życia otrzymujące świadczenia z funduszu alimentacyjnego lub legitymujące się orzeczeniem o znacznym stopniu niepełnosprawności, jeżeli w związku z tą niepełnosprawnością przysługuje świadczenie pielęgnacyjne lub specjalny zasiłek opiekuńczy, o których mowa w ustawie z dnia 28 listopada 2003 r. o świadczeniach rodzinnych (Dz. U. z 2025 r. poz. 1208) albo zasiłek dla opiekuna, o którym mowa w ustawie z dnia 4 kwietnia 2014 r. o ustaleniu i wypłacie zasiłków dla opiekunów (Dz. U. z 2024 r. poz. 246), a także osobę uprawnioną;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
+      "data_stanu": "2026-02-03"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2008-10-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-02-03",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2014-567-art2-ust1",
+  "slug": "zasilek-dla-opiekuna",
+  "nazwa": "zasiłek dla opiekuna",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "osobie",
+  "opis_prosty": null,
+  "sytuacje": [
+   "opieka_nad_bliskim"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2014/567",
+   "przepis": "art. 2 ust. 1",
+   "cytat": "Zasiłek dla opiekuna przysługuje osobie, jeżeli decyzja o przyznaniu jej prawa do świadczenia pielęgnacyjnego wygasła z mocy prawa na podstawie art. 11 ust. 3 ustawy z dnia 7 grudnia 2012 r. o zmianie ustawy o świadczeniach rodzinnych oraz niektórych innych ustaw (Dz. U. poz. 1548 oraz z 2013 r. poz. 1557) z dniem 1 lipca 2013 r.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2014/567",
+   "data_stanu": "2024-03-06"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2014/567 art. 2 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2014/567",
+      "przepis": "art. 2 ust. 1",
+      "cytat": "Zasiłek dla opiekuna przysługuje osobie, jeżeli decyzja o przyznaniu jej prawa do świadczenia pielęgnacyjnego wygasła z mocy prawa na podstawie art. 11 ust. 3 ustawy z dnia 7 grudnia 2012 r. o zmianie ustawy o świadczeniach rodzinnych oraz niektórych innych ustaw (Dz. U. poz. 1548 oraz z 2013 r. poz. 1557) z dniem 1 lipca 2013 r.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2014/567",
+      "data_stanu": "2024-03-06"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 4: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2014/567",
+      "przepis": "art. 4",
+      "cytat": "Zasiłek dla opiekuna przysługuje w wysokości 520zł miesięcznie.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2014/567",
+      "data_stanu": "2024-03-06"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "przypis 1: Wysokość zasiłku jest ustalana na podstawie art. 10 niniejszej ustawy.",
+     "dowod": {
+      "eli": "DU/2014/567",
+      "przepis": "art. 4",
+      "cytat": "Wysokość zasiłku jest ustalana na podstawie art. 10 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2014/567",
+      "data_stanu": "2024-03-06"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2014-05-15",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2014/567",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2024-03-06",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "przypis wskazuje akt wykonawczy, brak go w grafie"
+   }
+  ],
+  "flagi": [
+   "kwota_podejrzana"
+  ]
+ },
+ {
   "id": "DU-2003-2255-art15b-ust1",
   "slug": "zapomoge",
   "nazwa": "zapomogę",
@@ -4039,6 +7907,7 @@
    },
    "kwota_ustawowa_zastapiona": "1000 zł",
    "zwiekszenia": [],
+   "wyliczenie": null,
    "os_czasu": [
     {
      "wartosc": "1000,00 zł",
@@ -4195,6 +8064,96 @@
   "powiazane": [],
   "stan": {
    "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "nazwa_ogolna"
+  ]
+ },
+ {
+  "id": "DU-2004-593-art121-ust3a",
+  "slug": "dodatek",
+  "nazwa": "dodatek",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "Pracownikowi socjalnemu zatrudnionemu w pełnym wymiarze czasu pracy w samorządowych jednostkach organizacyjnych pomocy społecznej, do którego podstawowych obowiązków należy świadczenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2004/593",
+   "przepis": "art. 121 ust. 3a",
+   "cytat": "Pracownikowi socjalnemu zatrudnionemu w pełnym wymiarze czasu pracy w samorządowych jednostkach organizacyjnych pomocy społecznej, do którego podstawowych obowiązków należy świadczenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "data_stanu": "2026-07-29"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_w_ustawie",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "400 zł",
+    "warianty": null,
+    "od": null,
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [
+    {
+     "wartosc": "400 zł",
+     "warianty": null,
+     "od": null,
+     "do": null,
+     "rodzaj_zmiany": "brzmienie_pierwotne",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 121 ust. 3a",
+      "cytat": "zenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2004/593 art. 121 ust. 3a: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 121 ust. 3a",
+      "cytat": "Pracownikowi socjalnemu zatrudnionemu w pełnym wymiarze czasu pracy w samorządowych jednostkach organizacyjnych pomocy społecznej, do którego podstawowych obowiązków należy świadczenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 121 ust. 3a: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 121 ust. 3a",
+      "cytat": "zenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-07-29",
    "tekst": "tekst ujednolicony (informacyjny)"
   },
   "nieustalone": [],

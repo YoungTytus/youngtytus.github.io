@@ -21,6 +21,8 @@ export function getStaticPaths() {
 const k: any = korzyscPoId(Astro.params.id!);
 const ile = k.ile;
 const a = ile.aktualna;
+const wyliczenie = ile.wyliczenie;
+const dowodPodstawy = wyliczenie?.podstawa?.dowod ?? wyliczenie?.podstawa?.lancuch?.podstawa?.dowod ?? null;
 const dowodA = dowodAktualnej(k);
 const zamknieta = k.status === 'zamknieta';
 const stan = dataPL(k.stan.data_stanu);
@@ -111,12 +113,26 @@ const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
           {!a?.wartosc && a?.warianty?.length && a.warianty.map((w: any, i: number) => (
             <div class="amount-variant"><span>{wielka(etykietaWariantu(w, i))}</span><Kwota wartosc={w.wartosc} href={dowodA.href} etykieta={dowodA.etykieta} blok /></div>
           ))}
-          {!a && <p class="amount-missing">{ile.regula ? 'Kwota określona regułą procentową' : 'Nie ustalono'}</p>}
+          {!a && <p class="amount-missing">{wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : ile.regula ? 'Kwota określona regułą procentową' : 'Nie ustalono'}</p>}
           {a && <p class="amount-date">{a.od ? `Od ${dataPL(a.od)}` : `Data początku: ${dataLubBrak(a.od)}`}</p>}
           {a?.do && <p class="amount-date">Do {dataLubBrak(a.do)}</p>}
           {ile.zwiekszenia?.map((z: any, i: number) => <p>+ <Kwota wartosc={z.kwota} href={`#zwiekszenie-${i}`} etykieta={etykietaDowodu(z.dowod)} />{z.limit && <> (najwyżej <Kwota wartosc={z.limit} href={`#zwiekszenie-${i}`} etykieta="cytat" />)</>}: {typo(z.warunek)}</p>)}
           {!a && !ile.regula && k.nieustalone.length > 0 && <p class="amount-date">Powód w sekcji <a href="#braki" style="text-decoration:underline">Nie ustalono</a>.</p>}
         </div>
+
+        {wyliczenie && <section id="wyliczenie" aria-label="Wyliczenie pomocnicze" class="notice">
+          <h3>Wyliczenie pomocnicze z eksportu</h3>
+          <p>To wynik obliczeń wykonanych przez generator danych. Nie jest kwotą przytoczoną wprost z przepisu ani niezależnym potwierdzeniem aktualnej wysokości świadczenia.</p>
+          {wyliczenie.wartosc && <p>Wynik: <Kwota wartosc={wyliczenie.wartosc} href="#podstawa-wyliczenia" etykieta="podstawa obliczenia" /></p>}
+          {wyliczenie.warianty?.map((v: any, i: number) => <p>{etykietaWariantu(v, i)} ({v.udzial}): <Kwota wartosc={v.wartosc} href="#podstawa-wyliczenia" etykieta="podstawa obliczenia" /></p>)}
+          {wyliczenie.od && <p>Przyjęto stan kwoty bazowej od {dataPL(wyliczenie.od)}.</p>}
+          {wyliczenie.podstawa?.wartosc && <p>Wartość podstawy: {typo(wyliczenie.podstawa.wartosc)}. Źródło: {typo(wyliczenie.podstawa.zrodlo)}.</p>}
+          {wyliczenie.zaokraglenie && <p>Zaokrąglenie: {typo(wyliczenie.zaokraglenie.regula)}.</p>}
+          {wyliczenie.uwaga && <p>{typo(wyliczenie.uwaga)}</p>}
+          {dowodPodstawy && <Dowod dowod={dowodPodstawy} id="podstawa-wyliczenia" />}
+          {!dowodPodstawy && <p id="podstawa-wyliczenia">Nie podano dowodu kwoty podstawowej w danych eksportu. Weryfikuj wyliczenie w oryginalnych aktach.</p>}
+          {wyliczenie.zaokraglenie?.dowod && <Dowod dowod={wyliczenie.zaokraglenie.dowod} />}
+        </section>}
 
         <ul class="fact-list">
           <li><span>Jak ustalono kwotę</span><span>{etykietaRozwiazania[ile.rozwiazanie as keyof typeof etykietaRozwiazania]}</span></li>
@@ -135,7 +151,7 @@ const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
         {ile.regula?.warianty?.length > 0 && <>
           <h3>Warianty reguły procentowej</h3>
           <div class="table-wrap" tabindex="0"><table><caption>Udziały w kwocie bazowej według przepisu</caption><thead><tr><th scope="col">Warunek</th><th scope="col">Udział</th></tr></thead><tbody>
-            {ile.regula.warianty.map((v: any) => { const dowod = dowodReguly(v.udzial); return <tr><td>{typo(v.etykieta)}</td><td><Kwota wartosc={v.udzial} href={dowod.href} etykieta={dowod.etykieta} /></td></tr>; })}
+            {ile.regula.warianty.map((v: any) => { const dowod = dowodReguly(v.udzial); return <tr><td>{typo(v.etykieta ?? 'Warunek nieustalony w eksporcie')}</td><td><Kwota wartosc={v.udzial} href={dowod.href} etykieta={dowod.etykieta} /></td></tr>; })}
           </tbody></table></div>
           <p class="summary-note">Strona pokazuje regułę z eksportu i nie przelicza jej na kwotę w złotych.</p>
         </>}

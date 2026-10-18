@@ -69,6 +69,14 @@ function sprawdzSpojnosc({ korzysci, akty, slowniki }, bledy, ostrzezenia) {
     for (const [pole, slownik] of [['rodzaj_korzysci', 'rodzaj_korzysci'], ['status', 'status']]) {
       if (!(k[pole] in slowniki[slownik])) bledy.push(`${gdzie}/${pole}: brak etykiety „${k[pole]}” w slowniki.${slownik}`);
     }
+    if (!k.komu.trim()) {
+      ostrzezenia.push(`${gdzie}/komu: nie wskazano grupy uprawnionych; strona pokaże brak danych`);
+    }
+    for (const [j, wariant] of (k.ile.regula?.warianty ?? []).entries()) {
+      if (wariant.etykieta === null) {
+        ostrzezenia.push(`${gdzie}/ile/regula/warianty/${j}: brak etykiety wariantu; sprawdź warunek w ustawie`);
+      }
+    }
     k.sytuacje.forEach((s) => {
       if (!(s in slowniki.sytuacje)) bledy.push(`${gdzie}/sytuacje: kod „${s}” nie istnieje w slowniki.sytuacje`);
     });

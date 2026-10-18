@@ -1,5 +1,243 @@
 [
  {
+  "eli": "DU/1991/24",
+  "tytul": "Ustawa z dnia 20 grudnia 1990 r. o ubezpieczeniu społecznym rolników.",
+  "typ": "Ustawa",
+  "data_stanu": "2025-12-18",
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+  "korzysci": [
+   "DU-1991-24-art14-ust1",
+   "DU-1991-24-art19-ust1",
+   "DU-1991-24-art21-ust1",
+   "DU-1991-24-art21b-ust1",
+   "DU-1991-24-art22-ust1",
+   "DU-1991-24-art22-ust1-renta-okresowa",
+   "DU-1991-24-art22-ust3",
+   "DU-1991-24-art27-ust1",
+   "DU-1991-24-art29-ust1",
+   "DU-1991-24-art31-ust1",
+   "DU-1991-24-art31-ust2",
+   "DU-1991-24-art35-ust1",
+   "DU-1991-24-art35a-ust1",
+   "DU-1991-24-art35b-ust1",
+   "DU-1991-24-art55-ust2"
+  ],
+  "wykonawcze": [],
+  "status": "akt posiada tekst jednolity",
+  "pliki": [
+   {
+    "rodzaj": "U",
+    "plik": "akty/DU_1991_24/U_c18dade06b97349f_D19910024Lj.pdf",
+    "nazwa_pobierania": "DU_1991_24_ujednolicony_2025-12-18.pdf",
+    "sha256": "c18dade06b97349fba23f16ecaa92312a8db0c8cfe43c84522e9165d909aebd1",
+    "rozmiar": 683147,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1991/24/text/U/D19910024Lj.pdf",
+    "pobrano": "2026-10-18T09:53:31+00:00",
+    "data_stanu": "2025-12-18",
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   },
+   {
+    "rodzaj": "O",
+    "plik": "akty/DU_1991_24/O_6862f76820283cdb_D19910024.pdf",
+    "nazwa_pobierania": "DU_1991_24_ogloszony.pdf",
+    "sha256": "6862f76820283cdb639364fcd998f80db97d4ea78da065dfebe4d20a528c7d85",
+    "rozmiar": 5366833,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1991/24/text/O/D19910024.pdf",
+    "pobrano": "2026-10-18T09:53:45+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": false
+   }
+  ]
+ },
+ {
+  "eli": "DU/1998/1118",
+  "tytul": "Ustawa z dnia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych.",
+  "typ": "Ustawa",
+  "data_stanu": "2026-10-16",
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+  "korzysci": [
+   "DU-1998-1118-art194j-ust4",
+   "DU-1998-1118-art24a-ust1",
+   "DU-1998-1118-art50-ust1",
+   "DU-1998-1118-art57-ust1",
+   "DU-1998-1118-art59-ust2",
+   "DU-1998-1118-art60-ust1",
+   "DU-1998-1118-art65-ust1",
+   "DU-1998-1118-art77-ust1",
+   "DU-1998-1118-art85-ust6"
+  ],
+  "wykonawcze": [
+   {
+    "eli": "MP/2009/949",
+    "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 17 listopada 2009 r. w sprawie kwoty zasiłku pogrzebowego",
+    "od": "2009-12-01"
+   },
+   {
+    "eli": "MP/2010/109",
+    "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 15 lutego 2010 r. w sprawie kwoty zasiłku pogrzebowego",
+    "od": "2010-03-01"
+   },
+   {
+    "eli": "MP/2010/597",
+    "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 19 maja 2010 r. w sprawie kwoty zasiłku pogrzebowego",
+    "od": "2010-06-01"
+   },
+   {
+    "eli": "MP/2010/790",
+    "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 18 sierpnia 2010 r. w sprawie kwoty zasiłku pogrzebowego",
+    "od": "2010-09-01"
+   },
+   {
+    "eli": "MP/2010/1038",
+    "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 22 listopada 2010 r. w sprawie kwoty zasiłku pogrzebowego",
+    "od": "2010-12-01"
+   },
+   {
+    "eli": "MP/2026/150",
+    "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 27 stycznia 2026 r. w sprawie kwoty zasiłku pogrzebowego",
+    "od": "2026-03-01"
+   }
+  ],
+  "status": "akt posiada tekst jednolity",
+  "pliki": [
+   {
+    "rodzaj": "U",
+    "plik": "akty/DU_1998_1118/U_73edc508c4d7140d_D19981118Lj.pdf",
+    "nazwa_pobierania": "DU_1998_1118_ujednolicony_2026-10-16.pdf",
+    "sha256": "73edc508c4d7140d00a1aa8e34212894aa000b6a76eb902a8de3348eee5c5801",
+    "rozmiar": 1321898,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118/text/U/D19981118Lj.pdf",
+    "pobrano": "2026-10-18T09:51:01+00:00",
+    "data_stanu": "2026-10-16",
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   },
+   {
+    "rodzaj": "O",
+    "plik": "akty/DU_1998_1118/O_8e8cccd0b68ce01e_D19981118.pdf",
+    "nazwa_pobierania": "DU_1998_1118_ogloszony.pdf",
+    "sha256": "8e8cccd0b68ce01e2c3af5130542243ad42783f647bd117cd0e4777a8ee48428",
+    "rozmiar": 37113642,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118/text/O/D19981118.pdf",
+    "pobrano": "2026-10-18T09:52:44+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": false
+   }
+  ]
+ },
+ {
+  "eli": "DU/1999/636",
+  "tytul": "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa.",
+  "typ": "Ustawa",
+  "data_stanu": "2026-09-16",
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+  "korzysci": [
+   "DU-1999-636-art1-ust1",
+   "DU-1999-636-art18-ust1",
+   "DU-1999-636-art23-ust1",
+   "DU-1999-636-art29-ust1",
+   "DU-1999-636-art32-ust1",
+   "DU-1999-636-art33-ust1",
+   "DU-1999-636-art6-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "akt posiada tekst jednolity",
+  "pliki": [
+   {
+    "rodzaj": "U",
+    "plik": "akty/DU_1999_636/U_69bdd68d9a8af9cf_D19990636Lj.pdf",
+    "nazwa_pobierania": "DU_1999_636_ujednolicony_2026-09-16.pdf",
+    "sha256": "69bdd68d9a8af9cf2d517bc3499d535d9ea4db28bad25a4083678b4ae3618f28",
+    "rozmiar": 539579,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1999/636/text/U/D19990636Lj.pdf",
+    "pobrano": "2026-10-18T09:52:50+00:00",
+    "data_stanu": "2026-09-16",
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   },
+   {
+    "rodzaj": "O",
+    "plik": "akty/DU_1999_636/O_d08f409da04adf8b_D19990636.pdf",
+    "nazwa_pobierania": "DU_1999_636_ogloszony.pdf",
+    "sha256": "d08f409da04adf8bfe13b8c817ddbdaf499208e0daedb27650f4fcd2719af47b",
+    "rozmiar": 14138070,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1999/636/text/O/D19990636.pdf",
+    "pobrano": "2026-10-18T09:53:26+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": false
+   }
+  ]
+ },
+ {
+  "eli": "DU/2001/734",
+  "tytul": "Ustawa z dnia 21 czerwca 2001 r. o dodatkach mieszkaniowych.",
+  "typ": "Ustawa",
+  "data_stanu": "2023-07-18",
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2001/734",
+  "korzysci": [
+   "DU-2001-734-art3-ust1",
+   "DU-2001-734-art6-ust7"
+  ],
+  "wykonawcze": [],
+  "status": "akt posiada tekst jednolity",
+  "pliki": [
+   {
+    "rodzaj": "U",
+    "plik": "akty/DU_2001_734/U_3d6fd15f2845ee6e_D20010734Lj.pdf",
+    "nazwa_pobierania": "DU_2001_734_ujednolicony_2023-07-18.pdf",
+    "sha256": "3d6fd15f2845ee6ee2cf09de15ae489edefc69fb7972bc315264d9f6cec7b8a5",
+    "rozmiar": 453097,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2001/734/text/U/D20010734Lj.pdf",
+    "pobrano": "2026-10-18T09:53:59+00:00",
+    "data_stanu": "2023-07-18",
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   },
+   {
+    "rodzaj": "O",
+    "plik": "akty/DU_2001_734/O_86fc4d62acebdc54_D20010734.pdf",
+    "nazwa_pobierania": "DU_2001_734_ogloszony.pdf",
+    "sha256": "86fc4d62acebdc5471ebff53d67a493e9b1daeac266caa9f73a2e36167ab0298",
+    "rozmiar": 263183,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2001/734/text/O/D20010734.pdf",
+    "pobrano": "2026-10-18T09:54:00+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "uszkodzona_naprawiona",
+    "tekst_naprawiony": {
+     "plik": "akty/DU_2001_734/O_86fc4d62acebdc54_D20010734.naprawiony.txt",
+     "sha256": "d8ffad7c984147a1cce9322c279fdf29d850f5cb020047a14fda62cbdb8128dc",
+     "rozmiar": 35955,
+     "mapa_znakow": "1.0",
+     "pochodny": true
+    },
+    "uzyty_w_danych": false
+   }
+  ]
+ },
+ {
   "eli": "DU/2003/1268",
   "tytul": "Ustawa z dnia 27 czerwca 2003 r. o rencie socjalnej",
   "typ": "Ustawa",
@@ -207,6 +445,201 @@
   ]
  },
  {
+  "eli": "DU/2004/1252",
+  "tytul": "Ustawa z dnia 30 kwietnia 2004 r. o świadczeniach przedemerytalnych",
+  "typ": "Ustawa",
+  "data_stanu": "2026-02-11",
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252",
+  "korzysci": [
+   "DU-2004-1252-art10-ust1-pkt2",
+   "DU-2004-1252-art2-ust3"
+  ],
+  "wykonawcze": [],
+  "status": "akt posiada tekst jednolity",
+  "pliki": [
+   {
+    "rodzaj": "U",
+    "plik": "akty/DU_2004_1252/U_5e426e8ff9d40517_D20041252Lj.pdf",
+    "nazwa_pobierania": "DU_2004_1252_ujednolicony_2026-02-11.pdf",
+    "sha256": "5e426e8ff9d4051759fe9f9685d2fff03c57f2eca52d48d03ffca77a5c4df8e2",
+    "rozmiar": 258896,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252/text/U/D20041252Lj.pdf",
+    "pobrano": "2026-10-18T09:54:22+00:00",
+    "data_stanu": "2026-02-11",
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   },
+   {
+    "rodzaj": "O",
+    "plik": "akty/DU_2004_1252/O_91289ea4cfbc6ba8_D20041252.pdf",
+    "nazwa_pobierania": "DU_2004_1252_ogloszony.pdf",
+    "sha256": "91289ea4cfbc6ba80df6803f0e26ade19770c8de63dca34a18af3cb68e202b8d",
+    "rozmiar": 104923,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252/text/O/D20041252.pdf",
+    "pobrano": "2026-10-18T09:54:22+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "uszkodzona_naprawiona",
+    "tekst_naprawiony": {
+     "plik": "akty/DU_2004_1252/O_91289ea4cfbc6ba8_D20041252.naprawiony.txt",
+     "sha256": "92fd068d75ba0ed1eb268b4c6a2b3dfd004bcb784ef7257a63317ed540f8e6c2",
+     "rozmiar": 53088,
+     "mapa_znakow": "1.0",
+     "pochodny": true
+    },
+    "uzyty_w_danych": false
+   }
+  ]
+ },
+ {
+  "eli": "DU/2004/593",
+  "tytul": "Ustawa z dnia 12 marca 2004 r. o pomocy społecznej",
+  "typ": "Ustawa",
+  "data_stanu": "2026-07-29",
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+  "korzysci": [
+   "DU-2004-593-art106-ust3",
+   "DU-2004-593-art121-ust3a",
+   "DU-2004-593-art121-ust3c",
+   "DU-2004-593-art37-ust1",
+   "DU-2004-593-art38-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "akt posiada tekst jednolity",
+  "pliki": [
+   {
+    "rodzaj": "U",
+    "plik": "akty/DU_2004_593/U_69a093e6bd4d2c16_D20040593Lj.pdf",
+    "nazwa_pobierania": "DU_2004_593_ujednolicony_2026-07-29.pdf",
+    "sha256": "69a093e6bd4d2c16a479deef9678e997698beb6cc8fc8f59731e9a97231b14fb",
+    "rozmiar": 1086588,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2004/593/text/U/D20040593Lj.pdf",
+    "pobrano": "2026-10-18T09:53:51+00:00",
+    "data_stanu": "2026-07-29",
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   },
+   {
+    "rodzaj": "O",
+    "plik": "akty/DU_2004_593/O_06bebfc097061056_D20040593.pdf",
+    "nazwa_pobierania": "DU_2004_593_ogloszony.pdf",
+    "sha256": "06bebfc0970610565b3f444be22a28850486037cceb41dfb9f9d1f3ad9c8862c",
+    "rozmiar": 272104,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2004/593/text/O/D20040593.pdf",
+    "pobrano": "2026-10-18T09:53:52+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "uszkodzona_naprawiona",
+    "tekst_naprawiony": {
+     "plik": "akty/DU_2004_593/O_06bebfc097061056_D20040593.naprawiony.txt",
+     "sha256": "e16e222d6f76a6eaf567927a83554611690ce6ba83c29f1a45af4b7b71de4491",
+     "rozmiar": 209998,
+     "mapa_znakow": "1.0",
+     "pochodny": true
+    },
+    "uzyty_w_danych": false
+   }
+  ]
+ },
+ {
+  "eli": "DU/2007/1378",
+  "tytul": "Ustawa z dnia 7 września 2007 r. o pomocy osobom uprawnionym do alimentów",
+  "typ": "Ustawa",
+  "data_stanu": "2026-02-03",
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
+  "korzysci": [
+   "DU-2007-1378-art2-pkt12"
+  ],
+  "wykonawcze": [],
+  "status": "akt posiada tekst jednolity",
+  "pliki": [
+   {
+    "rodzaj": "U",
+    "plik": "akty/DU_2007_1378/U_9be1e6c9d59d2efc_D20071378Lj.pdf",
+    "nazwa_pobierania": "DU_2007_1378_ujednolicony_2026-02-03.pdf",
+    "sha256": "9be1e6c9d59d2efcb5434149054684b724a9d3d294a458ad9ed67f5689bba551",
+    "rozmiar": 478833,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378/text/U/D20071378Lj.pdf",
+    "pobrano": "2026-10-18T09:54:26+00:00",
+    "data_stanu": "2026-02-03",
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   },
+   {
+    "rodzaj": "O",
+    "plik": "akty/DU_2007_1378/O_4e8bfe5750005888_D20071378.pdf",
+    "nazwa_pobierania": "DU_2007_1378_ogloszony.pdf",
+    "sha256": "4e8bfe5750005888b16a2b381dcd750781f950e20699369f5cb9bfc21c7d15ea",
+    "rozmiar": 115957,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378/text/O/D20071378.pdf",
+    "pobrano": "2026-10-18T09:54:26+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "uszkodzona_naprawiona",
+    "tekst_naprawiony": {
+     "plik": "akty/DU_2007_1378/O_4e8bfe5750005888_D20071378.naprawiony.txt",
+     "sha256": "0c37b316582badbccbf0e1ce7d4d40759ab8fbc4e9984155c843a7c58615ed6d",
+     "rozmiar": 79873,
+     "mapa_znakow": "1.0",
+     "pochodny": true
+    },
+    "uzyty_w_danych": false
+   }
+  ]
+ },
+ {
+  "eli": "DU/2011/887",
+  "tytul": "Ustawa z dnia 9 czerwca 2011 r. o wspieraniu rodziny i systemie pieczy zastępczej",
+  "typ": "Ustawa",
+  "data_stanu": "2026-07-29",
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2011/887",
+  "korzysci": [
+   "DU-2011-887-art120"
+  ],
+  "wykonawcze": [],
+  "status": "akt posiada tekst jednolity",
+  "pliki": [
+   {
+    "rodzaj": "U",
+    "plik": "akty/DU_2011_887/U_5622c8ce9d64d8d7_D20110887Lj.pdf",
+    "nazwa_pobierania": "DU_2011_887_ujednolicony_2026-07-29.pdf",
+    "sha256": "5622c8ce9d64d8d7e5d7362403866f7939f6a94083a54968c200a075664d73ef",
+    "rozmiar": 1165118,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2011/887/text/U/D20110887Lj.pdf",
+    "pobrano": "2026-10-18T09:54:04+00:00",
+    "data_stanu": "2026-07-29",
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   },
+   {
+    "rodzaj": "O",
+    "plik": "akty/DU_2011_887/O_1dc82cbfd9fa7f80_D20110887.pdf",
+    "nazwa_pobierania": "DU_2011_887_ogloszony.pdf",
+    "sha256": "1dc82cbfd9fa7f80c7baf9255ae5786a4a3c7dc24a0d60f31cba2d8ac7c07c35",
+    "rozmiar": 599772,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2011/887/text/O/D20110887.pdf",
+    "pobrano": "2026-10-18T09:54:07+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": false
+   }
+  ]
+ },
+ {
   "eli": "DU/2012/959",
   "tytul": "Rozporządzenie Rady Ministrów z dnia 10 sierpnia 2012 r. w sprawie wysokości dochodu rodziny albo dochodu osoby uczącej się stanowiących podstawę ubiegania się o zasiłek rodzinny oraz wysokości świadczeń rodzinnych",
   "typ": "Rozporządzenie",
@@ -219,6 +652,7 @@
    "DU-2003-2255-art12a-ust1",
    "DU-2003-2255-art13-ust1",
    "DU-2003-2255-art14-ust1",
+   "DU-2003-2255-art15-ust1",
    "DU-2003-2255-art15b-ust1",
    "DU-2003-2255-art16-ust2",
    "DU-2003-2255-art17-ust1",
@@ -245,6 +679,49 @@
   ]
  },
  {
+  "eli": "DU/2014/567",
+  "tytul": "Ustawa z dnia 4 kwietnia 2014 r. o ustaleniu i wypłacie zasiłków dla opiekunów",
+  "typ": "Ustawa",
+  "data_stanu": "2024-03-06",
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2014/567",
+  "korzysci": [
+   "DU-2014-567-art2-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "akt posiada tekst jednolity",
+  "pliki": [
+   {
+    "rodzaj": "U",
+    "plik": "akty/DU_2014_567/U_ed1ae13fee3e8d43_D20140567Lj.pdf",
+    "nazwa_pobierania": "DU_2014_567_ujednolicony_2024-03-06.pdf",
+    "sha256": "ed1ae13fee3e8d4375735aa85a42d1ebf9874a0a1c78bde738cee7b02c4508ca",
+    "rozmiar": 470803,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2014/567/text/U/D20140567Lj.pdf",
+    "pobrano": "2026-10-18T09:54:30+00:00",
+    "data_stanu": "2024-03-06",
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   },
+   {
+    "rodzaj": "O",
+    "plik": "akty/DU_2014_567/O_4d6f7c0a253b7c5e_D20140567.pdf",
+    "nazwa_pobierania": "DU_2014_567_ogloszony.pdf",
+    "sha256": "4d6f7c0a253b7c5e065aaef0f7a0bf10d6aca558d84ed29c97d9c2812eae7ec2",
+    "rozmiar": 570647,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2014/567/text/O/D20140567.pdf",
+    "pobrano": "2026-10-18T09:54:32+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": false
+   }
+  ]
+ },
+ {
   "eli": "DU/2015/1238",
   "tytul": "Rozporządzenie Rady Ministrów z dnia 7 sierpnia 2015 r. w sprawie wysokości dochodu rodziny albo dochodu osoby uczącej się stanowiących podstawę ubiegania się o zasiłek rodzinny i specjalny zasiłek opiekuńczy, wysokości świadczeń rodzinnych oraz wysokości zasiłku dla opiekuna",
   "typ": "Rozporządzenie",
@@ -257,6 +734,7 @@
    "DU-2003-2255-art12a-ust1",
    "DU-2003-2255-art13-ust1",
    "DU-2003-2255-art14-ust1",
+   "DU-2003-2255-art15-ust1",
    "DU-2003-2255-art15b-ust1",
    "DU-2003-2255-art16-ust2",
    "DU-2003-2255-art5-ust1",
@@ -370,6 +848,7 @@
    "DU-2003-2255-art12a-ust1",
    "DU-2003-2255-art13-ust1",
    "DU-2003-2255-art14-ust1",
+   "DU-2003-2255-art15-ust1",
    "DU-2003-2255-art15b-ust1",
    "DU-2003-2255-art16-ust2",
    "DU-2003-2255-art17c-ust1",
@@ -408,6 +887,7 @@
    "DU-2003-2255-art12a-ust1",
    "DU-2003-2255-art13-ust1",
    "DU-2003-2255-art14-ust1",
+   "DU-2003-2255-art15-ust1",
    "DU-2003-2255-art15b-ust1",
    "DU-2003-2255-art16-ust2",
    "DU-2003-2255-art17c-ust1",
@@ -532,6 +1012,7 @@
    "DU-2003-2255-art12a-ust1",
    "DU-2003-2255-art13-ust1",
    "DU-2003-2255-art14-ust1",
+   "DU-2003-2255-art15-ust1",
    "DU-2003-2255-art15b-ust1",
    "DU-2003-2255-art16-ust2",
    "DU-2003-2255-art17c-ust1",
@@ -550,6 +1031,200 @@
     "url_zrodla": null,
     "zrodlo": "korpus",
     "pobrano": null,
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   }
+  ]
+ },
+ {
+  "eli": "DU/2025/620",
+  "tytul": "Ustawa z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia",
+  "typ": "Ustawa",
+  "data_stanu": "2026-10-16",
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+  "korzysci": [
+   "DU-2025-620-art141-ust2",
+   "DU-2025-620-art145-ust2",
+   "DU-2025-620-art146-ust2",
+   "DU-2025-620-art217-ust6",
+   "DU-2025-620-art218-ust3",
+   "DU-2025-620-art233-ust2",
+   "DU-2025-620-art234-ust6"
+  ],
+  "wykonawcze": [],
+  "status": "obowiązujący",
+  "pliki": [
+   {
+    "rodzaj": "U",
+    "plik": "akty/DU_2025_620/U_28d063a8cc64162f_D20250620Lj.pdf",
+    "nazwa_pobierania": "DU_2025_620_ujednolicony_2026-10-16.pdf",
+    "sha256": "28d063a8cc64162f03d23f07c26f1c59ec5975da91125c82bfb620e72ffe2660",
+    "rozmiar": 2318853,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/620/text/U/D20250620Lj.pdf",
+    "pobrano": "2026-10-18T09:54:16+00:00",
+    "data_stanu": "2026-10-16",
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   },
+   {
+    "rodzaj": "O",
+    "plik": "akty/DU_2025_620/O_b4ea60e146007651_D20250620.pdf",
+    "nazwa_pobierania": "DU_2025_620_ogloszony.pdf",
+    "sha256": "b4ea60e14600765173e317a19c4d41110395f87a18fbd8e6c7f6b3200c2ecd51",
+    "rozmiar": 3764021,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/620/text/O/D20250620.pdf",
+    "pobrano": "2026-10-17T20:04:29+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": false
+   }
+  ]
+ },
+ {
+  "eli": "MP/2009/949",
+  "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 17 listopada 2009 r. w sprawie kwoty zasiłku pogrzebowego",
+  "typ": "Komunikat",
+  "data_stanu": null,
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2009/949",
+  "korzysci": [
+   "DU-1998-1118-art77-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "bez statusu",
+  "pliki": [
+   {
+    "rodzaj": "O",
+    "plik": "akty/MP_2009_949/O_6d6b21180caab0a5_M20090949.pdf",
+    "nazwa_pobierania": "MP_2009_949_ogloszony.pdf",
+    "sha256": "6d6b21180caab0a56bca3376711d9ef6f965ef9562ee32a922917e178275883b",
+    "rozmiar": 307026,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2009/949/text/O/M20090949.pdf",
+    "pobrano": "2026-10-18T13:40:40+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   }
+  ]
+ },
+ {
+  "eli": "MP/2010/1038",
+  "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 22 listopada 2010 r. w sprawie kwoty zasiłku pogrzebowego",
+  "typ": "Komunikat",
+  "data_stanu": null,
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2010/1038",
+  "korzysci": [
+   "DU-1998-1118-art77-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "bez statusu",
+  "pliki": [
+   {
+    "rodzaj": "O",
+    "plik": "akty/MP_2010_1038/O_16799e583d13bcf3_M20101038.pdf",
+    "nazwa_pobierania": "MP_2010_1038_ogloszony.pdf",
+    "sha256": "16799e583d13bcf3c34c30bf2d42e242b4027d18355e1bd2bacdb82d3972be73",
+    "rozmiar": 305932,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2010/1038/text/O/M20101038.pdf",
+    "pobrano": "2026-10-18T13:40:32+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   }
+  ]
+ },
+ {
+  "eli": "MP/2010/109",
+  "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 15 lutego 2010 r. w sprawie kwoty zasiłku pogrzebowego",
+  "typ": "Komunikat",
+  "data_stanu": null,
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2010/109",
+  "korzysci": [
+   "DU-1998-1118-art77-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "bez statusu",
+  "pliki": [
+   {
+    "rodzaj": "O",
+    "plik": "akty/MP_2010_109/O_20f1bf0c05661880_M20100109.pdf",
+    "nazwa_pobierania": "MP_2010_109_ogloszony.pdf",
+    "sha256": "20f1bf0c05661880b3f6ce101678996afe66d1ce8fdab81a87ecc94d76b7ebb2",
+    "rozmiar": 305852,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2010/109/text/O/M20100109.pdf",
+    "pobrano": "2026-10-18T13:40:27+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   }
+  ]
+ },
+ {
+  "eli": "MP/2010/597",
+  "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 19 maja 2010 r. w sprawie kwoty zasiłku pogrzebowego",
+  "typ": "Komunikat",
+  "data_stanu": null,
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2010/597",
+  "korzysci": [
+   "DU-1998-1118-art77-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "bez statusu",
+  "pliki": [
+   {
+    "rodzaj": "O",
+    "plik": "akty/MP_2010_597/O_c3aefaa33ef7cbf6_M20100597.pdf",
+    "nazwa_pobierania": "MP_2010_597_ogloszony.pdf",
+    "sha256": "c3aefaa33ef7cbf62166c3f2757fba76b0d831d23d9ca7ae01964ebe557fa923",
+    "rozmiar": 303756,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2010/597/text/O/M20100597.pdf",
+    "pobrano": "2026-10-18T13:40:05+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   }
+  ]
+ },
+ {
+  "eli": "MP/2010/790",
+  "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 18 sierpnia 2010 r. w sprawie kwoty zasiłku pogrzebowego",
+  "typ": "Komunikat",
+  "data_stanu": null,
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2010/790",
+  "korzysci": [
+   "DU-1998-1118-art77-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "bez statusu",
+  "pliki": [
+   {
+    "rodzaj": "O",
+    "plik": "akty/MP_2010_790/O_4cd3c6538e6fb3ec_M20100790.pdf",
+    "nazwa_pobierania": "MP_2010_790_ogloszony.pdf",
+    "sha256": "4cd3c6538e6fb3ece13bf99886fe947af5a4372e25645563afc131be815b80ac",
+    "rozmiar": 305613,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2010/790/text/O/M20100790.pdf",
+    "pobrano": "2026-10-18T13:39:49+00:00",
     "data_stanu": null,
     "eli_obwieszczenia": null,
     "warstwa_tekstowa": "poprawna",
@@ -878,6 +1553,35 @@
   ]
  },
  {
+  "eli": "MP/2026/150",
+  "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 27 stycznia 2026 r. w sprawie kwoty zasiłku pogrzebowego",
+  "typ": "Komunikat",
+  "data_stanu": null,
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/150",
+  "korzysci": [
+   "DU-1998-1118-art77-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "bez statusu",
+  "pliki": [
+   {
+    "rodzaj": "O",
+    "plik": "akty/MP_2026_150/O_a14fabf598952bf2_M20260150.pdf",
+    "nazwa_pobierania": "MP_2026_150_ogloszony.pdf",
+    "sha256": "a14fabf598952bf22ddb3fa322823bd6510e9a10a9f3b3eafa2dc2d6d0e2283a",
+    "rozmiar": 146847,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/150/text/O/M20260150.pdf",
+    "pobrano": "2026-10-18T13:27:53+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   }
+  ]
+ },
+ {
   "eli": "MP/2026/153",
   "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 27 stycznia 2026 r. w sprawie kwoty dodatku dopełniającego",
   "typ": "Komunikat",
@@ -898,6 +1602,37 @@
     "rozmiar": 148747,
     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/153/text/O/M20260153.pdf",
     "pobrano": "2026-10-17T15:42:26+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   }
+  ]
+ },
+ {
+  "eli": "MP/2026/220",
+  "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 17 lutego 2026 r. w sprawie kwoty najniższej emerytury i renty, dodatku pielęgnacyjnego i dodatku dla sierot zupełnych, kwot maksymalnych zmniejszeń emerytur i rent oraz kwot emerytur i rent wolnych od egzekucji i potrąceń",
+  "typ": "Komunikat",
+  "data_stanu": null,
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
+  "korzysci": [
+   "DU-2003-1268-art4-ust1",
+   "DU-2003-1268-art4-ust3",
+   "DU-2023-1429-art2-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "bez statusu",
+  "pliki": [
+   {
+    "rodzaj": "O",
+    "plik": "akty/MP_2026_220/O_d574a1564621722c_M20260220.pdf",
+    "nazwa_pobierania": "MP_2026_220_ogloszony.pdf",
+    "sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35",
+    "rozmiar": 173042,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/220/text/O/M20260220.pdf",
+    "pobrano": "2026-10-18T13:27:44+00:00",
     "data_stanu": null,
     "eli_obwieszczenia": null,
     "warstwa_tekstowa": "poprawna",

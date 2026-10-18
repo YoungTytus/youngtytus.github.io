@@ -10,7 +10,7 @@ const H = naglowek;
 const a = k.ile.aktualna;
 const dowod = dowodAktualnej(k);
 const href = `/korzysc/${k.id}/${dowod.href}`;
-const etykietaWartosci = k.status === 'zamknieta' ? 'Kwota (archiwalna)' : 'Aktualna kwota';
+const etykietaWartosci = !a && k.ile.wyliczenie ? 'Wyliczenie pomocnicze' : k.status === 'zamknieta' ? 'Kwota (archiwalna)' : 'Aktualna kwota';
 ---
 <article class="card" data-id={k.id}>
   <div class="card-body">
@@ -32,7 +32,9 @@ const etykietaWartosci = k.status === 'zamknieta' ? 'Kwota (archiwalna)' : 'Aktu
           <a class="dowod dowod-blok" href={href}><span class="sr-only">Dowód: </span>{dowod.etykieta}</a>
         </span>
       )}
-      {!a && <span class="muted">{k.ile.regula ? 'Reguła procentowa — szczegóły na karcie' : 'Nie ustalono (szczegóły na karcie)'}</span>}
+      {!a && k.ile.wyliczenie?.wartosc && <span class="kzd"><span class="kwota">{typo(k.ile.wyliczenie.wartosc)}</span><a class="dowod dowod-blok" href={`/korzysc/${k.id}/#wyliczenie`}>Wynik obliczeń, sprawdź podstawę</a></span>}
+      {!a && k.ile.wyliczenie?.warianty?.length > 0 && <span class="kzd"><span class="warianty">{k.ile.wyliczenie.warianty.map((w: any, i: number) => <span class="kwota" title={etykietaWariantu(w, i)}>{i > 0 && <span aria-hidden="true">/ </span>}{typo(w.wartosc)}</span>)}</span><a class="dowod dowod-blok" href={`/korzysc/${k.id}/#wyliczenie`}>Wynik obliczeń, sprawdź podstawę</a></span>}
+      {!a && !k.ile.wyliczenie && <span class="muted">{k.ile.regula ? 'Reguła procentowa — szczegóły na karcie' : 'Nie ustalono (szczegóły na karcie)'}</span>}
       {k.flagi?.length > 0 && <span class="muted">Rekord wymaga przeglądu według eksportu.</span>}
     </div>
   </div>
