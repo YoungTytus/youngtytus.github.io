@@ -1,0 +1,92 @@
+{
+ "kontrakt": "strona-0.4",
+ "wygenerowano": "2026-10-18T11:58:27+00:00",
+ "wersja_kodu": "db6762cd7ed82af44ea618ec51d7afd6d484d259+zmiany",
+ "na_dzien": "2026-10-18",
+ "pliki": {
+  "korzysci.json": "813500ed60f61d8b841b22bd480d320b6cc979a8bfa7c46a1ec036c0086da110",
+  "akty.json": "a3ebe87e1f95957bd47403b415d2e02afc4a07a43dab4fa4503b829bb3547775",
+  "slowniki.json": "aeecf35f0a29915bf783f64a410075ef618873bf2c8f64ba2dfe8c8a6ec344cc",
+  "akty/SHA256SUMS": "2d89a875f664661ea070032b4798cbff4c47dc34f2b9a2e2d2aac027bdc936cd"
+ },
+ "zakres": [
+  "DU/2022/1692",
+  "DU/2023/1429",
+  "DU/2003/1268",
+  "DU/2016/195",
+  "DU/2003/2255"
+ ],
+ "liczby": {
+  "korzysci": 21,
+  "akty": 23,
+  "pliki_aktow": 28,
+  "teksty_naprawione": 2
+ },
+ "pominiete_nazwa_ogolna": [
+  {
+   "id": "DU-2016-195-art8-ust1-pkt4",
+   "nazwa": "świadczenie"
+  },
+  {
+   "id": "DU-2003-2255-art10-ust3",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-2003-2255-art15b-ust2",
+   "nazwa": "zapomoga"
+  },
+  {
+   "id": "DU-2003-2255-art15b-ust4-pkt1",
+   "nazwa": "świadczenie"
+  },
+  {
+   "id": "DU-2003-2255-art16-ust5a",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-2003-2255-art17c-ust6",
+   "nazwa": "zasiłek"
+  },
+  {
+   "id": "DU-2003-2255-art24-ust7",
+   "nazwa": "świadczenia"
+  },
+  {
+   "id": "DU-2003-2255-art28-ust12",
+   "nazwa": "świadczenie"
+  }
+ ],
+ "pominiete_przejsciowe": [
+  {
+   "id": "DU-2003-2255-art56a-ust1",
+   "nazwa": "dodatek do zasiłku rodzinnego z tytułu urodzenia dziecka",
+   "powod": "okno dat zakończone 2004-04-30",
+   "cytat": "Dodatek do zasiłku rodzinnego z tytułu urodzenia dziecka przysługuje na dziecko urodzone w okresie od dnia 1 kwietnia 2004 r. do dnia 30 kwietnia 2004 r., jeżeli rodzina spełnia warunki określone w us"
+  },
+  {
+   "id": "DU-2003-2255-art58-ust3",
+   "nazwa": "emerytury",
+   "powod": "stan sprzed wejścia ustawy w życie",
+   "cytat": "Osoba zdolna do pracy, lecz niepozostająca w zatrudnieniu ze względu na konieczność sprawowania opieki nad dzieckiem wymagającym stałej pielęgnacji, posiadającym orzeczenie o niepełnosprawności wraz z"
+  },
+  {
+   "id": "DU-2003-2255-art59-ust1",
+   "nazwa": "zasiłek wychowawczy",
+   "powod": "stan sprzed wejścia ustawy w życie",
+   "cytat": "Osoba samotnie wychowująca dziecko oraz osoba wychowująca troje lub więcej dzieci otrzymująca do dnia wejścia w życie ustawy podwyższony zasiłek wychowawczy nabywa prawo do dodatku, o którym mowa w ar"
+  },
+  {
+   "id": "DU-2003-2255-art59a",
+   "nazwa": "zasiłek okresowy",
+   "powod": "stan sprzed wejścia ustawy w życie",
+   "cytat": "Osoba otrzymująca, do dnia wejścia w życie ustawy, gwarantowany zasiłek okresowy na podstawie przepisów o pomocy społecznej nabywa prawo do dodatku do zasiłku rodzinnego, o którym mowa w art. 11."
+  },
+  {
+   "id": "DU-2003-2255-art60-ust2",
+   "nazwa": "świadczenie",
+   "powod": "stan sprzed wejścia ustawy w życie",
+   "cytat": "Osoba pozostająca w związku małżeńskim otrzymująca na dzieci do dnia wejścia w życie ustawy świadczenie z funduszu alimentacyjnego nabywa prawo do dodatku, o którym mowa w art. 12, do dnia 31 sierpnia"
+  }
+ ],
+ "z_plikami_pdf": true
+}

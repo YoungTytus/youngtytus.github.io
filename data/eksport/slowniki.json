@@ -1,0 +1,36 @@
+{
+ "rodzaj_korzysci": {
+  "swiadczenie_okresowe": "świadczenie okresowe",
+  "swiadczenie_jednorazowe": "świadczenie jednorazowe",
+  "ulga_podatkowa": "ulga podatkowa",
+  "zwolnienie": "zwolnienie",
+  "swiadczenie_rzeczowe": "świadczenie rzeczowe",
+  "uprawnienie": "uprawnienie",
+  "dofinansowanie": "dofinansowanie"
+ },
+ "rodzaj_terminu": {
+  "okres_kwoty": "okres obowiązywania kwoty",
+  "termin_wniosku": "termin złożenia wniosku",
+  "granica_przepisu": "zmiana albo koniec przepisu",
+  "okres_zasilkowy": "okres, na który przyznaje się prawo",
+  "harmonogram_dostepnosci": "otwieranie prawa etapami",
+  "termin_wyplaty": "termin wypłaty"
+ },
+ "status": {
+  "obowiazuje": "obowiązuje",
+  "zamknieta": "zamknięta",
+  "do_ustalenia": "do ustalenia"
+ },
+ "sytuacje": {
+  "dziecko": "dziecko",
+  "ciaza_porod": "ciąża i poród",
+  "niepelnosprawnosc": "niepełnosprawność",
+  "opieka_nad_bliskim": "opieka nad bliskim",
+  "senior": "senior",
+  "niski_dochod": "niski dochód",
+  "utrata_pracy": "utrata pracy",
+  "mieszkanie_energia": "mieszkanie i energia",
+  "edukacja": "edukacja",
+  "cudzoziemiec": "cudzoziemiec"
+ }
+}

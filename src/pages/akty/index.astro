@@ -1,0 +1,37 @@
+---
+import Uklad from '../../layouts/Uklad.astro';
+import UwagaDanych from '../../components/UwagaDanych.astro';
+import { dane } from '../../lib/model.mjs';
+import { eliDziennik, eliSlug } from '../../lib/format.mjs';
+const d = dane();
+const KOLEJNOSC = ['Ustawa', 'Rozporządzenie', 'Komunikat', 'Obwieszczenie'];
+const poz = (t: string) => (KOLEJNOSC.indexOf(t) + 1) || 99;
+const typy = [...new Set(d.akty.map((a: any) => a.typ as string))].sort((x, y) => poz(x) - poz(y));
+const mnoga: Record<string, string> = { Ustawa: 'Ustawy', 'Rozporządzenie': 'Rozporządzenia', Komunikat: 'Komunikaty', Obwieszczenie: 'Obwieszczenia' };
+---
+<Uklad tytul="Akty prawne" opis="Ustawy, rozporządzenia i komunikaty, z których pochodzą dane o korzyściach, z plikami tekstów do pobrania." sekcja="akty">
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span aria-current="page">Akty prawne</span></nav>
+      <h1>Akty prawne</h1>
+      <p class="lead">Akty, z których pochodzą przepisy, kwoty i terminy w bazie. Przy każdym znajdziesz pliki tekstów i listę korzyści.</p>
+      <UwagaDanych />
+    </div>
+  </div>
+  <div class="wrap section">
+    {typy.map((t) => (
+      <section class="akty-grupa" aria-labelledby={`typ-${eliSlug(t)}`}>
+        <h2 id={`typ-${eliSlug(t)}`}>{mnoga[t] ?? t}</h2>
+        <div class="act-grid">
+          {d.akty.filter((a: any) => a.typ === t).map((a: any) => (
+            <article class="act">
+              <p class="type">{a.eli} · {eliDziennik(a.eli)}</p>
+              <h3 class="act-h"><a href={`/akt/${eliSlug(a.eli)}/`}>{a.tytul}</a></h3>
+              <p class="meta">Status: {a.status} · korzyści: {a.korzysci.length} · pliki: {a.pliki.length}{a.wykonawcze.length ? ` · akty wykonawcze: ${a.wykonawcze.length}` : ''}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Uklad>

@@ -1,0 +1,264 @@
+---
+import Uklad from '../../layouts/Uklad.astro';
+import Dowod from '../../components/Dowod.astro';
+import Ikona from '../../components/Ikona.astro';
+import Kwota from '../../components/Kwota.astro';
+import PlikiAktu from '../../components/PlikiAktu.astro';
+import Status from '../../components/Status.astro';
+import UwagaDanych from '../../components/UwagaDanych.astro';
+import Wykres from '../../components/Wykres.astro';
+import Progi from '../../components/Progi.astro';
+import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta, korzyscPoId } from '../../lib/model.mjs';
+import {
+  KOLEJNOSC_TERMINOW, OPIS_TERMINU, czyZaslepka, dataLubBrak, dataPL, eliSlug, etapZaslepki,
+  etykietaRozwiazania, etykietaZmiany, etykietaWariantu, opisUprawnionych, typo, wielka,
+} from '../../lib/format.mjs';
+
+export function getStaticPaths() {
+  return dane().korzysci.map((k: any) => ({ params: { id: k.id } }));
+}
+
+const k: any = korzyscPoId(Astro.params.id!);
+const ile = k.ile;
+const a = ile.aktualna;
+const dowodA = dowodAktualnej(k);
+const zamknieta = k.status === 'zamknieta';
+const stan = dataPL(k.stan.data_stanu);
+const terminyWg = Object.fromEntries(KOLEJNOSC_TERMINOW.map((r) => [r, k.do_kiedy.filter((t: any) => t.rodzaj === r)]));
+const terminWniosku = terminyWg.termin_wniosku[0];
+const podstawa = ile.regula ? korzyscPoId(ile.regula.podstawa_id) : null;
+const pobrania = aktyDoPobrania(k);
+const dzis = dataEksportu();
+
+const nazwaDuza = wielka(k.nazwa);
+const kwotaOpis = a?.wartosc ?? (a?.warianty?.length ? a.warianty.map((w: any) => w.wartosc).join(' / ') : null);
+const opisSeo = `${nazwaDuza}${kwotaOpis ? `: ${kwotaOpis}${a?.od ? ` od ${dataPL(a.od)}` : ''}` : ''}. Komu przysługuje, terminy, historia kwot i podstawa prawna (${k.przepis.eli}, ${k.przepis.przepis}).`.replace(/ /g, ' ');
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'GovernmentService',
+  name: nazwaDuza,
+  serviceType: etykieta('rodzaj_korzysci', k.rodzaj_korzysci),
+  description: k.opis_prosty ?? opisUprawnionych(k.komu),
+  areaServed: { '@type': 'Country', name: 'Polska' },
+  url: new URL(`/korzysc/${k.id}/`, Astro.site).href,
+};
+
+const sekcje = [
+  ['komu', 'Co i komu'], ['ile', 'Ile'], ['terminy', 'Do kiedy'], ['zrodla', 'Skąd to wiemy'],
+  ['warunki', 'Warunki i odwołania'], ...(k.nieustalone.length ? [['braki', 'Nie ustalono']] : []), ['akty', 'Pobierz akty'],
+];
+const etykietaDowodu = (d: any) => `${d.eli} · ${d.przepis}`;
+const dowodReguly = (udzial: string) => {
+  const szukany = udzial.replace(/\s/g, '');
+  const zawiera = (cytat: string) => {
+    const tekst = cytat.replace(/\s/g, '');
+    const i = tekst.indexOf(szukany);
+    return i >= 0 && (i === 0 || !/\d/.test(tekst[i - 1]));
+  };
+  const i = ile.trasa.findIndex((t: any) => zawiera(t.dowod.cytat));
+  if (i >= 0) return { href: `#krok-${i}`, etykieta: etykietaDowodu(ile.trasa[i].dowod) };
+  return zawiera(k.przepis.cytat) ? { href: '#przepis', etykieta: etykietaDowodu(k.przepis) } : { href: '#zrodla', etykieta: 'Trasa dowodowa' };
+};
+const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
+---
+<Uklad tytul={`${nazwaDuza}${kwotaOpis ? ` (${kwotaOpis})` : ''}`} opis={opisSeo} sekcja="korzysci" jsonLd={jsonLd}>
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Ścieżka nawigacji">
+        <a href="/">Strona główna</a><span aria-hidden="true">/</span><a href="/korzysci/">Korzyści</a><span aria-hidden="true">/</span><span aria-current="page">{nazwaDuza}</span>
+      </nav>
+      <h1>{nazwaDuza}</h1>
+      <div class="detail-meta">
+        <Status status={k.status} />
+        <span class="type">{etykieta('rodzaj_korzysci', k.rodzaj_korzysci)}</span>
+        {k.sytuacje.map((s: string) => <a class="tag" href={`/sytuacja/${s}/`}>{etykieta('sytuacje', s)}</a>)}
+        {k._przyklad && <span class="example-tag">rekord przykładowy</span>}
+      </div>
+      <p class="legal-status"><Ikona n="waga" /><span>Stan prawny na {stan}, tekst ujednolicony (informacyjny). Wiążący jest tekst w Dzienniku Ustaw.</span></p>
+      {k.obowiazuje_od?.data && <p class="summary-note">Obowiązuje od <a class="link" href={k.obowiazuje_od.url} target="_blank" rel="noopener">{dataPL(k.obowiazuje_od.data)}</a> (wejście ustawy w życie). {k.obowiazuje_od.uwaga}</p>}
+      {zamknieta && (
+        <p class="notice closed"><strong>Korzyść zakończona.</strong> Zostawiamy ją jako informację historyczną.{terminWniosku && <> Termin złożenia wniosku: {dataLubBrak(terminWniosku.data)}.{terminWniosku.skutek && ` ${terminWniosku.skutek}`} <a class="link" href="#terminy">Szczegóły i przepis</a>.</>}</p>
+      )}
+      {k.sytuacje_zrodlo === 'automatyczne' && <p class="summary-note">Sytuacje życiowe przypisano automatycznie w eksporcie; wymagają przeglądu zespołu.</p>}
+      <UwagaDanych />
+      {k.flagi?.length > 0 && <p class="notice">Eksport oznacza ten rekord do przeglądu. Pokazujemy wartości i cytaty z dostarczonych danych; wymagają one weryfikacji przez zespół.</p>}
+    </div>
+  </div>
+
+  <div class="wrap section detail-layout">
+    <nav class="detail-nav" aria-label="Na tej stronie">
+      {sekcje.map(([id, t]) => <a href={`#${id}`}>{t}</a>)}
+    </nav>
+
+    <div class="detail-content">
+      <!-- CO / KOMU -->
+      <section class="detail-section" id="komu" aria-labelledby="h-komu">
+        <p class="kicker">Co / komu</p>
+        <h2 id="h-komu">Komu przysługuje?</h2>
+        {k.opis_prosty && <p class="lead-komu">{typo(k.opis_prosty)}</p>}
+        <p class:list={[k.opis_prosty ? 'summary-note' : 'lead-komu']}>{k.opis_prosty ? 'Krąg uprawnionych według przepisu: ' : ''}{typo(opisUprawnionych(k.komu))}</p>
+        <h3>Przepis przyznający</h3>
+        <Dowod dowod={k.przepis} id="przepis" />
+      </section>
+
+      <!-- ILE -->
+      <section class="detail-section" id="ile" aria-labelledby="h-ile">
+        <p class="kicker">Ile</p>
+        <h2 id="h-ile">Kwota i historia zmian</h2>
+        <div class="amount-panel">
+          <p class="eyebrow">{zamknieta ? 'Kwota (archiwalna)' : 'Aktualna kwota według danych'}</p>
+          {a?.wartosc && <div><Kwota wartosc={a.wartosc} href={dowodA.href} etykieta={dowodA.etykieta} blok /></div>}
+          {!a?.wartosc && a?.warianty?.length && a.warianty.map((w: any, i: number) => (
+            <div class="amount-variant"><span>{wielka(etykietaWariantu(w, i))}</span><Kwota wartosc={w.wartosc} href={dowodA.href} etykieta={dowodA.etykieta} blok /></div>
+          ))}
+          {!a && <p class="amount-missing">{ile.regula ? 'Kwota określona regułą procentową' : 'Nie ustalono'}</p>}
+          {a && <p class="amount-date">{a.od ? `Od ${dataPL(a.od)}` : `Data początku: ${dataLubBrak(a.od)}`}</p>}
+          {a?.do && <p class="amount-date">Do {dataLubBrak(a.do)}</p>}
+          {ile.zwiekszenia?.map((z: any, i: number) => <p>+ <Kwota wartosc={z.kwota} href={`#zwiekszenie-${i}`} etykieta={etykietaDowodu(z.dowod)} />{z.limit && <> (najwyżej <Kwota wartosc={z.limit} href={`#zwiekszenie-${i}`} etykieta="cytat" />)</>}: {typo(z.warunek)}</p>)}
+          {!a && !ile.regula && k.nieustalone.length > 0 && <p class="amount-date">Powód w sekcji <a href="#braki" style="text-decoration:underline">Nie ustalono</a>.</p>}
+        </div>
+
+        <ul class="fact-list">
+          <li><span>Jak ustalono kwotę</span><span>{etykietaRozwiazania[ile.rozwiazanie as keyof typeof etykietaRozwiazania]}</span></li>
+          {ile.regula && (
+            <li><span>Reguła</span><span>{ile.regula.udzial && <><Kwota wartosc={ile.regula.udzial} href={dowodR!.href} etykieta={dowodR!.etykieta} /> </>}{ile.regula.opis}{podstawa ? <>, zob. <a class="link" href={`/korzysc/${podstawa.id}/`}>{podstawa.nazwa}</a></> : ile.regula.podstawa_id ? <span class="muted"> (korzyść bazowa nie ma karty w tej wersji danych)</span> : <span class="muted"> (brak powiązanej karty kwoty bazowej w eksporcie)</span>}</span></li>
+          )}
+          {ile.kwota_ustawowa_zastapiona !== null && (
+            <li><span>Kwota zapisana w ustawie</span>
+              {czyZaslepka(ile.kwota_ustawowa_zastapiona)
+                ? <span class="muted">nie ustalono (etap {etapZaslepki(ile.kwota_ustawowa_zastapiona)})</span>
+                : <span><Kwota wartosc={ile.kwota_ustawowa_zastapiona} href="#przepis" etykieta={etykietaDowodu(k.przepis)} /><br /><span class="muted">zastąpiona kwotą z aktu wykonawczego</span></span>}
+            </li>
+          )}
+        </ul>
+        {ile.zwiekszenia?.map((z: any, i: number) => <Dowod dowod={z.dowod} id={`zwiekszenie-${i}`} />)}
+        {ile.regula?.warianty?.length > 0 && <>
+          <h3>Warianty reguły procentowej</h3>
+          <div class="table-wrap" tabindex="0"><table><caption>Udziały w kwocie bazowej według przepisu</caption><thead><tr><th scope="col">Warunek</th><th scope="col">Udział</th></tr></thead><tbody>
+            {ile.regula.warianty.map((v: any) => { const dowod = dowodReguly(v.udzial); return <tr><td>{typo(v.etykieta)}</td><td><Kwota wartosc={v.udzial} href={dowod.href} etykieta={dowod.etykieta} /></td></tr>; })}
+          </tbody></table></div>
+          <p class="summary-note">Strona pokazuje regułę z eksportu i nie przelicza jej na kwotę w złotych.</p>
+        </>}
+
+        <h3>Historia kwot</h3>
+        <Wykres k={k} dzis={dzis} idTabeli="historia" />
+        <div class="table-wrap" id="historia" tabindex="0">
+          <table>
+            <caption>Historia wartości: kwoty, okresy, zmiany i dowody z eksportu</caption>
+            <thead><tr><th scope="col">Wartość</th><th scope="col">Od</th><th scope="col">Do</th><th scope="col">Rodzaj zmiany</th><th scope="col">Różnica</th><th scope="col">Dowód</th></tr></thead>
+            <tbody>
+              {ile.os_czasu.map((w: any, i: number) => (
+                <tr>
+                  <td>
+                    {w.wartosc && <Kwota wartosc={w.wartosc} href={`#wpis-${i}`} etykieta="cytat" />}
+                    {!w.wartosc && w.warianty?.map((v: any, vi: number) => <div class="table-variant"><Kwota wartosc={v.wartosc} href={`#wpis-${i}`} etykieta="cytat" /><span>{etykietaWariantu(v, vi)}</span></div>)}
+                    {w._przyklad && <><br /><span class="example-tag">przykład</span></>}
+                  </td>
+                  <td>{w.od ? dataLubBrak(w.od) : <span class="muted">nie ustalono</span>}</td>
+                  <td>{w.do === null ? <span class="muted">brak daty końca w eksporcie</span> : <span class:list={{ muted: czyZaslepka(w.do) }}>{dataLubBrak(w.do)}</span>}</td>
+                  <td>{etykietaZmiany[w.rodzaj_zmiany as keyof typeof etykietaZmiany]}{w.poprzednia && <><br /><span class="muted">poprzednio: {typo(w.poprzednia)}</span></>}</td>
+                  <td>{w.roznica ? <>{typo(w.roznica.kwota)}<br /><span class="muted">{w.roznica.procent}</span></> : <span class="muted">{i === 0 || !w.poprzednia ? '—' : 'nie podano'}</span>}</td>
+                  <td><a class="link" href={`#wpis-${i}`}>{typo(etykietaDowodu(w.dowod))}</a></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="summary-note">Różnice podaje pipeline danych, strona ich nie przelicza. „—” przy pierwszym wpisie oznacza brak poprzedniej kwoty w danych.</p>
+        <h3>Dowody wpisów</h3>
+        {ile.os_czasu.map((w: any, i: number) => (
+          <details id={`wpis-${i}`}>
+            <summary>{w.od ? dataLubBrak(w.od) : 'Data początku nie ustalona'}: {typo(etykietaDowodu(w.dowod))}</summary>
+            <Dowod dowod={w.dowod} />
+          </details>
+        ))}
+        <a class="btn btn-sm" style="margin-top:22px" href={`/dane/historia/${k.id}.csv`} download={`historia_${k.id}.csv`}><Ikona n="pobierz" />Historia kwot (CSV)</a>
+        <Progi progi={ile.progi} />
+      </section>
+
+      <!-- DO KIEDY -->
+      <section class="detail-section" id="terminy" aria-labelledby="h-terminy">
+        <p class="kicker">Do kiedy</p>
+        <h2 id="h-terminy">Terminy i okresy</h2>
+        <p class="summary-note" style="margin:0 0 20px">Terminy dotyczą różnych zdarzeń i okresów. Pokazujemy każdy rodzaj osobno, z przepisem.</p>
+        {KOLEJNOSC_TERMINOW.map((r) => terminyWg[r].length ? (
+          <div class="termin">
+            <h3>{etykieta('rodzaj_terminu', r)}</h3>
+            <p class="termin-opis">{OPIS_TERMINU[r as keyof typeof OPIS_TERMINU]}</p>
+            {terminyWg[r].map((t: any) => (
+              <>
+                <p class="termin-data">{t.okres ? <>{typo(t.okres)}{t.zdarzenie && ` od zdarzenia: ${t.zdarzenie}`}</> : t.od ? <>Od {dataLubBrak(t.od)}{t.do && ` do ${dataLubBrak(t.do)}`}</> : dataLubBrak(t.data, 'brak konkretnej daty w eksporcie')}</p>
+                <p>{typo(t.opis)}</p>
+                {t.skutek && <p class="skutek"><Ikona n="uwaga" /><span><strong>Skutek: </strong>{typo(t.skutek)}</span></p>}
+                <Dowod dowod={t.dowod} />
+                {t.etapy?.map((e: any) => <div class="termin"><h4>Od {dataLubBrak(e.od)}</h4><p>{typo(e.zakres)}</p><Dowod dowod={e.dowod} /></div>)}
+              </>
+            ))}
+          </div>
+        ) : (
+          <div class="termin is-empty">
+            <h3>{etykieta('rodzaj_terminu', r)}</h3>
+            <p>Dane nie zawierają terminu tego rodzaju.</p>
+          </div>
+        ))}
+      </section>
+
+      <!-- SKĄD TO WIEMY -->
+      <section class="detail-section" id="zrodla" aria-labelledby="h-zrodla">
+        <p class="kicker">Skąd to wiemy</p>
+        <h2 id="h-zrodla">Droga do źródła</h2>
+        {ile.trasa.length > 0 ? (
+          <ol style="list-style:none;margin:0;padding:0">
+            {ile.trasa.map((t: any, i: number) => (
+              <li class="step" id={`krok-${i}`}>
+                <span class="step-number" aria-hidden="true">{t.krok}</span>
+                <div><h3><span class="sr-only">Krok {t.krok}: </span>{t.opis}</h3><Dowod dowod={t.dowod} /></div>
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <p class="summary-note" style="margin-top:0">Trasa dowodowa (przepis → delegacja → akt wykonawczy) nie jest jeszcze w danych. Każda kwota ma dowód w <a class="link" href="#historia">tabeli historii</a>.</p>
+        )}
+        <p style="margin-top:18px"><a class="text-link" href={`/akt/${eliSlug(k.przepis.eli)}/`}>Karta aktu {k.przepis.eli} <Ikona n="strzalka" /></a></p>
+      </section>
+
+      <!-- WARUNKI I ODWOŁANIA -->
+      <section class="detail-section" id="warunki" aria-labelledby="h-warunki">
+        <h2 id="h-warunki">Warunki i odwołania</h2>
+        {k.powiazane.length === 0 && <p class="summary-note" style="margin-top:0">Dane nie zawierają powiązanych przepisów (definicji, wyłączeń) dla tej korzyści.</p>}
+        {k.powiazane.map((p: any) => {
+          const cel = p.id_korzysci ? korzyscPoId(p.id_korzysci) : null;
+          return (
+            <div class="related">
+              <strong>{p.typ.replaceAll('_', ' ')}</strong>
+              <p>„{typo(p.cytat)}”</p>
+              {p.przepis && <p class="muted">{typo(p.przepis)}</p>}
+              {cel && <p><a class="link" href={`/korzysc/${cel.id}/`}>{wielka(cel.nazwa)}</a></p>}
+              {p.id_korzysci && !cel && <p class="summary-note">Powiązana korzyść ({p.id_korzysci}) nie ma jeszcze karty w tej wersji danych.</p>}
+            </div>
+          );
+        })}
+      </section>
+
+      <!-- NIE USTALONO -->
+      {k.nieustalone.length > 0 && (
+        <section class="detail-section" id="braki" aria-labelledby="h-braki">
+          <h2 id="h-braki">Czego jeszcze nie ustalono</h2>
+          <div class="missing">
+            <ul>
+              {k.nieustalone.map((n: any) => <li><strong>Nie ustalono: </strong><code>{n.pole}</code><br />Powód: {typo(n.powod)}</li>)}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      <!-- POBIERZ AKTY -->
+      <section class="detail-section" id="akty" aria-labelledby="h-akty">
+        <p class="kicker">Teksty źródłowe</p>
+        <h2 id="h-akty">Pobierz akty</h2>
+        <p class="summary-note" style="margin:0 0 20px">Akt przyznający i akty wykonawcze z dowodów tej korzyści. <strong>Tekst ujednolicony</strong> pokazuje prawo w dniu stanu (informacyjnie); <strong>tekst ogłoszony</strong> jest wiążący, ale w brzmieniu z dnia ogłoszenia.</p>
+        {pobrania.map((p) => <PlikiAktu eli={p.eli} akt={p.akt} />)}
+      </section>
+    </div>
+  </div>
+</Uklad>

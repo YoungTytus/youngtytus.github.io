@@ -1,0 +1,67 @@
+---
+// Szablon metodologii (SPEC 4.5): treść merytoryczną dostarczy fundacja.
+// Słowniki i definicje rodzajów terminów pochodzą z kontraktu danych.
+import Uklad from '../../layouts/Uklad.astro';
+import { dane } from '../../lib/model.mjs';
+import { KOLEJNOSC_TERMINOW, OPIS_TERMINU, etykietaRozwiazania, wielka } from '../../lib/format.mjs';
+const d = dane();
+const OPIS_STATUSU: Record<string, string> = {
+  obowiazuje: 'Przepis przyznający obowiązuje w dniu stanu tekstu, a korzyść można uzyskać.',
+  zamknieta: 'Korzyść już nie przysługuje (np. minął termin wniosku albo przepis uchylono). Zostaje na stronie jako informacja historyczna.',
+  do_ustalenia: 'Dane nie pozwalają jeszcze rozstrzygnąć, czy korzyść obowiązuje. Strona nie zgaduje.',
+};
+---
+<Uklad tytul="Jak to działa: metodologia" opis="Skąd pochodzą dane Mapy Polskiego Socjalu, co oznaczają statusy, rodzaje terminów i braki w danych." sekcja="metodologia">
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span aria-current="page">Metodologia</span></nav>
+      <h1>Jak to działa</h1>
+      <p class="lead">Jak powstają dane, co oznacza każdy status i każdy rodzaj terminu, i dlaczego przy każdej liczbie jest przepis.</p>
+    </div>
+  </div>
+  <div class="wrap section prose">
+    <p class="todo"><strong>Szablon.</strong> Sekcje oznaczone jako szablon uzupełni fundacja. Definicje statusów i terminów poniżej pochodzą ze specyfikacji danych.</p>
+
+    <h2>Zasada: każda liczba ma dowód</h2>
+    <p>Każda kwota i data na stronie ma przy sobie akt prawny (identyfikator ELI), przepis (np. „art.&nbsp;6a ust.&nbsp;1”), dosłowny cytat i link do źródła. Strona niczego nie liczy i niczego nie dopowiada: pokazuje tylko to, co jest w eksporcie danych.</p>
+    <p>Treść pochodzi z tekstów ujednoliconych Kancelarii Sejmu. Mają one charakter informacyjny; wiążący jest tekst w Dzienniku Ustaw albo Monitorze Polskim.</p>
+
+    <h2>Skąd pochodzą dane</h2>
+    <p class="todo"><strong>Szablon:</strong> opis pipeline’u (pobranie tekstów z API ELI, segmentacja przepisów, graf odwołań i aktów wykonawczych, ustalanie kwot i terminów, przegląd ręczny), zakres ustaw, częstotliwość aktualizacji.</p>
+    <p>Obecny zakres danych: {d.manifest.zakres.join(', ')}.</p>
+
+    <h2>Statusy korzyści</h2>
+    <dl>
+      {Object.entries(d.slowniki.status).map(([k, v]) => <><dt>{wielka(v as string)}</dt><dd>{OPIS_STATUSU[k] ?? ''}</dd></>)}
+    </dl>
+
+    <h2>Rodzaje terminów „do kiedy”</h2>
+    <dl>
+      {KOLEJNOSC_TERMINOW.map((r) => <><dt>{wielka(d.slowniki.rodzaj_terminu[r] ?? r)}</dt><dd>{OPIS_TERMINU[r as keyof typeof OPIS_TERMINU]}</dd></>)}
+    </dl>
+
+    <h2>Jak ustalamy kwotę</h2>
+    <dl>
+      {Object.entries(etykietaRozwiazania).map(([k, v]) => <><dt>{wielka(v)}</dt><dd>{{
+        kwota_w_ustawie: 'Kwota stoi wprost w przepisie ustawy.',
+        kwota_z_aktu_wykonawczego: 'Ustawa podaje kwotę bazową, a aktualną ogłasza akt wykonawczy (rozporządzenie, komunikat). Pokazujemy całą trasę: przepis, delegację i akt.',
+        regula_procentowa: 'Kwota jest częścią innej kwoty (np. „220 % renty socjalnej”). Pokazujemy regułę i link do korzyści bazowej; nie przeliczamy jej na złote.',
+        odeslanie: 'Przepis odsyła do innego przepisu, który wyznacza kwotę.',
+        nieustalone: 'Nie udało się ustalić kwoty. Powód jest podany w sekcji „Nie ustalono”.',
+      }[k]}</dd></>)}
+    </dl>
+
+    <h2>Braki w danych</h2>
+    <p>Gdy czegoś nie ustalono, piszemy to wprost, z powodem. Brak nigdy nie jest pokazywany jako zero, pusta komórka ani domysł. Część historycznych komunikatów (lata 2007–2009) ma uszkodzone kodowanie i czeka na sprawdzenie, więc osie czasu mogą mieć luki.</p>
+
+    <h2>Teksty ujednolicone, ogłoszone i jednolite</h2>
+    <dl>
+      <dt>Tekst ujednolicony (informacyjny)</dt><dd>Przygotowany przez Kancelarię Sejmu, uwzględnia zmiany do dnia stanu. Z niego pochodzą cytaty.</dd>
+      <dt>Tekst ogłoszony (wiążący)</dt><dd>Brzmienie z dnia ogłoszenia w dzienniku urzędowym. Przy ustawie zmienianej wiele razy nie uwzględnia późniejszych zmian.</dd>
+      <dt>Tekst jednolity (wiążący)</dt><dd>Ogłoszony obwieszczeniem; wiąże na dzień obwieszczenia. Zmiany po tej dacie zawiera tekst ujednolicony.</dd>
+    </dl>
+
+    <h2>Kto przygotowuje dane</h2>
+    <p class="todo"><strong>Szablon:</strong> fundacja, zespół, kontakt w sprawie błędów w danych.</p>
+  </div>
+</Uklad>

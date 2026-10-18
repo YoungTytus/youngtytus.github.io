@@ -1,0 +1,40 @@
+---
+import Uklad from '../../layouts/Uklad.astro';
+import Ikona from '../../components/Ikona.astro';
+import KartaKorzysci from '../../components/KartaKorzysci.astro';
+import UwagaDanych from '../../components/UwagaDanych.astro';
+import { dane, posortowaneKorzysci } from '../../lib/model.mjs';
+import { wielka } from '../../lib/format.mjs';
+export function getStaticPaths() {
+  return Object.entries(dane().slowniki.sytuacje).map(([kod, nazwa]) => ({ params: { kod }, props: { nazwa } }));
+}
+const kod = Astro.params.kod!;
+const nazwa = wielka(Astro.props.nazwa as string);
+const lista = posortowaneKorzysci(dane().korzysci.filter((k: any) => k.sytuacje.includes(kod)));
+const inne = Object.entries(dane().slowniki.sytuacje).filter(([k]) => k !== kod) as [string, string][];
+---
+<Uklad tytul={`${nazwa}: wsparcie od państwa`} opis={`Świadczenia, ulgi i uprawnienia w sytuacji: ${nazwa.toLowerCase()}. Kwoty, terminy i podstawa prawna.`} sekcja="sytuacje">
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><a href="/#sytuacje">Sytuacje życiowe</a><span aria-hidden="true">/</span><span aria-current="page">{nazwa}</span></nav>
+      <p class="kicker">Sytuacja życiowa</p>
+      <h1 class="h1-ikona"><Ikona n={kod} />{nazwa}</h1>
+      <p class="lead">Korzyści przypisane do tej sytuacji w dostarczonym eksporcie. Przypisania automatyczne wymagają przeglądu zespołu.</p>
+      <UwagaDanych />
+    </div>
+  </div>
+  <div class="wrap section">
+    {lista.length ? (
+      <div class="cards">{lista.map((k) => <KartaKorzysci k={k} />)}</div>
+    ) : (
+      <div class="empty">
+        <h2 class="empty-h">Brak rekordów w tej wersji danych</h2>
+        <p>Baza obejmuje na razie wybrane ustawy. Brak rekordu nie oznacza braku prawa do wsparcia. Zobacz <a class="link" href="/korzysci/">pełną listę korzyści</a>.</p>
+      </div>
+    )}
+    <h2 class="inne-h">Inne sytuacje</h2>
+    <ul class="categories" role="list">
+      {inne.map(([k, n]) => <li style="display:contents"><a class="category" href={`/sytuacja/${k}/`}><Ikona n={k} /><span class="cat-row"><span class="first-up">{n}</span></span></a></li>)}
+    </ul>
+  </div>
+</Uklad>

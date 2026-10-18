@@ -1,0 +1,6 @@
+---
+import { etykieta } from '../lib/model.mjs';
+interface Props { status: string }
+const { status } = Astro.props;
+---
+<span class:list={['badge', status]}>{etykieta('status', status)}</span>

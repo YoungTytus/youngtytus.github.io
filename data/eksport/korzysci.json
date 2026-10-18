@@ -1,0 +1,4205 @@
+[
+ {
+  "id": "DU-2022-1692-art2-ust1",
+  "slug": "dodatek-weglowy",
+  "nazwa": "dodatek węglowy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "zamknieta",
+  "komu": "osobie w gospodarstwie domowym w przypadku",
+  "opis_prosty": null,
+  "sytuacje": [
+   "mieszkanie_energia"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2022/1692",
+   "przepis": "art. 2 ust. 1",
+   "cytat": "Dodatek węglowy przysługuje osobie w gospodarstwie domowym w przypadku, gdy głównym źródłem ogrzewania gospodarstwa domowego jest kocioł na paliwo stałe, kominek, koza, ogrzewacz powietrza, trzon kuchenny, piecokuchnia, kuchnia węglowa lub piec kaflowy na paliwo stałe, zasilane paliwami stałymi, wpisane lub zgłoszone do centralnej ewidencji emisyjności budynków, o której mowa w art. 27a ust. 1 ustawy z dnia 21 listopada 2008 r. o wspieraniu termomodernizacji i remontów oraz o centralnej ewidencji emisyjności budynków (Dz. U. z 2023 r. poz. 2496 oraz z 2024 r. poz. 1089), do dnia 11 sierpnia 2022 r., albo po tym dniu – w przypadku głównych źródeł ogrzewania wpisanych lub zgłoszonych po raz pierwszy do centralnej ewidencji emisyjności budynków, o których mowa w art. 27g ust. 1 tej ustawy.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+   "data_stanu": "2024-09-04"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_w_ustawie",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "3000 złotych",
+    "warianty": null,
+    "od": null,
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "3000 złotych",
+     "warianty": null,
+     "od": null,
+     "do": null,
+     "rodzaj_zmiany": "brzmienie_pierwotne",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2022/1692",
+      "przepis": "art. 2 ust. 8",
+      "cytat": "Dodatek węglowy dla gospodarstwa domowego, o którym mowa w ust. 1, wynosi 3000 złotych.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+      "data_stanu": "2024-09-04"
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2022/1692 art. 2 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2022/1692",
+      "przepis": "art. 2 ust. 1",
+      "cytat": "Dodatek węglowy przysługuje osobie w gospodarstwie domowym w przypadku, gdy głównym źródłem ogrzewania gospodarstwa domowego jest kocioł na paliwo stałe, kominek, koza, ogrzewacz powietrza, trzon kuchenny, piecokuchnia, kuchnia węglowa lub piec kaflowy na paliwo stałe, zasilane paliwami stałymi, wpisane lub zgłoszone do centralnej ewidencji emisyjności budynków, o której mowa w art. 27a ust. 1 ustawy z dnia 21 listopada 2008 r. o wspieraniu termomodernizacji i remontów oraz o centralnej ewidencji emisyjności budynków (Dz. U. z 2023 r. poz. 2496 oraz z 2024 r. poz. 1089), do dnia 11 sierpnia 2022 r., albo po tym dniu – w przypadku głównych źródeł ogrzewania wpisanych lub zgłoszonych po raz pierwszy do centralnej ewidencji emisyjności budynków, o których mowa w art. 27g ust. 1 tej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+      "data_stanu": "2024-09-04"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 2 ust. 8: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2022/1692",
+      "przepis": "art. 2 ust. 8",
+      "cytat": "Dodatek węglowy dla gospodarstwa domowego, o którym mowa w ust. 1, wynosi 3000 złotych.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+      "data_stanu": "2024-09-04"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "termin_wniosku",
+    "data": "2022-11-30",
+    "opis": "Wniosek o wypłatę dodatku węglowego składa się w terminie do dnia 30 listopada 2022 r.",
+    "skutek": "Wnioski o wypłatę dodatku węglowego złożone po dniu 30 listopada 2022 r. pozostawia się bez rozpoznania.",
+    "dowod": {
+     "eli": "DU/2022/1692",
+     "przepis": "art. 2 ust. 9",
+     "cytat": "w terminie do dnia 30 listopada 2022 r.",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+     "data_stanu": "2024-09-04"
+    }
+   },
+   {
+    "rodzaj": "termin_wyplaty",
+    "data": null,
+    "opis": "Dodatek węglowy wypłaca się w terminie do dwóch miesięcy od dnia złożenia wniosku o jego wypłatę.",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2022/1692",
+     "przepis": "art. 2 ust. 11",
+     "cytat": "w terminie do dwóch miesięcy od dnia złożenia wniosku o jego wypłatę",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+     "data_stanu": "2024-09-04"
+    },
+    "okres": "dwóch miesięcy",
+    "zdarzenie": "złożenia wniosku o jego wypłatę"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2022-08-12",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2024-09-04",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": []
+ },
+ {
+  "id": "DU-2023-1429-art2-ust1",
+  "slug": "swiadczenie-wspierajace",
+  "nazwa": "świadczenie wspierające",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": ":",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2023/1429",
+   "przepis": "art. 2 ust. 1",
+   "cytat": "Świadczenie wspierające przysługuje:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+   "data_stanu": "2026-07-07"
+  },
+  "ile": {
+   "rozwiazanie": "regula_procentowa",
+   "regula": {
+    "udzial": null,
+    "warianty": [
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 95 do 100 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "220 %"
+     },
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 90 do 94 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "180 %"
+     },
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 85 do 89 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "120 %"
+     },
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 80 do 84 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "80 %"
+     },
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 75 do 79 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "60 %"
+     },
+     {
+      "etykieta": "jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 70 do 74 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych",
+      "udzial": "40 %"
+     }
+    ],
+    "podstawa_id": "DU-2003-1268-art4-ust1",
+    "opis": "renty socjalnej"
+   },
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2023/1429 art. 2 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2023/1429",
+      "przepis": "art. 2 ust. 1",
+      "cytat": "Świadczenie wspierające przysługuje:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+      "data_stanu": "2026-07-07"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 4 ust. 1: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2023/1429",
+      "przepis": "art. 4 ust. 1",
+      "cytat": "Świadczenie wspierające przysługuje miesięcznie w wysokości:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+      "data_stanu": "2026-07-07"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "art. 4 ust. 1 pkt 1: wariant",
+     "dowod": {
+      "eli": "DU/2023/1429",
+      "przepis": "art. 4 ust. 1 pkt 1",
+      "cytat": "220 % renty socjalnej – jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 95 do 100 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+      "data_stanu": "2026-07-07"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "art. 4 ust. 1 pkt 2: wariant",
+     "dowod": {
+      "eli": "DU/2023/1429",
+      "przepis": "art. 4 ust. 1 pkt 2",
+      "cytat": "180 % renty socjalnej – jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 90 do 94 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+      "data_stanu": "2026-07-07"
+     }
+    },
+    {
+     "krok": 5,
+     "opis": "art. 4 ust. 1 pkt 3: wariant",
+     "dowod": {
+      "eli": "DU/2023/1429",
+      "przepis": "art. 4 ust. 1 pkt 3",
+      "cytat": "120 % renty socjalnej – jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 85 do 89 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+      "data_stanu": "2026-07-07"
+     }
+    },
+    {
+     "krok": 6,
+     "opis": "art. 4 ust. 1 pkt 4: wariant",
+     "dowod": {
+      "eli": "DU/2023/1429",
+      "przepis": "art. 4 ust. 1 pkt 4",
+      "cytat": "80 % renty socjalnej – jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 80 do 84 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+      "data_stanu": "2026-07-07"
+     }
+    },
+    {
+     "krok": 7,
+     "opis": "art. 4 ust. 1 pkt 5: wariant",
+     "dowod": {
+      "eli": "DU/2023/1429",
+      "przepis": "art. 4 ust. 1 pkt 5",
+      "cytat": "60 % renty socjalnej – jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 75 do 79 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+      "data_stanu": "2026-07-07"
+     }
+    },
+    {
+     "krok": 8,
+     "opis": "art. 4 ust. 1 pkt 6: wariant",
+     "dowod": {
+      "eli": "DU/2023/1429",
+      "przepis": "art. 4 ust. 1 pkt 6",
+      "cytat": "40 % renty socjalnej – jeżeli w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie od 70 do 74 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+      "data_stanu": "2026-07-07"
+     }
+    },
+    {
+     "krok": 9,
+     "opis": "podstawa reguły: korzyść renta socjalna (DU-2003-1268-art4-ust1)",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 4 ust. 1",
+      "cytat": "Renta socjalna przysługuje osobie pełnoletniej całkowicie niezdolnej do pracy z powodu naruszenia sprawności organizmu, które powstało:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "harmonogram_dostepnosci",
+    "data": "2025-01-01",
+    "opis": "art. 4 ust. 1 wchodzi w życie z dniem 1 stycznia 2025 r.",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2023/1429",
+     "przepis": "art. 71 pkt 1 lit. c",
+     "cytat": "wchodzą w życie z dniem 1 stycznia 2025 r.",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+     "data_stanu": "2026-07-07"
+    },
+    "etapy": [
+     {
+      "zakres": "pkt 3 – w zakresie osób, którym w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie 85 i 86 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy zmienianej w art. 39",
+      "od": "2025-01-01",
+      "dowod": {
+       "eli": "DU/2023/1429",
+       "przepis": "art. 71 pkt 1 lit. a",
+       "cytat": "pkt 3 – w zakresie osób, którym w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie 85 i 86 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy zmienianej w art. 39,",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+       "data_stanu": "2026-07-07"
+      }
+     },
+     {
+      "zakres": "pkt 4",
+      "od": "2025-01-01",
+      "dowod": {
+       "eli": "DU/2023/1429",
+       "przepis": "art. 71 pkt 1 lit. b",
+       "cytat": "pkt 4,",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+       "data_stanu": "2026-07-07"
+      }
+     },
+     {
+      "zakres": "pkt 5 – w zakresie osób, którym w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie 78 i 79 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy zmienianej w art. 39",
+      "od": "2025-01-01",
+      "dowod": {
+       "eli": "DU/2023/1429",
+       "przepis": "art. 71 pkt 1 lit. c",
+       "cytat": "pkt 5 – w zakresie osób, którym w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie 78 i 79 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy zmienianej w art. 39 – które wchodzą w życie z dniem 1 stycznia 2025 r.;",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+       "data_stanu": "2026-07-07"
+      }
+     }
+    ]
+   },
+   {
+    "rodzaj": "harmonogram_dostepnosci",
+    "data": "2026-01-01",
+    "opis": "art. 4 ust. 1 wchodzi w życie z dniem 1 stycznia 2026 r.",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2023/1429",
+     "przepis": "art. 71 pkt 2 lit. b",
+     "cytat": "wchodzą w życie z dniem 1 stycznia 2026 r.",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+     "data_stanu": "2026-07-07"
+    },
+    "etapy": [
+     {
+      "zakres": "pkt 5 – w zakresie osób, którym w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie 75–77 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy zmienianej w art. 39",
+      "od": "2026-01-01",
+      "dowod": {
+       "eli": "DU/2023/1429",
+       "przepis": "art. 71 pkt 2 lit. a",
+       "cytat": "pkt 5 – w zakresie osób, którym w decyzji ustalającej poziom potrzeby wsparcia potrzebę tę określono na poziomie 75–77 punktów w skali potrzeby wsparcia, o której mowa w art. 4b ust. 1 ustawy zmienianej w art. 39,",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+       "data_stanu": "2026-07-07"
+      }
+     },
+     {
+      "zakres": "pkt 6",
+      "od": "2026-01-01",
+      "dowod": {
+       "eli": "DU/2023/1429",
+       "przepis": "art. 71 pkt 2 lit. b",
+       "cytat": "pkt 6 – które wchodzą w życie z dniem 1 stycznia 2026 r.;",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+       "data_stanu": "2026-07-07"
+      }
+     }
+    ]
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2024-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [
+   {
+    "typ": "podstawa_reguly",
+    "id_korzysci": "DU-2003-1268-art4-ust1",
+    "cytat": "renty socjalnej"
+   }
+  ],
+  "stan": {
+   "data_stanu": "2026-07-07",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-1268-art4-ust1",
+  "slug": "renta-socjalna",
+  "nazwa": "renta socjalna",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "osobie pełnoletniej całkowicie niezdolnej do pracy z powodu naruszenia sprawności organizmu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/1268",
+   "przepis": "art. 4 ust. 1",
+   "cytat": "Renta socjalna przysługuje osobie pełnoletniej całkowicie niezdolnej do pracy z powodu naruszenia sprawności organizmu, które powstało:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "data_stanu": "2026-04-17"
+  },
+  "ile": {
+   "rozwiazanie": "regula_procentowa",
+   "regula": {
+    "udzial": "100 %",
+    "warianty": null,
+    "podstawa_id": null,
+    "opis": "kwoty najniższej renty z tytułu całkowitej niezdolności do pracy"
+   },
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/1268 art. 4 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 4 ust. 1",
+      "cytat": "Renta socjalna przysługuje osobie pełnoletniej całkowicie niezdolnej do pracy z powodu naruszenia sprawności organizmu, które powstało:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 6 ust. 1: klauzula wysokości (po nazwie, inny artykuł)",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 6 ust. 1",
+      "cytat": "Renta socjalna wynosi 100 % kwoty najniższej renty z tytułu całkowitej niezdolności do pracy ustalonej i podwyższonej zgodnie z ustawą o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "podstawa reguły w akcie DU/1998/1118",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 6 ust. 1",
+      "cytat": "ustawą o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "granica_przepisu",
+    "data": "2027-01-01",
+    "opis": "nowe brzmienie art. 5 od 2027-01-01",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2003/1268",
+     "przepis": "art. 5 ust. 1",
+     "cytat": "Nowe brzmienie art. 5 wejdzie w życie z dn. 1.01.2027 r. (Dz. U. z 2026 r. poz. 26).",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+     "data_stanu": "2026-04-17"
+    },
+    "przepis": "art. 5"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2003-10-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-04-17",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "regula.podstawa",
+    "powod": "podstawa reguły w akcie spoza pilotażu (DU/1998/1118)"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-1268-art4-ust3",
+  "slug": "renta-socjalna-okresowa",
+  "nazwa": "renta socjalna okresowa",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "przez okres wskazany w decyzji jednostki organizacyjnej Zakładu Ubezpieczeń Społecznych",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/1268",
+   "przepis": "art. 4 ust. 3",
+   "cytat": "Renta socjalna okresowa przysługuje przez okres wskazany w decyzji jednostki organizacyjnej Zakładu Ubezpieczeń Społecznych, zwanego dalej „Zakładem”.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "data_stanu": "2026-04-17"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/1268 art. 4 ust. 3: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 4 ust. 3",
+      "cytat": "Renta socjalna okresowa przysługuje przez okres wskazany w decyzji jednostki organizacyjnej Zakładu Ubezpieczeń Społecznych, zwanego dalej „Zakładem”.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2003-10-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-04-17",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-1268-art6a-ust1",
+  "slug": "dodatek-dopelniajacy",
+  "nazwa": "dodatek dopełniający",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc",
+   "edukacja"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/1268",
+   "przepis": "art. 6a ust. 1",
+   "cytat": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, przysługuje dodatek dopełniający w wysokości 2520 zł.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "data_stanu": "2026-04-17"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "2704,71 zł",
+    "warianty": null,
+    "od": "2026-03-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "2520 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "2610,72 zł",
+     "warianty": null,
+     "od": "2025-03-01",
+     "do": "2026-02-28",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "MP/2025/133",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2025 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2610,72 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/133",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "2704,71 zł",
+     "warianty": null,
+     "od": "2026-03-01",
+     "do": null,
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "2610,72 zł",
+     "roznica": {
+      "kwota": "+93,99 zł",
+      "procent": "+3,60%"
+     },
+     "dowod": {
+      "eli": "MP/2026/153",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2704,71 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/1268 art. 6a ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 6a ust. 1",
+      "cytat": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, przysługuje dodatek dopełniający w wysokości 2520 zł.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 6a ust. 1: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 6a ust. 1",
+      "cytat": "przysługuje dodatek dopełniający w wysokości 2520 zł.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "przypis 1: Aktualną zwaloryzowaną kwotę dodatku dopełniającego ogłasza Prezes Zakładu Ubezp",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 6a ust. 1",
+      "cytat": "Aktualną zwaloryzowaną kwotę dodatku dopełniającego ogłasza Prezes Zakładu Ubezpieczeń Społecznych na podstawie art. 6a ust. 8 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "MP/2026/153: podstawa prawna (art. 6a ust. 8)",
+     "dowod": {
+      "eli": "MP/2026/153",
+      "przepis": "podstawa",
+      "cytat": "Na podstawie art. 6a ust. 8 ustawy z dnia 27 czerwca 2003 r. o rencie socjalnej (Dz. U. z 2025 r. poz. 420 i 619 oraz z 2026 r. poz. 26) ogłasza się, że",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+      "data_stanu": null
+     }
+    },
+    {
+     "krok": 5,
+     "opis": "MP/2026/153: kwota od 2026-03-01",
+     "dowod": {
+      "eli": "MP/2026/153",
+      "przepis": "tresc",
+      "cytat": "od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2704,71 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 2704,71 zł od 2026-03-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "MP/2026/153",
+     "przepis": "tresc",
+     "cytat": "od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2704,71 zł",
+     "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+     "data_stanu": null
+    },
+    "od": "2026-03-01"
+   },
+   {
+    "rodzaj": "granica_przepisu",
+    "data": "2027-01-01",
+    "opis": "nowe brzmienie art. 5 od 2027-01-01",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2003/1268",
+     "przepis": "art. 5 ust. 1",
+     "cytat": "Nowe brzmienie art. 5 wejdzie w życie z dn. 1.01.2027 r. (Dz. U. z 2026 r. poz. 26).",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+     "data_stanu": "2026-04-17"
+    },
+    "przepis": "art. 5"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2003-10-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-04-17",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "kwota_podejrzana"
+  ]
+ },
+ {
+  "id": "DU-2003-1268-art8-ust3",
+  "slug": "renty-rodzinnej",
+  "nazwa": "renty rodzinnej",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy",
+  "opis_prosty": null,
+  "sytuacje": [
+   "mieszkanie_energia"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/1268",
+   "przepis": "art. 8 ust. 3",
+   "cytat": "Osobie, o której mowa w ust. 2, samotnie gospodarującej, nieposiadającej innego przychodu i niemającej prawa do renty rodzinnej, która jest właścicielem lokalu mieszkalnego (domu jednorodzinnego), której przysługuje spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy, innych jednostek samorządu terytorialnego albo stanowiącego własność Skarbu Państwa lub państwowych osób prawnych, może być wypłacane 50 % kwoty renty socjalnej oraz 50 % kwoty dodatku dopełniającego, jeżeli zobowiąże się pisemnie, że z kwoty tej będzie dokonywała opłat z tytułu czynszu lub innych należności za lokal mieszkalny (dom jednorodzinny), a w lokalu (domu jednorodzinnym) nie przebywają inne osoby.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "data_stanu": "2026-04-17"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/1268 art. 8 ust. 3: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 8 ust. 3",
+      "cytat": "Osobie, o której mowa w ust. 2, samotnie gospodarującej, nieposiadającej innego przychodu i niemającej prawa do renty rodzinnej, która jest właścicielem lokalu mieszkalnego (domu jednorodzinnego), której przysługuje spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy, innych jednostek samorządu terytorialnego albo stanowiącego własność Skarbu Państwa lub państwowych osób prawnych, może być wypłacane 50 % kwoty renty socjalnej oraz 50 % kwoty dodatku dopełniającego, jeżeli zobowiąże się pisemnie, że z kwoty tej będzie dokonywała opłat z tytułu czynszu lub innych należności za lokal mieszkalny (dom jednorodzinny), a w lokalu (domu jednorodzinnym) nie przebywają inne osoby.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2003-10-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-04-17",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-1268-art12a-ust1",
+  "slug": "zasilek-pogrzebowy",
+  "nazwa": "zasiłek pogrzebowy",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "W razie śmierci osoby pobierającej rentę socjalną",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/1268",
+   "przepis": "art. 12a ust. 1",
+   "cytat": "W razie śmierci osoby pobierającej rentę socjalną przysługuje zasiłek pogrzebowy, na zasadach i w wysokości określonych w przepisach o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych, o ile zasiłek pogrzebowy lub świadczenie w wysokości zasiłku pogrzebowego nie przysługuje z innego tytułu.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "data_stanu": "2026-04-17"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/1268 art. 12a ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 12a ust. 1",
+      "cytat": "W razie śmierci osoby pobierającej rentę socjalną przysługuje zasiłek pogrzebowy, na zasadach i w wysokości określonych w przepisach o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych, o ile zasiłek pogrzebowy lub świadczenie w wysokości zasiłku pogrzebowego nie przysługuje z innego tytułu.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2003-10-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-04-17",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "odesłanie kwoty bez celu w grafie"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2016-195-art4-ust2",
+  "slug": "swiadczenie-wychowawcze",
+  "nazwa": "świadczenie wychowawcze",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": ":",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "niepelnosprawnosc"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2016/195",
+   "przepis": "art. 4 ust. 2",
+   "cytat": "Świadczenie wychowawcze przysługuje:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2016/195",
+   "data_stanu": "2026-04-27"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_w_ustawie",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "800,00 zł",
+    "warianty": null,
+    "od": null,
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "800,00 zł",
+     "warianty": null,
+     "od": null,
+     "do": null,
+     "rodzaj_zmiany": "brzmienie_pierwotne",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2016/195",
+      "przepis": "art. 5 ust. 1",
+      "cytat": "Świadczenie wychowawcze przysługuje osobom, o których mowa w art. 4 ust. 2, w wysokości 800,00 zł miesięcznie na dziecko.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2016/195",
+      "data_stanu": "2026-04-27"
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2016/195 art. 4 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2016/195",
+      "przepis": "art. 4 ust. 2",
+      "cytat": "Świadczenie wychowawcze przysługuje:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2016/195",
+      "data_stanu": "2026-04-27"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 5 ust. 1: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2016/195",
+      "przepis": "art. 5 ust. 1",
+      "cytat": "Świadczenie wychowawcze przysługuje osobom, o których mowa w art. 4 ust. 2, w wysokości 800,00 zł miesięcznie na dziecko.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2016/195",
+      "data_stanu": "2026-04-27"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_zasilkowy",
+    "data": null,
+    "opis": "Prawo do świadczenia wychowawczego ustalane jest na okres od dnia 1 czerwca do dnia 31 maja roku następnego",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2016/195",
+     "przepis": "art. 18 ust. 1",
+     "cytat": "Prawo do świadczenia wychowawczego ustalane jest na okres od dnia 1 czerwca do dnia 31 maja roku następnego",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2016/195",
+     "data_stanu": "2026-04-27"
+    }
+   },
+   {
+    "rodzaj": "termin_wniosku",
+    "data": null,
+    "opis": "Jeżeli w terminie 3 miesięcy, licząc od dnia śmierci rodzica, opiekuna prawnego dziecka, opiekuna faktycznego dziecka, dyrektora domu pomocy społecznej, rodzica zastępczego, osoby prowadzącej rodzinny dom dziecka, dyrektora placówki opiekuńczo-wychowawczej, dyrektora regionalnej placówki opiekuńczoterapeutycznej albo dyrektora interwencyjnego ośrodka preadopcyjnego, którym zostało przyznane świadczenie wychowawcze, drugi rodzic, opiekun prawny dziecka, opiekun faktyczny dziecka, dyrektor domu pomocy społecznej, rodzic zastępczy, osoba prowadząca rodzinny dom dziecka, dyrektor placówki opiekuńczowychowawczej, dyrektor regionalnej placówki opiekuńczo-terapeutycznej albo dyrektor interwencyjnego ośrodka preadopcyjnego złoży wniosek o ustalenie prawa do świadczenia wychowawczego na dane dziecko, prawo to ustala się, począwszy od dnia śmierci rodzica, opiekuna prawnego dziecka, opiekuna faktycznego dziecka, dyrektora domu pomocy społecznej, rodzica zastępczego, osoby prowadzącej rodzinny dom dziecka, dyrektora placówki opiekuńczo-wychowawczej, dyrektora regionalnej placówki opiekuńczo-terapeutycznej albo dyrektora interwencyjnego ośrodka preadopcyjnego, niewcześniej jednak niż od pierwszego dnia miesiąca następującego po ostatnim miesiącu, za który zmarłemu rodzicowi, opiekunowi prawnemu dziecka, opiekunowi faktycznemu dziecka, dyrektorowi domu pomocy społecznej, rodzicowi zastępczemu, osobie prowadzącej rodzinny dom dziecka, dyrektorowi placówki opiekuńczo-wychowawczej, dyrektorowi regionalnej placówki opiekuńczo-terapeutycznej albo dyrektorowi interwencyjnego ośrodka preadopcyjnego wypłacono ostatnie świadczenie wychowawcze.",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2016/195",
+     "przepis": "art. 18 ust. 2b",
+     "cytat": "w terminie 3 miesięcy, licząc od dnia śmierci rodzica, opiekuna prawnego dziecka, opiekuna faktyczneg",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2016/195",
+     "data_stanu": "2026-04-27"
+    },
+    "okres": "3 miesięcy",
+    "zdarzenie": "śmierci rodzica"
+   },
+   {
+    "rodzaj": "termin_wniosku",
+    "data": null,
+    "opis": "Jeżeli w terminie 3 miesięcy, licząc od dnia śmierci rodzica, opiekuna prawnego dziecka, opiekuna faktycznego dziecka, dyrektora domu pomocy społecznej, rodzica zastępczego, osoby prowadzącej rodzinny dom dziecka, dyrektora placówki opiekuńczo-wychowawczej, dyrektora regionalnej placówki opiekuńczoterapeutycznej albo dyrektora interwencyjnego ośrodka preadopcyjnego, z wniosku których toczyło się postępowanie o ustalenie prawa do świadczenia wychowawczego, i postępowanie to nie zostało jeszcze zakończone, drugi rodzic, opiekun prawny dziecka, opiekun faktyczny dziecka, rodzic zastępczy, dyrektor domu pomocy społecznej, osoba prowadząca rodzinny dom dziecka, dyrektor placówki opiekuńczowychowawczej, dyrektor regionalnej placówki opiekuńczo-terapeutycznej albo dyrektor interwencyjnego ośrodka preadopcyjnego złoży wniosek o ustalenie prawa do świadczenia wychowawczego na dane dziecko, prawo to ustala się drugiemu rodzicowi, opiekunowi prawnemu dziecka, opiekunowi faktycznemu dziecka, dyrektorowi domu pomocy społecznej, rodzicowi zastępczemu, osobie prowadzącej rodzinny dom dziecka, dyrektorowi placówki opiekuńczo-wychowawczej, dyrektorowi regionalnej placówki opiekuńczo-terapeutycznej albo dyrektorowi interwencyjnego ośrodka preadopcyjnego, przyjmując za datę złożenia wniosku datę złożenia wniosku przez zmarłego rodzica, opiekuna prawnego dziecka, opiekuna faktycznego dziecka, dyrektora domu pomocy społecznej, rodzica zastępczego, osobę prowadzącą rodzinny dom dziecka, dyrektora placówki opiekuńczo-wychowawczej, dyrektora regionalnej placówki opiekuńczo-terapeutycznej albo dyrektora interwencyjnego ośrodka preadopcyjnego.",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2016/195",
+     "przepis": "art. 18 ust. 2c",
+     "cytat": "w terminie 3 miesięcy, licząc od dnia śmierci rodzica, opiekuna prawnego dziecka, opiekuna faktyczneg",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2016/195",
+     "data_stanu": "2026-04-27"
+    },
+    "okres": "3 miesięcy",
+    "zdarzenie": "śmierci rodzica"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2016-04-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2016/195",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-04-27",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-2255-art1-ust2",
+  "slug": "swiadczenia-rodzinne",
+  "nazwa": "świadczenia rodzinne",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": ":",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "ciaza_porod"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 1 ust. 2",
+   "cytat": "Świadczenia rodzinne przysługują:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 1 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 1 ust. 2",
+      "cytat": "Świadczenia rodzinne przysługują:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_zasilkowy",
+    "data": null,
+    "opis": "okresie zasiłkowym – oznacza to okres od dnia 1 listopada do dnia 31 października",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2003/2255",
+     "przepis": "art. 3 pkt 10",
+     "cytat": "okresie zasiłkowym – oznacza to okres od dnia 1 listopada do dnia 31 października",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+     "data_stanu": "2026-10-12"
+    }
+   },
+   {
+    "rodzaj": "termin_wyplaty",
+    "data": "2004-06-15",
+    "opis": "Świadczenia rodzinne przysługujące za maj 2004 r. wypłaca się niepóźniej niż do dnia 15 czerwca 2004 r.",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2003/2255",
+     "przepis": "art. 48b",
+     "cytat": "do dnia 15 czerwca 2004 r.",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+     "data_stanu": "2026-10-12"
+    }
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-2255-art17-ust1",
+  "slug": "swiadczenie-pielegnacyjne",
+  "nazwa": "świadczenie pielęgnacyjne",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": ":",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "niepelnosprawnosc",
+   "opieka_nad_bliskim"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 17 ust. 1",
+   "cytat": "Świadczenie pielęgnacyjne przysługuje:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "3386,00 zł",
+    "warianty": null,
+    "od": "2026-01-01",
+    "do": "2026-12-31"
+   },
+   "kwota_ustawowa_zastapiona": "1300,00 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "520,00 zł",
+     "warianty": null,
+     "od": "2012-11-01",
+     "do": null,
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość świadczenia pielęgnacyjnego, o którym mowa w art. 17 ustawy, wynosi 520,00 zł miesięcznie.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1406,00 zł",
+     "warianty": null,
+     "od": "2017-01-01",
+     "do": "2017-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "MP/2016/1103",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2017 wynosi 1406,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/1103",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1477,00 zł",
+     "warianty": null,
+     "od": "2018-01-01",
+     "do": "2018-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "1406,00 zł",
+     "roznica": {
+      "kwota": "+71,00 zł",
+      "procent": "+5,05%"
+     },
+     "dowod": {
+      "eli": "MP/2017/1014",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2018 wynosi 1477,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2017/1014",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1583,00 zł",
+     "warianty": null,
+     "od": "2019-01-01",
+     "do": "2019-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "1477,00 zł",
+     "roznica": {
+      "kwota": "+106,00 zł",
+      "procent": "+7,18%"
+     },
+     "dowod": {
+      "eli": "MP/2018/1099",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2019 wynosi 1583,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2018/1099",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1830,00 zł",
+     "warianty": null,
+     "od": "2020-01-01",
+     "do": "2020-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "1583,00 zł",
+     "roznica": {
+      "kwota": "+247,00 zł",
+      "procent": "+15,60%"
+     },
+     "dowod": {
+      "eli": "MP/2019/1067",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2020 wynosi 1830,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2019/1067",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1971,00 zł",
+     "warianty": null,
+     "od": "2021-01-01",
+     "do": "2021-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "1830,00 zł",
+     "roznica": {
+      "kwota": "+141,00 zł",
+      "procent": "+7,70%"
+     },
+     "dowod": {
+      "eli": "MP/2020/1031",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2021 wynosi 1971,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2020/1031",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "2119,00 zł",
+     "warianty": null,
+     "od": "2022-01-01",
+     "do": "2022-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "1971,00 zł",
+     "roznica": {
+      "kwota": "+148,00 zł",
+      "procent": "+7,51%"
+     },
+     "dowod": {
+      "eli": "MP/2021/1021",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2022 wynosi 2119,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2021/1021",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "2458,00 zł",
+     "warianty": null,
+     "od": "2023-01-01",
+     "do": "2023-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "2119,00 zł",
+     "roznica": {
+      "kwota": "+339,00 zł",
+      "procent": "+16,00%"
+     },
+     "dowod": {
+      "eli": "MP/2022/1070",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2023 wynosi 2458,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2022/1070",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "2988 zł",
+     "warianty": null,
+     "od": "2024-01-01",
+     "do": "2024-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "2458,00 zł",
+     "roznica": {
+      "kwota": "+530,00 zł",
+      "procent": "+21,56%"
+     },
+     "dowod": {
+      "eli": "MP/2023/1224",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2024 wynosi 2988 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2023/1224",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "3287 zł",
+     "warianty": null,
+     "od": "2025-01-01",
+     "do": "2025-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "2988 zł",
+     "roznica": {
+      "kwota": "+299,00 zł",
+      "procent": "+10,01%"
+     },
+     "dowod": {
+      "eli": "MP/2024/967",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2025 wynosi 3287 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/967",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "3386,00 zł",
+     "warianty": null,
+     "od": "2026-01-01",
+     "do": "2026-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "3287 zł",
+     "roznica": {
+      "kwota": "+99,00 zł",
+      "procent": "+3,01%"
+     },
+     "dowod": {
+      "eli": "MP/2025/1127",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2026 wynosi 3386,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 17 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 17 ust. 1",
+      "cytat": "Świadczenie pielęgnacyjne przysługuje:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 17 ust. 3: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 17 ust. 3",
+      "cytat": "Świadczenie pielęgnacyjne przysługuje w wysokości 1300,00 zł miesięcznie.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "przypis 6: Wysokość świadczenia pielęgnacyjnego jest ustalana na podstawie art. 17 niniejsz",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 17 ust. 3",
+      "cytat": "Wysokość świadczenia pielęgnacyjnego jest ustalana na podstawie art. 17 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "MP/2025/1127: podstawa prawna (art. 17 ust. 3d)",
+     "dowod": {
+      "eli": "MP/2025/1127",
+      "przepis": "podstawa",
+      "cytat": "Na podstawie art. 17 ust. 3d ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych (Dz. U. z 2025 r. poz. 1208) ogłasza się, że",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
+      "data_stanu": null
+     }
+    },
+    {
+     "krok": 5,
+     "opis": "MP/2025/1127: kwota od 2026-01-01",
+     "dowod": {
+      "eli": "MP/2025/1127",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2026 wynosi 3386,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 3386,00 zł od 2026-01-01 do 2026-12-31",
+    "skutek": null,
+    "dowod": {
+     "eli": "MP/2025/1127",
+     "przepis": "tresc",
+     "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2026 wynosi 3386,00 zł",
+     "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
+     "data_stanu": null
+    },
+    "od": "2026-01-01",
+    "do": "2026-12-31"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "kwota_podejrzana",
+   "koniec_nieustalony"
+  ]
+ },
+ {
+  "id": "DU-2003-2255-art5-ust1",
+  "slug": "zasilek-rodzinny",
+  "nazwa": "zasiłek rodzinny",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "osobom",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "niepelnosprawnosc",
+   "niski_dochod",
+   "edukacja"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 5 ust. 1",
+   "cytat": "Zasiłek rodzinny przysługuje osobom, o których mowa w art. 4 ust. 2, jeżeli dochód rodziny w przeliczeniu na osobę albo dochód osoby uczącej się nie przekracza kwoty 504,00 zł.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": null,
+    "warianty": [
+     {
+      "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+      "wartosc": "95,00 zł"
+     },
+     {
+      "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia",
+      "wartosc": "124,00 zł"
+     },
+     {
+      "etykieta": "na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia",
+      "wartosc": "135,00 zł"
+     }
+    ],
+    "od": "2024-11-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "44,00 zł, 56,00 zł, 65,00 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "77,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia",
+       "wartosc": "106,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia",
+       "wartosc": "115,00 zł"
+      }
+     ],
+     "od": "2012-11-01",
+     "do": "2015-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 77,00 zł na dziecko w wieku do ukończenia 5 roku życia, b) 106,00 zł na dziecko w wieku powyżej 5 roku życia do ukończenia 18 roku życia, c) 115,00 zł na dziecko w wieku powyżej 18 roku życia do ukończenia 24 roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "89,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia",
+       "wartosc": "118,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia",
+       "wartosc": "129,00 zł"
+      }
+     ],
+     "od": "2015-11-01",
+     "do": "2016-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": [
+      "77,00 zł",
+      "106,00 zł",
+      "115,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 89,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 118,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 129,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "95,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia",
+       "wartosc": "124,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia",
+       "wartosc": "135,00 zł"
+      }
+     ],
+     "od": "2016-11-01",
+     "do": "2017-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": [
+      "89,00 zł",
+      "118,00 zł",
+      "129,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 95,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 124,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 135,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "95,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia",
+       "wartosc": "124,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia",
+       "wartosc": "135,00 zł"
+      }
+     ],
+     "od": "2017-11-01",
+     "do": "2018-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "95,00 zł",
+      "124,00 zł",
+      "135,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2017/1428",
+      "przepis": "art_32-okres_134728",
+      "cytat": "1) wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy zmienianej w art. 6, wynosi miesięcznie: a) 95,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 124,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 135,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2017/1428",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "95,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia",
+       "wartosc": "124,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia",
+       "wartosc": "135,00 zł"
+      }
+     ],
+     "od": "2018-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "95,00 zł",
+      "124,00 zł",
+      "135,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_1",
+      "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 95,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 124,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 135,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "95,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia",
+       "wartosc": "124,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia",
+       "wartosc": "135,00 zł"
+      }
+     ],
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "95,00 zł",
+      "124,00 zł",
+      "135,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 95,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 124,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 135,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "95,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia",
+       "wartosc": "124,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia",
+       "wartosc": "135,00 zł"
+      }
+     ],
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "95,00 zł",
+      "124,00 zł",
+      "135,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 95,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 124,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 135,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [
+    {
+     "przepis": "arti_5-pass_1",
+     "wpisy": [
+      {
+       "wartosc": "539,00 zł",
+       "warianty": null,
+       "od": "2012-11-01",
+       "do": "2014-10-31",
+       "rodzaj_zmiany": "pierwszy_znany_wpis",
+       "poprzednia": null,
+       "roznica": null,
+       "dowod": {
+        "eli": "DU/2012/959",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 1 ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych, zwanej dalej „ustawą”, wynosi 539,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "574,00 zł",
+       "warianty": null,
+       "od": "2014-11-01",
+       "do": "2015-10-31",
+       "rodzaj_zmiany": "akt_wykonawczy",
+       "poprzednia": "539,00 zł",
+       "roznica": {
+        "kwota": "+35,00 zł",
+        "procent": "+6,49%"
+       },
+       "dowod": {
+        "eli": "DU/2012/959",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 1 ustawy, wynosi 574,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "674,00 zł",
+       "warianty": null,
+       "od": "2015-11-01",
+       "do": "2017-10-31",
+       "rodzaj_zmiany": "akt_wykonawczy",
+       "poprzednia": "574,00 zł",
+       "roznica": {
+        "kwota": "+100,00 zł",
+        "procent": "+17,42%"
+       },
+       "dowod": {
+        "eli": "DU/2015/1238",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 1 ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych, zwanej dalej „ustawą”, wynosi 674,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "674,00 zł",
+       "warianty": null,
+       "od": "2017-11-01",
+       "do": "2018-10-31",
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "674,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2017/1428",
+        "przepis": "art_32-okres_134474",
+        "cytat": "1) wysokość kwoty, o której mowa w art. 5 ust. 1 ustawy zmienianej w art. 6, wynosi 674,00 zł",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2017/1428",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "674,00 zł",
+       "warianty": null,
+       "od": "2018-11-01",
+       "do": "2021-10-31",
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "674,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2018/1497",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 1 ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych, zwanej dalej „ustawą”, wynosi 674,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "674,00 zł",
+       "warianty": null,
+       "od": "2021-11-01",
+       "do": "2024-10-31",
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "674,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2021/1481",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 1 ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych, zwanej dalej „ustawą”, wynosi 674,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "674,00 zł",
+       "warianty": null,
+       "od": "2024-11-01",
+       "do": null,
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "674,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2024/1238",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 1 ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych, zwanej dalej „ustawą”, wynosi 674,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+        "data_stanu": null
+       }
+      }
+     ]
+    },
+    {
+     "przepis": "arti_5-pass_2",
+     "wpisy": [
+      {
+       "wartosc": "623,00 zł",
+       "warianty": null,
+       "od": "2012-11-01",
+       "do": "2014-10-31",
+       "rodzaj_zmiany": "pierwszy_znany_wpis",
+       "poprzednia": null,
+       "roznica": null,
+       "dowod": {
+        "eli": "DU/2012/959",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 2 ustawy, wynosi 623,00 zł. 2.",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "664,00 zł",
+       "warianty": null,
+       "od": "2014-11-01",
+       "do": "2015-10-31",
+       "rodzaj_zmiany": "akt_wykonawczy",
+       "poprzednia": "623,00 zł",
+       "roznica": {
+        "kwota": "+41,00 zł",
+        "procent": "+6,58%"
+       },
+       "dowod": {
+        "eli": "DU/2012/959",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 2 ustawy, wynosi 664,00 zł.",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "764,00 zł",
+       "warianty": null,
+       "od": "2015-11-01",
+       "do": "2017-10-31",
+       "rodzaj_zmiany": "akt_wykonawczy",
+       "poprzednia": "664,00 zł",
+       "roznica": {
+        "kwota": "+100,00 zł",
+        "procent": "+15,06%"
+       },
+       "dowod": {
+        "eli": "DU/2015/1238",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 2 ustawy, wynosi 764,00 zł. 2.",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "764,00 zł",
+       "warianty": null,
+       "od": "2017-11-01",
+       "do": "2018-10-31",
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "764,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2017/1428",
+        "przepis": "art_32-okres_134474",
+        "cytat": "2) wysokość kwoty, o której mowa w art. 5 ust. 2 ustawy zmienianej w art. 6, wynosi 764,00 zł",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2017/1428",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "764,00 zł",
+       "warianty": null,
+       "od": "2018-11-01",
+       "do": "2021-10-31",
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "764,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2018/1497",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 2 ustawy, wynosi 764,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "764,00 zł",
+       "warianty": null,
+       "od": "2021-11-01",
+       "do": "2024-10-31",
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "764,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2021/1481",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 2 ustawy, wynosi 764,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "764,00 zł",
+       "warianty": null,
+       "od": "2024-11-01",
+       "do": null,
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "764,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2024/1238",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 5 ust. 2 ustawy, wynosi 764,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+        "data_stanu": null
+       }
+      }
+     ]
+    }
+   ],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 5 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 5 ust. 1",
+      "cytat": "Zasiłek rodzinny przysługuje osobom, o których mowa w art. 4 ust. 2, jeżeli dochód rodziny w przeliczeniu na osobę albo dochód osoby uczącej się nie przekracza kwoty 504,00 zł.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 6 ust. 2: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 6 ust. 2",
+      "cytat": "Wysokość zasiłku rodzinnego wynosi miesięcznie:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "art. 6 ust. 2 pkt 1: wariant",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 6 ust. 2 pkt 1",
+      "cytat": "44,00 zł na dziecko w wieku do ukończenia 5. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "art. 6 ust. 2 pkt 2: wariant",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 6 ust. 2 pkt 2",
+      "cytat": "56,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 5,
+     "opis": "art. 6 ust. 2 pkt 3: wariant",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 6 ust. 2 pkt 3",
+      "cytat": "65,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 6,
+     "opis": "przypis 4: Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej usta",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 6 ust. 2 pkt 1",
+      "cytat": "Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 7,
+     "opis": "przypis 4: Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej usta",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 6 ust. 2 pkt 2",
+      "cytat": "Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 8,
+     "opis": "przypis 4: Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej usta",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 6 ust. 2 pkt 3",
+      "cytat": "Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 9,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 95,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 124,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 135,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 95,00 zł, 124,00 zł, 135,00 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 95,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 124,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 135,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "anomalia_spadek",
+   "kwota_podejrzana"
+  ]
+ },
+ {
+  "id": "DU-2003-2255-art9-ust1",
+  "slug": "dodatek-z-tytulu-urodzenia-dziecka",
+  "nazwa": "dodatek z tytułu urodzenia dziecka",
+  "rodzaj_korzysci": "swiadczenie_jednorazowe",
+  "status": "obowiazuje",
+  "komu": "matce lub ojcu albo opiekunowi prawnemu dziecka",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "ciaza_porod"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 9 ust. 1",
+   "cytat": "Dodatek z tytułu urodzenia dziecka przysługuje matce lub ojcu albo opiekunowi prawnemu dziecka.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "1000,00 zł",
+    "warianty": null,
+    "od": "2024-11-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "1000,00 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2012-11-01",
+     "do": "2015-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu urodzenia dziecka, o którym mowa w art. 9 ustawy, wynosi 1000,00 zł;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2015-11-01",
+     "do": "2018-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "1000,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_3",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu urodzenia dziecka, o którym mowa w art. 9 ustawy, wynosi 1000,00 zł;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2018-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "1000,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu urodzenia dziecka, o którym mowa w art. 9 ustawy, wynosi 1000,00 zł;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "1000,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu urodzenia dziecka, o którym mowa w art. 9 ustawy, wynosi 1000,00 zł;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "1000,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu urodzenia dziecka, o którym mowa w art. 9 ustawy, wynosi 1000,00 zł;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 9 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 9 ust. 1",
+      "cytat": "Dodatek z tytułu urodzenia dziecka przysługuje matce lub ojcu albo opiekunowi prawnemu dziecka.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 9 ust. 3: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 9 ust. 3",
+      "cytat": "Dodatek przysługuje jednorazowo, w wysokości 1000,00 zł.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu urodzenia dziecka, o którym mowa w art. 9 ustawy, wynosi 1000,00 zł;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 1000,00 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu urodzenia dziecka, o którym mowa w art. 9 ustawy, wynosi 1000,00 zł;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-2255-art10-ust1",
+  "slug": "dodatek-z-tytulu-opieki-nad-dzieckiem-w-okresie-korzystania-z-urlopu-wychowawczego",
+  "nazwa": "dodatek z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "matce lub ojcu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 10 ust. 1",
+   "cytat": "Dodatek z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego przysługuje matce lub ojcu, opiekunowi faktycznemu dziecka albo opiekunowi prawnemu dziecka, jeżeli dziecko pozostaje pod jego faktyczną opieką, uprawnionemu do urlopu wychowawczego, niedłużej jednak niż przez okres:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "400,00 zł",
+    "warianty": null,
+    "od": "2024-11-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "400,00 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "400,00 zł",
+     "warianty": null,
+     "od": "2012-11-01",
+     "do": "2015-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego, o którym mowa w art. 10 ustawy, wynosi 400,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "400,00 zł",
+     "warianty": null,
+     "od": "2015-11-01",
+     "do": "2018-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "400,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_3",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego, o którym mowa w art. 10 ustawy, wynosi 400,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "400,00 zł",
+     "warianty": null,
+     "od": "2018-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "400,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego, o którym mowa w art. 10 ustawy, wynosi 400,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "400,00 zł",
+     "warianty": null,
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "400,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego, o którym mowa w art. 10 ustawy, wynosi 400,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "400,00 zł",
+     "warianty": null,
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "400,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego, o którym mowa w art. 10 ustawy, wynosi 400,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 10 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 10 ust. 1",
+      "cytat": "Dodatek z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego przysługuje matce lub ojcu, opiekunowi faktycznemu dziecka albo opiekunowi prawnemu dziecka, jeżeli dziecko pozostaje pod jego faktyczną opieką, uprawnionemu do urlopu wychowawczego, niedłużej jednak niż przez okres:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 10 ust. 2: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 10 ust. 2",
+      "cytat": "przysługuje jeden dodatek w wysokości 400,00 zł miesięcznie niezależnie od liczby dzieci pozostających pod jej opieką.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego, o którym mowa w art. 10 ustawy, wynosi 400,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 400,00 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego, o którym mowa w art. 10 ustawy, wynosi 400,00 zł miesięcznie;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-2255-art11a-ust1",
+  "slug": "dodatek-z-tytulu-samotnego-wychowywania-dziecka",
+  "nazwa": "dodatek z tytułu samotnego wychowywania dziecka",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "samotnie wychowującym dziecko matce lub ojcu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "edukacja"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 11a ust. 1",
+   "cytat": "Dodatek z tytułu samotnego wychowywania dziecka przysługuje samotnie wychowującym dziecko matce lub ojcu, opiekunowi faktycznemu dziecka albo opiekunowi prawnemu dziecka, jeżeli nie zostało zasądzone świadczenie alimentacyjne na rzecz dziecka od drugiego z rodziców dziecka, ponieważ:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": null,
+    "warianty": [
+     {
+      "etykieta": null,
+      "wartosc": "193,00 zł"
+     },
+     {
+      "etykieta": null,
+      "wartosc": "386,00 zł"
+     }
+    ],
+    "od": "2024-11-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "170,00 zł, 340,00 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "170,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "340,00 zł"
+      }
+     ],
+     "od": "2012-11-01",
+     "do": "2015-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka, o którym mowa w art. 11a ustawy, wynosi 170,00 zł miesięcznie na dziecko, nie więcej jednak niż 340,00 zł na wszystkie dzieci;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "185,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "370,00 zł"
+      }
+     ],
+     "od": "2015-11-01",
+     "do": "2016-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": [
+      "170,00 zł",
+      "340,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka, o którym mowa w art. 11a ustawy, wynosi 185,00 zł miesięcznie na dziecko, nie więcej jednak niż 370,00 zł na wszystkie dzieci;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "193,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "386,00 zł"
+      }
+     ],
+     "od": "2016-11-01",
+     "do": "2017-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": [
+      "185,00 zł",
+      "370,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka, o którym mowa w art. 11a ustawy, wynosi 193,00 zł miesięcznie na dziecko, nie więcej jednak niż 386,00 zł na wszystkie dzieci;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "193,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "386,00 zł"
+      }
+     ],
+     "od": "2017-11-01",
+     "do": "2018-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "193,00 zł",
+      "386,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2017/1428",
+      "przepis": "art_32-okres_134728",
+      "cytat": "2) wysokość dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka, o którym mowa w art. 11a ustawy zmienianej w art. 6, wynosi 193,00 zł miesięcznie na dziecko, nie więcej jednak niż 386,00 zł na wszystkie dzieci",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2017/1428",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "193,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "386,00 zł"
+      }
+     ],
+     "od": "2018-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "193,00 zł",
+      "386,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka, o którym mowa w art. 11a ustawy, wynosi 193,00 zł miesięcznie na dziecko, nie więcej jednak niż 386,00 zł na wszystkie dzieci;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "193,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "386,00 zł"
+      }
+     ],
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "193,00 zł",
+      "386,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka, o którym mowa w art. 11a ustawy, wynosi 193,00 zł miesięcznie na dziecko, nie więcej jednak niż 386,00 zł na wszystkie dzieci;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": null,
+       "wartosc": "193,00 zł"
+      },
+      {
+       "etykieta": null,
+       "wartosc": "386,00 zł"
+      }
+     ],
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "193,00 zł",
+      "386,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka, o którym mowa w art. 11a ustawy, wynosi 193,00 zł miesięcznie na dziecko, nie więcej jednak niż 386,00 zł na wszystkie dzieci;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 11a ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 11a ust. 1",
+      "cytat": "Dodatek z tytułu samotnego wychowywania dziecka przysługuje samotnie wychowującym dziecko matce lub ojcu, opiekunowi faktycznemu dziecka albo opiekunowi prawnemu dziecka, jeżeli nie zostało zasądzone świadczenie alimentacyjne na rzecz dziecka od drugiego z rodziców dziecka, ponieważ:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 11a ust. 3: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 11a ust. 3",
+      "cytat": "Dodatek przysługuje w wysokości 170,00 zł miesięcznie na dziecko, niewięcej jednak niż 340,00 zł na wszystkie dzieci.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "przypis 4: Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej usta",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 11a ust. 3",
+      "cytat": "Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "przypis 4: Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej usta",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 11a ust. 3",
+      "cytat": "Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 5,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka, o którym mowa w art. 11a ustawy, wynosi 193,00 zł miesięcznie na dziecko, nie więcej jednak niż 386,00 zł na wszystkie dzieci;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 193,00 zł, 386,00 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu samotnego wychowywania dziecka, o którym mowa w art. 11a ustawy, wynosi 193,00 zł miesięcznie na dziecko, nie więcej jednak niż 386,00 zł na wszystkie dzieci;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "anomalia_spadek",
+   "kwota_podejrzana"
+  ]
+ },
+ {
+  "id": "DU-2003-2255-art12a-ust1",
+  "slug": "dodatek-z-tytulu-wychowywania-dziecka-w-rodzinie-wielodzietnej",
+  "nazwa": "dodatek z tytułu wychowywania dziecka w rodzinie wielodzietnej",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "matce lub ojcu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 12a ust. 1",
+   "cytat": "Dodatek z tytułu wychowywania dziecka w rodzinie wielodzietnej przysługuje matce lub ojcu, opiekunowi faktycznemu dziecka albo opiekunowi prawnemu dziecka.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "95,00 zł",
+    "warianty": null,
+    "od": "2024-11-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "50,00 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "80,00 zł",
+     "warianty": null,
+     "od": "2012-11-01",
+     "do": "2015-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu wychowywania dziecka w rodzinie wielodzietnej, o którym mowa w art. 12a ustawy, wynosi 80,00 zł miesięcznie na trzecie i na następne dzieci uprawnione do zasiłku rodzinnego;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "90,00 zł",
+     "warianty": null,
+     "od": "2015-11-01",
+     "do": "2016-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": "80,00 zł",
+     "roznica": {
+      "kwota": "+10,00 zł",
+      "procent": "+12,50%"
+     },
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu wychowywania dziecka w rodzinie wielodzietnej, o którym mowa w art. 12a ustawy, wynosi 90,00 zł miesięcznie na trzecie i na następne dzieci uprawnione do zasiłku rodzinnego;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "95,00 zł",
+     "warianty": null,
+     "od": "2016-11-01",
+     "do": "2017-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": "90,00 zł",
+     "roznica": {
+      "kwota": "+5,00 zł",
+      "procent": "+5,56%"
+     },
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu wychowywania dziecka w rodzinie wielodzietnej, o którym mowa w art. 12a ustawy, wynosi 95,00 zł miesięcznie na trzecie i na następne dzieci uprawnione do zasiłku rodzinnego;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "95,00 zł",
+     "warianty": null,
+     "od": "2017-11-01",
+     "do": "2018-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "95,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2017/1428",
+      "przepis": "art_32-okres_134728",
+      "cytat": "3) wysokość dodatku do zasiłku rodzinnego z tytułu wychowywania dziecka w rodzinie wielodzietnej, o którym mowa w art. 12a ustawy zmienianej w art. 6, wynosi 95,00 zł miesięcznie na trzecie i na następne dzieci uprawnione do zasiłku rodzinnego",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2017/1428",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "95,00 zł",
+     "warianty": null,
+     "od": "2018-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "95,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu wychowywania dziecka w rodzinie wielodzietnej, o którym mowa w art. 12a ustawy, wynosi 95,00 zł miesięcznie na trzecie i na następne dzieci uprawnione do zasiłku rodzinnego;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "95,00 zł",
+     "warianty": null,
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "95,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu wychowywania dziecka w rodzinie wielodzietnej, o którym mowa w art. 12a ustawy, wynosi 95,00 zł miesięcznie na trzecie i na następne dzieci uprawnione do zasiłku rodzinnego;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "95,00 zł",
+     "warianty": null,
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "95,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu wychowywania dziecka w rodzinie wielodzietnej, o którym mowa w art. 12a ustawy, wynosi 95,00 zł miesięcznie na trzecie i na następne dzieci uprawnione do zasiłku rodzinnego;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 12a ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 12a ust. 1",
+      "cytat": "Dodatek z tytułu wychowywania dziecka w rodzinie wielodzietnej przysługuje matce lub ojcu, opiekunowi faktycznemu dziecka albo opiekunowi prawnemu dziecka.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 12a ust. 2: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 12a ust. 2",
+      "cytat": "Dodatek przysługuje w wysokości 50,00 zł miesięcznie na trzecie i na następne dzieci uprawnione do zasiłku rodzinnego.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "przypis 4: Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej usta",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 12a ust. 2",
+      "cytat": "Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu wychowywania dziecka w rodzinie wielodzietnej, o którym mowa w art. 12a ustawy, wynosi 95,00 zł miesięcznie na trzecie i na następne dzieci uprawnione do zasiłku rodzinnego;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 95,00 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu wychowywania dziecka w rodzinie wielodzietnej, o którym mowa w art. 12a ustawy, wynosi 95,00 zł miesięcznie na trzecie i na następne dzieci uprawnione do zasiłku rodzinnego;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "anomalia_spadek",
+   "kwota_podejrzana"
+  ]
+ },
+ {
+  "id": "DU-2003-2255-art13-ust1",
+  "slug": "dodatek-z-tytulu-ksztalcenia-i-rehabilitacji-dziecka",
+  "nazwa": "dodatek z tytułu kształcenia i rehabilitacji dziecka",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "matce lub ojcu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "niepelnosprawnosc",
+   "edukacja"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 13 ust. 1",
+   "cytat": "Dodatek z tytułu kształcenia i rehabilitacji dziecka przysługuje matce lub ojcu, opiekunowi faktycznemu dziecka albo opiekunowi prawnemu dziecka, a także osobie uczącej się na pokrycie zwiększonych wydatków związanych z rehabilitacją lub kształceniem dziecka w wieku:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": null,
+    "warianty": [
+     {
+      "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+      "wartosc": "90,00 zł"
+     },
+     {
+      "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia",
+      "wartosc": "110,00 zł"
+     }
+    ],
+    "od": "2024-11-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "50,00 zł, 70,00 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "60,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia",
+       "wartosc": "80,00 zł"
+      }
+     ],
+     "od": "2012-11-01",
+     "do": "2015-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu kształcenia i rehabilitacji dziecka niepełnosprawnego, o którym mowa w art. 13 ustawy, wynosi: a) \u000760,00 zł miesięcznie na dziecko w wieku do ukończenia 5 roku życia, b) 80,00 zł miesięcznie na dziecko w wieku powyżej 5 roku życia do ukończenia 24 roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "80,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia",
+       "wartosc": "100,00 zł"
+      }
+     ],
+     "od": "2015-11-01",
+     "do": "2016-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": [
+      "60,00 zł",
+      "80,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu kształcenia i rehabilitacji dziecka niepełnosprawnego, o którym mowa w art. 13 ustawy, wynosi: a) 80,00 zł miesięcznie na dziecko w wieku do ukończenia 5. roku życia, b) 100,00 zł miesięcznie na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "90,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia",
+       "wartosc": "110,00 zł"
+      }
+     ],
+     "od": "2016-11-01",
+     "do": "2017-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": [
+      "80,00 zł",
+      "100,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu kształcenia i rehabilitacji dziecka niepełnosprawnego, o którym mowa w art. 13 ustawy, wynosi: a) 90,00 zł miesięcznie na dziecko w wieku do ukończenia 5. roku życia, b) 110,00 zł miesięcznie na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "90,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia",
+       "wartosc": "110,00 zł"
+      }
+     ],
+     "od": "2017-11-01",
+     "do": "2018-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "90,00 zł",
+      "110,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2017/1428",
+      "przepis": "art_32-okres_134728",
+      "cytat": "4) wysokość dodatku do zasiłku rodzinnego z tytułu kształcenia i rehabilitacji dziecka niepełnosprawnego, o którym mowa w art. 13 ustawy zmienianej w art. 6, wynosi: a) 90,00 zł miesięcznie na dziecko w wieku do ukończenia 5. roku życia, b) 110,00 zł miesięcznie na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2017/1428",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "90,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia",
+       "wartosc": "110,00 zł"
+      }
+     ],
+     "od": "2018-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "90,00 zł",
+      "110,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu kształcenia i rehabilitacji dziecka niepełnosprawnego, o którym mowa w art. 13 ustawy, wynosi: a) 90,00 zł miesięcznie na dziecko w wieku do ukończenia 5. roku życia, b) 110,00 zł miesięcznie na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "90,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia",
+       "wartosc": "110,00 zł"
+      }
+     ],
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "90,00 zł",
+      "110,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu kształcenia i rehabilitacji dziecka niepełnosprawnego, o którym mowa w art. 13 ustawy, wynosi: a) 90,00 zł miesięcznie na dziecko w wieku do ukończenia 5. roku życia, b) 110,00 zł miesięcznie na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "na dziecko w wieku do ukończenia 5. roku życia",
+       "wartosc": "90,00 zł"
+      },
+      {
+       "etykieta": "na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia",
+       "wartosc": "110,00 zł"
+      }
+     ],
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": [
+      "90,00 zł",
+      "110,00 zł"
+     ],
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu kształcenia i rehabilitacji dziecka niepełnosprawnego, o którym mowa w art. 13 ustawy, wynosi: a) 90,00 zł miesięcznie na dziecko w wieku do ukończenia 5. roku życia, b) 110,00 zł miesięcznie na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 13 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 13 ust. 1",
+      "cytat": "Dodatek z tytułu kształcenia i rehabilitacji dziecka przysługuje matce lub ojcu, opiekunowi faktycznemu dziecka albo opiekunowi prawnemu dziecka, a także osobie uczącej się na pokrycie zwiększonych wydatków związanych z rehabilitacją lub kształceniem dziecka w wieku:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 13 ust. 2: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 13 ust. 2",
+      "cytat": "Dodatek przysługuje miesięcznie w wysokości:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "art. 13 ust. 2 pkt 1: wariant",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 13 ust. 2 pkt 1",
+      "cytat": "50,00 zł na dziecko w wieku do ukończenia 5. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "art. 13 ust. 2 pkt 2: wariant",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 13 ust. 2 pkt 2",
+      "cytat": "70,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 5,
+     "opis": "przypis 4: Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej usta",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 13 ust. 2 pkt 1",
+      "cytat": "Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 6,
+     "opis": "przypis 4: Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej usta",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 13 ust. 2 pkt 2",
+      "cytat": "Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 7,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu kształcenia i rehabilitacji dziecka niepełnosprawnego, o którym mowa w art. 13 ustawy, wynosi: a) 90,00 zł miesięcznie na dziecko w wieku do ukończenia 5. roku życia, b) 110,00 zł miesięcznie na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 90,00 zł, 110,00 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu kształcenia i rehabilitacji dziecka niepełnosprawnego, o którym mowa w art. 13 ustawy, wynosi: a) 90,00 zł miesięcznie na dziecko w wieku do ukończenia 5. roku życia, b) 110,00 zł miesięcznie na dziecko w wieku powyżej 5. roku życia do ukończenia 24. roku życia;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "anomalia_spadek",
+   "kwota_podejrzana"
+  ]
+ },
+ {
+  "id": "DU-2003-2255-art14-ust1",
+  "slug": "dodatek-z-tytulu-rozpoczecia-roku-szkolnego",
+  "nazwa": "dodatek z tytułu rozpoczęcia roku szkolnego",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "matce lub ojcu",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "edukacja"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 14 ust. 1",
+   "cytat": "Dodatek z tytułu rozpoczęcia roku szkolnego przysługuje matce lub ojcu, opiekunowi faktycznemu dziecka albo opiekunowi prawnemu dziecka, a także osobie uczącej się na częściowe pokrycie wydatków związanych z rozpoczęciem w szkole nowego roku szkolnego.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "100,00 zł",
+    "warianty": null,
+    "od": "2024-11-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "100,00 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "100,00 zł",
+     "warianty": null,
+     "od": "2012-11-01",
+     "do": "2015-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu rozpoczęcia roku szkolnego, o którym mowa w art. 14 ustawy, wynosi 100,00 zł na dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "100,00 zł",
+     "warianty": null,
+     "od": "2015-11-01",
+     "do": "2018-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "100,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_3",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu rozpoczęcia roku szkolnego, o którym mowa w art. 14 ustawy, wynosi 100,00 zł na dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "100,00 zł",
+     "warianty": null,
+     "od": "2018-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "100,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu rozpoczęcia roku szkolnego, o którym mowa w art. 14 ustawy, wynosi 100,00 zł na dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "100,00 zł",
+     "warianty": null,
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "100,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu rozpoczęcia roku szkolnego, o którym mowa w art. 14 ustawy, wynosi 100,00 zł na dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "100,00 zł",
+     "warianty": null,
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "100,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu rozpoczęcia roku szkolnego, o którym mowa w art. 14 ustawy, wynosi 100,00 zł na dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 14 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 14 ust. 1",
+      "cytat": "Dodatek z tytułu rozpoczęcia roku szkolnego przysługuje matce lub ojcu, opiekunowi faktycznemu dziecka albo opiekunowi prawnemu dziecka, a także osobie uczącej się na częściowe pokrycie wydatków związanych z rozpoczęciem w szkole nowego roku szkolnego.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 14 ust. 2: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 14 ust. 2",
+      "cytat": "Dodatek przysługuje raz w roku, w związku z rozpoczęciem roku szkolnego albo rocznego przygotowania przedszkolnego, w wysokości 100,00 zł na dziecko.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu rozpoczęcia roku szkolnego, o którym mowa w art. 14 ustawy, wynosi 100,00 zł na dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 100,00 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość dodatku do zasiłku rodzinnego z tytułu rozpoczęcia roku szkolnego, o którym mowa w art. 14 ustawy, wynosi 100,00 zł na dziecko;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-2255-art15-ust1",
+  "slug": "dodatek-z-tytulu-podjecia-przez-dziecko-nauki-w-szkole-poza-miejscem-zamieszkania",
+  "nazwa": "dodatek z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "matce lub ojcu dziecka",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "edukacja"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 15 ust. 1",
+   "cytat": "Dodatek z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania przysługuje matce lub ojcu dziecka, opiekunowi prawnemu albo opiekunowi faktycznemu dziecka lub osobie uczącej się:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 15 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 15 ust. 1",
+      "cytat": "Dodatek z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania przysługuje matce lub ojcu dziecka, opiekunowi prawnemu albo opiekunowi faktycznemu dziecka lub osobie uczącej się:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-2255-art16-ust2",
+  "slug": "zasilek-pielegnacyjny",
+  "nazwa": "zasiłek pielęgnacyjny",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": ":",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc",
+   "opieka_nad_bliskim"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 16 ust. 2",
+   "cytat": "Zasiłek pielęgnacyjny przysługuje:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "215,84 zł",
+    "warianty": null,
+    "od": "2024-11-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "144,00 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "153,00 zł",
+     "warianty": null,
+     "od": "2012-11-01",
+     "do": "2015-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość zasiłku pielęgnacyjnego, o którym mowa w art. 16 ustawy, wynosi 153,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "153,00 zł",
+     "warianty": null,
+     "od": "2015-11-01",
+     "do": "2018-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "153,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_3",
+      "cytat": "wysokość zasiłku pielęgnacyjnego, o którym mowa w art. 16 ustawy, wynosi 153,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "184,42 zł",
+     "warianty": null,
+     "od": "2018-11-01",
+     "do": "2019-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": "153,00 zł",
+     "roznica": {
+      "kwota": "+31,42 zł",
+      "procent": "+20,54%"
+     },
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_2",
+      "cytat": "wysokość zasiłku pielęgnacyjnego, o którym mowa w art. 16 ustawy, wynosi 184,42 zł miesięcznie. 2.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "215,84 zł",
+     "warianty": null,
+     "od": "2019-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "akt_wykonawczy",
+     "poprzednia": "184,42 zł",
+     "roznica": {
+      "kwota": "+31,42 zł",
+      "procent": "+17,04%"
+     },
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_2",
+      "cytat": "wysokość zasiłku pielęgnacyjnego, o którym mowa w art. 16 ustawy, wynosi 215,84 zł miesięcznie.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "215,84 zł",
+     "warianty": null,
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "215,84 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość zasiłku pielęgnacyjnego, o którym mowa w art. 16 ustawy, wynosi 215,84 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "215,84 zł",
+     "warianty": null,
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "215,84 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość zasiłku pielęgnacyjnego, o którym mowa w art. 16 ustawy, wynosi 215,84 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 16 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 16 ust. 2",
+      "cytat": "Zasiłek pielęgnacyjny przysługuje:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 16 ust. 4: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 16 ust. 4",
+      "cytat": "Zasiłek pielęgnacyjny przysługuje w wysokości 144,00 zł miesięcznie.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "przypis 4: Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej usta",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 16 ust. 4",
+      "cytat": "Wysokość świadczeń rodzinnych jest ustalana na podstawie art. 19 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość zasiłku pielęgnacyjnego, o którym mowa w art. 16 ustawy, wynosi 215,84 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 215,84 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość zasiłku pielęgnacyjnego, o którym mowa w art. 16 ustawy, wynosi 215,84 zł miesięcznie;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "kwota_podejrzana"
+  ]
+ },
+ {
+  "id": "DU-2003-2255-art17c-ust1",
+  "slug": "swiadczenie-rodzicielskie",
+  "nazwa": "świadczenie rodzicielskie",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": ":",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "ciaza_porod"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 17c ust. 1",
+   "cytat": "Świadczenie rodzicielskie przysługuje:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "1000,00 zł",
+    "warianty": null,
+    "od": "2024-11-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "1000,00 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2018-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_1",
+      "cytat": "wysokość świadczenia rodzicielskiego, o którym mowa w art. 17c ustawy, wynosi 1000,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "1000,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość świadczenia rodzicielskiego, o którym mowa w art. 17c ustawy, wynosi 1000,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "1000,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość świadczenia rodzicielskiego, o którym mowa w art. 17c ustawy, wynosi 1000,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 17c ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 17c ust. 1",
+      "cytat": "Świadczenie rodzicielskie przysługuje:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 17c ust. 5: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 17c ust. 5",
+      "cytat": "Świadczenie rodzicielskie przysługuje w wysokości 1000,00 zł miesięcznie, z uwzględnieniem ust. 6.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość świadczenia rodzicielskiego, o którym mowa w art. 17c ustawy, wynosi 1000,00 zł miesięcznie;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 1000,00 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość świadczenia rodzicielskiego, o którym mowa w art. 17c ustawy, wynosi 1000,00 zł miesięcznie;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": []
+ },
+ {
+  "id": "DU-2003-2255-art15b-ust1",
+  "slug": "zapomoge",
+  "nazwa": "zapomogę",
+  "rodzaj_korzysci": "swiadczenie_jednorazowe",
+  "status": "obowiazuje",
+  "komu": "Z tytułu urodzenia się żywego dziecka",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko",
+   "ciaza_porod"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 15b ust. 1",
+   "cytat": "Z tytułu urodzenia się żywego dziecka przyznaje się jednorazową zapomogę w wysokości 1000 zł na jedno dziecko.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "1000,00 zł",
+    "warianty": null,
+    "od": "2024-11-01",
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": "1000 zł",
+   "zwiekszenia": [],
+   "os_czasu": [
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2012-11-01",
+     "do": "2015-10-31",
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość jednorazowej zapomogi z tytułu urodzenia się żywego dziecka, o której mowa w art. 15b ustawy, wynosi 1000,00 zł na jedno dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2015-11-01",
+     "do": "2018-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "1000,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2015/1238",
+      "przepis": "par_3",
+      "cytat": "wysokość jednorazowej zapomogi z tytułu urodzenia się żywego dziecka, o której mowa w art. 15b ustawy, wynosi 1000,00 zł na jedno dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2018-11-01",
+     "do": "2021-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "1000,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2018/1497",
+      "przepis": "par_1",
+      "cytat": "wysokość jednorazowej zapomogi z tytułu urodzenia się żywego dziecka, o której mowa w art. 15b ustawy, wynosi 1000,00 zł na jedno dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2021-11-01",
+     "do": "2024-10-31",
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "1000,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2021/1481",
+      "przepis": "par_1",
+      "cytat": "wysokość jednorazowej zapomogi z tytułu urodzenia się żywego dziecka, o której mowa w art. 15b ustawy, wynosi 1000,00 zł na jedno dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1000,00 zł",
+     "warianty": null,
+     "od": "2024-11-01",
+     "do": null,
+     "rodzaj_zmiany": "bez_zmiany_kwoty",
+     "poprzednia": "1000,00 zł",
+     "roznica": {
+      "kwota": "+0,00 zł",
+      "procent": "+0,00%"
+     },
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość jednorazowej zapomogi z tytułu urodzenia się żywego dziecka, o której mowa w art. 15b ustawy, wynosi 1000,00 zł na jedno dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 15b ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 15b ust. 1",
+      "cytat": "Z tytułu urodzenia się żywego dziecka przyznaje się jednorazową zapomogę w wysokości 1000 zł na jedno dziecko.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 15b ust. 1: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 15b ust. 1",
+      "cytat": "Z tytułu urodzenia się żywego dziecka przyznaje się jednorazową zapomogę w wysokości 1000 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "DU/2024/1238: kwota od 2024-11-01",
+     "dowod": {
+      "eli": "DU/2024/1238",
+      "przepis": "par_1",
+      "cytat": "wysokość jednorazowej zapomogi z tytułu urodzenia się żywego dziecka, o której mowa w art. 15b ustawy, wynosi 1000,00 zł na jedno dziecko;",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 1000,00 zł od 2024-11-01 (obowiązuje nadal)",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2024/1238",
+     "przepis": "par_1",
+     "cytat": "wysokość jednorazowej zapomogi z tytułu urodzenia się żywego dziecka, o której mowa w art. 15b ustawy, wynosi 1000,00 zł na jedno dziecko;",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+     "data_stanu": null
+    },
+    "od": "2024-11-01"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "nazwa_ogolna"
+  ]
+ }
+]

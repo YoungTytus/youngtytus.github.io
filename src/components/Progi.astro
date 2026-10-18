@@ -1,0 +1,24 @@
+---
+import Kwota from './Kwota.astro';
+import Dowod from './Dowod.astro';
+import { dataLubBrak, typo, etykietaWariantu } from '../lib/format.mjs';
+const { progi } = Astro.props;
+const przepis = (s: string) => s.replace(/^arti?_(\d+)-pass_(\d+)$/, 'art. $1 ust. $2');
+---
+{progi?.length > 0 && <>
+  <h3>Progi dochodowe i ich historia</h3>
+  <p class="summary-note">Progi opisują warunki uzyskania świadczenia. Każdy wpis ma osobny cytat źródłowy.</p>
+  {progi.map((p: any, pi: number) => <>
+    <h4>{przepis(p.przepis)}</h4>
+    <div class="table-wrap" tabindex="0"><table>
+      <caption>Historia progu: {przepis(p.przepis)}</caption>
+      <thead><tr><th scope="col">Wartość</th><th scope="col">Od</th><th scope="col">Do</th><th scope="col">Zmiana</th></tr></thead>
+      <tbody>{p.wpisy.map((w: any, i: number) => <tr>
+        <td>{w.wartosc && <Kwota wartosc={w.wartosc} href={`#prog-${pi}-${i}`} etykieta={`${w.dowod.eli} · ${w.dowod.przepis}`} />}{w.warianty?.map((v: any, vi: number) => <div>{etykietaWariantu(v, vi)}: <Kwota wartosc={v.wartosc} href={`#prog-${pi}-${i}`} etykieta="cytat" /></div>)}</td>
+        <td>{dataLubBrak(w.od)}</td><td>{w.do === null ? 'Brak daty końca w eksporcie' : dataLubBrak(w.do)}</td>
+        <td>{w.roznica ? <>{typo(w.roznica.kwota)} · {w.roznica.procent}</> : 'Nie podano'}</td>
+      </tr>)}</tbody>
+    </table></div>
+    {p.wpisy.map((w: any, i: number) => <details id={`prog-${pi}-${i}`}><summary>{dataLubBrak(w.od)} · {w.dowod.eli}</summary><Dowod dowod={w.dowod} /></details>)}
+  </>)}
+</>}

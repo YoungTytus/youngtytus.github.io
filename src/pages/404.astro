@@ -1,0 +1,18 @@
+---
+import Uklad from '../layouts/Uklad.astro';
+import Ikona from '../components/Ikona.astro';
+---
+<Uklad tytul="Nie znaleziono strony" opis="Strona nie istnieje albo została przeniesiona." noindex>
+  <div class="wrap section" style="text-align:center;max-width:720px">
+    <p class="kicker">Błąd 404</p>
+    <h1>Nie ma takiej strony</h1>
+    <p style="margin:20px 0 30px;color:var(--muted)">Adres mógł się zmienić. Spróbuj wyszukać korzyść albo wróć na stronę główną.</p>
+    <form class="searchbox" action="/korzysci/" method="get" role="search">
+      <Ikona n="szukaj" />
+      <label class="sr-only" for="szukaj-404">Szukaj korzyści</label>
+      <input type="search" id="szukaj-404" name="q" placeholder="Nazwa świadczenia albo słowo z przepisu…" />
+      <button class="btn btn-red" type="submit">Szukaj</button>
+    </form>
+    <p style="margin-top:24px"><a class="text-link" href="/">Strona główna <Ikona n="strzalka" /></a></p>
+  </div>
+</Uklad>

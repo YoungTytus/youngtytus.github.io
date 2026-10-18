@@ -1,0 +1,786 @@
+{
+ "_opis": "Plik przykladowy kontraktu strony 0.1 (docs/SPEC_STRONA.md sekcja 5). Wartosci z danych pilotazu (graf E3, wersja d71d641); pola oznaczone _przyklad albo wartosciami '_do_ustalenia_*' pipeline jeszcze nie wylicza. Nie jest zrodlem prawdy o prawie. Pola pliki[] mają prawdziwe SHA-256, rozmiary i adresy z pobrań pilotażu; same PDF nie są dołączone. Rodzaj TJ pipeline doda w E7.",
+ "manifest": {
+  "kontrakt": "strona-0.1",
+  "wygenerowano": "2026-10-17",
+  "wersja_kodu": "d71d641",
+  "zakres": [
+   "DU/2003/1268",
+   "DU/2003/2255",
+   "DU/2022/1692"
+  ]
+ },
+ "korzysci": [
+  {
+   "id": "DU-2003-1268-art6a-ust1",
+   "slug": "dodatek-dopelniajacy",
+   "nazwa": "dodatek dopełniający",
+   "rodzaj_korzysci": "swiadczenie_okresowe",
+   "status": "obowiazuje",
+   "komu": "osoba uprawniona do renty socjalnej, będąca całkowicie niezdolną do pracy oraz do samodzielnej egzystencji",
+   "opis_prosty": null,
+   "sytuacje": [
+    "niepelnosprawnosc"
+   ],
+   "przepis": {
+    "eli": "DU/2003/1268",
+    "przepis": "art. 6a ust. 1",
+    "cytat": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, przysługuje dodatek dopełniający w wysokości 2520 zł.",
+    "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+    "data_stanu": "2026-04-17"
+   },
+   "ile": {
+    "rozwiazanie": "kwota_z_aktu_wykonawczego",
+    "regula": null,
+    "aktualna": {
+     "wartosc": "2704,71 zł",
+     "od": "2026-03-01"
+    },
+    "kwota_ustawowa_zastapiona": "2520 zł",
+    "os_czasu": [
+     {
+      "wartosc": "2520 zł",
+      "warianty": null,
+      "od": null,
+      "do": "2025-02-28",
+      "rodzaj_zmiany": "brzmienie_pierwotne",
+      "poprzednia": null,
+      "roznica": null,
+      "dowod": {
+       "eli": "DU/2003/1268",
+       "przepis": "art. 6a ust. 1",
+       "cytat": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, przysługuje dodatek dopełniający w wysokości 2520 zł.",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+       "data_stanu": "2026-04-17"
+      },
+      "_przyklad": true
+     },
+     {
+      "wartosc": "2610,72 zł",
+      "warianty": null,
+      "od": "2025-03-01",
+      "do": "2026-02-28",
+      "rodzaj_zmiany": "waloryzacja",
+      "poprzednia": "2520 zł",
+      "roznica": {
+       "kwota": "+90,72 zł",
+       "procent": "+3,60%"
+      },
+      "dowod": {
+       "eli": "MP/2025/133",
+       "przepis": "komunikat",
+       "cytat": "od dnia 1 marca 2025 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2610,72 zł",
+       "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/133",
+       "data_stanu": null
+      }
+     },
+     {
+      "wartosc": "2704,71 zł",
+      "warianty": null,
+      "od": "2026-03-01",
+      "do": null,
+      "rodzaj_zmiany": "waloryzacja",
+      "poprzednia": "2610,72 zł",
+      "roznica": {
+       "kwota": "+93,99 zł",
+       "procent": "+3,60%"
+      },
+      "dowod": {
+       "eli": "MP/2026/153",
+       "przepis": "komunikat",
+       "cytat": "od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2704,71 zł",
+       "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+       "data_stanu": null
+      }
+     }
+    ],
+    "trasa": [
+     {
+      "krok": 1,
+      "opis": "kwota w ustawie oznaczona przypisem",
+      "dowod": {
+       "eli": "DU/2003/1268",
+       "przepis": "art. 6a ust. 1",
+       "cytat": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, przysługuje dodatek dopełniający w wysokości 2520 zł.",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+       "data_stanu": "2026-04-17"
+      }
+     },
+     {
+      "krok": 2,
+      "opis": "przypis wskazuje delegację",
+      "dowod": {
+       "eli": "DU/2003/1268",
+       "przepis": "art. 6a ust. 1 przypis 1",
+       "cytat": "Aktualną zwaloryzowaną kwotę dodatku dopełniającego ogłasza Prezes Zakładu Ubezpieczeń Społecznych na podstawie art. 6a ust. 8 niniejszej ustawy.",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+       "data_stanu": "2026-04-17"
+      }
+     },
+     {
+      "krok": 3,
+      "opis": "delegacja do ogłoszenia kwoty",
+      "dowod": {
+       "eli": "DU/2003/1268",
+       "przepis": "art. 6a ust. 8",
+       "cytat": "Prezes Zakładu ogłasza, w formie komunikatu, w Dzienniku Urzędowym Rzeczypospolitej Polskiej „Monitor Polski”, co najmniej na 14 dni roboczych przed najbliższym terminem waloryzacji należną od terminu waloryzacji kwotę dodatku dopełniającego.",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+       "data_stanu": "2026-04-17"
+      }
+     },
+     {
+      "krok": 4,
+      "opis": "komunikat Prezesa ZUS ustala kwotę",
+      "dowod": {
+       "eli": "MP/2026/153",
+       "przepis": "komunikat",
+       "cytat": "od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2704,71 zł",
+       "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+       "data_stanu": null
+      }
+     }
+    ]
+   },
+   "do_kiedy": [
+    {
+     "rodzaj": "okres_kwoty",
+     "data": "2026-03-01",
+     "opis": "kwota 2704,71 zł od 1 marca 2026 r., brak następnego komunikatu",
+     "skutek": null,
+     "dowod": {
+      "eli": "MP/2026/153",
+      "przepis": "komunikat",
+      "cytat": "od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2704,71 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+      "data_stanu": null
+     }
+    }
+   ],
+   "powiazane": [
+    {
+     "typ": "korzysc_bazowa",
+     "id_korzysci": "DU-2003-1268-art4-ust1",
+     "cytat": "osobie uprawnionej do renty socjalnej"
+    }
+   ],
+   "stan": {
+    "data_stanu": "2026-04-17",
+    "tekst": "tekst ujednolicony (informacyjny)"
+   },
+   "nieustalone": [
+    {
+     "pole": "ile.os_czasu[0].od",
+     "powod": "data wejścia w życie kwoty ustawowej 2520 zł wymaga analizy nowelizacji (etap E5b)"
+    }
+   ]
+  },
+  {
+   "id": "DU-2003-2255-art6",
+   "slug": "zasilek-rodzinny",
+   "nazwa": "zasiłek rodzinny",
+   "rodzaj_korzysci": "swiadczenie_okresowe",
+   "status": "obowiazuje",
+   "komu": "osoby, o których mowa w art. 4 ust. 2 pkt 1 i 2",
+   "opis_prosty": null,
+   "sytuacje": [
+    "dziecko",
+    "niski_dochod"
+   ],
+   "przepis": {
+    "eli": "DU/2003/2255",
+    "przepis": "art. 6 ust. 1",
+    "cytat": "Zasiłek rodzinny przysługuje osobom, o których mowa w art. 4 ust. 2 pkt 1 i 2, do ukończenia przez dziecko:",
+    "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+    "data_stanu": "2026-10-12"
+   },
+   "ile": {
+    "rozwiazanie": "kwota_z_aktu_wykonawczego",
+    "regula": null,
+    "aktualna": {
+     "wartosc": null,
+     "warianty": [
+      {
+       "etykieta": "dziecko do ukończenia 5. roku życia",
+       "wartosc": "95,00 zł"
+      },
+      {
+       "etykieta": "dziecko powyżej 5. do ukończenia 18. roku życia",
+       "wartosc": "124,00 zł"
+      },
+      {
+       "etykieta": "dziecko powyżej 18. do ukończenia 24. roku życia",
+       "wartosc": "135,00 zł"
+      }
+     ],
+     "od": "2024-11-01"
+    },
+    "kwota_ustawowa_zastapiona": "_do_ustalenia_E4",
+    "os_czasu": [
+     {
+      "wartosc": null,
+      "warianty": [
+       {
+        "etykieta": "dziecko do ukończenia 5. roku życia",
+        "wartosc": "77,00 zł"
+       },
+       {
+        "etykieta": "dziecko powyżej 5. do ukończenia 18. roku życia",
+        "wartosc": "106,00 zł"
+       },
+       {
+        "etykieta": "dziecko powyżej 18. do ukończenia 24. roku życia",
+        "wartosc": "115,00 zł"
+       }
+      ],
+      "od": "2012-11-01",
+      "do": "_do_ustalenia_E5",
+      "rodzaj_zmiany": "akt_wykonawczy",
+      "poprzednia": null,
+      "roznica": null,
+      "dowod": {
+       "eli": "DU/2012/959",
+       "przepis": "§ 2",
+       "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 77,00 zł na dziecko w wieku do ukończenia 5 roku życia, b) 106,00 zł na dziecko w wieku powyżej 5 roku życia do ukończenia 18 roku życia, c) 115,00 zł na dziecko w wieku powyżej 18 roku życia do ukończenia 24 roku życia;",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+       "data_stanu": null
+      }
+     },
+     {
+      "wartosc": null,
+      "warianty": [
+       {
+        "etykieta": "dziecko do ukończenia 5. roku życia",
+        "wartosc": "95,00 zł"
+       },
+       {
+        "etykieta": "dziecko powyżej 5. do ukończenia 18. roku życia",
+        "wartosc": "124,00 zł"
+       },
+       {
+        "etykieta": "dziecko powyżej 18. do ukończenia 24. roku życia",
+        "wartosc": "135,00 zł"
+       }
+      ],
+      "od": "2018-11-01",
+      "do": "_do_ustalenia_E5",
+      "rodzaj_zmiany": "akt_wykonawczy",
+      "poprzednia": "77,00 zł / 106,00 zł / 115,00 zł",
+      "roznica": null,
+      "dowod": {
+       "eli": "DU/2018/1497",
+       "przepis": "§ 1",
+       "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 95,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 124,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 135,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia;",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+       "data_stanu": null
+      }
+     },
+     {
+      "wartosc": null,
+      "warianty": [
+       {
+        "etykieta": "dziecko do ukończenia 5. roku życia",
+        "wartosc": "95,00 zł"
+       },
+       {
+        "etykieta": "dziecko powyżej 5. do ukończenia 18. roku życia",
+        "wartosc": "124,00 zł"
+       },
+       {
+        "etykieta": "dziecko powyżej 18. do ukończenia 24. roku życia",
+        "wartosc": "135,00 zł"
+       }
+      ],
+      "od": "2021-11-01",
+      "do": "_do_ustalenia_E5",
+      "rodzaj_zmiany": "akt_wykonawczy",
+      "poprzednia": "95,00 zł / 124,00 zł / 135,00 zł",
+      "roznica": null,
+      "dowod": {
+       "eli": "DU/2021/1481",
+       "przepis": "§ 1",
+       "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 95,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 124,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 135,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia;",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+       "data_stanu": null
+      }
+     },
+     {
+      "wartosc": null,
+      "warianty": [
+       {
+        "etykieta": "dziecko do ukończenia 5. roku życia",
+        "wartosc": "95,00 zł"
+       },
+       {
+        "etykieta": "dziecko powyżej 5. do ukończenia 18. roku życia",
+        "wartosc": "124,00 zł"
+       },
+       {
+        "etykieta": "dziecko powyżej 18. do ukończenia 24. roku życia",
+        "wartosc": "135,00 zł"
+       }
+      ],
+      "od": "2024-11-01",
+      "do": null,
+      "rodzaj_zmiany": "akt_wykonawczy",
+      "poprzednia": "95,00 zł / 124,00 zł / 135,00 zł",
+      "roznica": null,
+      "dowod": {
+       "eli": "DU/2024/1238",
+       "przepis": "§ 1",
+       "cytat": "wysokość zasiłku rodzinnego, o którym mowa w art. 6 ustawy, wynosi miesięcznie: a) 95,00 zł na dziecko w wieku do ukończenia 5. roku życia, b) 124,00 zł na dziecko w wieku powyżej 5. roku życia do ukończenia 18. roku życia, c) 135,00 zł na dziecko w wieku powyżej 18. roku życia do ukończenia 24. roku życia;",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+       "data_stanu": null
+      }
+     }
+    ],
+    "trasa": []
+   },
+   "do_kiedy": [],
+   "powiazane": [],
+   "stan": {
+    "data_stanu": "2026-10-12",
+    "tekst": "tekst ujednolicony (informacyjny)"
+   },
+   "nieustalone": [
+    {
+     "pole": "ile.os_czasu (2015–2018)",
+     "powod": "rozporządzenie DU/2015/1238 ustala etapy 89/118/129 zł (od 1.11.2015), 95/124/135 zł (od 1.11.2016), 100/130/140 zł (od 1.11.2017), a DU/2018/1497 ustala 95/124/135 zł od 1.11.2018; spadek wymaga sprawdzenia nowelizacji rozporządzenia (E5b), dlatego etapy pominięte w przykładzie"
+    },
+    {
+     "pole": "ile.os_czasu[*].do",
+     "powod": "daty końca okresów wyznacza E5"
+    }
+   ],
+   "_przyklad": true
+  },
+  {
+   "id": "DU-2022-1692-art2-ust1",
+   "slug": "dodatek-weglowy",
+   "nazwa": "dodatek węglowy",
+   "rodzaj_korzysci": "swiadczenie_jednorazowe",
+   "status": "zamknieta",
+   "komu": "osoba w gospodarstwie domowym, w którym głównym źródłem ogrzewania jest urządzenie na paliwo stałe wpisane lub zgłoszone do centralnej ewidencji emisyjności budynków",
+   "opis_prosty": null,
+   "sytuacje": [
+    "mieszkanie_energia"
+   ],
+   "przepis": {
+    "eli": "DU/2022/1692",
+    "przepis": "art. 2 ust. 1",
+    "cytat": "Dodatek węglowy przysługuje osobie w gospodarstwie domowym w przypadku, gdy głównym źródłem ogrzewania gospodarstwa domowego jest kocioł na paliwo stałe, kominek, koza, ogrzewacz powietrza, trzon kuchenny, piecokuchnia, kuchnia węglowa lub piec kaflowy na paliwo stałe, zasilane paliwami stałymi, wpisane lub zgłoszone do centralnej ewidencji emisyjności budynków, o której mowa w art. 27a ust. 1 ustawy z dnia 21 listopada 2008 r. o wspieraniu termomodernizacji i remontów oraz o centralnej ewidencji emisyjności budynków (Dz. U. z 2023 r. poz. 2496 oraz z 2024 r. poz. 1089), do dnia 11 sierpnia 2022 r., albo po tym dniu – w przypadku głównych źródeł ogrzewania wpisanych lub zgłoszonych po raz pierwszy do centralnej ewidencji emisyjności budynków, o których mowa w art. 27g ust. 1 tej ustawy.",
+    "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+    "data_stanu": "2024-09-04"
+   },
+   "ile": {
+    "rozwiazanie": "kwota_w_ustawie",
+    "regula": null,
+    "aktualna": {
+     "wartosc": "3000 złotych",
+     "od": null
+    },
+    "kwota_ustawowa_zastapiona": null,
+    "os_czasu": [
+     {
+      "wartosc": "3000 złotych",
+      "warianty": null,
+      "od": null,
+      "do": null,
+      "rodzaj_zmiany": "brzmienie_pierwotne",
+      "poprzednia": null,
+      "roznica": null,
+      "dowod": {
+       "eli": "DU/2022/1692",
+       "przepis": "art. 2 ust. 8",
+       "cytat": "Dodatek węglowy dla gospodarstwa domowego, o którym mowa w ust. 1, wynosi 3000 złotych.",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+       "data_stanu": "2024-09-04"
+      }
+     }
+    ],
+    "trasa": [
+     {
+      "krok": 1,
+      "opis": "kwota wprost w ustawie",
+      "dowod": {
+       "eli": "DU/2022/1692",
+       "przepis": "art. 2 ust. 8",
+       "cytat": "Dodatek węglowy dla gospodarstwa domowego, o którym mowa w ust. 1, wynosi 3000 złotych.",
+       "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+       "data_stanu": "2024-09-04"
+      }
+     }
+    ]
+   },
+   "do_kiedy": [
+    {
+     "rodzaj": "termin_wniosku",
+     "data": "2022-11-30",
+     "opis": "Wniosek o wypłatę dodatku węglowego składa się w terminie do dnia 30 listopada 2022 r.",
+     "skutek": "Wnioski o wypłatę dodatku węglowego złożone po dniu 30 listopada 2022 r. pozostawia się bez rozpoznania.",
+     "dowod": {
+      "eli": "DU/2022/1692",
+      "przepis": "art. 2 ust. 9",
+      "cytat": "Wniosek o wypłatę dodatku węglowego składa się w terminie do dnia 30 listopada 2022 r.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+      "data_stanu": "2024-09-04"
+     }
+    }
+   ],
+   "powiazane": [],
+   "stan": {
+    "data_stanu": "2024-09-04",
+    "tekst": "tekst ujednolicony (informacyjny)"
+   },
+   "nieustalone": [],
+   "_uwaga": "rodzaj_korzysci 'swiadczenie_jednorazowe' nadany recznie w przykladzie; E3 nadaje wstepnie 'swiadczenie_okresowe' (do korekty w E4)"
+  }
+ ],
+ "akty": [
+  {
+   "eli": "DU/2003/1268",
+   "tytul": "Ustawa z dnia 27 czerwca 2003 r. o rencie socjalnej",
+   "typ": "Ustawa",
+   "data_stanu": "2026-04-17",
+   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+   "url_isap": null,
+   "korzysci": [
+    "DU-2003-1268-art6a-ust1"
+   ],
+   "wykonawcze": [
+    {
+     "eli": "MP/2025/133",
+     "od": "2025-03-01",
+     "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 14 lutego 2025 r. w sprawie kwoty dodatku dopełniającego"
+    },
+    {
+     "eli": "MP/2026/153",
+     "od": "2026-03-01",
+     "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 27 stycznia 2026 r. w sprawie kwoty dodatku dopełniającego"
+    }
+   ],
+   "status": "obowiązujący",
+   "pliki": [
+    {
+     "rodzaj": "U",
+     "plik": "akty/DU_2003_1268/U_216fb4eef4f3fe40_D20031268Lj.pdf",
+     "nazwa_pobierania": "DU_2003_1268_ujednolicony_2026-04-17.pdf",
+     "sha256": "216fb4eef4f3fe404cd4dbc71ff1c874232d36f769d3a09727e692e2638dcc69",
+     "rozmiar": 293537,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268/text/U/D20031268Lj.pdf",
+     "pobrano": "2026-10-17T13:55:26+00:00",
+     "data_stanu": "2026-04-17",
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": true
+    },
+    {
+     "rodzaj": "O",
+     "plik": "akty/DU_2003_1268/O_e35a9209bf297bca_D20031268.pdf",
+     "nazwa_pobierania": "DU_2003_1268_ogloszony.pdf",
+     "sha256": "e35a9209bf297bca804c62871ae3543748e9713e90afb0647e0d866d66f85be8",
+     "rozmiar": 302687,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268/text/O/D20031268.pdf",
+     "pobrano": "2026-10-17T13:55:32+00:00",
+     "data_stanu": null,
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": false
+    }
+   ]
+  },
+  {
+   "eli": "DU/2003/2255",
+   "tytul": "Ustawa z dnia 28 listopada 2003 r. o świadczeniach rodzinnych",
+   "typ": "Ustawa",
+   "data_stanu": "2026-10-12",
+   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "url_isap": null,
+   "korzysci": [
+    "DU-2003-2255-art6"
+   ],
+   "wykonawcze": [
+    {
+     "eli": "DU/2012/959",
+     "od": "2012-11-01",
+     "tytul": "Rozporządzenie Rady Ministrów z dnia 10 sierpnia 2012 r. w sprawie wysokości dochodu rodziny albo dochodu osoby uczącej się stanowiących podstawę ubiegania się o zasiłek rodzinny oraz wysokości świadczeń rodzinnych"
+    },
+    {
+     "eli": "DU/2018/1497",
+     "od": "2018-11-01",
+     "tytul": "Rozporządzenie Rady Ministrów z dnia 31 lipca 2018 r. w sprawie wysokości dochodu rodziny albo dochodu osoby uczącej się stanowiących podstawę ubiegania się o zasiłek rodzinny i specjalny zasiłek opiekuńczy, wysokości świadczeń rodzinnych oraz wysokości zasiłku dla opiekuna"
+    },
+    {
+     "eli": "DU/2021/1481",
+     "od": "2021-11-01",
+     "tytul": "Rozporządzenie Rady Ministrów z dnia 13 sierpnia 2021 r. w sprawie wysokości dochodu rodziny albo dochodu osoby uczącej się stanowiących podstawę ubiegania się o zasiłek rodzinny i specjalny zasiłek opiekuńczy, wysokości świadczeń rodzinnych oraz wysokości zasiłku dla opiekuna"
+    },
+    {
+     "eli": "DU/2024/1238",
+     "od": "2024-11-01",
+     "tytul": "Rozporządzenie Rady Ministrów z dnia 13 sierpnia 2024 r. w sprawie wysokości dochodu rodziny albo dochodu osoby uczącej się stanowiących podstawę ubiegania się o zasiłek rodzinny i specjalny zasiłek opiekuńczy, wysokości świadczeń rodzinnych oraz wysokości zasiłku dla opiekuna"
+    }
+   ],
+   "status": "obowiązujący",
+   "pliki": [
+    {
+     "rodzaj": "U",
+     "plik": "akty/DU_2003_2255/U_5efe263acfe12181_D20032255Lj.pdf",
+     "nazwa_pobierania": "DU_2003_2255_ujednolicony_2026-10-12.pdf",
+     "sha256": "5efe263acfe12181bf3b5940750d05771d43e3e1dc288a64f8f4382df560b106",
+     "rozmiar": 592671,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255/text/U/D20032255Lj.pdf",
+     "pobrano": "2026-10-17T13:55:24+00:00",
+     "data_stanu": "2026-10-12",
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": true
+    },
+    {
+     "rodzaj": "O",
+     "plik": "akty/DU_2003_2255/O_bab0960daf85803e_D20032255.pdf",
+     "nazwa_pobierania": "DU_2003_2255_ogloszony.pdf",
+     "sha256": "bab0960daf85803e8b54a374e845628fb54e61b4162542c686c2a74b32f230c8",
+     "rozmiar": 373742,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255/text/O/D20032255.pdf",
+     "pobrano": "2026-10-17T14:54:15+00:00",
+     "data_stanu": null,
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": false
+    }
+   ]
+  },
+  {
+   "eli": "DU/2022/1692",
+   "tytul": "Ustawa z dnia 5 sierpnia 2022 r. o dodatku węglowym",
+   "typ": "Ustawa",
+   "data_stanu": "2024-09-04",
+   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+   "url_isap": null,
+   "korzysci": [
+    "DU-2022-1692-art2-ust1"
+   ],
+   "wykonawcze": [],
+   "status": "obowiązujący",
+   "pliki": [
+    {
+     "rodzaj": "U",
+     "plik": "akty/DU_2022_1692/U_3e37ce84995e310e_D20221692Lj.pdf",
+     "nazwa_pobierania": "DU_2022_1692_ujednolicony_2024-09-04.pdf",
+     "sha256": "3e37ce84995e310e6aac85aa7acb8dc2563eb75a219408766571632282812d44",
+     "rozmiar": 272089,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692/text/U/D20221692Lj.pdf",
+     "pobrano": "2026-10-17T13:55:27+00:00",
+     "data_stanu": "2024-09-04",
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": true
+    },
+    {
+     "rodzaj": "O",
+     "plik": "akty/DU_2022_1692/O_b4808fb491377032_D20221692.pdf",
+     "nazwa_pobierania": "DU_2022_1692_ogloszony.pdf",
+     "sha256": "b4808fb4913770325b48e7cc489c7574d3e48650325563897fd6d98c79607c11",
+     "rozmiar": 391179,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692/text/O/D20221692.pdf",
+     "pobrano": "2026-10-17T14:54:06+00:00",
+     "data_stanu": null,
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": false
+    }
+   ]
+  },
+  {
+   "eli": "MP/2025/133",
+   "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 14 lutego 2025 r. w sprawie kwoty dodatku dopełniającego",
+   "typ": "Komunikat",
+   "data_stanu": null,
+   "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2025/133",
+   "url_isap": null,
+   "korzysci": [
+    "DU-2003-1268-art6a-ust1"
+   ],
+   "wykonawcze": [],
+   "status": "bez statusu",
+   "pliki": [
+    {
+     "rodzaj": "O",
+     "plik": "akty/MP_2025_133/O_f95234bdf40dfd99_M20250133.pdf",
+     "nazwa_pobierania": "MP_2025_133_ogloszony.pdf",
+     "sha256": "f95234bdf40dfd99567446f566e6b3ecb92633ea2d166c0c227ade70db30e9c3",
+     "rozmiar": 143619,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2025/133/text/O/M20250133.pdf",
+     "pobrano": "2026-10-17T14:55:03+00:00",
+     "data_stanu": null,
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": true
+    }
+   ]
+  },
+  {
+   "eli": "MP/2026/153",
+   "tytul": "Komunikat Prezesa Zakładu Ubezpieczeń Społecznych z dnia 27 stycznia 2026 r. w sprawie kwoty dodatku dopełniającego",
+   "typ": "Komunikat",
+   "data_stanu": null,
+   "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+   "url_isap": null,
+   "korzysci": [
+    "DU-2003-1268-art6a-ust1"
+   ],
+   "wykonawcze": [],
+   "status": "bez statusu",
+   "pliki": [
+    {
+     "rodzaj": "O",
+     "plik": "akty/MP_2026_153/O_dd8b9ceebeaf410a_M20260153.pdf",
+     "nazwa_pobierania": "MP_2026_153_ogloszony.pdf",
+     "sha256": "dd8b9ceebeaf410abddb6ee75c413b1528dc98c13b4207c2b14341ae1e2c699f",
+     "rozmiar": 148747,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/153/text/O/M20260153.pdf",
+     "pobrano": "2026-10-17T14:42:16+00:00",
+     "data_stanu": null,
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": true
+    }
+   ]
+  },
+  {
+   "eli": "DU/2012/959",
+   "tytul": "Rozporządzenie Rady Ministrów z dnia 10 sierpnia 2012 r. w sprawie wysokości dochodu rodziny albo dochodu osoby uczącej się stanowiących podstawę ubiegania się o zasiłek rodzinny oraz wysokości świadczeń rodzinnych",
+   "typ": "Rozporządzenie",
+   "data_stanu": null,
+   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+   "url_isap": null,
+   "korzysci": [
+    "DU-2003-2255-art6"
+   ],
+   "wykonawcze": [],
+   "status": "uchylony",
+   "pliki": [
+    {
+     "rodzaj": "O",
+     "plik": "akty/DU_2012_959/O_db5737ffeff14e56_D20120959.pdf",
+     "nazwa_pobierania": "DU_2012_959_ogloszony.pdf",
+     "sha256": "db5737ffeff14e5646e15e4cece1697accdcd010cb5e5ae4c14c83023595e704",
+     "rozmiar": 739399,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2012/959/text/O/D20120959.pdf",
+     "pobrano": "2026-10-17T14:58:48+00:00",
+     "data_stanu": null,
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": true
+    }
+   ]
+  },
+  {
+   "eli": "DU/2018/1497",
+   "tytul": "Rozporządzenie Rady Ministrów z dnia 31 lipca 2018 r. w sprawie wysokości dochodu rodziny albo dochodu osoby uczącej się stanowiących podstawę ubiegania się o zasiłek rodzinny i specjalny zasiłek opiekuńczy, wysokości świadczeń rodzinnych oraz wysokości zasiłku dla opiekuna",
+   "typ": "Rozporządzenie",
+   "data_stanu": null,
+   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+   "url_isap": null,
+   "korzysci": [
+    "DU-2003-2255-art6"
+   ],
+   "wykonawcze": [],
+   "status": "uchylony",
+   "pliki": [
+    {
+     "rodzaj": "O",
+     "plik": "akty/DU_2018_1497/O_d0f39a97bcb3051b_D20181497.pdf",
+     "nazwa_pobierania": "DU_2018_1497_ogloszony.pdf",
+     "sha256": "d0f39a97bcb3051bfec43618c001d5f931315c7cb3516c19e6a84dc54fe0117a",
+     "rozmiar": 240164,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497/text/O/D20181497.pdf",
+     "pobrano": "2026-10-17T14:58:43+00:00",
+     "data_stanu": null,
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": true
+    }
+   ]
+  },
+  {
+   "eli": "DU/2021/1481",
+   "tytul": "Rozporządzenie Rady Ministrów z dnia 13 sierpnia 2021 r. w sprawie wysokości dochodu rodziny albo dochodu osoby uczącej się stanowiących podstawę ubiegania się o zasiłek rodzinny i specjalny zasiłek opiekuńczy, wysokości świadczeń rodzinnych oraz wysokości zasiłku dla opiekuna",
+   "typ": "Rozporządzenie",
+   "data_stanu": null,
+   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+   "url_isap": null,
+   "korzysci": [
+    "DU-2003-2255-art6"
+   ],
+   "wykonawcze": [],
+   "status": "uchylony",
+   "pliki": [
+    {
+     "rodzaj": "O",
+     "plik": "akty/DU_2021_1481/O_b978c369d8ed22ee_D20211481.pdf",
+     "nazwa_pobierania": "DU_2021_1481_ogloszony.pdf",
+     "sha256": "b978c369d8ed22ee8195bd69ff3030eb37a57c766041a4b43d27910442776ef6",
+     "rozmiar": 206898,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481/text/O/D20211481.pdf",
+     "pobrano": "2026-10-17T14:58:41+00:00",
+     "data_stanu": null,
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": true
+    }
+   ]
+  },
+  {
+   "eli": "DU/2024/1238",
+   "tytul": "Rozporządzenie Rady Ministrów z dnia 13 sierpnia 2024 r. w sprawie wysokości dochodu rodziny albo dochodu osoby uczącej się stanowiących podstawę ubiegania się o zasiłek rodzinny i specjalny zasiłek opiekuńczy, wysokości świadczeń rodzinnych oraz wysokości zasiłku dla opiekuna",
+   "typ": "Rozporządzenie",
+   "data_stanu": null,
+   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+   "url_isap": null,
+   "korzysci": [
+    "DU-2003-2255-art6"
+   ],
+   "wykonawcze": [],
+   "status": "obowiązujący",
+   "pliki": [
+    {
+     "rodzaj": "O",
+     "plik": "akty/DU_2024_1238/O_ad095ca280dd10be_D20241238.pdf",
+     "nazwa_pobierania": "DU_2024_1238_ogloszony.pdf",
+     "sha256": "ad095ca280dd10be3c77e35d1d4acf627873bb6353e7728096c324c1f5b293c1",
+     "rozmiar": 155601,
+     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238/text/O/D20241238.pdf",
+     "pobrano": "2026-10-17T14:42:17+00:00",
+     "data_stanu": null,
+     "eli_obwieszczenia": null,
+     "uzyty_w_danych": true
+    }
+   ]
+  }
+ ],
+ "slowniki": {
+  "rodzaj_korzysci": {
+   "swiadczenie_okresowe": "świadczenie okresowe",
+   "swiadczenie_jednorazowe": "świadczenie jednorazowe",
+   "ulga_podatkowa": "ulga podatkowa",
+   "zwolnienie": "zwolnienie",
+   "swiadczenie_rzeczowe": "świadczenie rzeczowe",
+   "uprawnienie": "uprawnienie",
+   "dofinansowanie": "dofinansowanie"
+  },
+  "rodzaj_terminu": {
+   "okres_kwoty": "okres obowiązywania kwoty",
+   "termin_wniosku": "termin złożenia wniosku",
+   "granica_przepisu": "obowiązywanie przepisu",
+   "okres_zasilkowy": "okres zasiłkowy",
+   "harmonogram_dostepnosci": "harmonogram dostępności"
+  },
+  "status": {
+   "obowiazuje": "obowiązuje",
+   "zamknieta": "zakończona",
+   "do_ustalenia": "do ustalenia"
+  },
+  "sytuacje": {
+   "dziecko": "dziecko",
+   "ciaza_porod": "ciąża i poród",
+   "niepelnosprawnosc": "niepełnosprawność",
+   "opieka_nad_bliskim": "opieka nad bliskim",
+   "senior": "senior",
+   "niski_dochod": "niski dochód",
+   "utrata_pracy": "utrata pracy",
+   "mieszkanie_energia": "mieszkanie i energia",
+   "edukacja": "edukacja",
+   "cudzoziemiec": "cudzoziemiec"
+  }
+ }
+}

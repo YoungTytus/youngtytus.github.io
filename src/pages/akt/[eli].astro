@@ -1,0 +1,74 @@
+---
+import Uklad from '../../layouts/Uklad.astro';
+import KartaKorzysci from '../../components/KartaKorzysci.astro';
+import PlikiAktu from '../../components/PlikiAktu.astro';
+import UwagaDanych from '../../components/UwagaDanych.astro';
+import { aktPoEli, aktyNadrzedne, dane, korzyscPoId } from '../../lib/model.mjs';
+import { dataLubBrak, dataPL, eliDziennik, eliSlug } from '../../lib/format.mjs';
+
+export function getStaticPaths() {
+  return dane().akty.map((a: any) => ({ params: { eli: eliSlug(a.eli) }, props: { eli: a.eli } }));
+}
+const a: any = aktPoEli(Astro.props.eli);
+const korzysci = a.korzysci.map((id: string) => korzyscPoId(id)).filter(Boolean);
+const nadrzedne = aktyNadrzedne(a.eli);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Legislation',
+  name: a.tytul,
+  legislationIdentifier: a.eli,
+  legislationType: a.typ,
+  legislationJurisdiction: 'PL',
+  inLanguage: 'pl',
+  sameAs: a.url_eli,
+};
+---
+<Uklad tytul={`${a.tytul} (${a.eli})`} opis={`${a.tytul}, ${eliDziennik(a.eli)}. Korzyści wynikające z aktu, akty wykonawcze i teksty do pobrania.`.replace(/ /g, ' ')} sekcja="akty" jsonLd={jsonLd}>
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><a href="/akty/">Akty prawne</a><span aria-hidden="true">/</span><span aria-current="page">{a.eli}</span></nav>
+      <p class="kicker">{a.typ} · {eliDziennik(a.eli)}</p>
+      <h1 class="akt-tytul">{a.tytul}</h1>
+      <div class="detail-meta">
+        <span class="tag">ELI: {a.eli}</span>
+        <span class="tag">status: {a.status}</span>
+        {a.data_stanu && <span class="tag">tekst ujednolicony: stan na {dataPL(a.data_stanu)}</span>}
+      </div>
+      <p class="lead">
+        <a class="link" href={a.url_eli} target="_blank" rel="noopener">Akt w API ELI Sejmu ↗</a>
+        {a.url_isap && <> · <a class="link" href={a.url_isap} target="_blank" rel="noopener">Akt w ISAP ↗</a></>}
+      </p>
+      <UwagaDanych />
+    </div>
+  </div>
+  <div class="wrap section">
+    {nadrzedne.length > 0 && (
+      <section class="detail-section">
+        <h2>Akt wykonawczy do</h2>
+        <ul class="wykonawcze">
+          {nadrzedne.map((n: any) => <li><span class="muted">{n.eli}</span><a class="link" href={`/akt/${eliSlug(n.eli)}/`}>{n.tytul}</a></li>)}
+        </ul>
+      </section>
+    )}
+    <section class="detail-section">
+      <h2>Korzyści z tego aktu</h2>
+      {korzysci.length ? <div class="cards">{korzysci.map((k: any) => <KartaKorzysci k={k} />)}</div> : <p class="summary-note">Brak korzyści przypisanych do tego aktu w tej wersji danych.</p>}
+    </section>
+    {a.wykonawcze.length > 0 && (
+      <section class="detail-section">
+        <h2>Akty wykonawcze</h2>
+        <ul class="wykonawcze">
+          {a.wykonawcze.map((w: any) => {
+            const ma = aktPoEli(w.eli);
+            return <li><span><strong>od {dataLubBrak(w.od)}</strong><br /><span class="muted">{w.eli}</span></span>{ma ? <a class="link" href={`/akt/${eliSlug(w.eli)}/`}>{w.tytul}</a> : <span>{w.tytul}</span>}</li>;
+          })}
+        </ul>
+      </section>
+    )}
+    <section class="detail-section" id="pliki">
+      <h2>Pliki do pobrania</h2>
+      <p class="summary-note" style="margin:0 0 18px">Kopie dokładnie tych tekstów, z których pochodzą dane. Link „aktualna wersja u źródła” prowadzi do bieżącego tekstu w API Sejmu, który mógł się od tego czasu zmienić.</p>
+      <PlikiAktu eli={a.eli} akt={a} naglowek={false} />
+    </section>
+  </div>
+</Uklad>

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.astro/
+.cache/
+.work/
+.podglad/
+__pycache__/
+*.pyc
+.env
+.env.*
+eksport/
+exkort/
+!data/eksport/
+data/eksport/akty/*.pdf
+site.tar.gz

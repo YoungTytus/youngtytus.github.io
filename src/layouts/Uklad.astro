@@ -1,0 +1,133 @@
+---
+import '../styles/global.css';
+import Logo from '../components/Logo.astro';
+import Ikona from '../components/Ikona.astro';
+import { dane, dataEksportu } from '../lib/model.mjs';
+import { dataPL } from '../lib/format.mjs';
+
+interface Props {
+  tytul: string;
+  opis: string;
+  sekcja?: 'korzysci' | 'sytuacje' | 'akty' | 'metodologia' | 'dane' | 'zmiany';
+  jsonLd?: Record<string, unknown>;
+  noindex?: boolean;
+}
+const { tytul, opis, sekcja, jsonLd, noindex } = Astro.props;
+const NAZWA = 'Mapa Polskiego Socjalu';
+const pelnyTytul = tytul === NAZWA ? `${NAZWA}: świadczenia, ulgi i uprawnienia z podstawą prawną` : `${tytul} | ${NAZWA}`;
+const kanoniczny = new URL(Astro.url.pathname, Astro.site).href;
+const d = dane();
+const wersja = `${d.manifest.kontrakt} · ${d.manifest.wersja_kodu}`;
+const stan = dataPL(dataEksportu());
+const nav = [
+  { href: '/korzysci/', etykieta: 'Korzyści', id: 'korzysci' },
+  { href: '/#sytuacje', etykieta: 'Sytuacje życiowe', id: 'sytuacje' },
+  { href: '/akty/', etykieta: 'Akty prawne', id: 'akty' },
+  { href: '/metodologia/', etykieta: 'Jak to działa', id: 'metodologia' },
+];
+---
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pelnyTytul}</title>
+    <meta name="description" content={opis} />
+    <link rel="canonical" href={kanoniczny} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#0b1f3a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:title" content={pelnyTytul} />
+    <meta property="og:description" content={opis} />
+    <meta property="og:url" content={kanoniczny} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap.xml" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    <script is:inline>document.documentElement.classList.add('js');</script>
+  </head>
+  <body>
+    <a class="skip" href="#tresc">Przejdź do treści</a>
+    <header class="header">
+      <div class="wrap">
+        <a class="brand" href="/" aria-label={`${NAZWA}, strona główna`}>
+          <Logo />
+          <span><strong>Mapa Polskiego Socjalu</strong><small>Świadczenia · ulgi · uprawnienia</small></span>
+        </a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nawigacja">
+          <Ikona n="menu" /><span>Menu</span>
+        </button>
+        <nav class="nav" id="nawigacja" aria-label="Nawigacja główna">
+          {nav.map((n) => <a href={n.href} aria-current={sekcja === n.id ? 'page' : undefined}>{n.etykieta}</a>)}
+          <a href="/dane/" class="nav-cta" aria-current={sekcja === 'dane' ? 'page' : undefined}>Pobierz dane</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="tresc" tabindex="-1">
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="brand" href="/" aria-label={`${NAZWA}, strona główna`}>
+            <Logo />
+            <span><strong>Mapa Polskiego Socjalu</strong><small>Każda kwota z dowodem</small></span>
+          </a>
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h2>Przeglądaj</h2>
+              <ul>
+                <li><a href="/korzysci/">Wszystkie korzyści</a></li>
+                <li><a href="/#sytuacje">Sytuacje życiowe</a></li>
+                <li><a href="/akty/">Akty prawne</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h2>O danych</h2>
+              <ul>
+                <li><a href="/metodologia/">Metodologia</a></li>
+                <li><a href="/zmiany/">Zmiany w danych</a></li>
+                <li><a href="/dane/">Otwarte dane</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="disclaimer">
+          <p><strong>Informacje mają charakter poglądowy i nie stanowią porady prawnej. O prawie do świadczenia rozstrzyga właściwy organ.</strong></p>
+          <p>Źródło tekstów: Kancelaria Sejmu, Internetowy System Aktów Prawnych (API ELI). Teksty aktów normatywnych nie są przedmiotem prawa autorskiego (art.&nbsp;4 ustawy o prawie autorskim i prawach pokrewnych).</p>
+          <p>Wersja danych: {wersja}{stan && `, wygenerowano ${stan}`}{d.tryb === 'przyklad' && ' · dane przykładowe'}. Strona nie używa ciasteczek ani analityki.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function otworzDowod() {
+        const cel = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        if (!cel) return;
+        let el: HTMLElement | null = cel;
+        while (el) {
+          if (el instanceof HTMLDetailsElement) el.open = true;
+          el = el.parentElement;
+        }
+      }
+      window.addEventListener('hashchange', otworzDowod);
+      otworzDowod();
+      const btn = document.querySelector<HTMLButtonElement>('.menu-btn');
+      const nav = document.getElementById('nawigacja');
+      btn?.addEventListener('click', () => {
+        const otwarte = btn.getAttribute('aria-expanded') !== 'true';
+        btn.setAttribute('aria-expanded', String(otwarte));
+        nav?.classList.toggle('open', otwarte);
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && btn?.getAttribute('aria-expanded') === 'true') {
+          btn.setAttribute('aria-expanded', 'false');
+          nav?.classList.remove('open');
+          btn.focus();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+* text=auto
+# Manifest SHA-256 opisuje dokładne bajty. Nigdy nie zmieniaj LF/CRLF w eksporcie.
+data/eksport/** -text

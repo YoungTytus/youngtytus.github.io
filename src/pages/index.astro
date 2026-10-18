@@ -1,0 +1,127 @@
+---
+import Uklad from '../layouts/Uklad.astro';
+import Ikona from '../components/Ikona.astro';
+import KartaKorzysci from '../components/KartaKorzysci.astro';
+import UwagaDanych from '../components/UwagaDanych.astro';
+import { dane, dataEksportu, liczbaWSytuacji, posortowaneKorzysci } from '../lib/model.mjs';
+import { dataPL } from '../lib/format.mjs';
+
+const d = dane();
+const sytuacje = Object.entries(d.slowniki.sytuacje) as [string, string][];
+const wyroznione = posortowaneKorzysci().slice(0, 6);
+const liczbaPlikow = d.akty.reduce((s: number, a: any) => s + a.pliki.length, 0);
+const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
+---
+<Uklad tytul="Mapa Polskiego Socjalu" opis="Świadczenia, ulgi i uprawnienia od państwa w jednym miejscu: komu przysługują, ile wynoszą, do kiedy, i na podstawie którego przepisu.">
+  <div class="hero-outer">
+    <div class="wrap">
+      <section class="hero" aria-labelledby="hero-tytul">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Przewodnik po wsparciu od państwa</p>
+            <h1 id="hero-tytul">Wiedz, co<br />Ci <em>przysługuje.</em></h1>
+            <p class="hero-lead">Świadczenia, ulgi i uprawnienia w jednym miejscu. Sprawdź warunki, kwoty i terminy, a przy każdej liczbie znajdziesz przepis, z którego pochodzi.</p>
+            <div class="actions">
+              <a href="#sytuacje" class="btn btn-red">Znajdź wsparcie <Ikona n="strzalka" /></a>
+              <a href="/metodologia/" class="btn btn-ghost">Jak to działa</a>
+            </div>
+          </div>
+          <div class="map-stage">
+            <svg class="poland" viewBox="0 0 480 360" aria-hidden="true" focusable="false">
+              <defs>
+                <pattern id="siatka" width="17" height="17" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".7" fill="#9db4d6" opacity=".28" /></pattern>
+                <linearGradient id="wypelnienie" x2="1" y2="1"><stop stop-color="#2a5486" /><stop offset="1" stop-color="#15345c" /></linearGradient>
+              </defs>
+              <circle cx="242" cy="175" r="155" fill="none" stroke="#9db4d6" stroke-opacity=".14" />
+              <circle cx="242" cy="175" r="115" fill="none" stroke="#9db4d6" stroke-opacity=".14" />
+              <path d="M112 86 128 65 162 60 179 47 207 53 225 39 255 50 275 61 303 59 329 66 352 65 359 91 350 111 366 139 355 165 369 191 354 215 364 241 345 261 328 286 306 294 290 284 272 307 246 289 226 284 209 269 190 273 177 253 150 251 135 236 115 226 118 201 108 182 117 157 105 140 117 117Z" fill="url(#wypelnienie)" stroke="#7d9cc4" stroke-width="1.3" />
+              <path d="M112 86 128 65 162 60 179 47 207 53 225 39 255 50 275 61 303 59 329 66 352 65 359 91 350 111 366 139 355 165 369 191 354 215 364 241 345 261 328 286 306 294 290 284 272 307 246 289 226 284 209 269 190 273 177 253 150 251 135 236 115 226 118 201 108 182 117 157 105 140 117 117Z" fill="url(#siatka)" />
+              <path d="M120 96 251 175 353 166M251 175 166 278" fill="none" stroke="#9db4d6" stroke-width="1" stroke-dasharray="4 5" />
+              <circle cx="151" cy="115" r="4" fill="#c3d3e8" />
+              <circle cx="311" cy="203" r="4" fill="#c3d3e8" />
+              <circle cx="208" cy="243" r="4" fill="#c3d3e8" />
+            </svg>
+            <a class="map-label one" href="/sytuacja/dziecko/"><Ikona n="dziecko" />Rodzina i dzieci</a>
+            <a class="map-label two" href="/sytuacja/niepelnosprawnosc/"><Ikona n="niepelnosprawnosc" />Niepełnosprawność</a>
+            <a class="map-label three" href="/sytuacja/mieszkanie_energia/"><Ikona n="mieszkanie_energia" />Mieszkanie i energia</a>
+            <span class="map-dot" aria-hidden="true"></span>
+            <span class="map-caption" aria-hidden="true">Twoja sytuacja. Twoje możliwości.</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="trust">
+        <div class="trust-inner">
+          <span class="trust-item"><Ikona n="ksiazka" />Przepis i cytat przy każdej kwocie</span>
+          <span class="trust-item"><Ikona n="zegar" />Historia kwot i terminy</span>
+          <span class="trust-item"><Ikona n="tarcza" />Braki w danych pokazane wprost</span>
+          <span class="pill">{d.tryb === 'przyklad' ? 'Wersja pilotażowa' : `Dane z ${dataPL(dataEksportu())}`}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section wrap" id="sytuacje" aria-labelledby="sytuacje-tytul">
+    <div class="section-top">
+      <div>
+        <p class="kicker">Zacznij od siebie</p>
+        <h2 id="sytuacje-tytul">W jakiej jesteś sytuacji?</h2>
+      </div>
+      <p>Wybierz temat albo wpisz nazwę świadczenia. Nie musisz znać numeru przepisu.</p>
+    </div>
+    <form class="searchbox" action="/korzysci/" method="get" role="search">
+      <Ikona n="szukaj" />
+      <label class="sr-only" for="szukaj-glowna">Szukaj korzyści</label>
+      <input type="search" id="szukaj-glowna" name="q" placeholder="Nazwa świadczenia, ulgi albo słowo z przepisu…" autocomplete="off" />
+      <button class="btn btn-red" type="submit">Szukaj</button>
+    </form>
+    <p class="search-help">Na przykład: <a href="/korzysci/?q=renta">renta</a>, <a href="/korzysci/?q=zasi%C5%82ek%20rodzinny">zasiłek rodzinny</a>, <a href="/korzysci/?q=dodatek%20w%C4%99glowy">dodatek węglowy</a></p>
+
+    <ul class="categories" role="list">
+      {sytuacje.map(([kod, nazwa]) => {
+        const n = liczbaWSytuacji(kod);
+        return (
+          <li style="display:contents">
+            <a class:list={['category', { 'is-empty': n === 0 }]} href={`/sytuacja/${kod}/`}>
+              <Ikona n={kod} />
+              <span class="cat-row"><span class="first-up">{nazwa}</span><span class="count">{n}<span class="sr-only"> {n === 1 ? 'korzyść' : 'korzyści'} w bazie</span></span></span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+    <p class="summary-note">{d.korzysci.every((k: any) => k.sytuacje.length === 0) ? 'Eksport nie zawiera jeszcze przypisania do sytuacji życiowych. Wszystkie korzyści znajdziesz w wyszukiwarce i katalogu.' : 'Liczby pokazują rekordy w obecnej wersji danych. Brak rekordu nie oznacza braku prawa do wsparcia.'}</p>
+  </section>
+
+  <section class="section section-soft" aria-labelledby="baza-tytul">
+    <div class="wrap">
+      <div class="section-top">
+        <div>
+          <p class="kicker">Poznaj bazę</p>
+          <h2 id="baza-tytul">{d.tryb === 'przyklad' ? 'Świadczenia w pilotażu' : 'Świadczenia w bazie'}</h2>
+        </div>
+        <a href="/korzysci/" class="text-link">Wszystkie korzyści ({d.korzysci.length}) <Ikona n="strzalka" /></a>
+      </div>
+      <div class="cards">
+        {wyroznione.map((k) => <KartaKorzysci k={k} />)}
+      </div>
+      <UwagaDanych />
+      <p class="summary-note">W bazie: {d.korzysci.length} {d.korzysci.length === 1 ? 'korzyść' : 'korzyści'}, {d.akty.length} aktów prawnych, {liczbaPlikow} plików tekstów aktów. Zakres: {d.manifest.zakres.join(', ')}.</p>
+    </div>
+  </section>
+
+  <section class="section wrap principles" aria-labelledby="zasady-tytul">
+    <div>
+      <p class="kicker">Przejrzystość przede wszystkim</p>
+      <h2 id="zasady-tytul">Za każdą informacją stoi konkretny przepis.</h2>
+      <p>Pokazujemy nie tylko wysokość świadczenia, ale całą drogę do jej źródła: ustawę, akt wykonawczy i dosłowny cytat. Strona niczego nie dopowiada: czego nie ustalono, tego nie zgadujemy.</p>
+      <a class="btn" style="margin-top:28px" href="/metodologia/">Jak czytać dane <Ikona n="strzalka" /></a>
+    </div>
+    <div>
+      <div class="principle"><span class="principle-num">01</span><div><h3>Sprawdzasz u źródła</h3><p>Cytat przepisu, numer artykułu i link do aktu w systemie Sejmu przy każdej kwocie i dacie.</p></div></div>
+      <div class="principle"><span class="principle-num">02</span><div><h3>Widzisz, co się zmieniało</h3><p>Historia kwot z datami i aktami, terminy wniosków. Świadczenia zakończone zostają jako archiwum.</p></div></div>
+      <div class="principle"><span class="principle-num">03</span><div><h3>Wiesz, czego jeszcze nie ustalono</h3><p>Braki w danych są opisane wprost, z powodem. Nie zastępujemy ich zerem ani domysłem.</p></div></div>
+      <div class="principle"><span class="principle-num">04</span><div><h3>Pobierasz teksty aktów</h3><p>Bezpośrednie odnośniki do dokumentów w API Sejmu, z opisem wersji tekstu.</p></div></div>
+    </div>
+  </section>
+</Uklad>

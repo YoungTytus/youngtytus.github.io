@@ -1,0 +1,49 @@
+---
+// Bezpośrednie odnośniki do plików w API Sejmu; witryna nie przechowuje PDF-ów.
+import Ikona from './Ikona.astro';
+import { dataPL, eliDziennik, eliSlug, etykietaPliku, posortujPliki, rozmiar } from '../lib/format.mjs';
+
+interface Props { eli: string; akt: any | null; naglowek?: boolean }
+const { eli, akt, naglowek = true } = Astro.props;
+const pliki = akt ? posortujPliki(akt.pliki) : [];
+const urlEli = akt?.url_eli ?? `https://api.sejm.gov.pl/eli/acts/${eli}`;
+---
+<div class="akt-pliki">
+  {naglowek && (
+    <>
+      <h3>{akt ? <a href={`/akt/${eliSlug(eli)}/`}>{akt.tytul}</a> : eli}</h3>
+      <p class="meta">{eli} · {eliDziennik(eli)}{akt && ` · ${akt.typ}`}</p>
+    </>
+  )}
+  {!akt && (
+    <p class="unavailable">Brak rekordu aktu w tej wersji danych. <a class="link" href={urlEli} target="_blank" rel="noopener">Aktualna wersja u źródła ↗</a></p>
+  )}
+  {akt && pliki.length === 0 && (
+    <p class="unavailable">Plik niedostępny w tej wersji danych. <a class="link" href={urlEli} target="_blank" rel="noopener">Aktualna wersja u źródła ↗</a></p>
+  )}
+  {pliki.map((p: any) => {
+    const et = etykietaPliku(p, akt);
+    const urlPdf = /^https:\/\/api\.sejm\.gov\.pl\/eli\/acts\//.test(p.url_zrodla) ? p.url_zrodla : null;
+    return (
+      <div class="download">
+        <div>
+          <h4><Ikona n="plik" />{et.nazwa} <span class:list={['moc', et.moc === 'wiążący' ? 'wiazacy' : 'informacyjny']}>{et.moc}</span>{p.uzyty_w_danych && <span class="tag">źródło cytatów</span>}</h4>
+          <p>{et.opis}</p>
+          <p class="muted">PDF · {rozmiar(p.rozmiar)} w eksporcie · metadane z {dataPL(p.pobrano?.slice(0, 10)) ?? 'brak daty w eksporcie'}</p>
+          <details>
+            <summary>SHA-256: <code>{p.sha256.slice(0, 16)}…</code></summary>
+            <p class="checksum">{p.sha256}</p>
+            <p class="checksum">Plik u źródła: {p.url_zrodla}</p>
+          </details>
+          <p class="muted">Plik w API Sejmu może być aktualizowany i różnić się od cytowanego stanu historycznego. Sumę podano dla wersji opisanej w eksporcie.</p>
+          {p.warstwa_tekstowa === 'uszkodzona_naprawiona' && <p class="muted">Kopiowanie tekstu z tego PDF daje błędne znaki. Poprawiony tekst do czytania i kopiowania: <a class="link" href={`/teksty/${eliSlug(eli)}-${p.rodzaj}-do-kopiowania.txt`} download>Tekst ogłoszony, wersja do kopiowania (TXT)</a>. Jest to plik pochodny przygotowany w eksporcie.</p>}
+          {p.warstwa_tekstowa === 'uszkodzona' && <p class="muted">Kopiowanie tekstu z tego PDF daje błędne znaki; do cytowania użyj tekstu ujednoliconego.</p>}
+        </div>
+        <div class="actions">
+          {urlPdf && <a class="btn btn-red btn-sm" href={urlPdf} target="_blank" rel="noopener" type="application/pdf"><Ikona n="pobierz" />Pobierz PDF<span class="sr-only"> z API Sejmu (otwiera się w nowej karcie)</span></a>}
+          <a class="btn btn-sm" href={urlEli} target="_blank" rel="noopener">Aktualna wersja u źródła<span class="sr-only"> (otwiera się w nowej karcie)</span></a>
+        </div>
+      </div>
+    );
+  })}
+</div>

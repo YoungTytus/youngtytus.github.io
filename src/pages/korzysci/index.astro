@@ -1,0 +1,107 @@
+---
+import Uklad from '../../layouts/Uklad.astro';
+import KartaKorzysci from '../../components/KartaKorzysci.astro';
+import UwagaDanych from '../../components/UwagaDanych.astro';
+import { dane, indeksWyszukiwania, posortowaneKorzysci } from '../../lib/model.mjs';
+
+const d = dane();
+const lista = posortowaneKorzysci();
+const akty = [...new Set(d.korzysci.map((k: any) => k.przepis.eli))].map((eli) => ({ eli, tytul: d.akty.find((a: any) => a.eli === eli)?.tytul ?? eli }));
+const opcje = (o: Record<string, string>) => Object.entries(o);
+---
+<Uklad tytul="Wszystkie korzyści" opis="Lista świadczeń, ulg, zwolnień i uprawnień z filtrami według rodzaju, sytuacji życiowej, statusu i aktu prawnego." sekcja="korzysci">
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span aria-current="page">Korzyści</span></nav>
+      <h1>Wszystkie korzyści</h1>
+      <p class="lead">Świadczenia, ulgi, zwolnienia i uprawnienia z bazy. Wyszukiwarka zna polskie znaki i odmianę wyrazów: „renta” znajdzie też „renty socjalnej”.</p>
+      <UwagaDanych />
+    </div>
+  </div>
+
+  <div class="wrap section" style="padding-top:28px">
+    <form id="filtry" class="filters" role="search" action="/korzysci/" method="get">
+      <label class="f-q">Szukaj
+        <input type="search" name="q" id="q" placeholder="np. dodatek dopełniający" autocomplete="off" />
+      </label>
+      <label>Rodzaj
+        <select name="rodzaj"><option value="">wszystkie</option>{opcje(d.slowniki.rodzaj_korzysci).map(([k, v]) => <option value={k}>{v}</option>)}</select>
+      </label>
+      <label>Sytuacja
+        <select name="sytuacja"><option value="">wszystkie</option>{opcje(d.slowniki.sytuacje).map(([k, v]) => <option value={k}>{v}</option>)}</select>
+      </label>
+      <label>Status
+        <select name="status"><option value="">wszystkie</option>{opcje(d.slowniki.status).map(([k, v]) => <option value={k}>{v}</option>)}</select>
+      </label>
+      <label>Akt prawny
+        <select name="akt"><option value="">wszystkie</option>{akty.map((a) => <option value={a.eli}>{a.eli}</option>)}</select>
+      </label>
+      <label>Sortuj
+        <select name="sort"><option value="nazwa">po nazwie</option><option value="kwota">po kwocie</option></select>
+      </label>
+      <noscript><button class="btn btn-sm" type="submit">Filtruj</button></noscript>
+    </form>
+    <div class="resultbar">
+      <p id="wynik" role="status" aria-live="polite">Liczba wyników: {lista.length}</p>
+      <button class="reset" type="button" id="wyczysc">Wyczyść filtry</button>
+    </div>
+    <p class="summary-note" id="nota-kwota" hidden>Sortowanie po kwocie bierze pod uwagę tylko pojedynczą aktualną kwotę; korzyści z kwotą w wariantach albo bez ustalonej kwoty są na końcu.</p>
+
+    <div class="cards" data-wyniki>
+      {lista.map((k) => <KartaKorzysci k={k} />)}
+      <div class="empty" id="pusto" hidden>
+        <h3>Nic nie znaleziono</h3>
+        <p>Spróbuj innego słowa albo wyczyść filtry. Brak wyniku nie oznacza braku prawa do wsparcia: baza obejmuje na razie wybrane ustawy.</p>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="indeks" set:html={JSON.stringify(indeksWyszukiwania())} />
+</Uklad>
+
+<script>
+  import { pasuje } from '../../lib/szukaj.mjs';
+  type Rekord = { id: string; nazwa: string; rodzaj: string; status: string; sytuacje: string[]; akt: string; kwota: number | null; tekst: string };
+  const indeks: Rekord[] = JSON.parse(document.getElementById('indeks')!.textContent!);
+  const kontener = document.querySelector<HTMLElement>('[data-wyniki]')!;
+  const karty = [...kontener.querySelectorAll<HTMLElement>('[data-id]')];
+  const form = document.getElementById('filtry') as HTMLFormElement;
+  const q = document.getElementById('q') as HTMLInputElement;
+  const selecty = [...form.querySelectorAll('select')];
+  const wynik = document.getElementById('wynik')!;
+  const pusto = document.getElementById('pusto')!;
+  const nota = document.getElementById('nota-kwota')!;
+
+  const params = new URLSearchParams(location.search);
+  q.value = params.get('q') ?? '';
+  selecty.forEach((s) => { const v = params.get(s.name); if (v && [...s.options].some((o) => o.value === v)) s.value = v; });
+
+  let timer: number | undefined;
+  function odswiez() {
+    const f = Object.fromEntries(selecty.map((s) => [s.name, s.value]));
+    const widoczne = indeks.filter((r) => pasuje(r.tekst, q.value)
+      && (!f.rodzaj || r.rodzaj === f.rodzaj) && (!f.status || r.status === f.status)
+      && (!f.sytuacja || r.sytuacje.includes(f.sytuacja)) && (!f.akt || r.akt === f.akt));
+    if (f.sort === 'kwota') widoczne.sort((a, b) => (a.kwota ?? Infinity) - (b.kwota ?? Infinity) || a.nazwa.localeCompare(b.nazwa, 'pl'));
+    else widoczne.sort((a, b) => a.nazwa.localeCompare(b.nazwa, 'pl'));
+    const kolejnosc = new Map(widoczne.map((r, i) => [r.id, i]));
+    karty.forEach((k) => { k.hidden = !kolejnosc.has(k.dataset.id!); });
+    karty.filter((k) => !k.hidden).sort((a, b) => kolejnosc.get(a.dataset.id!)! - kolejnosc.get(b.dataset.id!)!).forEach((k) => kontener.insertBefore(k, pusto));
+    pusto.hidden = widoczne.length > 0;
+    nota.hidden = f.sort !== 'kwota';
+    wynik.textContent = `Liczba wyników: ${widoczne.length}`;
+    const next = new URLSearchParams();
+    if (q.value.trim()) next.set('q', q.value.trim());
+    selecty.forEach((s) => { if (s.value && s.value !== 'nazwa') next.set(s.name, s.value); });
+    history.replaceState(null, '', location.pathname + (next.size ? `?${next}` : ''));
+  }
+  form.addEventListener('submit', (e) => { e.preventDefault(); odswiez(); });
+  q.addEventListener('input', () => { clearTimeout(timer); timer = window.setTimeout(odswiez, 120); });
+  selecty.forEach((s) => s.addEventListener('change', odswiez));
+  document.getElementById('wyczysc')!.addEventListener('click', () => {
+    q.value = '';
+    selecty.forEach((s) => { s.value = s.name === 'sort' ? 'nazwa' : ''; });
+    odswiez();
+    q.focus();
+  });
+  odswiez();
+</script>

@@ -1,0 +1,53 @@
+---
+import Uklad from '../../layouts/Uklad.astro';
+import Ikona from '../../components/Ikona.astro';
+import UwagaDanych from '../../components/UwagaDanych.astro';
+import { dane, plikiDanych } from '../../lib/model.mjs';
+import { rozmiar } from '../../lib/format.mjs';
+const d = dane();
+const OPISY: Record<string, string> = {
+  'manifest.json': 'Wersja kontraktu, data wygenerowania, wersja kodu pipeline’u, sumy SHA-256 plików paczki.',
+  'korzysci.json': 'Wszystkie rekordy korzyści: komu, ile, oś czasu kwot, terminy, trasa dowodowa, braki.',
+  'akty.json': 'Rekordy aktów prawnych z aktami wykonawczymi i opisem plików tekstów.',
+  'slowniki.json': 'Etykiety: rodzaje korzyści, rodzaje terminów, statusy, sytuacje życiowe.',
+  'historia_kwot.csv': 'Historia kwot w jednej tabeli (wiersz na wpis i wariant), z aktem i adresem dowodu. Kodowanie UTF-8.',
+  'SHA256SUMS': 'Spis wszystkich plików aktów z sumami SHA-256 (format sha256sum), do pobrania hurtowego i weryfikacji.',
+};
+const pliki = plikiDanych();
+const liczbaPdf = d.akty.reduce((s: number, a: any) => s + a.pliki.length, 0);
+---
+<Uklad tytul="Otwarte dane" opis="Pobierz dane Mapy Polskiego Socjalu: korzyści, akty prawne i historię kwot w JSON i CSV, z sumami kontrolnymi SHA-256." sekcja="dane">
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span aria-current="page">Dane</span></nav>
+      <h1>Otwarte dane</h1>
+      <p class="lead">Wszystko, co pokazuje strona, możesz pobrać i sprawdzić samodzielnie. Sumy SHA-256 pozwalają potwierdzić, że plik nie został zmieniony.</p>
+      <UwagaDanych />
+    </div>
+  </div>
+  <div class="wrap section prose" style="max-width:1000px">
+    <h2 style="margin-top:0">Pliki eksportu</h2>
+    <p>Wersja kontraktu <strong>{d.manifest.kontrakt}</strong>, kod pipeline’u <code>{d.manifest.wersja_kodu}</code>, wygenerowano {d.manifest.wygenerowano}.</p>
+    {pliki.map((p) => (
+      <div class="file-row">
+        <div>
+          <h3>{p.nazwa}</h3>
+          <p>{OPISY[p.nazwa] ?? ''}</p>
+          <p class="checksum">{rozmiar(p.rozmiar)} · SHA-256: {p.sha256}</p>
+        </div>
+        <a class="btn btn-sm" href={`/dane/${p.nazwa}`} download={p.nazwa}><Ikona n="pobierz" />Pobierz</a>
+      </div>
+    ))}
+
+    <h2>Teksty aktów (PDF)</h2>
+    <p>W danych opisano {liczbaPdf} plików tekstów aktów. Odnośniki do dokumentów w API Sejmu znajdziesz na kartach aktów i korzyści. Witryna nie przechowuje kopii PDF.</p>
+    <p class="muted">Dokument u źródła może zostać zaktualizowany i różnić się od historycznego cytatu. Sumy SHA-256 w metadanych dotyczą wersji opisanej w eksporcie.</p>
+    <p>Źródło tekstów: Kancelaria Sejmu, Internetowy System Aktów Prawnych (API ELI). Teksty aktów normatywnych i urzędowe dokumenty nie są przedmiotem prawa autorskiego (art.&nbsp;4 pkt&nbsp;1 i&nbsp;2 ustawy o prawie autorskim i prawach pokrewnych).</p>
+
+    <h2>Licencja</h2>
+    <p class="todo"><strong>Do decyzji fundacji.</strong> Proponowana licencja danych: <a href="https://creativecommons.org/licenses/by/4.0/deed.pl" rel="license noopener" target="_blank">CC BY 4.0</a> (uznanie autorstwa). Do czasu decyzji dane udostępniamy do wglądu i weryfikacji.</p>
+
+    <h2>Jak sprawdzić sumę kontrolną</h2>
+    <p>Windows (PowerShell): <code>Get-FileHash .\korzysci.json -Algorithm SHA256</code><br />Linux, macOS: <code>sha256sum korzysci.json</code></p>
+  </div>
+</Uklad>

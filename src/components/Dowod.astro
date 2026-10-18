@@ -1,0 +1,22 @@
+---
+// Cytat przepisu z oznaczeniem aktu i linkiem do źródła. Treść cytatu bez zmian.
+import Ikona from './Ikona.astro';
+import { dataPL, eliSlug, typo } from '../lib/format.mjs';
+import { aktPoEli } from '../lib/model.mjs';
+interface Props { dowod: { eli: string; przepis: string; cytat: string; url: string; data_stanu: string | null }; id?: string }
+const { dowod, id } = Astro.props;
+const akt = aktPoEli(dowod.eli);
+const stan = dataPL(dowod.data_stanu);
+---
+<figure class="quote" id={id}>
+  <figcaption class="proof-title">
+    <span>{dowod.eli} · {typo(dowod.przepis)}</span>
+    {akt && <a href={`/akt/${eliSlug(dowod.eli)}/`}>Karta aktu</a>}
+    <a href={dowod.url} target="_blank" rel="noopener">Źródło (API ELI)<Ikona n="zewn" /><span class="sr-only"> (otwiera się w nowej karcie)</span></a>
+  </figcaption>
+  <blockquote lang="pl">{typo(dowod.cytat)}</blockquote>
+  <p class="proof-date">
+    {stan ? `Stan tekstu źródłowego: ${stan} (tekst ujednolicony, informacyjny).` : 'Tekst ogłoszony aktu (brak daty stanu tekstu ujednoliconego).'}
+    {akt && ` ${akt.tytul}.`}
+  </p>
+</figure>

@@ -1,0 +1,21 @@
+{
+  "name": "mapa-polskiego-socjalu",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Mapa Polskiego Socjalu: statyczna strona generowana z eksportu danych (kontrakt strona-0.1).",
+  "scripts": {
+    "dev": "astro dev",
+    "waliduj": "node scripts/waliduj.mjs",
+    "build": "node scripts/waliduj.mjs && astro build && node scripts/sprawdz-html.mjs",
+    "preview": "astro preview",
+    "test": "node --test testy/*.test.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.2.0",
+    "@fontsource/playfair-display": "^5.2.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "astro": "5.18.2"
+  }
+}

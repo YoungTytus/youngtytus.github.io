@@ -1,0 +1,126 @@
+// Widoki na dane eksportu używane przez strony. Tylko wyszukiwanie i grupowanie rekordów.
+import { readFileSync } from 'node:fs';
+import { eksport, sha256 } from './eksport.mjs';
+import { czyData, liczbaZKwoty, posortujPliki } from './format.mjs';
+
+export const dane = () => eksport();
+
+export const korzyscPoId = (id) => dane().korzysci.find((k) => k.id === id) ?? null;
+export const aktPoEli = (eli) => dane().akty.find((a) => a.eli === eli) ?? null;
+export const etykieta = (slownik, kod) => dane().slowniki[slownik]?.[kod] ?? kod;
+
+export const KOLEJNOSC_STATUSU = { obowiazuje: 0, do_ustalenia: 1, zamknieta: 2 };
+export const posortowaneKorzysci = (lista = dane().korzysci) =>
+  [...lista].sort((a, b) => KOLEJNOSC_STATUSU[a.status] - KOLEJNOSC_STATUSU[b.status] || a.nazwa.localeCompare(b.nazwa, 'pl'));
+
+/** Akty z dowodów korzyści: przepis przyznający, trasa, oś czasu, terminy. Kolejność pierwszego wystąpienia. */
+export function elisKorzysci(k) {
+  const lista = [k.przepis.eli, ...k.ile.trasa.map((t) => t.dowod.eli), ...k.ile.os_czasu.map((w) => w.dowod.eli),
+    ...k.do_kiedy.map((t) => t.dowod.eli), ...k.do_kiedy.flatMap((t) => (t.etapy ?? []).map((e) => e.dowod.eli)),
+    ...(k.ile.progi ?? []).flatMap((p) => p.wpisy.map((w) => w.dowod.eli)),
+    ...(k.ile.zwiekszenia ?? []).map((z) => z.dowod.eli)];
+  return [...new Set(lista)];
+}
+
+/** Akty, których pliki pokazuje karta korzyści (SPEC 5.7, zasada 4). */
+export function aktyDoPobrania(k) {
+  return elisKorzysci(k).map((eli) => {
+    const akt = aktPoEli(eli);
+    return { eli, akt, pliki: akt ? posortujPliki(akt.pliki) : [] };
+  });
+}
+
+/**
+ * Wpis osi czasu, który dokumentuje bieżącą kwotę: ten sam napis (albo te same warianty) i ta sama data "od".
+ * To dopasowanie rekordów, nie wybór kwoty: kwotę wskazuje pipeline polem ile.aktualna.
+ */
+export function indeksWpisuAktualnej(k) {
+  const a = k.ile.aktualna;
+  if (!a) return -1;
+  const klucz = (w) => JSON.stringify([w.wartosc ?? null, (w.warianty ?? []).map((x) => [x.etykieta, x.wartosc])]);
+  const kA = klucz(a);
+  const idx = k.ile.os_czasu.findIndex((w) => klucz(w) === kA && (w.od ?? null) === (a.od ?? null));
+  return idx;
+}
+
+export function dowodAktualnej(k) {
+  const i = indeksWpisuAktualnej(k);
+  if (i >= 0) return { href: `#wpis-${i}`, etykieta: `${k.ile.os_czasu[i].dowod.eli} · ${k.ile.os_czasu[i].dowod.przepis}`, dowod: k.ile.os_czasu[i].dowod };
+  const ostatni = k.ile.trasa.at(-1);
+  if (ostatni) return { href: '#zrodla', etykieta: `${ostatni.dowod.eli} · ${ostatni.dowod.przepis}`, dowod: ostatni.dowod };
+  return { href: '#przepis', etykieta: `${k.przepis.eli} · ${k.przepis.przepis}`, dowod: k.przepis };
+}
+
+/** Kwota do sortowania listy: tylko pojedynczy napis z ile.aktualna; warianty i braki trafiają na koniec. */
+export const kwotaDoSortowania = (k) => (k.ile.aktualna?.wartosc ? liczbaZKwoty(k.ile.aktualna.wartosc) : null);
+
+export function indeksWyszukiwania() {
+  return dane().korzysci.map((k) => ({
+    id: k.id,
+    nazwa: k.nazwa,
+    rodzaj: k.rodzaj_korzysci,
+    status: k.status,
+    sytuacje: k.sytuacje,
+    akt: k.przepis.eli,
+    kwota: kwotaDoSortowania(k),
+    tekst: [k.nazwa, k.komu, k.opis_prosty, k.przepis.eli, k.przepis.przepis, k.przepis.cytat,
+      ...k.ile.trasa.map((t) => `${t.opis} ${t.dowod.cytat}`),
+      ...k.sytuacje.map((s) => etykieta('sytuacje', s)),
+      aktPoEli(k.przepis.eli)?.tytul].filter(Boolean).join(' '),
+  }));
+}
+
+export const liczbaWSytuacji = (kod) => dane().korzysci.filter((k) => k.sytuacje.includes(kod)).length;
+
+/** Akty, w których dany akt jest wymieniony jako wykonawczy. */
+export const aktyNadrzedne = (eli) => dane().akty.filter((a) => a.wykonawcze.some((w) => w.eli === eli));
+
+// ---------- pliki do pobrania w /dane ----------
+
+const csvPole = (v) => {
+  const s = v == null ? '' : String(v);
+  return /[";\n,]/.test(s) ? `"${s.replaceAll('"', '""')}"` : s;
+};
+
+/** Historia kwot w CSV: jeden wiersz na wpis i wariant, wartości jako napisy źródłowe. */
+export function historiaCsv(lista = dane().korzysci) {
+  const naglowek = ['id_korzysci', 'nazwa', 'wariant', 'wartosc', 'od', 'do', 'rodzaj_zmiany', 'poprzednia',
+    'roznica_kwota', 'roznica_procent', 'dowod_eli', 'dowod_przepis', 'dowod_url'];
+  const wiersze = [naglowek];
+  for (const k of lista) {
+    for (const w of k.ile.os_czasu) {
+      const warianty = w.warianty?.length ? w.warianty : [{ etykieta: '', wartosc: w.wartosc }];
+      for (const v of warianty) {
+        wiersze.push([k.id, k.nazwa, v.etykieta, v.wartosc, w.od, w.do, w.rodzaj_zmiany, Array.isArray(w.poprzednia) ? w.poprzednia.join(' / ') : w.poprzednia,
+          w.roznica?.kwota, w.roznica?.procent, w.dowod.eli, w.dowod.przepis, w.dowod.url]);
+      }
+    }
+  }
+  return '﻿' + wiersze.map((r) => r.map(csvPole).join(',')).join('\r\n') + '\r\n';
+}
+
+const json = (v) => JSON.stringify(v, null, 1) + '\n';
+
+/** Pliki serwowane w /dane/: nazwa → treść. W trybie paczki to dokładne bajty z paczki. */
+export function plikiDanych() {
+  const d = dane();
+  const pliki = new Map();
+  if (d.tryb === 'paczka') {
+    for (const n of ['manifest.json', 'korzysci.json', 'akty.json', 'slowniki.json']) {
+      pliki.set(n, readFileSync(`${d.katalog}/${n}`));
+    }
+    pliki.set('SHA256SUMS', readFileSync(`${d.katalog}/akty/SHA256SUMS`));
+  } else {
+    pliki.set('manifest.json', Buffer.from(json(d.manifest)));
+    pliki.set('korzysci.json', Buffer.from(json(d.korzysci)));
+    pliki.set('akty.json', Buffer.from(json(d.akty)));
+    pliki.set('slowniki.json', Buffer.from(json(d.slowniki)));
+  }
+  pliki.set('historia_kwot.csv', Buffer.from(historiaCsv()));
+  return [...pliki].map(([nazwa, bajty]) => ({ nazwa, bajty, sha256: sha256(bajty), rozmiar: bajty.length }));
+}
+
+export const dataEksportu = () => {
+  const w = dane().manifest.wygenerowano;
+  return czyData(w.slice(0, 10)) ? w.slice(0, 10) : null;
+};
