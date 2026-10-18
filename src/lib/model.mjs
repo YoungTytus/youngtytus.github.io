@@ -13,13 +13,34 @@ export const KOLEJNOSC_STATUSU = { obowiazuje: 0, do_ustalenia: 1, zamknieta: 2 
 export const posortowaneKorzysci = (lista = dane().korzysci) =>
   [...lista].sort((a, b) => KOLEJNOSC_STATUSU[a.status] - KOLEJNOSC_STATUSU[b.status] || a.nazwa.localeCompare(b.nazwa, 'pl'));
 
-/** Akty z dowodów korzyści: przepis przyznający, trasa, oś czasu, terminy. Kolejność pierwszego wystąpienia. */
+/** Źródła wyliczenia, także zagnieżdżonej podstawy i zasad zaokrąglania. */
+export function dowodyWyliczenia(wyliczenie) {
+  const dowody = [];
+  const odwiedz = (v) => {
+    if (!v || typeof v !== 'object') return;
+    if (v.eli && v.przepis && v.cytat) { dowody.push(v); return; }
+    Object.values(v).forEach(odwiedz);
+  };
+  odwiedz(wyliczenie);
+  return dowody;
+}
+
+/** Gotowy wynik eksportu. Nie wykonujemy obliczeń ani nie zastępujemy kwoty bezpośredniej. */
+export function kwotaPrezentowana(k) {
+  const w = k.ile.wyliczenie;
+  return k.ile.aktualna ?? (w?.wartosc || w?.warianty?.length ? w : null);
+}
+
+export const czyKwotaWyliczona = (k) => !k.ile.aktualna && kwotaPrezentowana(k) !== null;
+
+/** Akty ze wszystkich dowodów korzyści. Kolejność pierwszego wystąpienia. */
 export function elisKorzysci(k) {
   const lista = [k.przepis.eli, ...k.ile.trasa.map((t) => t.dowod.eli), ...k.ile.os_czasu.map((w) => w.dowod.eli),
     ...k.do_kiedy.map((t) => t.dowod.eli), ...k.do_kiedy.flatMap((t) => (t.etapy ?? []).map((e) => e.dowod.eli)),
     ...(k.ile.progi ?? []).flatMap((p) => p.wpisy.map((w) => w.dowod.eli)),
-    ...(k.ile.zwiekszenia ?? []).map((z) => z.dowod.eli)];
-  return [...new Set(lista)];
+    ...(k.ile.zwiekszenia ?? []).flatMap((z) => [z.dowod?.eli, z.dowod_limitu?.eli]),
+    ...dowodyWyliczenia(k.ile.wyliczenie).map((d) => d.eli)];
+  return [...new Set(lista.filter(Boolean))];
 }
 
 /** Akty, których pliki pokazuje karta korzyści (SPEC 5.7, zasada 4). */
@@ -44,6 +65,7 @@ export function indeksWpisuAktualnej(k) {
 }
 
 export function dowodAktualnej(k) {
+  if (czyKwotaWyliczona(k)) return { href: '#wyliczenie', etykieta: 'Wyliczenie i źródła', dowod: null };
   const i = indeksWpisuAktualnej(k);
   if (i >= 0) return { href: `#wpis-${i}`, etykieta: `${k.ile.os_czasu[i].dowod.eli} · ${k.ile.os_czasu[i].dowod.przepis}`, dowod: k.ile.os_czasu[i].dowod };
   const ostatni = k.ile.trasa.at(-1);
@@ -51,8 +73,8 @@ export function dowodAktualnej(k) {
   return { href: '#przepis', etykieta: `${k.przepis.eli} · ${k.przepis.przepis}`, dowod: k.przepis };
 }
 
-/** Kwota do sortowania listy: tylko pojedynczy napis z ile.aktualna; warianty i braki trafiają na koniec. */
-export const kwotaDoSortowania = (k) => (k.ile.aktualna?.wartosc ? liczbaZKwoty(k.ile.aktualna.wartosc) : null);
+/** Sortowanie potwierdzonych kwot; wyliczenia pomocnicze, warianty i braki trafiają na koniec. */
+export const kwotaDoSortowania = (k) => liczbaZKwoty(k.ile.aktualna?.wartosc);
 
 export function indeksWyszukiwania() {
   return dane().korzysci.map((k) => ({

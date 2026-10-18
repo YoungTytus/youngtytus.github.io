@@ -100,6 +100,15 @@ Progi dochodowe, warianty reguł, etapy dostępności i warunkowe zwiększenia
 kwoty są pokazywane oddzielnie. Zwiększenia nie są sumowane z kwotą główną.
 Walidacja techniczna nie jest audytem merytorycznym eksportu.
 
+Eksport P1 może zawierać `ile.wyliczenie`: gotowy wynik reguły procentowej,
+warianty, podstawę (także zagnieżdżony łańcuch wyliczeń), źródła i zaokrąglanie.
+Strona pokazuje te wyniki w osobnej sekcji karty i w katalogu z etykietą
+„Wyliczenie pomocnicze”. Wyniki nie są niezależnym potwierdzeniem aktualnej
+kwoty. Strona nie dopisuje ich do historii kwot zapisanych w aktach i nie wykonuje
+własnej arytmetyki. Kwota bezpośrednia `ile.aktualna` ma pierwszeństwo.
+Dowody kwoty bazowej, zaokrąglania i limitów zwiększeń trafiają także do listy
+aktów do pobrania. Starsze eksporty bez tych pól nadal są obsługiwane.
+
 ## Własna domena lub inny adres
 
 Zmień `pages.json`, np. ustaw `site_url` na swoją domenę HTTPS i `base_path`

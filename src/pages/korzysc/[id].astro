@@ -8,6 +8,7 @@ import Status from '../../components/Status.astro';
 import UwagaDanych from '../../components/UwagaDanych.astro';
 import Wykres from '../../components/Wykres.astro';
 import Progi from '../../components/Progi.astro';
+import Wyliczenie from '../../components/Wyliczenie.astro';
 import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta, korzyscPoId } from '../../lib/model.mjs';
 import {
   KOLEJNOSC_TERMINOW, OPIS_TERMINU, czyZaslepka, dataLubBrak, dataPL, eliSlug, etapZaslepki,
@@ -21,8 +22,7 @@ export function getStaticPaths() {
 const k: any = korzyscPoId(Astro.params.id!);
 const ile = k.ile;
 const a = ile.aktualna;
-const wyliczenie = ile.wyliczenie;
-const dowodPodstawy = wyliczenie?.podstawa?.dowod ?? wyliczenie?.podstawa?.lancuch?.podstawa?.dowod ?? null;
+const kwotyWariantow = new Map((ile.wyliczenie?.warianty ?? []).map((w: any) => [JSON.stringify([w.etykieta, w.udzial]), w.wartosc]));
 const dowodA = dowodAktualnej(k);
 const zamknieta = k.status === 'zamknieta';
 const stan = dataPL(k.stan.data_stanu);
@@ -113,26 +113,13 @@ const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
           {!a?.wartosc && a?.warianty?.length && a.warianty.map((w: any, i: number) => (
             <div class="amount-variant"><span>{wielka(etykietaWariantu(w, i))}</span><Kwota wartosc={w.wartosc} href={dowodA.href} etykieta={dowodA.etykieta} blok /></div>
           ))}
-          {!a && <p class="amount-missing">{wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : ile.regula ? 'Kwota określona regułą procentową' : 'Nie ustalono'}</p>}
+          {!a && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : ile.regula ? 'Kwota określona regułą procentową' : 'Nie ustalono'}</p>}
           {a && <p class="amount-date">{a.od ? `Od ${dataPL(a.od)}` : `Data początku: ${dataLubBrak(a.od)}`}</p>}
           {a?.do && <p class="amount-date">Do {dataLubBrak(a.do)}</p>}
-          {ile.zwiekszenia?.map((z: any, i: number) => <p>+ <Kwota wartosc={z.kwota} href={`#zwiekszenie-${i}`} etykieta={etykietaDowodu(z.dowod)} />{z.limit && <> (najwyżej <Kwota wartosc={z.limit} href={`#zwiekszenie-${i}`} etykieta="cytat" />)</>}: {typo(z.warunek)}</p>)}
+          {!a && ile.wyliczenie && <p class="amount-date"><a href="#wyliczenie" style="text-decoration:underline">Zobacz wyliczenie pomocnicze i jego źródła</a>.</p>}
+          {ile.zwiekszenia?.map((z: any, i: number) => <p>+ <Kwota wartosc={z.kwota} href={`#zwiekszenie-${i}`} etykieta={etykietaDowodu(z.dowod)} />{z.limit && <> (najwyżej <Kwota wartosc={z.limit} href={z.dowod_limitu ? `#limit-zwiekszenia-${i}` : `#zwiekszenie-${i}`} etykieta="Dowód limitu" />)</>}: {typo(z.warunek)}</p>)}
           {!a && !ile.regula && k.nieustalone.length > 0 && <p class="amount-date">Powód w sekcji <a href="#braki" style="text-decoration:underline">Nie ustalono</a>.</p>}
         </div>
-
-        {wyliczenie && <section id="wyliczenie" aria-label="Wyliczenie pomocnicze" class="notice">
-          <h3>Wyliczenie pomocnicze z eksportu</h3>
-          <p>To wynik obliczeń wykonanych przez generator danych. Nie jest kwotą przytoczoną wprost z przepisu ani niezależnym potwierdzeniem aktualnej wysokości świadczenia.</p>
-          {wyliczenie.wartosc && <p>Wynik: <Kwota wartosc={wyliczenie.wartosc} href="#podstawa-wyliczenia" etykieta="podstawa obliczenia" /></p>}
-          {wyliczenie.warianty?.map((v: any, i: number) => <p>{etykietaWariantu(v, i)} ({v.udzial}): <Kwota wartosc={v.wartosc} href="#podstawa-wyliczenia" etykieta="podstawa obliczenia" /></p>)}
-          {wyliczenie.od && <p>Przyjęto stan kwoty bazowej od {dataPL(wyliczenie.od)}.</p>}
-          {wyliczenie.podstawa?.wartosc && <p>Wartość podstawy: {typo(wyliczenie.podstawa.wartosc)}. Źródło: {typo(wyliczenie.podstawa.zrodlo)}.</p>}
-          {wyliczenie.zaokraglenie && <p>Zaokrąglenie: {typo(wyliczenie.zaokraglenie.regula)}.</p>}
-          {wyliczenie.uwaga && <p>{typo(wyliczenie.uwaga)}</p>}
-          {dowodPodstawy && <Dowod dowod={dowodPodstawy} id="podstawa-wyliczenia" />}
-          {!dowodPodstawy && <p id="podstawa-wyliczenia">Nie podano dowodu kwoty podstawowej w danych eksportu. Weryfikuj wyliczenie w oryginalnych aktach.</p>}
-          {wyliczenie.zaokraglenie?.dowod && <Dowod dowod={wyliczenie.zaokraglenie.dowod} />}
-        </section>}
 
         <ul class="fact-list">
           <li><span>Jak ustalono kwotę</span><span>{etykietaRozwiazania[ile.rozwiazanie as keyof typeof etykietaRozwiazania]}</span></li>
@@ -147,18 +134,24 @@ const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
             </li>
           )}
         </ul>
-        {ile.zwiekszenia?.map((z: any, i: number) => <Dowod dowod={z.dowod} id={`zwiekszenie-${i}`} />)}
+        {ile.zwiekszenia?.map((z: any, i: number) => <>
+          <Dowod dowod={z.dowod} id={`zwiekszenie-${i}`} />
+          {z.dowod_limitu && <details id={`limit-zwiekszenia-${i}`}><summary>Przepis określający limit zwiększenia</summary><Dowod dowod={z.dowod_limitu} /></details>}
+          {z.nieustalone?.length > 0 && <div class="missing"><ul>{z.nieustalone.map((n: any) => <li>{typo(n.powod)}</li>)}</ul></div>}
+        </>)}
         {ile.regula?.warianty?.length > 0 && <>
           <h3>Warianty reguły procentowej</h3>
-          <div class="table-wrap" tabindex="0"><table><caption>Udziały w kwocie bazowej według przepisu</caption><thead><tr><th scope="col">Warunek</th><th scope="col">Udział</th></tr></thead><tbody>
-            {ile.regula.warianty.map((v: any) => { const dowod = dowodReguly(v.udzial); return <tr><td>{typo(v.etykieta ?? 'Warunek nieustalony w eksporcie')}</td><td><Kwota wartosc={v.udzial} href={dowod.href} etykieta={dowod.etykieta} /></td></tr>; })}
+          <div class="table-wrap" tabindex="0"><table><caption>Udziały w kwocie bazowej według przepisu{kwotyWariantow.size > 0 && ' i wyliczenia pomocnicze'}</caption><thead><tr><th scope="col">Warunek</th><th scope="col">Udział</th>{kwotyWariantow.size > 0 && <th scope="col">Wyliczenie pomocnicze</th>}</tr></thead><tbody>
+            {ile.regula.warianty.map((v: any, vi: number) => { const dowod = dowodReguly(v.udzial); const kwota = kwotyWariantow.get(JSON.stringify([v.etykieta, v.udzial])); return <tr><td>{typo(etykietaWariantu(v, vi))}</td><td><Kwota wartosc={v.udzial} href={dowod.href} etykieta={dowod.etykieta} /></td>{kwotyWariantow.size > 0 && <td>{kwota ? <Kwota wartosc={kwota as string} href="#wyliczenie" etykieta="Wyliczenie i źródła" /> : 'Nie ustalono'}</td>}</tr>; })}
           </tbody></table></div>
-          <p class="summary-note">Strona pokazuje regułę z eksportu i nie przelicza jej na kwotę w złotych.</p>
+          <p class="summary-note">{kwotyWariantow.size > 0 ? 'Kwoty obliczono w eksporcie danych według reguły procentowej. Strona pokazuje dostarczony wynik.' : 'Strona pokazuje regułę z eksportu. Dane nie zawierają wyliczonej kwoty w złotych.'}</p>
         </>}
+        {ile.wyliczenie && <Wyliczenie wyliczenie={ile.wyliczenie} />}
 
         <h3>Historia kwot</h3>
-        <Wykres k={k} dzis={dzis} idTabeli="historia" />
-        <div class="table-wrap" id="historia" tabindex="0">
+        {ile.os_czasu.length > 0 && <Wykres k={k} dzis={dzis} idTabeli="historia" />}
+        {ile.os_czasu.length === 0 && <p class="summary-note">Eksport nie zawiera historycznych kwot zapisanych wprost w aktach.{ile.wyliczenie && <> Bieżący wynik obliczenia pokazujemy w sekcji <a class="link" href="#wyliczenie">Jak wyliczono kwotę</a>.</>}</p>}
+        {ile.os_czasu.length > 0 && <div class="table-wrap" id="historia" tabindex="0">
           <table>
             <caption>Historia wartości: kwoty, okresy, zmiany i dowody z eksportu</caption>
             <thead><tr><th scope="col">Wartość</th><th scope="col">Od</th><th scope="col">Do</th><th scope="col">Rodzaj zmiany</th><th scope="col">Różnica</th><th scope="col">Dowód</th></tr></thead>
@@ -179,16 +172,15 @@ const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
               ))}
             </tbody>
           </table>
-        </div>
-        <p class="summary-note">Różnice podaje pipeline danych, strona ich nie przelicza. „—” przy pierwszym wpisie oznacza brak poprzedniej kwoty w danych.</p>
-        <h3>Dowody wpisów</h3>
+        </div>}
+        {ile.os_czasu.length > 0 && <><p class="summary-note">Różnice podaje pipeline danych, strona ich nie przelicza. „—” przy pierwszym wpisie oznacza brak poprzedniej kwoty w danych.</p><h3>Dowody wpisów</h3></>}
         {ile.os_czasu.map((w: any, i: number) => (
           <details id={`wpis-${i}`}>
             <summary>{w.od ? dataLubBrak(w.od) : 'Data początku nie ustalona'}: {typo(etykietaDowodu(w.dowod))}</summary>
             <Dowod dowod={w.dowod} />
           </details>
         ))}
-        <a class="btn btn-sm" style="margin-top:22px" href={`/dane/historia/${k.id}.csv`} download={`historia_${k.id}.csv`}><Ikona n="pobierz" />Historia kwot (CSV)</a>
+        {ile.os_czasu.length > 0 && <a class="btn btn-sm" style="margin-top:22px" href={`/dane/historia/${k.id}.csv`} download={`historia_${k.id}.csv`}><Ikona n="pobierz" />Historia kwot (CSV)</a>}
         <Progi progi={ile.progi} />
       </section>
 
@@ -233,7 +225,7 @@ const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
             ))}
           </ol>
         ) : (
-          <p class="summary-note" style="margin-top:0">Trasa dowodowa (przepis → delegacja → akt wykonawczy) nie jest jeszcze w danych. Każda kwota ma dowód w <a class="link" href="#historia">tabeli historii</a>.</p>
+          <p class="summary-note" style="margin-top:0">Trasa dowodowa (przepis → delegacja → akt wykonawczy) nie jest jeszcze w danych.{ile.os_czasu.length > 0 ? <> Zobacz dowody w <a class="link" href="#historia">tabeli historii</a>.</> : ile.wyliczenie ? <> Zobacz <a class="link" href="#wyliczenie">podstawę wyliczenia</a>.</> : <> Dostępny przepis przyznający pokazujemy <a class="link" href="#przepis">powyżej</a>.</>}</p>
         )}
         <p style="margin-top:18px"><a class="text-link" href={`/akt/${eliSlug(k.przepis.eli)}/`}>Karta aktu {k.przepis.eli} <Ikona n="strzalka" /></a></p>
       </section>

@@ -1,0 +1,42 @@
+---
+import Dowod from './Dowod.astro';
+import Kwota from './Kwota.astro';
+import { dataLubBrak, typo } from '../lib/format.mjs';
+interface Props { wyliczenie: any }
+const { wyliczenie } = Astro.props;
+const kroki: any[] = [];
+for (let w = wyliczenie; w; w = w.podstawa?.lancuch) kroki.push(w);
+---
+<section class="calculation" id="wyliczenie" aria-labelledby="h-wyliczenie">
+  <h3 id="h-wyliczenie">Wyliczenie pomocnicze z eksportu</h3>
+  <p>To wynik obliczeń wykonanych przez generator danych. Nie jest kwotą przytoczoną wprost z przepisu ani niezależnym potwierdzeniem aktualnej wysokości świadczenia. Poniżej pokazujemy podstawę i zasady zaokrąglania.</p>
+  {wyliczenie.wartosc && <p class="calculation-result"><Kwota wartosc={wyliczenie.wartosc} href="#wyliczenie-podstawa-0" etykieta="Podstawa wyliczenia" blok /></p>}
+  {wyliczenie.od && <p class="summary-note">Przyjęto kwotę bazową od {dataLubBrak(wyliczenie.od)}.</p>}
+  {kroki.map((w, i) => {
+    const p = w.podstawa;
+    const id = `wyliczenie-podstawa-${i}`;
+    const href = p?.dowod ? `#${id}-dowod` : p?.lancuch ? `#wyliczenie-podstawa-${i + 1}` : `#${id}-braki`;
+    return <div class="calculation-step" id={id}>
+      <h4>{i === 0 ? 'Kwota bazowa' : 'Źródło kwoty bazowej'}</h4>
+      {p?.wartosc ? <p><Kwota wartosc={p.wartosc} href={href} etykieta={p.dowod ? `${p.dowod.eli} · ${p.dowod.przepis}` : p.lancuch ? 'Podstawa tego wyniku' : 'Brak źródła w danych'} />{p.od && <> · od {dataLubBrak(p.od)}</>}</p> : <p>Kwota bazowa: nie ustalono.</p>}
+      {p?.dowod && <Dowod dowod={p.dowod} id={`${id}-dowod`} />}
+      {!p?.dowod && !p?.lancuch && <p class="summary-note" id={`${id}-braki`}>Dane nie zawierają dowodu kwoty bazowej.</p>}
+      {w.zaokraglenie && <>
+        <p><strong>Zaokrąglanie:</strong> {typo(w.zaokraglenie.regula)}. <a class="link" href={`#${id}-zaokraglenie`}>Przepis</a></p>
+        <Dowod dowod={w.zaokraglenie.dowod} id={`${id}-zaokraglenie`} />
+      </>}
+      {w.flagi?.length > 0 && <p class="notice">Wyliczenie oznaczono w danych do przeglądu.</p>}
+      {w.nieustalone?.length > 0 && <div class="missing"><ul>{w.nieustalone.map((n: any) => <li><strong>Nie ustalono:</strong> {typo(n.powod)}</li>)}</ul></div>}
+    </div>;
+  })}
+</section>
+
+<style>
+  .calculation { margin: 28px 0; padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--soft); }
+  .calculation > h3 { margin-top: 0; }
+  .calculation-step { margin-top: 22px; }
+  .calculation-result { margin-top: 20px; }
+  .calculation-step h4 { margin: 0 0 8px; font-size: 1rem; }
+  .calculation-step > p + p { margin-top: 12px; }
+  @media (max-width: 600px) { .calculation { padding: 18px; } }
+</style>

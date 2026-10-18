@@ -45,7 +45,7 @@ const OPIS_STATUSU: Record<string, string> = {
       {Object.entries(etykietaRozwiazania).map(([k, v]) => <><dt>{wielka(v)}</dt><dd>{{
         kwota_w_ustawie: 'Kwota stoi wprost w przepisie ustawy.',
         kwota_z_aktu_wykonawczego: 'Ustawa podaje kwotę bazową, a aktualną ogłasza akt wykonawczy (rozporządzenie, komunikat). Pokazujemy całą trasę: przepis, delegację i akt.',
-        regula_procentowa: 'Kwota jest częścią innej kwoty (np. „220 % renty socjalnej”). Pokazujemy regułę i link do korzyści bazowej; nie przeliczamy jej na złote.',
+        regula_procentowa: 'Kwota jest częścią innej kwoty (np. „220 % renty socjalnej”). Pokazujemy regułę i link do korzyści bazowej. Jeżeli eksport zawiera wynik obliczenia w złotych, oznaczamy go jako wyliczenie pomocnicze i pokazujemy źródło podstawy oraz zasady zaokrąglania. To nie jest niezależne potwierdzenie aktualnej wysokości świadczenia. Strona nie wykonuje własnych obliczeń.',
         odeslanie: 'Przepis odsyła do innego przepisu, który wyznacza kwotę.',
         nieustalone: 'Nie udało się ustalić kwoty. Powód jest podany w sekcji „Nie ustalono”.',
       }[k]}</dd></>)}
