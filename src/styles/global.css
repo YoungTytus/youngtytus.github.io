@@ -66,7 +66,7 @@ img, svg { max-width: 100%; }
 .header .wrap { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: flex; align-items: center; gap: 12px; line-height: 1.15; }
 .brand:hover { text-decoration: none; }
-.brand svg { width: 44px; height: 44px; flex-shrink: 0; }
+.brand img { width: 44px; height: 44px; flex-shrink: 0; }
 .brand strong { display: block; font: 600 1.28rem/1.05 var(--serif); color: var(--navy-800); }
 .brand small { display: block; margin-top: 3px; font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--red); }
 .nav { display: flex; align-items: center; font-size: .9rem; font-weight: 500; }
@@ -392,7 +392,7 @@ code { font-family: var(--mono); font-size: .88em; }
 @media (max-width: 640px) {
   .wrap { padding-left: 16px; padding-right: 16px; }
   .header .wrap { min-height: 70px; }
-  .brand svg { width: 38px; height: 38px; }
+  .brand img { width: 38px; height: 38px; }
   .brand strong { font-size: 1.1rem; }
   .brand small { font-size: .6rem; }
   .hero-outer { padding-top: 12px; }
@@ -437,7 +437,7 @@ code { font-family: var(--mono); font-size: .88em; }
 @media (max-width: 420px) {
   .brand small { display: none; }
   .brand strong { font-size: 1.05rem; }
-  .brand svg { width: 34px; height: 34px; }
+  .brand img { width: 34px; height: 34px; }
   .menu-btn { padding: 8px 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
