@@ -1,13 +1,13 @@
 {
  "kontrakt": "strona-0.4",
- "wygenerowano": "2026-10-18T14:07:06+00:00",
- "wersja_kodu": "d4637fa264a1ae381bb5438928a5292de25fb298+zmiany",
+ "wygenerowano": "2026-10-18T16:17:38+00:00",
+ "wersja_kodu": "42e4bb5ffb0b21ccb4887ac60e1d769329cce1a1+zmiany",
  "na_dzien": "2026-10-18",
  "pliki": {
-  "korzysci.json": "ffa1fd661f9d0bc817fd57e4444a09664afde6bcb4a6819208861d71f0dd3453",
-  "akty.json": "fdb3d19afd0af20fe25860c9d45715670ebd71c2b765eaab584bd198b6ebc420",
+  "korzysci.json": "1b2e935168e0606006392b01f3d9ef2efd893b9ad53872642702f2b2db435f8a",
+  "akty.json": "c0cbb648c239a70b4e8adc90a27e62e408c90186e7df2d6433852da3894a2169",
   "slowniki.json": "aeecf35f0a29915bf783f64a410075ef618873bf2c8f64ba2dfe8c8a6ec344cc",
-  "akty/SHA256SUMS": "acfb4ed8c617850d21c6e9e3002c972312a6ba18dee63b5644903f05c9a87213"
+  "akty/SHA256SUMS": "4de2d61fbeeb5d27a1222d7dcbe944059e94c843419de524cb442a4a7ab7bdbf"
  },
  "zakres": [
   "DU/2022/1692",
@@ -27,28 +27,12 @@
   "DU/2014/567"
  ],
  "liczby": {
-  "korzysci": 71,
-  "akty": 40,
-  "pliki_aktow": 55,
+  "korzysci": 70,
+  "akty": 41,
+  "pliki_aktow": 56,
   "teksty_naprawione": 6
  },
  "pominiete_nazwa_ogolna": [
-  {
-   "id": "DU-2016-195-art8-ust1-pkt4",
-   "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-2003-2255-art15b-ust2",
-   "nazwa": "zapomoga"
-  },
-  {
-   "id": "DU-2003-2255-art15b-ust4-pkt1",
-   "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-2003-2255-art16-ust5a",
-   "nazwa": "świadczenia"
-  },
   {
    "id": "DU-2003-2255-art17c-ust6",
    "nazwa": "zasiłek"
@@ -66,14 +50,6 @@
    "nazwa": "świadczenia"
   },
   {
-   "id": "DU-1998-1118-art76-ust1",
-   "nazwa": "dodatek"
-  },
-  {
-   "id": "DU-1998-1118-art81-ust1",
-   "nazwa": "zasiłek"
-  },
-  {
    "id": "DU-1998-1118-art99",
    "nazwa": "zasiłek"
   },
@@ -82,23 +58,23 @@
    "nazwa": "świadczenia"
   },
   {
-   "id": "DU-1998-1118-art131-ust4-pkt1",
-   "nazwa": "świadczenia"
-  },
-  {
    "id": "DU-1998-1118-art194b-ust1",
    "nazwa": "świadczenia"
   },
   {
-   "id": "DU-1991-24-art13-ust9-pkt1",
+   "id": "DU-1991-24-art13-ust10",
    "nazwa": "świadczenie"
   },
   {
-   "id": "DU-1991-24-art27a-ust1",
+   "id": "DU-1991-24-art31-ust1",
    "nazwa": "dodatek"
   },
   {
    "id": "DU-1991-24-art33-ust1",
+   "nazwa": "świadczenie"
+  },
+  {
+   "id": "DU-1991-24-art55-ust2",
    "nazwa": "świadczenie"
   },
   {
@@ -107,10 +83,6 @@
   },
   {
    "id": "DU-2011-887-art75-ust4",
-   "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-2011-887-art80-ust1",
    "nazwa": "świadczenie"
   },
   {
@@ -128,10 +100,6 @@
   {
    "id": "DU-2011-887-art87-ust1",
    "nazwa": "świadczenia"
-  },
-  {
-   "id": "DU-2025-620-art121-ust1",
-   "nazwa": "dodatek"
   },
   {
    "id": "DU-2025-620-art142-ust12",
@@ -152,22 +120,6 @@
   {
    "id": "DU-2025-620-art245-ust1",
    "nazwa": "zasiłek"
-  },
-  {
-   "id": "DU-2007-1378-art1a-ust1",
-   "nazwa": "świadczenia z funduszu alimentacyjnego"
-  },
-  {
-   "id": "DU-2007-1378-art9-ust1",
-   "nazwa": "świadczenia z funduszu alimentacyjnego"
-  },
-  {
-   "id": "DU-2007-1378-art9-ust2a",
-   "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-2007-1378-art10-ust1",
-   "nazwa": "świadczenia z funduszu alimentacyjnego"
   },
   {
    "id": "DU-2007-1378-art18-ust2",

@@ -15,13 +15,12 @@
    "DU-1991-24-art22-ust1-renta-okresowa",
    "DU-1991-24-art22-ust3",
    "DU-1991-24-art27-ust1",
+   "DU-1991-24-art27-ust2",
+   "DU-1991-24-art27a-ust1",
    "DU-1991-24-art29-ust1",
-   "DU-1991-24-art31-ust1",
    "DU-1991-24-art31-ust2",
    "DU-1991-24-art35-ust1",
-   "DU-1991-24-art35a-ust1",
-   "DU-1991-24-art35b-ust1",
-   "DU-1991-24-art55-ust2"
+   "DU-1991-24-art35a-ust1"
   ],
   "wykonawcze": [],
   "status": "akt posiada tekst jednolity",
@@ -65,14 +64,14 @@
   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
   "korzysci": [
    "DU-1998-1118-art194j-ust4",
-   "DU-1998-1118-art24a-ust1",
    "DU-1998-1118-art50-ust1",
    "DU-1998-1118-art57-ust1",
    "DU-1998-1118-art59-ust2",
    "DU-1998-1118-art60-ust1",
    "DU-1998-1118-art65-ust1",
-   "DU-1998-1118-art77-ust1",
-   "DU-1998-1118-art85-ust6"
+   "DU-1998-1118-art75-ust1",
+   "DU-1998-1118-art76-ust1",
+   "DU-1998-1118-art77-ust1"
   ],
   "wykonawcze": [
    {
@@ -151,7 +150,6 @@
    "DU-1999-636-art23-ust1",
    "DU-1999-636-art29-ust1",
    "DU-1999-636-art32-ust1",
-   "DU-1999-636-art33-ust1",
    "DU-1999-636-art6-ust1"
   ],
   "wykonawcze": [],
@@ -249,7 +247,6 @@
    "DU-2003-1268-art4-ust1",
    "DU-2003-1268-art4-ust3",
    "DU-2003-1268-art6a-ust1",
-   "DU-2003-1268-art8-ust3",
    "DU-2023-1429-art2-ust1"
   ],
   "wykonawcze": [
@@ -555,7 +552,7 @@
   "url_isap": null,
   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
   "korzysci": [
-   "DU-2007-1378-art2-pkt12"
+   "DU-2007-1378-art1a-ust1"
   ],
   "wykonawcze": [],
   "status": "akt posiada tekst jednolity",
@@ -604,7 +601,8 @@
   "url_isap": null,
   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2011/887",
   "korzysci": [
-   "DU-2011-887-art120"
+   "DU-2011-887-art120",
+   "DU-2011-887-art80-ust1"
   ],
   "wykonawcze": [],
   "status": "akt posiada tekst jednolity",
@@ -1047,6 +1045,7 @@
   "url_isap": null,
   "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
   "korzysci": [
+   "DU-2025-620-art121-ust1",
    "DU-2025-620-art141-ust2",
    "DU-2025-620-art145-ust2",
    "DU-2025-620-art146-ust2",
@@ -1544,6 +1543,35 @@
     "rozmiar": 143619,
     "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2025/133/text/O/M20250133.pdf",
     "pobrano": "2026-10-17T15:42:27+00:00",
+    "data_stanu": null,
+    "eli_obwieszczenia": null,
+    "warstwa_tekstowa": "poprawna",
+    "tekst_naprawiony": null,
+    "uzyty_w_danych": true
+   }
+  ]
+ },
+ {
+  "eli": "MP/2026/138",
+  "tytul": "Obwieszczenie Ministra Rodziny, Pracy i Polityki Społecznej z dnia 22 stycznia 2026 r. w sprawie wysokości kwoty kryterium dochodowego uprawniającego do świadczeń z funduszu alimentacyjnego od dnia 1 października 2026 r.",
+  "typ": "Obwieszczenie",
+  "data_stanu": null,
+  "url_isap": null,
+  "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/138",
+  "korzysci": [
+   "DU-2007-1378-art1a-ust1"
+  ],
+  "wykonawcze": [],
+  "status": "bez statusu",
+  "pliki": [
+   {
+    "rodzaj": "O",
+    "plik": "akty/MP_2026_138/O_696bb1e78c118edb_M20260138.pdf",
+    "nazwa_pobierania": "MP_2026_138_ogloszony.pdf",
+    "sha256": "696bb1e78c118edb2b1c3ac048da7d0df0d5e14a7d89a930ca4b9e1b5d437fe6",
+    "rozmiar": 161967,
+    "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/138/text/O/M20260138.pdf",
+    "pobrano": "2026-10-18T10:03:13+00:00",
     "data_stanu": null,
     "eli_obwieszczenia": null,
     "warstwa_tekstowa": "poprawna",

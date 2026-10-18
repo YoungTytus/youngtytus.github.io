@@ -124,7 +124,7 @@
   "nazwa": "świadczenie wspierające",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "obowiazuje",
-  "komu": ":",
+  "komu": "obywatelom polskim; cudzoziemcom:",
   "opis_prosty": null,
   "sytuacje": [
    "niepelnosprawnosc"
@@ -617,7 +617,7 @@
   "nazwa": "renta socjalna okresowa",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "obowiazuje",
-  "komu": "przez okres wskazany w decyzji jednostki organizacyjnej Zakładu Ubezpieczeń Społecznych",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [],
   "sytuacje_zrodlo": "automatyczne",
@@ -919,68 +919,6 @@
   ]
  },
  {
-  "id": "DU-2003-1268-art8-ust3",
-  "slug": "renty-rodzinnej",
-  "nazwa": "renty rodzinnej",
-  "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "do_ustalenia",
-  "komu": "spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy",
-  "opis_prosty": null,
-  "sytuacje": [
-   "mieszkanie_energia"
-  ],
-  "sytuacje_zrodlo": "automatyczne",
-  "przepis": {
-   "eli": "DU/2003/1268",
-   "przepis": "art. 8 ust. 3",
-   "cytat": "Osobie, o której mowa w ust. 2, samotnie gospodarującej, nieposiadającej innego przychodu i niemającej prawa do renty rodzinnej, która jest właścicielem lokalu mieszkalnego (domu jednorodzinnego), której przysługuje spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy, innych jednostek samorządu terytorialnego albo stanowiącego własność Skarbu Państwa lub państwowych osób prawnych, może być wypłacane 50 % kwoty renty socjalnej oraz 50 % kwoty dodatku dopełniającego, jeżeli zobowiąże się pisemnie, że z kwoty tej będzie dokonywała opłat z tytułu czynszu lub innych należności za lokal mieszkalny (dom jednorodzinny), a w lokalu (domu jednorodzinnym) nie przebywają inne osoby.",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
-   "data_stanu": "2026-04-17"
-  },
-  "ile": {
-   "rozwiazanie": "nieustalone",
-   "regula": null,
-   "aktualna": null,
-   "kwota_ustawowa_zastapiona": null,
-   "zwiekszenia": [],
-   "wyliczenie": null,
-   "os_czasu": [],
-   "progi": [],
-   "trasa": [
-    {
-     "krok": 1,
-     "opis": "DU/2003/1268 art. 8 ust. 3: przepis przyznający",
-     "dowod": {
-      "eli": "DU/2003/1268",
-      "przepis": "art. 8 ust. 3",
-      "cytat": "Osobie, o której mowa w ust. 2, samotnie gospodarującej, nieposiadającej innego przychodu i niemającej prawa do renty rodzinnej, która jest właścicielem lokalu mieszkalnego (domu jednorodzinnego), której przysługuje spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy, innych jednostek samorządu terytorialnego albo stanowiącego własność Skarbu Państwa lub państwowych osób prawnych, może być wypłacane 50 % kwoty renty socjalnej oraz 50 % kwoty dodatku dopełniającego, jeżeli zobowiąże się pisemnie, że z kwoty tej będzie dokonywała opłat z tytułu czynszu lub innych należności za lokal mieszkalny (dom jednorodzinny), a w lokalu (domu jednorodzinnym) nie przebywają inne osoby.",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
-      "data_stanu": "2026-04-17"
-     }
-    }
-   ]
-  },
-  "do_kiedy": [],
-  "obowiazuje_od": {
-   "data": "2003-10-01",
-   "zrodlo": "wejscie_w_zycie_ustawy",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
-   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
-  },
-  "powiazane": [],
-  "stan": {
-   "data_stanu": "2026-04-17",
-   "tekst": "tekst ujednolicony (informacyjny)"
-  },
-  "nieustalone": [
-   {
-    "pole": "ile",
-    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
-   }
-  ],
-  "flagi": []
- },
- {
   "id": "DU-2003-1268-art12a-ust1",
   "slug": "zasilek-pogrzebowy",
   "nazwa": "zasiłek pogrzebowy",
@@ -1046,7 +984,7 @@
   "nazwa": "świadczenie wychowawcze",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "obowiazuje",
-  "komu": ":",
+  "komu": "matce albo ojcu, jeżeli dziecko wspólnie zamieszkuje i pozostaje na utrzymaniu matki albo ojca, z zastrzeżeniem art. 5 u; opiekunowi faktycznemu dziecka, jeżeli dziecko wspólnie zamieszkuje i pozostaje na utrzymaniu opiekuna faktycznego, albo; opiekunowi prawnemu dziecka, albo; opiekunowi tymczasowe",
   "opis_prosty": null,
   "sytuacje": [
    "dziecko",
@@ -1181,7 +1119,7 @@
   "nazwa": "świadczenia rodzinne",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": ":",
+  "komu": "obywatelom polskim; cudzoziemcom:",
   "opis_prosty": null,
   "sytuacje": [
    "dziecko",
@@ -1264,337 +1202,6 @@
    }
   ],
   "flagi": []
- },
- {
-  "id": "DU-2003-2255-art17-ust1",
-  "slug": "swiadczenie-pielegnacyjne",
-  "nazwa": "świadczenie pielęgnacyjne",
-  "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "obowiazuje",
-  "komu": ":",
-  "opis_prosty": null,
-  "sytuacje": [
-   "dziecko",
-   "niepelnosprawnosc",
-   "opieka_nad_bliskim"
-  ],
-  "sytuacje_zrodlo": "automatyczne",
-  "przepis": {
-   "eli": "DU/2003/2255",
-   "przepis": "art. 17 ust. 1",
-   "cytat": "Świadczenie pielęgnacyjne przysługuje:",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
-   "data_stanu": "2026-10-12"
-  },
-  "ile": {
-   "rozwiazanie": "kwota_z_aktu_wykonawczego",
-   "regula": null,
-   "aktualna": {
-    "wartosc": "3386,00 zł",
-    "warianty": null,
-    "od": "2026-01-01",
-    "do": "2026-12-31"
-   },
-   "kwota_ustawowa_zastapiona": "1300,00 zł",
-   "zwiekszenia": [],
-   "wyliczenie": null,
-   "os_czasu": [
-    {
-     "wartosc": "520,00 zł",
-     "warianty": null,
-     "od": "2012-11-01",
-     "do": null,
-     "rodzaj_zmiany": "pierwszy_znany_wpis",
-     "poprzednia": null,
-     "roznica": null,
-     "dowod": {
-      "eli": "DU/2012/959",
-      "przepis": "par_2",
-      "cytat": "wysokość świadczenia pielęgnacyjnego, o którym mowa w art. 17 ustawy, wynosi 520,00 zł miesięcznie.",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
-      "data_stanu": null
-     }
-    },
-    {
-     "wartosc": "1406,00 zł",
-     "warianty": null,
-     "od": "2017-01-01",
-     "do": "2017-12-31",
-     "rodzaj_zmiany": "waloryzacja",
-     "poprzednia": null,
-     "roznica": null,
-     "dowod": {
-      "eli": "MP/2016/1103",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2017 wynosi 1406,00 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/1103",
-      "data_stanu": null
-     }
-    },
-    {
-     "wartosc": "1477,00 zł",
-     "warianty": null,
-     "od": "2018-01-01",
-     "do": "2018-12-31",
-     "rodzaj_zmiany": "waloryzacja",
-     "poprzednia": "1406,00 zł",
-     "roznica": {
-      "kwota": "+71,00 zł",
-      "procent": "+5,05%"
-     },
-     "dowod": {
-      "eli": "MP/2017/1014",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2018 wynosi 1477,00 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2017/1014",
-      "data_stanu": null
-     }
-    },
-    {
-     "wartosc": "1583,00 zł",
-     "warianty": null,
-     "od": "2019-01-01",
-     "do": "2019-12-31",
-     "rodzaj_zmiany": "waloryzacja",
-     "poprzednia": "1477,00 zł",
-     "roznica": {
-      "kwota": "+106,00 zł",
-      "procent": "+7,18%"
-     },
-     "dowod": {
-      "eli": "MP/2018/1099",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2019 wynosi 1583,00 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2018/1099",
-      "data_stanu": null
-     }
-    },
-    {
-     "wartosc": "1830,00 zł",
-     "warianty": null,
-     "od": "2020-01-01",
-     "do": "2020-12-31",
-     "rodzaj_zmiany": "waloryzacja",
-     "poprzednia": "1583,00 zł",
-     "roznica": {
-      "kwota": "+247,00 zł",
-      "procent": "+15,60%"
-     },
-     "dowod": {
-      "eli": "MP/2019/1067",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2020 wynosi 1830,00 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2019/1067",
-      "data_stanu": null
-     }
-    },
-    {
-     "wartosc": "1971,00 zł",
-     "warianty": null,
-     "od": "2021-01-01",
-     "do": "2021-12-31",
-     "rodzaj_zmiany": "waloryzacja",
-     "poprzednia": "1830,00 zł",
-     "roznica": {
-      "kwota": "+141,00 zł",
-      "procent": "+7,70%"
-     },
-     "dowod": {
-      "eli": "MP/2020/1031",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2021 wynosi 1971,00 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2020/1031",
-      "data_stanu": null
-     }
-    },
-    {
-     "wartosc": "2119,00 zł",
-     "warianty": null,
-     "od": "2022-01-01",
-     "do": "2022-12-31",
-     "rodzaj_zmiany": "waloryzacja",
-     "poprzednia": "1971,00 zł",
-     "roznica": {
-      "kwota": "+148,00 zł",
-      "procent": "+7,51%"
-     },
-     "dowod": {
-      "eli": "MP/2021/1021",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2022 wynosi 2119,00 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2021/1021",
-      "data_stanu": null
-     }
-    },
-    {
-     "wartosc": "2458,00 zł",
-     "warianty": null,
-     "od": "2023-01-01",
-     "do": "2023-12-31",
-     "rodzaj_zmiany": "waloryzacja",
-     "poprzednia": "2119,00 zł",
-     "roznica": {
-      "kwota": "+339,00 zł",
-      "procent": "+16,00%"
-     },
-     "dowod": {
-      "eli": "MP/2022/1070",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2023 wynosi 2458,00 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2022/1070",
-      "data_stanu": null
-     }
-    },
-    {
-     "wartosc": "2988 zł",
-     "warianty": null,
-     "od": "2024-01-01",
-     "do": "2024-12-31",
-     "rodzaj_zmiany": "waloryzacja",
-     "poprzednia": "2458,00 zł",
-     "roznica": {
-      "kwota": "+530,00 zł",
-      "procent": "+21,56%"
-     },
-     "dowod": {
-      "eli": "MP/2023/1224",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2024 wynosi 2988 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2023/1224",
-      "data_stanu": null
-     }
-    },
-    {
-     "wartosc": "3287 zł",
-     "warianty": null,
-     "od": "2025-01-01",
-     "do": "2025-12-31",
-     "rodzaj_zmiany": "waloryzacja",
-     "poprzednia": "2988 zł",
-     "roznica": {
-      "kwota": "+299,00 zł",
-      "procent": "+10,01%"
-     },
-     "dowod": {
-      "eli": "MP/2024/967",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2025 wynosi 3287 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/967",
-      "data_stanu": null
-     }
-    },
-    {
-     "wartosc": "3386,00 zł",
-     "warianty": null,
-     "od": "2026-01-01",
-     "do": "2026-12-31",
-     "rodzaj_zmiany": "waloryzacja",
-     "poprzednia": "3287 zł",
-     "roznica": {
-      "kwota": "+99,00 zł",
-      "procent": "+3,01%"
-     },
-     "dowod": {
-      "eli": "MP/2025/1127",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2026 wynosi 3386,00 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
-      "data_stanu": null
-     }
-    }
-   ],
-   "progi": [],
-   "trasa": [
-    {
-     "krok": 1,
-     "opis": "DU/2003/2255 art. 17 ust. 1: przepis przyznający",
-     "dowod": {
-      "eli": "DU/2003/2255",
-      "przepis": "art. 17 ust. 1",
-      "cytat": "Świadczenie pielęgnacyjne przysługuje:",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
-      "data_stanu": "2026-10-12"
-     }
-    },
-    {
-     "krok": 2,
-     "opis": "art. 17 ust. 3: klauzula wysokości",
-     "dowod": {
-      "eli": "DU/2003/2255",
-      "przepis": "art. 17 ust. 3",
-      "cytat": "Świadczenie pielęgnacyjne przysługuje w wysokości 1300,00 zł miesięcznie.",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
-      "data_stanu": "2026-10-12"
-     }
-    },
-    {
-     "krok": 3,
-     "opis": "przypis 6: Wysokość świadczenia pielęgnacyjnego jest ustalana na podstawie art. 17 niniejsz",
-     "dowod": {
-      "eli": "DU/2003/2255",
-      "przepis": "art. 17 ust. 3",
-      "cytat": "Wysokość świadczenia pielęgnacyjnego jest ustalana na podstawie art. 17 niniejszej ustawy.",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
-      "data_stanu": "2026-10-12"
-     }
-    },
-    {
-     "krok": 4,
-     "opis": "MP/2025/1127: podstawa prawna (art. 17 ust. 3d)",
-     "dowod": {
-      "eli": "MP/2025/1127",
-      "przepis": "podstawa",
-      "cytat": "Na podstawie art. 17 ust. 3d ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych (Dz. U. z 2025 r. poz. 1208) ogłasza się, że",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
-      "data_stanu": null
-     }
-    },
-    {
-     "krok": 5,
-     "opis": "MP/2025/1127: kwota od 2026-01-01",
-     "dowod": {
-      "eli": "MP/2025/1127",
-      "przepis": "tresc",
-      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2026 wynosi 3386,00 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
-      "data_stanu": null
-     }
-    }
-   ]
-  },
-  "do_kiedy": [
-   {
-    "rodzaj": "okres_kwoty",
-    "data": null,
-    "opis": "kwota 3386,00 zł od 2026-01-01 do 2026-12-31",
-    "skutek": null,
-    "dowod": {
-     "eli": "MP/2025/1127",
-     "przepis": "tresc",
-     "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2026 wynosi 3386,00 zł",
-     "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
-     "data_stanu": null
-    },
-    "od": "2026-01-01",
-    "do": "2026-12-31"
-   }
-  ],
-  "obowiazuje_od": {
-   "data": "2004-05-01",
-   "zrodlo": "wejscie_w_zycie_ustawy",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
-   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
-  },
-  "powiazane": [],
-  "stan": {
-   "data_stanu": "2026-10-12",
-   "tekst": "tekst ujednolicony (informacyjny)"
-  },
-  "nieustalone": [],
-  "flagi": [
-   "kwota_podejrzana",
-   "koniec_nieustalony"
-  ]
  },
  {
   "id": "DU-2003-2255-art5-ust1",
@@ -4124,7 +3731,7 @@
   "nazwa": "zasiłek pielęgnacyjny",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "obowiazuje",
-  "komu": ":",
+  "komu": "niepełnosprawnemu dziecku; osobie niepełnosprawnej w wieku powyżej 16. roku życia, jeżeli legitymuje się orzeczeniem o znacznym stopniu niepełnospr; osobie, która ukończyła 75 lat.",
   "opis_prosty": null,
   "sytuacje": [
    "niepelnosprawnosc",
@@ -4344,12 +3951,341 @@
   ]
  },
  {
+  "id": "DU-2003-2255-art17-ust1",
+  "slug": "swiadczenie-pielegnacyjne",
+  "nazwa": "świadczenie pielęgnacyjne",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "matce albo ojcu; innym osobom, na których zgodnie z przepisami ustawy z dnia 25 lutego 1964 r. – Kodeks rodzinny i opiekuńczy (Dz. U. z 2; opiekunowi faktycznemu dziecka; rodzinie zastępczej, osobie prowadzącej rodzinny dom dziecka, dyrektorowi placówki opiekuńczo-wychowawczej, dyrektorowi ",
+  "opis_prosty": null,
+  "sytuacje": [
+   "opieka_nad_bliskim"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2003/2255",
+   "przepis": "art. 17 ust. 1",
+   "cytat": "Świadczenie pielęgnacyjne przysługuje:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "data_stanu": "2026-10-12"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_z_aktu_wykonawczego",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "3386,00 zł",
+    "warianty": null,
+    "od": "2026-01-01",
+    "do": "2026-12-31"
+   },
+   "kwota_ustawowa_zastapiona": "1300,00 zł",
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [
+    {
+     "wartosc": "520,00 zł",
+     "warianty": null,
+     "od": "2012-11-01",
+     "do": null,
+     "rodzaj_zmiany": "pierwszy_znany_wpis",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2012/959",
+      "przepis": "par_2",
+      "cytat": "wysokość świadczenia pielęgnacyjnego, o którym mowa w art. 17 ustawy, wynosi 520,00 zł miesięcznie.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1406,00 zł",
+     "warianty": null,
+     "od": "2017-01-01",
+     "do": "2017-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "MP/2016/1103",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2017 wynosi 1406,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/1103",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1477,00 zł",
+     "warianty": null,
+     "od": "2018-01-01",
+     "do": "2018-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "1406,00 zł",
+     "roznica": {
+      "kwota": "+71,00 zł",
+      "procent": "+5,05%"
+     },
+     "dowod": {
+      "eli": "MP/2017/1014",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2018 wynosi 1477,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2017/1014",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1583,00 zł",
+     "warianty": null,
+     "od": "2019-01-01",
+     "do": "2019-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "1477,00 zł",
+     "roznica": {
+      "kwota": "+106,00 zł",
+      "procent": "+7,18%"
+     },
+     "dowod": {
+      "eli": "MP/2018/1099",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2019 wynosi 1583,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2018/1099",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1830,00 zł",
+     "warianty": null,
+     "od": "2020-01-01",
+     "do": "2020-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "1583,00 zł",
+     "roznica": {
+      "kwota": "+247,00 zł",
+      "procent": "+15,60%"
+     },
+     "dowod": {
+      "eli": "MP/2019/1067",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2020 wynosi 1830,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2019/1067",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "1971,00 zł",
+     "warianty": null,
+     "od": "2021-01-01",
+     "do": "2021-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "1830,00 zł",
+     "roznica": {
+      "kwota": "+141,00 zł",
+      "procent": "+7,70%"
+     },
+     "dowod": {
+      "eli": "MP/2020/1031",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2021 wynosi 1971,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2020/1031",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "2119,00 zł",
+     "warianty": null,
+     "od": "2022-01-01",
+     "do": "2022-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "1971,00 zł",
+     "roznica": {
+      "kwota": "+148,00 zł",
+      "procent": "+7,51%"
+     },
+     "dowod": {
+      "eli": "MP/2021/1021",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2022 wynosi 2119,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2021/1021",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "2458,00 zł",
+     "warianty": null,
+     "od": "2023-01-01",
+     "do": "2023-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "2119,00 zł",
+     "roznica": {
+      "kwota": "+339,00 zł",
+      "procent": "+16,00%"
+     },
+     "dowod": {
+      "eli": "MP/2022/1070",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2023 wynosi 2458,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2022/1070",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "2988 zł",
+     "warianty": null,
+     "od": "2024-01-01",
+     "do": "2024-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "2458,00 zł",
+     "roznica": {
+      "kwota": "+530,00 zł",
+      "procent": "+21,56%"
+     },
+     "dowod": {
+      "eli": "MP/2023/1224",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2024 wynosi 2988 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2023/1224",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "3287 zł",
+     "warianty": null,
+     "od": "2025-01-01",
+     "do": "2025-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "2988 zł",
+     "roznica": {
+      "kwota": "+299,00 zł",
+      "procent": "+10,01%"
+     },
+     "dowod": {
+      "eli": "MP/2024/967",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2025 wynosi 3287 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/967",
+      "data_stanu": null
+     }
+    },
+    {
+     "wartosc": "3386,00 zł",
+     "warianty": null,
+     "od": "2026-01-01",
+     "do": "2026-12-31",
+     "rodzaj_zmiany": "waloryzacja",
+     "poprzednia": "3287 zł",
+     "roznica": {
+      "kwota": "+99,00 zł",
+      "procent": "+3,01%"
+     },
+     "dowod": {
+      "eli": "MP/2025/1127",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2026 wynosi 3386,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
+      "data_stanu": null
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2003/2255 art. 17 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 17 ust. 1",
+      "cytat": "Świadczenie pielęgnacyjne przysługuje:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 17 ust. 3: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 17 ust. 3",
+      "cytat": "Świadczenie pielęgnacyjne przysługuje w wysokości 1300,00 zł miesięcznie.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "przypis 6: Wysokość świadczenia pielęgnacyjnego jest ustalana na podstawie art. 17 niniejsz",
+     "dowod": {
+      "eli": "DU/2003/2255",
+      "przepis": "art. 17 ust. 3",
+      "cytat": "Wysokość świadczenia pielęgnacyjnego jest ustalana na podstawie art. 17 niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+      "data_stanu": "2026-10-12"
+     }
+    },
+    {
+     "krok": 4,
+     "opis": "MP/2025/1127: podstawa prawna (art. 17 ust. 3d)",
+     "dowod": {
+      "eli": "MP/2025/1127",
+      "przepis": "podstawa",
+      "cytat": "Na podstawie art. 17 ust. 3d ustawy z dnia 28 listopada 2003 r. o świadczeniach rodzinnych (Dz. U. z 2025 r. poz. 1208) ogłasza się, że",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
+      "data_stanu": null
+     }
+    },
+    {
+     "krok": 5,
+     "opis": "MP/2025/1127: kwota od 2026-01-01",
+     "dowod": {
+      "eli": "MP/2025/1127",
+      "przepis": "tresc",
+      "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2026 wynosi 3386,00 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
+      "data_stanu": null
+     }
+    }
+   ]
+  },
+  "do_kiedy": [
+   {
+    "rodzaj": "okres_kwoty",
+    "data": null,
+    "opis": "kwota 3386,00 zł od 2026-01-01 do 2026-12-31",
+    "skutek": null,
+    "dowod": {
+     "eli": "MP/2025/1127",
+     "przepis": "tresc",
+     "cytat": "wysokość świadczenia pielęgnacyjnego w roku 2026 wynosi 3386,00 zł",
+     "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
+     "data_stanu": null
+    },
+    "od": "2026-01-01",
+    "do": "2026-12-31"
+   }
+  ],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-12",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": [
+   "kwota_podejrzana",
+   "koniec_nieustalony"
+  ]
+ },
+ {
   "id": "DU-2003-2255-art17c-ust1",
   "slug": "swiadczenie-rodzicielskie",
   "nazwa": "świadczenie rodzicielskie",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "obowiazuje",
-  "komu": ":",
+  "komu": "matce albo ojcu dziecka, z uwzględnieniem ust. 2; opiekunowi faktycznemu dziecka w przypadku objęcia opieką dziecka w wieku do ukończenia 14. roku życia; rodzinie zastępczej, z wyjątkiem rodziny zastępczej zawodowej, w przypadku objęcia opieką dziecka w wieku do ukończenia ; osobie, która przysposob",
   "opis_prosty": null,
   "sytuacje": [
    "dziecko",
@@ -4504,7 +4440,7 @@
   "nazwa": "emerytura w ponownie ustalonej wysokości",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": "od dnia",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [
    "niepelnosprawnosc",
@@ -4564,74 +4500,9 @@
   ]
  },
  {
-  "id": "DU-1998-1118-art24a-ust1",
-  "slug": "renty",
-  "nazwa": "renty",
-  "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "do_ustalenia",
-  "komu": "Emeryturę, o której mowa w art. 24",
-  "opis_prosty": null,
-  "sytuacje": [
-   "niepelnosprawnosc",
-   "senior"
-  ],
-  "sytuacje_zrodlo": "automatyczne",
-  "przepis": {
-   "eli": "DU/1998/1118",
-   "przepis": "art. 24a ust. 1",
-   "cytat": "Emeryturę, o której mowa w art. 24, przyznaje się z urzędu zamiast renty z tytułu niezdolności do pracy osobie, która osiągnęła wiek uprawniający do tej emerytury oraz podlegała ubezpieczeniu społecznemu albo ubezpieczeniom emerytalnemu i rentowym.",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
-   "data_stanu": "2026-10-16"
-  },
-  "ile": {
-   "rozwiazanie": "nieustalone",
-   "regula": null,
-   "aktualna": null,
-   "kwota_ustawowa_zastapiona": null,
-   "zwiekszenia": [],
-   "wyliczenie": null,
-   "os_czasu": [],
-   "progi": [],
-   "trasa": [
-    {
-     "krok": 1,
-     "opis": "DU/1998/1118 art. 24a ust. 1: przepis przyznający",
-     "dowod": {
-      "eli": "DU/1998/1118",
-      "przepis": "art. 24a ust. 1",
-      "cytat": "Emeryturę, o której mowa w art. 24, przyznaje się z urzędu zamiast renty z tytułu niezdolności do pracy osobie, która osiągnęła wiek uprawniający do tej emerytury oraz podlegała ubezpieczeniu społecznemu albo ubezpieczeniom emerytalnemu i rentowym.",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
-      "data_stanu": "2026-10-16"
-     }
-    }
-   ]
-  },
-  "do_kiedy": [],
-  "obowiazuje_od": {
-   "data": "1999-01-01",
-   "zrodlo": "wejscie_w_zycie_ustawy",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
-   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
-  },
-  "powiazane": [],
-  "stan": {
-   "data_stanu": "2026-10-16",
-   "tekst": "tekst ujednolicony (informacyjny)"
-  },
-  "nieustalone": [
-   {
-    "pole": "ile",
-    "powod": "konkurujące klauzule wysokości: DU/1998/1118#arti_62-pass_1, DU/1998/1118#arti_62-pass_2, DU/1998/1118#arti_64-pass_1, DU/1998/1118#arti_73-pass_1"
-   }
-  ],
-  "flagi": [
-   "kandydaci_wielu_artykulow"
-  ]
- },
- {
   "id": "DU-1998-1118-art50-ust1",
-  "slug": "emerytury-kolejowej",
-  "nazwa": "emerytury kolejowej",
+  "slug": "emerytura-kolejowa",
+  "nazwa": "emerytura kolejowa",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
   "komu": "pracownikom kolejowym urodzonym po dniu 31 grudnia 1948 r",
@@ -4756,7 +4627,7 @@
   "nazwa": "renta okresowa",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": "przez okres wskazany w decyzji organu rentowego",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [],
   "sytuacje_zrodlo": "automatyczne",
@@ -5014,12 +4885,183 @@
   "flagi": []
  },
  {
+  "id": "DU-1998-1118-art75-ust1",
+  "slug": "dodatek-pielegnacyjny",
+  "nazwa": "dodatek pielęgnacyjny",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "osobie uprawnionej do emerytury lub renty",
+  "opis_prosty": null,
+  "sytuacje": [
+   "niepelnosprawnosc",
+   "opieka_nad_bliskim"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 75 ust. 1",
+   "cytat": "Dodatek pielęgnacyjny przysługuje osobie uprawnionej do emerytury lub renty, jeżeli osoba ta została uznana za całkowicie niezdolną do pracy oraz do samodzielnej egzystencji albo ukończyła 75 lat życia, z zastrzeżeniem ust. 4.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 75 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 75 ust. 1",
+      "cytat": "Dodatek pielęgnacyjny przysługuje osobie uprawnionej do emerytury lub renty, jeżeli osoba ta została uznana za całkowicie niezdolną do pracy oraz do samodzielnej egzystencji albo ukończyła 75 lat życia, z zastrzeżeniem ust. 4.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 75 ust. 2: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 75 ust. 2",
+      "cytat": "Dodatek pielęgnacyjny wynosi 106,41 zł miesięcznie.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "przypis 8: Aktualną kwotę ogłasza Prezes Zakładu Ubezpieczeń Społecznych, w formie komunika",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 75 ust. 2",
+      "cytat": "Aktualną kwotę ogłasza Prezes Zakładu Ubezpieczeń Społecznych, w formie komunikatu, w Dzienniku Urzędowym Rzeczypospolitej Polskiej „Monitor Polski” na podstawie art. 94 ust. 2 pkt 1 lit. b niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "przypis wskazuje akt wykonawczy, brak go w grafie"
+   }
+  ],
+  "flagi": [
+   "kwota_podejrzana"
+  ]
+ },
+ {
+  "id": "DU-1998-1118-art76-ust1",
+  "slug": "dodatek-dla-sierot-zupelnych",
+  "nazwa": "dodatek dla sierot zupełnych",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Jeżeli do renty rodzinnej uprawniona jest sierota zupełna",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1998/1118",
+   "przepis": "art. 76 ust. 1",
+   "cytat": "Jeżeli do renty rodzinnej uprawniona jest sierota zupełna, przysługuje jej dodatek dla sierot zupełnych.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1998/1118 art. 76 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 76 ust. 1",
+      "cytat": "Jeżeli do renty rodzinnej uprawniona jest sierota zupełna, przysługuje jej dodatek dla sierot zupełnych.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 76 ust. 2: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 76 ust. 2",
+      "cytat": "Dodatek, o którym mowa w ust. 1, wynosi 200 zł miesięcznie.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    },
+    {
+     "krok": 3,
+     "opis": "przypis 8: Aktualną kwotę ogłasza Prezes Zakładu Ubezpieczeń Społecznych, w formie komunika",
+     "dowod": {
+      "eli": "DU/1998/1118",
+      "przepis": "art. 76 ust. 2",
+      "cytat": "Aktualną kwotę ogłasza Prezes Zakładu Ubezpieczeń Społecznych, w formie komunikatu, w Dzienniku Urzędowym Rzeczypospolitej Polskiej „Monitor Polski” na podstawie art. 94 ust. 2 pkt 1 lit. b niniejszej ustawy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1999-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "przypis wskazuje akt wykonawczy, brak go w grafie"
+   }
+  ],
+  "flagi": [
+   "kwota_podejrzana"
+  ]
+ },
+ {
   "id": "DU-1998-1118-art77-ust1",
   "slug": "zasilek-pogrzebowy-2",
   "nazwa": "zasiłek pogrzebowy",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "obowiazuje",
-  "komu": "w razie śmierci:",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [],
   "sytuacje_zrodlo": "automatyczne",
@@ -5235,68 +5277,6 @@
    "anomalia_spadek",
    "luka"
   ]
- },
- {
-  "id": "DU-1998-1118-art85-ust6",
-  "slug": "emerytury-przyslugujacej",
-  "nazwa": "emerytury przysługującej",
-  "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "do_ustalenia",
-  "komu": "ona osobie",
-  "opis_prosty": null,
-  "sytuacje": [
-   "senior"
-  ],
-  "sytuacje_zrodlo": "automatyczne",
-  "przepis": {
-   "eli": "DU/1998/1118",
-   "przepis": "art. 85 ust. 6",
-   "cytat": "Emerytury przysługującej z Funduszu nie podwyższa się do kwoty najniższej emerytury, jeżeli przysługuje ona osobie, która ma ustalone prawo do emerytury wojskowej obliczonej według zasad określonych w art. 15a ustawy z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych oraz ich rodzin (Dz. U. z 2025 r. poz. 305) lub do emerytury policyjnej obliczonej według zasad określonych w art. 15a i art. 15d ustawy z dnia 18 lutego 1994 r. o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej, Służby Celno-Skarbowej i Służby Więziennej oraz ich rodzin (Dz. U. z 2024 r. poz. 1121, 1243, 1562 i 1871 oraz z 2025 r. poz. 1366).",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
-   "data_stanu": "2026-10-16"
-  },
-  "ile": {
-   "rozwiazanie": "nieustalone",
-   "regula": null,
-   "aktualna": null,
-   "kwota_ustawowa_zastapiona": null,
-   "zwiekszenia": [],
-   "wyliczenie": null,
-   "os_czasu": [],
-   "progi": [],
-   "trasa": [
-    {
-     "krok": 1,
-     "opis": "DU/1998/1118 art. 85 ust. 6: przepis przyznający",
-     "dowod": {
-      "eli": "DU/1998/1118",
-      "przepis": "art. 85 ust. 6",
-      "cytat": "Emerytury przysługującej z Funduszu nie podwyższa się do kwoty najniższej emerytury, jeżeli przysługuje ona osobie, która ma ustalone prawo do emerytury wojskowej obliczonej według zasad określonych w art. 15a ustawy z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych oraz ich rodzin (Dz. U. z 2025 r. poz. 305) lub do emerytury policyjnej obliczonej według zasad określonych w art. 15a i art. 15d ustawy z dnia 18 lutego 1994 r. o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej, Służby Celno-Skarbowej i Służby Więziennej oraz ich rodzin (Dz. U. z 2024 r. poz. 1121, 1243, 1562 i 1871 oraz z 2025 r. poz. 1366).",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
-      "data_stanu": "2026-10-16"
-     }
-    }
-   ]
-  },
-  "do_kiedy": [],
-  "obowiazuje_od": {
-   "data": "1999-01-01",
-   "zrodlo": "wejscie_w_zycie_ustawy",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
-   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
-  },
-  "powiazane": [],
-  "stan": {
-   "data_stanu": "2026-10-16",
-   "tekst": "tekst ujednolicony (informacyjny)"
-  },
-  "nieustalone": [
-   {
-    "pole": "ile",
-    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
-   }
-  ],
-  "flagi": []
  },
  {
   "id": "DU-1999-636-art1-ust1",
@@ -5688,66 +5668,6 @@
   "flagi": []
  },
  {
-  "id": "DU-1999-636-art33-ust1",
-  "slug": "zwolnienia",
-  "nazwa": "zwolnienia",
-  "rodzaj_korzysci": "zwolnienie",
-  "status": "do_ustalenia",
-  "komu": "Zasiłek opiekuńczy",
-  "opis_prosty": null,
-  "sytuacje": [],
-  "sytuacje_zrodlo": "automatyczne",
-  "przepis": {
-   "eli": "DU/1999/636",
-   "przepis": "art. 33 ust. 1",
-   "cytat": "Zasiłek opiekuńczy przysługuje przez okres zwolnienia od wykonywania pracy z powodu konieczności osobistego sprawowania opieki, niedłużej jednak niż przez okres:",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
-   "data_stanu": "2026-09-16"
-  },
-  "ile": {
-   "rozwiazanie": "nieustalone",
-   "regula": null,
-   "aktualna": null,
-   "kwota_ustawowa_zastapiona": null,
-   "zwiekszenia": [],
-   "wyliczenie": null,
-   "os_czasu": [],
-   "progi": [],
-   "trasa": [
-    {
-     "krok": 1,
-     "opis": "DU/1999/636 art. 33 ust. 1: przepis przyznający",
-     "dowod": {
-      "eli": "DU/1999/636",
-      "przepis": "art. 33 ust. 1",
-      "cytat": "Zasiłek opiekuńczy przysługuje przez okres zwolnienia od wykonywania pracy z powodu konieczności osobistego sprawowania opieki, niedłużej jednak niż przez okres:",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
-      "data_stanu": "2026-09-16"
-     }
-    }
-   ]
-  },
-  "do_kiedy": [],
-  "obowiazuje_od": {
-   "data": "1999-09-01",
-   "zrodlo": "wejscie_w_zycie_ustawy",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
-   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
-  },
-  "powiazane": [],
-  "stan": {
-   "data_stanu": "2026-09-16",
-   "tekst": "tekst ujednolicony (informacyjny)"
-  },
-  "nieustalone": [
-   {
-    "pole": "ile",
-    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
-   }
-  ],
-  "flagi": []
- },
- {
   "id": "DU-1991-24-art14-ust1",
   "slug": "zasilek-chorobowy-2",
   "nazwa": "zasiłek chorobowy",
@@ -5999,7 +5919,7 @@
   "nazwa": "renta okresowa",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": "W pozostałych przypadkach renta rolnicza z tytułu niezdolności do pracy",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [
    "niepelnosprawnosc"
@@ -6035,7 +5955,7 @@
     },
     {
      "krok": 2,
-     "opis": "korzyść nadrzędna w tym samym artykule: rentę (DU-1991-24-art22-ust1)",
+     "opis": "korzyść nadrzędna w tym samym artykule: renta (DU-1991-24-art22-ust1)",
      "dowod": {
       "eli": "DU/1991/24",
       "przepis": "art. 22 ust. 1",
@@ -6070,11 +5990,11 @@
  },
  {
   "id": "DU-1991-24-art22-ust1",
-  "slug": "rente",
-  "nazwa": "rentę",
+  "slug": "renta",
+  "nazwa": "renta",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": "Rentę rolniczą z tytułu niezdolności do pracy",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [
    "niepelnosprawnosc"
@@ -6132,15 +6052,14 @@
  },
  {
   "id": "DU-1991-24-art22-ust3",
-  "slug": "emeryture",
-  "nazwa": "emeryturę",
+  "slug": "emerytura",
+  "nazwa": "emerytura",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
   "komu": "Osobom pobierającym renty rolnicze z tytułu niezdolności do pracy, które osiągnęły wiek 60 lat dla kobiet i 65 lat dla mężczyzn",
   "opis_prosty": null,
   "sytuacje": [
-   "niepelnosprawnosc",
-   "senior"
+   "niepelnosprawnosc"
   ],
   "sytuacje_zrodlo": "automatyczne",
   "przepis": {
@@ -6195,7 +6114,7 @@
  },
  {
   "id": "DU-1991-24-art27-ust1",
-  "slug": "dodatek-pielegnacyjny",
+  "slug": "dodatek-pielegnacyjny-2",
   "nazwa": "dodatek pielęgnacyjny",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
@@ -6256,6 +6175,126 @@
   "flagi": []
  },
  {
+  "id": "DU-1991-24-art27-ust2",
+  "slug": "dodatek-z-tytulu-pracy-przymusowej",
+  "nazwa": "dodatek z tytułu pracy przymusowej",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Do emerytury lub renty rolniczej z ubezpieczenia",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 27 ust. 2",
+   "cytat": "Do emerytury lub renty rolniczej z ubezpieczenia przysługuje również dodatek z tytułu pracy przymusowej po dniu 1 września 1939 r. w wysokości 2 % emerytury podstawowej za każdy rok takiej pracy.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 27 ust. 2: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 27 ust. 2",
+      "cytat": "Do emerytury lub renty rolniczej z ubezpieczenia przysługuje również dodatek z tytułu pracy przymusowej po dniu 1 września 1939 r. w wysokości 2 % emerytury podstawowej za każdy rok takiej pracy.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
+  "id": "DU-1991-24-art27a-ust1",
+  "slug": "dodatek-z-tytulu-oplacania-skladki",
+  "nazwa": "dodatek z tytułu opłacania składki",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Do emerytury rolniczej",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/1991/24",
+   "przepis": "art. 27a ust. 1",
+   "cytat": "Do emerytury rolniczej przysługuje dodatek z tytułu opłacania składki, o której mowa w art. 17 ust. 2 lub 4, w wysokości 0,5 % emerytury podstawowej za każdy rok opłacania takiej składki.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "data_stanu": "2025-12-18"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/1991/24 art. 27a ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/1991/24",
+      "przepis": "art. 27a ust. 1",
+      "cytat": "Do emerytury rolniczej przysługuje dodatek z tytułu opłacania składki, o której mowa w art. 17 ust. 2 lub 4, w wysokości 0,5 % emerytury podstawowej za każdy rok opłacania takiej składki.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+      "data_stanu": "2025-12-18"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "1991-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2025-12-18",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
   "id": "DU-1991-24-art29-ust1",
   "slug": "renta-rodzinna-2",
   "nazwa": "renta rodzinna",
@@ -6289,66 +6328,6 @@
       "eli": "DU/1991/24",
       "przepis": "art. 29 ust. 1",
       "cytat": "Renta rodzinna przysługuje uprawnionym członkom rodziny zmarłego:",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
-      "data_stanu": "2025-12-18"
-     }
-    }
-   ]
-  },
-  "do_kiedy": [],
-  "obowiazuje_od": {
-   "data": "1991-01-01",
-   "zrodlo": "wejscie_w_zycie_ustawy",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
-   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
-  },
-  "powiazane": [],
-  "stan": {
-   "data_stanu": "2025-12-18",
-   "tekst": "tekst ujednolicony (informacyjny)"
-  },
-  "nieustalone": [
-   {
-    "pole": "ile",
-    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
-   }
-  ],
-  "flagi": []
- },
- {
-  "id": "DU-1991-24-art31-ust1",
-  "slug": "dodatek-przewidziany",
-  "nazwa": "dodatek przewidziany",
-  "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "do_ustalenia",
-  "komu": "Do renty rodzinnej",
-  "opis_prosty": null,
-  "sytuacje": [],
-  "sytuacje_zrodlo": "automatyczne",
-  "przepis": {
-   "eli": "DU/1991/24",
-   "przepis": "art. 31 ust. 1",
-   "cytat": "Do renty rodzinnej przysługuje dodatek przewidziany w art. 27 ust. 1 oraz dodatek dla sieroty zupełnej.",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
-   "data_stanu": "2025-12-18"
-  },
-  "ile": {
-   "rozwiazanie": "nieustalone",
-   "regula": null,
-   "aktualna": null,
-   "kwota_ustawowa_zastapiona": null,
-   "zwiekszenia": [],
-   "wyliczenie": null,
-   "os_czasu": [],
-   "progi": [],
-   "trasa": [
-    {
-     "krok": 1,
-     "opis": "DU/1991/24 art. 31 ust. 1: przepis przyznający",
-     "dowod": {
-      "eli": "DU/1991/24",
-      "przepis": "art. 31 ust. 1",
-      "cytat": "Do renty rodzinnej przysługuje dodatek przewidziany w art. 27 ust. 1 oraz dodatek dla sieroty zupełnej.",
       "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
       "data_stanu": "2025-12-18"
      }
@@ -6552,129 +6531,7 @@
   "nieustalone": [
    {
     "pole": "ile",
-    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
-   }
-  ],
-  "flagi": []
- },
- {
-  "id": "DU-1991-24-art35b-ust1",
-  "slug": "swiadczenia-rodzicielskiego",
-  "nazwa": "świadczenia rodzicielskiego",
-  "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "do_ustalenia",
-  "komu": "Zasiłek macierzyński",
-  "opis_prosty": null,
-  "sytuacje": [
-   "ciaza_porod"
-  ],
-  "sytuacje_zrodlo": "automatyczne",
-  "przepis": {
-   "eli": "DU/1991/24",
-   "przepis": "art. 35b ust. 1",
-   "cytat": "Zasiłek macierzyński przysługuje w wysokości świadczenia rodzicielskiego, o którym mowa w ustawie z dnia 28 listopada 2003 r. o świadczeniach rodzinnych.",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
-   "data_stanu": "2025-12-18"
-  },
-  "ile": {
-   "rozwiazanie": "nieustalone",
-   "regula": null,
-   "aktualna": null,
-   "kwota_ustawowa_zastapiona": null,
-   "zwiekszenia": [],
-   "wyliczenie": null,
-   "os_czasu": [],
-   "progi": [],
-   "trasa": [
-    {
-     "krok": 1,
-     "opis": "DU/1991/24 art. 35b ust. 1: przepis przyznający",
-     "dowod": {
-      "eli": "DU/1991/24",
-      "przepis": "art. 35b ust. 1",
-      "cytat": "Zasiłek macierzyński przysługuje w wysokości świadczenia rodzicielskiego, o którym mowa w ustawie z dnia 28 listopada 2003 r. o świadczeniach rodzinnych.",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
-      "data_stanu": "2025-12-18"
-     }
-    }
-   ]
-  },
-  "do_kiedy": [],
-  "obowiazuje_od": {
-   "data": "1991-01-01",
-   "zrodlo": "wejscie_w_zycie_ustawy",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
-   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
-  },
-  "powiazane": [],
-  "stan": {
-   "data_stanu": "2025-12-18",
-   "tekst": "tekst ujednolicony (informacyjny)"
-  },
-  "nieustalone": [
-   {
-    "pole": "ile",
     "powod": "odesłanie kwoty bez celu w grafie"
-   }
-  ],
-  "flagi": []
- },
- {
-  "id": "DU-1991-24-art55-ust2",
-  "slug": "swiadczenie-przewidziane",
-  "nazwa": "świadczenie przewidziane",
-  "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "do_ustalenia",
-  "komu": "",
-  "opis_prosty": null,
-  "sytuacje": [],
-  "sytuacje_zrodlo": "automatyczne",
-  "przepis": {
-   "eli": "DU/1991/24",
-   "przepis": "art. 55 ust. 2",
-   "cytat": "Świadczenie przewidziane w ust. 1 przyznaje się w wysokości nieprzekraczającej wysokości odpowiedniego świadczenia z ubezpieczenia emerytalno-rentowego.",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
-   "data_stanu": "2025-12-18"
-  },
-  "ile": {
-   "rozwiazanie": "nieustalone",
-   "regula": null,
-   "aktualna": null,
-   "kwota_ustawowa_zastapiona": null,
-   "zwiekszenia": [],
-   "wyliczenie": null,
-   "os_czasu": [],
-   "progi": [],
-   "trasa": [
-    {
-     "krok": 1,
-     "opis": "DU/1991/24 art. 55 ust. 2: przepis przyznający",
-     "dowod": {
-      "eli": "DU/1991/24",
-      "przepis": "art. 55 ust. 2",
-      "cytat": "Świadczenie przewidziane w ust. 1 przyznaje się w wysokości nieprzekraczającej wysokości odpowiedniego świadczenia z ubezpieczenia emerytalno-rentowego.",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
-      "data_stanu": "2025-12-18"
-     }
-    }
-   ]
-  },
-  "do_kiedy": [],
-  "obowiazuje_od": {
-   "data": "1991-01-01",
-   "zrodlo": "wejscie_w_zycie_ustawy",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
-   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
-  },
-  "powiazane": [],
-  "stan": {
-   "data_stanu": "2025-12-18",
-   "tekst": "tekst ujednolicony (informacyjny)"
-  },
-  "nieustalone": [
-   {
-    "pole": "ile",
-    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
    }
   ],
   "flagi": []
@@ -6685,7 +6542,7 @@
   "nazwa": "zasiłek stały",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": ":",
+  "komu": "pełnoletniej osobie samotnie gospodarującej, niezdolnej do pracy z powodu wieku lub całkowicie niezdolnej do pracy, jeże; pełnoletniej osobie pozostającej w rodzinie, niezdolnej do pracy z powodu wieku lub całkowicie niezdolnej do pracy, jeże",
   "opis_prosty": null,
   "sytuacje": [],
   "sytuacje_zrodlo": "automatyczne",
@@ -6745,7 +6602,7 @@
   "nazwa": "zasiłek okresowy",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": "w szczególności ze względu na długotrwałą chorobę",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [
    "niepelnosprawnosc",
@@ -6835,7 +6692,7 @@
   "nazwa": "świadczenia pieniężne",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": "i wypłaca za okres miesiąca kalendarzowego",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [],
   "sytuacje_zrodlo": "automatyczne",
@@ -6906,12 +6763,100 @@
   "flagi": []
  },
  {
+  "id": "DU-2004-593-art121-ust3a",
+  "slug": "dodatek-do-wynagrodzenia",
+  "nazwa": "dodatek do wynagrodzenia",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "obowiazuje",
+  "komu": "Pracownikowi socjalnemu zatrudnionemu w pełnym wymiarze czasu pracy w samorządowych jednostkach organizacyjnych pomocy społecznej, do którego podstawowych obowiązków należy świadczenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2004/593",
+   "przepis": "art. 121 ust. 3a",
+   "cytat": "Pracownikowi socjalnemu zatrudnionemu w pełnym wymiarze czasu pracy w samorządowych jednostkach organizacyjnych pomocy społecznej, do którego podstawowych obowiązków należy świadczenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "data_stanu": "2026-07-29"
+  },
+  "ile": {
+   "rozwiazanie": "kwota_w_ustawie",
+   "regula": null,
+   "aktualna": {
+    "wartosc": "400 zł",
+    "warianty": null,
+    "od": null,
+    "do": null
+   },
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [
+    {
+     "wartosc": "400 zł",
+     "warianty": null,
+     "od": null,
+     "do": null,
+     "rodzaj_zmiany": "brzmienie_pierwotne",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 121 ust. 3a",
+      "cytat": "zenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    }
+   ],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2004/593 art. 121 ust. 3a: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 121 ust. 3a",
+      "cytat": "Pracownikowi socjalnemu zatrudnionemu w pełnym wymiarze czasu pracy w samorządowych jednostkach organizacyjnych pomocy społecznej, do którego podstawowych obowiązków należy świadczenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 121 ust. 3a: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2004/593",
+      "przepis": "art. 121 ust. 3a",
+      "cytat": "zenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+      "data_stanu": "2026-07-29"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2004-05-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-07-29",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [],
+  "flagi": []
+ },
+ {
   "id": "DU-2004-593-art121-ust3c",
   "slug": "swiadczenie-pracy-socjalnej",
   "nazwa": "świadczenie pracy socjalnej",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": "zwrot kosztów przejazdów z miejsca pracy do miejsc wykonywania przez niego czynności zawodowych",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [],
   "sytuacje_zrodlo": "automatyczne",
@@ -7091,12 +7036,74 @@
   "flagi": []
  },
  {
+  "id": "DU-2011-887-art80-ust1",
+  "slug": "swiadczenie-na-pokrycie-kosztow-jego-utrzymania",
+  "nazwa": "świadczenie na pokrycie kosztów jego utrzymania",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Rodzinie zastępczej oraz prowadzącemu rodzinny dom dziecka, na każde umieszczone dziecko",
+  "opis_prosty": null,
+  "sytuacje": [
+   "dziecko"
+  ],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2011/887",
+   "przepis": "art. 80 ust. 1",
+   "cytat": "Rodzinie zastępczej oraz prowadzącemu rodzinny dom dziecka, na każde umieszczone dziecko, przysługuje świadczenie na pokrycie kosztów jego utrzymania, nieniższe niż kwota:",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2011/887",
+   "data_stanu": "2026-07-29"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2011/887 art. 80 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2011/887",
+      "przepis": "art. 80 ust. 1",
+      "cytat": "Rodzinie zastępczej oraz prowadzącemu rodzinny dom dziecka, na każde umieszczone dziecko, przysługuje świadczenie na pokrycie kosztów jego utrzymania, nieniższe niż kwota:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2011/887",
+      "data_stanu": "2026-07-29"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2012-01-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2011/887",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-07-29",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
   "id": "DU-2011-887-art120",
   "slug": "swiadczenia-opieki-zdrowotnej",
   "nazwa": "świadczenia opieki zdrowotnej",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": "w rocznej stawce ustalonej ze starostą w miarę wystąpienia potrzeb",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [
    "dziecko"
@@ -7158,7 +7165,7 @@
   "nazwa": "stypendium",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "obowiazuje",
-  "komu": "za dni nieobecności na szkoleniu w przypadku usprawiedliwienia tej nieobecności obowiązkiem stawiennictwa przed sądem lub organem administracji publicznej",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [
    "edukacja"
@@ -7231,12 +7238,72 @@
   "flagi": []
  },
  {
+  "id": "DU-2025-620-art121-ust1",
+  "slug": "dodatek-do-stypendium",
+  "nazwa": "dodatek do stypendium",
+  "rodzaj_korzysci": "swiadczenie_okresowe",
+  "status": "do_ustalenia",
+  "komu": "Osobie, która odbyła staż, o którym mowa w art. 119 ust. 1",
+  "opis_prosty": null,
+  "sytuacje": [],
+  "sytuacje_zrodlo": "automatyczne",
+  "przepis": {
+   "eli": "DU/2025/620",
+   "przepis": "art. 121 ust. 1",
+   "cytat": "Osobie, która odbyła staż, o którym mowa w art. 119 ust. 1, przysługuje dodatek do stypendium po uzyskaniu dokumentu potwierdzającego nabycie wiedzy i umiejętności, w terminie 12 miesięcy od ukończenia stażu.",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "data_stanu": "2026-10-16"
+  },
+  "ile": {
+   "rozwiazanie": "nieustalone",
+   "regula": null,
+   "aktualna": null,
+   "kwota_ustawowa_zastapiona": null,
+   "zwiekszenia": [],
+   "wyliczenie": null,
+   "os_czasu": [],
+   "progi": [],
+   "trasa": [
+    {
+     "krok": 1,
+     "opis": "DU/2025/620 art. 121 ust. 1: przepis przyznający",
+     "dowod": {
+      "eli": "DU/2025/620",
+      "przepis": "art. 121 ust. 1",
+      "cytat": "Osobie, która odbyła staż, o którym mowa w art. 119 ust. 1, przysługuje dodatek do stypendium po uzyskaniu dokumentu potwierdzającego nabycie wiedzy i umiejętności, w terminie 12 miesięcy od ukończenia stażu.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+      "data_stanu": "2026-10-16"
+     }
+    }
+   ]
+  },
+  "do_kiedy": [],
+  "obowiazuje_od": {
+   "data": "2025-06-01",
+   "zrodlo": "wejscie_w_zycie_ustawy",
+   "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
+  },
+  "powiazane": [],
+  "stan": {
+   "data_stanu": "2026-10-16",
+   "tekst": "tekst ujednolicony (informacyjny)"
+  },
+  "nieustalone": [
+   {
+    "pole": "ile",
+    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
+   }
+  ],
+  "flagi": []
+ },
+ {
   "id": "DU-2025-620-art141-ust2",
   "slug": "dofinansowanie-wynagrodzenia",
   "nazwa": "dofinansowanie wynagrodzenia",
   "rodzaj_korzysci": "dofinansowanie",
   "status": "do_ustalenia",
-  "komu": "przez okres:",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [],
   "sytuacje_zrodlo": "automatyczne",
@@ -7296,7 +7363,7 @@
   "nazwa": "świadczenie aktywizacyjne",
   "rodzaj_korzysci": "swiadczenie_okresowe",
   "status": "do_ustalenia",
-  "komu": "przez okres 12 miesięcy",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [],
   "sytuacje_zrodlo": "automatyczne",
@@ -7356,7 +7423,7 @@
   "nazwa": "refundacja",
   "rodzaj_korzysci": "dofinansowanie",
   "status": "do_ustalenia",
-  "komu": "na okres do 6 miesięcy",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [],
   "sytuacje_zrodlo": "automatyczne",
@@ -7476,7 +7543,7 @@
   "nazwa": "zwolnieniu",
   "rodzaj_korzysci": "zwolnienie",
   "status": "do_ustalenia",
-  "komu": "prawo do zasiłku na okres skrócony o okres pobierania zasiłku przed pozbawieniem wolności i w trakcie przerw w odbywaniu kary",
+  "komu": "",
   "opis_prosty": null,
   "sytuacje": [],
   "sytuacje_zrodlo": "automatyczne",
@@ -7727,50 +7794,119 @@
   "flagi": []
  },
  {
-  "id": "DU-2007-1378-art2-pkt12",
-  "slug": "swiadczenie-pielegnacyjne-2",
-  "nazwa": "świadczenie pielęgnacyjne",
+  "id": "DU-2007-1378-art1a-ust1",
+  "slug": "swiadczenia-z-funduszu-alimentacyjnego",
+  "nazwa": "świadczenia z funduszu alimentacyjnego",
   "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "do_ustalenia",
-  "komu": "rodziców osoby uprawnionej, małżonka rodzica osoby uprawnionej, osobę, z którą rodzic osoby uprawnionej wychowuje wspólne dziecko, pozostające na ich utrzymaniu dzieci w wieku do ukończenia 25. roku życia oraz dziecko, które ukończyło 25. rok życia otrzymujące świadczenia z funduszu alimentacyjnego ",
+  "status": "obowiazuje",
+  "komu": "obywatelom polskim; cudzoziemcom:",
   "opis_prosty": null,
   "sytuacje": [
-   "dziecko",
-   "niepelnosprawnosc",
-   "opieka_nad_bliskim"
+   "niepelnosprawnosc"
   ],
   "sytuacje_zrodlo": "automatyczne",
   "przepis": {
    "eli": "DU/2007/1378",
-   "przepis": "art. 2 pkt 12",
-   "cytat": " rodziców osoby uprawnionej, małżonka rodzica osoby uprawnionej, osobę, z którą rodzic osoby uprawnionej wychowuje wspólne dziecko, pozostające na ich utrzymaniu dzieci w wieku do ukończenia 25. roku życia oraz dziecko, które ukończyło 25. rok życia otrzymujące świadczenia z funduszu alimentacyjnego lub legitymujące się orzeczeniem o znacznym stopniu niepełnosprawności, jeżeli w związku z tą niepełnosprawnością przysługuje świadczenie pielęgnacyjne lub specjalny zasiłek opiekuńczy, o których mowa w ustawie z dnia 28 listopada 2003 r. o świadczeniach rodzinnych (Dz. U. z 2025 r. poz. 1208) albo zasiłek dla opiekuna, o którym mowa w ustawie z dnia 4 kwietnia 2014 r. o ustaleniu i wypłacie zasiłków dla opiekunów (Dz. U. z 2024 r. poz. 246), a także osobę uprawnioną;",
+   "przepis": "art. 1a ust. 1",
+   "cytat": "Świadczenia z funduszu alimentacyjnego przysługują:",
    "url": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
    "data_stanu": "2026-02-03"
   },
   "ile": {
-   "rozwiazanie": "nieustalone",
+   "rozwiazanie": "kwota_w_ustawie",
    "regula": null,
-   "aktualna": null,
+   "aktualna": {
+    "wartosc": "1000 zł",
+    "warianty": null,
+    "od": null,
+    "do": null
+   },
    "kwota_ustawowa_zastapiona": null,
    "zwiekszenia": [],
    "wyliczenie": null,
-   "os_czasu": [],
-   "progi": [],
+   "os_czasu": [
+    {
+     "wartosc": "1000 zł",
+     "warianty": null,
+     "od": null,
+     "do": null,
+     "rodzaj_zmiany": "brzmienie_pierwotne",
+     "poprzednia": null,
+     "roznica": null,
+     "dowod": {
+      "eli": "DU/2007/1378",
+      "przepis": "art. 10 ust. 1",
+      "cytat": "Świadczenia z funduszu alimentacyjnego przysługują w wysokości bieżąco ustalonych alimentów, jednakże nie wyższej niż 1000 zł.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
+      "data_stanu": "2026-02-03"
+     }
+    }
+   ],
+   "progi": [
+    {
+     "przepis": "arti_9-pass_2",
+     "wpisy": [
+      {
+       "wartosc": "1665,00 zł",
+       "warianty": null,
+       "od": "2026-10-01",
+       "do": null,
+       "rodzaj_zmiany": "pierwszy_znany_wpis",
+       "poprzednia": null,
+       "roznica": null,
+       "dowod": {
+        "eli": "MP/2026/138",
+        "przepis": "tresc",
+        "cytat": "wysokość kwoty, o której mowa w art. 9 ust. 2 tej ustawy, wynosi 1665,00 zł.",
+        "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/138",
+        "data_stanu": null
+       }
+      }
+     ]
+    }
+   ],
    "trasa": [
     {
      "krok": 1,
-     "opis": "DU/2007/1378 art. 2 pkt 12: przepis przyznający",
+     "opis": "DU/2007/1378 art. 1a ust. 1: przepis przyznający",
      "dowod": {
       "eli": "DU/2007/1378",
-      "przepis": "art. 2 pkt 12",
-      "cytat": " rodziców osoby uprawnionej, małżonka rodzica osoby uprawnionej, osobę, z którą rodzic osoby uprawnionej wychowuje wspólne dziecko, pozostające na ich utrzymaniu dzieci w wieku do ukończenia 25. roku życia oraz dziecko, które ukończyło 25. rok życia otrzymujące świadczenia z funduszu alimentacyjnego lub legitymujące się orzeczeniem o znacznym stopniu niepełnosprawności, jeżeli w związku z tą niepełnosprawnością przysługuje świadczenie pielęgnacyjne lub specjalny zasiłek opiekuńczy, o których mowa w ustawie z dnia 28 listopada 2003 r. o świadczeniach rodzinnych (Dz. U. z 2025 r. poz. 1208) albo zasiłek dla opiekuna, o którym mowa w ustawie z dnia 4 kwietnia 2014 r. o ustaleniu i wypłacie zasiłków dla opiekunów (Dz. U. z 2024 r. poz. 246), a także osobę uprawnioną;",
+      "przepis": "art. 1a ust. 1",
+      "cytat": "Świadczenia z funduszu alimentacyjnego przysługują:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
+      "data_stanu": "2026-02-03"
+     }
+    },
+    {
+     "krok": 2,
+     "opis": "art. 10 ust. 1: klauzula wysokości",
+     "dowod": {
+      "eli": "DU/2007/1378",
+      "przepis": "art. 10 ust. 1",
+      "cytat": "Świadczenia z funduszu alimentacyjnego przysługują w wysokości bieżąco ustalonych alimentów, jednakże nie wyższej niż 1000 zł.",
       "url": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
       "data_stanu": "2026-02-03"
      }
     }
    ]
   },
-  "do_kiedy": [],
+  "do_kiedy": [
+   {
+    "rodzaj": "termin_wniosku",
+    "data": null,
+    "opis": "W przypadku utraty ważności orzeczenia o znacznym stopniu niepełnosprawności i uzyskania ponownego orzeczenia o znacznym stopniu niepełnosprawności, stanowiącego kontynuację poprzedniego orzeczenia, prawo do świadczeń z funduszu alimentacyjnego ustala się od pierwszego dnia miesiąca następującego po miesiącu, w którym upłynął termin ważności poprzedniego orzeczenia, jeżeli osoba złożyła wniosek o ustalenie prawa do świadczeń z funduszu alimentacyjnego w terminie 3 miesięcy od dnia ponownego wydania orzeczenia o znacznym stopniu niepełnosprawności.",
+    "skutek": null,
+    "dowod": {
+     "eli": "DU/2007/1378",
+     "przepis": "art. 18 ust. 3",
+     "cytat": "w terminie 3 miesięcy od dnia ponownego wydania orzeczenia o znacznym stopniu niepełnosprawności",
+     "url": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
+     "data_stanu": "2026-02-03"
+    },
+    "okres": "3 miesięcy",
+    "zdarzenie": "ponownego wydania orzeczenia o znacznym stopniu niepełnosprawności."
+   }
+  ],
   "obowiazuje_od": {
    "data": "2008-10-01",
    "zrodlo": "wejscie_w_zycie_ustawy",
@@ -7782,12 +7918,7 @@
    "data_stanu": "2026-02-03",
    "tekst": "tekst ujednolicony (informacyjny)"
   },
-  "nieustalone": [
-   {
-    "pole": "ile",
-    "powod": "brak klauzuli wysokości i krawędzi USTALA_KWOTE"
-   }
-  ],
+  "nieustalone": [],
   "flagi": []
  },
  {
@@ -7878,15 +8009,16 @@
  },
  {
   "id": "DU-2003-2255-art15b-ust1",
-  "slug": "zapomoge",
-  "nazwa": "zapomogę",
+  "slug": "zapomoga",
+  "nazwa": "zapomoga",
   "rodzaj_korzysci": "swiadczenie_jednorazowe",
   "status": "obowiazuje",
   "komu": "Z tytułu urodzenia się żywego dziecka",
   "opis_prosty": null,
   "sytuacje": [
    "dziecko",
-   "ciaza_porod"
+   "ciaza_porod",
+   "niski_dochod"
   ],
   "sytuacje_zrodlo": "automatyczne",
   "przepis": {
@@ -8002,7 +8134,86 @@
      }
     }
    ],
-   "progi": [],
+   "progi": [
+    {
+     "przepis": "arti_15b-pass_2",
+     "wpisy": [
+      {
+       "wartosc": "1922,00 zł",
+       "warianty": null,
+       "od": "2015-11-01",
+       "do": "2018-10-31",
+       "rodzaj_zmiany": "pierwszy_znany_wpis",
+       "poprzednia": null,
+       "roznica": null,
+       "dowod": {
+        "eli": "DU/2015/1238",
+        "przepis": "par_3",
+        "cytat": "wysokość kwoty, o której mowa w art. 15b ust. 2 ustawy, wynosi 1922,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "1922,00 zł",
+       "warianty": null,
+       "od": "2018-11-01",
+       "do": "2021-10-31",
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "1922,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2018/1497",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 15b ust. 2 ustawy, wynosi 1922,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "1922,00 zł",
+       "warianty": null,
+       "od": "2021-11-01",
+       "do": "2024-10-31",
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "1922,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2021/1481",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 15b ust. 2 ustawy, wynosi 1922,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
+        "data_stanu": null
+       }
+      },
+      {
+       "wartosc": "1922,00 zł",
+       "warianty": null,
+       "od": "2024-11-01",
+       "do": null,
+       "rodzaj_zmiany": "bez_zmiany_kwoty",
+       "poprzednia": "1922,00 zł",
+       "roznica": {
+        "kwota": "+0,00 zł",
+        "procent": "+0,00%"
+       },
+       "dowod": {
+        "eli": "DU/2024/1238",
+        "przepis": "par_1",
+        "cytat": "wysokość kwoty, o której mowa w art. 15b ust. 2 ustawy, wynosi 1922,00 zł;",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+        "data_stanu": null
+       }
+      }
+     ]
+    }
+   ],
    "trasa": [
     {
      "krok": 1,
@@ -8064,96 +8275,6 @@
   "powiazane": [],
   "stan": {
    "data_stanu": "2026-10-12",
-   "tekst": "tekst ujednolicony (informacyjny)"
-  },
-  "nieustalone": [],
-  "flagi": [
-   "nazwa_ogolna"
-  ]
- },
- {
-  "id": "DU-2004-593-art121-ust3a",
-  "slug": "dodatek",
-  "nazwa": "dodatek",
-  "rodzaj_korzysci": "swiadczenie_okresowe",
-  "status": "obowiazuje",
-  "komu": "Pracownikowi socjalnemu zatrudnionemu w pełnym wymiarze czasu pracy w samorządowych jednostkach organizacyjnych pomocy społecznej, do którego podstawowych obowiązków należy świadczenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki",
-  "opis_prosty": null,
-  "sytuacje": [],
-  "sytuacje_zrodlo": "automatyczne",
-  "przepis": {
-   "eli": "DU/2004/593",
-   "przepis": "art. 121 ust. 3a",
-   "cytat": "Pracownikowi socjalnemu zatrudnionemu w pełnym wymiarze czasu pracy w samorządowych jednostkach organizacyjnych pomocy społecznej, do którego podstawowych obowiązków należy świadczenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł.",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
-   "data_stanu": "2026-07-29"
-  },
-  "ile": {
-   "rozwiazanie": "kwota_w_ustawie",
-   "regula": null,
-   "aktualna": {
-    "wartosc": "400 zł",
-    "warianty": null,
-    "od": null,
-    "do": null
-   },
-   "kwota_ustawowa_zastapiona": null,
-   "zwiekszenia": [],
-   "wyliczenie": null,
-   "os_czasu": [
-    {
-     "wartosc": "400 zł",
-     "warianty": null,
-     "od": null,
-     "do": null,
-     "rodzaj_zmiany": "brzmienie_pierwotne",
-     "poprzednia": null,
-     "roznica": null,
-     "dowod": {
-      "eli": "DU/2004/593",
-      "przepis": "art. 121 ust. 3a",
-      "cytat": "zenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
-      "data_stanu": "2026-07-29"
-     }
-    }
-   ],
-   "progi": [],
-   "trasa": [
-    {
-     "krok": 1,
-     "opis": "DU/2004/593 art. 121 ust. 3a: przepis przyznający",
-     "dowod": {
-      "eli": "DU/2004/593",
-      "przepis": "art. 121 ust. 3a",
-      "cytat": "Pracownikowi socjalnemu zatrudnionemu w pełnym wymiarze czasu pracy w samorządowych jednostkach organizacyjnych pomocy społecznej, do którego podstawowych obowiązków należy świadczenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł.",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
-      "data_stanu": "2026-07-29"
-     }
-    },
-    {
-     "krok": 2,
-     "opis": "art. 121 ust. 3a: klauzula wysokości",
-     "dowod": {
-      "eli": "DU/2004/593",
-      "przepis": "art. 121 ust. 3a",
-      "cytat": "zenie pracy socjalnej lub przeprowadzanie rodzinnych wywiadów środowiskowych poza siedzibą jednostki, przysługuje wypłacany co miesiąc dodatek do wynagrodzenia w wysokości 400 zł",
-      "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
-      "data_stanu": "2026-07-29"
-     }
-    }
-   ]
-  },
-  "do_kiedy": [],
-  "obowiazuje_od": {
-   "data": "2004-05-01",
-   "zrodlo": "wejscie_w_zycie_ustawy",
-   "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
-   "uwaga": "jeśli przepis dodano nowelizacją, mógł zacząć obowiązywać później"
-  },
-  "powiazane": [],
-  "stan": {
-   "data_stanu": "2026-07-29",
    "tekst": "tekst ujednolicony (informacyjny)"
   },
   "nieustalone": [],
