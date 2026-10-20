@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parent
 SNAPSHOT = ROOT / 'data' / 'eksport'
 REPO = 'https://github.com/YoungTytus/youngtytus.github.io.git'
 FILES = ('manifest.json', 'korzysci.json', 'akty.json', 'slowniki.json', 'akty/SHA256SUMS')
+SOCJAL_SIDECAR = 'socjal.json'
 MANAGED = ('src', 'public', 'schema', 'scripts', 'testy', 'data', 'tests', '.github',
            'astro.config.mjs', 'package.json', 'package-lock.json', 'tsconfig.json',
            'aktualizuj_strone.py', 'README.md', 'pages.json', '.gitignore', '.gitattributes')
@@ -88,13 +89,19 @@ def validate_export(source):
     if manifest.get('kontrakt') not in ('strona-0.1', 'strona-0.2', 'strona-0.3', 'strona-0.4'):
         raise UpdateError('Nieobsługiwany kontrakt: ' + str(manifest.get('kontrakt')))
     hashes = manifest.get('pliki', {})
-    for name in FILES[1:]:
+    for name in FILES[1:] + ((SOCJAL_SIDECAR,) if SOCJAL_SIDECAR in hashes else ()):
         expected = hashes.get(name)
         path = relative_file(source, name)
         if not isinstance(expected, str) or not re.fullmatch('[a-f0-9]{64}', expected):
             raise UpdateError('Brak poprawnej sumy SHA-256 w manifeście: ' + name)
         if not path.is_file() or digest(path) != expected:
             raise UpdateError('Niezgodna suma SHA-256 lub brak pliku: ' + name)
+    if (source / SOCJAL_SIDECAR).exists() and SOCJAL_SIDECAR not in hashes:
+        raise UpdateError('socjal.json istnieje, lecz nie figuruje w podpisanym manifeście.')
+    if SOCJAL_SIDECAR in hashes:
+        sidecar = load_json(source / SOCJAL_SIDECAR)
+        if sidecar.get('kontrakt') != 'socjal-1' or not isinstance(sidecar.get('artykuly'), list):
+            raise UpdateError('Nieobsługiwany format socjal.json')
     benefits, acts = load_json(source / 'korzysci.json'), load_json(source / 'akty.json')
     if not isinstance(benefits, list) or not isinstance(acts, list) or not benefits:
         raise UpdateError('Eksport nie zawiera prawidłowych list rekordów.')
@@ -246,7 +253,7 @@ def update(args):
             if SNAPSHOT.exists():
                 shutil.rmtree(SNAPSHOT)
             try:
-                for name in list(FILES) + repaired_files:
+                for name in list(FILES) + repaired_files + ([SOCJAL_SIDECAR] if SOCJAL_SIDECAR in manifest.get('pliki', {}) else []):
                     target = relative_file(SNAPSHOT, name)
                     target.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(relative_file(source, name), target)
@@ -294,13 +301,36 @@ def main():
     if hasattr(sys.stdout, 'reconfigure'):
         sys.stdout.reconfigure(encoding='utf-8', errors='replace', line_buffering=True)
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--eksport', '--exkort', help='Folder eksportu; domyślnie data/eksport w projekcie.')
+    parser.add_argument('--eksport', '--exkort', help='Gotowy eksport (starszy tryb). Nie używaj razem z --socjal.')
+    parser.add_argument('--socjal', help='Folder projektu Socjal (Obsidian). Domyślnie folder Socjal obok repozytorium.')
+    parser.add_argument('--na-dzien', help='Data odcięcia dla importera Socjal, np. 2026-10-20.')
     parser.add_argument('--push', action='store_true', help='Po poprawnym zbudowaniu wykonaj commit i git push do main.')
     parser.add_argument('--message', help='Własny opis commita.')
     parser.add_argument('--site-url', help='Adres serwera HTTPS, bez podścieżki.')
     parser.add_argument('--base-path', help='Podścieżka witryny, domyślnie pusty (witryna konta).')
     try:
-        update(parser.parse_args())
+        args = parser.parse_args()
+        if args.eksport and args.socjal:
+            raise UpdateError('Podaj --socjal albo --eksport, nie oba.')
+        domyslny_socjal = ROOT.parent / 'Socjal'
+        folder_socjal = Path(args.socjal).expanduser().resolve() if args.socjal else (
+            domyslny_socjal if not args.eksport and (domyslny_socjal / 'START.md').is_file() else None)
+        if folder_socjal is not None:
+            if not (folder_socjal / 'Dane/FUS/karty.json').is_file():
+                raise UpdateError('Folder --socjal nie wygląda na kompletny sejf: ' + str(folder_socjal))
+            (ROOT / '.work').mkdir(exist_ok=True)
+            with tempfile.TemporaryDirectory(prefix='socjal-eksport-', dir=ROOT / '.work') as temp:
+                cmd = [sys.executable, ROOT / 'scripts/importuj_socjal.py',
+                       '--socjal', folder_socjal, '--wyjscie', temp]
+                if args.na_dzien:
+                    cmd.extend(['--na-dzien', args.na_dzien])
+                run(cmd)
+                args.eksport = temp
+                update(args)
+        elif args.eksport:
+            update(args)
+        else:
+            raise UpdateError('Nie znaleziono sąsiedniego folderu Socjal. Wskaż --socjal "C:\\...\\Socjal".')
     except (UpdateError, OSError, ValueError, KeyError) as exc:
         parser.exit(1, 'BŁĄD: ' + str(exc) + '\nAktualizacja przerwana. Sprawdź komunikat i stan zmian w Git.\n')
 

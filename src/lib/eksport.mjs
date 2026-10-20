@@ -145,7 +145,7 @@ function sprawdzPliki(katalog, manifest, akty, sprawdzSumy, bledy, tylkoOdsylacz
     bledy.push('manifest.json/pliki: brak sum SHA-256 plików paczki');
     return new Set();
   }
-  for (const nazwa of [...PLIKI_DANYCH, 'akty/SHA256SUMS']) {
+  for (const nazwa of [...PLIKI_DANYCH, 'akty/SHA256SUMS', ...(manifest.pliki['socjal.json'] ? ['socjal.json'] : [])]) {
     const sciezka = path.join(katalog, nazwa);
     if (!existsSync(sciezka)) { bledy.push(`${nazwa}: brak pliku w paczce`); continue; }
     const oczekiwana = manifest.pliki[nazwa];

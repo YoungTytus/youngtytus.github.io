@@ -1,0 +1,9 @@
+---
+import Uklad from '../../layouts/Uklad.astro';
+import { socjal } from '../../lib/socjal.mjs';
+const grupy = socjal()?.historia ?? {};
+---
+<Uklad tytul="Historia kwot" opis="Archiwum wartości świadczeń oraz źródeł historycznych z projektu Socjal.">
+ <div class="page-head"><div class="wrap"><nav class="breadcrumb"><a href="/">Strona główna</a><span>/</span><span>Historia</span></nav><h1>Historia kwot</h1><p class="lead">Dane pochodzą z opracowanych zestawień FUS. Wpis historyczny nie oznacza dostępności świadczenia dziś.</p></div></div>
+ <div class="wrap section"><div class="cards">{Object.entries(grupy).map(([id, list]) => <div class="related"><h2><a class="link" href={`/historia/${id}/`}>{id.replaceAll('_',' ')}</a></h2><p>{(list as any[]).length} wpisów</p></div>)}</div></div>
+</Uklad>

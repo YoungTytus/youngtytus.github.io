@@ -131,6 +131,7 @@ export function plikiDanych() {
     for (const n of ['manifest.json', 'korzysci.json', 'akty.json', 'slowniki.json']) {
       pliki.set(n, readFileSync(`${d.katalog}/${n}`));
     }
+    if (d.manifest.pliki?.['socjal.json']) pliki.set('socjal.json', readFileSync(`${d.katalog}/socjal.json`));
     pliki.set('SHA256SUMS', readFileSync(`${d.katalog}/akty/SHA256SUMS`));
   } else {
     pliki.set('manifest.json', Buffer.from(json(d.manifest)));

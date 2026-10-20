@@ -27,7 +27,7 @@ jobs:
           node-version: '22'
           cache: npm
       - name: Sprawdź dane, uruchom testy i zbuduj stronę
-        run: python aktualizuj_strone.py
+        run: python aktualizuj_strone.py --eksport data/eksport
       - name: Przygotuj artefakt GitHub Pages
         uses: actions/upload-pages-artifact@v4
         with:

@@ -1,178 +1,25 @@
 {
- "kontrakt": "strona-0.4",
- "wygenerowano": "2026-10-18T16:17:38+00:00",
- "wersja_kodu": "42e4bb5ffb0b21ccb4887ac60e1d769329cce1a1+zmiany",
- "na_dzien": "2026-10-18",
- "pliki": {
-  "korzysci.json": "1b2e935168e0606006392b01f3d9ef2efd893b9ad53872642702f2b2db435f8a",
-  "akty.json": "c0cbb648c239a70b4e8adc90a27e62e408c90186e7df2d6433852da3894a2169",
-  "slowniki.json": "aeecf35f0a29915bf783f64a410075ef618873bf2c8f64ba2dfe8c8a6ec344cc",
-  "akty/SHA256SUMS": "4de2d61fbeeb5d27a1222d7dcbe944059e94c843419de524cb442a4a7ab7bdbf"
- },
- "zakres": [
-  "DU/2022/1692",
-  "DU/2023/1429",
-  "DU/2003/1268",
-  "DU/2016/195",
-  "DU/2003/2255",
-  "DU/1998/1118",
-  "DU/1999/636",
-  "DU/1991/24",
-  "DU/2004/593",
-  "DU/2001/734",
-  "DU/2011/887",
-  "DU/2025/620",
-  "DU/2004/1252",
-  "DU/2007/1378",
-  "DU/2014/567"
- ],
- "liczby": {
-  "korzysci": 70,
-  "akty": 41,
-  "pliki_aktow": 56,
-  "teksty_naprawione": 6
- },
- "pominiete_nazwa_ogolna": [
-  {
-   "id": "DU-2003-2255-art17c-ust6",
-   "nazwa": "zasiłek"
+  "kontrakt": "strona-0.4",
+  "wygenerowano": "2026-10-20T21:16:10.818820+00:00",
+  "wersja_kodu": "importuj_socjal-1.0",
+  "na_dzien": "2026-10-20",
+  "pliki": {
+    "korzysci.json": "d0da106ae8d59a05d4429b0dbb4994f253369a19e2f34b95fac0a70e07d3dafd",
+    "akty.json": "2b1e227c5dc0770d0b3b58ca44d19995664c2a4691d9f4f2b28f65cfcd2f8689",
+    "slowniki.json": "02856f418383a5fe918935f3f12c4fb420a47503de93b998cfa1a6145f0eec61",
+    "akty/SHA256SUMS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "socjal.json": "c9de41188b33fd5154fd71c0ba74aa115450f5d1f016a7527d1eeb5db82c4647"
   },
-  {
-   "id": "DU-2003-2255-art24a-ust3",
-   "nazwa": "świadczenia"
+  "zakres": [
+    "DU/1998/1118",
+    "DU/2004/593",
+    "DU/2011/887",
+    "DU/2022/1692"
+  ],
+  "liczby": {
+    "korzysci": 73,
+    "akty": 83,
+    "pliki_aktow": 0
   },
-  {
-   "id": "DU-2003-2255-art27-ust3",
-   "nazwa": "świadczenia"
-  },
-  {
-   "id": "DU-1998-1118-art2-ust1",
-   "nazwa": "świadczenia"
-  },
-  {
-   "id": "DU-1998-1118-art99",
-   "nazwa": "zasiłek"
-  },
-  {
-   "id": "DU-1998-1118-art114-ust2-pkt2",
-   "nazwa": "świadczenia"
-  },
-  {
-   "id": "DU-1998-1118-art194b-ust1",
-   "nazwa": "świadczenia"
-  },
-  {
-   "id": "DU-1991-24-art13-ust10",
-   "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-1991-24-art31-ust1",
-   "nazwa": "dodatek"
-  },
-  {
-   "id": "DU-1991-24-art33-ust1",
-   "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-1991-24-art55-ust2",
-   "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-2004-593-art40-ust1b",
-   "nazwa": "zasiłek"
-  },
-  {
-   "id": "DU-2011-887-art75-ust4",
-   "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-2011-887-art81-ust1",
-   "nazwa": "dodatek"
-  },
-  {
-   "id": "DU-2011-887-art82-ust1",
-   "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-2011-887-art82-ust1a",
-   "nazwa": "świadczenia"
-  },
-  {
-   "id": "DU-2011-887-art87-ust1",
-   "nazwa": "świadczenia"
-  },
-  {
-   "id": "DU-2025-620-art142-ust12",
-   "nazwa": "świadczenie"
-  },
-  {
-   "id": "DU-2025-620-art220-ust2",
-   "nazwa": "zasiłek"
-  },
-  {
-   "id": "DU-2025-620-art223-ust4",
-   "nazwa": "zasiłek"
-  },
-  {
-   "id": "DU-2025-620-art224-ust2",
-   "nazwa": "zasiłek"
-  },
-  {
-   "id": "DU-2025-620-art245-ust1",
-   "nazwa": "zasiłek"
-  },
-  {
-   "id": "DU-2007-1378-art18-ust2",
-   "nazwa": "świadczenia"
-  },
-  {
-   "id": "DU-2014-567-art3-ust1",
-   "nazwa": "zasiłek"
-  }
- ],
- "pominiete_przejsciowe": [
-  {
-   "id": "DU-2003-2255-art56a-ust1",
-   "nazwa": "dodatek do zasiłku rodzinnego z tytułu urodzenia dziecka",
-   "powod": "okno dat zakończone 2004-04-30",
-   "cytat": "Dodatek do zasiłku rodzinnego z tytułu urodzenia dziecka przysługuje na dziecko urodzone w okresie od dnia 1 kwietnia 2004 r. do dnia 30 kwietnia 2004 r., jeżeli rodzina spełnia warunki określone w us"
-  },
-  {
-   "id": "DU-2003-2255-art58-ust3",
-   "nazwa": "emerytury",
-   "powod": "stan sprzed wejścia ustawy w życie",
-   "cytat": "Osoba zdolna do pracy, lecz niepozostająca w zatrudnieniu ze względu na konieczność sprawowania opieki nad dzieckiem wymagającym stałej pielęgnacji, posiadającym orzeczenie o niepełnosprawności wraz z"
-  },
-  {
-   "id": "DU-2003-2255-art59-ust1",
-   "nazwa": "zasiłek wychowawczy",
-   "powod": "stan sprzed wejścia ustawy w życie",
-   "cytat": "Osoba samotnie wychowująca dziecko oraz osoba wychowująca troje lub więcej dzieci otrzymująca do dnia wejścia w życie ustawy podwyższony zasiłek wychowawczy nabywa prawo do dodatku, o którym mowa w ar"
-  },
-  {
-   "id": "DU-2003-2255-art59a",
-   "nazwa": "zasiłek okresowy",
-   "powod": "stan sprzed wejścia ustawy w życie",
-   "cytat": "Osoba otrzymująca, do dnia wejścia w życie ustawy, gwarantowany zasiłek okresowy na podstawie przepisów o pomocy społecznej nabywa prawo do dodatku do zasiłku rodzinnego, o którym mowa w art. 11."
-  },
-  {
-   "id": "DU-1991-24-art106-ust1",
-   "nazwa": "renty inwalidzkie",
-   "powod": "stan sprzed wejścia ustawy w życie",
-   "cytat": "Okresowe renty inwalidzkie, przyznane na podstawie dotychczasowych przepisów, przysługują na zasadach i w wysokości określonych w tych przepisach."
-  },
-  {
-   "id": "DU-2003-2255-art60-ust2",
-   "nazwa": "świadczenie",
-   "powod": "stan sprzed wejścia ustawy w życie",
-   "cytat": "Osoba pozostająca w związku małżeńskim otrzymująca na dzieci do dnia wejścia w życie ustawy świadczenie z funduszu alimentacyjnego nabywa prawo do dodatku, o którym mowa w art. 12, do dnia 31 sierpnia"
-  },
-  {
-   "id": "DU-2011-887-art234-ust5",
-   "nazwa": "dodatek",
-   "powod": "stan sprzed wejścia ustawy w życie",
-   "cytat": "Rodzinie zastępczej, o której mowa w ust. 1, w której przed dniem wejścia w życie niniejszej ustawy zostało umieszczone dziecko na podstawie ustawy z dnia 26 października 1982 r. o postępowaniu w spra"
-  }
- ],
- "z_plikami_pdf": true
+  "z_plikami_pdf": false
 }

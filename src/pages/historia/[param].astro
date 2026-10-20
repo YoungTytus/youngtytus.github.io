@@ -1,0 +1,16 @@
+---
+import Uklad from '../../layouts/Uklad.astro';
+import { socjal } from '../../lib/socjal.mjs';
+import { dataPL } from '../../lib/format.mjs';
+export function getStaticPaths() {
+ return Object.entries(socjal()?.historia ?? {}).map(([param, records]) => ({params: {param}, props: {records}}));
+}
+const records: any[] = Astro.props.records;
+const param = Astro.params.param!;
+---
+<Uklad tytul={`Historia: ${param.replaceAll('_',' ')}`} opis={`Udokumentowane wartości historyczne: ${param}`}>
+ <div class="page-head"><div class="wrap"><nav class="breadcrumb"><a href="/">Strona główna</a><span>/</span><a href="/historia/">Historia kwot</a><span>/</span><span>{param.replaceAll('_',' ')}</span></nav><h1>{param.replaceAll('_',' ')}</h1><p class="lead">{records.length} wpisów z ustalonym źródłem. Kwoty obliczone z parametrów są wyraźnie oznaczone.</p></div></div>
+ <div class="wrap section"><div class="table-wrap" tabindex="0"><table><thead><tr><th>Od</th><th>Do</th><th>Wartość</th><th>Charakter</th><th>Źródło</th></tr></thead><tbody>
+  {records.map((r: any) => <tr><td>{dataPL(r.od)}</td><td>{r.do ? dataPL(r.do) : 'Nie podano końca'}</td><td>{r.wartosc} {r.jednostka?.startsWith('PLN') ? 'zł' : ''}</td><td>{r.wyliczona ? 'Wyliczona z parametru' : (r.typ ?? 'Nie opisano')}</td><td><a class="link" href={r.dowod.url} target="_blank" rel="noopener">{r.dowod.eli}, {r.dowod.przepis} ↗</a><details><summary>Cytat</summary><p>{r.dowod.cytat}</p></details></td></tr>)}
+ </tbody></table></div></div>
+</Uklad>

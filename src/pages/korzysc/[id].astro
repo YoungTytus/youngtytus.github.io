@@ -10,6 +10,7 @@ import Wykres from '../../components/Wykres.astro';
 import Progi from '../../components/Progi.astro';
 import Wyliczenie from '../../components/Wyliczenie.astro';
 import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta, korzyscPoId } from '../../lib/model.mjs';
+import { kartaSocjal, artykulSocjal } from '../../lib/socjal.mjs';
 import {
   KOLEJNOSC_TERMINOW, OPIS_TERMINU, czyZaslepka, dataLubBrak, dataPL, eliSlug, etapZaslepki,
   etykietaRozwiazania, etykietaZmiany, etykietaWariantu, opisUprawnionych, typo, wielka,
@@ -20,6 +21,8 @@ export function getStaticPaths() {
 }
 
 const k: any = korzyscPoId(Astro.params.id!);
+const sc = kartaSocjal(k.id);
+const przepisySocjal = (sc?.artykuly ?? []).map((id: string) => artykulSocjal(id)).filter(Boolean);
 const ile = k.ile;
 const a = ile.aktualna;
 const kwotyWariantow = new Map((ile.wyliczenie?.warianty ?? []).map((w: any) => [JSON.stringify([w.etykieta, w.udzial]), w.wartosc]));
@@ -47,7 +50,7 @@ const jsonLd = {
 
 const sekcje = [
   ['komu', 'Co i komu'], ['ile', 'Ile'], ['terminy', 'Do kiedy'], ['zrodla', 'Skąd to wiemy'],
-  ['warunki', 'Warunki i odwołania'], ...(k.nieustalone.length ? [['braki', 'Nie ustalono']] : []), ['akty', 'Pobierz akty'],
+  ['warunki', 'Warunki i odwołania'], ...(sc ? [['mapa-socjal', 'Mapa przepisów']] : []), ...(k.nieustalone.length ? [['braki', 'Nie ustalono']] : []), ['akty', 'Pobierz akty'],
 ];
 const etykietaDowodu = (d: any) => `${d.eli} · ${d.przepis}`;
 const dowodReguly = (udzial: string) => {
@@ -247,6 +250,16 @@ const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
           );
         })}
       </section>
+
+      {sc && <section class="detail-section" id="mapa-socjal">
+        <p class="kicker">Mapa projektu Socjal</p>
+        <h2>Powiązania z przepisami</h2>
+        <p class="summary-note">Źródło: {sc.pochodzenie === 'reczna_FUS' ? 'karta opracowana ręcznie (FUS)' : 'kandydat wykryty automatycznie, wymagający przeglądu'}. Powiązanie wskazuje przepis użyty w analizie, nie przesądza o prawie do wypłaty.</p>
+        {przepisySocjal.length > 0 ? <ul>{przepisySocjal.map((v: any) => <li><a class="link" href={`/przepis/${v.id}/`}>{v.eli}, art. {v.artykul}</a> <span class="muted">({v.jednostki.length} jednostek)</span></li>)}</ul> : <p class="summary-note">Nie ma jeszcze podstron przepisów dla tej karty.</p>}
+        {sc.historia_parametr && <p><a class="text-link" href={`/historia/${sc.historia_parametr}/`}>Otwórz pełne zestawienie historii kwot →</a></p>}
+        {sc.opis_kwoty_z_notatki && <details><summary>Opis kwoty i zasad z notatki analitycznej</summary><p style="white-space:pre-wrap">{sc.opis_kwoty_z_notatki}</p><p class="summary-note">Opis z notatki nie jest automatycznie przeliczany na aktualną kwotę; decydują rekordy z dowodami źródłowymi.</p></details>}
+        {sc.uwaga_czasowa && <p class="summary-note">{sc.uwaga_czasowa}</p>}
+      </section>}
 
       <!-- NIE USTALONO -->
       {k.nieustalone.length > 0 && (
