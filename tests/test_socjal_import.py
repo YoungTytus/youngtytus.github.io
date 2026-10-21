@@ -158,6 +158,37 @@ class SocjalImportTests(unittest.TestCase):
                          'najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy')
         self.assertNotIn('nieustalone', [n['pole'] for n in k['nieustalone']])
 
+    def test_second_manual_package_sw_format(self):
+        (self.socjal / 'Dane/SW').mkdir(parents=True)
+        zrodlo = {'akt': 'DU/2016/195', 'typ': 'U', 'sha256': 'b' * 64, 'strona': 8, 'przepis': 'art. 5 ust. 1',
+                  'cytat': 'Świadczenie wychowawcze przysługuje … w wysokości 800,00 zł miesięcznie na dziecko.'}
+        (self.socjal / 'Dane/SW/core_cards.json').write_text(json.dumps([
+            {'id': 'wychowawcze', 'nazwa': 'Świadczenie wychowawcze 500 i 800 plus', 'rodzaj': 'swiadczenie_glowne',
+             'komu': 'rodzic', 'regula_kwoty': '800 zł', 'zrodla': [zrodlo]},
+            {'id': 'koszty_gmina_historyczne', 'nazwa': 'Koszty gmin', 'rodzaj': 'historyczny_transfer_instytucjonalny',
+             'komu': 'gmina', 'regula_kwoty': '2 %', 'zrodla': [zrodlo]}]), encoding='utf-8')
+        historia = [{'parametr': 'swiadczenie_wychowawcze_kwota_pelna', 'od': od, 'do': do, 'kwota': kw,
+                     'status_wartosci': 'potwierdzone_z_aktu', 'source': dict(zrodlo, cytat=zrodlo['cytat'])}
+                    for od, do, kw in [('2016-04-01', '2023-12-31', '500.00'), ('2024-01-01', None, '800.00')]]
+        (self.socjal / 'Dane/SW/history_verified.json').write_text(json.dumps(historia), encoding='utf-8')
+        katalog = self.socjal / 'Dane/Mapa/DU-2016-195'
+        katalog.mkdir(parents=True)
+        (katalog / 'przebieg.json').write_text(json.dumps({'akt': 'DU/2016/195',
+            'konfiguracja_aktu': {'tryb': 'porownanie'}}), encoding='utf-8')
+        (katalog / 'jednostki.json').write_text('[]', encoding='utf-8')
+        (katalog / 'korzysci.json').write_text(json.dumps({'korzysci': [
+            {'id': 'DU-2016-195-swiadczenie-wychowawcze', 'nazwa': 'świadczenie wychowawcze', 'akt': 'DU/2016/195'},
+            {'id': 'DU-2016-195-opieka', 'nazwa': 'opieka', 'akt': 'DU/2016/195'}]}), encoding='utf-8')
+        k, extra = self.run_import()
+        karty = {x['id']: x for x in k}
+        self.assertEqual(karty['SW-wychowawcze']['ile']['aktualna']['wartosc'], '800,00 zł')
+        self.assertEqual([w['wartosc'] for w in karty['SW-wychowawcze']['ile']['os_czasu']], ['500,00 zł', '800,00 zł'])
+        self.assertEqual(karty['SW-koszty-gmina-historyczne']['status'], 'zamknieta')
+        self.assertEqual(karty['SW-koszty-gmina-historyczne']['rodzaj_korzysci'], 'dofinansowanie')
+        self.assertNotIn('DU-2016-195-swiadczenie-wychowawcze', karty)   # alias → karta ręczna
+        self.assertNotIn('DU-2016-195-opieka', karty)                    # szum słownika pominięty z powodem
+        self.assertEqual(extra['karty']['SW-wychowawcze']['pochodzenie'], 'reczna_SW')
+
     def test_one_label_per_series_across_years(self):
         stary = {'akt': 'MP/2016/1', 'tekst': '676,75 zł', 'wariant_klucz': 'rent czes', 'od': '2016-03-01',
                  'do': '2017-02-28', 'wariant': '— dla rent z tytułu częściowej niezdolno- ści', 'cytat': 'x',

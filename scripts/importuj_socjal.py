@@ -368,30 +368,59 @@ def nieustalone(pole, opis):
     return {'pole': pole, 'powod': opis}
 
 
-def zrodlo_fus(k):
-    z = k['zrodla'][0]
-    ident = z.get('id_jednostki', '')
-    eli = ident.split('#')[0] if '#' in ident else 'DU/1998/1118'
-    return dowod(eli, z.get('przepis'), z.get('cytat'), z.get('stan_pdf'))
+# Ręczne analizy ustaw (paczki ChatGPT) w sejfie Socjal. Format kart wspólny: id, nazwa, rodzaj, komu,
+# regula_kwoty, warunki, wykluczenia, zrodla. Różnice: źródło (`id_jednostki` w FUS, `akt` w SW) i pole
+# kwoty w historii (`wartosc` w FUS, `kwota` w SW). `kwoty`: karta → parametr historii z kwotą karty.
+# `aliasy`: nazwa kandydata automatycznego → id karty ręcznej tej samej ustawy (bez dublowania kart).
+PACZKI_RECZNE = (
+    {'prefiks': 'FUS', 'akt': 'DU/1998/1118', 'wymagana': True,
+     'karty': 'Dane/FUS/karty.json', 'historia': 'Dane/FUS/history_all_verified.json', 'zmiana': 'waloryzacja',
+     'kwoty': {'zasilek_pogrzebowy': 'zasilek_pogrzebowy_limit', 'dodatek_pielegnacyjny': 'dodatek_pielegnacyjny',
+               'dodatek_sierota_zupelna': 'dodatek_sierota_zupelna'},
+     'aliasy': {}, 'pomin': {}},
+    {'prefiks': 'SW', 'akt': 'DU/2016/195', 'wymagana': False,
+     'karty': 'Dane/SW/core_cards.json', 'historia': 'Dane/SW/history_verified.json', 'zmiana': 'nowelizacja',
+     'kwoty': {'wychowawcze': 'swiadczenie_wychowawcze_kwota_pelna',
+               'naprzemienna': 'kwota_na_rodzica_opieka_naprzemienna'},
+     'aliasy': {'świadczenie wychowawcze': 'wychowawcze'},
+     # kandydaci automatyczni bez odpowiednika w pełnej ręcznej analizie ustawy (szum słownika)
+     'pomin': {'opieka': 'art. 22 dotyczy zbiegu praw rodziców i opiekunów, nie odrębnego świadczenia; '
+                         'art. 1 ust. 2b — warunek aktywności zawodowej cudzoziemców'}},
+)
 
 
-def historie_fus(root, dzien):
-    sciezka = root / 'Dane/FUS/history_all_verified.json'
-    raw = wczytaj(sciezka) if sciezka.is_file() else []
+def zrodlo_reczne(z, akt):
+    ident = z.get('id_jednostki') or ''
+    eli = ident.split('#')[0] if '#' in ident else (z.get('akt') or z.get('eli') or akt)
+    d = dowod(eli, z.get('przepis'), z.get('cytat'), z.get('stan_pdf') or z.get('data_stanu'))
+    for key in ('sha256', 'strona'):
+        if z.get(key) is not None:
+            d['_' + key] = z[key]
+    return d
+
+
+def historie_reczne(root, paczki=PACZKI_RECZNE):
     parametry = defaultdict(list)
-    for i, p in enumerate(raw):
-        if not p.get('parametr') or not data_tekstu(p.get('od')):
-            continue
-        src = p.get('source') or {}
-        if not ELI_RE.fullmatch(str(src.get('eli', ''))):
-            continue
-        parametry[p['parametr']].append({
-            'parametr': p['parametr'], 'od': data_tekstu(p['od']), 'do': data_tekstu(p.get('do')),
-            'wartosc': p.get('wartosc'), 'jednostka': p.get('jednostka'),
-            'typ': p.get('typ'), 'dowod': dowod(src['eli'], src.get('przepis'), src.get('cytat')),
-            'wyliczona': str(p.get('typ') or '').startswith('kwota_obliczona'),
-            'status': p.get('status'),
-        })
+    for paczka in paczki:
+        sciezka = root / paczka['historia']
+        for p in (wczytaj(sciezka) if sciezka.is_file() else []):
+            if not p.get('parametr') or not data_tekstu(p.get('od')):
+                continue
+            src = p.get('source') or {}
+            eli = src.get('eli') or src.get('akt') or ''
+            if not ELI_RE.fullmatch(str(eli)):
+                continue
+            typ = p.get('typ') or p.get('status_wartosci')
+            parametry[p['parametr']].append({
+                'parametr': p['parametr'], 'od': data_tekstu(p['od']), 'do': data_tekstu(p.get('do')),
+                'wartosc': p.get('wartosc') if p.get('wartosc') is not None else p.get('kwota'),
+                'jednostka': p.get('jednostka'), 'typ': typ,
+                'dowod': dict(dowod(eli, src.get('przepis'), src.get('cytat')),
+                              **({'_sha256': src['sha256']} if src.get('sha256') else {})),
+                'wyliczona': str(typ or '').startswith(('kwota_obliczona', 'obliczenie')),
+                'status': p.get('status') or p.get('status_wartosci'), 'paczka': paczka['prefiks'],
+                'zmiana': paczka['zmiana'],
+            })
     for p in parametry.values():
         p.sort(key=lambda v: (v['od'], v['typ'] or ''))
     return dict(sorted(parametry.items()))
@@ -404,12 +433,16 @@ def kwota_z_historii(b, hist, param, dzien):
             kwota = zlote(h['wartosc'])
         except (InvalidOperation, ValueError, TypeError):
             continue
+        poprzednia = b['ile']['os_czasu'][-1]['wartosc'] if b['ile']['os_czasu'] else None
         wpis = {'wartosc': kwota, 'warianty': None, 'od': h['od'], 'do': h['do'],
-                'rodzaj_zmiany': 'pierwszy_znany_wpis' if not b['ile']['os_czasu'] else 'waloryzacja',
-                'poprzednia': None, 'roznica': None, 'dowod': h['dowod']}
+                'rodzaj_zmiany': 'pierwszy_znany_wpis' if not b['ile']['os_czasu'] else h.get('zmiana', 'waloryzacja'),
+                'poprzednia': poprzednia, 'roznica': None, 'dowod': h['dowod']}
         b['ile']['os_czasu'].append(wpis)
     if b['ile']['os_czasu']:
-        b['ile']['rozwiazanie'] = 'kwota_w_ustawie' if not any(h['wyliczona'] for h in rekordy) else 'nieustalone'
+        wyliczona = any(h['wyliczona'] for h in rekordy)
+        # kwota wyliczona z reguły karty (np. połowa przy opiece naprzemiennej) = formuła, nie cytat kwoty
+        b['ile']['rozwiazanie'] = ('kwota_w_ustawie' if not wyliczona
+                                   else 'formula' if b['ile']['regula'] else 'nieustalone')
         current = [w for w in b['ile']['os_czasu'] if w['od'] <= dzien and (w['do'] is None or w['do'] >= dzien)]
         # Nie wyciągamy aktualnej kwoty z kilku nakładających się wersji.
         if len(current) == 1:
@@ -419,13 +452,16 @@ def kwota_z_historii(b, hist, param, dzien):
             b['nieustalone'].append(nieustalone('ile.aktualna', 'Znaleziono nakładające się okresy historii, wymagany przegląd.'))
 
 
-def rodzaj_fus(k):
-    nazwa = (k.get('rodzaj') or '').lower()
+def rodzaj_reczny(k):
+    nazwa = slug(k.get('rodzaj') or '').replace('-', '_')   # „wygaśniecie_…” → „wygasniecie_…”
     if 'jednorazowe' in nazwa:
         return 'swiadczenie_jednorazowe'
-    if k['id'] in ('c_zwolnienie_oplat', 'c_bezplatne_poswiadczenia'):
+    if k['id'] in ('c_zwolnienie_oplat', 'c_bezplatne_poswiadczenia') or 'zwolnienie' in nazwa:
         return 'zwolnienie'
-    if nazwa in ('mechanizm_podwyzszenia', 'mechanizm_zbiegu', 'zwiekszenie_swiadczenia') or k['id'].startswith('c_'):
+    if 'transfer_instytucjonalny' in nazwa:
+        return 'dofinansowanie'     # koszty obsługi organu (SW): środki dla instytucji, nie dla rodzica
+    if nazwa in ('mechanizm_podwyzszenia', 'mechanizm_zbiegu', 'zwiekszenie_swiadczenia') or k['id'].startswith('c_') \
+            or nazwa.startswith(('ochrona', 'ulga', 'wygas', 'usluga', 'forma', 'historyczna_odnoga')):
         return 'uprawnienie'
     return 'swiadczenie_okresowe'
 
@@ -485,7 +521,7 @@ def uzupelnij_notatkami(socjal, benefits, extras, na_dzien):
         assigned.add(src)
         parts = n['sekcje']
         extras[k['id']]['plik_notatki'] = n['plik']
-        if extras[k['id']]['pochodzenie'] == 'reczna_FUS':
+        if extras[k['id']]['pochodzenie'].startswith('reczna_'):
             if parts.get('komu przysługuje'):
                 k['komu'] = parts['komu przysługuje']
             extras[k['id']]['opis_kwoty_z_notatki'] = parts.get('ile wynosi')
@@ -526,11 +562,73 @@ def uzupelnij_notatkami(socjal, benefits, extras, na_dzien):
                        'opis_kwoty_z_notatki': sections.get('ile wynosi')}
 
 
+def art_z_przepisu(eli, przepis):
+    found = re.match(r'\s*art\.\s*(\d+[a-z]?)', str(przepis or ''), re.I)
+    return '{}-art-{}'.format(eli.replace('/', '-'), found.group(1)) if found else None
+
+
+def karty_paczki(socjal, paczka, historia, jednostki, na_dzien, benefits, extra_karty, aliasy):
+    """Karty ręcznej analizy jednej ustawy (FUS, SW): opis, formuła, terminy, trasa źródeł i kwota z historii."""
+    prefiks, akt = paczka['prefiks'], paczka['akt']
+    po_id = {}
+    for karta in wczytaj(socjal / paczka['karty']):
+        if not karta.get('id') or not karta.get('zrodla'):
+            raise BladSocjal('Karta {} bez id albo źródeł.'.format(prefiks))
+        bid = prefiks + '-' + slug(karta['id'])
+        proven = zrodlo_reczne(karta['zrodla'][0], akt)
+        rodzaj = (karta.get('rodzaj') or '').lower()
+        k = {'id': bid, 'slug': bid.lower(), 'nazwa': karta['nazwa'],
+             'rodzaj_korzysci': rodzaj_reczny(karta),
+             # „historyczne_*” w paczce SW: świadczenie albo dodatek zastąpiony ustawowo
+             'status': 'zamknieta' if rodzaj.startswith('historyczn') else 'do_ustalenia',
+             'komu': karta.get('komu') or 'Krąg uprawnionych nieustalony w karcie.',
+             'opis_prosty': None, 'sytuacje': [], 'sytuacje_zrodlo': None,
+             'przepis': proven, 'ile': bez_kwoty(), 'do_kiedy': [], 'powiazane': [],
+             'stan': {'data_stanu': proven['data_stanu'] or na_dzien, 'tekst': 'tekst ujednolicony (informacyjny)'},
+             'nieustalone': [], 'flagi': ['Opracowanie ręczne; historia uprawnień może być niepełna.']}
+        for typ, key in [('warunek', 'warunki'), ('wykluczenie', 'wykluczenia')]:
+            for txt in karta.get(key) or []:
+                if txt: k['powiazane'].append({'typ': typ, 'cytat': str(txt)})
+        # Zachowujemy opis formuły bez obliczania indywidualnego świadczenia.
+        formula = karta.get('regula_kwoty')
+        if formula:
+            k['ile']['rozwiazanie'] = 'formula'
+            k['ile']['regula'] = {'udzial': None, 'podstawa_id': None, 'opis': formula}
+        else:
+            k['nieustalone'].append(nieustalone('ile.regula_kwoty', 'Brak formuły kwoty.'))
+        przenies_terminy(karta, k, jednostki)
+        k['ile']['trasa'] = [{'krok': i + 1, 'opis': 'Źródło karty: {}'.format(z.get('przepis') or 'jednostka'),
+                              'dowod': zrodlo_reczne(z, akt)}
+                             for i, z in enumerate(z for z in karta['zrodla'] if z.get('cytat'))]
+        przypisanie = paczka['kwoty'].get(karta['id'])
+        if przypisanie:
+            kwota_z_historii(k, historia, przypisanie, na_dzien)
+            # Zmienność przepisów ma pierwszeństwo nad niezależnym domniemaniem bieżącego prawa.
+            if k['ile']['aktualna']:
+                k['nieustalone'] = [u for u in k['nieustalone'] if u['pole'] != 'ile.regula_kwoty']
+        benefits.append(k)
+        po_id[karta['id']] = k
+        jednostki_karty = [z.get('id_jednostki') for z in karta['zrodla'] if z.get('id_jednostki')]
+        article_refs = sorted(({przepis_art_id(x.split('#')[0], x) for x in jednostki_karty}
+                               | {art_z_przepisu(z.get('akt') or akt, z.get('przepis'))
+                                  for z in karta['zrodla'] if not z.get('id_jednostki')}) - {None})
+        extra_karty[bid] = {'pochodzenie': 'reczna_' + prefiks, 'zrodlo_id': karta['id'],
+                            'rodzaj_zrodlowy': karta.get('rodzaj'), 'status_zrodlowy': karta.get('status'),
+                            'artykuly': article_refs, 'jednostki': jednostki_karty,
+                            'historia_parametr': przypisanie,
+                            # SW: „czas” to opis; FUS: „czas” bywa strukturą (okna, warunki) i zostaje w danych źródłowych
+                            'uwaga_czasowa': karta.get('uwaga_czasowa') or (karta['czas'] if isinstance(karta.get('czas'), str) else None),
+                            'odsylacze_do_sprawdzenia': karta.get('odeslania_do_sprawdzenia')}
+    for nazwa, ident in paczka['aliasy'].items():
+        if ident in po_id:
+            aliasy[(akt, nazwa)] = po_id[ident]
+
+
 def generuj(socjal: Path, wynik: Path, na_dzien: str):
-    wymagane = ('Dane/FUS/karty.json', 'Dane/FUS/history_all_verified.json')
-    for relative in wymagane:
-        if not (socjal / relative).is_file():
-            raise BladSocjal('Nie ma wymaganego pliku: {}'.format(socjal / relative))
+    for paczka in PACZKI_RECZNE:
+        for relative in (paczka['karty'], paczka['historia']):
+            if paczka['wymagana'] and not (socjal / relative).is_file():
+                raise BladSocjal('Nie ma wymaganego pliku: {}'.format(socjal / relative))
     if not data_tekstu(na_dzien):
         raise BladSocjal('Błędne --na-dzien, wymagane YYYY-MM-DD.')
     # Rejestr norm zawiera *jednostki*, a nie 1:1 świadczenia.
@@ -580,60 +678,20 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
                     art['powiazane_artykuly'].append(target)
     # Publikujemy dokładnie karty strukturalne; nie przenosimy prywatnych ścieżek
     # dyskowych ani magazynu historii projektu Obsidian.
-    historia = historie_fus(socjal, na_dzien)
+    historia = historie_reczne(socjal)
     wielkosci = wczytaj_wielkosci(socjal)
     benefits = []
     extra_karty = {}
-    for karta in wczytaj(socjal / 'Dane/FUS/karty.json'):
-        if not karta.get('id') or not karta.get('zrodla'):
-            raise BladSocjal('Karta FUS bez id albo źródeł.')
-        bid = 'FUS-' + slug(karta['id'])
-        proven = zrodlo_fus(karta)
-        k = {'id': bid, 'slug': bid.lower(), 'nazwa': karta['nazwa'],
-             'rodzaj_korzysci': rodzaj_fus(karta), 'status': 'do_ustalenia',
-             'komu': karta.get('komu') or 'Krąg uprawnionych nieustalony w karcie.',
-             'opis_prosty': None, 'sytuacje': [], 'sytuacje_zrodlo': None,
-             'przepis': proven, 'ile': bez_kwoty(), 'do_kiedy': [], 'powiazane': [],
-             'stan': {'data_stanu': proven['data_stanu'] or na_dzien, 'tekst': 'tekst ujednolicony (informacyjny)'},
-             'nieustalone': [], 'flagi': ['Opracowanie ręczne; historia uprawnień może być niepełna.']}
-        for typ, key in [('warunek', 'warunki'), ('wykluczenie', 'wykluczenia')]:
-            for txt in karta.get(key) or []:
-                if txt: k['powiazane'].append({'typ': typ, 'cytat': str(txt)})
-        # Zachowujemy opis formuły bez obliczania indywidualnego świadczenia.
-        formula = karta.get('regula_kwoty')
-        if formula:
-            k['ile']['rozwiazanie'] = 'formula'
-            k['ile']['regula'] = {'udzial': None, 'podstawa_id': None, 'opis': formula}
-        else:
-            k['nieustalone'].append(nieustalone('ile.regula_kwoty', 'Brak formuły kwoty.'))
-        przenies_terminy(karta, k, jednostki)
-        k['ile']['trasa'] = [
-            {'krok': i + 1, 'opis': 'Źródło karty: {}'.format(z.get('przepis') or 'jednostka'),
-             'dowod': dowod(z.get('id_jednostki', 'DU/1998/1118').split('#')[0],
-                            z.get('przepis'), z.get('cytat'), z.get('stan_pdf'))}
-            for i, z in enumerate(karta['zrodla']) if z.get('id_jednostki', '').split('#')[0] and z.get('cytat')
-        ]
-        przypisanie = {'zasilek_pogrzebowy': 'zasilek_pogrzebowy_limit',
-                       'dodatek_pielegnacyjny': 'dodatek_pielegnacyjny',
-                       'dodatek_sierota_zupelna': 'dodatek_sierota_zupelna'}.get(karta['id'])
-        if przypisanie:
-            kwota_z_historii(k, historia, przypisanie, na_dzien)
-            # Zmienność przepisów ma pierwszeństwo nad niezależnym domniemaniem bieżącego prawa.
-            if k['ile']['aktualna']:
-                k['nieustalone'] = [u for u in k['nieustalone'] if u['pole'] != 'ile.regula_kwoty']
-        benefits.append(k)
-        jednostki_karty = [z.get('id_jednostki') for z in karta['zrodla'] if z.get('id_jednostki')]
-        article_refs = sorted({przepis_art_id(x.split('#')[0], x) for x in jednostki_karty} - {None})
-        extra_karty[bid] = {'pochodzenie': 'reczna_FUS', 'zrodlo_id': karta['id'],
-                            'rodzaj_zrodlowy': karta.get('rodzaj'), 'status_zrodlowy': karta.get('status'),
-                            'artykuly': article_refs, 'jednostki': jednostki_karty,
-                            'historia_parametr': przypisanie,
-                            'uwaga_czasowa': karta.get('uwaga_czasowa'),
-                            'odsylacze_do_sprawdzenia': karta.get('odeslania_do_sprawdzenia')}
+    aliasy = {}
+    pomin = {(p['akt'], n): powod for p in PACZKI_RECZNE for n, powod in p.get('pomin', {}).items()}
+    for paczka in PACZKI_RECZNE:
+        if (socjal / paczka['karty']).is_file():
+            karty_paczki(socjal, paczka, historia, jednostki, na_dzien, benefits, extra_karty, aliasy)
     # Dokładna nazwa (z pominięciem dopisku w nawiasie) i ten sam akt.
     # Nie utożsamiamy np. „opieki” z wcześniejszą emeryturą opiekuna.
     nazwa_klucz = lambda n: ' '.join(re.sub(r'\([^)]*\)', '', n).casefold().split())
     reczne = {(k['przepis']['eli'], nazwa_klucz(k['nazwa'])): k for k in benefits}
+    reczne.update({(eli, nazwa_klucz(n)): k for (eli, n), k in aliasy.items()})
     pominiete = []
     for katalog in sorted((socjal / 'Dane/Mapa').glob('DU-*')):
         kp = katalog / 'korzysci.json'
@@ -650,6 +708,9 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
             eli = src.get('akt')
             if not ELI_RE.fullmatch(str(eli)):
                 raise BladSocjal('Błędny ELI automatycznej karty: ' + bid)
+            if (eli, nazwa_klucz(src['nazwa'])) in pomin:
+                pominiete.append({'id': bid, 'karta_reczna': None, 'powod': pomin[(eli, nazwa_klucz(src['nazwa']))]})
+                continue
             manual = reczne.get((eli, nazwa_klucz(src['nazwa'])))
             if manual and akty_meta.get(eli, {}).get('tryb') == 'porownanie':
                 # Zachowaj dodatkowe terminy i odsyłacze na ręcznej karcie.
@@ -780,7 +841,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
     extras = {'kontrakt': 'socjal-1', 'na_dzien': na_dzien,
               'karty': extra_karty, 'artykuly': sorted(artykuly.values(), key=lambda a: a['id']),
               'historia': historia, 'pominiete_duplikaty': pominiete,
-              'statystyki': {'reczne': sum(v['pochodzenie']=='reczna_FUS' for v in extra_karty.values()),
+              'statystyki': {'reczne': sum(v['pochodzenie'].startswith('reczna_') for v in extra_karty.values()),
                             'automatyczne': sum(v['pochodzenie']=='automat' for v in extra_karty.values()),
                             'z_notatek': sum(v['pochodzenie']=='notatka' for v in extra_karty.values())}}
     zapis(wynik / 'korzysci.json', benefits)
@@ -790,7 +851,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
     (wynik / 'akty').mkdir(parents=True, exist_ok=True)
     (wynik / 'akty/SHA256SUMS').write_text('', encoding='utf-8')
     manifest = {'kontrakt': KONTRAKT, 'wygenerowano': datetime.now(timezone.utc).isoformat(),
-                'wersja_kodu': 'importuj_socjal-1.2', 'na_dzien': na_dzien,
+                'wersja_kodu': 'importuj_socjal-1.3', 'na_dzien': na_dzien,
                 'pliki': {f: sha(wynik / f) for f in PODSTAWOWE},
                 'zakres': sorted(akty_meta),
                 'liczby': {'korzysci': len(benefits), 'akty': len(acts), 'pliki_aktow': 0},
