@@ -96,13 +96,18 @@ export const etykietaRozwiazania = {
   kwota_w_ustawie: 'kwota wprost w ustawie',
   kwota_z_aktu_wykonawczego: 'kwota z aktu wykonawczego',
   regula_procentowa: 'reguła procentowa',
+  formula: 'formuła lub zasada ustalania wysokości',
   odeslanie: 'odesłanie do innego przepisu',
   nieustalone: 'nie ustalono',
 };
 
-export const KOLEJNOSC_TERMINOW = ['okres_kwoty', 'termin_wniosku', 'granica_przepisu', 'okres_zasilkowy', 'harmonogram_dostepnosci', 'termin_wyplaty'];
+export const KOLEJNOSC_TERMINOW = ['okres_kwoty', 'termin_wniosku', 'granica_przepisu', 'okres_zasilkowy', 'harmonogram_dostepnosci', 'termin_wyplaty', 'termin_dokumentu', 'termin_organu', 'termin_inny', 'wejscie_w_zycie'];
 
 export const OPIS_TERMINU = {
+  termin_dokumentu: 'Termin dostarczenia dokumentów wskazanych w przepisie.',
+  termin_organu: 'Termin czynności organu wskazany w danych źródłowych.',
+  termin_inny: 'Pozostały termin: znaczenie wynika z cytowanego przepisu.',
+  wejscie_w_zycie: 'Data wejścia w życie wskazana w danych źródłowych.',
   okres_kwoty: 'Od kiedy do kiedy obowiązuje dana kwota.',
   termin_wniosku: 'Do kiedy złożyć wniosek i co się dzieje po terminie.',
   granica_przepisu: 'Od kiedy albo do kiedy obowiązuje sam przepis lub jego brzmienie.',

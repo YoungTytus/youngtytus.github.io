@@ -5,7 +5,8 @@ import tempfile
 import unittest
 
 from aktualizuj_strone import UpdateError, validate_export
-from scripts.importuj_socjal import generuj
+from scripts.importuj_socjal import (generuj, bez_kwoty, przenies_podsumowanie,
+                                     przenies_terminy, nominalna_zastepowana)
 
 
 class SocjalImportTests(unittest.TestCase):
@@ -43,6 +44,72 @@ class SocjalImportTests(unittest.TestCase):
         self.assertEqual(extra['karty'][k[0]['id']]['pochodzenie'], 'reczna_FUS')
         self.assertIsNone(k[0]['ile']['aktualna'])
         self.assertEqual(before, (self.socjal / 'Dane/FUS/karty.json').read_bytes())
+        self.assertEqual(k[0]['ile']['regula']['opis'], 'Wysokość do ustalenia')
+
+    def karta(self):
+        return {'przepis': {'eli': 'DU/2004/593'}, 'ile': bez_kwoty(),
+                'nieustalone': [], 'do_kiedy': []}
+
+    def test_summary_keeps_limit_label_history_and_evidence(self):
+        row = {'akt': 'DU/2024/1044', 'tekst': '1229 zł',
+               'wariant': 'maksymalna kwota zasiłku stałego', 'od': '2025-01-01',
+               'cytat': 'Maksymalna kwota zasiłku stałego: 1229 zł.',
+               'sciezka': '§ 1', 'jednostka': 'DU/2024/1044#par_1',
+               'sha256': 'a' * 64}
+        src = {'akt': 'DU/2004/593', 'nazwa': 'zasiłek stały', 'ile_podsumowanie': {
+            'rozwiazanie': 'kwota_z_aktu_wykonawczego', 'aktualna': [row],
+            'historia': [row], 'trasa': [{'jednostka': row['jednostka'], 'opis': 'Kwota z rozporządzenia'}]}}
+        k = self.karta()
+        przenies_podsumowanie(src, k, {}, '2026-10-21')
+        self.assertEqual(len(k['ile']['os_czasu']), 1)
+        self.assertEqual(k['ile']['aktualna']['warianty'][0]['wartosc'], '1229 zł')
+        self.assertIn('maksymalna', k['ile']['aktualna']['warianty'][0]['etykieta'])
+        self.assertEqual(k['ile']['trasa'][0]['dowod']['_sha256'], 'a' * 64)
+        k = self.karta()
+        przenies_podsumowanie(src, k, {}, '2024-12-31')
+        self.assertIsNone(k['ile']['aktualna'])
+
+    def test_relative_deadlines_and_new_types_keep_meaning(self):
+        src = {'do_kiedy': [{'rodzaj': typ, 'okres': '60 dni od otrzymania',
+                'cytat': 'Dokument w terminie 60 dni od otrzymania.', 'sciezka': 'art. 106'}
+                for typ in ['termin_dokumentu', 'termin_organu', 'termin_inny', 'wejscie_w_zycie']]}
+        k = self.karta()
+        przenies_terminy(src, k, {})
+        self.assertEqual(len(k['do_kiedy']), 4)
+        self.assertIsNone(k['do_kiedy'][0]['data'])
+        self.assertEqual(k['do_kiedy'][0]['okres'], '60 dni od otrzymania')
+
+    def test_nominal_amount_with_footnote_is_blocked(self):
+        unit = {'przypisy': [{'tekst': 'Aktualną kwotę ogłasza Prezes ZUS.'}]}
+        self.assertTrue(nominalna_zastepowana({'jednostka': 'u'}, {'u': unit}))
+
+    def test_unrelated_price_from_application_form_is_rejected(self):
+        row = {'akt': 'DU/2022/1712', 'tekst': '996,60 zł',
+               'tytul_aktu': 'Rozporządzenie w sprawie wzoru wniosku',
+               'cytat': 'Cena paliwa nie wyższa niż 996,60 zł.',
+               'jednostka': 'DU/2022/1712#par_2', 'od': '2022-08-17'}
+        src = {'akt': 'DU/2022/1692', 'nazwa': 'dodatek węglowy',
+               'ile_podsumowanie': {'rozwiazanie': 'kwota_z_aktu_wykonawczego',
+                'aktualna': [row], 'historia': [row],
+                'trasa': [{'jednostka': row['jednostka']}]}}
+        k = self.karta()
+        self.assertFalse(przenies_podsumowanie(src, k, {}, '2026-10-21'))
+        self.assertIsNone(k['ile']['aktualna'])
+        self.assertEqual(k['ile']['os_czasu'], [])
+        self.assertTrue(k['nieustalone'])
+
+    def test_comparison_mode_deduplicates_only_matching_names(self):
+        katalog = self.socjal / 'Dane/Mapa/DU-1998-1118'
+        katalog.mkdir(parents=True)
+        (katalog / 'przebieg.json').write_text(json.dumps({'akt': 'DU/1998/1118',
+            'konfiguracja_aktu': {'tryb': 'porownanie'}}), encoding='utf-8')
+        (katalog / 'jednostki.json').write_text('[]', encoding='utf-8')
+        (katalog / 'korzysci.json').write_text(json.dumps({'korzysci': [
+            {'id': 'auto-proba', 'nazwa': 'próbne świadczenie', 'akt': 'DU/1998/1118'},
+            {'id': 'auto-inne', 'nazwa': 'inne świadczenie', 'akt': 'DU/1998/1118'}]}), encoding='utf-8')
+        k, extra = self.run_import()
+        self.assertEqual({x['id'] for x in k}, {'FUS-proba-testowa', 'auto-inne'})
+        self.assertEqual(extra['pominiete_duplikaty'][0]['id'], 'auto-proba')
 
     def test_edited_markdown_changes_page_data(self):
         note = self.socjal / 'Swiadczenia/FUS/proba.md'

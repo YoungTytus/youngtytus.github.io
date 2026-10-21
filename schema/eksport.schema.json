@@ -208,7 +208,8 @@
             "kwota_z_aktu_wykonawczego",
             "regula_procentowa",
             "odeslanie",
-            "nieustalone"
+            "nieustalone",
+            "formula"
           ]
         },
         "regula": {
@@ -450,7 +451,11 @@
             "granica_przepisu",
             "okres_zasilkowy",
             "harmonogram_dostepnosci",
-            "termin_wyplaty"
+            "termin_wyplaty",
+            "termin_dokumentu",
+            "termin_organu",
+            "termin_inny",
+            "wejscie_w_zycie"
           ]
         },
         "data": {

@@ -65,6 +65,11 @@ const dowodReguly = (udzial: string) => {
   return zawiera(k.przepis.cytat) ? { href: '#przepis', etykieta: etykietaDowodu(k.przepis) } : { href: '#zrodla', etykieta: 'Trasa dowodowa' };
 };
 const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
+const nominalnaLiczba = ile.kwota_ustawowa_zastapiona?.match(/[\d][\d\s,.]*/)?.[0]?.replace(/\s/g, '');
+const nominalnyKrok = nominalnaLiczba ? ile.trasa.findIndex((t: any) => t.dowod.cytat.replace(/\s/g, '').includes(nominalnaLiczba)) : -1;
+const dowodNominalnej = nominalnyKrok >= 0
+  ? { href: `#krok-${nominalnyKrok}`, etykieta: etykietaDowodu(ile.trasa[nominalnyKrok].dowod) }
+  : { href: '#zrodla', etykieta: 'Trasa dowodowa' };
 ---
 <Uklad tytul={`${nazwaDuza}${kwotaOpis ? ` (${kwotaOpis})` : ''}`} opis={opisSeo} sekcja="korzysci" jsonLd={jsonLd}>
   <div class="page-head">
@@ -116,7 +121,7 @@ const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
           {!a?.wartosc && a?.warianty?.length && a.warianty.map((w: any, i: number) => (
             <div class="amount-variant"><span>{wielka(etykietaWariantu(w, i))}</span><Kwota wartosc={w.wartosc} href={dowodA.href} etykieta={dowodA.etykieta} blok /></div>
           ))}
-          {!a && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : ile.regula ? 'Kwota określona regułą procentową' : 'Nie ustalono'}</p>}
+          {!a && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : ile.regula ? 'Kwota określona regułą' : 'Nie ustalono'}</p>}
           {a && <p class="amount-date">{a.od ? `Od ${dataPL(a.od)}` : `Data początku: ${dataLubBrak(a.od)}`}</p>}
           {a?.do && <p class="amount-date">Do {dataLubBrak(a.do)}</p>}
           {!a && ile.wyliczenie && <p class="amount-date"><a href="#wyliczenie" style="text-decoration:underline">Zobacz wyliczenie pomocnicze i jego źródła</a>.</p>}
@@ -133,7 +138,7 @@ const dowodR = ile.regula?.udzial ? dowodReguly(ile.regula.udzial) : null;
             <li><span>Kwota zapisana w ustawie</span>
               {czyZaslepka(ile.kwota_ustawowa_zastapiona)
                 ? <span class="muted">nie ustalono (etap {etapZaslepki(ile.kwota_ustawowa_zastapiona)})</span>
-                : <span><Kwota wartosc={ile.kwota_ustawowa_zastapiona} href="#przepis" etykieta={etykietaDowodu(k.przepis)} /><br /><span class="muted">zastąpiona kwotą z aktu wykonawczego</span></span>}
+                : <span><Kwota wartosc={ile.kwota_ustawowa_zastapiona} href={dowodNominalnej.href} etykieta={dowodNominalnej.etykieta} /><br /><span class="muted">kwota nominalna, zastępowana lub waloryzowana według wskazanych źródeł</span></span>}
             </li>
           )}
         </ul>

@@ -14,7 +14,11 @@
     "granica_przepisu": "zmiana albo koniec przepisu",
     "okres_zasilkowy": "okres przyznania prawa",
     "harmonogram_dostepnosci": "otwieranie prawa etapami",
-    "termin_wyplaty": "termin wypłaty"
+    "termin_wyplaty": "termin wypłaty",
+    "termin_dokumentu": "termin dostarczenia dokumentu",
+    "termin_organu": "termin działania organu",
+    "termin_inny": "inny termin z przepisu",
+    "wejscie_w_zycie": "wejście w życie"
   },
   "status": {
     "obowiazuje": "obowiązuje (według źródła)",

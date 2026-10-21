@@ -1,6 +1,6 @@
 {
   "kontrakt": "socjal-1",
-  "na_dzien": "2026-10-20",
+  "na_dzien": "2026-10-21",
   "karty": {
     "FUS-emerytura-powszechna": {
       "pochodzenie": "reczna_FUS",
@@ -451,19 +451,19 @@
         "DU-1998-1118-art-64"
       ],
       "jednostki": [
-        "DU/1998/1118#arti_60-pass_1@obowiazujace",
-        "DU/1998/1118#arti_60-pass_2@obowiazujace",
-        "DU/1998/1118#arti_60-pass_3@obowiazujace",
-        "DU/1998/1118#arti_60-pass_4@obowiazujace",
-        "DU/1998/1118#arti_60-pass_4-pint_1@obowiazujace",
-        "DU/1998/1118#arti_60-pass_4-pint_2@obowiazujace",
-        "DU/1998/1118#arti_64-pass_1@obowiazujace",
-        "DU/1998/1118#arti_64-pass_2@obowiazujace",
-        "DU/1998/1118#arti_64-pass_3@obowiazujace",
         "DU/1998/1118#arti_102-pass_2-pint_1@obowiazujace",
         "DU/1998/1118#arti_102-pass_2-pint_2@obowiazujace",
         "DU/1998/1118#arti_102-pass_2-pint_3@obowiazujace",
         "DU/1998/1118#arti_102-pass_2-pint_4@obowiazujace",
+        "DU/1998/1118#arti_60-pass_1@obowiazujace",
+        "DU/1998/1118#arti_60-pass_2@obowiazujace",
+        "DU/1998/1118#arti_60-pass_3@obowiazujace",
+        "DU/1998/1118#arti_60-pass_4-pint_1@obowiazujace",
+        "DU/1998/1118#arti_60-pass_4-pint_2@obowiazujace",
+        "DU/1998/1118#arti_60-pass_4@obowiazujace",
+        "DU/1998/1118#arti_64-pass_1@obowiazujace",
+        "DU/1998/1118#arti_64-pass_2@obowiazujace",
+        "DU/1998/1118#arti_64-pass_3@obowiazujace",
         "MP/2026/220#pkt_1_lit_b@ogloszony"
       ],
       "historia_parametr": null,
@@ -483,6 +483,7 @@
       "rodzaj_zrodlowy": "swiadczenie",
       "status_zrodlowy": null,
       "artykuly": [
+        "DU-1998-1118-art-131",
         "DU-1998-1118-art-65",
         "DU-1998-1118-art-66",
         "DU-1998-1118-art-67",
@@ -495,6 +496,7 @@
         "DU-1998-1118-art-85"
       ],
       "jednostki": [
+        "DU/1998/1118#arti_131-pass_2@obowiazujace",
         "DU/1998/1118#arti_65-pass_1@obowiazujace",
         "DU/1998/1118#arti_65-pass_2@obowiazujace",
         "DU/1998/1118#arti_66@obowiazujace",
@@ -506,21 +508,25 @@
         "DU/1998/1118#arti_68-pass_1-pint_1@obowiazujace",
         "DU/1998/1118#arti_68-pass_1-pint_2@obowiazujace",
         "DU/1998/1118#arti_68-pass_1-pint_3@obowiazujace",
+        "DU/1998/1118#arti_68-pass_1@obowiazujace",
         "DU/1998/1118#arti_68-pass_2@obowiazujace",
         "DU/1998/1118#arti_69-pint_1@obowiazujace",
-        "DU/1998/1118#arti_69-pint_2@obowiazujace",
         "DU/1998/1118#arti_69-pint_2-lett_a@obowiazujace",
         "DU/1998/1118#arti_69-pint_2-lett_b@obowiazujace",
+        "DU/1998/1118#arti_69-pint_2@obowiazujace",
+        "DU/1998/1118#arti_69@obowiazujace",
         "DU/1998/1118#arti_70-pass_1-pint_1@obowiazujace",
         "DU/1998/1118#arti_70-pass_1-pint_2@obowiazujace",
+        "DU/1998/1118#arti_70-pass_1@obowiazujace",
         "DU/1998/1118#arti_70-pass_2@obowiazujace",
         "DU/1998/1118#arti_70-pass_3@obowiazujace",
-        "DU/1998/1118#arti_70-pass_4@obowiazujace",
         "DU/1998/1118#arti_70-pass_4-pint_1@obowiazujace",
         "DU/1998/1118#arti_70-pass_4-pint_2@obowiazujace",
+        "DU/1998/1118#arti_70-pass_4@obowiazujace",
         "DU/1998/1118#arti_70-pass_5@obowiazujace",
         "DU/1998/1118#arti_71-pint_1@obowiazujace",
         "DU/1998/1118#arti_71-pint_2@obowiazujace",
+        "DU/1998/1118#arti_71@obowiazujace",
         "DU/1998/1118#arti_73-pass_1-pint_1@obowiazujace",
         "DU/1998/1118#arti_73-pass_1-pint_2@obowiazujace",
         "DU/1998/1118#arti_73-pass_1-pint_3@obowiazujace",
@@ -529,6 +535,7 @@
         "DU/1998/1118#arti_73-pass_3@obowiazujace",
         "DU/1998/1118#arti_73-pass_3a@obowiazujace",
         "DU/1998/1118#arti_73-pass_3b@obowiazujace",
+        "DU/1998/1118#arti_73-pass_5@obowiazujace",
         "DU/1998/1118#arti_74-pass_1@obowiazujace",
         "DU/1998/1118#arti_74-pass_2@obowiazujace",
         "DU/1998/1118#arti_85-pass_2@obowiazujace",
@@ -606,6 +613,7 @@
       "rodzaj_zrodlowy": "swiadczenie",
       "status_zrodlowy": null,
       "artykuly": [
+        "DU-1998-1118-art-130",
         "DU-1998-1118-art-77",
         "DU-1998-1118-art-78",
         "DU-1998-1118-art-79",
@@ -617,11 +625,14 @@
         "DU-2010-1578-art-47"
       ],
       "jednostki": [
-        "DU/1998/1118#arti_77-pass_1@obowiazujace",
+        "DU/1998/1118#art_80_wersja_pierwotna@ogloszony",
+        "DU/1998/1118#arti_130-pass_2@obowiazujace",
+        "DU/1998/1118#arti_130-pass_2c@obowiazujace",
         "DU/1998/1118#arti_77-pass_1-pint_1@obowiazujace",
         "DU/1998/1118#arti_77-pass_1-pint_2@obowiazujace",
         "DU/1998/1118#arti_77-pass_1-pint_3@obowiazujace",
         "DU/1998/1118#arti_77-pass_1-pint_4@obowiazujace",
+        "DU/1998/1118#arti_77-pass_1@obowiazujace",
         "DU/1998/1118#arti_77-pass_2@obowiazujace",
         "DU/1998/1118#arti_77-pass_3@obowiazujace",
         "DU/1998/1118#arti_77-pass_4@obowiazujace",
@@ -641,13 +652,12 @@
         "DU/1998/1118#arti_81-pass_2@obowiazujace",
         "DU/1998/1118#arti_81-pass_3@obowiazujace",
         "DU/1998/1118#arti_99@obowiazujace",
-        "DU/1998/1118#art_80_wersja_pierwotna@ogloszony",
         "DU/2010/1578#arti_12@ogloszony",
         "DU/2010/1578#arti_46@ogloszony",
         "DU/2010/1578#arti_47@ogloszony",
-        "DU/2025/718#art_1@ogloszony",
         "DU/2025/718#art_13@ogloszony",
         "DU/2025/718#art_14@ogloszony",
+        "DU/2025/718#art_1@ogloszony",
         "MP/2026/81#komunikat@ogloszony"
       ],
       "historia_parametr": "zasilek_pogrzebowy_limit",
@@ -2801,313 +2811,6 @@
         }
       ]
     },
-    "DU-1998-1118-renta-szkoleniowa": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-1998-1118-renta-szkoleniowa",
-      "rodzaj_zrodlowy": "swiadczenie_okresowe",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-1998-1118-art-100",
-        "DU-1998-1118-art-102",
-        "DU-1998-1118-art-119",
-        "DU-1998-1118-art-3",
-        "DU-1998-1118-art-58",
-        "DU-1998-1118-art-60",
-        "DU-1998-1118-art-64",
-        "DU-1998-1118-art-95a"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_100-pass_2@obowiazujace",
-        "DU/1998/1118#arti_102-pass_2-pint_1@obowiazujace",
-        "DU/1998/1118#arti_102-pass_2-pint_2@obowiazujace",
-        "DU/1998/1118#arti_102-pass_2-pint_3@obowiazujace",
-        "DU/1998/1118#arti_102-pass_2-pint_4@obowiazujace",
-        "DU/1998/1118#arti_102-pass_2@obowiazujace",
-        "DU/1998/1118#arti_119-pass_2@obowiazujace",
-        "DU/1998/1118#arti_119-pass_3@obowiazujace",
-        "DU/1998/1118#arti_3-pint_2@obowiazujace",
-        "DU/1998/1118#arti_58-pass_2@obowiazujace",
-        "DU/1998/1118#arti_60-pass_1@obowiazujace",
-        "DU/1998/1118#arti_60-pass_2@obowiazujace",
-        "DU/1998/1118#arti_60-pass_4-pint_1@obowiazujace",
-        "DU/1998/1118#arti_60-pass_4-pint_2@obowiazujace",
-        "DU/1998/1118#arti_60-pass_4@obowiazujace",
-        "DU/1998/1118#arti_64-pass_1@obowiazujace",
-        "DU/1998/1118#arti_64-pass_2@obowiazujace",
-        "DU/1998/1118#arti_64-pass_3@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_1@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "ile.wartosc_reguly",
-          "powod": "podstawa reguły procentowej nie została rozwiązana do kwoty z dowodem"
-        },
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ]
-    },
-    "DU-1998-1118-renta-rodzinna": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-1998-1118-renta-rodzinna",
-      "rodzaj_zrodlowy": "swiadczenie_okresowe",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-1998-1118-art-103",
-        "DU-1998-1118-art-104",
-        "DU-1998-1118-art-105",
-        "DU-1998-1118-art-107a",
-        "DU-1998-1118-art-112",
-        "DU-1998-1118-art-125",
-        "DU-1998-1118-art-129",
-        "DU-1998-1118-art-131",
-        "DU-1998-1118-art-136",
-        "DU-1998-1118-art-140",
-        "DU-1998-1118-art-141",
-        "DU-1998-1118-art-180",
-        "DU-1998-1118-art-181",
-        "DU-1998-1118-art-188",
-        "DU-1998-1118-art-194a",
-        "DU-1998-1118-art-194b",
-        "DU-1998-1118-art-194j",
-        "DU-1998-1118-art-3",
-        "DU-1998-1118-art-4",
-        "DU-1998-1118-art-58",
-        "DU-1998-1118-art-65",
-        "DU-1998-1118-art-66",
-        "DU-1998-1118-art-67",
-        "DU-1998-1118-art-68",
-        "DU-1998-1118-art-69",
-        "DU-1998-1118-art-70",
-        "DU-1998-1118-art-71",
-        "DU-1998-1118-art-72",
-        "DU-1998-1118-art-73",
-        "DU-1998-1118-art-74",
-        "DU-1998-1118-art-76",
-        "DU-1998-1118-art-85",
-        "DU-1998-1118-art-95",
-        "DU-1998-1118-art-95a",
-        "DU-1998-1118-art-95b"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_103-pass_3@obowiazujace",
-        "DU/1998/1118#arti_104-pass_7@obowiazujace",
-        "DU/1998/1118#arti_104-pass_8-pint_3@obowiazujace",
-        "DU/1998/1118#arti_105-pass_1@obowiazujace",
-        "DU/1998/1118#arti_105-pass_2@obowiazujace",
-        "DU/1998/1118#arti_105-pass_2a@obowiazujace",
-        "DU/1998/1118#arti_105-pass_3@obowiazujace",
-        "DU/1998/1118#arti_107a-pass_1@obowiazujace",
-        "DU/1998/1118#arti_107a-pass_2@obowiazujace",
-        "DU/1998/1118#arti_107a-pass_3@obowiazujace",
-        "DU/1998/1118#arti_107a-pass_4@obowiazujace",
-        "DU/1998/1118#arti_112-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_125-pass_1-pint_5@obowiazujace",
-        "DU/1998/1118#arti_129-pass_2@obowiazujace",
-        "DU/1998/1118#arti_131-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_131-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_131-pass_1@obowiazujace",
-        "DU/1998/1118#arti_131-pass_2@obowiazujace",
-        "DU/1998/1118#arti_131-pass_4-pint_1@obowiazujace",
-        "DU/1998/1118#arti_131-pass_4-pint_2@obowiazujace",
-        "DU/1998/1118#arti_131-pass_4@obowiazujace",
-        "DU/1998/1118#arti_131-pass_5@obowiazujace",
-        "DU/1998/1118#arti_131-pass_6@obowiazujace",
-        "DU/1998/1118#arti_136-pass_1@obowiazujace",
-        "DU/1998/1118#arti_140-pass_8@obowiazujace",
-        "DU/1998/1118#arti_141-pass_5@obowiazujace",
-        "DU/1998/1118#arti_180-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_180-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_180-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_180-pass_1@obowiazujace",
-        "DU/1998/1118#arti_180-pass_4@obowiazujace",
-        "DU/1998/1118#arti_181-pint_1@obowiazujace",
-        "DU/1998/1118#arti_181-pint_2@obowiazujace",
-        "DU/1998/1118#arti_181@obowiazujace",
-        "DU/1998/1118#arti_188@obowiazujace",
-        "DU/1998/1118#arti_194a-pass_3@obowiazujace",
-        "DU/1998/1118#arti_194b-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_194j-pass_6@obowiazujace",
-        "DU/1998/1118#arti_3-pint_3@obowiazujace",
-        "DU/1998/1118#arti_3-pint_5@obowiazujace",
-        "DU/1998/1118#arti_4-pint_10@obowiazujace",
-        "DU/1998/1118#arti_4-pint_11@obowiazujace",
-        "DU/1998/1118#arti_58-pass_2@obowiazujace",
-        "DU/1998/1118#arti_65-pass_1@obowiazujace",
-        "DU/1998/1118#arti_66@obowiazujace",
-        "DU/1998/1118#arti_67-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_67-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_67-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_67-pass_1-pint_4@obowiazujace",
-        "DU/1998/1118#arti_67-pass_1@obowiazujace",
-        "DU/1998/1118#arti_68-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_68-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_68-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_68-pass_1@obowiazujace",
-        "DU/1998/1118#arti_68-pass_2@obowiazujace",
-        "DU/1998/1118#arti_69-pint_1@obowiazujace",
-        "DU/1998/1118#arti_69-pint_2-lett_a@obowiazujace",
-        "DU/1998/1118#arti_69-pint_2-lett_b@obowiazujace",
-        "DU/1998/1118#arti_69-pint_2@obowiazujace",
-        "DU/1998/1118#arti_69@obowiazujace",
-        "DU/1998/1118#arti_70-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_70-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_70-pass_1@obowiazujace",
-        "DU/1998/1118#arti_70-pass_2@obowiazujace",
-        "DU/1998/1118#arti_70-pass_3@obowiazujace",
-        "DU/1998/1118#arti_70-pass_4-pint_1@obowiazujace",
-        "DU/1998/1118#arti_70-pass_4-pint_2@obowiazujace",
-        "DU/1998/1118#arti_70-pass_4@obowiazujace",
-        "DU/1998/1118#arti_70-pass_5@obowiazujace",
-        "DU/1998/1118#arti_71-pint_1@obowiazujace",
-        "DU/1998/1118#arti_71-pint_2@obowiazujace",
-        "DU/1998/1118#arti_71@obowiazujace",
-        "DU/1998/1118#arti_72@obowiazujace",
-        "DU/1998/1118#arti_73-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_73-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_73-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_73-pass_1@obowiazujace",
-        "DU/1998/1118#arti_73-pass_3@obowiazujace",
-        "DU/1998/1118#arti_73-pass_4@obowiazujace",
-        "DU/1998/1118#arti_73-pass_5-pint_1@obowiazujace",
-        "DU/1998/1118#arti_73-pass_5-pint_2@obowiazujace",
-        "DU/1998/1118#arti_73-pass_5@obowiazujace",
-        "DU/1998/1118#arti_74-pass_1@obowiazujace",
-        "DU/1998/1118#arti_74-pass_2@obowiazujace",
-        "DU/1998/1118#arti_74-pass_3@obowiazujace",
-        "DU/1998/1118#arti_74-pass_4@obowiazujace",
-        "DU/1998/1118#arti_76-pass_1@obowiazujace",
-        "DU/1998/1118#arti_85-pass_2@obowiazujace",
-        "DU/1998/1118#arti_95-pass_3@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_1@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_2-pint_3@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_9-pint_1@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_9-pint_2@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_9-pint_3@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_9-pint_4@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_9-pint_5@obowiazujace",
-        "DU/1998/1118#arti_95a-pass_9-pint_6@obowiazujace",
-        "DU/1998/1118#arti_95b-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_95b-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_95b-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_95b-pass_1@obowiazujace",
-        "DU/1998/1118#arti_95b-pass_3@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "ile.wartosc_reguly",
-          "powod": "podstawa reguły procentowej nie została rozwiązana do kwoty z dowodem"
-        },
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ]
-    },
-    "DU-1998-1118-dodatek-pielegnacyjny": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-1998-1118-dodatek-pielegnacyjny",
-      "rodzaj_zrodlowy": "swiadczenie_okresowe",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-1998-1118-art-139",
-        "DU-1998-1118-art-141",
-        "DU-1998-1118-art-3",
-        "DU-1998-1118-art-75",
-        "DU-1998-1118-art-94"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_139-pass_1-pint_6@obowiazujace",
-        "DU/1998/1118#arti_141-pass_3@obowiazujace",
-        "DU/1998/1118#arti_3-pint_4@obowiazujace",
-        "DU/1998/1118#arti_75-pass_1@obowiazujace",
-        "DU/1998/1118#arti_75-pass_2@obowiazujace",
-        "DU/1998/1118#arti_75-pass_4@obowiazujace",
-        "DU/1998/1118#arti_94-pass_2-pint_1-lett_b@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ]
-    },
-    "DU-1998-1118-zasilek-pogrzebowy": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-1998-1118-zasilek-pogrzebowy",
-      "rodzaj_zrodlowy": "swiadczenie_jednorazowe",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-1998-1118-art-115",
-        "DU-1998-1118-art-116",
-        "DU-1998-1118-art-118",
-        "DU-1998-1118-art-129",
-        "DU-1998-1118-art-130",
-        "DU-1998-1118-art-138",
-        "DU-1998-1118-art-3",
-        "DU-1998-1118-art-77",
-        "DU-1998-1118-art-78",
-        "DU-1998-1118-art-79",
-        "DU-1998-1118-art-80",
-        "DU-1998-1118-art-81",
-        "DU-1998-1118-art-99"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_115-pass_3a@obowiazujace",
-        "DU/1998/1118#arti_116-pass_3a@obowiazujace",
-        "DU/1998/1118#arti_118-pass_1b@obowiazujace",
-        "DU/1998/1118#arti_118-pass_2@obowiazujace",
-        "DU/1998/1118#arti_129-pass_2a@obowiazujace",
-        "DU/1998/1118#arti_130-pass_2-pint_1@obowiazujace",
-        "DU/1998/1118#arti_130-pass_2-pint_2@obowiazujace",
-        "DU/1998/1118#arti_130-pass_2@obowiazujace",
-        "DU/1998/1118#arti_130-pass_2a@obowiazujace",
-        "DU/1998/1118#arti_130-pass_2b@obowiazujace",
-        "DU/1998/1118#arti_130-pass_2c@obowiazujace",
-        "DU/1998/1118#arti_138-pass_3a@obowiazujace",
-        "DU/1998/1118#arti_3-pint_6@obowiazujace",
-        "DU/1998/1118#arti_77-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_77-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_77-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_77-pass_1-pint_4@obowiazujace",
-        "DU/1998/1118#arti_77-pass_1@obowiazujace",
-        "DU/1998/1118#arti_77-pass_3@obowiazujace",
-        "DU/1998/1118#arti_77-pass_4@obowiazujace",
-        "DU/1998/1118#arti_78-pass_1@obowiazujace",
-        "DU/1998/1118#arti_78-pass_2@obowiazujace",
-        "DU/1998/1118#arti_78-pass_3@obowiazujace",
-        "DU/1998/1118#arti_79-pass_1@obowiazujace",
-        "DU/1998/1118#arti_80-pass_1@obowiazujace",
-        "DU/1998/1118#arti_80-pass_2@obowiazujace",
-        "DU/1998/1118#arti_80-pass_3@obowiazujace",
-        "DU/1998/1118#arti_80-pass_4@obowiazujace",
-        "DU/1998/1118#arti_80-pass_5@obowiazujace",
-        "DU/1998/1118#arti_80-pass_6@obowiazujace",
-        "DU/1998/1118#arti_80-pass_7@obowiazujace",
-        "DU/1998/1118#arti_81-pass_1@obowiazujace",
-        "DU/1998/1118#arti_81-pass_2@obowiazujace",
-        "DU/1998/1118#arti_99@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ]
-    },
     "DU-1998-1118-opieka": {
       "pochodzenie": "automat",
       "zrodlo_id": "DU-1998-1118-opieka",
@@ -4262,7 +3965,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-szkoleniowa",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "DU-1998-1118-zasilek-chorobowy"
       ]
@@ -4415,7 +4117,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-szkoleniowa",
         "FUS-renta-szkoleniowa"
       ]
     },
@@ -4483,7 +4184,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
@@ -4718,7 +4418,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "DU-1998-1118-skladka"
       ]
@@ -4778,8 +4477,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -4927,8 +4625,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -5326,7 +5023,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-c-przeliczenie-okresy"
       ]
     },
@@ -5735,8 +5431,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-zasilek-pogrzebowy"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -5871,8 +5566,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-skladka",
-        "DU-1998-1118-zasilek-pogrzebowy"
+        "DU-1998-1118-skladka"
       ]
     },
     {
@@ -6168,9 +5862,7 @@
         "DU-1998-1118-art-120"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-1998-1118-zasilek-pogrzebowy"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-118a",
@@ -6267,8 +5959,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-renta",
-        "DU-1998-1118-renta-szkoleniowa"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -6580,7 +6271,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "DU-1998-1118-skladka",
         "DU-1998-1118-zasilek-chorobowy"
@@ -7034,9 +6724,7 @@
       "powiazane_artykuly": [],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
-        "DU-1998-1118-zasilek-pogrzebowy"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -7323,7 +7011,7 @@
         "DU-1998-1118-opieka",
         "DU-1998-1118-renta",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-zasilek-pogrzebowy"
+        "FUS-zasilek-pogrzebowy"
       ]
     },
     {
@@ -7452,7 +7140,7 @@
       "korzysci": [
         "DU-1998-1118-opieka",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna"
+        "FUS-renta-rodzinna"
       ]
     },
     {
@@ -7831,7 +7519,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-c-niezrealizowane-swiadczenia"
       ]
     },
@@ -8036,7 +7723,6 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-zasilek-pogrzebowy",
         "FUS-c-odstapienie-zwrot"
       ]
     },
@@ -8416,7 +8102,6 @@
         }
       ],
       "korzysci": [
-        "DU-1998-1118-dodatek-pielegnacyjny",
         "DU-1998-1118-emerytura",
         "DU-1998-1118-opieka",
         "DU-1998-1118-renta",
@@ -9145,7 +8830,6 @@
       ],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-skladka"
       ]
     },
@@ -9304,10 +8988,8 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-dodatek-pielegnacyjny",
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-skladka",
         "DU-1998-1118-zwiekszenie",
         "FUS-c-ochrona-potracenia"
@@ -10558,7 +10240,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "DU-1998-1118-skladka",
         "DU-1998-1118-zwiekszenie",
@@ -10611,7 +10292,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-c-gornicza-wdowa"
       ]
     },
@@ -11190,7 +10870,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "DU-1998-1118-skladka"
       ]
@@ -11548,7 +11227,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "FUS-c-przeliczenie-baza"
       ]
@@ -11629,7 +11307,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-c-jednorazowa-194b"
       ]
     },
@@ -11989,7 +11666,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-c-przeliczenie-1953"
       ]
     },
@@ -13843,13 +13519,9 @@
       "powiazane_artykuly": [],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-dodatek-pielegnacyjny",
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
-        "DU-1998-1118-renta-szkoleniowa",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-zasilek-pogrzebowy"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -14534,7 +14206,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "DU-1998-1118-skladka"
       ]
@@ -16827,8 +16498,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
-        "DU-1998-1118-renta-szkoleniowa",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "DU-1998-1118-skladka",
         "FUS-renta-niezdolnosc-calkowita"
@@ -17781,7 +17450,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-szkoleniowa",
         "FUS-renta-szkoleniowa"
       ]
     },
@@ -18017,7 +17685,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-szkoleniowa",
         "FUS-renta-szkoleniowa"
       ]
     },
@@ -18064,7 +17731,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "FUS-renta-rodzinna"
       ]
@@ -18091,7 +17757,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-renta-rodzinna"
       ]
     },
@@ -18174,7 +17839,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-renta-rodzinna"
       ]
     },
@@ -18242,7 +17906,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-renta-rodzinna"
       ]
     },
@@ -18312,7 +17975,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-renta-rodzinna"
       ]
     },
@@ -18688,7 +18350,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-renta-rodzinna"
       ]
     },
@@ -18737,7 +18398,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-renta-rodzinna"
       ]
     },
@@ -18763,8 +18423,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -18925,7 +18584,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "DU-1998-1118-zwiekszenie",
         "FUS-renta-rodzinna"
@@ -18987,7 +18645,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-renta-rodzinna"
       ]
     },
@@ -19044,7 +18701,6 @@
       "powiazane_artykuly": [],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-dodatek-pielegnacyjny",
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
         "FUS-dodatek-pielegnacyjny"
@@ -19095,7 +18751,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-dodatek-sierota-zupelna"
       ]
     },
@@ -19284,7 +18939,6 @@
         "DU-1998-1118-opieka",
         "DU-1998-1118-renta",
         "DU-1998-1118-zasilek-chorobowy",
-        "DU-1998-1118-zasilek-pogrzebowy",
         "FUS-zasilek-pogrzebowy"
       ]
     },
@@ -19329,7 +18983,6 @@
       "powiazane_artykuly": [],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-zasilek-pogrzebowy",
         "FUS-zasilek-pogrzebowy"
       ]
     },
@@ -19369,7 +19022,6 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-zasilek-pogrzebowy",
         "FUS-zasilek-pogrzebowy"
       ]
     },
@@ -19482,7 +19134,6 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-zasilek-pogrzebowy",
         "FUS-zasilek-pogrzebowy"
       ]
     },
@@ -19531,7 +19182,6 @@
       "powiazane_artykuly": [],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-zasilek-pogrzebowy",
         "FUS-zasilek-pogrzebowy"
       ]
     },
@@ -19815,7 +19465,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "DU-1998-1118-zwiekszenie",
         "FUS-podwyzszenie-minimum",
@@ -20504,7 +20153,6 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-dodatek-pielegnacyjny",
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
         "FUS-dodatek-pielegnacyjny",
@@ -20559,7 +20207,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "FUS-zbieg-renta-wdowia"
       ]
     },
@@ -20978,8 +20625,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
-        "DU-1998-1118-renta-szkoleniowa",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "FUS-zbieg-renta-wdowia"
       ]
@@ -21067,7 +20712,6 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-rodzinna",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
         "FUS-zbieg-renta-wdowia"
       ]
@@ -21254,7 +20898,6 @@
       "powiazane_artykuly": [],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-zasilek-pogrzebowy",
         "FUS-zasilek-pogrzebowy"
       ]
     },
@@ -73880,9 +73523,31 @@
       }
     ]
   },
+  "pominiete_duplikaty": [
+    {
+      "id": "DU-1998-1118-renta-szkoleniowa",
+      "karta_reczna": "FUS-renta-szkoleniowa",
+      "powod": "Ta sama nazwa i akt w trybie porownanie."
+    },
+    {
+      "id": "DU-1998-1118-renta-rodzinna",
+      "karta_reczna": "FUS-renta-rodzinna",
+      "powod": "Ta sama nazwa i akt w trybie porownanie."
+    },
+    {
+      "id": "DU-1998-1118-dodatek-pielegnacyjny",
+      "karta_reczna": "FUS-dodatek-pielegnacyjny",
+      "powod": "Ta sama nazwa i akt w trybie porownanie."
+    },
+    {
+      "id": "DU-1998-1118-zasilek-pogrzebowy",
+      "karta_reczna": "FUS-zasilek-pogrzebowy",
+      "powod": "Ta sama nazwa i akt w trybie porownanie."
+    }
+  ],
   "statystyki": {
     "reczne": 48,
-    "automatyczne": 25,
+    "automatyczne": 21,
     "z_notatek": 0
   }
 }

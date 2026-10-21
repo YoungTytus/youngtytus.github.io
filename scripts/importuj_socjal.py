@@ -21,6 +21,9 @@ KONTRAKT = 'strona-0.4'
 ELI_RE = re.compile(r'^(DU|MP)/\d{4}/\d+$')
 ART_RE = re.compile(r'#arti_([0-9]+[a-z]?)', re.I)
 PODSTAWOWE = ('korzysci.json', 'akty.json', 'slowniki.json', 'akty/SHA256SUMS')
+TERMINY = {'okres_kwoty', 'termin_wniosku', 'granica_przepisu', 'okres_zasilkowy',
+           'harmonogram_dostepnosci', 'termin_wyplaty', 'termin_dokumentu',
+           'termin_organu', 'termin_inny', 'wejscie_w_zycie'}
 
 
 class BladSocjal(Exception):
@@ -75,6 +78,117 @@ def bez_kwoty():
     return {'rozwiazanie': 'nieustalone', 'regula': None, 'aktualna': None,
             'kwota_ustawowa_zastapiona': None, 'zwiekszenia': [], 'wyliczenie': None,
             'os_czasu': [], 'progi': [], 'trasa': []}
+
+
+def dowod_rekordu(row, eli, jednostki):
+    unit = jednostki.get(row.get('jednostka') or row.get('id_jednostki')) or {}
+    ident = str(row.get('jednostka') or row.get('id_jednostki') or '')
+    source_eli = row.get('akt') or ident.split('#')[0] or eli
+    cytat = row.get('cytat') or unit.get('tekst')
+    if not cytat or not ELI_RE.fullmatch(str(source_eli)):
+        raise BladSocjal('Brak dowodu strukturalnego: {}'.format(ident or row))
+    d = dowod(source_eli, row.get('sciezka') or row.get('przepis') or unit.get('sciezka'),
+              cytat, row.get('data_stanu') or (unit.get('dowod') or {}).get('data_stanu'))
+    for key in ('sha256', 'strona', 'strony'):
+        value = row.get(key) or (unit.get('dowod') or {}).get(key) or unit.get(key)
+        if value is not None:
+            d['_' + key] = value
+    return d
+
+
+def przenies_terminy(src, k, jednostki):
+    for t in src.get('do_kiedy') or []:
+        rodzaj = t.get('rodzaj')
+        if rodzaj not in TERMINY:
+            raise BladSocjal('Nieznany rodzaj terminu: {}'.format(rodzaj))
+        row = {'rodzaj': rodzaj, 'data': data_tekstu(t.get('data')),
+               'opis': t.get('opis') or t.get('zdanie') or t.get('cytat') or 'Termin z przepisu',
+               'skutek': t.get('skutek') or None,
+               'dowod': dowod_rekordu(t, k['przepis']['eli'], jednostki)}
+        for field in ('od', 'do'):
+            if field in t: row[field] = data_tekstu(t[field])
+        for field in ('okres', 'zdarzenie', 'przepis'):
+            if t.get(field): row[field] = str(t[field])
+        k['do_kiedy'].append(row)
+
+
+def wartosc_rekordu(row):
+    tekst = row.get('tekst')
+    if not tekst and row.get('wartosc') is not None:
+        tekst = '{} zł'.format(row['wartosc'])
+    return str(tekst) if tekst else None
+
+
+def przenies_podsumowanie(src, k, jednostki, dzien):
+    s = src.get('ile_podsumowanie') or {}
+    ile = k['ile']
+    rows = list(s.get('historia') or [])
+    for row in s.get('aktualna') or []:
+        if row not in rows: rows.append(row)
+    rejected = [r for r in rows if r.get('akt') != src['akt'] and (
+        'w sprawie wzoru' in str(r.get('tytul_aktu') or '').casefold()
+        or src['nazwa'].casefold()[:4] not in str(r.get('cytat') or '').casefold())]
+    rejected_ids = {r.get('jednostka') for r in rejected}
+    if rejected:
+        k['nieustalone'].append(nieustalone('ile.podsumowanie',
+            'Odrzucono kwoty zewnętrzne bez bezpośredniego powiązania cytatu ze świadczeniem: ' +
+            '; '.join('{}: {}'.format(r.get('akt'), wartosc_rekordu(r)) for r in rejected)))
+        k['do_kiedy'] = [t for t in k['do_kiedy'] if not any(
+            t['dowod']['eli'] == r.get('akt') and t['dowod']['przepis'] == r.get('sciezka')
+            for r in rejected)]
+    rows = [r for r in rows if r not in rejected]
+    rows.sort(key=lambda row: (data_tekstu(row.get('od')) or '', str(row.get('wariant') or '')))
+    for row in rows:
+        value = wartosc_rekordu(row)
+        if not value: continue
+        wariant = row.get('wariant')
+        ile['os_czasu'].append({'wartosc': None if wariant else value,
+            'warianty': [{'etykieta': wariant, 'wartosc': value}] if wariant else None,
+            'od': data_tekstu(row.get('od')), 'do': data_tekstu(row.get('do')),
+            'rodzaj_zmiany': row.get('rodzaj_zmiany') or 'pierwszy_znany_wpis',
+            'poprzednia': str(row['poprzednia']) if row.get('poprzednia') is not None else None,
+            'roznica': None, 'dowod': dowod_rekordu(row, src['akt'], jednostki),
+            '_roznica_zrodlowa': row.get('roznica')})
+    # Wybór po dacie eksportu, nie po etykiecie „aktualna” źródła.
+    current = [w for w in ile['os_czasu'] if w['od'] and w['od'] <= dzien
+               and (w['do'] is None or w['do'] >= dzien)]
+    if len(current) == 1:
+        ile['aktualna'] = {key: current[0][key] for key in ('wartosc', 'warianty', 'od', 'do')}
+    elif len(current) > 1:
+        k['nieustalone'].append(nieustalone('ile.aktualna', 'Wiele równoległych kwot; nie wybrano jednej stawki.'))
+    if ile['os_czasu']:
+        ile['rozwiazanie'] = s.get('rozwiazanie') if s.get('rozwiazanie') in (
+            'kwota_w_ustawie', 'kwota_z_aktu_wykonawczego', 'odeslanie') else 'nieustalone'
+    nominalne = [r for r in s.get('kwota_ustawowa_zastapiona') or []
+                 if nominalna_zastepowana(r, jednostki) or any(
+                     q.get('jednostka') == r.get('jednostka') and nominalna_zastepowana(q, jednostki)
+                     for q in src.get('ile') or [])]
+    if nominalne:
+        ile['kwota_ustawowa_zastapiona'] = '; '.join(filter(None, (wartosc_rekordu(x) for x in nominalne))) or None
+    # Zewnętrzny krok często zawiera tylko identyfikator. Jego cytat jest
+    # w rekordzie kwoty; nie zastępujemy go opisem redakcyjnym.
+    evidence = {r.get('jednostka'): r for r in rows if r.get('cytat')}
+    for step in s.get('trasa') or []:
+        if step.get('jednostka') in rejected_ids: continue
+        merged = dict(evidence.get(step.get('jednostka')) or {})
+        merged.update(step)
+        ile['trasa'].append({'krok': len(ile['trasa']) + 1,
+            'opis': step.get('opis') or 'Źródło kwoty',
+            'dowod': dowod_rekordu(merged, src['akt'], jednostki)})
+    for row in nominalne:
+        d = dowod_rekordu(row, src['akt'], jednostki)
+        if not any(step['dowod'] == d for step in ile['trasa']):
+            ile['trasa'].append({'krok': len(ile['trasa']) + 1,
+                'opis': 'Nominalna kwota zastępowana lub waloryzowana', 'dowod': d})
+    return bool(rows or nominalne or (not rejected and s.get('rozwiazanie') == 'kwota_z_aktu_wykonawczego'))
+
+
+def nominalna_zastepowana(q, jednostki):
+    unit = jednostki.get(q.get('jednostka')) or {}
+    przypisy = str(q.get('przypis') or '') + str(unit.get('przypisy') or '')
+    return (q.get('rodzaj') == 'kwota_zastepowana_aktem_wykonawczym'
+            or any(x.get('kwota_z_aktu_wykonawczego') for x in unit.get('kwoty') or [])
+            or bool(re.search(r'aktualn\w* kwot\w* ogłasza|waloryzac', przypisy, re.I)))
 
 
 def nieustalone(pole, opis):
@@ -258,7 +372,8 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
         if not ELI_RE.fullmatch(str(eli)):
             raise BladSocjal('Niepoprawny akt w {}'.format(przebieg))
         stan = data_tekstu((meta.get('zrodlo') or {}).get('data_stanu'))
-        akty_meta[eli] = {'tytul': meta.get('tytul') or 'Akt ' + eli, 'stan': stan}
+        akty_meta[eli] = {'tytul': meta.get('tytul') or 'Akt ' + eli, 'stan': stan,
+                          'tryb': (meta.get('konfiguracja_aktu') or {}).get('tryb')}
         items = wczytaj(js)
         for u in items:
             uid = u.get('id')
@@ -310,8 +425,14 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
         for typ, key in [('warunek', 'warunki'), ('wykluczenie', 'wykluczenia')]:
             for txt in karta.get(key) or []:
                 if txt: k['powiazane'].append({'typ': typ, 'cytat': str(txt)})
-        # Formuła nie jest kwotą w PLN; zapisujemy ją jako wskazówkę do przeglądu.
-        k['nieustalone'].append(nieustalone('ile.regula_kwoty', karta.get('regula_kwoty') or 'Brak formuły kwoty.'))
+        # Zachowujemy opis formuły bez obliczania indywidualnego świadczenia.
+        formula = karta.get('regula_kwoty')
+        if formula:
+            k['ile']['rozwiazanie'] = 'formula'
+            k['ile']['regula'] = {'udzial': None, 'podstawa_id': None, 'opis': formula}
+        else:
+            k['nieustalone'].append(nieustalone('ile.regula_kwoty', 'Brak formuły kwoty.'))
+        przenies_terminy(karta, k, jednostki)
         k['ile']['trasa'] = [
             {'krok': i + 1, 'opis': 'Źródło karty: {}'.format(z.get('przepis') or 'jednostka'),
              'dowod': dowod(z.get('id_jednostki', 'DU/1998/1118').split('#')[0],
@@ -335,8 +456,11 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
                             'historia_parametr': przypisanie,
                             'uwaga_czasowa': karta.get('uwaga_czasowa'),
                             'odsylacze_do_sprawdzenia': karta.get('odeslania_do_sprawdzenia')}
-    # Kandydaci automatyczni zachowują własne id i status weryfikacji; nigdy nie
-    # są łączeni z opracowanymi kartami po samej podobnej nazwie.
+    # Dokładna nazwa (z pominięciem dopisku w nawiasie) i ten sam akt.
+    # Nie utożsamiamy np. „opieki” z wcześniejszą emeryturą opiekuna.
+    nazwa_klucz = lambda n: ' '.join(re.sub(r'\([^)]*\)', '', n).casefold().split())
+    reczne = {(k['przepis']['eli'], nazwa_klucz(k['nazwa'])): k for k in benefits}
+    pominiete = []
     for katalog in sorted((socjal / 'Dane/Mapa').glob('DU-*')):
         kp = katalog / 'korzysci.json'
         if not kp.is_file(): continue
@@ -352,6 +476,20 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
             eli = src.get('akt')
             if not ELI_RE.fullmatch(str(eli)):
                 raise BladSocjal('Błędny ELI automatycznej karty: ' + bid)
+            manual = reczne.get((eli, nazwa_klucz(src['nazwa'])))
+            if manual and akty_meta.get(eli, {}).get('tryb') == 'porownanie':
+                # Zachowaj dodatkowe terminy i odsyłacze na ręcznej karcie.
+                przenies_terminy(src, manual, jednostki)
+                if not manual['ile']['os_czasu']:
+                    przenies_podsumowanie(src, manual, jednostki, na_dzien)
+                pominiete.append({'id': bid, 'karta_reczna': manual['id'],
+                                  'powod': 'Ta sama nazwa i akt w trybie porownanie.'})
+                refs = [r.get('jednostka') for r in src.get('przepisy_przyznajace') or [] if r.get('jednostka')]
+                extra = extra_karty[manual['id']]
+                extra['jednostki'] = sorted(set(extra['jednostki'] + refs))
+                extra['artykuly'] = sorted(set(extra['artykuly']) | {
+                    a for a in (przepis_art_id(eli, r) for r in refs) if a})
+                continue
             refs = src.get('przepisy_przyznajace') or []
             selected = refs[0] if refs else (src.get('wzmianki') or [{}])[0]
             uid = selected.get('jednostka')
@@ -366,7 +504,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
             status = src.get('status')
             if status not in ('obowiazuje', 'zamknieta', 'do_ustalenia'):
                 status = 'do_ustalenia'
-            opis = (src.get('komu_krotko') or {}).get('tekst') or ''
+            opis = (src.get('komu_krotko') or {}).get('tekst') or (src.get('komu') or {}).get('cytat') or ''
             k = {'id': bid, 'slug': bid.lower(), 'nazwa': src['nazwa'],
                  'rodzaj_korzysci': typ, 'status': status, 'komu': opis,
                  'opis_prosty': None, 'sytuacje': [x for x in src.get('sytuacje', [])
@@ -378,9 +516,13 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
                           'tekst': 'tekst ujednolicony (informacyjny)'},
                  'nieustalone': [],
                  'flagi': ['Kandydat automatyczny. Nie stanowi potwierdzenia prawa do świadczenia.']}
-            # Kwota tylko gdy jednoznaczny cytat o nazwie świadczenia i kwocie.
+            przenies_terminy(src, k, jednostki)
+            podsumowanie_kwoty = przenies_podsumowanie(src, k, jednostki, na_dzien)
+            # Stara heurystyka jest wyłącznie awaryjna: nie zastępuje podsumowania
+            # i nie przedstawia nominalnej kwoty z przypisem jako aktualnej.
             stawki = [x for x in src.get('ile', []) if x.get('rodzaj') == 'kwota_w_ustawie' and x.get('tekst')]
-            if len(stawki) == 1:
+            if len(stawki) == 1 and not podsumowanie_kwoty and not any(
+                    nominalna_zastepowana(q, jednostki) for q in src.get('ile') or []):
                 q = stawki[0]
                 cytat = str(q.get('cytat') or '')
                 if src['nazwa'].lower() in cytat.lower() and re.search(r'\bwynosi\b', cytat, re.I):
@@ -433,6 +575,8 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
             act_eli.add(ref['dowod']['eli'])
         for row in b['ile']['os_czasu']:
             act_eli.add(row['dowod']['eli'])
+        for row in b['do_kiedy']:
+            act_eli.add(row['dowod']['eli'])
     acts = []
     for eli in sorted(act_eli):
         m = akty_meta.get(eli, {})
@@ -446,7 +590,9 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
             'uprawnienie':'uprawnienie / mechanizm','dofinansowanie':'dofinansowanie'},
         'rodzaj_terminu': {'okres_kwoty':'okres obowiązywania kwoty','termin_wniosku':'termin złożenia wniosku',
             'granica_przepisu':'zmiana albo koniec przepisu','okres_zasilkowy':'okres przyznania prawa',
-            'harmonogram_dostepnosci':'otwieranie prawa etapami','termin_wyplaty':'termin wypłaty'},
+            'harmonogram_dostepnosci':'otwieranie prawa etapami','termin_wyplaty':'termin wypłaty',
+            'termin_dokumentu':'termin dostarczenia dokumentu', 'termin_organu':'termin działania organu',
+            'termin_inny':'inny termin z przepisu', 'wejscie_w_zycie':'wejście w życie'},
         'status': {'obowiazuje':'obowiązuje (według źródła)', 'zamknieta':'zamknięta',
                    'do_ustalenia':'do ustalenia'},
         'sytuacje': {'dziecko':'dziecko','ciaza_porod':'ciąża i poród',
@@ -455,7 +601,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
            'mieszkanie_energia':'mieszkanie i energia','edukacja':'edukacja', 'cudzoziemiec':'cudzoziemiec'}}
     extras = {'kontrakt': 'socjal-1', 'na_dzien': na_dzien,
               'karty': extra_karty, 'artykuly': sorted(artykuly.values(), key=lambda a: a['id']),
-              'historia': historia,
+              'historia': historia, 'pominiete_duplikaty': pominiete,
               'statystyki': {'reczne': sum(v['pochodzenie']=='reczna_FUS' for v in extra_karty.values()),
                             'automatyczne': sum(v['pochodzenie']=='automat' for v in extra_karty.values()),
                             'z_notatek': sum(v['pochodzenie']=='notatka' for v in extra_karty.values())}}
@@ -466,7 +612,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
     (wynik / 'akty').mkdir(parents=True, exist_ok=True)
     (wynik / 'akty/SHA256SUMS').write_text('', encoding='utf-8')
     manifest = {'kontrakt': KONTRAKT, 'wygenerowano': datetime.now(timezone.utc).isoformat(),
-                'wersja_kodu': 'importuj_socjal-1.0', 'na_dzien': na_dzien,
+                'wersja_kodu': 'importuj_socjal-1.1', 'na_dzien': na_dzien,
                 'pliki': {f: sha(wynik / f) for f in PODSTAWOWE},
                 'zakres': sorted(akty_meta),
                 'liczby': {'korzysci': len(benefits), 'akty': len(acts), 'pliki_aktow': 0},
