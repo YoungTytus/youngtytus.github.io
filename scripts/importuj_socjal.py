@@ -624,6 +624,128 @@ def karty_paczki(socjal, paczka, historia, jednostki, na_dzien, benefits, extra_
             aliasy[(akt, nazwa)] = po_id[ident]
 
 
+def dowod_wyliczenia(d):
+    out = dowod(d['akt'], d.get('przepis'), d.get('cytat'))
+    if d.get('sha256'):
+        out['_sha256'] = d['sha256']
+    return out
+
+
+def przenies_wyliczenia(socjal, benefits, wielkosci, dzien):
+    """Karty bez kwoty: mechanizmy kwot ze skryptu mapy (Dane/Mapa/wyliczenia_kwot.json, polecenie
+    `python Skrypty/mapa.py wyliczenia`). Kwota → aktualna; minimum/maksimum → limit z historią wielkości;
+    przykład → wyliczenie pomocnicze z krokami; kwota indywidualna → wyjaśnienie w „Nie ustalono”."""
+    p = socjal / 'Dane/Mapa/wyliczenia_kwot.json'
+    karty = wczytaj(p).get('karty', {}) if p.is_file() else {}
+    for k in benefits:
+        wyniki = (karty.get(k['id']) or {}).get('wyniki') or []
+        ile = k['ile']
+        if not wyniki or ile['aktualna'] or ile['wyliczenie']:
+            continue
+        kwoty = [r for r in wyniki if r['rodzaj'] == 'kwota']
+        if kwoty:
+            warianty = [{'etykieta': r.get('wariant'), 'wartosc': r['tekst']} for r in kwoty]
+            jedna = len(warianty) == 1 and not warianty[0]['etykieta']
+            od = kwoty[0].get('od')
+            ile['aktualna'] = {'wartosc': warianty[0]['wartosc'] if jedna else None, 'warianty': None if jedna else warianty,
+                               'od': od, 'do': None, '_mechanizm': kwoty[0]['mechanizm'], '_kroki': kwoty[0]['kroki']}
+            ile['os_czasu'].append({'wartosc': ile['aktualna']['wartosc'], 'warianty': ile['aktualna']['warianty'], 'od': od, 'do': None,
+                                    'rodzaj_zmiany': 'pierwszy_znany_wpis', 'poprzednia': None, 'roznica': None,
+                                    'dowod': dowod_wyliczenia(kwoty[0]['dowody'][0])})
+            # sposób ustalenia według mechanizmu: kwota ogłaszana, kwota w ustawie, procent/połowa innej kwoty, odesłanie
+            mech = kwoty[0]['mechanizm']
+            if kwoty[0].get('wielkosc'):
+                ile['rozwiazanie'] = 'kwota_z_aktu_wykonawczego'
+            elif mech in ('procent_kwoty_swiadczenia', 'polowa_kwoty'):
+                ile['rozwiazanie'] = 'regula_procentowa'
+                ile['regula'] = {'udzial': '50 %' if mech == 'polowa_kwoty' else (kwoty[0].get('wariant') or '').split(' ')[0] + ' %',
+                                 'podstawa_id': None, 'opis': kwoty[0]['kroki'][0][:400]}
+            elif mech in ('odeslanie_wysokosci', 'odeslanie_kwoty_artykulu', 'kwota_karty_glownej'):
+                ile['rozwiazanie'] = 'odeslanie'
+            else:
+                ile['rozwiazanie'] = 'kwota_w_ustawie'
+            for r in kwoty:
+                ile['trasa'].append({'krok': len(ile['trasa']) + 1, 'opis': '; '.join(r['kroki'])[:600],
+                                     'dowod': dowod_wyliczenia(r['dowody'][0])})
+            lata = [int(x) for x in re.findall(r'\b(19\d\d|20\d\d)\b', kwoty[0].get('okres_tekst') or '')]
+            if lata and max(lata) < int(dzien[:4]):
+                k['status'] = 'zamknieta'      # jednorazowa wypłata z przeszłości (np. art. 194b: marzec 2005 i 2006)
+        for r in wyniki:
+            if r['rodzaj'] not in ('minimum', 'maksimum'):
+                continue
+            opis = '{} — {} ({})'.format(r['dowody'][0]['przepis'], 'najwyżej' if r['rodzaj'] == 'maksimum' else 'co najmniej',
+                                        r.get('wariant') or (wielkosci.get(r.get('wielkosc') or '') or {}).get('nazwa') or 'kwota w ustawie')
+            if any(x['przepis'] == opis or (x['wpisy'] and x['wpisy'][-1].get('_rodzaj') == r['rodzaj']
+                                             and x['wpisy'][-1]['wartosc'].replace(',00', '') == r['tekst'].replace(',00', ''))
+                   for x in ile['progi']):
+                continue        # ten sam limit już z danych limitów skryptu mapy
+            seria = [w for w in (wielkosci.get(r.get('wielkosc') or '') or {}).get('seria') or []
+                     if w.get('cytat') and w.get('tekst') and not w.get('konflikt') and data_tekstu(w.get('od'))]
+            seria.sort(key=lambda w: w['od'])
+            krot = Decimal(str(r.get('krotnosc') or 1))
+            wpisy = []
+            for i, w in enumerate(seria):
+                tekst = w['tekst'] if krot == 1 else zlote(Decimal(str(w['wartosc'])) * krot)
+                wpisy.append({'wartosc': tekst, 'warianty': None, 'od': w['od'], 'do': data_tekstu(w.get('do')),
+                              'rodzaj_zmiany': 'pierwszy_znany_wpis' if not i else 'akt_wykonawczy',
+                              'poprzednia': wpisy[-1]['wartosc'] if wpisy else None, 'roznica': None,
+                              'dowod': dowod_wielkosci(w), '_rodzaj': r['rodzaj'], '_kroki': r['kroki']})
+            if not wpisy:
+                wpisy = [{'wartosc': r['tekst'], 'warianty': None, 'od': r.get('od') or k['stan']['data_stanu'], 'do': None,
+                          'rodzaj_zmiany': 'pierwszy_znany_wpis', 'poprzednia': None, 'roznica': None,
+                          'dowod': dowod_wyliczenia(r['dowody'][0]), '_rodzaj': r['rodzaj'], '_kroki': r['kroki']}]
+            ile['progi'].append({'przepis': opis, 'wpisy': wpisy})
+        przyklady = [r for r in wyniki if r['rodzaj'] == 'przyklad']
+        if przyklady and not ile['aktualna']:
+            r0 = przyklady[0]
+            baza = next((d for d in r0['dowody'] if d.get('przepis') == 'treść aktu'), None)
+            w0 = wielkosci.get(r0.get('wielkosc') or '') or {}
+            ile['wyliczenie'] = {
+                'wartosc': r0['tekst'] if len(przyklady) == 1 else None,
+                'warianty': None if len(przyklady) == 1 else [
+                    {'etykieta': r.get('wariant') or r['mechanizm'], 'udzial': r.get('udzial_procent') or 'przykład', 'wartosc': r['tekst']}
+                    for r in przyklady],
+                'od': r0.get('od'),
+                'podstawa': {'wartosc': None, 'od': r0.get('od'), 'zrodlo': baza['akt'], 'wielkosc': w0.get('nazwa'),
+                             'dowod': dowod_wyliczenia(baza), 'lancuch': None} if baza else None,
+                'zaokraglenie': None,
+                'uwaga': 'Przykład: wynik zależy od danych osoby (dochód, liczba dni, wysokość innego świadczenia). '
+                         + ' | '.join('; '.join(r['kroki']) for r in przyklady)[:1500],
+                'flagi': [], 'nieustalone': [], '_kroki': [x for r in przyklady for x in r['kroki']]}
+            if ile['rozwiazanie'] == 'nieustalone':
+                ile['rozwiazanie'] = 'formula'
+                if not ile['regula']:
+                    ile['regula'] = {'udzial': None, 'podstawa_id': None, 'opis': przyklady[0]['kroki'][0][:400]}
+        for r in wyniki:
+            if r['rodzaj'] == 'indywidualna' and not ile['aktualna']:
+                k['nieustalone'].append(nieustalone('ile.kwota_indywidualna', r.get('wyjasnienie') or ('Kwota indywidualna: ' + '; '.join(r['kroki'])[:400])))
+                break
+
+
+def zastosuj_standard(socjal, benefits):
+    """Ujednolicone nazwy, opisy i „komu” (Dane/Mapa/standard_kart.json, kontrola: `python Skrypty/mapa.py standard`).
+    Cytat przepisu zostaje w polu `przepis`, pierwotne „komu” w `_komu_zrodlowe`."""
+    p = socjal / 'Dane/Mapa/standard_kart.json'
+    standard = wczytaj(p).get('karty', {}) if p.is_file() else {}
+    for k in benefits:
+        s = standard.get(k['id'])
+        if not s:
+            continue
+        k['_nazwa_zrodlowa'], k['_komu_zrodlowe'] = k['nazwa'], k['komu']
+        k['nazwa'] = s.get('nazwa') or k['nazwa']
+        k['opis_prosty'] = s.get('opis') or k['opis_prosty']
+        k['komu'] = s.get('komu') or k['komu']
+        if s.get('forma') in ('pieniezne', 'niepieniezne'):
+            k['forma'] = s['forma']
+        # rodzaj zgodny z formą: wypłata 50 % renty socjalnej nie jest „świadczeniem rzeczowym”
+        if k.get('forma') == 'pieniezne' and k['rodzaj_korzysci'] == 'swiadczenie_rzeczowe':
+            k['rodzaj_korzysci'] = 'swiadczenie_okresowe'
+        elif k.get('forma') == 'niepieniezne' and k['rodzaj_korzysci'] in ('swiadczenie_okresowe', 'swiadczenie_jednorazowe'):
+            k['rodzaj_korzysci'] = 'swiadczenie_rzeczowe'
+        if s.get('rodzaj'):
+            k['rodzaj_korzysci'] = s['rodzaj']
+
+
 def forma_karty(k, rodzaj_zrodlowy, reguly):
     """Pieniężne / niepieniężne (rzecz, usługa, miejsce). Karta z kwotą jest pieniężna."""
     if k['ile']['aktualna'] or k['ile']['wyliczenie'] or k['ile']['os_czasu']:
@@ -656,7 +778,10 @@ def kwalifikuj_do_mapy(socjal, benefits, extra_karty):
     zostaja, poza = [], []
     for k in benefits:
         meta = extra_karty[k['id']]
-        k['forma'] = forma_karty(k, meta.get('rodzaj_zrodlowy'), reguly)
+        forma_skryptu = (meta.get('kwalifikacja_automatu') or {}).get('forma')
+        # skrypt mapy zna treść przepisu („w postaci jednego gorącego posiłku”); bez kwoty jego forma ma pierwszeństwo
+        k['forma'] = forma_skryptu if forma_skryptu == 'niepieniezne' and not k['ile']['aktualna'] \
+            else forma_karty(k, meta.get('rodzaj_zrodlowy'), reguly)
         d = decyzje.get(k['id'])
         powod, zrodlo, uwaga = None, None, None
         if d:
@@ -855,7 +980,9 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
                  'nieustalone_zrodla': src.get('nieustalone') or [],
                  'kwalifikacja_automatu': src.get('kwalifikacja')}
     uzupelnij_notatkami(socjal, benefits, extra_karty, na_dzien)
+    przenies_wyliczenia(socjal, benefits, wielkosci, na_dzien)
     benefits, poza_mapa = kwalifikuj_do_mapy(socjal, benefits, extra_karty)
+    zastosuj_standard(socjal, benefits)
     if not benefits: raise BladSocjal('Brak kart do publikacji.')
     ids = [b['id'] for b in benefits]
     if len(ids) != len(set(ids)):
@@ -915,7 +1042,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
     (wynik / 'akty').mkdir(parents=True, exist_ok=True)
     (wynik / 'akty/SHA256SUMS').write_text('', encoding='utf-8')
     manifest = {'kontrakt': KONTRAKT, 'wygenerowano': datetime.now(timezone.utc).isoformat(),
-                'wersja_kodu': 'importuj_socjal-1.4', 'na_dzien': na_dzien,
+                'wersja_kodu': 'importuj_socjal-1.5', 'na_dzien': na_dzien,
                 'pliki': {f: sha(wynik / f) for f in PODSTAWOWE},
                 'zakres': sorted(akty_meta),
                 'liczby': {'korzysci': len(benefits), 'akty': len(acts), 'pliki_aktow': 0},

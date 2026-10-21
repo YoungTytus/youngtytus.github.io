@@ -12,6 +12,7 @@ const dowod = dowodAktualnej(k);
 const href = `/korzysc/${k.id}/${dowod.href}`;
 const limit = limitPrezentowany(k);
 const niepieniezne = k.forma === 'niepieniezne' && !a && !limit;
+const indywidualna = k.nieustalone?.find((n: any) => n.pole === 'ile.kwota_indywidualna');
 const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.status === 'zamknieta' ? 'Kwota (archiwalna)'
   : limit ? (limit._rodzaj === 'maksimum' ? 'Kwota najwyżej' : 'Kwota co najmniej') : niepieniezne ? 'Forma pomocy' : 'Aktualna kwota';
 ---
@@ -22,7 +23,8 @@ const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.stat
       <Status status={k.status} />
     </div>
     <H><a href={`/korzysc/${k.id}/`} class="first-up">{k.nazwa}</a></H>
-    <p class="komu"><span class="sr-only">Komu: </span>{typo(k.opis_prosty ?? opisUprawnionych(k.komu))}</p>
+    {k.opis_prosty && <p class="opis">{typo(k.opis_prosty)}</p>}
+    <p class="komu"><strong>Komu: </strong>{typo(opisUprawnionych(k.komu))}</p>
     {k.sytuacje.length > 0 && (
       <div class="card-sit">{k.sytuacje.map((s: string) => <a class="tag" href={`/sytuacja/${s}/`}>{etykieta('sytuacje', s)}</a>)}</div>
     )}
@@ -37,7 +39,7 @@ const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.stat
       )}
       {!a && limit && <Kwota wartosc={limit.wartosc} href={`/korzysc/${k.id}/${limit.href}`} etykieta={limit.etykieta} blok />}
       {niepieniezne && <span class="forma-pomocy">Bez kwoty: rzecz, usługa albo miejsce</span>}
-      {!a && !limit && !niepieniezne && <span class="muted">{k.ile.regula ? 'Reguła procentowa — szczegóły na karcie' : 'Nie ustalono (szczegóły na karcie)'}</span>}
+      {!a && !limit && !niepieniezne && <span class="muted">{indywidualna ? `Kwota indywidualna: ${indywidualna.powod}` : k.ile.regula ? 'Reguła procentowa — szczegóły na karcie' : 'Nie ustalono (szczegóły na karcie)'}</span>}
       {k.flagi?.length > 0 && <span class="muted">Rekord wymaga przeglądu według eksportu.</span>}
     </div>
   </div>

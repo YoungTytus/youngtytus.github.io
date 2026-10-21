@@ -2266,7 +2266,7 @@
         "socjal": true,
         "powod": null,
         "regula": null,
-        "forma": "niepieniezne"
+        "forma": "pieniezne"
       },
       "plik_notatki": "Swiadczenia/RS/Lokal (RS).md",
       "opis_kwoty_z_notatki": null
@@ -2781,7 +2781,7 @@
         "socjal": true,
         "powod": null,
         "regula": null,
-        "forma": "niepieniezne"
+        "forma": "pieniezne"
       },
       "plik_notatki": "Swiadczenia/PS/Opieka (PS).md",
       "opis_kwoty_z_notatki": null
@@ -2814,7 +2814,7 @@
         "socjal": true,
         "powod": null,
         "regula": null,
-        "forma": "pieniezne"
+        "forma": "niepieniezne"
       },
       "plik_notatki": "Swiadczenia/PS/Pomoc doraźna (PS).md",
       "opis_kwoty_z_notatki": null

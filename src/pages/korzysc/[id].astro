@@ -28,6 +28,7 @@ const a = ile.aktualna;
 const kwotyWariantow = new Map((ile.wyliczenie?.warianty ?? []).map((w: any) => [JSON.stringify([w.etykieta, w.udzial]), w.wartosc]));
 const dowodA = dowodAktualnej(k);
 const limit = limitPrezentowany(k);
+const indywidualna = k.nieustalone.find((n: any) => n.pole === 'ile.kwota_indywidualna');
 const zamknieta = k.status === 'zamknieta';
 const stan = dataPL(k.stan.data_stanu);
 const terminyWg = Object.fromEntries(KOLEJNOSC_TERMINOW.map((r) => [r, k.do_kiedy.filter((t: any) => t.rodzaj === r)]));
@@ -106,8 +107,9 @@ const dowodNominalnej = nominalnyKrok >= 0
       <section class="detail-section" id="komu" aria-labelledby="h-komu">
         <p class="kicker">Co / komu</p>
         <h2 id="h-komu">Komu przysługuje?</h2>
-        {k.opis_prosty && <p class="lead-komu">{typo(k.opis_prosty)}</p>}
-        <p class:list={[k.opis_prosty ? 'summary-note' : 'lead-komu']}>{k.opis_prosty ? 'Krąg uprawnionych według przepisu: ' : ''}{typo(opisUprawnionych(k.komu))}</p>
+        {k.opis_prosty && <p class="summary-note"><strong>Co to jest: </strong>{typo(k.opis_prosty)}</p>}
+        <p class="lead-komu">{typo(opisUprawnionych(k.komu))}</p>
+        {k._komu_zrodlowe && <p class="summary-note">Opis uprawnionych ujednolicono na podstawie przepisu poniżej. Pełne warunki: sekcja „Warunki i odwołania”.</p>}
         <h3>Przepis przyznający</h3>
         <Dowod dowod={k.przepis} id="przepis" />
       </section>
@@ -127,7 +129,7 @@ const dowodNominalnej = nominalnyKrok >= 0
             <p class="amount-date">Limit z przepisu: {typo(limit.przepis)}. Od {dataPL(limit.od)} Dokładną kwotę ustala organ w decyzji.</p>
           </>}
           {!a && !limit && k.forma === 'niepieniezne' && <p class="amount-missing">Świadczenie niepieniężne: państwo daje rzecz, usługę albo miejsce (np. posiłek, schronienie, opiekę). Taka pomoc nie ma kwoty.</p>}
-          {!a && !limit && k.forma !== 'niepieniezne' && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : ile.regula ? 'Kwota określona regułą' : 'Nie ustalono'}</p>}
+          {!a && !limit && k.forma !== 'niepieniezne' && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : indywidualna ? `Kwota indywidualna. ${indywidualna.powod}` : ile.regula ? 'Kwota określona regułą' : 'Nie ustalono'}</p>}
           {a && <p class="amount-date">{a.od ? `Od ${dataPL(a.od)}` : `Data początku: ${dataLubBrak(a.od)}`}</p>}
           {a?.do && <p class="amount-date">Do {dataLubBrak(a.do)}</p>}
           {!a && ile.wyliczenie && <p class="amount-date"><a href="#wyliczenie" style="text-decoration:underline">Zobacz wyliczenie pomocnicze i jego źródła</a>.</p>}

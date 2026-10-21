@@ -220,6 +220,32 @@ class SocjalImportTests(unittest.TestCase):
         self.assertEqual(poza['DU-2004-593-skladka']['powod'], 'obowiazek_lub_parametr')
         self.assertNotIn('DU-2004-593-dieta', extra['karty'])
 
+    def test_calculations_and_standard_applied(self):
+        katalog = self.socjal / 'Dane/Mapa/DU-2004-593'
+        katalog.mkdir(parents=True)
+        (katalog / 'przebieg.json').write_text(json.dumps({'akt': 'DU/2004/593'}), encoding='utf-8')
+        (katalog / 'jednostki.json').write_text('[]', encoding='utf-8')
+        (katalog / 'korzysci.json').write_text(json.dumps({'korzysci': [
+            {'id': 'DU-2004-593-zasilek-okresowy', 'nazwa': 'zasiłek okresowy', 'akt': 'DU/2004/593', 'status': 'obowiazuje',
+             'rodzaj_korzysci': 'swiadczenie_okresowe', 'komu': {'cytat': 'osobie samotnie gospodarującej; rodzinie'}}]}), encoding='utf-8')
+        dowod_j = {'akt': 'DU/2004/593', 'przepis': 'art. 38 ust. 4', 'cytat': 'Kwota zasiłku okresowego nie może być niższa niż 20 zł miesięcznie.'}
+        (self.socjal / 'Dane/Mapa/wyliczenia_kwot.json').write_text(json.dumps({'karty': {'DU-2004-593-zasilek-okresowy': {'wyniki': [
+            {'mechanizm': 'minimum', 'rodzaj': 'minimum', 'wartosc': '20', 'tekst': '20,00 zł', 'od': None, 'kroki': ['art. 38 ust. 4'],
+             'dowody': [dowod_j]},
+            {'mechanizm': 'procent_roznicy', 'rodzaj': 'przyklad', 'wartosc': '505', 'tekst': '505,00 zł', 'od': '2025-01-01',
+             'wariant': 'osoba samotnie gospodarująca', 'kroki': ['50 % × 1010 zł = 505,00 zł'],
+             'dowody': [dowod_j, {'akt': 'DU/2024/1044', 'przepis': 'treść aktu', 'cytat': 'a) 1010 zł'}]}]}}}), encoding='utf-8')
+        (self.socjal / 'Dane/Mapa/standard_kart.json').write_text(json.dumps({'karty': {'DU-2004-593-zasilek-okresowy': {
+            'nazwa': 'Zasiłek okresowy', 'opis': 'Zasiłek z pomocy społecznej na określony czas.',
+            'komu': 'Osoba samotnie gospodarująca albo rodzina z dochodem niższym od kryterium dochodowego.'}}}), encoding='utf-8')
+        k, _ = self.run_import()
+        z = next(x for x in k if x['id'] == 'DU-2004-593-zasilek-okresowy')
+        self.assertEqual(z['nazwa'], 'Zasiłek okresowy')
+        self.assertTrue(z['komu'].startswith('Osoba samotnie'))
+        self.assertEqual(z['_komu_zrodlowe'], 'osobie samotnie gospodarującej; rodzinie')
+        self.assertEqual(z['ile']['wyliczenie']['wartosc'], '505,00 zł')
+        self.assertEqual(z['ile']['progi'][0]['wpisy'][0]['_rodzaj'], 'minimum')
+
     def test_one_label_per_series_across_years(self):
         stary = {'akt': 'MP/2016/1', 'tekst': '676,75 zł', 'wariant_klucz': 'rent czes', 'od': '2016-03-01',
                  'do': '2017-02-28', 'wariant': '— dla rent z tytułu częściowej niezdolno- ści', 'cytat': 'x',
