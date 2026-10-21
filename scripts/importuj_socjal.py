@@ -624,6 +624,68 @@ def karty_paczki(socjal, paczka, historia, jednostki, na_dzien, benefits, extra_
             aliasy[(akt, nazwa)] = po_id[ident]
 
 
+def forma_karty(k, rodzaj_zrodlowy, reguly):
+    """Pieniężne / niepieniężne (rzecz, usługa, miejsce). Karta z kwotą jest pieniężna."""
+    if k['ile']['aktualna'] or k['ile']['wyliczenie'] or k['ile']['os_czasu']:
+        return 'pieniezne'
+    f = reguly.get('forma') or {}
+    nazwa = k['nazwa'].casefold()
+    if k['rodzaj_korzysci'] == 'swiadczenie_rzeczowe':
+        return 'niepieniezne'
+    # rdzenie z reguł; najpierw pieniężne („świadczenie dla opiekuna” nie jest usługą opieki)
+    if any(h in nazwa for h in f.get('hasla_pieniezne', [])):
+        return 'pieniezne'
+    if any(h in nazwa for h in f.get('hasla_niepieniezne', [])):
+        return 'niepieniezne'
+    if k['rodzaj_korzysci'] in ('swiadczenie_okresowe', 'swiadczenie_jednorazowe', 'dofinansowanie'):
+        return 'pieniezne'
+    return 'nieustalona'
+
+
+def kwalifikuj_do_mapy(socjal, benefits, extra_karty):
+    """Mapa socjalu = to, co państwo daje osobie albo rodzinie. Kolejność: decyzja właściciela
+    (Dane/Mapa/kwalifikacja/decyzje_wlasciciela.json), potem reguły (Dane/Slowniki/kwalifikacja_socjalu.json):
+    dla kandydata automatycznego wynik skryptu mapy, dla karty ręcznej rodzaj i prefiks identyfikatora.
+    Pozycje poza mapą nie trafiają na stronę; zostają w socjal.json z powodem."""
+    p_reg, p_dec = socjal / 'Dane/Slowniki/kwalifikacja_socjalu.json', socjal / 'Dane/Mapa/kwalifikacja/decyzje_wlasciciela.json'
+    reguly = wczytaj(p_reg) if p_reg.is_file() else {}
+    dec = wczytaj(p_dec) if p_dec.is_file() else {}
+    decyzje = {d['id']: d for d in dec.get('decyzje', [])}
+    opisy = dict(dec.get('powody') or {})
+    rr = reguly.get('reguly_kart_recznych') or {}
+    zostaja, poza = [], []
+    for k in benefits:
+        meta = extra_karty[k['id']]
+        k['forma'] = forma_karty(k, meta.get('rodzaj_zrodlowy'), reguly)
+        d = decyzje.get(k['id'])
+        powod, zrodlo, uwaga = None, None, None
+        if d:
+            if d['stosowanie'] == 'usun':
+                powod, zrodlo, uwaga = d['powod'], 'decyzja_wlasciciela', d.get('uwaga')
+            elif d['stosowanie'] == 'wstrzymane':
+                k['flagi'].append('Właściciel wskazał usunięcie, ale nie ustalono powodu — do potwierdzenia.')
+            if d.get('sygnal'):
+                meta['sygnal_kwalifikacji'] = d['sygnal']
+        elif meta['pochodzenie'] == 'automat':
+            kw = meta.get('kwalifikacja_automatu') or {}
+            if kw.get('socjal') is False:
+                powod, zrodlo, uwaga = kw.get('powod'), 'regula_skryptu_mapy', kw.get('regula')
+        elif meta['pochodzenie'].startswith('reczna_'):
+            rodzaj = slug(meta.get('rodzaj_zrodlowy') or '').replace('-', '_')
+            ident = meta.get('zrodlo_id') or ''
+            powod = next((v for p, v in (rr.get('rodzaj_prefiks') or {}).items() if rodzaj.startswith(p)), None) \
+                or next((v for p, v in (rr.get('id_prefiks') or {}).items() if ident.startswith(p)), None)
+            zrodlo = 'regula_kart_recznych' if powod else None
+        if powod:
+            poza.append({'id': k['id'], 'nazwa': k['nazwa'], 'powod': powod, 'opis_powodu': opisy.get(powod),
+                         'zrodlo_decyzji': zrodlo, 'uwaga': uwaga, 'forma': k['forma'],
+                         'pochodzenie': meta['pochodzenie']})
+            del extra_karty[k['id']]
+        else:
+            zostaja.append(k)
+    return zostaja, poza
+
+
 def generuj(socjal: Path, wynik: Path, na_dzien: str):
     for paczka in PACZKI_RECZNE:
         for relative in (paczka['karty'], paczka['historia']):
@@ -790,8 +852,10 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
                  'status_zrodlowy': src.get('status_weryfikacji'),
                  'artykuly': article_refs, 'jednostki': sorted(set(wszystkich)),
                  'historia_parametr': None, 'sporne': src.get('sporne') or [],
-                 'nieustalone_zrodla': src.get('nieustalone') or []}
+                 'nieustalone_zrodla': src.get('nieustalone') or [],
+                 'kwalifikacja_automatu': src.get('kwalifikacja')}
     uzupelnij_notatkami(socjal, benefits, extra_karty, na_dzien)
+    benefits, poza_mapa = kwalifikuj_do_mapy(socjal, benefits, extra_karty)
     if not benefits: raise BladSocjal('Brak kart do publikacji.')
     ids = [b['id'] for b in benefits]
     if len(ids) != len(set(ids)):
@@ -840,7 +904,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
            'mieszkanie_energia':'mieszkanie i energia','edukacja':'edukacja', 'cudzoziemiec':'cudzoziemiec'}}
     extras = {'kontrakt': 'socjal-1', 'na_dzien': na_dzien,
               'karty': extra_karty, 'artykuly': sorted(artykuly.values(), key=lambda a: a['id']),
-              'historia': historia, 'pominiete_duplikaty': pominiete,
+              'historia': historia, 'pominiete_duplikaty': pominiete, 'poza_mapa': poza_mapa,
               'statystyki': {'reczne': sum(v['pochodzenie'].startswith('reczna_') for v in extra_karty.values()),
                             'automatyczne': sum(v['pochodzenie']=='automat' for v in extra_karty.values()),
                             'z_notatek': sum(v['pochodzenie']=='notatka' for v in extra_karty.values())}}
@@ -851,7 +915,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
     (wynik / 'akty').mkdir(parents=True, exist_ok=True)
     (wynik / 'akty/SHA256SUMS').write_text('', encoding='utf-8')
     manifest = {'kontrakt': KONTRAKT, 'wygenerowano': datetime.now(timezone.utc).isoformat(),
-                'wersja_kodu': 'importuj_socjal-1.3', 'na_dzien': na_dzien,
+                'wersja_kodu': 'importuj_socjal-1.4', 'na_dzien': na_dzien,
                 'pliki': {f: sha(wynik / f) for f in PODSTAWOWE},
                 'zakres': sorted(akty_meta),
                 'liczby': {'korzysci': len(benefits), 'akty': len(acts), 'pliki_aktow': 0},

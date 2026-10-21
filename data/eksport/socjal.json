@@ -2,169 +2,6 @@
   "kontrakt": "socjal-1",
   "na_dzien": "2026-10-21",
   "karty": {
-    "FUS-emerytura-powszechna": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "emerytura_powszechna",
-      "rodzaj_zrodlowy": "emerytura_wariant",
-      "status_zrodlowy": "kandydat_zweryfikowany_w_zakresie_1_56",
-      "artykuly": [
-        "DU-1998-1118-art-24",
-        "DU-1998-1118-art-24a",
-        "DU-1998-1118-art-25",
-        "DU-1998-1118-art-25a",
-        "DU-1998-1118-art-26",
-        "DU-1998-1118-art-26c"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_24-pass_1@obowiazujace",
-        "DU/1998/1118#arti_25-pass_1@obowiazujace",
-        "DU/1998/1118#arti_25-pass_1b@obowiazujace",
-        "DU/1998/1118#arti_25-pass_1d@obowiazujace",
-        "DU/1998/1118#arti_25-pass_12@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_2a@obowiazujace",
-        "DU/1998/1118#arti_26-pass_1@obowiazujace",
-        "DU/1998/1118#arti_26-pass_4@obowiazujace",
-        "DU/1998/1118#arti_26-pass_5@obowiazujace",
-        "DU/1998/1118#arti_26-pass_6@obowiazujace",
-        "DU/1998/1118#arti_24a-pass_1@obowiazujace",
-        "DU/1998/1118#arti_24a-pass_6@obowiazujace",
-        "DU/1998/1118#arti_26c-pass_1@obowiazujace",
-        "DU/1998/1118#arti_26c-pass_3@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Warunki opisano według PDF ze stanem 2026-10-16. Konkretne dawne kwoty/warunki wymagają wersji aktu i zewnętrznych parametrów z właściwego okresu; nie przenosić dzisiejszego wieku/stażu wstecz.",
-      "odsylacze_do_sprawdzenia": [
-        "Art. 85–94: minimum i waloryzacja wypłacanego świadczenia; art. 103a: wypłata a zatrudnienie.",
-        "Art. 173–175,185: kapitał początkowy; art. 183,184: mieszana i zachowane prawa.",
-        "Ustawa13.10.1998 o systemie ubezpieczeń społecznych art. 40a: subkonto.",
-        "Komunikaty ministra art. 25 ust. 12 (roczne i kwartalne wskaźniki składek), komunikaty GUS art. 26 ust. 4 (tablice życia).",
-        "Okresowa emerytura kapitałowa: ustawa 21.11.2008.",
-        "Art. 25 ust. 1b: wymaga osobnego badania historii nowelizacji i konsekwencji wyroków TK dla poszczególnych roczników."
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Emerytura powszechna.md",
-      "opis_kwoty_z_notatki": "(zwaloryzowane składki na koncie + zwaloryzowany kapitał początkowy + uwzględniane środki subkonta − ustawowe pomniejszenia)/średnie dalsze trwanie życia w miesiącach, art. 25–26; zależne od indywidualnego konta, daty i tablic GUS. Gwarancja minimum wymaga art. 87, a nie samego osiągnięcia wieku.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-emerytura-stare-zasady": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "emerytura_stare_zasady",
-      "rodzaj_zrodlowy": "emerytura_wariant",
-      "status_zrodlowy": "kandydat_zweryfikowany_w_zakresie_1_56",
-      "artykuly": [
-        "DU-1998-1118-art-27",
-        "DU-1998-1118-art-27a",
-        "DU-1998-1118-art-28",
-        "DU-1998-1118-art-53",
-        "DU-1998-1118-art-54",
-        "DU-1998-1118-art-54a",
-        "DU-1998-1118-art-55",
-        "DU-1998-1118-art-55a"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_27@obowiazujace",
-        "DU/1998/1118#arti_27-pint_1@obowiazujace",
-        "DU/1998/1118#arti_27-pint_2@obowiazujace",
-        "DU/1998/1118#arti_28@obowiazujace",
-        "DU/1998/1118#arti_28-pint_2@obowiazujace",
-        "DU/1998/1118#arti_27a@obowiazujace",
-        "DU/1998/1118#arti_53-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_53-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_53-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_54@obowiazujace",
-        "DU/1998/1118#arti_54a-pass_2@obowiazujace",
-        "DU/1998/1118#arti_55@obowiazujace",
-        "DU/1998/1118#arti_55a-pass_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Warunki opisano według PDF ze stanem 2026-10-16. Konkretne dawne kwoty/warunki wymagają wersji aktu i zewnętrznych parametrów z właściwego okresu; nie przenosić dzisiejszego wieku/stażu wstecz.",
-      "odsylacze_do_sprawdzenia": [
-        "Art. 85,88–94: minimum i coroczne waloryzacje; komunikaty GUS o kwocie bazowej art. 19–20.",
-        "Art. 15–23 i rozporządzenie z art. 22: podstawa wymiaru.",
-        "Art. 55a zawiera literalne odesłanie do art. 27 ust. 2 i3, choć współczesny art. 27 ma pkt 1 i2: zachować cytat i zbadać historię, nie naprawiać automatycznie."
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Emerytura - stare zasady.md",
-      "opis_kwoty_z_notatki": "24% kwoty bazowej + 1,3% podstawy wymiaru za każdy rok składkowy + 0,7% podstawy wymiaru za każdy rok nieskładkowy (pełne miesiące), art. 53. Podstawa z art. 15–23; minimum i waloryzacja do połączenia z art. 85–94.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-emerytura-wczesniejsza-art29": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "emerytura_wczesniejsza_art29",
-      "rodzaj_zrodlowy": "emerytura_wariant",
-      "status_zrodlowy": "kandydat_zweryfikowany_w_zakresie_1_56",
-      "artykuly": [
-        "DU-1998-1118-art-29",
-        "DU-1998-1118-art-46",
-        "DU-1998-1118-art-53"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_29-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_29-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_29-pass_2-pint_1@obowiazujace",
-        "DU/1998/1118#arti_29-pass_2-pint_2@obowiazujace",
-        "DU/1998/1118#arti_29-pass_3@obowiazujace",
-        "DU/1998/1118#arti_46-pass_1@obowiazujace",
-        "DU/1998/1118#arti_46-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_46-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_53-pass_1-pint_1@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Warunki opisano według PDF ze stanem 2026-10-16. Konkretne dawne kwoty/warunki wymagają wersji aktu i zewnętrznych parametrów z właściwego okresu; nie przenosić dzisiejszego wieku/stażu wstecz.",
-      "odsylacze_do_sprawdzenia": [
-        "Art. 5–11 staż; art. 12–14 orzecznictwo; art. 15–23 podstawa; art. 53,56 kwota; art. 85–94 minimum/waloryzacja."
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Wcześniejsza emerytura pracownicza.md",
-      "opis_kwoty_z_notatki": "24% kwoty bazowej + 1,3% podstawy wymiaru za każdy rok składkowy + 0,7% podstawy wymiaru za każdy rok nieskładkowy (pełne miesiące), art. 53. Podstawa z art. 15–23; minimum i waloryzacja do połączenia z art. 85–94.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-emerytura-wypadkowa-art31": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "emerytura_wypadkowa_art31",
-      "rodzaj_zrodlowy": "emerytura_wariant",
-      "status_zrodlowy": "kandydat_zweryfikowany_w_zakresie_1_56",
-      "artykuly": [
-        "DU-1998-1118-art-31",
-        "DU-1998-1118-art-53"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_31@obowiazujace",
-        "DU/1998/1118#arti_31-pint_1@obowiazujace",
-        "DU/1998/1118#arti_31-pint_2@obowiazujace",
-        "DU/1998/1118#arti_53-pass_1-pint_1@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Warunki opisano według PDF ze stanem 2026-10-16. Konkretne dawne kwoty/warunki wymagają wersji aktu i zewnętrznych parametrów z właściwego okresu; nie przenosić dzisiejszego wieku/stażu wstecz.",
-      "odsylacze_do_sprawdzenia": [
-        "Odrębne ustawy rent wypadkowych i chorób zawodowych; w art. 31 istniejące prawo do renty jest warunkiem.",
-        "Art. 15–23,53,56,85–94: kwota i minimum/waloryzacja."
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Wcześniejsza emerytura a renta wypadkowa.md",
-      "opis_kwoty_z_notatki": "24% kwoty bazowej + 1,3% podstawy wymiaru za każdy rok składkowy + 0,7% podstawy wymiaru za każdy rok nieskładkowy (pełne miesiące), art. 53. Podstawa z art. 15–23; minimum i waloryzacja do połączenia z art. 85–94.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-emerytura-szczegolne-warunki": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "emerytura_szczegolne_warunki",
-      "rodzaj_zrodlowy": "emerytura_wariant",
-      "status_zrodlowy": "kandydat_zweryfikowany_w_zakresie_1_56",
-      "artykuly": [
-        "DU-1998-1118-art-32",
-        "DU-1998-1118-art-46"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_32-pass_1@obowiazujace",
-        "DU/1998/1118#arti_32-pass_1a-pint_1@obowiazujace",
-        "DU/1998/1118#arti_32-pass_2@obowiazujace",
-        "DU/1998/1118#arti_32-pass_3@obowiazujace",
-        "DU/1998/1118#arti_32-pass_4@obowiazujace",
-        "DU/1998/1118#arti_32-pass_5@obowiazujace",
-        "DU/1998/1118#arti_46-pass_1-pint_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Warunki opisano według PDF ze stanem 2026-10-16. Konkretne dawne kwoty/warunki wymagają wersji aktu i zewnętrznych parametrów z właściwego okresu; nie przenosić dzisiejszego wieku/stażu wstecz.",
-      "odsylacze_do_sprawdzenia": [
-        "Rozporządzenie RM7.02.1983 w sprawie wieku emerytalnego pracowników zatrudnionych w szczególnych warunkach lub w szczególnym charakterze: pozyskać metrykę, wszystkie wersje, wykazyA/B i przepisy przejściowe.",
-        "Art. 184: zachowane uprawnienia z wymaganym stażem na 1.01.1999 do opracowania w dalszym zakresie.",
-        "Art. 15–23,53,56 i 85–94: kwota."
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Emerytura za szczególne warunki lub charakter pracy.md",
-      "opis_kwoty_z_notatki": "24% kwoty bazowej + 1,3% podstawy wymiaru za każdy rok składkowy + 0,7% podstawy wymiaru za każdy rok nieskładkowy (pełne miesiące), art. 53. Podstawa z art. 15–23; minimum i waloryzacja do połączenia z art. 85–94.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
     "FUS-emerytura-tworcza": {
       "pochodzenie": "reczna_FUS",
       "zrodlo_id": "emerytura_tworcza",
@@ -187,111 +24,11 @@
         "Rozporządzenie RM7.02.1983 i historyczne wykazy zawodów twórczych/artystycznych; art. 15–23,53,56,85–94."
       ],
       "plik_notatki": "Swiadczenia/FUS/Emerytura z działalności twórczej lub artystycznej.md",
-      "opis_kwoty_z_notatki": "24% kwoty bazowej + 1,3% podstawy wymiaru za każdy rok składkowy + 0,7% podstawy wymiaru za każdy rok nieskładkowy (pełne miesiące), art. 53. Podstawa z art. 15–23; minimum i waloryzacja do połączenia z art. 85–94.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-emerytura-obnizony-wiek-gorniczy": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "emerytura_obnizony_wiek_gorniczy",
-      "rodzaj_zrodlowy": "emerytura_wariant",
-      "status_zrodlowy": "kandydat_zweryfikowany_w_zakresie_1_56",
-      "artykuly": [
-        "DU-1998-1118-art-39",
-        "DU-1998-1118-art-46",
-        "DU-1998-1118-art-52"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_39@obowiazujace",
-        "DU/1998/1118#arti_39-pint_1@obowiazujace",
-        "DU/1998/1118#arti_39-pint_2@obowiazujace",
-        "DU/1998/1118#arti_46-pass_1@obowiazujace",
-        "DU/1998/1118#arti_52-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_52-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_52-pass_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Warunki opisano według PDF ze stanem 2026-10-16. Konkretne dawne kwoty/warunki wymagają wersji aktu i zewnętrznych parametrów z właściwego okresu; nie przenosić dzisiejszego wieku/stażu wstecz.",
-      "odsylacze_do_sprawdzenia": [
-        "Katalog pracy art. 50c; ewidencja i wykazy stanowisk.",
-        "Art. 15–23,53,56,85–94 i przepisy przejściowe."
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Obniżony wiek za pracę górniczą.md",
-      "opis_kwoty_z_notatki": "24% kwoty bazowej + 1,3% podstawy wymiaru za każdy rok składkowy + 0,7% podstawy wymiaru za każdy rok nieskładkowy (pełne miesiące), art. 53. Podstawa z art. 15–23; minimum i waloryzacja do połączenia z art. 85–94. Do odpowiednich emerytur z art. 52 przeliczniki pracy górniczej 1,5 lub 1,8 przy co najmniej 5 latach; po przelicznikach max 40 lat.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-emerytura-kolejowa": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "emerytura_kolejowa",
-      "rodzaj_zrodlowy": "emerytura_wariant",
-      "status_zrodlowy": "kandydat_zweryfikowany_w_zakresie_1_56",
-      "artykuly": [
-        "DU-1998-1118-art-40",
-        "DU-1998-1118-art-41",
-        "DU-1998-1118-art-42",
-        "DU-1998-1118-art-43",
-        "DU-1998-1118-art-50",
-        "DU-1998-1118-art-53"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_40@obowiazujace",
-        "DU/1998/1118#arti_40-pint_1@obowiazujace",
-        "DU/1998/1118#arti_40-pint_2@obowiazujace",
-        "DU/1998/1118#arti_41@obowiazujace",
-        "DU/1998/1118#arti_42-pass_1@obowiazujace",
-        "DU/1998/1118#arti_43-pass_2@obowiazujace",
-        "DU/1998/1118#arti_50-pass_1@obowiazujace",
-        "DU/1998/1118#arti_50-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_50-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_53-pass_1-pint_1@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Warunki opisano według PDF ze stanem 2026-10-16. Konkretne dawne kwoty/warunki wymagają wersji aktu i zewnętrznych parametrów z właściwego okresu; nie przenosić dzisiejszego wieku/stażu wstecz.",
-      "odsylacze_do_sprawdzenia": [
-        "Art. 15–23,53,56,85–94; art. 184 zachowane uprawnienia do sprawdzenia osobno.",
-        "Art. 43 ust. 2 uprzywilejowanego stażu nie podstawiać automatycznie jako przelicznika wysokości świadczenia."
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Emerytura kolejowa.md",
-      "opis_kwoty_z_notatki": "24% kwoty bazowej + 1,3% podstawy wymiaru za każdy rok składkowy + 0,7% podstawy wymiaru za każdy rok nieskładkowy (pełne miesiące), art. 53. Podstawa z art. 15–23; minimum i waloryzacja do połączenia z art. 85–94.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-emerytura-gornicza": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "emerytura_gornicza",
-      "rodzaj_zrodlowy": "emerytura_wariant",
-      "status_zrodlowy": "kandydat_zweryfikowany_w_zakresie_1_56",
-      "artykuly": [
-        "DU-1998-1118-art-50a",
-        "DU-1998-1118-art-50b",
-        "DU-1998-1118-art-50c",
-        "DU-1998-1118-art-50d",
-        "DU-1998-1118-art-50e",
-        "DU-1998-1118-art-51",
-        "DU-1998-1118-art-53"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_50a-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_50a-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_50a-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_50a-pass_2@obowiazujace",
-        "DU/1998/1118#arti_50b@obowiazujace",
-        "DU/1998/1118#arti_50c-pass_1@obowiazujace",
-        "DU/1998/1118#arti_50d-pass_1@obowiazujace",
-        "DU/1998/1118#arti_50d-pass_3@obowiazujace",
-        "DU/1998/1118#arti_50e-pass_1@obowiazujace",
-        "DU/1998/1118#arti_50e-pass_2-pint_1@obowiazujace",
-        "DU/1998/1118#arti_50e-pass_2-pint_2@obowiazujace",
-        "DU/1998/1118#arti_50e-pass_2-pint_3@obowiazujace",
-        "DU/1998/1118#arti_50e-pass_3@obowiazujace",
-        "DU/1998/1118#arti_51-pass_1@obowiazujace",
-        "DU/1998/1118#arti_51-pass_2@obowiazujace",
-        "DU/1998/1118#arti_53-pass_1-pint_1@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Warunki opisano według PDF ze stanem 2026-10-16. Konkretne dawne kwoty/warunki wymagają wersji aktu i zewnętrznych parametrów z właściwego okresu; nie przenosić dzisiejszego wieku/stażu wstecz.",
-      "odsylacze_do_sprawdzenia": [
-        "Art. 50c ust. 1 pkt 4–5: rozporządzenia wykazów stanowisk odkrywkowych i dozoru.",
-        "Art. 50d ust. 3: rozporządzenie stanowisk półtorakrotnych; ust. 4: ewidencja okresów pracodawcy.",
-        "Art. 15–23,53,56,85–94; historyczne art. 34–38,48–49 wymagają dawnych wersji i reguł zmiany 2006/2007."
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Emerytura górnicza.md",
-      "opis_kwoty_z_notatki": "24% kwoty bazowej + 1,3% podstawy wymiaru za każdy rok składkowy + 0,7% podstawy wymiaru za każdy rok nieskładkowy (pełne miesiące), art. 53. Podstawa z art. 15–23; minimum i waloryzacja do połączenia z art. 85–94. Wysokość z przelicznikami art. 51:1,5 pod ziemią stale pełny etat;1,8 prace art. 50d;1,4 wskazane częściowo powierzchniowe/podziemne;1,2 odkrywki/otworowe siarki. Łączny okres po przeliczeniu najwyżej 45 lat.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
+      "opis_kwoty_z_notatki": "24% kwoty bazowej + 1,3% podstawy wymiaru za każdy rok składkowy + 0,7% podstawy wymiaru za każdy rok nieskładkowy (pełne miesiące), art. 53. Podstawa z art. 15–23; minimum i waloryzacja do połączenia z art. 85–94.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]].",
+      "sygnal_kwalifikacji": {
+        "powod": "wariant_warunkow",
+        "uwaga": "wariant warunków emerytury, jak usunięte emerytury górnicza i kolejowa"
+      }
     },
     "FUS-wyplata-gwarantowana": {
       "pochodzenie": "reczna_FUS",
@@ -322,35 +59,6 @@
       ],
       "plik_notatki": "Swiadczenia/FUS/Wypłata gwarantowana po śmierci emeryta.md",
       "opis_kwoty_z_notatki": "Jednorazowo S−n×S/37: S=kwota środków zewidencjonowanych na subkoncie uwzględnionych w art. 25 ust. 1; n=liczba pełnych miesięcy od początku miesiąca pierwszej emerytury do końca miesiąca śmierci. Kwota podzielona według wskazanych udziałów, a bez ich określenia po równo.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-zwiekszenie-rolne": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "zwiekszenie_rolne",
-      "rodzaj_zrodlowy": "zwiekszenie_swiadczenia",
-      "status_zrodlowy": "kandydat_zweryfikowany_w_zakresie_1_56",
-      "artykuly": [
-        "DU-1998-1118-art-26a",
-        "DU-1998-1118-art-56"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_26a-pass_1@obowiazujace",
-        "DU/1998/1118#arti_26a-pass_2@obowiazujace",
-        "DU/1998/1118#arti_26a-pass_3@obowiazujace",
-        "DU/1998/1118#arti_56-pass_1@obowiazujace",
-        "DU/1998/1118#arti_56-pass_2@obowiazujace",
-        "DU/1998/1118#arti_56-pass_3@obowiazujace",
-        "DU/1998/1118#arti_56-pass_4@obowiazujace",
-        "DU/1998/1118#arti_56-pass_5@obowiazujace",
-        "DU/1998/1118#arti_56-pass_6@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Warunki opisano według PDF ze stanem 2026-10-16. Konkretne dawne kwoty/warunki wymagają wersji aktu i zewnętrznych parametrów z właściwego okresu; nie przenosić dzisiejszego wieku/stażu wstecz.",
-      "odsylacze_do_sprawdzenia": [
-        "Ustawa20.12.1990 o ubezpieczeniu społecznym rolników: część składkowa, emerytura podstawowa, właściwe okresy i jej historyczne brzmienia.",
-        "Komunikaty o emeryturze podstawowej KRUS oraz waloryzacje; zaświadczenie KRUS o faktycznych składkach."
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Zwiększenie emerytury za okresy rolnicze.md",
-      "opis_kwoty_z_notatki": "Według zasad części składkowej emerytury rolniczej z ustawy o ubezpieczeniu społecznym rolników; nie da się podać kwoty z samej ustawy FUS. Art. 56 ust. 1 w razie uzupełnienia stażu określa także proporcję części FUS: świadczenie art. 53 z okresami rolniczymi ×(staż składkowy+nieskładkowy)/(te okresy+uwzględnione rolne), z wyjątkiem ust. 2.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
     },
     "FUS-renta-niezdolnosc-calkowita": {
       "pochodzenie": "reczna_FUS",
@@ -819,183 +527,6 @@
       "plik_notatki": "Swiadczenia/FUS/Renta wdowia - zbieg świadczeń.md",
       "opis_kwoty_z_notatki": "Do wyboru: 100% renty rodzinnej i część własnego świadczenia albo 100% własnego świadczenia i część renty rodzinnej. Udział drugiego świadczenia: 15% od 1 lipca 2025 do 31 grudnia 2026 r.; 25% od 1 stycznia 2027 r. (DU/2024/1243, art. 13). Limit łączny to trzykrotność najniższej emerytury: od 1 marca 2026 r. wyliczenie daje 5 935,47 zł. Do limitu wlicza się też świadczenia zagraniczne i wskazane dodatki. Art. 95b przewiduje szczególne zbiegi z rentą wypadkową; wymagają zachowania odrębnych wariantów.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
     },
-    "FUS-c-przeliczenie-skladki": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_przeliczenie_skladki",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-108"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_108-pass_1@obowiazujace",
-        "DU/1998/1118#arti_108-pass_2@obowiazujace",
-        "DU/1998/1118#arti_108-pass_3@obowiazujace",
-        "DU/1998/1118#arti_108-pass_4@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 25/25a; art. 26(3) i tablice GUS dla daty wniosku; art. 108(2a) i DU2008/1507 art. 25; historia częstotliwości wniosków 108/113"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Powiększenie emerytury o składki po jej przyznaniu.md",
-      "opis_kwoty_z_notatki": "Dodatkowe zwaloryzowane składki / średnie dalsze trwanie życia w miesiącach dla wieku w dniu nowego wniosku. Podstawa według ust. 4–5.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-przeliczenie-podstawa": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_przeliczenie_podstawa",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-109",
-        "DU-1998-1118-art-111"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_111-pass_1@obowiazujace",
-        "DU/1998/1118#arti_111-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_111-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_111-pass_2@obowiazujace",
-        "DU/1998/1118#arti_109-pass_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 15–18; art. 53/62/73; art. 176; historyczne art. 110/110a"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Ponowne obliczenie emerytury-renty od lepszej podstawy.md",
-      "opis_kwoty_z_notatki": "Podstawa z art. 15 według wyższego wskaźnika; wskaźnik × kwota bazowa ostatnio przyjęta; waloryzacje do wniosku.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-przeliczenie-okresy": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_przeliczenie_okresy",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-112",
-        "DU-1998-1118-art-113"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_112-pass_1@obowiazujace",
-        "DU/1998/1118#arti_112-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_112-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_112-pass_2@obowiazujace",
-        "DU/1998/1118#arti_113-pass_1@obowiazujace",
-        "DU/1998/1118#arti_113-pass_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 6; art. 62(2); art. 73(1); nowelizacja 2021 częstotliwości/uchylenia110/110a"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Podwyższenie przez doliczenie okresów składkowych.md",
-      "opis_kwoty_z_notatki": "1,3% zwaloryzowanej podstawy za każdy rok (pełne miesiące); dla częściowej niezdolności i rodzinnej procent z art. 62(2)/73(1).\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-wyplata-zaliczkowa": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_wyplata_zaliczkowa",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-120"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_120-pass_1@obowiazujace",
-        "DU/1998/1118#arti_120-pass_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 139(1)(1); odpowiednia podstawa świadczenia"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Zaliczkowa wypłata należnego świadczenia.md",
-      "opis_kwoty_z_notatki": "Kwota zbliżona do przewidywanego świadczenia; brak stałej ustawowej kwoty.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-zwolnienie-oplat": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_zwolnienie_oplat",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-121"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_121-pass_1@obowiazujace",
-        "DU/1998/1118#arti_121-pass_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "DU2004/2135 art. 16(4) i jego brzmienie w analizowanym dniu"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Zwolnienie z opłat przy ubieganiu się o świadczenia.md",
-      "opis_kwoty_z_notatki": "Pełne zwolnienie w zakresie przepisu, brak transferu pieniężnego.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-bezplatne-poswiadczenia": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_bezplatne_poswiadczenia",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-122",
-        "DU-1998-1118-art-128"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_122-pass_2@obowiazujace",
-        "DU/1998/1118#arti_122-pass_3@obowiazujace",
-        "DU/1998/1118#arti_128-pass_3@obowiazujace",
-        "DU/1998/1118#arti_128-pass_4@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "Prawoonotariacieart96; formularze zagranicznych instytucji"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Nieodpłatne poświadczanie podpisów w sprawach rentowych.md",
-      "opis_kwoty_z_notatki": "Wskazane poświadczenie bez opłaty.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-wyrownanie-blad": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_wyrownanie_blad",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-133"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_133-pass_1@obowiazujace",
-        "DU/1998/1118#arti_133-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_133-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_133-pass_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 114; art. 118(1a); odsetki: art. 85 ustawy systemowej + rozporządzenie 21.02.1999 do odszukania"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Wyrównanie świadczenia po błędzie organu.md",
-      "opis_kwoty_z_notatki": "Różnica należnych a wypłaconych kwot, od powstania prawa, maksymalnie 3 lata przed miesiącem wniosku/decyzji.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-wyrownanie-wznowienie": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_wyrownanie_wznowienie",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-135"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_135-pass_1@obowiazujace",
-        "DU/1998/1118#arti_135-pass_2@obowiazujace",
-        "DU/1998/1118#arti_135-pass_3@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 134; prawidłowa przyczyna wstrzymania i historia decyzji"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Wznowienie wypłaty i wyrównanie okresu wstrzymania.md",
-      "opis_kwoty_z_notatki": "Zasadniczo od ustania przyczyny, nie wcześniej niż wniosek/decyzja; przy niedoręczeniu lub błędzie od wstrzymania, nie dalej niż 3 lata przed właściwym miesiącem.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
     "FUS-c-niezrealizowane-swiadczenia": {
       "pochodzenie": "reczna_FUS",
       "zrodlo_id": "c_niezrealizowane_swiadczenia",
@@ -1019,102 +550,6 @@
       "plik_notatki": "Swiadczenia/FUS/Niezrealizowane świadczenia po zmarłym.md",
       "opis_kwoty_z_notatki": "Świadczenia należne zmarłemu do dnia śmierci, ustalane według jego prawa; brak nowej stawki ryczałtowej.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
     },
-    "FUS-c-odstapienie-zwrot": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_odstapienie_zwrot",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-138"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_138-pass_6@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 138(1–5); art. 140(4)(1); kryteria praktyki ZUS i orzecznictwa jeśli dodawane jako objaśnienie"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Odstąpienie od żądania zwrotu i ulgi w potrąceniach.md",
-      "opis_kwoty_z_notatki": "Całość lub część dochodzonej kwoty; zmniejszone potrącenie albo jego zawieszenie do 12 miesięcy. Brak stałej kwoty.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-ochrona-potracenia": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_ochrona_potracenia",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-141",
-        "DU-1998-1118-art-141a"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_141-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_141-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_141-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_141-pass_1-pint_4@obowiazujace",
-        "DU/1998/1118#arti_141-pass_1a@obowiazujace",
-        "DU/1998/1118#arti_141-pass_1b@obowiazujace",
-        "DU/1998/1118#arti_141a@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 94(2)(3); wszystkie roczne komunikaty kwot wolnych; nowelizacjekwot (szczególnie 2018); art. 140"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Kwota emerytury-renty wolna od potrąceń i egzekucji.md",
-      "opis_kwoty_z_notatki": "Kwoty bazowe 500/825/660/200 zł zart 141(1), corocznie waloryzowane 1 marca; bieżąca kwota z komunikatuZUSart 94(2)(3). Udziały i wyjątkiart 141(2–5), limity procentowe 140.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-kapital-poczatkowy": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_kapital_poczatkowy",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-173",
-        "DU-1998-1118-art-174",
-        "DU-1998-1118-art-177"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_173-pass_1@obowiazujace",
-        "DU/1998/1118#arti_173-pass_2@obowiazujace",
-        "DU/1998/1118#arti_173-pass_3@obowiazujace",
-        "DU/1998/1118#arti_174-pass_1@obowiazujace",
-        "DU/1998/1118#arti_174-pass_8@obowiazujace",
-        "DU/1998/1118#arti_174-pass_13@obowiazujace",
-        "DU/1998/1118#arti_177@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 15–18/25/25a/26/53; tablice GUS; DU2000/846; załącznik do ustawy; historia uprawnień/opieki173–174"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Kapitał początkowy jako część podstawy emerytury.md",
-      "opis_kwoty_z_notatki": "Kwota emerytury hipotetycznej zart 174×dalsze trwanie życia dla 62 lat; stan 1.01.1999 i kolejne waloryzacje; nie wypłaca się oddzielnie.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-zachowane-przed1999": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_zachowane_przed1999",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-180"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_180-pass_1@obowiazujace",
-        "DU/1998/1118#arti_180-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_180-pass_2@obowiazujace",
-        "DU/1998/1118#arti_180-pass_6@obowiazujace",
-        "DU/1998/1118#arti_180-pass_7@obowiazujace",
-        "DU/1998/1118#arti_180-pass_8@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 195 i wszystkie dawne ustawy właściwe dla osoby; art. 56/51/52/73; historyczne 110/111"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Zachowane emerytury i renty przyznane przed reformą.md",
-      "opis_kwoty_z_notatki": "Dotychczasowa kwota plus ustawowe waloryzacje; zwiększenia rolne art. 56 z warunkami 180(2–3), możliwe przeliczenia.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
     "FUS-c-gornicza-wdowa": {
       "pochodzenie": "reczna_FUS",
       "zrodlo_id": "c_gornicza_wdowa",
@@ -1134,7 +569,11 @@
         "Dawna ustawaozaopatrzeniugórników 1.02.1983; art. 180/73/74/131"
       ],
       "plik_notatki": "Swiadczenia/FUS/Zachowana górnicza renta rodzinna dla ponownie zamężnej wdowy.md",
-      "opis_kwoty_z_notatki": "Zachowana renta według dawnego reżimu, następnie przepisy przejściowe/waloryzacje; art. 181 nie ustala osobnej stawki.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
+      "opis_kwoty_z_notatki": "Zachowana renta według dawnego reżimu, następnie przepisy przejściowe/waloryzacje; art. 181 nie ustala osobnej stawki.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]].",
+      "sygnal_kwalifikacji": {
+        "powod": "historyczne_przejsciowe",
+        "uwaga": "zachowane dawne prawo, jak usunięte „zachowane emerytury przed reformą”"
+      }
     },
     "FUS-c-emerytura-mieszana": {
       "pochodzenie": "reczna_FUS",
@@ -1161,173 +600,11 @@
         "art. 26/53/108; historyczne warunkiOFE; odpowiednie punkty 183(2–5) zawierają wagi"
       ],
       "plik_notatki": "Swiadczenia/FUS/Emerytura obliczana metodą mieszaną.md",
-      "opis_kwoty_z_notatki": "Wagi art. 53/art. 26:2009=80/20;2010=70/30;2011=55/45;2012=35/65;2013–2014=20/80 (%).\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-emerytura-184": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_emerytura_184",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-184"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_184-pass_1@obowiazujace",
-        "DU/1998/1118#arti_184-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_184-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_184-pass_2@obowiazujace",
-        "DU/1998/1118#arti_184-pass_3@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 24/26/27/32/33/39/40/183/185; rozporządzenieRM7.02.1983DU1983/43 i historyczne wykazy pracy; historia rozwiązaniastosunku pracy 184(2)"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Wcześniejsza emerytura na podstawie art. 184.md",
-      "opis_kwoty_z_notatki": "Indywidualna emerytura właściwej formułyart 26 i ewentualnie 183; korekta konta 19,52/12,22 przy przekazaniuOFE; przeliczenia kapitału 185.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-kapital-185": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_kapital_185",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-185"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_185-pass_1@obowiazujace",
-        "DU/1998/1118#arti_185-pass_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 24(wariantdla daty);173(3–6);174"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Podwyższenie kapitału przy wcześniejszej emeryturze art. 184.md",
-      "opis_kwoty_z_notatki": "Do okresów składkowych dodaje się różnicę między wiekiem powszechnym zart 24 a faktycznym wiekiem przejścia, w pełnych miesiącach; kapitał przeliczany i waloryzowany.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-kapital-studia": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_kapital_studia",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-185a"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_185a-pass_1@obowiazujace",
-        "DU/1998/1118#arti_185a-pass_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "art. 7 pkt 9;173(3–6);174; data dodania 185a"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Uwzględnienie studiów przy przeliczeniu kapitału początkowego.md",
-      "opis_kwoty_z_notatki": "Dodanie okresów studiów sprzed 1999 do limitu 1/3 okresów składkowych udowodnionych do wniosku o emeryturę; pełne miesiące; waloryzacja kapitału.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-wczesniejsza-opieka": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_wczesniejsza_opieka",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-186"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_186-pass_3@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "DU1989/149; DU1999/679; TKDU2000/26; zewnętrzne świadczeniewyrównawczeDU2021/2314 (nie mylić z samą emeryturą)"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Zachowane prawo do wcześniejszej emerytury opiekuna dziecka.md",
-      "opis_kwoty_z_notatki": "Według właściwego dawnego reżimu, potem waloryzacje; art. 186(3) i przypis 16 same nie dostarczają kompletnej kwoty.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-emerytura-posel": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_emerytura_posel",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-186"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_186-pass_4@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "DU1996 ustawao wykonywaniumandatu 9.05.1996 art. 28(3) w brzmieniu sprzed 1999; pominiętyart 166 wtekście pierwotnymFUS"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Zachowana dawna emerytura posła lub senatora.md",
-      "opis_kwoty_z_notatki": "Kwota wynikająca z dawnego art. 28(3)ustawyo wykonywaniu mandatu i właściwych zasad emerytalnych.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-wyrownanie-uniewinnienie": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_wyrownanie_uniewinnienie",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-190"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_190-pass_3@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "DU1982/267 art. 85 w historycznym brzmieniu; data i zakres orzeczenia"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Wyrównanie świadczenia wstrzymanego w czasie pozbawienia wolności przed 1999.md",
-      "opis_kwoty_z_notatki": "Cała część świadczenia wstrzymana za okres pozbawienia wolności sprzed wejściaustawy.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-zachowane-zasilki1998": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_zachowane_zasilki1998",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-193"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_193-pass_1@obowiazujace",
-        "DU/1998/1118#arti_193-pass_2@obowiazujace",
-        "DU/1998/1118#arti_193-pass_3@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "Pominięte147/149/154; ustawa 17.12.1974 choroba/macierzynstwo; ustawa 18.12.1976 dzialalnosc; ustawa 17.05.1989 duchowni;195 pkt 2/3"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Dawne zasiłki i świadczenie rehabilitacyjne na przełomie 1998-1999.md",
-      "opis_kwoty_z_notatki": "Wysokość i zasady poprzedniego reżimu za cały nieprzerwany okres niezdolności; rehabilitacyjne po dawnym chorobowym od starej podstawy.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-przeliczenie-baza": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_przeliczenie_baza",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-194a"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_194a-pass_1@obowiazujace",
-        "DU/1998/1118#arti_194a-pass_2@obowiazujace",
-        "DU/1998/1118#arti_194a-pass_4-pint_1@obowiazujace",
-        "DU/1998/1118#arti_194a-pass_4-pint_2@obowiazujace",
-        "DU/1998/1118#arti_194a-pass_5@obowiazujace",
-        "DU/1998/1118#arti_194a-pass_6@obowiazujace",
-        "DU/1998/1118#arti_194a-pass_7@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "Historia194a i nowelizacje 2004–2007; dawne komunikaty kwoty bazowej/roczne waloryzacje"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Przeliczenie świadczeń od pełnej kwoty bazowej.md",
-      "opis_kwoty_z_notatki": "Urodzeni przed 1930:96,5% od 1.03.2005 i 100% od 1.03.2006; urodzeni po 1929:100% od 1.03.2008; odtworzenie waloryzacji, renta rodzinna jako procent przeliczonego świadczenia zmarłego.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
+      "opis_kwoty_z_notatki": "Wagi art. 53/art. 26:2009=80/20;2010=70/30;2011=55/45;2012=35/65;2013–2014=20/80 (%).\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]].",
+      "sygnal_kwalifikacji": {
+        "powod": "mechanizm_obliczenia",
+        "uwaga": "sposób obliczenia emerytury, jak usunięte przeliczenia i kapitał początkowy"
+      }
     },
     "FUS-c-jednorazowa-194b": {
       "pochodzenie": "reczna_FUS",
@@ -1352,63 +629,6 @@
       ],
       "plik_notatki": "Swiadczenia/FUS/Jednorazowa wypłata dla pobierających najniższe świadczenia.md",
       "opis_kwoty_z_notatki": "100 zł emerytura/renta całkowitej niezdolności/renta rodzinna;75 zł renta częściowej niezdolności.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-przeliczenie-zawieszonej": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_przeliczenie_zawieszonej",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-194c",
-        "DU-1998-1118-art-194d",
-        "DU-1998-1118-art-194e",
-        "DU-1998-1118-art-194f",
-        "DU-1998-1118-art-194h"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_194c@obowiazujace",
-        "DU/1998/1118#arti_194d@obowiazujace",
-        "DU/1998/1118#arti_194e-pass_1@obowiazujace",
-        "DU/1998/1118#arti_194e-pass_3@obowiazujace",
-        "DU/1998/1118#arti_194e-pass_4@obowiazujace",
-        "DU/1998/1118#arti_194f@obowiazujace",
-        "DU/1998/1118#arti_194h-pass_1@obowiazujace",
-        "DU/1998/1118#arti_194h-pass_2@obowiazujace",
-        "DU/1998/1118#arti_194h-pass_3@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "DU2011 nowelizacjadodająca 194c–h; art. 103a przypis 9; DU2010/1726 art. 28; TKDU2012/1285; zewnętrznaustawa 13.12.2013 owypłacie zawieszonychemerytur do odszukania"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Jednorazowe ponowne obliczenie emerytury zawieszonej od 2011.md",
-      "opis_kwoty_z_notatki": "art. 53 albo 26 lub odpowiednia metoda mieszana; wnowejformule zrewaloryzowane składki+kapitał minus pierwotna miesięczna emerytura brutto×liczba miesięcy pobierania; wiek na dzień nowego wniosku.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
-    },
-    "FUS-c-przeliczenie-1953": {
-      "pochodzenie": "reczna_FUS",
-      "zrodlo_id": "c_przeliczenie_1953",
-      "rodzaj_zrodlowy": null,
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-1998-1118-art-194i",
-        "DU-1998-1118-art-194j"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_194i@obowiazujace",
-        "DU/1998/1118#arti_194j-pass_1@obowiazujace",
-        "DU/1998/1118#arti_194j-pass_2@obowiazujace",
-        "DU/1998/1118#arti_194j-pass_3@obowiazujace",
-        "DU/1998/1118#arti_194j-pass_4@obowiazujace",
-        "DU/1998/1118#arti_194j-pass_5@obowiazujace",
-        "DU/1998/1118#arti_194j-pass_6@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": [
-        "DU2020/1222 art. 1–3; art. 25(1b); TKP20/16DU2019/539; kolejne orzeczenia/nowelizacjeinne roczniki wymagałyby oddzielnej podstawy"
-      ],
-      "plik_notatki": "Swiadczenia/FUS/Przeliczenie i wyrównanie emerytury rocznika 1953.md",
-      "opis_kwoty_z_notatki": "Bez odjęcia wcześniej pobranych świadczeń wedługart 25(1b); oryginalne dalsze trwanie życia i kolejne waloryzacje. Wyrównanie to suma należna od początku wypłaty/potencjalnej wypłaty minus suma faktycznie wypłacona.\n\nWartości w przepisie, parametry waloryzowane i wynik indywidualnego wyliczenia to różne dane. Historia: [[Historia kwot FUS]] i [[Kwoty i waloryzacja]]."
     },
     "SW-wychowawcze": {
       "pochodzenie": "reczna_SW",
@@ -1534,22 +754,6 @@
       "plik_notatki": "Swiadczenia/SW/SW - Świadczenie wychowawcze w pieczy zastępczej.md",
       "opis_kwoty_z_notatki": "Aktualna kwota z art. 5. W instytucjonalnej pieczy przeznaczana na rozwój zainteresowań i szanse edukacyjne/rozwojowe albo oszczędności; to nie swobodny przychód operatora."
     },
-    "SW-rzeczowa": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "rzeczowa",
-      "rodzaj_zrodlowy": "forma_realizacji",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-15",
-        "DU-2016-195-art-9"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Uart 9 i 15; O zawierał dawny model organu gminnego.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Świadczenie wychowawcze w naturze lub usługach.md",
-      "opis_kwoty_z_notatki": "Całość lub część należnego świadczenia przekazana rzeczowo albo przez opłacenie usług. Brak nowej stawki; podstawą pozostaje należna kwota."
-    },
     "SW-opiekun-kraju": {
       "pochodzenie": "reczna_SW",
       "zrodlo_id": "opiekun_kraju",
@@ -1586,281 +790,6 @@
       "plik_notatki": "Swiadczenia/SW/SW - Świadczenie wychowawcze przy koordynacji zagranicznej.md",
       "opis_kwoty_z_notatki": "Art 5ust 2b odsyła do kwoty ust. 1–2a także gdy ustawodawstwo polskie nie ma pierwszeństwa. Ostateczny zbieg i rozliczenia wymagają prawa UE; nie redukować automatycznie 800o dowolne zagraniczne świadczenie."
     },
-    "SW-przejecie-po-smierci": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "przejecie_po_smierci",
-      "rodzaj_zrodlowy": "ochrona_ciaglosci",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-18",
-        "DU-2016-195-art-25"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Art 18ust 2b–2d i 25ust 2a w obecnym U.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Zachowanie początku prawa przy zmianie opiekuna po śmierci.md",
-      "opis_kwoty_z_notatki": "Nie jest zasiłkiem pogrzebowym ani spadkiem. Ustawa zachowuje właściwy wcześniejszy początek lub datę wniosku, ograniczając podwójną wypłatę za opłacone miesiące."
-    },
-    "SW-ulgi-zwrot": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "ulgi_zwrot",
-      "rodzaj_zrodlowy": "ulga_w_naleznosci",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-25"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "W U „odstąpić od żądania”; w O dawny organ mógł „umorzyć”. Historia chroni właściwą wersję.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Odstąpienie od zwrotu, odroczenie i raty świadczenia.md",
-      "opis_kwoty_z_notatki": "Możliwe odstąpienie od żądania w całości/części, odroczenie terminu lub raty. Brak sztywnej kwoty; zależy od należności i rozstrzygnięcia ZUS."
-    },
-    "SW-wygasniecie-zwrotu": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "wygasniecie_zwrotu",
-      "rodzaj_zrodlowy": "wygaśniecie_zobowiazania",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-25",
-        "DU-2016-195-art-26"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Uart 25ust 12; norma była również w O.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Wygaśnięcie należności zwrotnej po śmierci.md",
-      "opis_kwoty_z_notatki": "Wygasają należności wskazane w art 25ust 2 i 9; nie ma kwotowego ryczałtu."
-    },
-    "SW-koszty-zus": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "koszty_ZUS",
-      "rodzaj_zrodlowy": "transfer_instytucjonalny",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-29"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Uart 29ust 3–5; dawne okresy administracji gminnej mają inne procenty.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Finansowanie obsługi świadczenia przez ZUS.md",
-      "opis_kwoty_z_notatki": "0,1% kwoty przeznaczonej na wypłatę świadczeń wychowawczych. To finansowanie obsługi z budżetu, nie potrącenie 0,1% z 800 zł i nie dodatek rodzica."
-    },
-    "SW-koszty-powiat": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "koszty_powiat",
-      "rodzaj_zrodlowy": "transfer_instytucjonalny",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-29",
-        "DU-2016-195-art-9b"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Uart 29ust 4 pkt 2 i 9bust 3.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Finansowanie szczególnego zadania powiatu.md",
-      "opis_kwoty_z_notatki": "2% wartości świadczeń wychowawczych przekazanych rzeczowo albo jako opłacone usługi. Parametr nie dotyczy wszystkich 800+ wypłacanych w powiecie."
-    },
-    "SW-koszty-gmina-historyczne": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "koszty_gmina_historyczne",
-      "rodzaj_zrodlowy": "historyczny_transfer_instytucjonalny",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-29",
-        "DU-2016-195-art-52",
-        "DU-2016-195-art-53"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Historyczny stanO i przejściowe 52–53; koniec/zmiany w grafie nowelizacji.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Historyczne finansowanie obsługi i wdrożenia w gminach.md",
-      "opis_kwoty_z_notatki": "Oart 29ust 4:1,5% otrzymanej dotacji; szczególnie w 2016art 52:2%. Art 53 przewiduje środki wdrożeniowe uzgodnione przez wojewodę i ministra, pomniejszające kosztobsługi. Nie sumuje się obu procentów."
-    },
-    "SW-dodatek-piecza-historyczny": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "dodatek_piecza_historyczny",
-      "rodzaj_zrodlowy": "historyczne_swiadczenie_docelowe",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-46",
-        "DU-2016-195-art-49"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Start 1.04.2016 z odrębną 3miesięczną regułą wnioskuart 49; dalszy koniec ustala historia.",
-      "odsylacze_do_sprawdzenia": [
-        "Sprawdzić docelowe 80,87,88 ustawy o pieczy i nowele przejścia do ZUS."
-      ],
-      "plik_notatki": "Swiadczenia/SW/SW - Historyczny dodatek wychowawczy w rodzinnej pieczy.md",
-      "opis_kwoty_z_notatki": "Art 46 pkt 1 dodał do ustawy pieczy 80ust 1a: dodatek w wysokości świadczenia wychowawczego, przy starcie 500 zł. Nie utożsamiać z podstawowym świadczeniem na utrzymanie dziecka z 80ust 1 i nie zakładać, że dawny dodatek automatycznie trwa dziś."
-    },
-    "SW-rodzina-pomocowa-historyczna": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "rodzina_pomocowa_historyczna",
-      "rodzaj_zrodlowy": "historyczny_wariant_pobytu",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-46"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Oart 46 pkt 2litc oraz pkt 3lita, historyczna gałąź.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Historyczna część dodatku dla rodziny pomocowej.md",
-      "opis_kwoty_z_notatki": "Świadczenie i dodatki przysługujące rodzinie zastępczej/prowadzącemu dom, proporcjonalnie do dni pobytu u rodziny pomocowej. Nie kolejna pełna 500 zł równolegle za cały miesiąc."
-    },
-    "SW-dodatek-placowka-historyczny": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "dodatek_placowka_historyczny",
-      "rodzaj_zrodlowy": "historyczne_swiadczenie_docelowe",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-46",
-        "DU-2016-195-art-49"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Oart 46 pkt 5 i przejściowyart 49; dalsze rozszerzenia i uchylenia z historii.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Historyczny dodatek do kwoty placówki rodzinnej.md",
-      "opis_kwoty_z_notatki": "Dodatek do zryczałtowanej kwoty w wysokości świadczenia wychowawczego, przy starcie 500 zł. Nie jest całym kosztem utrzymania placówki."
-    },
-    "SW-koszty-piecza-historyczne": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "koszty_piecza_historyczne",
-      "rodzaj_zrodlowy": "historyczny_transfer_instytucjonalny",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-46"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Oart 46 pkt 11; historia dalszych zmian w ustawie pieczy.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Historyczny koszt obsługi dodatków w pieczy.md",
-      "opis_kwoty_z_notatki": "Nowy art 196aust 2 ustawy pieczy:1% otrzymanej dotacji na oba rodzaje dodatków. Wypłata dodatków i obsługa z dotacji budżetu państwa."
-    },
-    "SW-zwolnienie-pit": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "zwolnienie_PIT",
-      "rodzaj_zrodlowy": "ochrona_materialna",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-33"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Art 33O zmienia 21ust 1 pkt 8 i 24; to ślad dodania norm, nie kompletna historia wszystkich ulg PIT.",
-      "odsylacze_do_sprawdzenia": [
-        "Zweryfikować aktualne PIT 21ust 1 pkt 8 i 24; nie mieszać zwolnienia 800+ z odrębną ulgą na dzieci."
-      ],
-      "plik_notatki": "Swiadczenia/SW/SW - Zwolnienie podatkowe świadczenia i wskazanych kwot pieczy.md",
-      "opis_kwoty_z_notatki": "Zwolnienie PIT określonych przychodów. Brak odrębnej kwoty przelewu lub automatycznej ulgi równej całemu podatkowi osoby."
-    },
-    "SW-ochrona-egzekucji": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "ochrona_egzekucji",
-      "rodzaj_zrodlowy": "ochrona_materialna",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-31",
-        "DU-2016-195-art-32"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Oart 31–32; obecny zakres wymaga właściwej wersji ustaw egzekucyjnych.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Ochrona świadczeń przed egzekucją.md",
-      "opis_kwoty_z_notatki": "Chroniona jest właściwa kwota świadczenia, nie nowa premia. Art 31/32 rozszerzyły ochronę w egzekucji sądowej i administracyjnej."
-    },
-    "SW-ochrona-innych-uprawnien": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "ochrona_innych_uprawnien",
-      "rodzaj_zrodlowy": "ochrona_innych_swiadczen",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-35",
-        "DU-2016-195-art-36",
-        "DU-2016-195-art-40",
-        "DU-2016-195-art-42"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Ślad pierwotnych zmianOart 35,36,40,42 pkt 1. Dalsze losy każdej ustawy docelowej do osobnej historii.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Wyłączenie świadczenia z wybranych kryteriów dochodowych.md",
-      "opis_kwoty_z_notatki": "Świadczenie wychowawcze i wskazany dodatek w pieczy nie powiększają dochodu w konkretnie zmienionych katalogach. Korzyść to zachowanie właściwej podstawy do innej pomocy, nie gwarantowana dodatkowa stała kwota."
-    },
-    "SW-bez-oplat-skarbowych": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "bez_oplat_skarbowych",
-      "rodzaj_zrodlowy": "zwolnienie_oplatowe",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-43"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Oart 43 zmienia ustawę docelową; aktualną redakcję sprawdza graf odesłań.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Brak opłaty skarbowej w sprawach programu.md",
-      "opis_kwoty_z_notatki": "Wyłączenie opłaty skarbowej we wskazanym ustawowym zakresie; brak jednego ryczałtu oszczędności."
-    },
-    "SW-bezplatne-zaswiadczenia-historyczne": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "bezplatne_zaswiadczenia_historyczne",
-      "rodzaj_zrodlowy": "historyczne_zwolnienie_oplatowe",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-24"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Pierwotne Oart 24ust 2–3; U nie zawiera już tej redakcji.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Historyczne bezpłatne zaświadczenia do świadczenia.md",
-      "opis_kwoty_z_notatki": "Wydanie tych zaświadczeń było wolne od opłat na podstawie Oart 24ust 3. To odrębny historyczny mechanizm od zwolnienia opłaty skarbowej."
-    },
-    "SW-pomoc-techniczna": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "pomoc_techniczna",
-      "rodzaj_zrodlowy": "usluga_organizacyjna",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-13a"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Uart 13aust 10–11.",
-      "odsylacze_do_sprawdzenia": [],
-      "plik_notatki": "Swiadczenia/SW/SW - Pomoc w elektronicznym złożeniu i odbiorze dokumentów.md",
-      "opis_kwoty_z_notatki": "Dostęp do środków technicznych i pomoc w jednostce ZUS; ustawa nie określa tu kwoty gotówki ani samodzielnego świadczenia pieniężnego."
-    },
-    "SW-inne-swiadczenia-historyczne": {
-      "pochodzenie": "reczna_SW",
-      "zrodlo_id": "inne_swiadczenia_historyczne",
-      "rodzaj_zrodlowy": "historyczna_odnoga_materialna",
-      "status_zrodlowy": null,
-      "artykuly": [
-        "DU-2016-195-art-41",
-        "DU-2016-195-art-44",
-        "DU-2016-195-art-55",
-        "DU-2016-195-art-56"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": "Historyczne odnogiO 41,44 iU 55–56; pełne historie kwot pozostają poza kartą tej ustawy.",
-      "odsylacze_do_sprawdzenia": [
-        "Pełna analiza świadczeń rodzinnych, alimentów i pomocy materialnej wymaga odrębnych aktów."
-      ],
-      "plik_notatki": "Swiadczenia/SW/SW - Historyczne powiązania świadczeń rodzinnych, alimentów i stypendiów.md",
-      "opis_kwoty_z_notatki": "Art 41 zmienił m.in. części miesięcy świadczeń opiekuńczych i rodzicielskich; art 44 dochód i zwrotyalimentów; art 55–56 daty stosowania definicji utraty/uzyskania dochodu. Nie ustalają tutaj nowych pełnych stawek tych świadczeń."
-    },
     "DU-1998-1118-zasilek-pielegnacyjny": {
       "pochodzenie": "automat",
       "zrodlo_id": "DU-1998-1118-zasilek-pielegnacyjny",
@@ -1885,7 +814,13 @@
           "pole": "komu.opis",
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
-      ]
+      ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      }
     },
     "DU-1998-1118-emerytura": {
       "pochodzenie": "automat",
@@ -2439,286 +1374,13 @@
           "pole": "komu.opis",
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
-      ]
-    },
-    "DU-1998-1118-skladka": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-1998-1118-skladka",
-      "rodzaj_zrodlowy": "dofinansowanie",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-1998-1118-art-10",
-        "DU-1998-1118-art-104",
-        "DU-1998-1118-art-106",
-        "DU-1998-1118-art-108",
-        "DU-1998-1118-art-111",
-        "DU-1998-1118-art-116",
-        "DU-1998-1118-art-117",
-        "DU-1998-1118-art-120",
-        "DU-1998-1118-art-124",
-        "DU-1998-1118-art-125",
-        "DU-1998-1118-art-125a",
-        "DU-1998-1118-art-139",
-        "DU-1998-1118-art-140",
-        "DU-1998-1118-art-141",
-        "DU-1998-1118-art-141a",
-        "DU-1998-1118-art-15",
-        "DU-1998-1118-art-17",
-        "DU-1998-1118-art-173",
-        "DU-1998-1118-art-174",
-        "DU-1998-1118-art-175",
-        "DU-1998-1118-art-176",
-        "DU-1998-1118-art-178",
-        "DU-1998-1118-art-18",
-        "DU-1998-1118-art-180",
-        "DU-1998-1118-art-184",
-        "DU-1998-1118-art-188",
-        "DU-1998-1118-art-19",
-        "DU-1998-1118-art-194e",
-        "DU-1998-1118-art-22",
-        "DU-1998-1118-art-25",
-        "DU-1998-1118-art-25a",
-        "DU-1998-1118-art-26a",
-        "DU-1998-1118-art-26c",
-        "DU-1998-1118-art-4",
-        "DU-1998-1118-art-5",
-        "DU-1998-1118-art-55a",
-        "DU-1998-1118-art-56",
-        "DU-1998-1118-art-57",
-        "DU-1998-1118-art-58",
-        "DU-1998-1118-art-6",
-        "DU-1998-1118-art-87"
       ],
-      "jednostki": [
-        "DU/1998/1118#arti_10-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_104-pass_1a@obowiazujace",
-        "DU/1998/1118#arti_106-pint_2@obowiazujace",
-        "DU/1998/1118#arti_108-pass_2@obowiazujace",
-        "DU/1998/1118#arti_108-pass_4@obowiazujace",
-        "DU/1998/1118#arti_111-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_111-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_111-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_111-pass_1@obowiazujace",
-        "DU/1998/1118#arti_116-pass_3@obowiazujace",
-        "DU/1998/1118#arti_117-pass_2@obowiazujace",
-        "DU/1998/1118#arti_120-pass_2@obowiazujace",
-        "DU/1998/1118#arti_124@obowiazujace",
-        "DU/1998/1118#arti_125-pass_2@obowiazujace",
-        "DU/1998/1118#arti_125a-pass_1@obowiazujace",
-        "DU/1998/1118#arti_125a-pass_2@obowiazujace",
-        "DU/1998/1118#arti_125a-pass_3@obowiazujace",
-        "DU/1998/1118#arti_125a-pass_4@obowiazujace",
-        "DU/1998/1118#arti_125a-pass_4a-pint_1@obowiazujace",
-        "DU/1998/1118#arti_125a-pass_4a-pint_2@obowiazujace",
-        "DU/1998/1118#arti_125a-pass_4a@obowiazujace",
-        "DU/1998/1118#arti_125a-pass_4b@obowiazujace",
-        "DU/1998/1118#arti_125a-pass_5@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_10@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_2-lett_a@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_2-lett_b@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_2-lett_c@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_2a@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_2b@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_2c@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_2d@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_2e@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_4@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_5@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_6@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_6a@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_6b@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_7@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_7a@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_7b@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_7c@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_8@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1-pint_9@obowiazujace",
-        "DU/1998/1118#arti_139-pass_1@obowiazujace",
-        "DU/1998/1118#arti_139-pass_2@obowiazujace",
-        "DU/1998/1118#arti_140-pass_7@obowiazujace",
-        "DU/1998/1118#arti_141-pass_1b@obowiazujace",
-        "DU/1998/1118#arti_141a@obowiazujace",
-        "DU/1998/1118#arti_15-pass_1@obowiazujace",
-        "DU/1998/1118#arti_15-pass_2@obowiazujace",
-        "DU/1998/1118#arti_15-pass_2a@obowiazujace",
-        "DU/1998/1118#arti_15-pass_3a@obowiazujace",
-        "DU/1998/1118#arti_15-pass_4-pint_1@obowiazujace",
-        "DU/1998/1118#arti_15-pass_6@obowiazujace",
-        "DU/1998/1118#arti_15-pass_8@obowiazujace",
-        "DU/1998/1118#arti_17-pass_1@obowiazujace",
-        "DU/1998/1118#arti_173-pass_1@obowiazujace",
-        "DU/1998/1118#arti_173-pass_4@obowiazujace",
-        "DU/1998/1118#arti_174-pass_3b@obowiazujace",
-        "DU/1998/1118#arti_175-pass_1@obowiazujace",
-        "DU/1998/1118#arti_175-pass_1a@obowiazujace",
-        "DU/1998/1118#arti_175-pass_5@obowiazujace",
-        "DU/1998/1118#arti_176@obowiazujace",
-        "DU/1998/1118#arti_178@obowiazujace",
-        "DU/1998/1118#arti_18-pass_3@obowiazujace",
-        "DU/1998/1118#arti_180-pass_5@obowiazujace",
-        "DU/1998/1118#arti_180-pass_7-pint_2@obowiazujace",
-        "DU/1998/1118#arti_184-pass_3@obowiazujace",
-        "DU/1998/1118#arti_188@obowiazujace",
-        "DU/1998/1118#arti_194e-pass_3@obowiazujace",
-        "DU/1998/1118#arti_19@obowiazujace",
-        "DU/1998/1118#arti_22-pint_1@obowiazujace",
-        "DU/1998/1118#arti_25-pass_10@obowiazujace",
-        "DU/1998/1118#arti_25-pass_12@obowiazujace",
-        "DU/1998/1118#arti_25-pass_1@obowiazujace",
-        "DU/1998/1118#arti_25-pass_1a@obowiazujace",
-        "DU/1998/1118#arti_25-pass_1b@obowiazujace",
-        "DU/1998/1118#arti_25-pass_3@obowiazujace",
-        "DU/1998/1118#arti_25-pass_4@obowiazujace",
-        "DU/1998/1118#arti_25-pass_5@obowiazujace",
-        "DU/1998/1118#arti_25-pass_6@obowiazujace",
-        "DU/1998/1118#arti_25-pass_7@obowiazujace",
-        "DU/1998/1118#arti_25-pass_8@obowiazujace",
-        "DU/1998/1118#arti_25-pass_9@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_1@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_2-pint_1@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_2-pint_2@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_2-pint_3@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_2-pint_4@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_2a@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_3@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_4@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_5@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_6@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_7@obowiazujace",
-        "DU/1998/1118#arti_25a-pass_8@obowiazujace",
-        "DU/1998/1118#arti_26a-pass_1@obowiazujace",
-        "DU/1998/1118#arti_26c-pass_2@obowiazujace",
-        "DU/1998/1118#arti_4-pint_4@obowiazujace",
-        "DU/1998/1118#arti_4-pint_4a@obowiazujace",
-        "DU/1998/1118#arti_4-pint_5@obowiazujace",
-        "DU/1998/1118#arti_4-pint_8@obowiazujace",
-        "DU/1998/1118#arti_5-pass_4-pint_1@obowiazujace",
-        "DU/1998/1118#arti_5-pass_4-pint_2@obowiazujace",
-        "DU/1998/1118#arti_5-pass_5@obowiazujace",
-        "DU/1998/1118#arti_55a-pass_2@obowiazujace",
-        "DU/1998/1118#arti_56-pass_4@obowiazujace",
-        "DU/1998/1118#arti_57-pass_1-pint_3@obowiazujace",
-        "DU/1998/1118#arti_58-pass_2@obowiazujace",
-        "DU/1998/1118#arti_6-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_6-pass_1-pint_3-lett_a@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_1-lett_a@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_1-lett_b@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_1-lett_c@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_1-lett_d@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_10-lett_a@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_10-lett_b@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_10@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_11-lett_a@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_11-lett_b@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_11@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_12-lett_a@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_12-lett_b@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_12@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_13-lett_a@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_13-lett_b@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_13@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_14-lett_a@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_14-lett_b@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_14@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_15@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_16@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_17@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_1@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_2-lett_a@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_2-lett_b@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_2-lett_c@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_2-lett_d@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_2@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_3@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_4@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_5@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_6@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_6a@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_6b@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_7@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_8@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_9-lett_a@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_9-lett_b@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2-pint_9@obowiazujace",
-        "DU/1998/1118#arti_6-pass_2@obowiazujace",
-        "DU/1998/1118#arti_87-pass_3@obowiazujace",
-        "DU/1998/1118#arti_87-pass_4@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "ile.wartosc_reguly",
-          "powod": "podstawa reguły procentowej nie została rozwiązana do kwoty z dowodem"
-        },
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ]
-    },
-    "DU-1998-1118-zwiekszenie": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-1998-1118-zwiekszenie",
-      "rodzaj_zrodlowy": "swiadczenie_okresowe",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-1998-1118-art-141",
-        "DU-1998-1118-art-180",
-        "DU-1998-1118-art-25",
-        "DU-1998-1118-art-26a",
-        "DU-1998-1118-art-26c",
-        "DU-1998-1118-art-56",
-        "DU-1998-1118-art-73",
-        "DU-1998-1118-art-85",
-        "DU-1998-1118-art-86",
-        "DU-1998-1118-art-87",
-        "DU-1998-1118-art-89"
-      ],
-      "jednostki": [
-        "DU/1998/1118#arti_141-pass_3@obowiazujace",
-        "DU/1998/1118#arti_180-pass_2@obowiazujace",
-        "DU/1998/1118#arti_180-pass_3@obowiazujace",
-        "DU/1998/1118#arti_180-pass_5@obowiazujace",
-        "DU/1998/1118#arti_25-pass_1a@obowiazujace",
-        "DU/1998/1118#arti_26a-pass_1@obowiazujace",
-        "DU/1998/1118#arti_26a-pass_2@obowiazujace",
-        "DU/1998/1118#arti_26a-pass_3@obowiazujace",
-        "DU/1998/1118#arti_26a-pass_4@obowiazujace",
-        "DU/1998/1118#arti_26c-pass_2@obowiazujace",
-        "DU/1998/1118#arti_56-pass_4@obowiazujace",
-        "DU/1998/1118#arti_56-pass_5@obowiazujace",
-        "DU/1998/1118#arti_56-pass_6@obowiazujace",
-        "DU/1998/1118#arti_56-pass_7-pint_1@obowiazujace",
-        "DU/1998/1118#arti_73-pass_3@obowiazujace",
-        "DU/1998/1118#arti_73-pass_5-pint_1@obowiazujace",
-        "DU/1998/1118#arti_85-pass_4@obowiazujace",
-        "DU/1998/1118#arti_86-pass_1@obowiazujace",
-        "DU/1998/1118#arti_86-pass_3@obowiazujace",
-        "DU/1998/1118#arti_87-pass_1-pint_1@obowiazujace",
-        "DU/1998/1118#arti_87-pass_1-pint_2@obowiazujace",
-        "DU/1998/1118#arti_87-pass_1@obowiazujace",
-        "DU/1998/1118#arti_87-pass_1a@obowiazujace",
-        "DU/1998/1118#arti_89-pass_3@obowiazujace",
-        "DU/1998/1118#arti_89-pass_4@obowiazujace",
-        "DU/1998/1118#arti_89-pass_5@obowiazujace",
-        "DU/1998/1118#arti_89-pass_6@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "ile.wartosc_reguly",
-          "powod": "podstawa reguły procentowej nie została rozwiązana do kwoty z dowodem"
-        },
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ]
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      }
     },
     "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy": {
       "pochodzenie": "automat",
@@ -2834,7 +1496,13 @@
           "pole": "komu.opis",
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
-      ]
+      ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      }
     },
     "DU-1998-1118-renta": {
       "pochodzenie": "automat",
@@ -3261,7 +1929,13 @@
           "pole": "komu.opis",
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
-      ]
+      ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      }
     },
     "DU-1998-1118-opieka": {
       "pochodzenie": "automat",
@@ -3309,7 +1983,17 @@
           "pole": "komu.opis",
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
-      ]
+      ],
+      "kwalifikacja_automatu": {
+        "socjal": false,
+        "powod": "sposob_wyplaty",
+        "regula": "DU-2003-1268-opieka (art. 12b ust. 1): decyzja „usunąć”; uwaga: DU-1998-1118-opieka (art. 131) właściciel zostawił — sygnał",
+        "forma": "niepieniezne"
+      },
+      "sygnal_kwalifikacji": {
+        "powod": "sposob_wyplaty",
+        "uwaga": "art. 131 ust. 1 pkt 2: świadczenie „wypłaca się osobom sprawującym opiekę” — ta sama sytuacja co usunięta opieka z renty socjalnej"
+      }
     },
     "DU-1998-1118-zasilek-chorobowy": {
       "pochodzenie": "automat",
@@ -3347,7 +2031,13 @@
           "pole": "komu.opis",
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
-      ]
+      ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      }
     },
     "DU-2003-1268-renta-socjalna": {
       "pochodzenie": "automat",
@@ -3454,6 +2144,12 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      },
       "plik_notatki": "Swiadczenia/RS/Renta socjalna (RS).md",
       "opis_kwoty_z_notatki": null
     },
@@ -3533,6 +2229,12 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      },
       "plik_notatki": "Swiadczenia/RS/Dodatek dopełniający (RS).md",
       "opis_kwoty_z_notatki": null
     },
@@ -3560,38 +2262,13 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "niepieniezne"
+      },
       "plik_notatki": "Swiadczenia/RS/Lokal (RS).md",
-      "opis_kwoty_z_notatki": null
-    },
-    "DU-2003-1268-opieka": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-2003-1268-opieka",
-      "rodzaj_zrodlowy": "swiadczenie_rzeczowe",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-2003-1268-art-12b",
-        "DU-2003-1268-art-12c"
-      ],
-      "jednostki": [
-        "DU/2003/1268#arti_12b-pass_1@obowiazujace",
-        "DU/2003/1268#arti_12b-pass_2@obowiazujace",
-        "DU/2003/1268#arti_12b-pass_3@obowiazujace",
-        "DU/2003/1268#arti_12c-pass_4@obowiazujace",
-        "DU/2003/1268#arti_12c-pass_5@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "ile",
-          "powod": "w jednostkach wymieniających korzyść nie znaleziono kwoty ani reguły procentowej"
-        },
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ],
-      "plik_notatki": "Swiadczenia/RS/Opieka (RS).md",
       "opis_kwoty_z_notatki": null
     },
     "DU-2004-593-schronienie": {
@@ -3656,6 +2333,12 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "niepieniezne"
+      },
       "plik_notatki": "Swiadczenia/PS/Schronienie (PS).md",
       "opis_kwoty_z_notatki": null
     },
@@ -3711,6 +2394,12 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      },
       "plik_notatki": "Swiadczenia/PS/Zasiłek stały (PS).md",
       "opis_kwoty_z_notatki": null
     },
@@ -3781,91 +2470,13 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      },
       "plik_notatki": "Swiadczenia/PS/Zasiłek okresowy (PS).md",
-      "opis_kwoty_z_notatki": null
-    },
-    "DU-2004-593-zasilek-celowy": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-2004-593-zasilek-celowy",
-      "rodzaj_zrodlowy": "swiadczenie_jednorazowe",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-2004-593-art-115",
-        "DU-2004-593-art-17",
-        "DU-2004-593-art-18",
-        "DU-2004-593-art-36",
-        "DU-2004-593-art-39",
-        "DU-2004-593-art-39a",
-        "DU-2004-593-art-40",
-        "DU-2004-593-art-41",
-        "DU-2004-593-art-43",
-        "DU-2004-593-art-5",
-        "DU-2004-593-art-5a",
-        "DU-2004-593-art-8",
-        "DU-2004-593-art-96"
-      ],
-      "jednostki": [
-        "DU/2004/593#arti_115-pass_2@obowiazujace",
-        "DU/2004/593#arti_17-pass_1-pint_5@obowiazujace",
-        "DU/2004/593#arti_17-pass_1-pint_6@obowiazujace",
-        "DU/2004/593#arti_17-pass_1-pint_7@obowiazujace",
-        "DU/2004/593#arti_17-pass_1-pint_8@obowiazujace",
-        "DU/2004/593#arti_18-pass_1-pint_4@obowiazujace",
-        "DU/2004/593#arti_18-pass_1-pint_7@obowiazujace",
-        "DU/2004/593#arti_18-pass_1-pint_8@obowiazujace",
-        "DU/2004/593#arti_36-pint_1-lett_c@obowiazujace",
-        "DU/2004/593#arti_39-pass_1@obowiazujace",
-        "DU/2004/593#arti_39-pass_2@obowiazujace",
-        "DU/2004/593#arti_39-pass_3@obowiazujace",
-        "DU/2004/593#arti_39-pass_4@obowiazujace",
-        "DU/2004/593#arti_39a-pass_1@obowiazujace",
-        "DU/2004/593#arti_39a-pass_2@obowiazujace",
-        "DU/2004/593#arti_40-pass_1@obowiazujace",
-        "DU/2004/593#arti_40-pass_1a-pint_1@obowiazujace",
-        "DU/2004/593#arti_40-pass_1a-pint_2@obowiazujace",
-        "DU/2004/593#arti_40-pass_1a@obowiazujace",
-        "DU/2004/593#arti_40-pass_1b@obowiazujace",
-        "DU/2004/593#arti_40-pass_1c-pint_1@obowiazujace",
-        "DU/2004/593#arti_40-pass_1c-pint_2@obowiazujace",
-        "DU/2004/593#arti_40-pass_1c@obowiazujace",
-        "DU/2004/593#arti_40-pass_1d@obowiazujace",
-        "DU/2004/593#arti_40-pass_1e-pint_1@obowiazujace",
-        "DU/2004/593#arti_40-pass_1e-pint_2@obowiazujace",
-        "DU/2004/593#arti_40-pass_1e-pint_3@obowiazujace",
-        "DU/2004/593#arti_40-pass_1e-pint_4@obowiazujace",
-        "DU/2004/593#arti_40-pass_1e-pint_5-lett_a@obowiazujace",
-        "DU/2004/593#arti_40-pass_1e-pint_5-lett_b@obowiazujace",
-        "DU/2004/593#arti_40-pass_1e-pint_5@obowiazujace",
-        "DU/2004/593#arti_40-pass_1e-pint_6@obowiazujace",
-        "DU/2004/593#arti_40-pass_1e@obowiazujace",
-        "DU/2004/593#arti_40-pass_1g@obowiazujace",
-        "DU/2004/593#arti_40-pass_2@obowiazujace",
-        "DU/2004/593#arti_40-pass_3@obowiazujace",
-        "DU/2004/593#arti_41-pint_1@obowiazujace",
-        "DU/2004/593#arti_41-pint_2@obowiazujace",
-        "DU/2004/593#arti_43-pass_10@obowiazujace",
-        "DU/2004/593#arti_43-pass_2@obowiazujace",
-        "DU/2004/593#arti_5-pint_2-lett_b@obowiazujace",
-        "DU/2004/593#arti_5a-pint_1@obowiazujace",
-        "DU/2004/593#arti_5a-pint_2@obowiazujace",
-        "DU/2004/593#arti_5a-pint_3@obowiazujace",
-        "DU/2004/593#arti_5a@obowiazujace",
-        "DU/2004/593#arti_8-pass_4-pint_2@obowiazujace",
-        "DU/2004/593#arti_96-pass_2@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "ile",
-          "powod": "w jednostkach wymieniających korzyść nie znaleziono kwoty ani reguły procentowej"
-        },
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ],
-      "plik_notatki": "Swiadczenia/PS/Zasiłek celowy (PS).md",
       "opis_kwoty_z_notatki": null
     },
     "DU-2004-593-posilek": {
@@ -3924,6 +2535,12 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "niepieniezne"
+      },
       "plik_notatki": "Swiadczenia/PS/Posiłek (PS).md",
       "opis_kwoty_z_notatki": null
     },
@@ -3950,6 +2567,12 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      },
       "plik_notatki": "Swiadczenia/PS/Specjalny zasiłek celowy (PS).md",
       "opis_kwoty_z_notatki": null
     },
@@ -4154,47 +2777,13 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "niepieniezne"
+      },
       "plik_notatki": "Swiadczenia/PS/Opieka (PS).md",
-      "opis_kwoty_z_notatki": null
-    },
-    "DU-2004-593-tymczasowe-schronienie": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-2004-593-tymczasowe-schronienie",
-      "rodzaj_zrodlowy": "swiadczenie_rzeczowe",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-2004-593-art-22",
-        "DU-2004-593-art-48a"
-      ],
-      "jednostki": [
-        "DU/2004/593#arti_22-pint_4@obowiazujace",
-        "DU/2004/593#arti_48a-pass_11@obowiazujace",
-        "DU/2004/593#arti_48a-pass_11a-pint_1@obowiazujace",
-        "DU/2004/593#arti_48a-pass_11b-pint_3@obowiazujace",
-        "DU/2004/593#arti_48a-pass_1@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2a@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2b@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2d@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2e@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2f@obowiazujace",
-        "DU/2004/593#arti_48a-pass_4@obowiazujace",
-        "DU/2004/593#arti_48a-pass_8@obowiazujace",
-        "DU/2004/593#arti_48a-pass_9@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "ile",
-          "powod": "w jednostkach wymieniających korzyść nie znaleziono kwoty ani reguły procentowej"
-        },
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ],
-      "plik_notatki": "Swiadczenia/PS/Tymczasowe schronienie (PS).md",
       "opis_kwoty_z_notatki": null
     },
     "DU-2004-593-pomoc-dorazna": {
@@ -4221,35 +2810,13 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      },
       "plik_notatki": "Swiadczenia/PS/Pomoc doraźna (PS).md",
-      "opis_kwoty_z_notatki": null
-    },
-    "DU-2004-593-dieta": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-2004-593-dieta",
-      "rodzaj_zrodlowy": "swiadczenie_okresowe",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-2004-593-art-117",
-        "DU-2004-593-art-118"
-      ],
-      "jednostki": [
-        "DU/2004/593#arti_117-pass_2@obowiazujace",
-        "DU/2004/593#arti_118-pass_1b@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "ile",
-          "powod": "w jednostkach wymieniających korzyść nie znaleziono kwoty ani reguły procentowej"
-        },
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ],
-      "plik_notatki": "Swiadczenia/PS/Dieta (PS).md",
       "opis_kwoty_z_notatki": null
     },
     "DU-2004-593-nagroda": {
@@ -4284,8 +2851,18 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      },
       "plik_notatki": "Swiadczenia/PS/Nagroda (PS).md",
-      "opis_kwoty_z_notatki": null
+      "opis_kwoty_z_notatki": null,
+      "sygnal_kwalifikacji": {
+        "powod": "odbiorca_nie_osoba",
+        "uwaga": "art. 121: nagrody specjalne ministra za działalność w pomocy społecznej — raczej dla wyróżnionych osób i podmiotów niż dla potrzebujących (do sprawdzenia w rozporządzeniu)"
+      }
     },
     "DU-2011-887-dofinansowanie": {
       "pochodzenie": "automat",
@@ -4346,7 +2923,8 @@
           "pole": "komu.opis",
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
-      ]
+      ],
+      "kwalifikacja_automatu": null
     },
     "DU-2022-1692-dodatek-weglowy": {
       "pochodzenie": "automat",
@@ -4444,6 +3022,12 @@
           "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
         }
       ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "pieniezne"
+      },
       "plik_notatki": "Swiadczenia/DW/Dodatek węglowy (DW).md",
       "opis_kwoty_z_notatki": null
     }
@@ -4616,8 +3200,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -5115,8 +3698,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -5241,9 +3823,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-1998-1118-skladka"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-107",
@@ -5406,9 +3986,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "DU-1998-1118-skladka",
-        "FUS-c-przeliczenie-skladki"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -5459,8 +4037,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "FUS-c-przeliczenie-podstawa"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -5652,9 +4229,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka",
-        "FUS-c-przeliczenie-podstawa"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -5719,8 +4294,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "FUS-c-przeliczenie-okresy"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -5757,8 +4331,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "FUS-c-przeliczenie-okresy"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -6262,8 +4835,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -6448,9 +5020,7 @@
         "DU-1998-1118-art-10"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-1998-1118-skladka"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-118",
@@ -6734,9 +5304,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "DU-1998-1118-skladka",
-        "FUS-c-wyplata-zaliczkowa"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -6776,8 +5344,7 @@
         }
       ],
       "korzysci": [
-        "DU-1998-1118-opieka",
-        "FUS-c-zwolnienie-oplat"
+        "DU-1998-1118-opieka"
       ]
     },
     {
@@ -6829,8 +5396,7 @@
         }
       ],
       "korzysci": [
-        "DU-1998-1118-renta",
-        "FUS-c-bezplatne-poswiadczenia"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -6873,9 +5439,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-1998-1118-skladka"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-125",
@@ -6969,7 +5533,6 @@
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-skladka",
         "DU-1998-1118-zasilek-chorobowy"
       ]
     },
@@ -7083,8 +5646,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -7241,8 +5803,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-opieka",
-        "FUS-c-bezplatne-poswiadczenia"
+        "DU-1998-1118-opieka"
       ]
     },
     {
@@ -7963,9 +6524,7 @@
         "DU-1998-1118-art-107a"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "FUS-c-wyrownanie-blad"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-134",
@@ -8168,9 +6727,7 @@
         "DU-1998-1118-art-134"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "FUS-c-wyrownanie-wznowienie"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-136",
@@ -8419,9 +6976,7 @@
         "DU-1998-1118-art-140"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "FUS-c-odstapienie-zwrot"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-138a",
@@ -8802,7 +7357,6 @@
         "DU-1998-1118-emerytura",
         "DU-1998-1118-opieka",
         "DU-1998-1118-renta",
-        "DU-1998-1118-skladka",
         "DU-1998-1118-zasilek-chorobowy",
         "DU-1998-1118-zasilek-pielegnacyjny"
       ]
@@ -9526,8 +8080,7 @@
         }
       ],
       "korzysci": [
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -9686,10 +8239,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka",
-        "DU-1998-1118-zwiekszenie",
-        "FUS-c-ochrona-potracenia"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -9715,10 +8265,7 @@
         "DU-1998-1118-art-141"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-1998-1118-skladka",
-        "FUS-c-ochrona-potracenia"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-142",
@@ -10046,8 +8593,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -10119,8 +8665,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -10245,10 +8790,7 @@
         "DU-1998-1118-art-25a"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-1998-1118-skladka",
-        "FUS-c-kapital-poczatkowy"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-174",
@@ -10505,9 +9047,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-skladka",
-        "FUS-c-kapital-poczatkowy"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -10588,9 +9128,7 @@
         "DU-1998-1118-art-114"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-1998-1118-skladka"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-176",
@@ -10616,8 +9154,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -10640,9 +9177,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "FUS-c-kapital-poczatkowy"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-178",
@@ -10666,9 +9201,7 @@
         "DU-1998-1118-art-104"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-1998-1118-skladka"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-179",
@@ -10743,8 +9276,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -10937,10 +9469,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-skladka",
-        "DU-1998-1118-zwiekszenie",
-        "FUS-c-zachowane-przed1999"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -11327,9 +9856,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "DU-1998-1118-skladka",
-        "FUS-c-emerytura-184"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -11366,8 +9893,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-c-kapital-185"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -11406,8 +9932,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-c-kapital-studia"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -11515,9 +10040,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "FUS-c-emerytura-posel",
-        "FUS-c-wczesniejsza-opieka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -11567,8 +10090,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -11611,9 +10133,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-1998-1118-skladka"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-190",
@@ -11662,9 +10182,7 @@
         "DU-1998-1118-art-195"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "FUS-c-wyrownanie-uniewinnienie"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-191",
@@ -11786,8 +10304,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-zasilek-chorobowy",
-        "FUS-c-zachowane-zasilki1998"
+        "DU-1998-1118-zasilek-chorobowy"
       ]
     },
     {
@@ -11924,8 +10441,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "FUS-c-przeliczenie-baza"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -12033,8 +10549,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-c-przeliczenie-zawieszonej"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -12061,8 +10576,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-c-przeliczenie-zawieszonej"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -12133,9 +10647,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "DU-1998-1118-skladka",
-        "FUS-c-przeliczenie-zawieszonej"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -12165,8 +10677,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-c-przeliczenie-zawieszonej"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -12238,8 +10749,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-c-przeliczenie-zawieszonej"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -12277,8 +10787,7 @@
       ],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "FUS-c-przeliczenie-1953"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -12362,8 +10871,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "FUS-c-przeliczenie-1953"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -12902,8 +11410,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -13058,8 +11565,7 @@
         }
       ],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-powszechna"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -13144,8 +11650,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "FUS-emerytura-powszechna"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -13375,10 +11880,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "DU-1998-1118-skladka",
-        "DU-1998-1118-zwiekszenie",
-        "FUS-emerytura-powszechna"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -13545,9 +12047,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "DU-1998-1118-skladka",
-        "FUS-emerytura-powszechna"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -13759,8 +12259,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-powszechna"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -13819,10 +12318,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "DU-1998-1118-skladka",
-        "DU-1998-1118-zwiekszenie",
-        "FUS-zwiekszenie-rolne"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -13904,10 +12400,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "DU-1998-1118-skladka",
-        "DU-1998-1118-zwiekszenie",
-        "FUS-emerytura-powszechna"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -13954,8 +12447,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-stare-zasady"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -13983,8 +12475,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "FUS-emerytura-stare-zasady"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -14030,8 +12521,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-stare-zasady"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -14125,8 +12615,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "FUS-emerytura-wczesniejsza-art29"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -14347,8 +12836,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "FUS-emerytura-wypadkowa-art31"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -14544,7 +13032,6 @@
       ],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "FUS-emerytura-szczegolne-warunki",
         "FUS-emerytura-tworcza"
       ]
     },
@@ -14725,8 +13212,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-obnizony-wiek-gorniczy"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -14903,8 +13389,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -14950,8 +13435,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-kolejowa"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -14974,8 +13458,7 @@
       "powiazane_artykuly": [],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-kolejowa"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -15058,9 +13541,7 @@
           "z_pozn_zm": false
         }
       ],
-      "korzysci": [
-        "FUS-emerytura-kolejowa"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-43",
@@ -15091,9 +13572,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "FUS-emerytura-kolejowa"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-44",
@@ -15518,10 +13997,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "FUS-emerytura-obnizony-wiek-gorniczy",
-        "FUS-emerytura-szczegolne-warunki",
-        "FUS-emerytura-tworcza",
-        "FUS-emerytura-wczesniejsza-art29"
+        "FUS-emerytura-tworcza"
       ]
     },
     {
@@ -15757,8 +14233,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -15831,8 +14306,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-kolejowa"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -15899,8 +14373,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-gornicza"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -15964,8 +14437,7 @@
         }
       ],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-gornicza"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -16143,9 +14615,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "FUS-emerytura-gornicza"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-50d",
@@ -16231,8 +14701,7 @@
       "powiazane_artykuly": [],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-gornicza"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -16323,8 +14792,7 @@
       ],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-zasilek-chorobowy",
-        "FUS-emerytura-gornicza"
+        "DU-1998-1118-zasilek-chorobowy"
       ]
     },
     {
@@ -16433,8 +14901,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-gornicza"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -16494,8 +14961,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-obnizony-wiek-gorniczy"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -16601,12 +15067,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-gornicza",
-        "FUS-emerytura-kolejowa",
-        "FUS-emerytura-stare-zasady",
-        "FUS-emerytura-wczesniejsza-art29",
-        "FUS-emerytura-wypadkowa-art31"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -16631,8 +15092,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-stare-zasady"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -16670,8 +15130,7 @@
       "korzysci": [
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
-        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "FUS-emerytura-stare-zasady"
+        "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy"
       ]
     },
     {
@@ -16701,8 +15160,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "FUS-emerytura-stare-zasady"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -16751,9 +15209,7 @@
       ],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-1998-1118-emerytura",
-        "DU-1998-1118-skladka",
-        "FUS-emerytura-stare-zasady"
+        "DU-1998-1118-emerytura"
       ]
     },
     {
@@ -16868,10 +15324,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka",
-        "DU-1998-1118-zwiekszenie",
-        "FUS-zwiekszenie-rolne"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -16951,7 +15404,6 @@
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-skladka",
         "FUS-renta-niezdolnosc-calkowita"
       ]
     },
@@ -17196,7 +15648,6 @@
       "korzysci": [
         "DU-1998-1118-renta",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-skladka",
         "FUS-renta-niezdolnosc-calkowita"
       ]
     },
@@ -18063,8 +16514,7 @@
         }
       ],
       "korzysci": [
-        "DU-1998-1118-renta",
-        "DU-1998-1118-skladka"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -19282,7 +17732,6 @@
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-zwiekszenie",
         "FUS-renta-rodzinna"
       ]
     },
@@ -20163,7 +18612,6 @@
         "DU-1998-1118-emerytura",
         "DU-1998-1118-renta",
         "DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy",
-        "DU-1998-1118-zwiekszenie",
         "FUS-podwyzszenie-minimum",
         "FUS-renta-niezdolnosc-calkowita",
         "FUS-renta-niezdolnosc-czesciowa",
@@ -20219,8 +18667,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-renta",
-        "DU-1998-1118-zwiekszenie"
+        "DU-1998-1118-renta"
       ]
     },
     {
@@ -20408,8 +18855,6 @@
       ],
       "korzysci": [
         "DU-1998-1118-emerytura",
-        "DU-1998-1118-skladka",
-        "DU-1998-1118-zwiekszenie",
         "FUS-podwyzszenie-minimum"
       ]
     },
@@ -20549,9 +18994,7 @@
         "DU-1998-1118-art-94"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-1998-1118-zwiekszenie"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-1998-1118-art-9",
@@ -21970,7 +20413,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-2003-1268-dodatek-dopelniajacy",
-        "DU-2003-1268-opieka",
         "DU-2003-1268-renta-socjalna"
       ]
     },
@@ -22088,7 +20530,6 @@
       ],
       "korzysci": [
         "DU-2003-1268-dodatek-dopelniajacy",
-        "DU-2003-1268-opieka",
         "DU-2003-1268-renta-socjalna"
       ]
     },
@@ -25749,9 +24190,7 @@
           "z_pozn_zm": false
         }
       ],
-      "korzysci": [
-        "DU-2004-593-zasilek-celowy"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2004-593-art-115a",
@@ -26206,9 +24645,7 @@
         "DU-2004-593-art-121a"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-2004-593-dieta"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2004-593-art-118",
@@ -26346,9 +24783,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-2004-593-dieta"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2004-593-art-118a",
@@ -32103,7 +30538,6 @@
         "DU-2004-593-opieka",
         "DU-2004-593-posilek",
         "DU-2004-593-schronienie",
-        "DU-2004-593-zasilek-celowy",
         "DU-2004-593-zasilek-okresowy",
         "DU-2004-593-zasilek-staly"
       ]
@@ -32275,8 +30709,7 @@
       "korzysci": [
         "DU-2004-593-opieka",
         "DU-2004-593-posilek",
-        "DU-2004-593-schronienie",
-        "DU-2004-593-zasilek-celowy"
+        "DU-2004-593-schronienie"
       ]
     },
     {
@@ -33126,8 +31559,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-2004-593-opieka",
-        "DU-2004-593-schronienie",
-        "DU-2004-593-tymczasowe-schronienie"
+        "DU-2004-593-schronienie"
       ]
     },
     {
@@ -34850,7 +33282,6 @@
         "DU-2004-593-opieka",
         "DU-2004-593-posilek",
         "DU-2004-593-schronienie",
-        "DU-2004-593-zasilek-celowy",
         "DU-2004-593-zasilek-okresowy",
         "DU-2004-593-zasilek-staly"
       ]
@@ -35192,8 +33623,7 @@
       "powiazane_artykuly": [],
       "powiazane_akty": [],
       "korzysci": [
-        "DU-2004-593-opieka",
-        "DU-2004-593-zasilek-celowy"
+        "DU-2004-593-opieka"
       ]
     },
     {
@@ -35225,9 +33655,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-2004-593-zasilek-celowy"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2004-593-art-4",
@@ -35502,9 +33930,7 @@
         "DU-2004-593-art-6"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-2004-593-zasilek-celowy"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2004-593-art-41",
@@ -35553,7 +33979,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-2004-593-specjalny-zasilek-celowy",
-        "DU-2004-593-zasilek-celowy",
         "DU-2004-593-zasilek-okresowy"
       ]
     },
@@ -35763,9 +34188,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "DU-2004-593-zasilek-celowy"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2004-593-art-44",
@@ -36616,8 +35039,7 @@
       "korzysci": [
         "DU-2004-593-opieka",
         "DU-2004-593-posilek",
-        "DU-2004-593-schronienie",
-        "DU-2004-593-tymczasowe-schronienie"
+        "DU-2004-593-schronienie"
       ]
     },
     {
@@ -36895,8 +35317,7 @@
       ],
       "korzysci": [
         "DU-2004-593-posilek",
-        "DU-2004-593-schronienie",
-        "DU-2004-593-zasilek-celowy"
+        "DU-2004-593-schronienie"
       ]
     },
     {
@@ -40067,8 +38488,7 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-2004-593-posilek",
-        "DU-2004-593-schronienie",
-        "DU-2004-593-zasilek-celowy"
+        "DU-2004-593-schronienie"
       ]
     },
     {
@@ -43578,8 +41998,7 @@
       ],
       "korzysci": [
         "DU-2004-593-nagroda",
-        "DU-2004-593-opieka",
-        "DU-2004-593-zasilek-celowy"
+        "DU-2004-593-opieka"
       ]
     },
     {
@@ -45779,7 +44198,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "DU-2004-593-posilek",
-        "DU-2004-593-zasilek-celowy",
         "DU-2004-593-zasilek-okresowy"
       ]
     },
@@ -73390,9 +71808,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "SW-pomoc-techniczna"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-14",
@@ -74303,9 +72719,7 @@
           "z_pozn_zm": false
         }
       ],
-      "korzysci": [
-        "SW-rzeczowa"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-16",
@@ -74880,7 +73294,6 @@
       "powiazane_akty": [],
       "korzysci": [
         "SW-cudzoziemcy",
-        "SW-przejecie-po-smierci",
         "SW-wychowawcze"
       ]
     },
@@ -75859,9 +74272,7 @@
         "DU-2016-195-art-13"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "SW-bezplatne-zaswiadczenia-historyczne"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-25",
@@ -76145,11 +74556,7 @@
           "z_pozn_zm": false
         }
       ],
-      "korzysci": [
-        "SW-przejecie-po-smierci",
-        "SW-ulgi-zwrot",
-        "SW-wygasniecie-zwrotu"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-26",
@@ -76193,9 +74600,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "SW-wygasniecie-zwrotu"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-27",
@@ -76470,11 +74875,7 @@
           "z_pozn_zm": false
         }
       ],
-      "korzysci": [
-        "SW-koszty-gmina-historyczne",
-        "SW-koszty-powiat",
-        "SW-koszty-zus"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-3",
@@ -76559,9 +74960,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "SW-ochrona-egzekucji"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-4",
@@ -76755,10 +75154,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "SW-dodatek-piecza-historyczny",
-        "SW-dodatek-placowka-historyczny"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-5",
@@ -76929,9 +75325,7 @@
         "DU-2016-195-art-29"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "SW-koszty-gmina-historyczne"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-53",
@@ -76979,9 +75373,7 @@
         "DU-2016-195-art-52"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "SW-koszty-gmina-historyczne"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-54",
@@ -77052,9 +75444,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "SW-inne-swiadczenia-historyczne"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-56",
@@ -77077,9 +75467,7 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": [
-        "SW-inne-swiadczenia-historyczne"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-57",
@@ -77321,9 +75709,7 @@
         "DU-2016-195-art-4"
       ],
       "powiazane_akty": [],
-      "korzysci": [
-        "SW-rzeczowa"
-      ]
+      "korzysci": []
     },
     {
       "id": "DU-2016-195-art-9a",
@@ -77399,7 +75785,6 @@
       "powiazane_artykuly": [],
       "powiazane_akty": [],
       "korzysci": [
-        "SW-koszty-powiat",
         "SW-opiekun-kraju",
         "SW-wychowawcze"
       ]
@@ -82305,9 +80690,561 @@
       "powod": "art. 22 dotyczy zbiegu praw rodziców i opiekunów, nie odrębnego świadczenia; art. 1 ust. 2b — warunek aktywności zawodowej cudzoziemców"
     }
   ],
+  "poza_mapa": [
+    {
+      "id": "FUS-emerytura-powszechna",
+      "nazwa": "Emerytura powszechna — nowe zasady",
+      "powod": "wariant_warunkow",
+      "opis_powodu": "Wariant warunków nabycia tego samego świadczenia (np. emerytura w obniżonym wieku) — kamień 2 („komu”) karty głównej, nie osobna karta.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-emerytura-stare-zasady",
+      "nazwa": "Emerytura dla urodzonych przed1.01.1949 — stare zasady",
+      "powod": "wariant_warunkow",
+      "opis_powodu": "Wariant warunków nabycia tego samego świadczenia (np. emerytura w obniżonym wieku) — kamień 2 („komu”) karty głównej, nie osobna karta.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-emerytura-wczesniejsza-art29",
+      "nazwa": "Wcześniejsza emerytura pracownicza (art.29 i46)",
+      "powod": "wariant_warunkow",
+      "opis_powodu": "Wariant warunków nabycia tego samego świadczenia (np. emerytura w obniżonym wieku) — kamień 2 („komu”) karty głównej, nie osobna karta.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-emerytura-wypadkowa-art31",
+      "nazwa": "Wcześniejsza emerytura osoby uprawnionej do renty wypadkowej (art.31)",
+      "powod": "wariant_warunkow",
+      "opis_powodu": "Wariant warunków nabycia tego samego świadczenia (np. emerytura w obniżonym wieku) — kamień 2 („komu”) karty głównej, nie osobna karta.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-emerytura-szczegolne-warunki",
+      "nazwa": "Emerytura w obniżonym wieku za szczególne warunki lub charakter pracy",
+      "powod": "wariant_warunkow",
+      "opis_powodu": "Wariant warunków nabycia tego samego świadczenia (np. emerytura w obniżonym wieku) — kamień 2 („komu”) karty głównej, nie osobna karta.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-emerytura-obnizony-wiek-gorniczy",
+      "nazwa": "Emerytura z obniżonym wiekiem za pracę górniczą (art.39)",
+      "powod": "wariant_warunkow",
+      "opis_powodu": "Wariant warunków nabycia tego samego świadczenia (np. emerytura w obniżonym wieku) — kamień 2 („komu”) karty głównej, nie osobna karta.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-emerytura-kolejowa",
+      "nazwa": "Emerytura kolejowa",
+      "powod": "wariant_warunkow",
+      "opis_powodu": "Wariant warunków nabycia tego samego świadczenia (np. emerytura w obniżonym wieku) — kamień 2 („komu”) karty głównej, nie osobna karta.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-emerytura-gornicza",
+      "nazwa": "Emerytura górnicza",
+      "powod": "wariant_warunkow",
+      "opis_powodu": "Wariant warunków nabycia tego samego świadczenia (np. emerytura w obniżonym wieku) — kamień 2 („komu”) karty głównej, nie osobna karta.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-zwiekszenie-rolne",
+      "nazwa": "Zwiększenie emerytury FUS za składki i okresy rolnicze",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-przeliczenie-skladki",
+      "nazwa": "Powiększenie emerytury o składki po jej przyznaniu",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-przeliczenie-podstawa",
+      "nazwa": "Ponowne obliczenie emerytury/renty od lepszej podstawy",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-przeliczenie-okresy",
+      "nazwa": "Podwyższenie przez doliczenie okresów składkowych",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-wyplata-zaliczkowa",
+      "nazwa": "Zaliczkowa wypłata należnego świadczenia",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-zwolnienie-oplat",
+      "nazwa": "Zwolnienie z opłat przy ubieganiu się o świadczenia",
+      "powod": "zwolnienie_z_oplat_lub_podatku",
+      "opis_powodu": "Zwolnienie z opłaty lub podatku — państwo nie pobiera, ale nic nie daje; ustaw podatkowych nie mapujemy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-bezplatne-poswiadczenia",
+      "nazwa": "Nieodpłatne poświadczanie podpisów w sprawach rentowych",
+      "powod": "zwolnienie_z_oplat_lub_podatku",
+      "opis_powodu": "Zwolnienie z opłaty lub podatku — państwo nie pobiera, ale nic nie daje; ustaw podatkowych nie mapujemy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-wyrownanie-blad",
+      "nazwa": "Wyrównanie świadczenia po błędzie organu",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-wyrownanie-wznowienie",
+      "nazwa": "Wznowienie wypłaty i wyrównanie okresu wstrzymania",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-odstapienie-zwrot",
+      "nazwa": "Odstąpienie od żądania zwrotu i ulgi w potrąceniach",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-ochrona-potracenia",
+      "nazwa": "Kwota emerytury/renty wolna od potrąceń i egzekucji",
+      "powod": "ochrona_istniejacego_swiadczenia",
+      "opis_powodu": "Ochrona istniejącego świadczenia (przed egzekucją, potrąceniem, wliczeniem do dochodu) — cecha karty głównej, nie nowa korzyść.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-kapital-poczatkowy",
+      "nazwa": "Kapitał początkowy jako część podstawy emerytury",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-zachowane-przed1999",
+      "nazwa": "Zachowane emerytury i renty przyznane przed reformą",
+      "powod": "historyczne_przejsciowe",
+      "opis_powodu": "Przepis przejściowy, zachowane dawne prawo albo dodatek zastąpiony ustawowo — historia karty głównej, nie osobna pozycja mapy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-emerytura-184",
+      "nazwa": "Wcześniejsza emerytura na podstawie art184",
+      "powod": "wariant_warunkow",
+      "opis_powodu": "Wariant warunków nabycia tego samego świadczenia (np. emerytura w obniżonym wieku) — kamień 2 („komu”) karty głównej, nie osobna karta.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-kapital-185",
+      "nazwa": "Podwyższenie kapitału przy wcześniejszej emeryturze art184",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-kapital-studia",
+      "nazwa": "Uwzględnienie studiów przy przeliczeniu kapitału początkowego",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-wczesniejsza-opieka",
+      "nazwa": "Zachowane prawo do wcześniejszej emerytury opiekuna dziecka",
+      "powod": "historyczne_przejsciowe",
+      "opis_powodu": "Przepis przejściowy, zachowane dawne prawo albo dodatek zastąpiony ustawowo — historia karty głównej, nie osobna pozycja mapy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-emerytura-posel",
+      "nazwa": "Zachowana dawna emerytura posła lub senatora",
+      "powod": "historyczne_przejsciowe",
+      "opis_powodu": "Przepis przejściowy, zachowane dawne prawo albo dodatek zastąpiony ustawowo — historia karty głównej, nie osobna pozycja mapy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-wyrownanie-uniewinnienie",
+      "nazwa": "Wyrównanie świadczenia wstrzymanego w czasie pozbawienia wolności przed1999",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-zachowane-zasilki1998",
+      "nazwa": "Dawne zasiłki i świadczenie rehabilitacyjne na przełomie1998/1999",
+      "powod": "historyczne_przejsciowe",
+      "opis_powodu": "Przepis przejściowy, zachowane dawne prawo albo dodatek zastąpiony ustawowo — historia karty głównej, nie osobna pozycja mapy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-przeliczenie-baza",
+      "nazwa": "Przeliczenie świadczeń od pełnej kwoty bazowej",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-przeliczenie-zawieszonej",
+      "nazwa": "Jednorazowe ponowne obliczenie emerytury zawieszonej od2011",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "FUS-c-przeliczenie-1953",
+      "nazwa": "Przeliczenie i wyrównanie emerytury rocznika1953",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_FUS"
+    },
+    {
+      "id": "SW-rzeczowa",
+      "nazwa": "Świadczenie wychowawcze w naturze lub usługach",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-przejecie-po-smierci",
+      "nazwa": "Zachowanie początku prawa przy zmianie opiekuna po śmierci",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "niepieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-ulgi-zwrot",
+      "nazwa": "Odstąpienie od zwrotu, odroczenie i raty świadczenia",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-wygasniecie-zwrotu",
+      "nazwa": "Wygaśnięcie należności zwrotnej po śmierci",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-koszty-zus",
+      "nazwa": "Finansowanie obsługi świadczenia przez ZUS",
+      "powod": "odbiorca_nie_osoba",
+      "opis_powodu": "Odbiorcą jest instytucja albo osoba wykonująca zadanie publiczne (koszty obsługi, dotacje, diety komisji) — nie osoba lub rodzina, której pomaga państwo.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-koszty-powiat",
+      "nazwa": "Finansowanie szczególnego zadania powiatu",
+      "powod": "odbiorca_nie_osoba",
+      "opis_powodu": "Odbiorcą jest instytucja albo osoba wykonująca zadanie publiczne (koszty obsługi, dotacje, diety komisji) — nie osoba lub rodzina, której pomaga państwo.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-koszty-gmina-historyczne",
+      "nazwa": "Historyczne finansowanie obsługi i wdrożenia w gminach",
+      "powod": "odbiorca_nie_osoba",
+      "opis_powodu": "Odbiorcą jest instytucja albo osoba wykonująca zadanie publiczne (koszty obsługi, dotacje, diety komisji) — nie osoba lub rodzina, której pomaga państwo.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-dodatek-piecza-historyczny",
+      "nazwa": "Historyczny dodatek wychowawczy w rodzinnej pieczy",
+      "powod": "historyczne_przejsciowe",
+      "opis_powodu": "Przepis przejściowy, zachowane dawne prawo albo dodatek zastąpiony ustawowo — historia karty głównej, nie osobna pozycja mapy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-rodzina-pomocowa-historyczna",
+      "nazwa": "Historyczna część dodatku dla rodziny pomocowej",
+      "powod": "historyczne_przejsciowe",
+      "opis_powodu": "Przepis przejściowy, zachowane dawne prawo albo dodatek zastąpiony ustawowo — historia karty głównej, nie osobna pozycja mapy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-dodatek-placowka-historyczny",
+      "nazwa": "Historyczny dodatek do kwoty placówki rodzinnej",
+      "powod": "historyczne_przejsciowe",
+      "opis_powodu": "Przepis przejściowy, zachowane dawne prawo albo dodatek zastąpiony ustawowo — historia karty głównej, nie osobna pozycja mapy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-koszty-piecza-historyczne",
+      "nazwa": "Historyczny koszt obsługi dodatków w pieczy",
+      "powod": "odbiorca_nie_osoba",
+      "opis_powodu": "Odbiorcą jest instytucja albo osoba wykonująca zadanie publiczne (koszty obsługi, dotacje, diety komisji) — nie osoba lub rodzina, której pomaga państwo.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-zwolnienie-pit",
+      "nazwa": "Zwolnienie podatkowe świadczenia i wskazanych kwot pieczy",
+      "powod": "zwolnienie_z_oplat_lub_podatku",
+      "opis_powodu": "Zwolnienie z opłaty lub podatku — państwo nie pobiera, ale nic nie daje; ustaw podatkowych nie mapujemy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-ochrona-egzekucji",
+      "nazwa": "Ochrona świadczeń przed egzekucją",
+      "powod": "ochrona_istniejacego_swiadczenia",
+      "opis_powodu": "Ochrona istniejącego świadczenia (przed egzekucją, potrąceniem, wliczeniem do dochodu) — cecha karty głównej, nie nowa korzyść.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-ochrona-innych-uprawnien",
+      "nazwa": "Wyłączenie świadczenia z wybranych kryteriów dochodowych",
+      "powod": "ochrona_istniejacego_swiadczenia",
+      "opis_powodu": "Ochrona istniejącego świadczenia (przed egzekucją, potrąceniem, wliczeniem do dochodu) — cecha karty głównej, nie nowa korzyść.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-bez-oplat-skarbowych",
+      "nazwa": "Brak opłaty skarbowej w sprawach programu",
+      "powod": "zwolnienie_z_oplat_lub_podatku",
+      "opis_powodu": "Zwolnienie z opłaty lub podatku — państwo nie pobiera, ale nic nie daje; ustaw podatkowych nie mapujemy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-bezplatne-zaswiadczenia-historyczne",
+      "nazwa": "Historyczne bezpłatne zaświadczenia do świadczenia",
+      "powod": "zwolnienie_z_oplat_lub_podatku",
+      "opis_powodu": "Zwolnienie z opłaty lub podatku — państwo nie pobiera, ale nic nie daje; ustaw podatkowych nie mapujemy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-pomoc-techniczna",
+      "nazwa": "Pomoc w elektronicznym złożeniu i odbiorze dokumentów",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "SW-inne-swiadczenia-historyczne",
+      "nazwa": "Historyczne powiązania świadczeń rodzinnych, alimentów i stypendiów",
+      "powod": "historyczne_przejsciowe",
+      "opis_powodu": "Przepis przejściowy, zachowane dawne prawo albo dodatek zastąpiony ustawowo — historia karty głównej, nie osobna pozycja mapy.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_SW"
+    },
+    {
+      "id": "DU-1998-1118-skladka",
+      "nazwa": "składka",
+      "powod": "obowiazek_lub_parametr",
+      "opis_powodu": "Obowiązek obywatela wobec państwa albo parametr obliczeń (składka, wskaźnik) — nie korzyść.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "art. 25 ust. 7: wskaźnik waloryzacji składek — składkę obywatel płaci państwu; parametr obliczenia, nie korzyść",
+      "forma": "pieniezne",
+      "pochodzenie": "automat"
+    },
+    {
+      "id": "DU-1998-1118-zwiekszenie",
+      "nazwa": "zwiększenie",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "art. 26a ust. 3: zwiększenie emerytury za okresy rolnicze — sposób ustalenia kwoty emerytury, nie osobne świadczenie (por. FUS-zwiekszenie-rolne)",
+      "forma": "pieniezne",
+      "pochodzenie": "automat"
+    },
+    {
+      "id": "DU-2003-1268-opieka",
+      "nazwa": "opieka",
+      "powod": "sposob_wyplaty",
+      "opis_powodu": "Komu i jak wypłaca się istniejące świadczenie (np. opiekunowi prawnemu) — nie osobne świadczenie.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "art. 12b ust. 1: renta socjalna „wypłaca się osobie sprawującej tę opiekę” — droga wypłaty istniejącego świadczenia, nie osobne świadczenie",
+      "forma": "niepieniezne",
+      "pochodzenie": "automat"
+    },
+    {
+      "id": "DU-2004-593-zasilek-celowy",
+      "nazwa": "zasiłek celowy",
+      "powod": "decyzja_wlasciciela",
+      "opis_powodu": "Usunięte z decyzji właściciela potwierdzonej po analizie, w której nie wskazano powodu prawnego ani duplikatu.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "art. 39 ust. 1 (zasiłek celowy na niezbędną potrzebę bytową). Analiza nie znalazła powodu usunięcia; właściciel potwierdził decyzję z pliku 21.10.2026 („Tak jak to było w pliku”).",
+      "forma": "pieniezne",
+      "pochodzenie": "automat"
+    },
+    {
+      "id": "DU-2004-593-tymczasowe-schronienie",
+      "nazwa": "tymczasowe schronienie",
+      "powod": "duplikat",
+      "opis_powodu": "Ta sama korzyść co inna karta (odmiana nazwy albo postać tej samej pomocy).",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "art. 48a ust. 2e: tymczasowe schronienie w schronisku z usługami opiekuńczymi to postać „schronienia” (karta „schronienie” zostaje)",
+      "forma": "niepieniezne",
+      "pochodzenie": "automat"
+    },
+    {
+      "id": "DU-2004-593-dieta",
+      "nazwa": "dieta",
+      "powod": "odbiorca_nie_osoba",
+      "opis_powodu": "Odbiorcą jest instytucja albo osoba wykonująca zadanie publiczne (koszty obsługi, dotacje, diety komisji) — nie osoba lub rodzina, której pomaga państwo.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "art. 117 ust. 2: diety i należności za podróż członków Komisji — zwrot kosztów osobom wykonującym zadanie publiczne, nie pomoc dla potrzebującego",
+      "forma": "pieniezne",
+      "pochodzenie": "automat"
+    }
+  ],
   "statystyki": {
-    "reczne": 74,
-    "automatyczne": 25,
+    "reczne": 25,
+    "automatyczne": 19,
     "z_notatek": 0
   }
 }

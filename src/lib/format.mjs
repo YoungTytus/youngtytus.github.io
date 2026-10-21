@@ -92,6 +92,13 @@ export const etykietaZmiany = {
   brzmienie_pierwotne: 'brzmienie pierwotne',
 };
 
+/** Forma świadczenia (art. 36 ustawy o pomocy społecznej: pieniężne i niepieniężne). */
+export const etykietaFormy = {
+  pieniezne: 'pieniężne',
+  niepieniezne: 'niepieniężne (rzecz, usługa, miejsce)',
+  nieustalona: 'forma nieustalona',
+};
+
 export const etykietaRozwiazania = {
   kwota_w_ustawie: 'kwota wprost w ustawie',
   kwota_z_aktu_wykonawczego: 'kwota z aktu wykonawczego',

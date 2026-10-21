@@ -13,7 +13,7 @@ import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta,
 import { kartaSocjal, artykulSocjal } from '../../lib/socjal.mjs';
 import {
   KOLEJNOSC_TERMINOW, OPIS_TERMINU, czyZaslepka, dataLubBrak, dataPL, eliSlug, etapZaslepki,
-  etykietaRozwiazania, etykietaZmiany, etykietaWariantu, opisUprawnionych, typo, wielka,
+  etykietaFormy, etykietaRozwiazania, etykietaZmiany, etykietaWariantu, opisUprawnionych, typo, wielka,
 } from '../../lib/format.mjs';
 
 export function getStaticPaths() {
@@ -126,7 +126,8 @@ const dowodNominalnej = nominalnyKrok >= 0
             <div class="amount-variant"><span>{limit._rodzaj === 'maksimum' ? 'Najwyżej' : 'Co najmniej'}</span><Kwota wartosc={limit.wartosc} href={limit.href} etykieta={limit.etykieta} blok /></div>
             <p class="amount-date">Limit z przepisu: {typo(limit.przepis)}. Od {dataPL(limit.od)} Dokładną kwotę ustala organ w decyzji.</p>
           </>}
-          {!a && !limit && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : ile.regula ? 'Kwota określona regułą' : 'Nie ustalono'}</p>}
+          {!a && !limit && k.forma === 'niepieniezne' && <p class="amount-missing">Świadczenie niepieniężne: państwo daje rzecz, usługę albo miejsce (np. posiłek, schronienie, opiekę). Taka pomoc nie ma kwoty.</p>}
+          {!a && !limit && k.forma !== 'niepieniezne' && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : ile.regula ? 'Kwota określona regułą' : 'Nie ustalono'}</p>}
           {a && <p class="amount-date">{a.od ? `Od ${dataPL(a.od)}` : `Data początku: ${dataLubBrak(a.od)}`}</p>}
           {a?.do && <p class="amount-date">Do {dataLubBrak(a.do)}</p>}
           {!a && ile.wyliczenie && <p class="amount-date"><a href="#wyliczenie" style="text-decoration:underline">Zobacz wyliczenie pomocnicze i jego źródła</a>.</p>}
@@ -135,6 +136,7 @@ const dowodNominalnej = nominalnyKrok >= 0
         </div>
 
         <ul class="fact-list">
+          {k.forma && <li><span>Forma świadczenia</span><span>{etykietaFormy[k.forma as keyof typeof etykietaFormy]}</span></li>}
           <li><span>Jak ustalono kwotę</span><span>{etykietaRozwiazania[ile.rozwiazanie as keyof typeof etykietaRozwiazania]}</span></li>
           {ile.regula && (
             <li><span>Reguła</span><span>{ile.regula.udzial && <><Kwota wartosc={ile.regula.udzial} href={dowodR!.href} etykieta={dowodR!.etykieta} /> </>}{ile.regula.opis}{podstawa ? <>, zob. <a class="link" href={`/korzysc/${podstawa.id}/`}>{podstawa.nazwa}</a></> : ile.regula.podstawa_id ? <span class="muted"> (korzyść bazowa nie ma karty w tej wersji danych)</span> : <span class="muted"> (brak powiązanej karty kwoty bazowej w eksporcie)</span>}</span></li>

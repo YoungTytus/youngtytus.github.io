@@ -660,6 +660,9 @@
         "sytuacje_zrodlo": {
           "$ref": "#/$defs/tekstLubNull"
         },
+        "forma": {
+          "enum": ["pieniezne", "niepieniezne", "nieustalona"]
+        },
         "obowiazuje_od": {
           "oneOf": [
             {

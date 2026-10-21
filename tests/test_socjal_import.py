@@ -189,6 +189,37 @@ class SocjalImportTests(unittest.TestCase):
         self.assertNotIn('DU-2016-195-opieka', karty)                    # szum słownika pominięty z powodem
         self.assertEqual(extra['karty']['SW-wychowawcze']['pochodzenie'], 'reczna_SW')
 
+    def test_owner_decisions_and_form(self):
+        katalog = self.socjal / 'Dane/Mapa/DU-2004-593'
+        katalog.mkdir(parents=True)
+        (katalog / 'przebieg.json').write_text(json.dumps({'akt': 'DU/2004/593'}), encoding='utf-8')
+        (katalog / 'jednostki.json').write_text('[]', encoding='utf-8')
+        kw = lambda socjal, powod=None, forma='pieniezne': {'socjal': socjal, 'powod': powod, 'forma': forma, 'regula': None}
+        (katalog / 'korzysci.json').write_text(json.dumps({'korzysci': [
+            {'id': 'DU-2004-593-posilek', 'nazwa': 'posiłek', 'akt': 'DU/2004/593', 'rodzaj_korzysci': 'swiadczenie_rzeczowe',
+             'status': 'obowiazuje', 'kwalifikacja': kw(True, forma='niepieniezne')},
+            {'id': 'DU-2004-593-dieta', 'nazwa': 'dieta', 'akt': 'DU/2004/593', 'kwalifikacja': kw(True)},
+            {'id': 'DU-2004-593-skladka', 'nazwa': 'składka', 'akt': 'DU/2004/593', 'kwalifikacja': kw(False, 'obowiazek_lub_parametr')},
+            {'id': 'DU-2004-593-zasilek-celowy', 'nazwa': 'zasiłek celowy', 'akt': 'DU/2004/593', 'kwalifikacja': kw(True)}]}),
+            encoding='utf-8')
+        (self.socjal / 'Dane/Mapa/kwalifikacja').mkdir(parents=True)
+        (self.socjal / 'Dane/Mapa/kwalifikacja/decyzje_wlasciciela.json').write_text(json.dumps({
+            'powody': {'odbiorca_nie_osoba': 'instytucja albo członek komisji'},
+            'decyzje': [{'id': 'DU-2004-593-dieta', 'stosowanie': 'usun', 'powod': 'odbiorca_nie_osoba', 'uwaga': 'art. 117'},
+                        {'id': 'DU-2004-593-zasilek-celowy', 'stosowanie': 'wstrzymane', 'powod': 'do_potwierdzenia'}]}),
+            encoding='utf-8')
+        k, extra = self.run_import()
+        karty = {x['id']: x for x in k}
+        self.assertEqual(karty['DU-2004-593-posilek']['forma'], 'niepieniezne')
+        self.assertNotIn('DU-2004-593-dieta', karty)          # decyzja właściciela
+        self.assertNotIn('DU-2004-593-skladka', karty)        # reguła skryptu mapy
+        self.assertIn('DU-2004-593-zasilek-celowy', karty)    # wstrzymane: zostaje z flagą
+        self.assertTrue(any('do potwierdzenia' in f for f in karty['DU-2004-593-zasilek-celowy']['flagi']))
+        poza = {p['id']: p for p in extra['poza_mapa']}
+        self.assertEqual(poza['DU-2004-593-dieta']['zrodlo_decyzji'], 'decyzja_wlasciciela')
+        self.assertEqual(poza['DU-2004-593-skladka']['powod'], 'obowiazek_lub_parametr')
+        self.assertNotIn('DU-2004-593-dieta', extra['karty'])
+
     def test_one_label_per_series_across_years(self):
         stary = {'akt': 'MP/2016/1', 'tekst': '676,75 zł', 'wariant_klucz': 'rent czes', 'od': '2016-03-01',
                  'do': '2017-02-28', 'wariant': '— dla rent z tytułu częściowej niezdolno- ści', 'cytat': 'x',

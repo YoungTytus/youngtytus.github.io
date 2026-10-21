@@ -1,14 +1,14 @@
 {
   "kontrakt": "strona-0.4",
-  "wygenerowano": "2026-10-21T15:33:12.700916+00:00",
-  "wersja_kodu": "importuj_socjal-1.3",
+  "wygenerowano": "2026-10-21T20:16:54.291275+00:00",
+  "wersja_kodu": "importuj_socjal-1.4",
   "na_dzien": "2026-10-21",
   "pliki": {
-    "korzysci.json": "c1be5d247793847ec127a96014ee2cc8277e31dc2d7acf9f523bace2871ce927",
-    "akty.json": "ae22bb7eabe417213c0dad491c6a1489abfd3e7908f1755839e3dae67f41a972",
+    "korzysci.json": "0d986397fddbb3311792a095f5e7269f07481d512cc670b3cd354fde232dce14",
+    "akty.json": "a563f8fa2ad11c2062d92d3f542b7854317f3165cb399417c5b5bb8a05d1d287",
     "slowniki.json": "d6956b48072205c30c3265132ba90f37d4b6df025763e5c64ce91833ba867ae7",
     "akty/SHA256SUMS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "socjal.json": "c12736a738d1c58781909e8c3d9e5d871205259dda07d6601d18cceac81581ee"
+    "socjal.json": "702d0772fb6c89bec394b2acc5f146f9973311846b0de471f0b9d9e0671d7425"
   },
   "zakres": [
     "DU/1998/1118",
@@ -19,7 +19,7 @@
     "DU/2022/1692"
   ],
   "liczby": {
-    "korzysci": 99,
+    "korzysci": 44,
     "akty": 98,
     "pliki_aktow": 0
   },
