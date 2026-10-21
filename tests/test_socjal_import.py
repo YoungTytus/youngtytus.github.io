@@ -6,7 +6,8 @@ import unittest
 
 from aktualizuj_strone import UpdateError, validate_export
 from scripts.importuj_socjal import (generuj, bez_kwoty, przenies_podsumowanie,
-                                     przenies_terminy, nominalna_zastepowana)
+                                     przenies_terminy, nominalna_zastepowana, etykieta_wariantu,
+                                     opis_wariantu, przenies_obliczona, przenies_limity)
 
 
 class SocjalImportTests(unittest.TestCase):
@@ -137,6 +138,57 @@ class SocjalImportTests(unittest.TestCase):
             f.write(' ')
         with self.assertRaisesRegex(UpdateError, 'SHA-256'):
             validate_export(self.output)
+
+    def test_parallel_amounts_from_one_act_become_variants(self):
+        def row(kw, wariant, naglowek):
+            return {'akt': 'MP/2026/220', 'tekst': kw, 'wariant': wariant, 'naglowek_punktu': naglowek,
+                    'od': '2026-03-01', 'cytat': kw + ' – ' + wariant, 'jednostka': 'MP/2026/220#tresc'}
+        rows = [row('1978,49 zł', 'a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy',
+                    'kwoty najniższej emerytury i renty wynoszą'),
+                row('1483,87 zł', 'miesięcznie – renta dla osób częściowo niezdolnych do pracy',
+                    'kwoty najniższej emerytury i renty wynoszą')]
+        src = {'akt': 'DU/1998/1118', 'nazwa': 'renta', 'ile_podsumowanie': {
+            'rozwiazanie': 'kwota_z_aktu_wykonawczego', 'aktualna': rows, 'historia': rows, 'trasa': []}}
+        k = self.karta()
+        przenies_podsumowanie(src, k, {}, '2026-10-21')
+        self.assertEqual(len(k['ile']['os_czasu']), 1)
+        warianty = k['ile']['aktualna']['warianty']
+        self.assertEqual([w['wartosc'] for w in warianty], ['1978,49 zł', '1483,87 zł'])
+        self.assertTrue(warianty[0]['etykieta'].startswith('kwoty najniższej emerytury i renty: emerytura'))
+        self.assertNotIn('nieustalone', [n['pole'] for n in k['nieustalone']])
+
+    def test_variant_label_drops_announcement_preamble_and_bare_name(self):
+        self.assertEqual(etykieta_wariantu('U. z 2023 r. poz. 2194) ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku'),
+                         'kwota dodatku')
+        self.assertIsNone(opis_wariantu({'wariant': 'ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku dopełniającego'},
+                                        'dodatek dopełniający'))
+        self.assertIn('maksymalną', opis_wariantu({'wariant': 'maksymalną kwotę zasiłku stałego'}, 'zasiłek stały'))
+
+    def test_calculated_amount_and_limit_have_evidence(self):
+        wielkosci = {'najnizsza': {'nazwa': 'kwota najniższej renty', 'seria': [
+            {'akt': 'MP/2026/220', 'od': '2026-03-01', 'tekst': '1978,49 zł', 'cytat': 'a) 1978,49 zł miesięcznie – renta'}]},
+            'kryterium': {'nazwa': 'kryterium', 'seria': [
+            {'akt': 'DU/2021/1296', 'od': '2022-01-01', 'do': '2024-12-31', 'tekst': '600 zł', 'cytat': 'b) 600 zł'},
+            {'akt': 'DU/2024/1044', 'od': '2025-01-01', 'tekst': '823 zł', 'cytat': 'b) 823 zł'}]}}
+        src = {'akt': 'DU/2003/1268', 'nazwa': 'renta socjalna', 'ile_podsumowanie': {'obliczona': [{
+            'wynik': '1978.49', 'procent': '100.0', 'wielkosc': 'najnizsza', 'regula': '100 % kwoty najniższej renty',
+            'historia': [{'od': '2026-03-01', 'do': None, 'podstawa': '1978.49', 'wynik': '1978.49', 'akt': 'MP/2026/220'}]}]}}
+        k = self.karta()
+        self.assertTrue(przenies_obliczona(src, k, {}, wielkosci, '2026-10-21'))
+        self.assertEqual(k['ile']['wyliczenie']['wartosc'], '1978,49 zł')
+        self.assertEqual(k['ile']['regula']['udzial'], '100 %')
+        self.assertEqual(k['ile']['wyliczenie']['podstawa']['dowod']['eli'], 'MP/2026/220')
+        src = {'ile_podsumowanie': {'limity': [{'rodzaj': 'maksimum', 'wielkosc': 'kryterium', 'sciezka': 'art. 38 ust. 2 pkt 1',
+                                                'cytat': 'nie może być wyższa niż kwota kryterium dochodowego'}]}}
+        k = self.karta()
+        przenies_limity(src, k, wielkosci)
+        wpisy = k['ile']['progi'][0]['wpisy']
+        self.assertEqual([w['wartosc'] for w in wpisy], ['600 zł', '823 zł'])
+        self.assertEqual(wpisy[-1]['_rodzaj'], 'maksimum')
+        k = self.karta()
+        src['ile_podsumowanie']['limity'][0]['cytat'] = 'nie może być niższa niż 10 % kwoty kryterium'
+        przenies_limity(src, k, wielkosci)
+        self.assertEqual(k['ile']['progi'], [])
 
 
 if __name__ == '__main__':

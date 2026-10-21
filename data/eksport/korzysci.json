@@ -2601,21 +2601,26 @@
         "podstawa_id": null,
         "opis": "Jedna łączna renta:85% świadczenia zmarłego dla 1 osoby,90% dla 2,95% dla 3 lubwięcej. Równy podział między uprawnionych. Podstawa: emerytura lub renta całkowita należna zmarłemu, z korektami 73 ust 2a–4; rolnicze zwiększenie uwzględnione w50%. Minimum łącznej renty od 01.03.2026:1978,49zł/mies."
       },
-      "aktualna": null,
+      "aktualna": {
+        "wartosc": null,
+        "warianty": [
+          {
+            "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+            "wartosc": "1978,49 zł"
+          }
+        ],
+        "od": "2026-03-01",
+        "do": null
+      },
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie-emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy, renta dla osoby częściowo niezdolnej do pracy. 2",
-              "wartosc": "451,11 zł"
-            }
-          ],
+          "wartosc": "451,11 zł",
+          "warianty": null,
           "od": "1999-06-01",
-          "do": null,
+          "do": "2001-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
           "poprzednia": null,
           "roznica": null,
@@ -2630,59 +2635,8 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla renty rodzinnej, do której uprawniona jest jedna osoba",
-              "wartosc": "276,72 zł"
-            }
-          ],
-          "od": "2000-06-01",
-          "do": "2001-05-31",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2000/316",
-            "przepis": "treść",
-            "cytat": "276,72 zł — dla renty rodzinnej, do której uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2000/316",
-            "data_stanu": null,
-            "_sha256": "b175de05c21bfe8e1c565535a4fb8b618ce5f456d1bcddd70eeb3b583bbbcbcb"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla renty rodzinnej, do której uprawniona jest jedna osoba",
-              "wartosc": "311,86 zł"
-            }
-          ],
-          "od": "2001-06-01",
-          "do": "2002-05-31",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "276.72",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2001/263",
-            "przepis": "treść",
-            "cytat": "311,86 zł — dla renty rodzinnej, do której uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/263",
-            "data_stanu": null,
-            "_sha256": "d1b2168968a8c6ffa0958294aa2f33f134fb7d35676df2fe1c5a2e0a62ae3eca"
-          },
-          "_roznica_zrodlowa": 35.14
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy",
-              "wartosc": "530,26 zł"
-            }
-          ],
+          "wartosc": "530,26 zł",
+          "warianty": null,
           "od": "2001-06-01",
           "do": "2002-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
@@ -2699,36 +2653,8 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla renty rodzinnej, do której uprawniona jest jedna osoba",
-              "wartosc": "313,42 zł"
-            }
-          ],
-          "od": "2002-06-01",
-          "do": "2003-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "311.86",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2002/344",
-            "przepis": "treść",
-            "cytat": "313,42 zł — dla renty rodzinnej, do której uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2002/344",
-            "data_stanu": null,
-            "_sha256": "80e7dca494f0a9d5945b6aa242a6ed0ae4e701711af7036c36cb5f1322b6057c"
-          },
-          "_roznica_zrodlowa": 1.56
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy",
-              "wartosc": "532,91 zł"
-            }
-          ],
+          "wartosc": "532,91 zł",
+          "warianty": null,
           "od": "2002-06-01",
           "do": "2003-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
@@ -2745,15 +2671,10 @@
           "_roznica_zrodlowa": 2.65
         },
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy",
-              "wartosc": "552,63 zł"
-            }
-          ],
+          "wartosc": "552,63 zł",
+          "warianty": null,
           "od": "2003-03-01",
-          "do": null,
+          "do": "2006-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
           "poprzednia": "532.91",
           "roznica": null,
@@ -2768,40 +2689,12 @@
           "_roznica_zrodlowa": 19.72
         },
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "— dla renty rodzinnej, do której uprawniona jest jedna osoba",
-              "wartosc": "325,02 zł"
-            }
-          ],
-          "od": "2003-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "313.42",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2003/152",
-            "przepis": "treść",
-            "cytat": "3) 325,02 zł — dla renty rodzinnej, do której uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2003/152",
-            "data_stanu": null,
-            "_sha256": "0a1233df12bee8012e29879286b602511176cdb64eb327ee223832288882af9e"
-          },
-          "_roznica_zrodlowa": 11.6
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
-              "wartosc": "597,46 zł"
-            }
-          ],
+          "wartosc": "597,46 zł",
+          "warianty": null,
           "od": "2006-03-01",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
+          "do": "2008-02-29",
+          "rodzaj_zmiany": "akt_wykonawczy",
+          "poprzednia": "552.63",
           "roznica": null,
           "dowod": {
             "eli": "MP/2006/166",
@@ -2811,20 +2704,20 @@
             "data_stanu": null,
             "_sha256": "809177dbdae671b9d6b65427735e8c91cecc4f6b111d1a2b1ee909f5c729c010"
           },
-          "_roznica_zrodlowa": null
+          "_roznica_zrodlowa": 44.83
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "636,29 zł"
             }
           ],
           "od": "2008-03-01",
           "do": "2009-02-28",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
+          "rodzaj_zmiany": "akt_wykonawczy",
+          "poprzednia": "597.46",
           "roznica": null,
           "dowod": {
             "eli": "MP/2008/211",
@@ -2834,36 +2727,13 @@
             "data_stanu": null,
             "_sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6"
           },
-          "_roznica_zrodlowa": null
+          "_roznica_zrodlowa": 38.83
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "374,22 zł"
-            }
-          ],
-          "od": "2008-03-01",
-          "do": "2009-02-28",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/211",
-            "przepis": "treść",
-            "cytat": "374,22 zł — dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/211",
-            "data_stanu": null,
-            "_sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "675,10 zł"
             }
           ],
@@ -2886,30 +2756,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "397,05 zł"
-            }
-          ],
-          "od": "2009-03-01",
-          "do": "2010-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "374.22",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/188",
-            "przepis": "treść",
-            "cytat": "397,05 zł — dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/188",
-            "data_stanu": null,
-            "_sha256": "4997498be34f22e9eed54b188af876d1b5f324dde51f4628ddb682b5c2230608"
-          },
-          "_roznica_zrodlowa": 22.83
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "706,29 zł"
             }
           ],
@@ -2932,30 +2779,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "415,39 zł"
-            }
-          ],
-          "od": "2010-03-01",
-          "do": "2011-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "397.05",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2010/110",
-            "przepis": "treść",
-            "cytat": "415,39 zł — dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/110",
-            "data_stanu": null,
-            "_sha256": "0c71d333c7111928463903420d288ac93fafc511a72ff262ae0d082846319753"
-          },
-          "_roznica_zrodlowa": 18.34
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "728,18 zł"
             }
           ],
@@ -2978,53 +2802,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "428,27 zł"
-            }
-          ],
-          "od": "2011-03-01",
-          "do": "2013-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "415.39",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2011/162",
-            "przepis": "treść",
-            "cytat": "428,27 zł — dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2011/162",
-            "data_stanu": null,
-            "_sha256": "528f50e348a1c13433d14d4a22c61417c9a92f34bed7ea05c8484bc8731c1dde"
-          },
-          "_roznica_zrodlowa": 12.88
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "\u0007 – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "466,78 zł"
-            }
-          ],
-          "od": "2013-03-01",
-          "do": "2014-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "428.27",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2013/95",
-            "przepis": "treść",
-            "cytat": "\u0007 466,78 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2013/95",
-            "data_stanu": null,
-            "_sha256": "2fd0194afc46abf3f64a48f601ba9abd1526ca3240ba30afa090a335b9ac3e82"
-          },
-          "_roznica_zrodlowa": 38.51
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "831,15 zł"
             }
           ],
@@ -3047,30 +2825,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007 – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "474,25 zł"
-            }
-          ],
-          "od": "2014-03-01",
-          "do": "2016-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "466.78",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2014/165",
-            "przepis": "treść",
-            "cytat": "\u0007 474,25 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2014/165",
-            "data_stanu": null,
-            "_sha256": "a01c03e91df342bd29f9249f9f090c57c7394c494b720daba0edf492012bf14e"
-          },
-          "_roznica_zrodlowa": 7.47
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "844,45 zł"
             }
           ],
@@ -3093,30 +2848,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007 – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "478,62 zł"
-            }
-          ],
-          "od": "2016-03-01",
-          "do": "2018-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "474.25",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2016/168",
-            "przepis": "treść",
-            "cytat": "\u0007 478,62 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/168",
-            "data_stanu": null,
-            "_sha256": "b9cec6d4107c77d6e5303341db1d2f0a9af37df1ecf149b65defa9e64e4a90f1"
-          },
-          "_roznica_zrodlowa": 4.37
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "882,56 zł"
             }
           ],
@@ -3139,7 +2871,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1029,80 zł"
             }
           ],
@@ -3162,30 +2894,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "495,06 zł"
-            }
-          ],
-          "od": "2018-03-01",
-          "do": "2022-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "478.62",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2018/216",
-            "przepis": "treść",
-            "cytat": "495,06 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2018/216",
-            "data_stanu": null,
-            "_sha256": "4a7232e1e2b960956b70de55ace22d7e9c8b5de2f0b990d4a687135986f2484b"
-          },
-          "_roznica_zrodlowa": 16.44
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1338,44 zł"
             }
           ],
@@ -3208,30 +2917,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "588,19 zł"
-            }
-          ],
-          "od": "2022-03-01",
-          "do": "2024-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "495.06",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2022/260",
-            "przepis": "treść",
-            "cytat": "588,19 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2022/260",
-            "data_stanu": null,
-            "_sha256": "66f82f28ba90e6c41975cb3ae840a4c70b0d4f9f1f613e83ed0cc744f290c5e1"
-          },
-          "_roznica_zrodlowa": 93.13
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1780,96 zł"
             }
           ],
@@ -3254,30 +2940,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "757,08 zł"
-            }
-          ],
-          "od": "2024-03-01",
-          "do": "2025-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "588.19",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2024/133",
-            "przepis": "treść",
-            "cytat": "757,08 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/133",
-            "data_stanu": null,
-            "_sha256": "d901ac18ab7ddbfaa34d6b4c31e9020be4941bcf43d0d59e9902d9eee9c2b111"
-          },
-          "_roznica_zrodlowa": 168.89
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1878,91 zł"
             }
           ],
@@ -3300,30 +2963,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "798,72 zł"
-            }
-          ],
-          "od": "2025-03-01",
-          "do": "2026-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "757.08",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2025/152",
-            "przepis": "treść",
-            "cytat": "798,72 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/152",
-            "data_stanu": null,
-            "_sha256": "69f3af6e64da8858711bdfe8b179f4015e3812d5b86ae2c9b358014cc10bbfa8"
-          },
-          "_roznica_zrodlowa": 41.64
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1978,49 zł"
             }
           ],
@@ -3341,29 +2981,6 @@
             "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
           },
           "_roznica_zrodlowa": 99.58
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "841,05 zł"
-            }
-          ],
-          "od": "2026-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "798.72",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "841,05 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          },
-          "_roznica_zrodlowa": 42.33
         }
       ],
       "progi": [],
@@ -3863,19 +3480,7 @@
           "dowod": {
             "eli": "MP/2026/220",
             "przepis": "treść",
-            "cytat": "841,05 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          }
-        },
-        {
-          "krok": 45,
-          "opis": "MP/2026/220 treść: 841,05 zł od 2026-03-01 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "841,05 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
+            "cytat": "a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
             "data_stanu": null,
             "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
@@ -3893,21 +3498,6 @@
           "eli": "MP/2026/220",
           "przepis": "MP/2026/220 treść",
           "cytat": "a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-          "data_stanu": null
-        },
-        "od": "2026-03-01",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2026-03-01",
-        "opis": "dla rent rodzinnych, do których uprawniona jest jedna osoba: 841,05 zł od 2026-03-01 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2026/220",
-          "przepis": "MP/2026/220 treść",
-          "cytat": "841,05 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
           "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
           "data_stanu": null
         },
@@ -3953,12 +3543,7 @@
       "data_stanu": "2026-10-21",
       "tekst": "tekst ujednolicony (informacyjny)"
     },
-    "nieustalone": [
-      {
-        "pole": "ile.aktualna",
-        "powod": "Wiele równoległych kwot; nie wybrano jednej stawki."
-      }
-    ],
+    "nieustalone": [],
     "flagi": [
       "Opracowanie ręczne; historia uprawnień może być niepełna."
     ]
@@ -3988,7 +3573,7 @@
         "opis": "Miesięczna kwota podwyższana w ramach waloryzacji. Od 1 marca 2026 r. wynosi 366,68 zł. Kwota 106,41 zł pozostawiona w art. 75 ust. 2 nie jest bieżącą stawką; kwotę ogłasza Prezes ZUS na podstawie art. 94 ust. 2."
       },
       "aktualna": {
-        "wartosc": "366.68 zł",
+        "wartosc": "366,68 zł",
         "warianty": null,
         "od": "2026-03-01",
         "do": null
@@ -3998,7 +3583,7 @@
       "wyliczenie": null,
       "os_czasu": [
         {
-          "wartosc": "106.41 zł",
+          "wartosc": "106,41 zł",
           "warianty": null,
           "od": "1999-01-01",
           "do": "1999-05-31",
@@ -4014,7 +3599,7 @@
           }
         },
         {
-          "wartosc": "115.67 zł",
+          "wartosc": "115,67 zł",
           "warianty": null,
           "od": "1999-06-01",
           "do": "2000-05-31",
@@ -4030,7 +3615,7 @@
           }
         },
         {
-          "wartosc": "120.64 zł",
+          "wartosc": "120,64 zł",
           "warianty": null,
           "od": "2000-06-01",
           "do": "2001-05-31",
@@ -4046,7 +3631,7 @@
           }
         },
         {
-          "wartosc": "135.96 zł",
+          "wartosc": "135,96 zł",
           "warianty": null,
           "od": "2001-06-01",
           "do": "2002-05-31",
@@ -4062,7 +3647,7 @@
           }
         },
         {
-          "wartosc": "136.64 zł",
+          "wartosc": "136,64 zł",
           "warianty": null,
           "od": "2002-06-01",
           "do": "2003-02-28",
@@ -4078,7 +3663,7 @@
           }
         },
         {
-          "wartosc": "141.70 zł",
+          "wartosc": "141,70 zł",
           "warianty": null,
           "od": "2003-03-01",
           "do": "2004-02-29",
@@ -4094,7 +3679,7 @@
           }
         },
         {
-          "wartosc": "144.25 zł",
+          "wartosc": "144,25 zł",
           "warianty": null,
           "od": "2004-03-01",
           "do": "2006-02-28",
@@ -4110,7 +3695,7 @@
           }
         },
         {
-          "wartosc": "153.19 zł",
+          "wartosc": "153,19 zł",
           "warianty": null,
           "od": "2006-03-01",
           "do": "2008-02-29",
@@ -4126,7 +3711,7 @@
           }
         },
         {
-          "wartosc": "163.15 zł",
+          "wartosc": "163,15 zł",
           "warianty": null,
           "od": "2008-03-01",
           "do": "2009-02-28",
@@ -4142,7 +3727,7 @@
           }
         },
         {
-          "wartosc": "173.10 zł",
+          "wartosc": "173,10 zł",
           "warianty": null,
           "od": "2009-03-01",
           "do": "2010-02-28",
@@ -4158,7 +3743,7 @@
           }
         },
         {
-          "wartosc": "181.10 zł",
+          "wartosc": "181,10 zł",
           "warianty": null,
           "od": "2010-03-01",
           "do": "2011-02-28",
@@ -4174,7 +3759,7 @@
           }
         },
         {
-          "wartosc": "186.71 zł",
+          "wartosc": "186,71 zł",
           "warianty": null,
           "od": "2011-03-01",
           "do": "2012-02-29",
@@ -4190,7 +3775,7 @@
           }
         },
         {
-          "wartosc": "195.67 zł",
+          "wartosc": "195,67 zł",
           "warianty": null,
           "od": "2012-03-01",
           "do": "2013-02-28",
@@ -4206,7 +3791,7 @@
           }
         },
         {
-          "wartosc": "203.50 zł",
+          "wartosc": "203,50 zł",
           "warianty": null,
           "od": "2013-03-01",
           "do": "2014-02-28",
@@ -4222,7 +3807,7 @@
           }
         },
         {
-          "wartosc": "206.76 zł",
+          "wartosc": "206,76 zł",
           "warianty": null,
           "od": "2014-03-01",
           "do": "2015-02-28",
@@ -4238,7 +3823,7 @@
           }
         },
         {
-          "wartosc": "208.17 zł",
+          "wartosc": "208,17 zł",
           "warianty": null,
           "od": "2015-03-01",
           "do": "2016-02-29",
@@ -4254,7 +3839,7 @@
           }
         },
         {
-          "wartosc": "208.67 zł",
+          "wartosc": "208,67 zł",
           "warianty": null,
           "od": "2016-03-01",
           "do": "2017-02-28",
@@ -4270,7 +3855,7 @@
           }
         },
         {
-          "wartosc": "209.59 zł",
+          "wartosc": "209,59 zł",
           "warianty": null,
           "od": "2017-03-01",
           "do": "2018-02-28",
@@ -4286,7 +3871,7 @@
           }
         },
         {
-          "wartosc": "215.84 zł",
+          "wartosc": "215,84 zł",
           "warianty": null,
           "od": "2018-03-01",
           "do": "2019-02-28",
@@ -4302,7 +3887,7 @@
           }
         },
         {
-          "wartosc": "222.01 zł",
+          "wartosc": "222,01 zł",
           "warianty": null,
           "od": "2019-03-01",
           "do": "2020-02-29",
@@ -4318,7 +3903,7 @@
           }
         },
         {
-          "wartosc": "229.91 zł",
+          "wartosc": "229,91 zł",
           "warianty": null,
           "od": "2020-03-01",
           "do": "2021-02-28",
@@ -4334,7 +3919,7 @@
           }
         },
         {
-          "wartosc": "239.66 zł",
+          "wartosc": "239,66 zł",
           "warianty": null,
           "od": "2021-03-01",
           "do": "2022-02-28",
@@ -4350,7 +3935,7 @@
           }
         },
         {
-          "wartosc": "256.44 zł",
+          "wartosc": "256,44 zł",
           "warianty": null,
           "od": "2022-03-01",
           "do": "2023-02-28",
@@ -4366,7 +3951,7 @@
           }
         },
         {
-          "wartosc": "294.39 zł",
+          "wartosc": "294,39 zł",
           "warianty": null,
           "od": "2023-03-01",
           "do": "2024-02-29",
@@ -4382,7 +3967,7 @@
           }
         },
         {
-          "wartosc": "330.07 zł",
+          "wartosc": "330,07 zł",
           "warianty": null,
           "od": "2024-03-01",
           "do": "2025-02-28",
@@ -4398,7 +3983,7 @@
           }
         },
         {
-          "wartosc": "348.22 zł",
+          "wartosc": "348,22 zł",
           "warianty": null,
           "od": "2025-03-01",
           "do": "2026-02-28",
@@ -4414,7 +3999,7 @@
           }
         },
         {
-          "wartosc": "366.68 zł",
+          "wartosc": "366,68 zł",
           "warianty": null,
           "od": "2026-03-01",
           "do": null,
@@ -4553,7 +4138,7 @@
         "opis": "Kwota miesięczna waloryzowana. 200zł z76 ust 2 jest nominalną kwotą historyczną. Od01.03.2026:689,17zł/mies. według komunikatu ZUS."
       },
       "aktualna": {
-        "wartosc": "689.17 zł",
+        "wartosc": "689,17 zł",
         "warianty": null,
         "od": "2026-03-01",
         "do": null
@@ -4563,7 +4148,7 @@
       "wyliczenie": null,
       "os_czasu": [
         {
-          "wartosc": "200.00 zł",
+          "wartosc": "200,00 zł",
           "warianty": null,
           "od": "1999-01-01",
           "do": "1999-05-31",
@@ -4579,7 +4164,7 @@
           }
         },
         {
-          "wartosc": "217.40 zł",
+          "wartosc": "217,40 zł",
           "warianty": null,
           "od": "1999-06-01",
           "do": "2000-05-31",
@@ -4595,7 +4180,7 @@
           }
         },
         {
-          "wartosc": "226.75 zł",
+          "wartosc": "226,75 zł",
           "warianty": null,
           "od": "2000-06-01",
           "do": "2001-05-31",
@@ -4611,7 +4196,7 @@
           }
         },
         {
-          "wartosc": "255.55 zł",
+          "wartosc": "255,55 zł",
           "warianty": null,
           "od": "2001-06-01",
           "do": "2002-05-31",
@@ -4627,7 +4212,7 @@
           }
         },
         {
-          "wartosc": "256.83 zł",
+          "wartosc": "256,83 zł",
           "warianty": null,
           "od": "2002-06-01",
           "do": "2003-02-28",
@@ -4643,7 +4228,7 @@
           }
         },
         {
-          "wartosc": "266.33 zł",
+          "wartosc": "266,33 zł",
           "warianty": null,
           "od": "2003-03-01",
           "do": "2004-02-29",
@@ -4659,7 +4244,7 @@
           }
         },
         {
-          "wartosc": "271.12 zł",
+          "wartosc": "271,12 zł",
           "warianty": null,
           "od": "2004-03-01",
           "do": "2006-02-28",
@@ -4675,7 +4260,7 @@
           }
         },
         {
-          "wartosc": "287.93 zł",
+          "wartosc": "287,93 zł",
           "warianty": null,
           "od": "2006-03-01",
           "do": "2008-02-29",
@@ -4691,7 +4276,7 @@
           }
         },
         {
-          "wartosc": "306.65 zł",
+          "wartosc": "306,65 zł",
           "warianty": null,
           "od": "2008-03-01",
           "do": "2009-02-28",
@@ -4707,7 +4292,7 @@
           }
         },
         {
-          "wartosc": "325.36 zł",
+          "wartosc": "325,36 zł",
           "warianty": null,
           "od": "2009-03-01",
           "do": "2010-02-28",
@@ -4723,7 +4308,7 @@
           }
         },
         {
-          "wartosc": "340.39 zł",
+          "wartosc": "340,39 zł",
           "warianty": null,
           "od": "2010-03-01",
           "do": "2011-02-28",
@@ -4739,7 +4324,7 @@
           }
         },
         {
-          "wartosc": "350.94 zł",
+          "wartosc": "350,94 zł",
           "warianty": null,
           "od": "2011-03-01",
           "do": "2012-02-29",
@@ -4755,7 +4340,7 @@
           }
         },
         {
-          "wartosc": "367.79 zł",
+          "wartosc": "367,79 zł",
           "warianty": null,
           "od": "2012-03-01",
           "do": "2013-02-28",
@@ -4771,7 +4356,7 @@
           }
         },
         {
-          "wartosc": "382.50 zł",
+          "wartosc": "382,50 zł",
           "warianty": null,
           "od": "2013-03-01",
           "do": "2014-02-28",
@@ -4787,7 +4372,7 @@
           }
         },
         {
-          "wartosc": "388.62 zł",
+          "wartosc": "388,62 zł",
           "warianty": null,
           "od": "2014-03-01",
           "do": "2015-02-28",
@@ -4803,7 +4388,7 @@
           }
         },
         {
-          "wartosc": "391.26 zł",
+          "wartosc": "391,26 zł",
           "warianty": null,
           "od": "2015-03-01",
           "do": "2016-02-29",
@@ -4819,7 +4404,7 @@
           }
         },
         {
-          "wartosc": "392.20 zł",
+          "wartosc": "392,20 zł",
           "warianty": null,
           "od": "2016-03-01",
           "do": "2017-02-28",
@@ -4835,7 +4420,7 @@
           }
         },
         {
-          "wartosc": "393.93 zł",
+          "wartosc": "393,93 zł",
           "warianty": null,
           "od": "2017-03-01",
           "do": "2018-02-28",
@@ -4851,7 +4436,7 @@
           }
         },
         {
-          "wartosc": "405.67 zł",
+          "wartosc": "405,67 zł",
           "warianty": null,
           "od": "2018-03-01",
           "do": "2019-02-28",
@@ -4867,7 +4452,7 @@
           }
         },
         {
-          "wartosc": "417.27 zł",
+          "wartosc": "417,27 zł",
           "warianty": null,
           "od": "2019-03-01",
           "do": "2020-02-29",
@@ -4883,7 +4468,7 @@
           }
         },
         {
-          "wartosc": "432.12 zł",
+          "wartosc": "432,12 zł",
           "warianty": null,
           "od": "2020-03-01",
           "do": "2021-02-28",
@@ -4899,7 +4484,7 @@
           }
         },
         {
-          "wartosc": "450.44 zł",
+          "wartosc": "450,44 zł",
           "warianty": null,
           "od": "2021-03-01",
           "do": "2022-02-28",
@@ -4915,7 +4500,7 @@
           }
         },
         {
-          "wartosc": "481.97 zł",
+          "wartosc": "481,97 zł",
           "warianty": null,
           "od": "2022-03-01",
           "do": "2023-02-28",
@@ -4931,7 +4516,7 @@
           }
         },
         {
-          "wartosc": "553.30 zł",
+          "wartosc": "553,30 zł",
           "warianty": null,
           "od": "2023-03-01",
           "do": "2024-02-29",
@@ -4947,7 +4532,7 @@
           }
         },
         {
-          "wartosc": "620.36 zł",
+          "wartosc": "620,36 zł",
           "warianty": null,
           "od": "2024-03-01",
           "do": "2025-02-28",
@@ -4963,7 +4548,7 @@
           }
         },
         {
-          "wartosc": "654.48 zł",
+          "wartosc": "654,48 zł",
           "warianty": null,
           "od": "2025-03-01",
           "do": "2026-02-28",
@@ -4979,7 +4564,7 @@
           }
         },
         {
-          "wartosc": "689.17 zł",
+          "wartosc": "689,17 zł",
           "warianty": null,
           "od": "2026-03-01",
           "do": null,
@@ -5095,7 +4680,7 @@
         "opis": "Dla członka rodziny pełna stawka; dla osoby obcej lub podmiotu instytucjonalnego udokumentowane koszty do stawki maksymalnej. Wielu płatników: podział proporcjonalny do kosztów. Od śmierci 01.01.2026 stawka 7000zł. Waloryzacja1 marca tylko gdy CPI ogółem poprzedniego roku>105; iloczyn przez CPI/100 zaokrąglony do pełnych zł w górę. Stawka według daty śmierci."
       },
       "aktualna": {
-        "wartosc": "7000.00 zł",
+        "wartosc": "7000,00 zł",
         "warianty": null,
         "od": "2026-01-01",
         "do": null
@@ -5105,7 +4690,7 @@
       "wyliczenie": null,
       "os_czasu": [
         {
-          "wartosc": "2497.82 zł",
+          "wartosc": "2497,82 zł",
           "warianty": null,
           "od": "1999-01-01",
           "do": "1999-02-28",
@@ -5121,7 +4706,7 @@
           }
         },
         {
-          "wartosc": "2689.74 zł",
+          "wartosc": "2689,74 zł",
           "warianty": null,
           "od": "1999-03-01",
           "do": "1999-05-31",
@@ -5137,7 +4722,7 @@
           }
         },
         {
-          "wartosc": "3197.04 zł",
+          "wartosc": "3197,04 zł",
           "warianty": null,
           "od": "1999-06-01",
           "do": "1999-08-31",
@@ -5153,7 +4738,7 @@
           }
         },
         {
-          "wartosc": "3318.96 zł",
+          "wartosc": "3318,96 zł",
           "warianty": null,
           "od": "1999-09-01",
           "do": "1999-11-30",
@@ -5169,7 +4754,7 @@
           }
         },
         {
-          "wartosc": "3428.00 zł",
+          "wartosc": "3428,00 zł",
           "warianty": null,
           "od": "1999-12-01",
           "do": "2000-02-29",
@@ -5185,7 +4770,7 @@
           }
         },
         {
-          "wartosc": "3712.62 zł",
+          "wartosc": "3712,62 zł",
           "warianty": null,
           "od": "2000-03-01",
           "do": "2000-05-31",
@@ -5201,7 +4786,7 @@
           }
         },
         {
-          "wartosc": "3737.30 zł",
+          "wartosc": "3737,30 zł",
           "warianty": null,
           "od": "2000-06-01",
           "do": "2000-08-31",
@@ -5217,7 +4802,7 @@
           }
         },
         {
-          "wartosc": "3739.56 zł",
+          "wartosc": "3739,56 zł",
           "warianty": null,
           "od": "2000-09-01",
           "do": "2000-11-30",
@@ -5233,7 +4818,7 @@
           }
         },
         {
-          "wartosc": "3811.52 zł",
+          "wartosc": "3811,52 zł",
           "warianty": null,
           "od": "2000-12-01",
           "do": "2001-02-28",
@@ -5249,7 +4834,7 @@
           }
         },
         {
-          "wartosc": "4103.48 zł",
+          "wartosc": "4103,48 zł",
           "warianty": null,
           "od": "2001-03-01",
           "do": "2001-05-31",
@@ -5265,7 +4850,7 @@
           }
         },
         {
-          "wartosc": "4087.10 zł",
+          "wartosc": "4087,10 zł",
           "warianty": null,
           "od": "2001-06-01",
           "do": "2001-08-31",
@@ -5281,7 +4866,7 @@
           }
         },
         {
-          "wartosc": "4013.84 zł",
+          "wartosc": "4013,84 zł",
           "warianty": null,
           "od": "2001-09-01",
           "do": "2001-11-30",
@@ -5297,7 +4882,7 @@
           }
         },
         {
-          "wartosc": "4094.58 zł",
+          "wartosc": "4094,58 zł",
           "warianty": null,
           "od": "2001-12-01",
           "do": "2002-02-28",
@@ -5313,7 +4898,7 @@
           }
         },
         {
-          "wartosc": "4305.98 zł",
+          "wartosc": "4305,98 zł",
           "warianty": null,
           "od": "2002-03-01",
           "do": "2002-05-31",
@@ -5329,7 +4914,7 @@
           }
         },
         {
-          "wartosc": "4311.08 zł",
+          "wartosc": "4311,08 zł",
           "warianty": null,
           "od": "2002-06-01",
           "do": "2002-08-31",
@@ -5345,7 +4930,7 @@
           }
         },
         {
-          "wartosc": "4123.90 zł",
+          "wartosc": "4123,90 zł",
           "warianty": null,
           "od": "2002-09-01",
           "do": "2002-11-30",
@@ -5361,7 +4946,7 @@
           }
         },
         {
-          "wartosc": "4191.62 zł",
+          "wartosc": "4191,62 zł",
           "warianty": null,
           "od": "2002-12-01",
           "do": "2003-02-28",
@@ -5377,7 +4962,7 @@
           }
         },
         {
-          "wartosc": "4450.82 zł",
+          "wartosc": "4450,82 zł",
           "warianty": null,
           "od": "2003-03-01",
           "do": "2003-05-31",
@@ -5393,7 +4978,7 @@
           }
         },
         {
-          "wartosc": "4457.36 zł",
+          "wartosc": "4457,36 zł",
           "warianty": null,
           "od": "2003-06-01",
           "do": "2003-08-31",
@@ -5409,7 +4994,7 @@
           }
         },
         {
-          "wartosc": "4282.02 zł",
+          "wartosc": "4282,02 zł",
           "warianty": null,
           "od": "2003-09-01",
           "do": "2003-11-30",
@@ -5425,7 +5010,7 @@
           }
         },
         {
-          "wartosc": "4320.04 zł",
+          "wartosc": "4320,04 zł",
           "warianty": null,
           "od": "2003-12-01",
           "do": "2004-02-29",
@@ -5441,7 +5026,7 @@
           }
         },
         {
-          "wartosc": "4553.68 zł",
+          "wartosc": "4553,68 zł",
           "warianty": null,
           "od": "2004-03-01",
           "do": "2004-05-31",
@@ -5457,7 +5042,7 @@
           }
         },
         {
-          "wartosc": "4664.34 zł",
+          "wartosc": "4664,34 zł",
           "warianty": null,
           "od": "2004-06-01",
           "do": "2004-08-31",
@@ -5473,7 +5058,7 @@
           }
         },
         {
-          "wartosc": "4461.06 zł",
+          "wartosc": "4461,06 zł",
           "warianty": null,
           "od": "2004-09-01",
           "do": "2004-11-30",
@@ -5489,7 +5074,7 @@
           }
         },
         {
-          "wartosc": "4539.86 zł",
+          "wartosc": "4539,86 zł",
           "warianty": null,
           "od": "2004-12-01",
           "do": "2005-02-28",
@@ -5505,7 +5090,7 @@
           }
         },
         {
-          "wartosc": "4810.92 zł",
+          "wartosc": "4810,92 zł",
           "warianty": null,
           "od": "2005-03-01",
           "do": "2005-05-31",
@@ -5521,7 +5106,7 @@
           }
         },
         {
-          "wartosc": "4830.90 zł",
+          "wartosc": "4830,90 zł",
           "warianty": null,
           "od": "2005-06-01",
           "do": "2005-08-31",
@@ -5537,7 +5122,7 @@
           }
         },
         {
-          "wartosc": "4637.06 zł",
+          "wartosc": "4637,06 zł",
           "warianty": null,
           "od": "2005-09-01",
           "do": "2005-11-30",
@@ -5553,7 +5138,7 @@
           }
         },
         {
-          "wartosc": "4694.48 zł",
+          "wartosc": "4694,48 zł",
           "warianty": null,
           "od": "2005-12-01",
           "do": "2006-02-28",
@@ -5569,7 +5154,7 @@
           }
         },
         {
-          "wartosc": "5057.24 zł",
+          "wartosc": "5057,24 zł",
           "warianty": null,
           "od": "2006-03-01",
           "do": "2006-05-31",
@@ -5585,7 +5170,7 @@
           }
         },
         {
-          "wartosc": "5060.36 zł",
+          "wartosc": "5060,36 zł",
           "warianty": null,
           "od": "2006-06-01",
           "do": "2006-08-31",
@@ -5601,7 +5186,7 @@
           }
         },
         {
-          "wartosc": "4854.54 zł",
+          "wartosc": "4854,54 zł",
           "warianty": null,
           "od": "2006-09-01",
           "do": "2006-11-30",
@@ -5617,7 +5202,7 @@
           }
         },
         {
-          "wartosc": "4929.32 zł",
+          "wartosc": "4929,32 zł",
           "warianty": null,
           "od": "2006-12-01",
           "do": "2007-02-28",
@@ -5633,7 +5218,7 @@
           }
         },
         {
-          "wartosc": "5325.02 zł",
+          "wartosc": "5325,02 zł",
           "warianty": null,
           "od": "2007-03-01",
           "do": "2007-05-31",
@@ -5649,7 +5234,7 @@
           }
         },
         {
-          "wartosc": "5418.28 zł",
+          "wartosc": "5418,28 zł",
           "warianty": null,
           "od": "2007-06-01",
           "do": "2007-08-31",
@@ -5665,7 +5250,7 @@
           }
         },
         {
-          "wartosc": "5288.68 zł",
+          "wartosc": "5288,68 zł",
           "warianty": null,
           "od": "2007-09-01",
           "do": "2007-11-30",
@@ -5681,7 +5266,7 @@
           }
         },
         {
-          "wartosc": "5406.82 zł",
+          "wartosc": "5406,82 zł",
           "warianty": null,
           "od": "2007-12-01",
           "do": "2008-02-29",
@@ -5697,7 +5282,7 @@
           }
         },
         {
-          "wartosc": "5799.66 zł",
+          "wartosc": "5799,66 zł",
           "warianty": null,
           "od": "2008-03-01",
           "do": "2008-05-31",
@@ -5713,7 +5298,7 @@
           }
         },
         {
-          "wartosc": "5967.96 zł",
+          "wartosc": "5967,96 zł",
           "warianty": null,
           "od": "2008-06-01",
           "do": "2008-08-31",
@@ -5729,7 +5314,7 @@
           }
         },
         {
-          "wartosc": "5902.72 zł",
+          "wartosc": "5902,72 zł",
           "warianty": null,
           "od": "2008-09-01",
           "do": "2008-11-30",
@@ -5745,7 +5330,7 @@
           }
         },
         {
-          "wartosc": "5937.10 zł",
+          "wartosc": "5937,10 zł",
           "warianty": null,
           "od": "2008-12-01",
           "do": "2009-02-28",
@@ -5761,7 +5346,7 @@
           }
         },
         {
-          "wartosc": "6193.10 zł",
+          "wartosc": "6193,10 zł",
           "warianty": null,
           "od": "2009-03-01",
           "do": "2009-05-31",
@@ -5777,7 +5362,7 @@
           }
         },
         {
-          "wartosc": "6371.22 zł",
+          "wartosc": "6371,22 zł",
           "warianty": null,
           "od": "2009-06-01",
           "do": "2009-08-31",
@@ -5793,7 +5378,7 @@
           }
         },
         {
-          "wartosc": "6162.96 zł",
+          "wartosc": "6162,96 zł",
           "warianty": null,
           "od": "2009-09-01",
           "do": "2009-11-30",
@@ -5809,7 +5394,7 @@
           }
         },
         {
-          "wartosc": "6227.72 zł",
+          "wartosc": "6227,72 zł",
           "warianty": null,
           "od": "2009-12-01",
           "do": "2010-02-28",
@@ -5825,7 +5410,7 @@
           }
         },
         {
-          "wartosc": "6487.20 zł",
+          "wartosc": "6487,20 zł",
           "warianty": null,
           "od": "2010-03-01",
           "do": "2010-05-31",
@@ -5841,7 +5426,7 @@
           }
         },
         {
-          "wartosc": "6632.76 zł",
+          "wartosc": "6632,76 zł",
           "warianty": null,
           "od": "2010-06-01",
           "do": "2010-08-31",
@@ -5857,7 +5442,7 @@
           }
         },
         {
-          "wartosc": "6395.70 zł",
+          "wartosc": "6395,70 zł",
           "warianty": null,
           "od": "2010-09-01",
           "do": "2010-11-30",
@@ -5873,7 +5458,7 @@
           }
         },
         {
-          "wartosc": "6406.16 zł",
+          "wartosc": "6406,16 zł",
           "warianty": null,
           "od": "2010-12-01",
           "do": "2011-02-28",
@@ -5889,7 +5474,7 @@
           }
         },
         {
-          "wartosc": "4000.00 zł",
+          "wartosc": "4000,00 zł",
           "warianty": null,
           "od": "2011-03-01",
           "do": "2025-12-31",
@@ -5905,7 +5490,7 @@
           }
         },
         {
-          "wartosc": "7000.00 zł",
+          "wartosc": "7000,00 zł",
           "warianty": null,
           "od": "2026-01-01",
           "do": null,
@@ -9849,7 +9434,7 @@
     "slug": "du-1998-1118-emerytura",
     "nazwa": "emerytura",
     "rodzaj_korzysci": "swiadczenie_okresowe",
-    "status": "zamknieta",
+    "status": "obowiazuje",
     "komu": "Ubezpieczonym urodzonym po dniu 31 grudnia 1948 r. przysługuje emerytura po osiągnięciu wieku emerytalnego wynoszącego co najmniej 60 lat dla kobiet i co najmniej 65 lat dla mężczyzn, z zastrzeżeniem art. 46, 47, 50, 50a, 50e i 184, a także art. 88a ustawy z dnia 26 stycznia 1982 r. – Karta Nauczyciela (Dz. U. z 2024 r. poz. 986, z późn. zm.).",
     "opis_prosty": null,
     "sytuacje": [
@@ -9870,21 +9455,26 @@
     "ile": {
       "rozwiazanie": "kwota_z_aktu_wykonawczego",
       "regula": null,
-      "aktualna": null,
+      "aktualna": {
+        "wartosc": null,
+        "warianty": [
+          {
+            "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+            "wartosc": "1978,49 zł"
+          }
+        ],
+        "od": "2026-03-01",
+        "do": null
+      },
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie-emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy, renta dla osoby częściowo niezdolnej do pracy. 2",
-              "wartosc": "451,11 zł"
-            }
-          ],
+          "wartosc": "451,11 zł",
+          "warianty": null,
           "od": "1999-06-01",
-          "do": null,
+          "do": "2001-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
           "poprzednia": null,
           "roznica": null,
@@ -9899,36 +9489,8 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "— dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "325,55 zł"
-            }
-          ],
-          "od": "2000-06-01",
-          "do": "2001-05-31",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2000/316",
-            "przepis": "treść",
-            "cytat": "1) 325,55 zł — dla emerytury lub renty z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2000/316",
-            "data_stanu": null,
-            "_sha256": "b175de05c21bfe8e1c565535a4fb8b618ce5f456d1bcddd70eeb3b583bbbcbcb"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy",
-              "wartosc": "530,26 zł"
-            }
-          ],
+          "wartosc": "530,26 zł",
+          "warianty": null,
           "od": "2001-06-01",
           "do": "2002-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
@@ -9945,59 +9507,8 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "— dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "366,89 zł"
-            }
-          ],
-          "od": "2001-06-01",
-          "do": "2002-05-31",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "325.55",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2001/263",
-            "przepis": "treść",
-            "cytat": "1) 366,89 zł — dla emerytury lub renty z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/263",
-            "data_stanu": null,
-            "_sha256": "d1b2168968a8c6ffa0958294aa2f33f134fb7d35676df2fe1c5a2e0a62ae3eca"
-          },
-          "_roznica_zrodlowa": 41.34
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "368,72 zł"
-            }
-          ],
-          "od": "2002-06-01",
-          "do": "2003-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "366.89",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2002/344",
-            "przepis": "treść",
-            "cytat": "368,72 zł — dla emerytury lub renty z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2002/344",
-            "data_stanu": null,
-            "_sha256": "80e7dca494f0a9d5945b6aa242a6ed0ae4e701711af7036c36cb5f1322b6057c"
-          },
-          "_roznica_zrodlowa": 1.83
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy",
-              "wartosc": "532,91 zł"
-            }
-          ],
+          "wartosc": "532,91 zł",
+          "warianty": null,
           "od": "2002-06-01",
           "do": "2003-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
@@ -10014,15 +9525,10 @@
           "_roznica_zrodlowa": 2.65
         },
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy",
-              "wartosc": "552,63 zł"
-            }
-          ],
+          "wartosc": "552,63 zł",
+          "warianty": null,
           "od": "2003-03-01",
-          "do": null,
+          "do": "2006-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
           "poprzednia": "532.91",
           "roznica": null,
@@ -10037,40 +9543,12 @@
           "_roznica_zrodlowa": 19.72
         },
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "— dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "382,36 zł"
-            }
-          ],
-          "od": "2003-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "368.72",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2003/152",
-            "przepis": "treść",
-            "cytat": "1) 382,36 zł — dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2003/152",
-            "data_stanu": null,
-            "_sha256": "0a1233df12bee8012e29879286b602511176cdb64eb327ee223832288882af9e"
-          },
-          "_roznica_zrodlowa": 13.64
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
-              "wartosc": "597,46 zł"
-            }
-          ],
+          "wartosc": "597,46 zł",
+          "warianty": null,
           "od": "2006-03-01",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
+          "do": "2008-02-29",
+          "rodzaj_zmiany": "akt_wykonawczy",
+          "poprzednia": "552.63",
           "roznica": null,
           "dowod": {
             "eli": "MP/2006/166",
@@ -10080,43 +9558,20 @@
             "data_stanu": null,
             "_sha256": "809177dbdae671b9d6b65427735e8c91cecc4f6b111d1a2b1ee909f5c729c010"
           },
-          "_roznica_zrodlowa": null
+          "_roznica_zrodlowa": 44.83
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "— dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "413,37 zł"
-            }
-          ],
-          "od": "2006-03-01",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2006/166",
-            "przepis": "treść",
-            "cytat": "1) 413,37 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2006/166",
-            "data_stanu": null,
-            "_sha256": "809177dbdae671b9d6b65427735e8c91cecc4f6b111d1a2b1ee909f5c729c010"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "636,29 zł"
             }
           ],
           "od": "2008-03-01",
           "do": "2009-02-28",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
+          "rodzaj_zmiany": "akt_wykonawczy",
+          "poprzednia": "597.46",
           "roznica": null,
           "dowod": {
             "eli": "MP/2008/211",
@@ -10126,36 +9581,13 @@
             "data_stanu": null,
             "_sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6"
           },
-          "_roznica_zrodlowa": null
+          "_roznica_zrodlowa": 38.83
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "440,24 zł"
-            }
-          ],
-          "od": "2008-03-01",
-          "do": "2009-02-28",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/211",
-            "przepis": "treść",
-            "cytat": "a) 440,24 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/211",
-            "data_stanu": null,
-            "_sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "675,10 zł"
             }
           ],
@@ -10178,30 +9610,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "467,09 zł"
-            }
-          ],
-          "od": "2009-03-01",
-          "do": "2010-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "440.24",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/188",
-            "przepis": "treść",
-            "cytat": "a) 467,09 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/188",
-            "data_stanu": null,
-            "_sha256": "4997498be34f22e9eed54b188af876d1b5f324dde51f4628ddb682b5c2230608"
-          },
-          "_roznica_zrodlowa": 26.85
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "706,29 zł"
             }
           ],
@@ -10224,30 +9633,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "488,67 zł"
-            }
-          ],
-          "od": "2010-03-01",
-          "do": "2011-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "467.09",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2010/110",
-            "przepis": "treść",
-            "cytat": "a) 488,67 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/110",
-            "data_stanu": null,
-            "_sha256": "0c71d333c7111928463903420d288ac93fafc511a72ff262ae0d082846319753"
-          },
-          "_roznica_zrodlowa": 21.58
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "728,18 zł"
             }
           ],
@@ -10270,30 +9656,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "503,82 zł"
-            }
-          ],
-          "od": "2011-03-01",
-          "do": "2013-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "488.67",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2011/162",
-            "przepis": "treść",
-            "cytat": "a) 503,82 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2011/162",
-            "data_stanu": null,
-            "_sha256": "528f50e348a1c13433d14d4a22c61417c9a92f34bed7ea05c8484bc8731c1dde"
-          },
-          "_roznica_zrodlowa": 15.15
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "831,15 zł"
             }
           ],
@@ -10316,30 +9679,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) \u0007 – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "549,12 zł"
-            }
-          ],
-          "od": "2013-03-01",
-          "do": "2014-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "503.82",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2013/95",
-            "przepis": "treść",
-            "cytat": "a) \u0007 549,12 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2013/95",
-            "data_stanu": null,
-            "_sha256": "2fd0194afc46abf3f64a48f601ba9abd1526ca3240ba30afa090a335b9ac3e82"
-          },
-          "_roznica_zrodlowa": 45.3
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "844,45 zł"
             }
           ],
@@ -10362,30 +9702,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) \u0007 – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "557,91 zł"
-            }
-          ],
-          "od": "2014-03-01",
-          "do": "2016-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "549.12",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2014/165",
-            "przepis": "treść",
-            "cytat": "a) \u0007 557,91 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2014/165",
-            "data_stanu": null,
-            "_sha256": "a01c03e91df342bd29f9249f9f090c57c7394c494b720daba0edf492012bf14e"
-          },
-          "_roznica_zrodlowa": 8.79
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "882,56 zł"
             }
           ],
@@ -10408,30 +9725,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) \u0007 – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "563,05 zł"
-            }
-          ],
-          "od": "2016-03-01",
-          "do": "2018-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "557.91",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2016/168",
-            "przepis": "treść",
-            "cytat": "a) \u0007 563,05 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/168",
-            "data_stanu": null,
-            "_sha256": "b9cec6d4107c77d6e5303341db1d2f0a9af37df1ecf149b65defa9e64e4a90f1"
-          },
-          "_roznica_zrodlowa": 5.14
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1029,80 zł"
             }
           ],
@@ -10454,30 +9748,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "582,38 zł"
-            }
-          ],
-          "od": "2018-03-01",
-          "do": "2022-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "563.05",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2018/216",
-            "przepis": "treść",
-            "cytat": "a) 582,38 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2018/216",
-            "data_stanu": null,
-            "_sha256": "4a7232e1e2b960956b70de55ace22d7e9c8b5de2f0b990d4a687135986f2484b"
-          },
-          "_roznica_zrodlowa": 19.33
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1338,44 zł"
             }
           ],
@@ -10500,30 +9771,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "691,94 zł"
-            }
-          ],
-          "od": "2022-03-01",
-          "do": "2024-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "582.38",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2022/260",
-            "przepis": "treść",
-            "cytat": "a) 691,94 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2022/260",
-            "data_stanu": null,
-            "_sha256": "66f82f28ba90e6c41975cb3ae840a4c70b0d4f9f1f613e83ed0cc744f290c5e1"
-          },
-          "_roznica_zrodlowa": 109.56
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1780,96 zł"
             }
           ],
@@ -10546,30 +9794,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "890,63 zł"
-            }
-          ],
-          "od": "2024-03-01",
-          "do": "2025-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "691.94",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2024/133",
-            "przepis": "treść",
-            "cytat": "a) 890,63 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/133",
-            "data_stanu": null,
-            "_sha256": "d901ac18ab7ddbfaa34d6b4c31e9020be4941bcf43d0d59e9902d9eee9c2b111"
-          },
-          "_roznica_zrodlowa": 198.69
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1878,91 zł"
             }
           ],
@@ -10592,30 +9817,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "939,61 zł"
-            }
-          ],
-          "od": "2025-03-01",
-          "do": "2026-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "890.63",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2025/152",
-            "przepis": "treść",
-            "cytat": "a) 939,61 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/152",
-            "data_stanu": null,
-            "_sha256": "69f3af6e64da8858711bdfe8b179f4015e3812d5b86ae2c9b358014cc10bbfa8"
-          },
-          "_roznica_zrodlowa": 48.98
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1978,49 zł"
             }
           ],
@@ -10633,29 +9835,6 @@
             "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
           },
           "_roznica_zrodlowa": 99.58
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "989,41 zł"
-            }
-          ],
-          "od": "2026-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "939.61",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "a) 989,41 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          },
-          "_roznica_zrodlowa": 49.8
         }
       ],
       "progi": [],
@@ -10778,19 +9957,7 @@
           "dowod": {
             "eli": "MP/2026/220",
             "przepis": "treść",
-            "cytat": "a) 989,41 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          }
-        },
-        {
-          "krok": 9,
-          "opis": "MP/2026/220 treść: 989,41 zł od 2026-03-01 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "a) 989,41 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
+            "cytat": "a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
             "data_stanu": null,
             "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
@@ -10808,21 +9975,6 @@
           "eli": "MP/2026/220",
           "przepis": "MP/2026/220 treść",
           "cytat": "a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-          "data_stanu": null
-        },
-        "od": "2026-03-01",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2026-03-01",
-        "opis": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy: 989,41 zł od 2026-03-01 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2026/220",
-          "przepis": "MP/2026/220 treść",
-          "cytat": "a) 989,41 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
           "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
           "data_stanu": null
         },
@@ -11459,16 +10611,7 @@
       "data_stanu": "2026-10-16",
       "tekst": "tekst ujednolicony (informacyjny)"
     },
-    "nieustalone": [
-      {
-        "pole": "ile.aktualna",
-        "powod": "Wiele równoległych kwot; nie wybrano jednej stawki."
-      },
-      {
-        "pole": "ile",
-        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
-      }
-    ],
+    "nieustalone": [],
     "flagi": [
       "Kandydat automatyczny. Nie stanowi potwierdzenia prawa do świadczenia."
     ]
@@ -11478,7 +10621,7 @@
     "slug": "du-1998-1118-skladka",
     "nazwa": "składka",
     "rodzaj_korzysci": "dofinansowanie",
-    "status": "zamknieta",
+    "status": "obowiazuje",
     "komu": "się poprzez podzielenie wskaźnika wzrostu nominalnego sumy przypisu składek na ubezpieczenie emerytalne w roku kalendarzowym poprzedzającym termin waloryzacji w",
     "opis_prosty": null,
     "sytuacje": [
@@ -12223,7 +11366,7 @@
     "slug": "du-1998-1118-renta",
     "nazwa": "renta",
     "rodzaj_korzysci": "swiadczenie_okresowe",
-    "status": "zamknieta",
+    "status": "obowiazuje",
     "komu": "renta stała – jeżeli niezdolność do pracy jest trwała;",
     "opis_prosty": null,
     "sytuacje": [
@@ -12245,21 +11388,30 @@
     "ile": {
       "rozwiazanie": "kwota_z_aktu_wykonawczego",
       "regula": null,
-      "aktualna": null,
+      "aktualna": {
+        "wartosc": null,
+        "warianty": [
+          {
+            "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+            "wartosc": "1978,49 zł"
+          },
+          {
+            "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+            "wartosc": "1483,87 zł"
+          }
+        ],
+        "od": "2026-03-01",
+        "do": null
+      },
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie-emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy, renta dla osoby częściowo niezdolnej do pracy. 2",
-              "wartosc": "451,11 zł"
-            }
-          ],
+          "wartosc": "451,11 zł",
+          "warianty": null,
           "od": "1999-06-01",
-          "do": null,
+          "do": "2000-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
           "poprzednia": null,
           "roznica": null,
@@ -12274,36 +11426,8 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla renty z tytułu częściowej niezdolno- ści do pracy",
-              "wartosc": "244,17 zł"
-            }
-          ],
-          "od": "2000-06-01",
-          "do": "2001-05-31",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2000/316",
-            "przepis": "treść",
-            "cytat": "244,17 zł — dla renty z tytułu częściowej niezdolno- ści do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2000/316",
-            "data_stanu": null,
-            "_sha256": "b175de05c21bfe8e1c565535a4fb8b618ce5f456d1bcddd70eeb3b583bbbcbcb"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — renta dla osoby częściowo niezdolnej do pracy. 2",
-              "wartosc": "361,92 zł"
-            }
-          ],
+          "wartosc": "361,92 zł",
+          "warianty": null,
           "od": "2000-06-01",
           "do": "2001-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
@@ -12323,76 +11447,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "— dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "325,55 zł"
-            }
-          ],
-          "od": "2000-06-01",
-          "do": "2001-05-31",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2000/316",
-            "przepis": "treść",
-            "cytat": "1) 325,55 zł — dla emerytury lub renty z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2000/316",
-            "data_stanu": null,
-            "_sha256": "b175de05c21bfe8e1c565535a4fb8b618ce5f456d1bcddd70eeb3b583bbbcbcb"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla renty z tytułu częściowej niezdolno- ści do pracy",
-              "wartosc": "275,18 zł"
-            }
-          ],
-          "od": "2001-06-01",
-          "do": "2002-05-31",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "244.17",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2001/263",
-            "przepis": "treść",
-            "cytat": "275,18 zł — dla renty z tytułu częściowej niezdolno- ści do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/263",
-            "data_stanu": null,
-            "_sha256": "d1b2168968a8c6ffa0958294aa2f33f134fb7d35676df2fe1c5a2e0a62ae3eca"
-          },
-          "_roznica_zrodlowa": 31.01
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy",
+              "etykieta": null,
               "wartosc": "530,26 zł"
-            }
-          ],
-          "od": "2001-06-01",
-          "do": "2002-05-31",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2001/263",
-            "przepis": "treść",
-            "cytat": "1) 530,26 zł miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/263",
-            "data_stanu": null,
-            "_sha256": "d1b2168968a8c6ffa0958294aa2f33f134fb7d35676df2fe1c5a2e0a62ae3eca"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "miesięcznie — renta dla osoby częściowo niezdolnej do pracy. 2",
+              "etykieta": null,
               "wartosc": "407,88 zł"
             }
           ],
@@ -12404,240 +11463,40 @@
           "dowod": {
             "eli": "MP/2001/263",
             "przepis": "treść",
-            "cytat": "407,88 zł miesięcznie — renta dla osoby częściowo niezdolnej do pracy. 2",
+            "cytat": "1) 530,26 zł miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy, … 407,88 zł miesięcznie — renta dla osoby częściowo niezdolnej do pracy. 2",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/263",
             "data_stanu": null,
             "_sha256": "d1b2168968a8c6ffa0958294aa2f33f134fb7d35676df2fe1c5a2e0a62ae3eca"
           },
-          "_roznica_zrodlowa": 45.96
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "— dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "366,89 zł"
-            }
-          ],
-          "od": "2001-06-01",
-          "do": "2002-05-31",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "325.55",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2001/263",
-            "przepis": "treść",
-            "cytat": "1) 366,89 zł — dla emerytury lub renty z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/263",
-            "data_stanu": null,
-            "_sha256": "d1b2168968a8c6ffa0958294aa2f33f134fb7d35676df2fe1c5a2e0a62ae3eca"
-          },
-          "_roznica_zrodlowa": 41.34
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "368,72 zł"
-            }
-          ],
-          "od": "2002-06-01",
-          "do": "2003-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "366.89",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2002/344",
-            "przepis": "treść",
-            "cytat": "368,72 zł — dla emerytury lub renty z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2002/344",
-            "data_stanu": null,
-            "_sha256": "80e7dca494f0a9d5945b6aa242a6ed0ae4e701711af7036c36cb5f1322b6057c"
-          },
-          "_roznica_zrodlowa": 1.83
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla renty z tytułu częściowej niezdolno- ści do pracy",
-              "wartosc": "276,56 zł"
-            }
-          ],
-          "od": "2002-06-01",
-          "do": "2003-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "275.18",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2002/344",
-            "przepis": "treść",
-            "cytat": "276,56 zł — dla renty z tytułu częściowej niezdolno- ści do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2002/344",
-            "data_stanu": null,
-            "_sha256": "80e7dca494f0a9d5945b6aa242a6ed0ae4e701711af7036c36cb5f1322b6057c"
-          },
-          "_roznica_zrodlowa": 1.38
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy",
+              "etykieta": null,
               "wartosc": "532,91 zł"
-            }
-          ],
-          "od": "2002-06-01",
-          "do": "2003-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "530.26",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2002/344",
-            "przepis": "treść",
-            "cytat": "1) 532,91 zł miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2002/344",
-            "data_stanu": null,
-            "_sha256": "80e7dca494f0a9d5945b6aa242a6ed0ae4e701711af7036c36cb5f1322b6057c"
-          },
-          "_roznica_zrodlowa": 2.65
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "miesięcznie — renta dla osoby częściowo niezdolnej do pracy",
+              "etykieta": null,
               "wartosc": "409,92 zł"
             }
           ],
           "od": "2002-06-01",
           "do": "2003-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "407.88",
+          "poprzednia": [
+            "530.26",
+            "407.88"
+          ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2002/344",
             "przepis": "treść",
-            "cytat": "409,92 zł miesięcznie — renta dla osoby częściowo niezdolnej do pracy",
+            "cytat": "1) 532,91 zł miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy, … 409,92 zł miesięcznie — renta dla osoby częściowo niezdolnej do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2002/344",
             "data_stanu": null,
             "_sha256": "80e7dca494f0a9d5945b6aa242a6ed0ae4e701711af7036c36cb5f1322b6057c"
-          },
-          "_roznica_zrodlowa": 2.04
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy",
-              "wartosc": "552,63 zł"
-            }
-          ],
-          "od": "2003-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "532.91",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2003/152",
-            "przepis": "treść",
-            "cytat": "1) 552,63 zł miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2003/152",
-            "data_stanu": null,
-            "_sha256": "0a1233df12bee8012e29879286b602511176cdb64eb327ee223832288882af9e"
-          },
-          "_roznica_zrodlowa": 19.72
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — renta dla osoby częściowo niezdolnej do pracy. 2",
-              "wartosc": "425,09 zł"
-            }
-          ],
-          "od": "2003-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "409.92",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2003/152",
-            "przepis": "treść",
-            "cytat": "2) 425,09 zł miesięcznie — renta dla osoby częściowo niezdolnej do pracy. 2",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2003/152",
-            "data_stanu": null,
-            "_sha256": "0a1233df12bee8012e29879286b602511176cdb64eb327ee223832288882af9e"
-          },
-          "_roznica_zrodlowa": 15.17
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "— dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "382,36 zł"
-            }
-          ],
-          "od": "2003-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "368.72",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2003/152",
-            "przepis": "treść",
-            "cytat": "1) 382,36 zł — dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2003/152",
-            "data_stanu": null,
-            "_sha256": "0a1233df12bee8012e29879286b602511176cdb64eb327ee223832288882af9e"
-          },
-          "_roznica_zrodlowa": 13.64
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "— dla renty z tytułu częściowej niezdolno- ści do pracy",
-              "wartosc": "286,79 zł"
-            }
-          ],
-          "od": "2003-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "276.56",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2003/152",
-            "przepis": "treść",
-            "cytat": "2) 286,79 zł — dla renty z tytułu częściowej niezdolno- ści do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2003/152",
-            "data_stanu": null,
-            "_sha256": "0a1233df12bee8012e29879286b602511176cdb64eb327ee223832288882af9e"
-          },
-          "_roznica_zrodlowa": 10.23
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
-              "wartosc": "597,46 zł"
-            }
-          ],
-          "od": "2006-03-01",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2006/166",
-            "przepis": "treść",
-            "cytat": "1) 597,46 zł miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2006/166",
-            "data_stanu": null,
-            "_sha256": "809177dbdae671b9d6b65427735e8c91cecc4f6b111d1a2b1ee909f5c729c010"
           },
           "_roznica_zrodlowa": null
         },
@@ -12645,42 +11504,56 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "miesięcznie — renta dla osób częściowo niezdolnych do pracy. 2",
+              "etykieta": null,
+              "wartosc": "552,63 zł"
+            },
+            {
+              "etykieta": null,
+              "wartosc": "425,09 zł"
+            }
+          ],
+          "od": "2003-03-01",
+          "do": "2006-02-28",
+          "rodzaj_zmiany": "akt_wykonawczy",
+          "poprzednia": [
+            "532.91",
+            "409.92"
+          ],
+          "roznica": null,
+          "dowod": {
+            "eli": "MP/2003/152",
+            "przepis": "treść",
+            "cytat": "1) 552,63 zł miesięcznie — emerytura, renta rodzinna i renta dla osoby całkowicie niezdolnej do pracy … 2) 425,09 zł miesięcznie — renta dla osoby częściowo niezdolnej do pracy. 2",
+            "url": "https://api.sejm.gov.pl/eli/acts/MP/2003/152",
+            "data_stanu": null,
+            "_sha256": "0a1233df12bee8012e29879286b602511176cdb64eb327ee223832288882af9e"
+          },
+          "_roznica_zrodlowa": null
+        },
+        {
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": null,
+              "wartosc": "597,46 zł"
+            },
+            {
+              "etykieta": null,
               "wartosc": "459,57 zł"
             }
           ],
           "od": "2006-03-01",
           "do": "2008-02-29",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2006/166",
-            "przepis": "treść",
-            "cytat": "2) 459,57 zł miesięcznie — renta dla osób częściowo niezdolnych do pracy. 2",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2006/166",
-            "data_stanu": null,
-            "_sha256": "809177dbdae671b9d6b65427735e8c91cecc4f6b111d1a2b1ee909f5c729c010"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "— dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "413,37 zł"
-            }
+          "rodzaj_zmiany": "akt_wykonawczy",
+          "poprzednia": [
+            "552.63",
+            "425.09"
           ],
-          "od": "2006-03-01",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
           "roznica": null,
           "dowod": {
             "eli": "MP/2006/166",
             "przepis": "treść",
-            "cytat": "1) 413,37 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
+            "cytat": "1) 597,46 zł miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy … 2) 459,57 zł miesięcznie — renta dla osób częściowo niezdolnych do pracy. 2",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2006/166",
             "data_stanu": null,
             "_sha256": "809177dbdae671b9d6b65427735e8c91cecc4f6b111d1a2b1ee909f5c729c010"
@@ -12691,1128 +11564,361 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "— dla rent z tytułu częściowej niezdolno- ści do pracy",
-              "wartosc": "310,05 zł"
-            }
-          ],
-          "od": "2006-03-01",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2006/166",
-            "przepis": "treść",
-            "cytat": "2) 310,05 zł — dla rent z tytułu częściowej niezdolno- ści do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2006/166",
-            "data_stanu": null,
-            "_sha256": "809177dbdae671b9d6b65427735e8c91cecc4f6b111d1a2b1ee909f5c729c010"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "636,29 zł"
-            }
-          ],
-          "od": "2008-03-01",
-          "do": "2009-02-28",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/211",
-            "przepis": "treść",
-            "cytat": "a) 636,29 zł miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/211",
-            "data_stanu": null,
-            "_sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "a) — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "440,24 zł"
-            }
-          ],
-          "od": "2008-03-01",
-          "do": "2009-02-28",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/211",
-            "przepis": "treść",
-            "cytat": "a) 440,24 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/211",
-            "data_stanu": null,
-            "_sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "330,20 zł"
-            }
-          ],
-          "od": "2008-03-01",
-          "do": "2009-02-28",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/211",
-            "przepis": "treść",
-            "cytat": "330,20 zł — dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/211",
-            "data_stanu": null,
-            "_sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "489,44 zł"
             }
           ],
           "od": "2008-03-01",
           "do": "2009-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "459.57",
+          "poprzednia": [
+            "597.46",
+            "459.57"
+          ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2008/211",
             "przepis": "treść",
-            "cytat": "489,44 zł miesięcznie — renta dla osób częściowo niezdolnych do pracy",
+            "cytat": "a) 636,29 zł miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … 489,44 zł miesięcznie — renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/211",
             "data_stanu": null,
             "_sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6"
           },
-          "_roznica_zrodlowa": 29.87
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "675,10 zł"
-            }
-          ],
-          "od": "2009-03-01",
-          "do": "2010-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "636.29",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/188",
-            "przepis": "treść",
-            "cytat": "a) 675,10 zł miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/188",
-            "data_stanu": null,
-            "_sha256": "4997498be34f22e9eed54b188af876d1b5f324dde51f4628ddb682b5c2230608"
-          },
-          "_roznica_zrodlowa": 38.81
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "a) — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "467,09 zł"
-            }
-          ],
-          "od": "2009-03-01",
-          "do": "2010-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "440.24",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/188",
-            "przepis": "treść",
-            "cytat": "a) 467,09 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/188",
-            "data_stanu": null,
-            "_sha256": "4997498be34f22e9eed54b188af876d1b5f324dde51f4628ddb682b5c2230608"
-          },
-          "_roznica_zrodlowa": 26.85
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "350,34 zł"
-            }
-          ],
-          "od": "2009-03-01",
-          "do": "2010-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "330.2",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/188",
-            "przepis": "treść",
-            "cytat": "350,34 zł — dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/188",
-            "data_stanu": null,
-            "_sha256": "4997498be34f22e9eed54b188af876d1b5f324dde51f4628ddb682b5c2230608"
-          },
-          "_roznica_zrodlowa": 20.14
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "519,30 zł"
             }
           ],
           "od": "2009-03-01",
           "do": "2010-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "489.44",
+          "poprzednia": [
+            "636.29",
+            "489.44"
+          ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2009/188",
             "przepis": "treść",
-            "cytat": "519,30 zł miesięcznie — renta dla osób częściowo niezdolnych do pracy",
+            "cytat": "a) 675,10 zł miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … 519,30 zł miesięcznie — renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/188",
             "data_stanu": null,
             "_sha256": "4997498be34f22e9eed54b188af876d1b5f324dde51f4628ddb682b5c2230608"
           },
-          "_roznica_zrodlowa": 29.86
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "706,29 zł"
-            }
-          ],
-          "od": "2010-03-01",
-          "do": "2011-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "675.1",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2010/110",
-            "przepis": "treść",
-            "cytat": "a) 706,29 zł miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/110",
-            "data_stanu": null,
-            "_sha256": "0c71d333c7111928463903420d288ac93fafc511a72ff262ae0d082846319753"
-          },
-          "_roznica_zrodlowa": 31.19
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "a) — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "488,67 zł"
-            }
-          ],
-          "od": "2010-03-01",
-          "do": "2011-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "467.09",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2010/110",
-            "przepis": "treść",
-            "cytat": "a) 488,67 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/110",
-            "data_stanu": null,
-            "_sha256": "0c71d333c7111928463903420d288ac93fafc511a72ff262ae0d082846319753"
-          },
-          "_roznica_zrodlowa": 21.58
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "366,53 zł"
-            }
-          ],
-          "od": "2010-03-01",
-          "do": "2011-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "350.34",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2010/110",
-            "przepis": "treść",
-            "cytat": "366,53 zł — dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/110",
-            "data_stanu": null,
-            "_sha256": "0c71d333c7111928463903420d288ac93fafc511a72ff262ae0d082846319753"
-          },
-          "_roznica_zrodlowa": 16.19
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "543,29 zł"
             }
           ],
           "od": "2010-03-01",
           "do": "2011-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "519.3",
+          "poprzednia": [
+            "675.1",
+            "519.3"
+          ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2010/110",
             "przepis": "treść",
-            "cytat": "543,29 zł miesięcznie — renta dla osób częściowo niezdolnych do pracy",
+            "cytat": "a) 706,29 zł miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … 543,29 zł miesięcznie — renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/110",
             "data_stanu": null,
             "_sha256": "0c71d333c7111928463903420d288ac93fafc511a72ff262ae0d082846319753"
           },
-          "_roznica_zrodlowa": 23.99
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "728,18 zł"
-            }
-          ],
-          "od": "2011-03-01",
-          "do": "2013-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "706.29",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2011/162",
-            "przepis": "treść",
-            "cytat": "a) 728,18 zł miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2011/162",
-            "data_stanu": null,
-            "_sha256": "528f50e348a1c13433d14d4a22c61417c9a92f34bed7ea05c8484bc8731c1dde"
-          },
-          "_roznica_zrodlowa": 21.89
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "a) — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "503,82 zł"
-            }
-          ],
-          "od": "2011-03-01",
-          "do": "2013-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "488.67",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2011/162",
-            "przepis": "treść",
-            "cytat": "a) 503,82 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2011/162",
-            "data_stanu": null,
-            "_sha256": "528f50e348a1c13433d14d4a22c61417c9a92f34bed7ea05c8484bc8731c1dde"
-          },
-          "_roznica_zrodlowa": 15.15
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "377,89 zł"
-            }
-          ],
-          "od": "2011-03-01",
-          "do": "2013-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "366.53",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2011/162",
-            "przepis": "treść",
-            "cytat": "377,89 zł — dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2011/162",
-            "data_stanu": null,
-            "_sha256": "528f50e348a1c13433d14d4a22c61417c9a92f34bed7ea05c8484bc8731c1dde"
-          },
-          "_roznica_zrodlowa": 11.36
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie — renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "560,13 zł"
             }
           ],
           "od": "2011-03-01",
           "do": "2013-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "543.29",
+          "poprzednia": [
+            "706.29",
+            "543.29"
+          ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2011/162",
             "przepis": "treść",
-            "cytat": "560,13 zł miesięcznie — renta dla osób częściowo niezdolnych do pracy",
+            "cytat": "a) 728,18 zł miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … 560,13 zł miesięcznie — renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2011/162",
             "data_stanu": null,
             "_sha256": "528f50e348a1c13433d14d4a22c61417c9a92f34bed7ea05c8484bc8731c1dde"
           },
-          "_roznica_zrodlowa": 16.84
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007 miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "637,92 zł"
-            }
-          ],
-          "od": "2013-03-01",
-          "do": "2014-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "560.13",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2013/95",
-            "przepis": "treść",
-            "cytat": "\u0007 637,92 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2013/95",
-            "data_stanu": null,
-            "_sha256": "2fd0194afc46abf3f64a48f601ba9abd1526ca3240ba30afa090a335b9ac3e82"
-          },
-          "_roznica_zrodlowa": 77.79
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "\u0007 – dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "411,87 zł"
-            }
-          ],
-          "od": "2013-03-01",
-          "do": "2014-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "377.89",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2013/95",
-            "przepis": "treść",
-            "cytat": "\u0007 411,87 zł – dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2013/95",
-            "data_stanu": null,
-            "_sha256": "2fd0194afc46abf3f64a48f601ba9abd1526ca3240ba30afa090a335b9ac3e82"
-          },
-          "_roznica_zrodlowa": 33.98
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "831,15 zł"
             }
           ],
           "od": "2013-03-01",
           "do": "2014-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "728.18",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2013/95",
-            "przepis": "treść",
-            "cytat": "a) \u0007 831,15 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2013/95",
-            "data_stanu": null,
-            "_sha256": "2fd0194afc46abf3f64a48f601ba9abd1526ca3240ba30afa090a335b9ac3e82"
-          },
-          "_roznica_zrodlowa": 102.97
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "549,12 zł"
-            }
+          "poprzednia": [
+            "560.13",
+            "728.18"
           ],
-          "od": "2013-03-01",
-          "do": "2014-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "503.82",
           "roznica": null,
           "dowod": {
             "eli": "MP/2013/95",
             "przepis": "treść",
-            "cytat": "a) \u0007 549,12 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
+            "cytat": "\u0007 637,92 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy … a) \u0007 831,15 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2013/95",
             "data_stanu": null,
             "_sha256": "2fd0194afc46abf3f64a48f601ba9abd1526ca3240ba30afa090a335b9ac3e82"
           },
-          "_roznica_zrodlowa": 45.3
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007 miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "648,13 zł"
-            }
-          ],
-          "od": "2014-03-01",
-          "do": "2016-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "637.92",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2014/165",
-            "przepis": "treść",
-            "cytat": "\u0007 648,13 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2014/165",
-            "data_stanu": null,
-            "_sha256": "a01c03e91df342bd29f9249f9f090c57c7394c494b720daba0edf492012bf14e"
-          },
-          "_roznica_zrodlowa": 10.21
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "\u0007 – dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "418,46 zł"
-            }
-          ],
-          "od": "2014-03-01",
-          "do": "2016-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "411.87",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2014/165",
-            "przepis": "treść",
-            "cytat": "\u0007 418,46 zł – dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2014/165",
-            "data_stanu": null,
-            "_sha256": "a01c03e91df342bd29f9249f9f090c57c7394c494b720daba0edf492012bf14e"
-          },
-          "_roznica_zrodlowa": 6.59
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "844,45 zł"
             }
           ],
           "od": "2014-03-01",
           "do": "2016-02-29",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "831.15",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2014/165",
-            "przepis": "treść",
-            "cytat": "a) \u0007 844,45 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2014/165",
-            "data_stanu": null,
-            "_sha256": "a01c03e91df342bd29f9249f9f090c57c7394c494b720daba0edf492012bf14e"
-          },
-          "_roznica_zrodlowa": 13.3
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "557,91 zł"
-            }
+          "poprzednia": [
+            "637.92",
+            "831.15"
           ],
-          "od": "2014-03-01",
-          "do": "2016-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "549.12",
           "roznica": null,
           "dowod": {
             "eli": "MP/2014/165",
             "przepis": "treść",
-            "cytat": "a) \u0007 557,91 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
+            "cytat": "\u0007 648,13 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy … a) \u0007 844,45 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2014/165",
             "data_stanu": null,
             "_sha256": "a01c03e91df342bd29f9249f9f090c57c7394c494b720daba0edf492012bf14e"
           },
-          "_roznica_zrodlowa": 8.79
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007 miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "676,75 zł"
-            }
-          ],
-          "od": "2016-03-01",
-          "do": "2018-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "648.13",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2016/168",
-            "przepis": "treść",
-            "cytat": "\u0007 676,75 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/168",
-            "data_stanu": null,
-            "_sha256": "b9cec6d4107c77d6e5303341db1d2f0a9af37df1ecf149b65defa9e64e4a90f1"
-          },
-          "_roznica_zrodlowa": 28.62
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "\u0007 – dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "422,32 zł"
-            }
-          ],
-          "od": "2016-03-01",
-          "do": "2018-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "418.46",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2016/168",
-            "przepis": "treść",
-            "cytat": "\u0007 422,32 zł – dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/168",
-            "data_stanu": null,
-            "_sha256": "b9cec6d4107c77d6e5303341db1d2f0a9af37df1ecf149b65defa9e64e4a90f1"
-          },
-          "_roznica_zrodlowa": 3.86
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "882,56 zł"
             }
           ],
           "od": "2016-03-01",
           "do": "2018-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "844.45",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2016/168",
-            "przepis": "treść",
-            "cytat": "a) \u0007 882,56 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/168",
-            "data_stanu": null,
-            "_sha256": "b9cec6d4107c77d6e5303341db1d2f0a9af37df1ecf149b65defa9e64e4a90f1"
-          },
-          "_roznica_zrodlowa": 38.11
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "a) \u0007 – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "563,05 zł"
-            }
+          "poprzednia": [
+            "648.13",
+            "844.45"
           ],
-          "od": "2016-03-01",
-          "do": "2018-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "557.91",
           "roznica": null,
           "dowod": {
             "eli": "MP/2016/168",
             "przepis": "treść",
-            "cytat": "a) \u0007 563,05 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
+            "cytat": "\u0007 676,75 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy … a) \u0007 882,56 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/168",
             "data_stanu": null,
             "_sha256": "b9cec6d4107c77d6e5303341db1d2f0a9af37df1ecf149b65defa9e64e4a90f1"
           },
-          "_roznica_zrodlowa": 5.14
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1029,80 zł"
-            }
-          ],
-          "od": "2018-03-01",
-          "do": "2022-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "882.56",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2018/216",
-            "przepis": "treść",
-            "cytat": "a) 1029,80 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2018/216",
-            "data_stanu": null,
-            "_sha256": "4a7232e1e2b960956b70de55ace22d7e9c8b5de2f0b990d4a687135986f2484b"
-          },
-          "_roznica_zrodlowa": 147.24
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "582,38 zł"
-            }
-          ],
-          "od": "2018-03-01",
-          "do": "2022-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "563.05",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2018/216",
-            "przepis": "treść",
-            "cytat": "a) 582,38 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2018/216",
-            "data_stanu": null,
-            "_sha256": "4a7232e1e2b960956b70de55ace22d7e9c8b5de2f0b990d4a687135986f2484b"
-          },
-          "_roznica_zrodlowa": 19.33
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "436,82 zł"
-            }
-          ],
-          "od": "2018-03-01",
-          "do": "2022-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "422.32",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2018/216",
-            "przepis": "treść",
-            "cytat": "436,82 zł – dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2018/216",
-            "data_stanu": null,
-            "_sha256": "4a7232e1e2b960956b70de55ace22d7e9c8b5de2f0b990d4a687135986f2484b"
-          },
-          "_roznica_zrodlowa": 14.5
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "772,35 zł"
             }
           ],
           "od": "2018-03-01",
           "do": "2022-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "676.75",
+          "poprzednia": [
+            "882.56",
+            "676.75"
+          ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2018/216",
             "przepis": "treść",
-            "cytat": "772,35 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+            "cytat": "a) 1029,80 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … 772,35 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2018/216",
             "data_stanu": null,
             "_sha256": "4a7232e1e2b960956b70de55ace22d7e9c8b5de2f0b990d4a687135986f2484b"
           },
-          "_roznica_zrodlowa": 95.6
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1338,44 zł"
-            }
-          ],
-          "od": "2022-03-01",
-          "do": "2024-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "1029.8",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2022/260",
-            "przepis": "treść",
-            "cytat": "a) 1338,44 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2022/260",
-            "data_stanu": null,
-            "_sha256": "66f82f28ba90e6c41975cb3ae840a4c70b0d4f9f1f613e83ed0cc744f290c5e1"
-          },
-          "_roznica_zrodlowa": 308.64
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "691,94 zł"
-            }
-          ],
-          "od": "2022-03-01",
-          "do": "2024-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "582.38",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2022/260",
-            "przepis": "treść",
-            "cytat": "a) 691,94 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2022/260",
-            "data_stanu": null,
-            "_sha256": "66f82f28ba90e6c41975cb3ae840a4c70b0d4f9f1f613e83ed0cc744f290c5e1"
-          },
-          "_roznica_zrodlowa": 109.56
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "518,99 zł"
-            }
-          ],
-          "od": "2022-03-01",
-          "do": "2024-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "436.82",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2022/260",
-            "przepis": "treść",
-            "cytat": "518,99 zł – dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2022/260",
-            "data_stanu": null,
-            "_sha256": "66f82f28ba90e6c41975cb3ae840a4c70b0d4f9f1f613e83ed0cc744f290c5e1"
-          },
-          "_roznica_zrodlowa": 82.17
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "1003,83 zł"
             }
           ],
           "od": "2022-03-01",
           "do": "2024-02-29",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "772.35",
+          "poprzednia": [
+            "1029.8",
+            "772.35"
+          ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2022/260",
             "przepis": "treść",
-            "cytat": "1003,83 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+            "cytat": "a) 1338,44 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … 1003,83 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2022/260",
             "data_stanu": null,
             "_sha256": "66f82f28ba90e6c41975cb3ae840a4c70b0d4f9f1f613e83ed0cc744f290c5e1"
           },
-          "_roznica_zrodlowa": 231.48
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1780,96 zł"
-            }
-          ],
-          "od": "2024-03-01",
-          "do": "2025-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "1338.44",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2024/133",
-            "przepis": "treść",
-            "cytat": "a) 1780,96 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/133",
-            "data_stanu": null,
-            "_sha256": "d901ac18ab7ddbfaa34d6b4c31e9020be4941bcf43d0d59e9902d9eee9c2b111"
-          },
-          "_roznica_zrodlowa": 442.52
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "890,63 zł"
-            }
-          ],
-          "od": "2024-03-01",
-          "do": "2025-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "691.94",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2024/133",
-            "przepis": "treść",
-            "cytat": "a) 890,63 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/133",
-            "data_stanu": null,
-            "_sha256": "d901ac18ab7ddbfaa34d6b4c31e9020be4941bcf43d0d59e9902d9eee9c2b111"
-          },
-          "_roznica_zrodlowa": 198.69
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "668,01 zł"
-            }
-          ],
-          "od": "2024-03-01",
-          "do": "2025-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "518.99",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2024/133",
-            "przepis": "treść",
-            "cytat": "668,01 zł – dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/133",
-            "data_stanu": null,
-            "_sha256": "d901ac18ab7ddbfaa34d6b4c31e9020be4941bcf43d0d59e9902d9eee9c2b111"
-          },
-          "_roznica_zrodlowa": 149.02
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "1335,72 zł"
             }
           ],
           "od": "2024-03-01",
           "do": "2025-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "1003.83",
+          "poprzednia": [
+            "1338.44",
+            "1003.83"
+          ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2024/133",
             "przepis": "treść",
-            "cytat": "1335,72 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+            "cytat": "a) 1780,96 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … 1335,72 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/133",
             "data_stanu": null,
             "_sha256": "d901ac18ab7ddbfaa34d6b4c31e9020be4941bcf43d0d59e9902d9eee9c2b111"
           },
-          "_roznica_zrodlowa": 331.89
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1878,91 zł"
-            }
-          ],
-          "od": "2025-03-01",
-          "do": "2026-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "1780.96",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2025/152",
-            "przepis": "treść",
-            "cytat": "a) 1878,91 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/152",
-            "data_stanu": null,
-            "_sha256": "69f3af6e64da8858711bdfe8b179f4015e3812d5b86ae2c9b358014cc10bbfa8"
-          },
-          "_roznica_zrodlowa": 97.95
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "939,61 zł"
-            }
-          ],
-          "od": "2025-03-01",
-          "do": "2026-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "890.63",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2025/152",
-            "przepis": "treść",
-            "cytat": "a) 939,61 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/152",
-            "data_stanu": null,
-            "_sha256": "69f3af6e64da8858711bdfe8b179f4015e3812d5b86ae2c9b358014cc10bbfa8"
-          },
-          "_roznica_zrodlowa": 48.98
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "704,75 zł"
-            }
-          ],
-          "od": "2025-03-01",
-          "do": "2026-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "668.01",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2025/152",
-            "przepis": "treść",
-            "cytat": "704,75 zł – dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/152",
-            "data_stanu": null,
-            "_sha256": "69f3af6e64da8858711bdfe8b179f4015e3812d5b86ae2c9b358014cc10bbfa8"
-          },
-          "_roznica_zrodlowa": 36.74
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "1409,18 zł"
             }
           ],
           "od": "2025-03-01",
           "do": "2026-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "1335.72",
+          "poprzednia": [
+            "1780.96",
+            "1335.72"
+          ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2025/152",
             "przepis": "treść",
-            "cytat": "1409,18 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+            "cytat": "a) 1878,91 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … 1409,18 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/152",
             "data_stanu": null,
             "_sha256": "69f3af6e64da8858711bdfe8b179f4015e3812d5b86ae2c9b358014cc10bbfa8"
           },
-          "_roznica_zrodlowa": 73.46
+          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "a) miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1978,49 zł"
-            }
-          ],
-          "od": "2026-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "1878.91",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          },
-          "_roznica_zrodlowa": 99.58
-        },
-        {
-          "wartosc": null,
-          "warianty": [
+            },
             {
-              "etykieta": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy",
-              "wartosc": "989,41 zł"
-            }
-          ],
-          "od": "2026-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "939.61",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "a) 989,41 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          },
-          "_roznica_zrodlowa": 49.8
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
-              "wartosc": "742,10 zł"
-            }
-          ],
-          "od": "2026-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "704.75",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "742,10 zł – dla rent z tytułu częściowej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          },
-          "_roznica_zrodlowa": 37.35
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "1483,87 zł"
             }
           ],
           "od": "2026-03-01",
           "do": null,
           "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "1409.18",
+          "poprzednia": [
+            "1878.91",
+            "1409.18"
+          ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2026/220",
             "przepis": "treść",
-            "cytat": "1483,87 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
+            "cytat": "a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … 1483,87 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
             "data_stanu": null,
             "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
           },
-          "_roznica_zrodlowa": 74.69
+          "_roznica_zrodlowa": null
         }
       ],
       "progi": [],
@@ -13968,30 +12074,6 @@
             "data_stanu": null,
             "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
           }
-        },
-        {
-          "krok": 11,
-          "opis": "MP/2026/220 treść: 989,41 zł od 2026-03-01 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "1483,87 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          }
-        },
-        {
-          "krok": 12,
-          "opis": "MP/2026/220 treść: 742,10 zł od 2026-03-01 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "1483,87 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          }
         }
       ]
     },
@@ -14020,36 +12102,6 @@
           "eli": "MP/2026/220",
           "przepis": "MP/2026/220 treść",
           "cytat": "a) 1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-          "data_stanu": null
-        },
-        "od": "2026-03-01",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2026-03-01",
-        "opis": "a) – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy: 989,41 zł od 2026-03-01 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2026/220",
-          "przepis": "MP/2026/220 treść",
-          "cytat": "a) 989,41 zł – dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-          "data_stanu": null
-        },
-        "od": "2026-03-01",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2026-03-01",
-        "opis": "dla rent z tytułu częściowej niezdolności do pracy: 742,10 zł od 2026-03-01 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2026/220",
-          "przepis": "MP/2026/220 treść",
-          "cytat": "742,10 zł – dla rent z tytułu częściowej niezdolności do pracy,",
           "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
           "data_stanu": null
         },
@@ -14397,16 +12449,7 @@
       "data_stanu": "2026-10-16",
       "tekst": "tekst ujednolicony (informacyjny)"
     },
-    "nieustalone": [
-      {
-        "pole": "ile.aktualna",
-        "powod": "Wiele równoległych kwot; nie wybrano jednej stawki."
-      },
-      {
-        "pole": "ile",
-        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
-      }
-    ],
+    "nieustalone": [],
     "flagi": [
       "Kandydat automatyczny. Nie stanowi potwierdzenia prawa do świadczenia."
     ]
@@ -14586,12 +12629,44 @@
       "data_stanu": "2026-04-17"
     },
     "ile": {
-      "rozwiazanie": "nieustalone",
-      "regula": null,
+      "rozwiazanie": "regula_procentowa",
+      "regula": {
+        "udzial": "100 %",
+        "podstawa_id": null,
+        "opis": "100 % kwoty najniższej renty z tytułu całkowitej niezdolności do pracy ustalonej i podwyższonej zgodnie z ustawą o emeryturach i rentach z Fundusz"
+      },
       "aktualna": null,
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
-      "wyliczenie": null,
+      "wyliczenie": {
+        "wartosc": "1978,49 zł",
+        "warianty": null,
+        "od": "2026-03-01",
+        "podstawa": {
+          "wartosc": "1978,49 zł",
+          "od": "2026-03-01",
+          "zrodlo": "MP/2026/220",
+          "wielkosc": "kwota najniższej renty z tytułu całkowitej niezdolności do pracy",
+          "dowod": {
+            "eli": "MP/2026/220",
+            "przepis": "treść aktu",
+            "cytat": "1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
+            "data_stanu": null,
+            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
+          },
+          "lancuch": null
+        },
+        "zaokraglenie": null,
+        "uwaga": "100 % × kwota najniższej renty z tytułu całkowitej niezdolności do pracy. kwota obliczona z reguły i wielkości ogłoszonej; nie jest cytatem kwoty",
+        "flagi": [],
+        "nieustalone": [
+          {
+            "pole": "zaokraglenie",
+            "powod": "nie stosowano (wynik dokładny; ewentualne zaokrąglenie wymaga osobnej normy)"
+          }
+        ]
+      },
       "os_czasu": [],
       "progi": [],
       "trasa": [
@@ -14625,6 +12700,34 @@
             "_strony": [
               2
             ]
+          }
+        },
+        {
+          "krok": 3,
+          "opis": "art. 6 ust. 1: reguła procentowa",
+          "dowod": {
+            "eli": "DU/2003/1268",
+            "przepis": "art. 6 ust. 1",
+            "cytat": "Renta socjalna wynosi 100 % kwoty najniższej renty z tytułu całkowitej niezdolności do pracy ustalonej i podwyższonej zgodnie z ustawą o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+            "data_stanu": "2026-04-17",
+            "_sha256": "216fb4eef4f3fe404cd4dbc71ff1c874232d36f769d3a09727e692e2638dcc69",
+            "_strona": 3,
+            "_strony": [
+              3
+            ]
+          }
+        },
+        {
+          "krok": 4,
+          "opis": "MP/2026/220: kwota najniższej renty z tytułu całkowitej niezdolności do pracy od 2026-03-01",
+          "dowod": {
+            "eli": "MP/2026/220",
+            "przepis": "treść aktu",
+            "cytat": "1978,49 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
+            "data_stanu": null,
+            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
           }
         }
       ]
@@ -14736,12 +12839,7 @@
       "data_stanu": "2026-04-17",
       "tekst": "tekst ujednolicony (informacyjny)"
     },
-    "nieustalone": [
-      {
-        "pole": "ile",
-        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
-      }
-    ],
+    "nieustalone": [],
     "flagi": [
       "Kandydat automatyczny. Nie stanowi potwierdzenia prawa do świadczenia."
     ]
@@ -14769,21 +12867,21 @@
     "ile": {
       "rozwiazanie": "kwota_z_aktu_wykonawczego",
       "regula": null,
-      "aktualna": null,
+      "aktualna": {
+        "wartosc": "2704,71 zł",
+        "warianty": null,
+        "od": "2026-03-01",
+        "do": null
+      },
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "U. z 2023 r. poz. 2194 oraz z 2024 r. poz. 1615) ogłasza się, że od dnia 1 marca 2025 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji",
-              "wartosc": "2610,72 zł"
-            }
-          ],
+          "wartosc": "2610,72 zł",
+          "warianty": null,
           "od": "2025-03-01",
-          "do": null,
+          "do": "2026-02-28",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
           "poprzednia": null,
           "roznica": null,
@@ -14798,17 +12896,12 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji",
-              "wartosc": "2704,71 zł"
-            }
-          ],
+          "wartosc": "2704,71 zł",
+          "warianty": null,
           "od": "2026-03-01",
           "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
+          "rodzaj_zmiany": "akt_wykonawczy",
+          "poprzednia": "2610.72",
           "roznica": null,
           "dowod": {
             "eli": "MP/2026/153",
@@ -14818,7 +12911,7 @@
             "data_stanu": null,
             "_sha256": "dd8b9ceebeaf410abddb6ee75c413b1528dc98c13b4207c2b14341ae1e2c699f"
           },
-          "_roznica_zrodlowa": null
+          "_roznica_zrodlowa": 93.99
         }
       ],
       "progi": [],
@@ -14953,16 +13046,7 @@
       "data_stanu": "2026-04-17",
       "tekst": "tekst ujednolicony (informacyjny)"
     },
-    "nieustalone": [
-      {
-        "pole": "ile.aktualna",
-        "powod": "Wiele równoległych kwot; nie wybrano jednej stawki."
-      },
-      {
-        "pole": "ile",
-        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
-      }
-    ],
+    "nieustalone": [],
     "flagi": [
       "Kandydat automatyczny. Nie stanowi potwierdzenia prawa do świadczenia."
     ]
@@ -15613,7 +13697,127 @@
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [],
-      "progi": [],
+      "progi": [
+        {
+          "przepis": "art. 38 ust. 2 pkt 1 — najwyżej (kwota zasiłku nie może być wyższa niż kwota kryterium dochodowego na osobę w rodzinie)",
+          "wpisy": [
+            {
+              "wartosc": "351 zł",
+              "warianty": null,
+              "od": "2009-10-01",
+              "do": "2012-09-30",
+              "rodzaj_zmiany": "pierwszy_znany_wpis",
+              "poprzednia": null,
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2009/1055",
+                "przepis": "treść aktu",
+                "cytat": "b) dla osoby w rodzinie — w wysokości 351 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2009/1055",
+                "data_stanu": null,
+                "_sha256": "771859270ef2425fd69b595355e678e5d7ffad5aca028e1d0fec0080ad21f14b"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "kwota zasiłku nie może być wyższa niż kwota kryterium dochodowego na osobę w rodzinie"
+            },
+            {
+              "wartosc": "456 zł",
+              "warianty": null,
+              "od": "2012-10-01",
+              "do": "2015-09-30",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "351 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2012/823",
+                "przepis": "treść aktu",
+                "cytat": "b) dla osoby w rodzinie – w wysokości 456 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/823",
+                "data_stanu": null,
+                "_sha256": "ee8a509b6d74ef00aa400689ba9e6657ff538796948e291bd7d5ea49fd19e224"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "kwota zasiłku nie może być wyższa niż kwota kryterium dochodowego na osobę w rodzinie"
+            },
+            {
+              "wartosc": "514 zł",
+              "warianty": null,
+              "od": "2015-10-01",
+              "do": "2018-09-30",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "456 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2015/1058",
+                "przepis": "treść aktu",
+                "cytat": "b) dla osoby w rodzinie – w wysokości 514 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1058",
+                "data_stanu": null,
+                "_sha256": "7cad68f16b6130b7756a11472cc6efa50321847c2f30e8fe4db86a74aab349f9"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "kwota zasiłku nie może być wyższa niż kwota kryterium dochodowego na osobę w rodzinie"
+            },
+            {
+              "wartosc": "528 zł",
+              "warianty": null,
+              "od": "2018-10-01",
+              "do": "2021-12-31",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "514 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2018/1358",
+                "przepis": "treść aktu",
+                "cytat": "b) dla osoby w rodzinie – w wysokości 528 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1358",
+                "data_stanu": null,
+                "_sha256": "efbb7e5eebb3c3c4f106b6594932503e9387d74601f5a51bd3849d9f09c8dc9e"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "kwota zasiłku nie może być wyższa niż kwota kryterium dochodowego na osobę w rodzinie"
+            },
+            {
+              "wartosc": "600 zł",
+              "warianty": null,
+              "od": "2022-01-01",
+              "do": "2024-12-31",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "528 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2021/1296",
+                "przepis": "treść aktu",
+                "cytat": "b) dla osoby w rodzinie – w wysokości 600 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1296",
+                "data_stanu": null,
+                "_sha256": "0a7b071e44a740f928c740ae34d36a23c9807a42d53b32d9c1e18cd5f3ac4066"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "kwota zasiłku nie może być wyższa niż kwota kryterium dochodowego na osobę w rodzinie"
+            },
+            {
+              "wartosc": "823 zł",
+              "warianty": null,
+              "od": "2025-01-01",
+              "do": null,
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "600 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2024/1044",
+                "przepis": "treść aktu",
+                "cytat": "b) dla osoby w rodzinie – w wysokości 823 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1044",
+                "data_stanu": null,
+                "_sha256": "97aac3573f0161bc45dd0e01c0576639d8a37994bd05babe66b68f6f6757b98c"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "kwota zasiłku nie może być wyższa niż kwota kryterium dochodowego na osobę w rodzinie"
+            }
+          ]
+        }
+      ],
       "trasa": [
         {
           "krok": 1,
@@ -15720,7 +13924,7 @@
     "nieustalone": [
       {
         "pole": "ile",
-        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
+        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych. Podano limit kwoty z przepisu (sekcja progów i limitów)."
       }
     ],
     "flagi": [
@@ -15756,7 +13960,127 @@
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [],
-      "progi": [],
+      "progi": [
+        {
+          "przepis": "art. 41 pkt 1 — najwyżej (w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi)",
+          "wpisy": [
+            {
+              "wartosc": "477 zł",
+              "warianty": null,
+              "od": "2009-10-01",
+              "do": "2012-09-30",
+              "rodzaj_zmiany": "pierwszy_znany_wpis",
+              "poprzednia": null,
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2009/1055",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej — w wysokości 477 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2009/1055",
+                "data_stanu": null,
+                "_sha256": "771859270ef2425fd69b595355e678e5d7ffad5aca028e1d0fec0080ad21f14b"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            },
+            {
+              "wartosc": "542 zł",
+              "warianty": null,
+              "od": "2012-10-01",
+              "do": "2015-09-30",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "477 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2012/823",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej – w wysokości 542 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/823",
+                "data_stanu": null,
+                "_sha256": "ee8a509b6d74ef00aa400689ba9e6657ff538796948e291bd7d5ea49fd19e224"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            },
+            {
+              "wartosc": "634 zł",
+              "warianty": null,
+              "od": "2015-10-01",
+              "do": "2018-09-30",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "542 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2015/1058",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej – w wysokości 634 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1058",
+                "data_stanu": null,
+                "_sha256": "7cad68f16b6130b7756a11472cc6efa50321847c2f30e8fe4db86a74aab349f9"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            },
+            {
+              "wartosc": "701 zł",
+              "warianty": null,
+              "od": "2018-10-01",
+              "do": "2021-12-31",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "634 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2018/1358",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej – w wysokości 701 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1358",
+                "data_stanu": null,
+                "_sha256": "efbb7e5eebb3c3c4f106b6594932503e9387d74601f5a51bd3849d9f09c8dc9e"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            },
+            {
+              "wartosc": "776 zł",
+              "warianty": null,
+              "od": "2022-01-01",
+              "do": "2024-12-31",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "701 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2021/1296",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej – w wysokości 776 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1296",
+                "data_stanu": null,
+                "_sha256": "0a7b071e44a740f928c740ae34d36a23c9807a42d53b32d9c1e18cd5f3ac4066"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            },
+            {
+              "wartosc": "1010 zł",
+              "warianty": null,
+              "od": "2025-01-01",
+              "do": null,
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "776 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2024/1044",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej – w wysokości 1010 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1044",
+                "data_stanu": null,
+                "_sha256": "97aac3573f0161bc45dd0e01c0576639d8a37994bd05babe66b68f6f6757b98c"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            }
+          ]
+        }
+      ],
       "trasa": [
         {
           "krok": 1,
@@ -15867,7 +14191,7 @@
     "nieustalone": [
       {
         "pole": "ile",
-        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
+        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych. Podano limit kwoty z przepisu (sekcja progów i limitów)."
       }
     ],
     "flagi": [
@@ -15976,7 +14300,127 @@
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [],
-      "progi": [],
+      "progi": [
+        {
+          "przepis": "art. 41 pkt 1 — najwyżej (w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi)",
+          "wpisy": [
+            {
+              "wartosc": "477 zł",
+              "warianty": null,
+              "od": "2009-10-01",
+              "do": "2012-09-30",
+              "rodzaj_zmiany": "pierwszy_znany_wpis",
+              "poprzednia": null,
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2009/1055",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej — w wysokości 477 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2009/1055",
+                "data_stanu": null,
+                "_sha256": "771859270ef2425fd69b595355e678e5d7ffad5aca028e1d0fec0080ad21f14b"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            },
+            {
+              "wartosc": "542 zł",
+              "warianty": null,
+              "od": "2012-10-01",
+              "do": "2015-09-30",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "477 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2012/823",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej – w wysokości 542 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2012/823",
+                "data_stanu": null,
+                "_sha256": "ee8a509b6d74ef00aa400689ba9e6657ff538796948e291bd7d5ea49fd19e224"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            },
+            {
+              "wartosc": "634 zł",
+              "warianty": null,
+              "od": "2015-10-01",
+              "do": "2018-09-30",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "542 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2015/1058",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej – w wysokości 634 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2015/1058",
+                "data_stanu": null,
+                "_sha256": "7cad68f16b6130b7756a11472cc6efa50321847c2f30e8fe4db86a74aab349f9"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            },
+            {
+              "wartosc": "701 zł",
+              "warianty": null,
+              "od": "2018-10-01",
+              "do": "2021-12-31",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "634 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2018/1358",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej – w wysokości 701 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/1358",
+                "data_stanu": null,
+                "_sha256": "efbb7e5eebb3c3c4f106b6594932503e9387d74601f5a51bd3849d9f09c8dc9e"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            },
+            {
+              "wartosc": "776 zł",
+              "warianty": null,
+              "od": "2022-01-01",
+              "do": "2024-12-31",
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "701 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2021/1296",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej – w wysokości 776 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/1296",
+                "data_stanu": null,
+                "_sha256": "0a7b071e44a740f928c740ae34d36a23c9807a42d53b32d9c1e18cd5f3ac4066"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            },
+            {
+              "wartosc": "1010 zł",
+              "warianty": null,
+              "od": "2025-01-01",
+              "do": null,
+              "rodzaj_zmiany": "akt_wykonawczy",
+              "poprzednia": "776 zł",
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2024/1044",
+                "przepis": "treść aktu",
+                "cytat": "kryteria dochodowe: a) dla osoby samotnie gospodarującej – w wysokości 1010 zł",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2024/1044",
+                "data_stanu": null,
+                "_sha256": "97aac3573f0161bc45dd0e01c0576639d8a37994bd05babe66b68f6f6757b98c"
+              },
+              "_rodzaj": "maksimum",
+              "_cytat_ustawy": "w wysokości nieprzekraczającej odpowiednio kryterium dochodowego osoby samotnie gospodarującej lub rodziny, który nie podlega zwrotowi"
+            }
+          ]
+        }
+      ],
       "trasa": [
         {
           "krok": 1,
@@ -16005,7 +14449,7 @@
     "nieustalone": [
       {
         "pole": "ile",
-        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
+        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych. Podano limit kwoty z przepisu (sekcja progów i limitów)."
       }
     ],
     "flagi": [

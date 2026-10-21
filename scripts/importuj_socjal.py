@@ -119,6 +119,132 @@ def wartosc_rekordu(row):
     return str(tekst) if tekst else None
 
 
+def etykieta_wariantu(tekst):
+    """Opis wariantu bez wstępu komunikatu („… ogłasza się, że od dnia 1 marca 2026 r.”) i litery wyliczenia."""
+    if not tekst:
+        return None
+    s = ' '.join(str(tekst).split())
+    s = re.sub(r'^.*?\bogłasza\s+się,?\s*(?:że\s*)?', '', s, flags=re.I)
+    s = re.sub(r'^od\s+dnia\s+\d{1,2}\s+\w+\s+\d{4}\s*r\.\s*', '', s, flags=re.I)
+    s = re.sub(r'(\w)-\s+(\w)', r'\1\2', s)
+    s = re.sub(r'^(?:[a-z]\)\s*)?(?:miesięcznie\s*)?[–—-]?\s*', '', s, flags=re.I)
+    s = s.strip(' ,;:–—-')
+    return s or None
+
+
+def opis_wariantu(row, nazwa):
+    """Etykieta wariantu do wyświetlenia. Nagłówek punktu komunikatu („kwoty najniższej emerytury i renty”)
+    dopowiada, czym jest kwota; sama nazwa świadczenia bez dookreślenia nie jest wariantem."""
+    et = etykieta_wariantu(row.get('wariant'))
+    nagl = re.sub(r'\s+wynos\w+$', '', ' '.join(str(row.get('naglowek_punktu') or '').split())).strip(' :')
+    if nagl and et and nagl.casefold() not in et.casefold():
+        et = '{}: {}'.format(nagl, et)
+    if et and not re.search(r'maksymal|minimal|najniż|najwyż', et, re.I):
+        rdzenie = [w[:5] for w in nazwa.casefold().split() if len(w) > 3]
+        if rdzenie and all(r in et.casefold() for r in rdzenie):
+            return None  # „kwota dodatku dopełniającego …” = sama nazwa karty
+    return et
+
+
+def zlote(liczba):
+    """'1978.49' -> '1978,49 zł' (bez zaokrąglania poza grosze z danych)."""
+    d = Decimal(str(liczba))
+    return '{} zł'.format(format(d.quantize(Decimal('0.01')), 'f').replace('.', ','))
+
+
+def procent(liczba):
+    d = Decimal(str(liczba))
+    d = d.quantize(Decimal(1)) if d == d.to_integral_value() else d.normalize()
+    return '{} %'.format(format(d, 'f').replace('.', ','))
+
+
+def wczytaj_wielkosci(socjal):
+    p = socjal / 'Dane/Mapa/wielkosci.json'
+    return (wczytaj(p).get('wielkosci') or {}) if p.is_file() else {}
+
+
+def wpis_wielkosci(wielkosci, nazwa, od=None, akt=None):
+    """Wpis serii wielkości ogłaszanej z cytatem aktu (dowód kwoty bazowej albo limitu)."""
+    for w in (wielkosci.get(nazwa) or {}).get('seria') or []:
+        if (od is None or w.get('od') == od) and (akt is None or w.get('akt') == akt) \
+                and w.get('cytat') and not w.get('konflikt') and ELI_RE.fullmatch(str(w.get('akt'))):
+            return w
+    return None
+
+
+def dowod_wielkosci(w):
+    d = dowod(w['akt'], 'treść aktu', w['cytat'])
+    if w.get('sha256'):
+        d['_sha256'] = w['sha256']
+    return d
+
+
+def przenies_obliczona(src, k, jednostki, wielkosci, dzien):
+    """Kwota obliczona skryptem mapy (procent wielkości ogłaszanej) -> ile.wyliczenie z dowodem podstawy."""
+    s = src.get('ile_podsumowanie') or {}
+    ile = k['ile']
+    if ile['aktualna'] or ile['wyliczenie']:
+        return False
+    for o in s.get('obliczona') or []:
+        biezacy = next((h for h in o.get('historia') or [] if data_tekstu(h.get('od')) and h['od'] <= dzien
+                        and (not h.get('do') or h['do'] >= dzien)), None)
+        if not biezacy or not o.get('wielkosc'):
+            continue
+        baza = wpis_wielkosci(wielkosci, o['wielkosc'], biezacy['od'], biezacy.get('akt'))
+        if not baza:
+            continue
+        nazwa_wielkosci = (wielkosci.get(o['wielkosc']) or {}).get('nazwa') or o['wielkosc']
+        ile['wyliczenie'] = {
+            'wartosc': zlote(biezacy['wynik']), 'warianty': None, 'od': biezacy['od'],
+            'podstawa': {'wartosc': zlote(biezacy['podstawa']), 'od': biezacy['od'], 'zrodlo': baza['akt'],
+                         'wielkosc': nazwa_wielkosci, 'dowod': dowod_wielkosci(baza), 'lancuch': None},
+            'zaokraglenie': None,
+            'uwaga': '{} × {}. {}'.format(procent(o['procent']), nazwa_wielkosci, o.get('uwaga') or ''),
+            'flagi': [], 'nieustalone': []}
+        if o.get('zaokraglenie'):
+            ile['wyliczenie']['nieustalone'].append(nieustalone('zaokraglenie', o['zaokraglenie']))
+        ile['regula'] = {'udzial': procent(o['procent']), 'podstawa_id': None, 'opis': o.get('regula') or nazwa_wielkosci}
+        ile['rozwiazanie'] = 'regula_procentowa'
+        if o.get('jednostka_reguly'):
+            ile['trasa'].append({'krok': len(ile['trasa']) + 1,
+                                 'opis': '{}: reguła procentowa'.format(o.get('sciezka_reguly') or 'przepis'),
+                                 'dowod': dowod_rekordu({'jednostka': o['jednostka_reguly'],
+                                                         'sciezka': o.get('sciezka_reguly')}, src['akt'], jednostki)})
+        ile['trasa'].append({'krok': len(ile['trasa']) + 1,
+                             'opis': '{}: {} od {}'.format(baza['akt'], nazwa_wielkosci, biezacy['od']),
+                             'dowod': dowod_wielkosci(baza)})
+        return True
+    return False
+
+
+def przenies_limity(src, k, wielkosci):
+    """Limity kwoty (np. „nie może być wyższa niż kryterium dochodowe”) z historią wielkości ogłaszanej."""
+    if k['ile']['aktualna']:
+        return  # kwota aktualna (np. maksymalny zasiłek stały) już pokazuje tę samą wielkość
+    for lim in (src.get('ile_podsumowanie') or {}).get('limity') or []:
+        if not lim.get('wielkosc') or lim.get('rodzaj') not in ('maksimum', 'minimum'):
+            continue
+        if '%' in str(lim.get('cytat') or ''):
+            continue  # limit to procent wielkości, a seria pokazuje samą wielkość
+        seria = [w for w in (wielkosci.get(lim['wielkosc']) or {}).get('seria') or []
+                 if w.get('cytat') and w.get('tekst') and not w.get('konflikt')
+                 and data_tekstu(w.get('od')) and ELI_RE.fullmatch(str(w.get('akt')))]
+        if not seria:
+            continue
+        seria.sort(key=lambda w: w['od'])
+        opis = '{} — {} ({})'.format(lim.get('sciezka') or 'przepis',
+                                     'najwyżej' if lim['rodzaj'] == 'maksimum' else 'co najmniej',
+                                     lim.get('opis') or lim.get('cytat') or lim['wielkosc'])
+        wpisy = []
+        for i, w in enumerate(seria):
+            wpisy.append({'wartosc': w['tekst'], 'warianty': None, 'od': w['od'], 'do': data_tekstu(w.get('do')),
+                          'rodzaj_zmiany': 'pierwszy_znany_wpis' if not i else 'akt_wykonawczy',
+                          'poprzednia': seria[i - 1]['tekst'] if i else None, 'roznica': None,
+                          'dowod': dowod_wielkosci(w), '_rodzaj': lim['rodzaj'], '_cytat_ustawy': lim.get('cytat')})
+        if not any(p['przepis'] == opis for p in k['ile']['progi']):
+            k['ile']['progi'].append({'przepis': opis, 'wpisy': wpisy})
+
+
 def przenies_podsumowanie(src, k, jednostki, dzien):
     s = src.get('ile_podsumowanie') or {}
     ile = k['ile']
@@ -138,17 +264,37 @@ def przenies_podsumowanie(src, k, jednostki, dzien):
             for r in rejected)]
     rows = [r for r in rows if r not in rejected]
     rows.sort(key=lambda row: (data_tekstu(row.get('od')) or '', str(row.get('wariant') or '')))
+    # Kwoty z jednego aktu na ten sam okres (np. najniższa emerytura i renta częściowa
+    # z jednego komunikatu) to warianty jednego wpisu, a nie nakładające się okresy.
+    grupy = {}
     for row in rows:
         value = wartosc_rekordu(row)
         if not value: continue
-        wariant = row.get('wariant')
-        ile['os_czasu'].append({'wartosc': None if wariant else value,
-            'warianty': [{'etykieta': wariant, 'wartosc': value}] if wariant else None,
+        klucz = (row.get('akt'), data_tekstu(row.get('od')), data_tekstu(row.get('do')))
+        grupy.setdefault(klucz, []).append((row, value))
+    for lista in grupy.values():
+        row = lista[0][0]
+        warianty = []
+        for r, value in lista:
+            w = {'etykieta': opis_wariantu(r, src['nazwa']), 'wartosc': value}
+            if w not in warianty: warianty.append(w)
+        jedna = len(warianty) == 1 and not warianty[0]['etykieta']
+        poprzednie = []
+        for r, _ in lista:
+            if r.get('poprzednia') is not None and str(r['poprzednia']) not in poprzednie:
+                poprzednie.append(str(r['poprzednia']))
+        cytaty = []
+        for r, _ in lista:
+            if r.get('cytat') and r['cytat'] not in cytaty: cytaty.append(r['cytat'])
+        merged = dict(row, cytat=' … '.join(cytaty) or row.get('cytat'))
+        rodzaje = [r.get('rodzaj_zmiany') for r, _ in lista]
+        ile['os_czasu'].append({'wartosc': warianty[0]['wartosc'] if jedna else None,
+            'warianty': None if jedna else warianty,
             'od': data_tekstu(row.get('od')), 'do': data_tekstu(row.get('do')),
-            'rodzaj_zmiany': row.get('rodzaj_zmiany') or 'pierwszy_znany_wpis',
-            'poprzednia': str(row['poprzednia']) if row.get('poprzednia') is not None else None,
-            'roznica': None, 'dowod': dowod_rekordu(row, src['akt'], jednostki),
-            '_roznica_zrodlowa': row.get('roznica')})
+            'rodzaj_zmiany': 'akt_wykonawczy' if 'akt_wykonawczy' in rodzaje else (rodzaje[0] or 'pierwszy_znany_wpis'),
+            'poprzednia': (poprzednie[0] if len(poprzednie) == 1 else poprzednie) if poprzednie else None,
+            'roznica': None, 'dowod': dowod_rekordu(merged, src['akt'], jednostki),
+            '_roznica_zrodlowa': row.get('roznica') if len(lista) == 1 else None})
     # Wybór po dacie eksportu, nie po etykiecie „aktualna” źródła.
     current = [w for w in ile['os_czasu'] if w['od'] and w['od'] <= dzien
                and (w['do'] is None or w['do'] >= dzien)]
@@ -228,7 +374,7 @@ def kwota_z_historii(b, hist, param, dzien):
     rekordy = hist.get(param, [])
     for h in rekordy:
         try:
-            kwota = '{:.2f} zł'.format(Decimal(str(h['wartosc'])).quantize(Decimal('0.01')))
+            kwota = zlote(h['wartosc'])
         except (InvalidOperation, ValueError, TypeError):
             continue
         wpis = {'wartosc': kwota, 'warianty': None, 'od': h['od'], 'do': h['do'],
@@ -408,6 +554,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
     # Publikujemy dokładnie karty strukturalne; nie przenosimy prywatnych ścieżek
     # dyskowych ani magazynu historii projektu Obsidian.
     historia = historie_fus(socjal, na_dzien)
+    wielkosci = wczytaj_wielkosci(socjal)
     benefits = []
     extra_karty = {}
     for karta in wczytaj(socjal / 'Dane/FUS/karty.json'):
@@ -482,6 +629,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
                 przenies_terminy(src, manual, jednostki)
                 if not manual['ile']['os_czasu']:
                     przenies_podsumowanie(src, manual, jednostki, na_dzien)
+                przenies_limity(src, manual, wielkosci)
                 pominiete.append({'id': bid, 'karta_reczna': manual['id'],
                                   'powod': 'Ta sama nazwa i akt w trybie porownanie.'})
                 refs = [r.get('jednostka') for r in src.get('przepisy_przyznajace') or [] if r.get('jednostka')]
@@ -533,8 +681,11 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
                     k['ile']['os_czasu'] = [{'wartosc': kw, 'warianty': None,
                         'od': None, 'do': None, 'rodzaj_zmiany': 'pierwszy_znany_wpis',
                         'poprzednia': None, 'roznica': None, 'dowod': d}]
-            if not k['ile']['aktualna']:
-                k['nieustalone'].append(nieustalone('ile', 'Kwota nie została jednoznacznie potwierdzona w danych wejściowych.'))
+            przenies_obliczona(src, k, jednostki, wielkosci, na_dzien)
+            przenies_limity(src, k, wielkosci)
+            if not k['ile']['aktualna'] and not k['ile']['wyliczenie']:
+                k['nieustalone'].append(nieustalone('ile', 'Kwota nie została jednoznacznie potwierdzona w danych wejściowych.'
+                    + (' Podano limit kwoty z przepisu (sekcja progów i limitów).' if k['ile']['progi'] else '')))
             for field, typ_rel in [('warunki', 'warunek'), ('wylaczenia', 'wykluczenie')]:
                 for rel in (src.get(field) or [])[:50]:
                     quote = rel.get('cytat') or ''
@@ -612,7 +763,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
     (wynik / 'akty').mkdir(parents=True, exist_ok=True)
     (wynik / 'akty/SHA256SUMS').write_text('', encoding='utf-8')
     manifest = {'kontrakt': KONTRAKT, 'wygenerowano': datetime.now(timezone.utc).isoformat(),
-                'wersja_kodu': 'importuj_socjal-1.1', 'na_dzien': na_dzien,
+                'wersja_kodu': 'importuj_socjal-1.2', 'na_dzien': na_dzien,
                 'pliki': {f: sha(wynik / f) for f in PODSTAWOWE},
                 'zakres': sorted(akty_meta),
                 'liczby': {'korzysci': len(benefits), 'akty': len(acts), 'pliki_aktow': 0},

@@ -33,6 +33,25 @@ export function kwotaPrezentowana(k) {
 
 export const czyKwotaWyliczona = (k) => !k.ile.aktualna && kwotaPrezentowana(k) !== null;
 
+/**
+ * Limit kwoty z przepisu (np. „nie może być wyższa niż kryterium dochodowe”) na dzień eksportu.
+ * Pokazywany tylko, gdy karta nie ma kwoty aktualnej ani wyliczenia. Wpis wybiera pipeline datami od–do.
+ */
+export function limitPrezentowany(k, dzien = dataEksportu()) {
+  if (kwotaPrezentowana(k)) return null;
+  for (const [pi, p] of (k.ile.progi ?? []).entries()) {
+    const i = p.wpisy.findIndex((w) => w._rodzaj && w.wartosc && w.od && (!dzien || (w.od <= dzien && (!w.do || w.do >= dzien))));
+    if (i >= 0) return { ...p.wpisy[i], przepis: p.przepis, href: `#prog-${pi}-${i}`, etykieta: `${p.wpisy[i].dowod.eli} · ${p.wpisy[i].dowod.przepis}` };
+  }
+  return null;
+}
+
+/** Na stronie głównej najpierw karty z kwotą (aktualną, wyliczoną albo limitem), potem pozostałe. */
+export const wyroznioneKorzysci = (n = 6) => {
+  const zKwota = (k) => (kwotaPrezentowana(k) ? 0 : limitPrezentowany(k) ? 1 : 2);
+  return posortowaneKorzysci().sort((a, b) => zKwota(a) - zKwota(b)).slice(0, n);
+};
+
 /** Akty ze wszystkich dowodów korzyści. Kolejność pierwszego wystąpienia. */
 export function elisKorzysci(k) {
   const lista = [k.przepis.eli, ...k.ile.trasa.map((t) => t.dowod.eli), ...k.ile.os_czasu.map((w) => w.dowod.eli),

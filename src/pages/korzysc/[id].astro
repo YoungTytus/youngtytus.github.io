@@ -9,7 +9,7 @@ import UwagaDanych from '../../components/UwagaDanych.astro';
 import Wykres from '../../components/Wykres.astro';
 import Progi from '../../components/Progi.astro';
 import Wyliczenie from '../../components/Wyliczenie.astro';
-import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta, korzyscPoId } from '../../lib/model.mjs';
+import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta, korzyscPoId, limitPrezentowany } from '../../lib/model.mjs';
 import { kartaSocjal, artykulSocjal } from '../../lib/socjal.mjs';
 import {
   KOLEJNOSC_TERMINOW, OPIS_TERMINU, czyZaslepka, dataLubBrak, dataPL, eliSlug, etapZaslepki,
@@ -27,6 +27,7 @@ const ile = k.ile;
 const a = ile.aktualna;
 const kwotyWariantow = new Map((ile.wyliczenie?.warianty ?? []).map((w: any) => [JSON.stringify([w.etykieta, w.udzial]), w.wartosc]));
 const dowodA = dowodAktualnej(k);
+const limit = limitPrezentowany(k);
 const zamknieta = k.status === 'zamknieta';
 const stan = dataPL(k.stan.data_stanu);
 const terminyWg = Object.fromEntries(KOLEJNOSC_TERMINOW.map((r) => [r, k.do_kiedy.filter((t: any) => t.rodzaj === r)]));
@@ -121,7 +122,11 @@ const dowodNominalnej = nominalnyKrok >= 0
           {!a?.wartosc && a?.warianty?.length && a.warianty.map((w: any, i: number) => (
             <div class="amount-variant"><span>{wielka(etykietaWariantu(w, i))}</span><Kwota wartosc={w.wartosc} href={dowodA.href} etykieta={dowodA.etykieta} blok /></div>
           ))}
-          {!a && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : ile.regula ? 'Kwota określona regułą' : 'Nie ustalono'}</p>}
+          {!a && limit && <>
+            <div class="amount-variant"><span>{limit._rodzaj === 'maksimum' ? 'Najwyżej' : 'Co najmniej'}</span><Kwota wartosc={limit.wartosc} href={limit.href} etykieta={limit.etykieta} blok /></div>
+            <p class="amount-date">Limit z przepisu: {typo(limit.przepis)}. Od {dataPL(limit.od)} Dokładną kwotę ustala organ w decyzji.</p>
+          </>}
+          {!a && !limit && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : ile.regula ? 'Kwota określona regułą' : 'Nie ustalono'}</p>}
           {a && <p class="amount-date">{a.od ? `Od ${dataPL(a.od)}` : `Data początku: ${dataLubBrak(a.od)}`}</p>}
           {a?.do && <p class="amount-date">Do {dataLubBrak(a.do)}</p>}
           {!a && ile.wyliczenie && <p class="amount-date"><a href="#wyliczenie" style="text-decoration:underline">Zobacz wyliczenie pomocnicze i jego źródła</a>.</p>}

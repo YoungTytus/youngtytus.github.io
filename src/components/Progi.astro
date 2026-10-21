@@ -6,8 +6,8 @@ const { progi } = Astro.props;
 const przepis = (s: string) => s.replace(/^arti?_(\d+)-pass_(\d+)$/, 'art. $1 ust. $2');
 ---
 {progi?.length > 0 && <>
-  <h3>Progi dochodowe i ich historia</h3>
-  <p class="summary-note">Progi opisują warunki uzyskania świadczenia. Każdy wpis ma osobny cytat źródłowy.</p>
+  <h3 id="progi">Progi i limity kwoty z historią</h3>
+  <p class="summary-note">Progi opisują warunki uzyskania świadczenia, a limity — najwyższą albo najniższą kwotę, jaką przepis dopuszcza. Każdy wpis ma osobny cytat źródłowy.</p>
   {progi.map((p: any, pi: number) => <>
     <h4>{przepis(p.przepis)}</h4>
     <div class="table-wrap" tabindex="0"><table>

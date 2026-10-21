@@ -3,12 +3,12 @@ import Uklad from '../layouts/Uklad.astro';
 import Ikona from '../components/Ikona.astro';
 import KartaKorzysci from '../components/KartaKorzysci.astro';
 import UwagaDanych from '../components/UwagaDanych.astro';
-import { dane, dataEksportu, liczbaWSytuacji, posortowaneKorzysci } from '../lib/model.mjs';
+import { dane, dataEksportu, liczbaWSytuacji, wyroznioneKorzysci } from '../lib/model.mjs';
 import { dataPL } from '../lib/format.mjs';
 
 const d = dane();
 const sytuacje = Object.entries(d.slowniki.sytuacje) as [string, string][];
-const wyroznione = posortowaneKorzysci().slice(0, 6);
+const wyroznione = wyroznioneKorzysci(6);
 const liczbaPlikow = d.akty.reduce((s: number, a: any) => s + a.pliki.length, 0);
 const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
 ---
