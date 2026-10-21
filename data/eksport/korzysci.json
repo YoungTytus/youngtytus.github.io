@@ -3859,22 +3859,6 @@
         },
         {
           "krok": 44,
-          "opis": "DU/1998/1118 art. 194b ust. 1 pkt 1: kwota w ustawie 100 zł",
-          "dowod": {
-            "eli": "DU/1998/1118",
-            "przepis": "art. 194b ust. 1 pkt 1",
-            "cytat": "100 zł – dla osób pobierających emeryturę, rentę z tytułu całkowitej niezdolności do pracy lub rentę rodzinną;",
-            "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
-            "data_stanu": "2026-10-16",
-            "_sha256": "73edc508c4d7140d00a1aa8e34212894aa000b6a76eb902a8de3348eee5c5801",
-            "_strona": 108,
-            "_strony": [
-              108
-            ]
-          }
-        },
-        {
-          "krok": 45,
           "opis": "MP/2026/220 treść: 1978,49 zł od 2026-03-01 (nazwa korzyści w akcie)",
           "dowod": {
             "eli": "MP/2026/220",
@@ -3886,7 +3870,7 @@
           }
         },
         {
-          "krok": 46,
+          "krok": 45,
           "opis": "MP/2026/220 treść: 841,05 zł od 2026-03-01 (nazwa korzyści w akcie)",
           "dowod": {
             "eli": "MP/2026/220",
@@ -9987,29 +9971,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "Nr 8, poz. 64 i Nr 27, poz. 298) ogłasza się, iż skorygowana o kwotę jednorazowej wypłaty przeciętna emerytura i renta brutto w 2000 r. wyniosła",
-              "wartosc": "865,20 zł"
-            }
-          ],
-          "od": "2001-06-29",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2001/357",
-            "przepis": "treść",
-            "cytat": "Nr 8, poz. 64 i Nr 27, poz. 298) ogłasza się, iż skorygowana o kwotę jednorazowej wypłaty przeciętna emerytura i renta brutto w 2000 r. wyniosła 865,20 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/357",
-            "data_stanu": null,
-            "_sha256": "acc2feb692e9a656be7f67881e9eff074cff8117ebdc0fe48a71eb4dd62fb041"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
               "wartosc": "368,72 zł"
             }
@@ -10102,52 +10063,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- grodzenie w pierwszym kwartale 2005 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu",
-              "wartosc": "2 415,45 zł"
-            }
-          ],
-          "od": "2005-05-18",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2005/409",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- grodzenie w pierwszym kwartale 2005 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu 2 415,45 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2005/409",
-            "data_stanu": null,
-            "_sha256": "7a543b1e60163f741c1c47d2a7bd08cb8e8bcb3a3ce7098ba1f0d221122d67a7"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "436 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 16 maja 2005 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 1 czerwca 2005 r. kwota zasiłku pogrzebowego wy- 17 grudnia 1998 r. o emeryturach i rentach z Fundu- nosi",
-              "wartosc": "4 830,90 zł"
-            }
-          ],
-          "od": "2005-05-31",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2005/436",
-            "przepis": "treść",
-            "cytat": "436 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 16 maja 2005 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 1 czerwca 2005 r. kwota zasiłku pogrzebowego wy- 17 grudnia 1998 r. o emeryturach i rentach z Fundu- nosi 4 830,90 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2005/436",
-            "data_stanu": null,
-            "_sha256": "c7ef880e17ed2f202dcd16c2c1580060078fc09ec56a17121c0fb97d5dbb19bb"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "597,46 zł"
             }
@@ -10187,144 +10102,6 @@
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2006/166",
             "data_stanu": null,
             "_sha256": "809177dbdae671b9d6b65427735e8c91cecc4f6b111d1a2b1ee909f5c729c010"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia grodzenie w gospodarce narodowej w 2006 r. wynio- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu sło",
-              "wartosc": "2 477,23 zł"
-            }
-          ],
-          "od": "2007-02-21",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2007/125",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia grodzenie w gospodarce narodowej w 2006 r. wynio- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu sło 2 477,23 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2007/125",
-            "data_stanu": null,
-            "_sha256": "d6a844bcc76b28d596193764bd99b5fa50d99f1bf814e04e9ba65d88736e2b1e"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2006 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła",
-              "wartosc": "2 059,92 zł"
-            }
-          ],
-          "od": "2007-02-21",
-          "do": "2009-02-12",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2007/126",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2006 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła 2 059,92 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2007/126",
-            "data_stanu": null,
-            "_sha256": "05496deba1ffa5897a0af1b48ad5c4ef966b7bfdb68c7e3d85597f9c59d665f5"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "401 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 21 maja 2007 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2007 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go",
-              "wartosc": "5 418,28 zł"
-            }
-          ],
-          "od": "2007-06-01",
-          "do": "2008-05-31",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2007/401",
-            "przepis": "treść",
-            "cytat": "401 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 21 maja 2007 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2007 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go wynosi 5 418,28 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2007/401",
-            "data_stanu": null,
-            "_sha256": "c24558561c658df6f257692b6a3a2ebf4b4f87aaddbe66f7bc50343838c2095e"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2007 r. 17 grudnia 1998 r. o emeryturach i rentach z Fundu- wyniosła",
-              "wartosc": "2 275,37 zł"
-            }
-          ],
-          "od": "2008-02-13",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/140",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2007 r. 17 grudnia 1998 r. o emeryturach i rentach z Fundu- wyniosła 2 275,37 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/140",
-            "data_stanu": null,
-            "_sha256": "9b94d7e63f376fbea2b38f1d4527c19cf01be4e7ffab253e2b617272dfbad25a"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2007 r. 17 grudnia 1998 r. o emeryturach i rentach z Fundu- wyniosła",
-              "wartosc": "2 275,37 zł"
-            }
-          ],
-          "od": "2008-02-13",
-          "do": null,
-          "rodzaj_zmiany": "bez_zmiany_kwoty",
-          "poprzednia": "2275.37",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/142",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2007 r. 17 grudnia 1998 r. o emeryturach i rentach z Fundu- wyniosła 2 275,37 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/142",
-            "data_stanu": null,
-            "_sha256": "4ecff46c8ee164d6b5d35a7e730ece5d202e98387efbd76948b4603724191279"
-          },
-          "_roznica_zrodlowa": 0.0
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- z późn. zm.) ogłasza się, iż przeciętne wynagrodzenie nia 1998 r. o emeryturach i rentach z Funduszu Ubez- w czwartym kwartale 2007 r. wyniosło",
-              "wartosc": "2 899,83 zł"
-            }
-          ],
-          "od": "2008-02-13",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/142",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- z późn. zm.) ogłasza się, iż przeciętne wynagrodzenie nia 1998 r. o emeryturach i rentach z Funduszu Ubez- w czwartym kwartale 2007 r. wyniosło 2 899,83 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/142",
-            "data_stanu": null,
-            "_sha256": "4ecff46c8ee164d6b5d35a7e730ece5d202e98387efbd76948b4603724191279"
           },
           "_roznica_zrodlowa": null
         },
@@ -10378,190 +10155,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "394 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 29 maja 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2008 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go",
-              "wartosc": "5 967,96 zł"
-            }
-          ],
-          "od": "2008-06-01",
-          "do": "2008-11-30",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "5418.28",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/394",
-            "przepis": "treść",
-            "cytat": "394 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 29 maja 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2008 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go wynosi 5 967,96 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/394",
-            "data_stanu": null,
-            "_sha256": "f8efce00b24ef376d0b4a4a8b1485e2beae02a0c08663e36e56fffe6ee2c19c0"
-          },
-          "_roznica_zrodlowa": 549.68
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2008 r",
-              "wartosc": "2 088,80 zł"
-            }
-          ],
-          "od": "2008-06-13",
-          "do": "2009-05-28",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/395",
-            "przepis": "treść",
-            "cytat": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2008 r. wynosi 2 088,80 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/395",
-            "data_stanu": null,
-            "_sha256": "f8efce00b24ef376d0b4a4a8b1485e2beae02a0c08663e36e56fffe6ee2c19c0"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "581 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 20 sierpnia 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2008 r. do dnia 30 listopada 2008 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego",
-              "wartosc": "5 902,72 zł"
-            }
-          ],
-          "od": "2008-09-01",
-          "do": "2009-08-25",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/581",
-            "przepis": "treść",
-            "cytat": "581 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 20 sierpnia 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2008 r. do dnia 30 listopada 2008 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego wynosi 5 902,72 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/581",
-            "data_stanu": null,
-            "_sha256": "e2a27d3d44d8b38c186844a0d0df8d86162d4f9dfe8c3067027805323b335149"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "797 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 listopada 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 28 lutego 2009 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go",
-              "wartosc": "5 937,10 zł"
-            }
-          ],
-          "od": "2008-12-01",
-          "do": "2009-05-31",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "5967.96",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/797",
-            "przepis": "treść",
-            "cytat": "797 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 listopada 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 28 lutego 2009 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go wynosi 5 937,10 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/797",
-            "data_stanu": null,
-            "_sha256": "ce353c85e87973eb8e62246e4b2aa334fef5b084d6405c7395c6291a90da1687"
-          },
-          "_roznica_zrodlowa": -30.86
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia nagrodzenie w gospodarce narodowej w 2008 r. wy- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu niosło",
-              "wartosc": "2943,88 zł"
-            }
-          ],
-          "od": "2009-02-13",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/112",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia nagrodzenie w gospodarce narodowej w 2008 r. wy- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu niosło 2943,88 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/112",
-            "data_stanu": null,
-            "_sha256": "6174902de35ffff7f22ed112415bcefaa56c0c380d7e9250f4ba41cf75ef1b88"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2008 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła",
-              "wartosc": "2578,26 zł"
-            }
-          ],
-          "od": "2009-02-13",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "2059.92",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/113",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2008 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła 2578,26 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/113",
-            "data_stanu": null,
-            "_sha256": "d1f7a96ac0dab020faaa4624901601ca794f35acf81f04bbecf08c01f9ce8b33"
-          },
-          "_roznica_zrodlowa": 518.34
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 2 ustawy z dnia nagrodzenie w czwartym kwartale 2008 r. wyniosło 17 grudnia 1998 r. o emeryturach i rentach z Funduszu",
-              "wartosc": "3096,55 zł"
-            }
-          ],
-          "od": "2009-02-13",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/114",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia nagrodzenie w czwartym kwartale 2008 r. wyniosło 17 grudnia 1998 r. o emeryturach i rentach z Funduszu 3096,55 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/114",
-            "data_stanu": null,
-            "_sha256": "974675804d612171cabd5200697c96b8f07a726de093772ee95390727f381afb"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "155 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 17 lutego 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 maja 2009 r. kwota zasiłku pogrzebowego nia 1998 r. o emeryturach i rentach z Funduszu Ubez",
-              "wartosc": "6 193,10 zł"
-            }
-          ],
-          "od": "2009-03-01",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/155",
-            "przepis": "treść",
-            "cytat": "155 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 17 lutego 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 maja 2009 r. kwota zasiłku pogrzebowego nia 1998 r. o emeryturach i rentach z Funduszu Ubez- wynosi 6 193,10 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/155",
-            "data_stanu": null,
-            "_sha256": "8b92a692e0568619b4c353786f88850d74974299a43d99b226084dda5c9231b8"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "675,10 zł"
             }
@@ -10603,121 +10196,6 @@
             "_sha256": "4997498be34f22e9eed54b188af876d1b5f324dde51f4628ddb682b5c2230608"
           },
           "_roznica_zrodlowa": 26.85
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w pierwszym kwartale 2009 r. wynia 1998 r. o emeryturach i rentach z Funduszu niosło",
-              "wartosc": "3185,61 zł"
-            }
-          ],
-          "od": "2009-05-20",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/447",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w pierwszym kwartale 2009 r. wynia 1998 r. o emeryturach i rentach z Funduszu niosło 3185,61 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/447",
-            "data_stanu": null,
-            "_sha256": "07efa7ba9057b6b044fa3470a8fead4fb46349bb1f409a742c1aaeefb644b08c"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2009 r",
-              "wartosc": "2 230,00 zł"
-            }
-          ],
-          "od": "2009-05-29",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "2088.8",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/498",
-            "przepis": "treść",
-            "cytat": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2009 r. wynosi 2 230,00 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/498",
-            "data_stanu": null,
-            "_sha256": "3a6e5e20ff097b7397cc7a5931da37c48f735b6cda1571a612e6a83c25032c3c"
-          },
-          "_roznica_zrodlowa": 141.2
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "497 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 20 maja 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2009 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go",
-              "wartosc": "6 371,22 zł"
-            }
-          ],
-          "od": "2009-06-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "5937.1",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/497",
-            "przepis": "treść",
-            "cytat": "497 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 20 maja 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2009 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go wynosi 6 371,22 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/497",
-            "data_stanu": null,
-            "_sha256": "fc2afdd082d9c063be1630ff2220fd33b5ddd314deef62c213da345e845a7a5f"
-          },
-          "_roznica_zrodlowa": 434.12
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w drugim kwartale 2009 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu",
-              "wartosc": "3 081,48 zł"
-            }
-          ],
-          "od": "2009-08-18",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/747",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w drugim kwartale 2009 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu 3 081,48 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/747",
-            "data_stanu": null,
-            "_sha256": "3d77f60b56b03396e4f0a35f54726e6f8d86d3fa1dfad7d14e7a8d17167ca28d"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "763 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 sierpnia 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2009 r. do dnia 30 listopada 2009 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego",
-              "wartosc": "6 162,96 zł"
-            }
-          ],
-          "od": "2009-08-26",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "5902.72",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/763",
-            "przepis": "treść",
-            "cytat": "763 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 sierpnia 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2009 r. do dnia 30 listopada 2009 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego wynosi 6 162,96 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/763",
-            "data_stanu": null,
-            "_sha256": "71c59e2e0705c0df96d0e338123871c8690a5e7b4c9b274c541a77b7096c62d3"
-          },
-          "_roznica_zrodlowa": 260.24
         },
         {
           "wartosc": null,
@@ -11296,46 +10774,6 @@
         },
         {
           "krok": 8,
-          "opis": "DU/1998/1118 art. 194b ust. 1 pkt 1: kwota w ustawie 100 zł",
-          "dowod": {
-            "eli": "DU/1998/1118",
-            "przepis": "art. 194b ust. 1 pkt 1",
-            "cytat": "100 zł – dla osób pobierających emeryturę, rentę z tytułu całkowitej niezdolności do pracy lub rentę rodzinną;",
-            "url": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118",
-            "data_stanu": "2026-10-16",
-            "_sha256": "73edc508c4d7140d00a1aa8e34212894aa000b6a76eb902a8de3348eee5c5801",
-            "_strona": 108,
-            "_strony": [
-              108
-            ]
-          }
-        },
-        {
-          "krok": 9,
-          "opis": "MP/2001/357 treść: 865,20 zł od 2001-06-29 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2001/357",
-            "przepis": "treść",
-            "cytat": "Nr 8, poz. 64 i Nr 27, poz. 298) ogłasza się, iż skorygowana o kwotę jednorazowej wypłaty przeciętna emerytura i renta brutto w 2000 r. wyniosła 865,20 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/357",
-            "data_stanu": null,
-            "_sha256": "acc2feb692e9a656be7f67881e9eff074cff8117ebdc0fe48a71eb4dd62fb041"
-          }
-        },
-        {
-          "krok": 10,
-          "opis": "MP/2009/113 treść: 2578,26 zł od 2009-02-13 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2009/113",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2008 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła 2578,26 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/113",
-            "data_stanu": null,
-            "_sha256": "d1f7a96ac0dab020faaa4624901601ca794f35acf81f04bbecf08c01f9ce8b33"
-          }
-        },
-        {
-          "krok": 11,
           "opis": "MP/2026/220 treść: 1978,49 zł od 2026-03-01 (nazwa korzyści w akcie)",
           "dowod": {
             "eli": "MP/2026/220",
@@ -11347,7 +10785,7 @@
           }
         },
         {
-          "krok": 12,
+          "krok": 9,
           "opis": "MP/2026/220 treść: 989,41 zł od 2026-03-01 (nazwa korzyści w akcie)",
           "dowod": {
             "eli": "MP/2026/220",
@@ -11357,88 +10795,10 @@
             "data_stanu": null,
             "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
           }
-        },
-        {
-          "krok": 13,
-          "opis": "MP/2009/498 treść: 2 230,00 zł od 2009-05-29 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2009/498",
-            "przepis": "treść",
-            "cytat": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2009 r. wynosi 2 230,00 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/498",
-            "data_stanu": null,
-            "_sha256": "3a6e5e20ff097b7397cc7a5931da37c48f735b6cda1571a612e6a83c25032c3c"
-          }
-        },
-        {
-          "krok": 14,
-          "opis": "MP/2009/763 treść: 6 162,96 zł od 2009-08-26 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2009/763",
-            "przepis": "treść",
-            "cytat": "763 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 sierpnia 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2009 r. do dnia 30 listopada 2009 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego wynosi 6 162,96 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/763",
-            "data_stanu": null,
-            "_sha256": "71c59e2e0705c0df96d0e338123871c8690a5e7b4c9b274c541a77b7096c62d3"
-          }
-        },
-        {
-          "krok": 15,
-          "opis": "MP/2009/112 treść: 2943,88 zł od 2009-02-13 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2009/112",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia nagrodzenie w gospodarce narodowej w 2008 r. wy- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu niosło 2943,88 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/112",
-            "data_stanu": null,
-            "_sha256": "6174902de35ffff7f22ed112415bcefaa56c0c380d7e9250f4ba41cf75ef1b88"
-          }
-        },
-        {
-          "krok": 16,
-          "opis": "MP/2009/747 treść: 3 081,48 zł od 2009-08-18 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2009/747",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w drugim kwartale 2009 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu 3 081,48 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/747",
-            "data_stanu": null,
-            "_sha256": "3d77f60b56b03396e4f0a35f54726e6f8d86d3fa1dfad7d14e7a8d17167ca28d"
-          }
         }
       ]
     },
     "do_kiedy": [
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2001-06-29",
-        "opis": "Nr 8, poz. 64 i Nr 27, poz. 298) ogłasza się, iż skorygowana o kwotę jednorazowej wypłaty przeciętna emerytura i renta brutto w 2000 r. wyniosła: 865,20 zł od 2001-06-29 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2001/357",
-          "przepis": "MP/2001/357 treść",
-          "cytat": "Nr 8, poz. 64 i Nr 27, poz. 298) ogłasza się, iż skorygowana o kwotę jednorazowej wypłaty przeciętna emerytura i renta brutto w 2000 r. wyniosła 865,20 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/357",
-          "data_stanu": null
-        },
-        "od": "2001-06-29",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2009-02-13",
-        "opis": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2008 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła: 2578,26 zł od 2009-02-13 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2009/113",
-          "przepis": "MP/2009/113 treść",
-          "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2008 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła 2578,26 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/113",
-          "data_stanu": null
-        },
-        "od": "2009-02-13",
-        "do": null
-      },
       {
         "rodzaj": "okres_kwoty",
         "data": "2026-03-01",
@@ -11467,66 +10827,6 @@
           "data_stanu": null
         },
         "od": "2026-03-01",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2009-05-29",
-        "opis": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2009 r: 2 230,00 zł od 2009-05-29 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2009/498",
-          "przepis": "MP/2009/498 treść",
-          "cytat": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2009 r. wynosi 2 230,00 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/498",
-          "data_stanu": null
-        },
-        "od": "2009-05-29",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2009-08-26",
-        "opis": "763 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 sierpnia 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2009 r. do dnia 30 listopada 2009 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego: 6 162,96 zł od 2009-08-26 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2009/763",
-          "przepis": "MP/2009/763 treść",
-          "cytat": "763 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 sierpnia 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2009 r. do dnia 30 listopada 20",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/763",
-          "data_stanu": null
-        },
-        "od": "2009-08-26",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2009-02-13",
-        "opis": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia nagrodzenie w gospodarce narodowej w 2008 r. wy- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu niosło: 2943,88 zł od 2009-02-13 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2009/112",
-          "przepis": "MP/2009/112 treść",
-          "cytat": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia nagrodzenie w gospodarce narodowej w 2008 r. wy- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu niosło 2943,88 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/112",
-          "data_stanu": null
-        },
-        "od": "2009-02-13",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2009-08-18",
-        "opis": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w drugim kwartale 2009 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu: 3 081,48 zł od 2009-08-18 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2009/747",
-          "przepis": "MP/2009/747 treść",
-          "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w drugim kwartale 2009 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu 3 081,48 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/747",
-          "data_stanu": null
-        },
-        "od": "2009-08-18",
         "do": null
       },
       {
@@ -12977,29 +12277,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla renty rodzinnej, do której uprawniona jest jedna osoba",
-              "wartosc": "276,72 zł"
-            }
-          ],
-          "od": "2000-06-01",
-          "do": "2001-05-31",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2000/316",
-            "przepis": "treść",
-            "cytat": "276,72 zł — dla renty rodzinnej, do której uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2000/316",
-            "data_stanu": null,
-            "_sha256": "b175de05c21bfe8e1c565535a4fb8b618ce5f456d1bcddd70eeb3b583bbbcbcb"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "dla renty z tytułu częściowej niezdolno- ści do pracy",
               "wartosc": "244,17 zł"
             }
@@ -13064,29 +12341,6 @@
             "_sha256": "b175de05c21bfe8e1c565535a4fb8b618ce5f456d1bcddd70eeb3b583bbbcbcb"
           },
           "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla renty rodzinnej, do której uprawniona jest jedna osoba",
-              "wartosc": "311,86 zł"
-            }
-          ],
-          "od": "2001-06-01",
-          "do": "2002-05-31",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "276.72",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2001/263",
-            "przepis": "treść",
-            "cytat": "311,86 zł — dla renty rodzinnej, do której uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/263",
-            "data_stanu": null,
-            "_sha256": "d1b2168968a8c6ffa0958294aa2f33f134fb7d35676df2fe1c5a2e0a62ae3eca"
-          },
-          "_roznica_zrodlowa": 35.14
         },
         {
           "wartosc": null,
@@ -13184,29 +12438,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "Nr 8, poz. 64 i Nr 27, poz. 298) ogłasza się, iż skorygowana o kwotę jednorazowej wypłaty przeciętna emerytura i renta brutto w 2000 r. wyniosła",
-              "wartosc": "865,20 zł"
-            }
-          ],
-          "od": "2001-06-29",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2001/357",
-            "przepis": "treść",
-            "cytat": "Nr 8, poz. 64 i Nr 27, poz. 298) ogłasza się, iż skorygowana o kwotę jednorazowej wypłaty przeciętna emerytura i renta brutto w 2000 r. wyniosła 865,20 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/357",
-            "data_stanu": null,
-            "_sha256": "acc2feb692e9a656be7f67881e9eff074cff8117ebdc0fe48a71eb4dd62fb041"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "dla emerytury lub renty z tytułu całkowitej niezdolności do pracy",
               "wartosc": "368,72 zł"
             }
@@ -13225,29 +12456,6 @@
             "_sha256": "80e7dca494f0a9d5945b6aa242a6ed0ae4e701711af7036c36cb5f1322b6057c"
           },
           "_roznica_zrodlowa": 1.83
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla renty rodzinnej, do której uprawniona jest jedna osoba",
-              "wartosc": "313,42 zł"
-            }
-          ],
-          "od": "2002-06-01",
-          "do": "2003-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "311.86",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2002/344",
-            "przepis": "treść",
-            "cytat": "313,42 zł — dla renty rodzinnej, do której uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2002/344",
-            "data_stanu": null,
-            "_sha256": "80e7dca494f0a9d5945b6aa242a6ed0ae4e701711af7036c36cb5f1322b6057c"
-          },
-          "_roznica_zrodlowa": 1.56
         },
         {
           "wartosc": null,
@@ -13391,29 +12599,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "— dla renty rodzinnej, do której uprawniona jest jedna osoba",
-              "wartosc": "325,02 zł"
-            }
-          ],
-          "od": "2003-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "313.42",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2003/152",
-            "przepis": "treść",
-            "cytat": "3) 325,02 zł — dla renty rodzinnej, do której uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2003/152",
-            "data_stanu": null,
-            "_sha256": "0a1233df12bee8012e29879286b602511176cdb64eb327ee223832288882af9e"
-          },
-          "_roznica_zrodlowa": 11.6
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "— dla renty z tytułu częściowej niezdolno- ści do pracy",
               "wartosc": "286,79 zł"
             }
@@ -13432,52 +12617,6 @@
             "_sha256": "0a1233df12bee8012e29879286b602511176cdb64eb327ee223832288882af9e"
           },
           "_roznica_zrodlowa": 10.23
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- grodzenie w pierwszym kwartale 2005 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu",
-              "wartosc": "2 415,45 zł"
-            }
-          ],
-          "od": "2005-05-18",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2005/409",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- grodzenie w pierwszym kwartale 2005 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu 2 415,45 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2005/409",
-            "data_stanu": null,
-            "_sha256": "7a543b1e60163f741c1c47d2a7bd08cb8e8bcb3a3ce7098ba1f0d221122d67a7"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "436 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 16 maja 2005 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 1 czerwca 2005 r. kwota zasiłku pogrzebowego wy- 17 grudnia 1998 r. o emeryturach i rentach z Fundu- nosi",
-              "wartosc": "4 830,90 zł"
-            }
-          ],
-          "od": "2005-05-31",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2005/436",
-            "przepis": "treść",
-            "cytat": "436 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 16 maja 2005 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 1 czerwca 2005 r. kwota zasiłku pogrzebowego wy- 17 grudnia 1998 r. o emeryturach i rentach z Fundu- nosi 4 830,90 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2005/436",
-            "data_stanu": null,
-            "_sha256": "c7ef880e17ed2f202dcd16c2c1580060078fc09ec56a17121c0fb97d5dbb19bb"
-          },
-          "_roznica_zrodlowa": null
         },
         {
           "wartosc": null,
@@ -13575,144 +12714,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia grodzenie w gospodarce narodowej w 2006 r. wynio- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu sło",
-              "wartosc": "2 477,23 zł"
-            }
-          ],
-          "od": "2007-02-21",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2007/125",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia grodzenie w gospodarce narodowej w 2006 r. wynio- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu sło 2 477,23 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2007/125",
-            "data_stanu": null,
-            "_sha256": "d6a844bcc76b28d596193764bd99b5fa50d99f1bf814e04e9ba65d88736e2b1e"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2006 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła",
-              "wartosc": "2 059,92 zł"
-            }
-          ],
-          "od": "2007-02-21",
-          "do": "2009-02-12",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2007/126",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2006 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła 2 059,92 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2007/126",
-            "data_stanu": null,
-            "_sha256": "05496deba1ffa5897a0af1b48ad5c4ef966b7bfdb68c7e3d85597f9c59d665f5"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "401 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 21 maja 2007 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2007 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go",
-              "wartosc": "5 418,28 zł"
-            }
-          ],
-          "od": "2007-06-01",
-          "do": "2008-05-31",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2007/401",
-            "przepis": "treść",
-            "cytat": "401 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 21 maja 2007 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2007 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go wynosi 5 418,28 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2007/401",
-            "data_stanu": null,
-            "_sha256": "c24558561c658df6f257692b6a3a2ebf4b4f87aaddbe66f7bc50343838c2095e"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2007 r. 17 grudnia 1998 r. o emeryturach i rentach z Fundu- wyniosła",
-              "wartosc": "2 275,37 zł"
-            }
-          ],
-          "od": "2008-02-13",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/140",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2007 r. 17 grudnia 1998 r. o emeryturach i rentach z Fundu- wyniosła 2 275,37 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/140",
-            "data_stanu": null,
-            "_sha256": "9b94d7e63f376fbea2b38f1d4527c19cf01be4e7ffab253e2b617272dfbad25a"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2007 r. 17 grudnia 1998 r. o emeryturach i rentach z Fundu- wyniosła",
-              "wartosc": "2 275,37 zł"
-            }
-          ],
-          "od": "2008-02-13",
-          "do": null,
-          "rodzaj_zmiany": "bez_zmiany_kwoty",
-          "poprzednia": "2275.37",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/142",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2007 r. 17 grudnia 1998 r. o emeryturach i rentach z Fundu- wyniosła 2 275,37 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/142",
-            "data_stanu": null,
-            "_sha256": "4ecff46c8ee164d6b5d35a7e730ece5d202e98387efbd76948b4603724191279"
-          },
-          "_roznica_zrodlowa": 0.0
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- z późn. zm.) ogłasza się, iż przeciętne wynagrodzenie nia 1998 r. o emeryturach i rentach z Funduszu Ubez- w czwartym kwartale 2007 r. wyniosło",
-              "wartosc": "2 899,83 zł"
-            }
-          ],
-          "od": "2008-02-13",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/142",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- z późn. zm.) ogłasza się, iż przeciętne wynagrodzenie nia 1998 r. o emeryturach i rentach z Funduszu Ubez- w czwartym kwartale 2007 r. wyniosło 2 899,83 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/142",
-            "data_stanu": null,
-            "_sha256": "4ecff46c8ee164d6b5d35a7e730ece5d202e98387efbd76948b4603724191279"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "636,29 zł"
             }
@@ -13749,29 +12750,6 @@
             "eli": "MP/2008/211",
             "przepis": "treść",
             "cytat": "a) 440,24 zł — dla emerytur lub rent z tytułu całkowitej niezdolności do pracy,",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/211",
-            "data_stanu": null,
-            "_sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "374,22 zł"
-            }
-          ],
-          "od": "2008-03-01",
-          "do": "2009-02-28",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/211",
-            "przepis": "treść",
-            "cytat": "374,22 zł — dla rent rodzinnych, do których uprawniona jest jedna osoba",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/211",
             "data_stanu": null,
             "_sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6"
@@ -13828,190 +12806,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "394 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 29 maja 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2008 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go",
-              "wartosc": "5 967,96 zł"
-            }
-          ],
-          "od": "2008-06-01",
-          "do": "2008-11-30",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "5418.28",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/394",
-            "przepis": "treść",
-            "cytat": "394 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 29 maja 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2008 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go wynosi 5 967,96 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/394",
-            "data_stanu": null,
-            "_sha256": "f8efce00b24ef376d0b4a4a8b1485e2beae02a0c08663e36e56fffe6ee2c19c0"
-          },
-          "_roznica_zrodlowa": 549.68
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2008 r",
-              "wartosc": "2 088,80 zł"
-            }
-          ],
-          "od": "2008-06-13",
-          "do": "2009-05-28",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/395",
-            "przepis": "treść",
-            "cytat": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2008 r. wynosi 2 088,80 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/395",
-            "data_stanu": null,
-            "_sha256": "f8efce00b24ef376d0b4a4a8b1485e2beae02a0c08663e36e56fffe6ee2c19c0"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "581 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 20 sierpnia 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2008 r. do dnia 30 listopada 2008 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego",
-              "wartosc": "5 902,72 zł"
-            }
-          ],
-          "od": "2008-09-01",
-          "do": "2009-08-25",
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/581",
-            "przepis": "treść",
-            "cytat": "581 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 20 sierpnia 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2008 r. do dnia 30 listopada 2008 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego wynosi 5 902,72 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/581",
-            "data_stanu": null,
-            "_sha256": "e2a27d3d44d8b38c186844a0d0df8d86162d4f9dfe8c3067027805323b335149"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "797 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 listopada 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 28 lutego 2009 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go",
-              "wartosc": "5 937,10 zł"
-            }
-          ],
-          "od": "2008-12-01",
-          "do": "2009-05-31",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "5967.96",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2008/797",
-            "przepis": "treść",
-            "cytat": "797 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 listopada 2008 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 28 lutego 2009 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go wynosi 5 937,10 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2008/797",
-            "data_stanu": null,
-            "_sha256": "ce353c85e87973eb8e62246e4b2aa334fef5b084d6405c7395c6291a90da1687"
-          },
-          "_roznica_zrodlowa": -30.86
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia nagrodzenie w gospodarce narodowej w 2008 r. wy- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu niosło",
-              "wartosc": "2943,88 zł"
-            }
-          ],
-          "od": "2009-02-13",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/112",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia nagrodzenie w gospodarce narodowej w 2008 r. wy- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu niosło 2943,88 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/112",
-            "data_stanu": null,
-            "_sha256": "6174902de35ffff7f22ed112415bcefaa56c0c380d7e9250f4ba41cf75ef1b88"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2008 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła",
-              "wartosc": "2578,26 zł"
-            }
-          ],
-          "od": "2009-02-13",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "2059.92",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/113",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2008 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła 2578,26 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/113",
-            "data_stanu": null,
-            "_sha256": "d1f7a96ac0dab020faaa4624901601ca794f35acf81f04bbecf08c01f9ce8b33"
-          },
-          "_roznica_zrodlowa": 518.34
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 2 ustawy z dnia nagrodzenie w czwartym kwartale 2008 r. wyniosło 17 grudnia 1998 r. o emeryturach i rentach z Funduszu",
-              "wartosc": "3096,55 zł"
-            }
-          ],
-          "od": "2009-02-13",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/114",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia nagrodzenie w czwartym kwartale 2008 r. wyniosło 17 grudnia 1998 r. o emeryturach i rentach z Funduszu 3096,55 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/114",
-            "data_stanu": null,
-            "_sha256": "974675804d612171cabd5200697c96b8f07a726de093772ee95390727f381afb"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "155 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 17 lutego 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 maja 2009 r. kwota zasiłku pogrzebowego nia 1998 r. o emeryturach i rentach z Funduszu Ubez",
-              "wartosc": "6 193,10 zł"
-            }
-          ],
-          "od": "2009-03-01",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/155",
-            "przepis": "treść",
-            "cytat": "155 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 17 lutego 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 maja 2009 r. kwota zasiłku pogrzebowego nia 1998 r. o emeryturach i rentach z Funduszu Ubez- wynosi 6 193,10 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/155",
-            "data_stanu": null,
-            "_sha256": "8b92a692e0568619b4c353786f88850d74974299a43d99b226084dda5c9231b8"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "675,10 zł"
             }
@@ -14053,29 +12847,6 @@
             "_sha256": "4997498be34f22e9eed54b188af876d1b5f324dde51f4628ddb682b5c2230608"
           },
           "_roznica_zrodlowa": 26.85
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "397,05 zł"
-            }
-          ],
-          "od": "2009-03-01",
-          "do": "2010-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "374.22",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/188",
-            "przepis": "treść",
-            "cytat": "397,05 zł — dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/188",
-            "data_stanu": null,
-            "_sha256": "4997498be34f22e9eed54b188af876d1b5f324dde51f4628ddb682b5c2230608"
-          },
-          "_roznica_zrodlowa": 22.83
         },
         {
           "wartosc": null,
@@ -14127,121 +12898,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w pierwszym kwartale 2009 r. wynia 1998 r. o emeryturach i rentach z Funduszu niosło",
-              "wartosc": "3185,61 zł"
-            }
-          ],
-          "od": "2009-05-20",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/447",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w pierwszym kwartale 2009 r. wynia 1998 r. o emeryturach i rentach z Funduszu niosło 3185,61 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/447",
-            "data_stanu": null,
-            "_sha256": "07efa7ba9057b6b044fa3470a8fead4fb46349bb1f409a742c1aaeefb644b08c"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2009 r",
-              "wartosc": "2 230,00 zł"
-            }
-          ],
-          "od": "2009-05-29",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "2088.8",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/498",
-            "przepis": "treść",
-            "cytat": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2009 r. wynosi 2 230,00 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/498",
-            "data_stanu": null,
-            "_sha256": "3a6e5e20ff097b7397cc7a5931da37c48f735b6cda1571a612e6a83c25032c3c"
-          },
-          "_roznica_zrodlowa": 141.2
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "497 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 20 maja 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2009 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go",
-              "wartosc": "6 371,22 zł"
-            }
-          ],
-          "od": "2009-06-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "5937.1",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/497",
-            "przepis": "treść",
-            "cytat": "497 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 20 maja 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- do dnia 31 sierpnia 2009 r. kwota zasiłku pogrzebowenia 1998 r. o emeryturach i rentach z Funduszu Ubez- go wynosi 6 371,22 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/497",
-            "data_stanu": null,
-            "_sha256": "fc2afdd082d9c063be1630ff2220fd33b5ddd314deef62c213da345e845a7a5f"
-          },
-          "_roznica_zrodlowa": 434.12
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w drugim kwartale 2009 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu",
-              "wartosc": "3 081,48 zł"
-            }
-          ],
-          "od": "2009-08-18",
-          "do": null,
-          "rodzaj_zmiany": "pierwszy_znany_wpis",
-          "poprzednia": null,
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/747",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w drugim kwartale 2009 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu 3 081,48 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/747",
-            "data_stanu": null,
-            "_sha256": "3d77f60b56b03396e4f0a35f54726e6f8d86d3fa1dfad7d14e7a8d17167ca28d"
-          },
-          "_roznica_zrodlowa": null
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "763 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 sierpnia 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2009 r. do dnia 30 listopada 2009 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego",
-              "wartosc": "6 162,96 zł"
-            }
-          ],
-          "od": "2009-08-26",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "5902.72",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2009/763",
-            "przepis": "treść",
-            "cytat": "763 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 sierpnia 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2009 r. do dnia 30 listopada 2009 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego wynosi 6 162,96 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/763",
-            "data_stanu": null,
-            "_sha256": "71c59e2e0705c0df96d0e338123871c8690a5e7b4c9b274c541a77b7096c62d3"
-          },
-          "_roznica_zrodlowa": 260.24
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "a) miesięcznie — emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "706,29 zł"
             }
@@ -14283,29 +12939,6 @@
             "_sha256": "0c71d333c7111928463903420d288ac93fafc511a72ff262ae0d082846319753"
           },
           "_roznica_zrodlowa": 21.58
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "415,39 zł"
-            }
-          ],
-          "od": "2010-03-01",
-          "do": "2011-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "397.05",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2010/110",
-            "przepis": "treść",
-            "cytat": "415,39 zł — dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2010/110",
-            "data_stanu": null,
-            "_sha256": "0c71d333c7111928463903420d288ac93fafc511a72ff262ae0d082846319753"
-          },
-          "_roznica_zrodlowa": 18.34
         },
         {
           "wartosc": null,
@@ -14403,29 +13036,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "428,27 zł"
-            }
-          ],
-          "od": "2011-03-01",
-          "do": "2013-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "415.39",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2011/162",
-            "przepis": "treść",
-            "cytat": "428,27 zł — dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2011/162",
-            "data_stanu": null,
-            "_sha256": "528f50e348a1c13433d14d4a22c61417c9a92f34bed7ea05c8484bc8731c1dde"
-          },
-          "_roznica_zrodlowa": 12.88
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
               "wartosc": "377,89 zł"
             }
@@ -14490,29 +13100,6 @@
             "_sha256": "2fd0194afc46abf3f64a48f601ba9abd1526ca3240ba30afa090a335b9ac3e82"
           },
           "_roznica_zrodlowa": 77.79
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "\u0007 – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "466,78 zł"
-            }
-          ],
-          "od": "2013-03-01",
-          "do": "2014-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "428.27",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2013/95",
-            "przepis": "treść",
-            "cytat": "\u0007 466,78 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2013/95",
-            "data_stanu": null,
-            "_sha256": "2fd0194afc46abf3f64a48f601ba9abd1526ca3240ba30afa090a335b9ac3e82"
-          },
-          "_roznica_zrodlowa": 38.51
         },
         {
           "wartosc": null,
@@ -14610,29 +13197,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007 – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "474,25 zł"
-            }
-          ],
-          "od": "2014-03-01",
-          "do": "2016-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "466.78",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2014/165",
-            "przepis": "treść",
-            "cytat": "\u0007 474,25 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2014/165",
-            "data_stanu": null,
-            "_sha256": "a01c03e91df342bd29f9249f9f090c57c7394c494b720daba0edf492012bf14e"
-          },
-          "_roznica_zrodlowa": 7.47
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "\u0007 – dla rent z tytułu częściowej niezdolności do pracy",
               "wartosc": "418,46 zł"
             }
@@ -14720,29 +13284,6 @@
             "_sha256": "b9cec6d4107c77d6e5303341db1d2f0a9af37df1ecf149b65defa9e64e4a90f1"
           },
           "_roznica_zrodlowa": 28.62
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "\u0007 – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "478,62 zł"
-            }
-          ],
-          "od": "2016-03-01",
-          "do": "2018-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "474.25",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2016/168",
-            "przepis": "treść",
-            "cytat": "\u0007 478,62 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/168",
-            "data_stanu": null,
-            "_sha256": "b9cec6d4107c77d6e5303341db1d2f0a9af37df1ecf149b65defa9e64e4a90f1"
-          },
-          "_roznica_zrodlowa": 4.37
         },
         {
           "wartosc": null,
@@ -14863,29 +13404,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "495,06 zł"
-            }
-          ],
-          "od": "2018-03-01",
-          "do": "2022-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "478.62",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2018/216",
-            "przepis": "treść",
-            "cytat": "495,06 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2018/216",
-            "data_stanu": null,
-            "_sha256": "4a7232e1e2b960956b70de55ace22d7e9c8b5de2f0b990d4a687135986f2484b"
-          },
-          "_roznica_zrodlowa": 16.44
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
               "wartosc": "436,82 zł"
             }
@@ -14973,29 +13491,6 @@
             "_sha256": "66f82f28ba90e6c41975cb3ae840a4c70b0d4f9f1f613e83ed0cc744f290c5e1"
           },
           "_roznica_zrodlowa": 109.56
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "588,19 zł"
-            }
-          ],
-          "od": "2022-03-01",
-          "do": "2024-02-29",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "495.06",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2022/260",
-            "przepis": "treść",
-            "cytat": "588,19 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2022/260",
-            "data_stanu": null,
-            "_sha256": "66f82f28ba90e6c41975cb3ae840a4c70b0d4f9f1f613e83ed0cc744f290c5e1"
-          },
-          "_roznica_zrodlowa": 93.13
         },
         {
           "wartosc": null,
@@ -15093,29 +13588,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "757,08 zł"
-            }
-          ],
-          "od": "2024-03-01",
-          "do": "2025-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "588.19",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2024/133",
-            "przepis": "treść",
-            "cytat": "757,08 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/133",
-            "data_stanu": null,
-            "_sha256": "d901ac18ab7ddbfaa34d6b4c31e9020be4941bcf43d0d59e9902d9eee9c2b111"
-          },
-          "_roznica_zrodlowa": 168.89
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
               "wartosc": "668,01 zł"
             }
@@ -15208,29 +13680,6 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "798,72 zł"
-            }
-          ],
-          "od": "2025-03-01",
-          "do": "2026-02-28",
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "757.08",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2025/152",
-            "przepis": "treść",
-            "cytat": "798,72 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/152",
-            "data_stanu": null,
-            "_sha256": "69f3af6e64da8858711bdfe8b179f4015e3812d5b86ae2c9b358014cc10bbfa8"
-          },
-          "_roznica_zrodlowa": 41.64
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
               "etykieta": "dla rent z tytułu częściowej niezdolności do pracy",
               "wartosc": "704,75 zł"
             }
@@ -15318,29 +13767,6 @@
             "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
           },
           "_roznica_zrodlowa": 49.8
-        },
-        {
-          "wartosc": null,
-          "warianty": [
-            {
-              "etykieta": "dla rent rodzinnych, do których uprawniona jest jedna osoba",
-              "wartosc": "841,05 zł"
-            }
-          ],
-          "od": "2026-03-01",
-          "do": null,
-          "rodzaj_zmiany": "akt_wykonawczy",
-          "poprzednia": "798.72",
-          "roznica": null,
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "841,05 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          },
-          "_roznica_zrodlowa": 42.33
         },
         {
           "wartosc": null,
@@ -15521,18 +13947,6 @@
         },
         {
           "krok": 9,
-          "opis": "MP/2001/357 treść: 865,20 zł od 2001-06-29 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2001/357",
-            "przepis": "treść",
-            "cytat": "Nr 8, poz. 64 i Nr 27, poz. 298) ogłasza się, iż skorygowana o kwotę jednorazowej wypłaty przeciętna emerytura i renta brutto w 2000 r. wyniosła 865,20 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/357",
-            "data_stanu": null,
-            "_sha256": "acc2feb692e9a656be7f67881e9eff074cff8117ebdc0fe48a71eb4dd62fb041"
-          }
-        },
-        {
-          "krok": 10,
           "opis": "MP/2026/220 treść: 1483,87 zł od 2026-03-01 (nazwa korzyści w akcie)",
           "dowod": {
             "eli": "MP/2026/220",
@@ -15544,19 +13958,7 @@
           }
         },
         {
-          "krok": 11,
-          "opis": "MP/2009/113 treść: 2578,26 zł od 2009-02-13 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2009/113",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2008 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła 2578,26 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/113",
-            "data_stanu": null,
-            "_sha256": "d1f7a96ac0dab020faaa4624901601ca794f35acf81f04bbecf08c01f9ce8b33"
-          }
-        },
-        {
-          "krok": 12,
+          "krok": 10,
           "opis": "MP/2026/220 treść: 1978,49 zł od 2026-03-01 (nazwa korzyści w akcie)",
           "dowod": {
             "eli": "MP/2026/220",
@@ -15568,7 +13970,7 @@
           }
         },
         {
-          "krok": 13,
+          "krok": 11,
           "opis": "MP/2026/220 treść: 989,41 zł od 2026-03-01 (nazwa korzyści w akcie)",
           "dowod": {
             "eli": "MP/2026/220",
@@ -15580,7 +13982,7 @@
           }
         },
         {
-          "krok": 14,
+          "krok": 12,
           "opis": "MP/2026/220 treść: 742,10 zł od 2026-03-01 (nazwa korzyści w akcie)",
           "dowod": {
             "eli": "MP/2026/220",
@@ -15590,85 +13992,10 @@
             "data_stanu": null,
             "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
           }
-        },
-        {
-          "krok": 15,
-          "opis": "MP/2026/220 treść: 841,05 zł od 2026-03-01 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2026/220",
-            "przepis": "treść",
-            "cytat": "1483,87 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-            "data_stanu": null,
-            "_sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35"
-          }
-        },
-        {
-          "krok": 16,
-          "opis": "MP/2009/498 treść: 2 230,00 zł od 2009-05-29 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2009/498",
-            "przepis": "treść",
-            "cytat": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2009 r. wynosi 2 230,00 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/498",
-            "data_stanu": null,
-            "_sha256": "3a6e5e20ff097b7397cc7a5931da37c48f735b6cda1571a612e6a83c25032c3c"
-          }
-        },
-        {
-          "krok": 17,
-          "opis": "MP/2009/763 treść: 6 162,96 zł od 2009-08-26 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2009/763",
-            "przepis": "treść",
-            "cytat": "763 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 sierpnia 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2009 r. do dnia 30 listopada 2009 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego wynosi 6 162,96 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/763",
-            "data_stanu": null,
-            "_sha256": "71c59e2e0705c0df96d0e338123871c8690a5e7b4c9b274c541a77b7096c62d3"
-          }
-        },
-        {
-          "krok": 18,
-          "opis": "MP/2009/112 treść: 2943,88 zł od 2009-02-13 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2009/112",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia nagrodzenie w gospodarce narodowej w 2008 r. wy- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu niosło 2943,88 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/112",
-            "data_stanu": null,
-            "_sha256": "6174902de35ffff7f22ed112415bcefaa56c0c380d7e9250f4ba41cf75ef1b88"
-          }
-        },
-        {
-          "krok": 19,
-          "opis": "MP/2009/747 treść: 3 081,48 zł od 2009-08-18 (nazwa korzyści w akcie)",
-          "dowod": {
-            "eli": "MP/2009/747",
-            "przepis": "treść",
-            "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w drugim kwartale 2009 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu 3 081,48 zł",
-            "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/747",
-            "data_stanu": null,
-            "_sha256": "3d77f60b56b03396e4f0a35f54726e6f8d86d3fa1dfad7d14e7a8d17167ca28d"
-          }
         }
       ]
     },
     "do_kiedy": [
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2001-06-29",
-        "opis": "Nr 8, poz. 64 i Nr 27, poz. 298) ogłasza się, iż skorygowana o kwotę jednorazowej wypłaty przeciętna emerytura i renta brutto w 2000 r. wyniosła: 865,20 zł od 2001-06-29 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2001/357",
-          "przepis": "MP/2001/357 treść",
-          "cytat": "Nr 8, poz. 64 i Nr 27, poz. 298) ogłasza się, iż skorygowana o kwotę jednorazowej wypłaty przeciętna emerytura i renta brutto w 2000 r. wyniosła 865,20 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2001/357",
-          "data_stanu": null
-        },
-        "od": "2001-06-29",
-        "do": null
-      },
       {
         "rodzaj": "okres_kwoty",
         "data": "2026-03-01",
@@ -15682,21 +14009,6 @@
           "data_stanu": null
         },
         "od": "2026-03-01",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2009-02-13",
-        "opis": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2008 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła: 2578,26 zł od 2009-02-13 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2009/113",
-          "przepis": "MP/2009/113 treść",
-          "cytat": "Na podstawie art. 20 pkt 1 lit. b ustawy z dnia o której mowa w art. 19 powołanej ustawy, w 2008 r. 17 grudnia 1998 r. o emeryturach i rentach z Funduszu wyniosła 2578,26 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/113",
-          "data_stanu": null
-        },
-        "od": "2009-02-13",
         "do": null
       },
       {
@@ -15742,81 +14054,6 @@
           "data_stanu": null
         },
         "od": "2026-03-01",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2026-03-01",
-        "opis": "dla rent rodzinnych, do których uprawniona jest jedna osoba: 841,05 zł od 2026-03-01 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2026/220",
-          "przepis": "MP/2026/220 treść",
-          "cytat": "841,05 zł – dla rent rodzinnych, do których uprawniona jest jedna osoba",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/220",
-          "data_stanu": null
-        },
-        "od": "2026-03-01",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2009-05-29",
-        "opis": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2009 r: 2 230,00 zł od 2009-05-29 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2009/498",
-          "przepis": "MP/2009/498 treść",
-          "cytat": "70 % przeciętnego miesięcznego wynagrodzenia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu ogłoszonego za I kwartał 2009 r. wynosi 2 230,00 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/498",
-          "data_stanu": null
-        },
-        "od": "2009-05-29",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2009-08-26",
-        "opis": "763 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 sierpnia 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2009 r. do dnia 30 listopada 2009 r. kwota zasiłku ponia 1998 r. o emeryturach i rentach z Funduszu Ubez- grzebowego: 6 162,96 zł od 2009-08-26 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2009/763",
-          "przepis": "MP/2009/763 treść",
-          "cytat": "763 KOMUNIKAT PREZESA ZAKŁADU UBEZPIECZEŃ SPOŁECZNYCH z dnia 19 sierpnia 2009 r. w sprawie kwoty zasiłku pogrzebowego Na podstawie art. 80 ust. 3 ustawy z dnia 17 grud- 2009 r. do dnia 30 listopada 20",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/763",
-          "data_stanu": null
-        },
-        "od": "2009-08-26",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2009-02-13",
-        "opis": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia nagrodzenie w gospodarce narodowej w 2008 r. wy- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu niosło: 2943,88 zł od 2009-02-13 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2009/112",
-          "przepis": "MP/2009/112 treść",
-          "cytat": "Na podstawie art. 20 pkt 1 lit. a ustawy z dnia nagrodzenie w gospodarce narodowej w 2008 r. wy- 17 grudnia 1998 r. o emeryturach i rentach z Funduszu niosło 2943,88 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/112",
-          "data_stanu": null
-        },
-        "od": "2009-02-13",
-        "do": null
-      },
-      {
-        "rodzaj": "okres_kwoty",
-        "data": "2009-08-18",
-        "opis": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w drugim kwartale 2009 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu: 3 081,48 zł od 2009-08-18 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "MP/2009/747",
-          "przepis": "MP/2009/747 treść",
-          "cytat": "Na podstawie art. 20 pkt 2 ustawy z dnia 17 grud- wynagrodzenie w drugim kwartale 2009 r. wyniosło nia 1998 r. o emeryturach i rentach z Funduszu 3 081,48 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/MP/2009/747",
-          "data_stanu": null
-        },
-        "od": "2009-08-18",
         "do": null
       },
       {
@@ -16314,6 +14551,550 @@
     ],
     "stan": {
       "data_stanu": "2026-10-16",
+      "tekst": "tekst ujednolicony (informacyjny)"
+    },
+    "nieustalone": [
+      {
+        "pole": "ile",
+        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
+      }
+    ],
+    "flagi": [
+      "Kandydat automatyczny. Nie stanowi potwierdzenia prawa do świadczenia."
+    ]
+  },
+  {
+    "id": "DU-2003-1268-renta-socjalna",
+    "slug": "du-2003-1268-renta-socjalna",
+    "nazwa": "renta socjalna",
+    "rodzaj_korzysci": "swiadczenie_okresowe",
+    "status": "obowiazuje",
+    "komu": "osobom posiadającym obywatelstwo polskie zamieszkującym na terytorium Rzeczypospolitej Polskiej; cudzoziemcom zamieszkującym na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt stały; cudzoziemcom posiadającym kartę pobytu z adnotacją „dostęp do rynku pracy”; mającym miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej obywatelom państw członkowskich Unii Europejskiej",
+    "opis_prosty": null,
+    "sytuacje": [
+      "cudzoziemiec",
+      "edukacja",
+      "mieszkanie_energia",
+      "niepelnosprawnosc"
+    ],
+    "sytuacje_zrodlo": "automatyczne",
+    "przepis": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 2",
+      "cytat": "Prawo do renty socjalnej przysługuje:",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+    },
+    "ile": {
+      "rozwiazanie": "nieustalone",
+      "regula": null,
+      "aktualna": null,
+      "kwota_ustawowa_zastapiona": null,
+      "zwiekszenia": [],
+      "wyliczenie": null,
+      "os_czasu": [],
+      "progi": [],
+      "trasa": [
+        {
+          "krok": 1,
+          "opis": "DU/2003/1268 art. 2: przepis przyznający",
+          "dowod": {
+            "eli": "DU/2003/1268",
+            "przepis": "art. 2",
+            "cytat": "Prawo do renty socjalnej przysługuje:",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+            "data_stanu": "2026-04-17",
+            "_sha256": "216fb4eef4f3fe404cd4dbc71ff1c874232d36f769d3a09727e692e2638dcc69",
+            "_strona": 1,
+            "_strony": [
+              1
+            ]
+          }
+        },
+        {
+          "krok": 2,
+          "opis": "DU/2003/1268 art. 4 ust. 1: przepis przyznający",
+          "dowod": {
+            "eli": "DU/2003/1268",
+            "przepis": "art. 4 ust. 1",
+            "cytat": "Renta socjalna przysługuje osobie pełnoletniej całkowicie niezdolnej do pracy z powodu naruszenia sprawności organizmu, które powstało:",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+            "data_stanu": "2026-04-17",
+            "_sha256": "216fb4eef4f3fe404cd4dbc71ff1c874232d36f769d3a09727e692e2638dcc69",
+            "_strona": 2,
+            "_strony": [
+              2
+            ]
+          }
+        }
+      ]
+    },
+    "do_kiedy": [],
+    "powiazane": [
+      {
+        "typ": "warunek",
+        "cytat": "Osobie, która spełnia warunki określone w ust. 1, przysługuje:",
+        "przepis": "art. 4 ust. 2"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Podwyższenie renty socjalnej następuje z urzędu, a jeżeli wypłata renty została wstrzymana – po jej wznowieniu.",
+        "przepis": "art. 6 ust. 3"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Osobie, o której mowa w ust. 2, samotnie gospodarującej, nieposiadającej innego przychodu i niemającej prawa do renty rodzinnej, która jest właścicielem lokalu mieszkalnego (domu jednorodzinnego), której przysługuje spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy, innych jednostek samorządu terytorialnego albo stanowiącego własność Skarbu Państwa lub państwowych osób prawnych, może być wypłacane 50 % kwoty renty socjalnej or",
+        "przepis": "art. 8 ust. 3"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "W przypadku zbiegu uprawnień do renty socjalnej z uprawnieniem do renty rodzinnej lub świadczenia pieniężnego przyznanego na zasadach określonych w ustawie z dnia 8 lutego 2023 r. o świadczeniu pieniężnym przysługującym członkom rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą albo podjęciem poza służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia (Dz. U. poz. 658) kwota renty socjalnej ulega takiemu obniżeniu, aby łączna kwota obu świ",
+        "przepis": "art. 9 ust. 1"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Renta socjalna nie przysługuje, jeżeli kwota renty rodzinnej lub świadczenia pieniężnego, o którym mowa w ust. 1, przekracza 300 % kwoty najniższej renty z tytułu całkowitej niezdolności do pracy.",
+        "przepis": "art. 9 ust. 2"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Osoba pobierająca rentę socjalną lub jej przedstawiciel ustawowy są obowiązani niezwłocznie powiadomić organ wypłacający rentę socjalną o okolicznościach powodujących zawieszenie prawa do tego świadczenia albo zmniejszenie jego wysokości. Powiadomienie następuje w formie pisemnego oświadczenia. W przypadku gdy składki na ubezpieczenia społeczne są odprowadzane przez płatnika składek, osoba pobierająca rentę socjalną jest obowiązana do przedstawienia zaświadczenia albo oświadczenia określającego ",
+        "przepis": "art. 10 ust. 7"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "W przypadku gdy rentę rodzinną wypłaca jednostka organizacyjna Zakładu wskazana przez Prezesa Zakładu, rentę socjalną przyznaje i wypłaca ta jednostka.",
+        "przepis": "art. 12 ust. 2"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "W przypadku gdy uprawnienia do renty rodzinnej lub świadczenia pieniężnego, o którym mowa w art. 9 ust. 1, zostały ustalone przez organ emerytalnorentowy, organ ten ustala, w drodze decyzji, wysokość renty socjalnej, wypłaca tę rentę, a w przypadku określonym w art. 9 ust. 2 odmawia wypłaty renty socjalnej lub wstrzymuje wypłatę tej renty.",
+        "przepis": "art. 12 ust. 3"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "W przypadku gdy organ emerytalno-rentowy ustali prawo do renty rodzinnej lub świadczenia pieniężnego, o którym mowa w art. 9 ust. 1, jest obowiązany do powiadomienia Zakładu o przyznaniu tej renty lub tego świadczenia osobom pobierającym rentę socjalną lub rentę socjalną z dodatkiem dopełniającym.",
+        "przepis": "art. 12 ust. 5"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Jeżeli dla osoby uprawnionej do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym ustanowiono opiekę prawną, świadczenie to wypłaca się osobie sprawującej tę opiekę.",
+        "przepis": "art. 12b ust. 1"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Jeżeli do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym uprawniona jest osoba, która wymaga opieki innej osoby oraz nad którą nie została ustanowiona opieka prawna, w przypadku gdy osoba uprawniona do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym nie może odebrać jej samodzielnie, świadczenia są wypłacane osobie sprawującej nad nią opiekę faktyczną, na podstawie oświadczenia o sprawowaniu tej opieki. Sprawowanie opieki faktycznej nad osobą uprawnioną do rent",
+        "przepis": "art. 12b ust. 2"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "W przypadku gdy rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wypłaca organ emerytalno-rentowy, wypłata następuje w tej samej formie, w której następuje wypłata renty rodzinnej lub świadczenia pieniężnego, o których mowa w art. 9 ust. 1, wypłacanych w zbiegu z rentą socjalną lub rentą socjalną z dodatkiem dopełniającym.",
+        "przepis": "art. 12c ust. 3"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Przepisu ust. 1 nie stosuje się w przypadku, gdy osoba sprawująca opiekę prawną nad osobą uprawnioną do renty socjalnej lub renty socjalnej z dodatkiem dopełniającym odbywa karę pozbawienia wolności, karę aresztu wojskowego albo karę aresztu za wykroczenie lub jest tymczasowo aresztowana.",
+        "przepis": "art. 12c ust. 5"
+      },
+      {
+        "typ": "wykluczenie",
+        "cytat": "Renta socjalna nie przysługuje osobie uprawnionej do emerytury, uposażenia w stanie spoczynku, renty z tytułu niezdolności do pracy, renty inwalidzkiej lub pobierającej świadczenie o charakterze rentowym z instytucji zagranicznych, renty strukturalnej, a także osobie uprawnionej do zasiłku przedemerytalnego, świadczenia przedemerytalnego lub nauczycielskiego świadczenia kompensacyjnego.",
+        "przepis": "art. 7 ust. 1"
+      },
+      {
+        "typ": "wykluczenie",
+        "cytat": "Renta socjalna nie przysługuje osobie będącej właścicielem lub posiadaczem (samoistnym lub zależnym) nieruchomości rolnej w rozumieniu Kodeksu cywilnego o powierzchni użytków rolnych przekraczającej 5 ha przeliczeniowych.",
+        "przepis": "art. 7 ust. 2"
+      },
+      {
+        "typ": "wykluczenie",
+        "cytat": " Osobie będącej współwłaścicielem nieruchomości rolnej nie przysługuje renta socjalna, jeśli udział tej osoby przekracza 5 ha przeliczeniowych.",
+        "przepis": "art. 7 ust. 2"
+      },
+      {
+        "typ": "wykluczenie",
+        "cytat": "Renta socjalna oraz dodatek dopełniający nie przysługują za okres tymczasowego aresztowania lub odbywania kary pozbawienia wolności, z zastrzeżeniem ust. 1a.",
+        "przepis": "art. 8 ust. 1"
+      },
+      {
+        "typ": "wykluczenie",
+        "cytat": "Renta socjalna nie przysługuje, jeżeli kwota renty rodzinnej lub świadczenia pieniężnego, o którym mowa w ust. 1, przekracza 300 % kwoty najniższej renty z tytułu całkowitej niezdolności do pracy.",
+        "przepis": "art. 9 ust. 2"
+      },
+      {
+        "typ": "wykluczenie",
+        "cytat": "W razie śmierci osoby pobierającej rentę socjalną przysługuje zasiłek pogrzebowy, na zasadach i w wysokości określonych w przepisach o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych, o ile zasiłek pogrzebowy lub świadczenie w wysokości zasiłku pogrzebowego nie przysługuje z innego tytułu.",
+        "przepis": "art. 12a ust. 1"
+      },
+      {
+        "typ": "wykluczenie",
+        "cytat": "Osobie odbywającej karę pozbawienia wolności, karę aresztu wojskowego albo karę aresztu za wykroczenie oraz osobie tymczasowo aresztowanej rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wypłaca się:",
+        "przepis": "art. 12c ust. 2"
+      }
+    ],
+    "stan": {
+      "data_stanu": "2026-04-17",
+      "tekst": "tekst ujednolicony (informacyjny)"
+    },
+    "nieustalone": [
+      {
+        "pole": "ile",
+        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
+      }
+    ],
+    "flagi": [
+      "Kandydat automatyczny. Nie stanowi potwierdzenia prawa do świadczenia."
+    ]
+  },
+  {
+    "id": "DU-2003-1268-dodatek-dopelniajacy",
+    "slug": "du-2003-1268-dodatek-dopelniajacy",
+    "nazwa": "dodatek dopełniający",
+    "rodzaj_korzysci": "swiadczenie_okresowe",
+    "status": "obowiazuje",
+    "komu": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, przysługuje dodatek dopełniający w wysokości 2520 zł.",
+    "opis_prosty": null,
+    "sytuacje": [
+      "mieszkanie_energia",
+      "niepelnosprawnosc"
+    ],
+    "sytuacje_zrodlo": "automatyczne",
+    "przepis": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 6a ust. 1",
+      "cytat": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, przysługuje dodatek dopełniający w wysokości 2520 zł.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+    },
+    "ile": {
+      "rozwiazanie": "kwota_z_aktu_wykonawczego",
+      "regula": null,
+      "aktualna": null,
+      "kwota_ustawowa_zastapiona": null,
+      "zwiekszenia": [],
+      "wyliczenie": null,
+      "os_czasu": [
+        {
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "U. z 2023 r. poz. 2194 oraz z 2024 r. poz. 1615) ogłasza się, że od dnia 1 marca 2025 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji",
+              "wartosc": "2610,72 zł"
+            }
+          ],
+          "od": "2025-03-01",
+          "do": null,
+          "rodzaj_zmiany": "pierwszy_znany_wpis",
+          "poprzednia": null,
+          "roznica": null,
+          "dowod": {
+            "eli": "MP/2025/133",
+            "przepis": "treść",
+            "cytat": "U. z 2023 r. poz. 2194 oraz z 2024 r. poz. 1615) ogłasza się, że od dnia 1 marca 2025 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2610,72 zł",
+            "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/133",
+            "data_stanu": null,
+            "_sha256": "f95234bdf40dfd99567446f566e6b3ecb92633ea2d166c0c227ade70db30e9c3"
+          },
+          "_roznica_zrodlowa": null
+        },
+        {
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji",
+              "wartosc": "2704,71 zł"
+            }
+          ],
+          "od": "2026-03-01",
+          "do": null,
+          "rodzaj_zmiany": "pierwszy_znany_wpis",
+          "poprzednia": null,
+          "roznica": null,
+          "dowod": {
+            "eli": "MP/2026/153",
+            "przepis": "treść",
+            "cytat": "ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2704,71 zł",
+            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+            "data_stanu": null,
+            "_sha256": "dd8b9ceebeaf410abddb6ee75c413b1528dc98c13b4207c2b14341ae1e2c699f"
+          },
+          "_roznica_zrodlowa": null
+        }
+      ],
+      "progi": [],
+      "trasa": [
+        {
+          "krok": 1,
+          "opis": "DU/2003/1268 art. 6a ust. 1: przepis przyznający",
+          "dowod": {
+            "eli": "DU/2003/1268",
+            "przepis": "art. 6a ust. 1",
+            "cytat": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, przysługuje dodatek dopełniający w wysokości 2520 zł.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+            "data_stanu": "2026-04-17",
+            "_sha256": "216fb4eef4f3fe404cd4dbc71ff1c874232d36f769d3a09727e692e2638dcc69",
+            "_strona": 4,
+            "_strony": [
+              4
+            ]
+          }
+        },
+        {
+          "krok": 2,
+          "opis": "DU/2003/1268 art. 6a ust. 2: przepis przyznający",
+          "dowod": {
+            "eli": "DU/2003/1268",
+            "przepis": "art. 6a ust. 2",
+            "cytat": "Dodatek dopełniający przyznaje się na wniosek osoby ubiegającej się o ten dodatek lub jej przedstawiciela ustawowego.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+            "data_stanu": "2026-04-17",
+            "_sha256": "216fb4eef4f3fe404cd4dbc71ff1c874232d36f769d3a09727e692e2638dcc69",
+            "_strona": 4,
+            "_strony": [
+              4
+            ]
+          }
+        },
+        {
+          "krok": 3,
+          "opis": "DU/2003/1268 art. 6a ust. 1: kwota w ustawie 2520 zł",
+          "dowod": {
+            "eli": "DU/2003/1268",
+            "przepis": "art. 6a ust. 1",
+            "cytat": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, przysługuje dodatek dopełniający w wysokości 2520 zł.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+            "data_stanu": "2026-04-17",
+            "_sha256": "216fb4eef4f3fe404cd4dbc71ff1c874232d36f769d3a09727e692e2638dcc69",
+            "_strona": 4,
+            "_strony": [
+              4
+            ]
+          }
+        },
+        {
+          "krok": 4,
+          "opis": "MP/2026/153 treść: 2704,71 zł od 2026-03-01 (nazwa korzyści w akcie)",
+          "dowod": {
+            "eli": "MP/2026/153",
+            "przepis": "treść",
+            "cytat": "ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wynosi 2704,71 zł",
+            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+            "data_stanu": null,
+            "_sha256": "dd8b9ceebeaf410abddb6ee75c413b1528dc98c13b4207c2b14341ae1e2c699f"
+          }
+        }
+      ]
+    },
+    "do_kiedy": [
+      {
+        "rodzaj": "okres_kwoty",
+        "data": "2026-03-01",
+        "opis": "ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji: 2704,71 zł od 2026-03-01 (obowiązuje nadal według danych)",
+        "skutek": null,
+        "dowod": {
+          "eli": "MP/2026/153",
+          "przepis": "MP/2026/153 treść",
+          "cytat": "ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku dopełniającego przysługującego osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, wyno",
+          "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
+          "data_stanu": null
+        },
+        "od": "2026-03-01",
+        "do": null
+      }
+    ],
+    "powiazane": [
+      {
+        "typ": "warunek",
+        "cytat": "Osobie, o której mowa w ust. 2, samotnie gospodarującej, nieposiadającej innego przychodu i niemającej prawa do renty rodzinnej, która jest właścicielem lokalu mieszkalnego (domu jednorodzinnego), której przysługuje spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy, innych jednostek samorządu terytorialnego albo stanowiącego własność Skarbu Państwa lub państwowych osób prawnych, może być wypłacane 50 % kwoty renty socjalnej or",
+        "przepis": "art. 8 ust. 3"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "W przypadku gdy organ emerytalno-rentowy ustali prawo do renty rodzinnej lub świadczenia pieniężnego, o którym mowa w art. 9 ust. 1, jest obowiązany do powiadomienia Zakładu o przyznaniu tej renty lub tego świadczenia osobom pobierającym rentę socjalną lub rentę socjalną z dodatkiem dopełniającym.",
+        "przepis": "art. 12 ust. 5"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Jeżeli dla osoby uprawnionej do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym ustanowiono opiekę prawną, świadczenie to wypłaca się osobie sprawującej tę opiekę.",
+        "przepis": "art. 12b ust. 1"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Jeżeli do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym uprawniona jest osoba, która wymaga opieki innej osoby oraz nad którą nie została ustanowiona opieka prawna, w przypadku gdy osoba uprawniona do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym nie może odebrać jej samodzielnie, świadczenia są wypłacane osobie sprawującej nad nią opiekę faktyczną, na podstawie oświadczenia o sprawowaniu tej opieki. Sprawowanie opieki faktycznej nad osobą uprawnioną do rent",
+        "przepis": "art. 12b ust. 2"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wypłaca się osobom sprawującym opiekę prawną lub opiekę faktyczną nad osobami uprawnionymi do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym, po uprzednim pouczeniu o konieczności poinformowania organu rentowego o zajściu okoliczności powodujących ustanie lub zawieszenie prawa do świadczeń albo wstrzymanie wypłaty świadczeń w całości lub w części oraz o obowiązku zwrotu świadczenia przez te osoby w przypadku, gdy zosta",
+        "przepis": "art. 12b ust. 3"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "W przypadku gdy rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wypłaca organ emerytalno-rentowy, wypłata następuje w tej samej formie, w której następuje wypłata renty rodzinnej lub świadczenia pieniężnego, o których mowa w art. 9 ust. 1, wypłacanych w zbiegu z rentą socjalną lub rentą socjalną z dodatkiem dopełniającym.",
+        "przepis": "art. 12c ust. 3"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Przepisu ust. 1 nie stosuje się w przypadku, gdy osoba sprawująca opiekę prawną nad osobą uprawnioną do renty socjalnej lub renty socjalnej z dodatkiem dopełniającym odbywa karę pozbawienia wolności, karę aresztu wojskowego albo karę aresztu za wykroczenie lub jest tymczasowo aresztowana.",
+        "przepis": "art. 12c ust. 5"
+      },
+      {
+        "typ": "wykluczenie",
+        "cytat": "Renta socjalna oraz dodatek dopełniający nie przysługują za okres tymczasowego aresztowania lub odbywania kary pozbawienia wolności, z zastrzeżeniem ust. 1a.",
+        "przepis": "art. 8 ust. 1"
+      },
+      {
+        "typ": "wykluczenie",
+        "cytat": "Osobie odbywającej karę pozbawienia wolności, karę aresztu wojskowego albo karę aresztu za wykroczenie oraz osobie tymczasowo aresztowanej rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wypłaca się:",
+        "przepis": "art. 12c ust. 2"
+      }
+    ],
+    "stan": {
+      "data_stanu": "2026-04-17",
+      "tekst": "tekst ujednolicony (informacyjny)"
+    },
+    "nieustalone": [
+      {
+        "pole": "ile.aktualna",
+        "powod": "Wiele równoległych kwot; nie wybrano jednej stawki."
+      },
+      {
+        "pole": "ile",
+        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
+      }
+    ],
+    "flagi": [
+      "Kandydat automatyczny. Nie stanowi potwierdzenia prawa do świadczenia."
+    ]
+  },
+  {
+    "id": "DU-2003-1268-lokal",
+    "slug": "du-2003-1268-lokal",
+    "nazwa": "lokal",
+    "rodzaj_korzysci": "swiadczenie_rzeczowe",
+    "status": "obowiazuje",
+    "komu": "spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy",
+    "opis_prosty": null,
+    "sytuacje": [
+      "mieszkanie_energia"
+    ],
+    "sytuacje_zrodlo": "automatyczne",
+    "przepis": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 8 ust. 3",
+      "cytat": "Osobie, o której mowa w ust. 2, samotnie gospodarującej, nieposiadającej innego przychodu i niemającej prawa do renty rodzinnej, która jest właścicielem lokalu mieszkalnego (domu jednorodzinnego), której przysługuje spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy, innych jednostek samorządu terytorialnego albo stanowiącego własność Skarbu Państwa lub państwowych osób prawnych, może być wypłacane 50 % kwoty renty socjalnej oraz 50 % kwoty dodatku dopełniającego, jeżeli zobowiąże się pisemnie, że z kwoty tej będzie dokonywała opłat z tytułu czynszu lub innych należności za lokal mieszkalny (dom jednorodzinny), a w lokalu (domu jednorodzinnym) nie przebywają inne osoby.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+    },
+    "ile": {
+      "rozwiazanie": "nieustalone",
+      "regula": null,
+      "aktualna": null,
+      "kwota_ustawowa_zastapiona": null,
+      "zwiekszenia": [],
+      "wyliczenie": null,
+      "os_czasu": [],
+      "progi": [],
+      "trasa": [
+        {
+          "krok": 1,
+          "opis": "DU/2003/1268 art. 8 ust. 3: przepis przyznający",
+          "dowod": {
+            "eli": "DU/2003/1268",
+            "przepis": "art. 8 ust. 3",
+            "cytat": "Osobie, o której mowa w ust. 2, samotnie gospodarującej, nieposiadającej innego przychodu i niemającej prawa do renty rodzinnej, która jest właścicielem lokalu mieszkalnego (domu jednorodzinnego), której przysługuje spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy, innych jednostek samorządu terytorialnego albo stanowiącego własność Skarbu Państwa lub państwowych osób prawnych, może być wypłacane 50 % kwoty renty socjalnej oraz 50 % kwoty dodatku dopełniającego, jeżeli zobowiąże się pisemnie, że z kwoty tej będzie dokonywała opłat z tytułu czynszu lub innych należności za lokal mieszkalny (dom jednorodzinny), a w lokalu (domu jednorodzinnym) nie przebywają inne osoby.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+            "data_stanu": "2026-04-17",
+            "_sha256": "216fb4eef4f3fe404cd4dbc71ff1c874232d36f769d3a09727e692e2638dcc69",
+            "_strona": 6,
+            "_strony": [
+              6
+            ]
+          }
+        }
+      ]
+    },
+    "do_kiedy": [],
+    "powiazane": [],
+    "stan": {
+      "data_stanu": "2026-04-17",
+      "tekst": "tekst ujednolicony (informacyjny)"
+    },
+    "nieustalone": [
+      {
+        "pole": "ile",
+        "powod": "Kwota nie została jednoznacznie potwierdzona w danych wejściowych."
+      }
+    ],
+    "flagi": [
+      "Kandydat automatyczny. Nie stanowi potwierdzenia prawa do świadczenia."
+    ]
+  },
+  {
+    "id": "DU-2003-1268-opieka",
+    "slug": "du-2003-1268-opieka",
+    "nazwa": "opieka",
+    "rodzaj_korzysci": "swiadczenie_rzeczowe",
+    "status": "obowiazuje",
+    "komu": "osobie sprawującej tę opiekę",
+    "opis_prosty": null,
+    "sytuacje": [],
+    "sytuacje_zrodlo": "automatyczne",
+    "przepis": {
+      "eli": "DU/2003/1268",
+      "przepis": "art. 12b ust. 1",
+      "cytat": "Jeżeli dla osoby uprawnionej do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym ustanowiono opiekę prawną, świadczenie to wypłaca się osobie sprawującej tę opiekę.",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+      "data_stanu": "2026-04-17"
+    },
+    "ile": {
+      "rozwiazanie": "nieustalone",
+      "regula": null,
+      "aktualna": null,
+      "kwota_ustawowa_zastapiona": null,
+      "zwiekszenia": [],
+      "wyliczenie": null,
+      "os_czasu": [],
+      "progi": [],
+      "trasa": [
+        {
+          "krok": 1,
+          "opis": "DU/2003/1268 art. 12b ust. 1: przepis przyznający",
+          "dowod": {
+            "eli": "DU/2003/1268",
+            "przepis": "art. 12b ust. 1",
+            "cytat": "Jeżeli dla osoby uprawnionej do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym ustanowiono opiekę prawną, świadczenie to wypłaca się osobie sprawującej tę opiekę.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+            "data_stanu": "2026-04-17",
+            "_sha256": "216fb4eef4f3fe404cd4dbc71ff1c874232d36f769d3a09727e692e2638dcc69",
+            "_strona": 10,
+            "_strony": [
+              10
+            ]
+          }
+        }
+      ]
+    },
+    "do_kiedy": [],
+    "powiazane": [
+      {
+        "typ": "warunek",
+        "cytat": "Jeżeli do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym uprawniona jest osoba, która wymaga opieki innej osoby oraz nad którą nie została ustanowiona opieka prawna, w przypadku gdy osoba uprawniona do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym nie może odebrać jej samodzielnie, świadczenia są wypłacane osobie sprawującej nad nią opiekę faktyczną, na podstawie oświadczenia o sprawowaniu tej opieki. Sprawowanie opieki faktycznej nad osobą uprawnioną do rent",
+        "przepis": "art. 12b ust. 2"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wypłaca się osobom sprawującym opiekę prawną lub opiekę faktyczną nad osobami uprawnionymi do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym, po uprzednim pouczeniu o konieczności poinformowania organu rentowego o zajściu okoliczności powodujących ustanie lub zawieszenie prawa do świadczeń albo wstrzymanie wypłaty świadczeń w całości lub w części oraz o obowiązku zwrotu świadczenia przez te osoby w przypadku, gdy zosta",
+        "przepis": "art. 12b ust. 3"
+      },
+      {
+        "typ": "warunek",
+        "cytat": "Przepisu ust. 1 nie stosuje się w przypadku, gdy osoba sprawująca opiekę prawną nad osobą uprawnioną do renty socjalnej lub renty socjalnej z dodatkiem dopełniającym odbywa karę pozbawienia wolności, karę aresztu wojskowego albo karę aresztu za wykroczenie lub jest tymczasowo aresztowana.",
+        "przepis": "art. 12c ust. 5"
+      }
+    ],
+    "stan": {
+      "data_stanu": "2026-04-17",
       "tekst": "tekst ujednolicony (informacyjny)"
     },
     "nieustalone": [
@@ -17798,21 +16579,6 @@
     },
     "do_kiedy": [
       {
-        "rodzaj": "okres_kwoty",
-        "data": "2022-08-17",
-        "opis": "U. z 2022 r. poz. 143, 1137 i 1488), który sprzedawał paliwa stałe dla gospodarstw domowych prowadzonych na terytorium Rzeczypospolitej Polskiej, po cenie nie wyższej niż: 996,60 zł od 2022-08-17 (obowiązuje nadal według danych)",
-        "skutek": null,
-        "dowod": {
-          "eli": "DU/2022/1712",
-          "przepis": "DU/2022/1712 § 2 ust. 05",
-          "cytat": "U. z 2022 r. poz. 143, 1137 i 1488), który sprzedawał paliwa stałe dla gospodarstw domowych prowadzonych na terytorium Rzeczypospolitej Polskiej, po cenie nie wyższej niż 996,60 zł",
-          "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1712",
-          "data_stanu": null
-        },
-        "od": "2022-08-17",
-        "do": null
-      },
-      {
         "rodzaj": "termin_inny",
         "data": "2022-08-11",
         "opis": "Dodatek węglowy przysługuje osobie w gospodarstwie domowym w przypadku, gdy głównym źródłem ogrzewania gospodarstwa domowego jest kocioł na paliwo stałe, kominek, koza, ogrzewacz powietrza, trzon kuchenny, piecokuchnia, kuchnia węglowa lub piec kaflowy na paliwo stałe, zasilane paliwami stałymi, wpisane lub zgłoszone do centralnej ewidencji emisyjności budynków, o której mowa w art. 27a ust. 1 ust",
@@ -18095,12 +16861,7 @@
       "data_stanu": "2024-09-04",
       "tekst": "tekst ujednolicony (informacyjny)"
     },
-    "nieustalone": [
-      {
-        "pole": "ile.podsumowanie",
-        "powod": "Odrzucono kwoty zewnętrzne bez bezpośredniego powiązania cytatu ze świadczeniem: DU/2022/1712: 996,60 zł"
-      }
-    ],
+    "nieustalone": [],
     "flagi": [
       "Kandydat automatyczny. Nie stanowi potwierdzenia prawa do świadczenia."
     ]

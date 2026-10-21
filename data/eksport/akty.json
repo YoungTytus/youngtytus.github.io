@@ -69,6 +69,23 @@
     "pliki": []
   },
   {
+    "eli": "DU/2003/1268",
+    "tytul": "Ustawa z dnia 27 czerwca 2003 r. o rencie socjalnej",
+    "typ": "Ustawa",
+    "data_stanu": "2026-04-17",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2003-1268-dodatek-dopelniajacy",
+      "DU-2003-1268-lokal",
+      "DU-2003-1268-opieka",
+      "DU-2003-1268-renta-socjalna"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
     "eli": "DU/2004/593",
     "tytul": "Ustawa z dnia 12 marca 2004 r. o pomocy społecznej",
     "typ": "Ustawa",
@@ -200,18 +217,6 @@
     "korzysci": [
       "DU-2022-1692-dodatek-weglowy"
     ],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "DU/2022/1712",
-    "tytul": "Akt prawny DU/2022/1712",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/1712",
-    "url_isap": null,
-    "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": []
@@ -414,18 +419,6 @@
     "typ": "Akt prawny",
     "data_stanu": null,
     "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2001/270",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "MP/2001/357",
-    "tytul": "Akt prawny MP/2001/357",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2001/357",
     "url_isap": null,
     "korzysci": [],
     "wykonawcze": [],
@@ -661,18 +654,6 @@
     "pliki": []
   },
   {
-    "eli": "MP/2005/409",
-    "tytul": "Akt prawny MP/2005/409",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2005/409",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
     "eli": "MP/2005/436",
     "tytul": "Akt prawny MP/2005/436",
     "typ": "Akt prawny",
@@ -757,30 +738,6 @@
     "pliki": []
   },
   {
-    "eli": "MP/2007/125",
-    "tytul": "Akt prawny MP/2007/125",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2007/125",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "MP/2007/126",
-    "tytul": "Akt prawny MP/2007/126",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2007/126",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
     "eli": "MP/2007/152",
     "tytul": "Akt prawny MP/2007/152",
     "typ": "Akt prawny",
@@ -829,30 +786,6 @@
     "pliki": []
   },
   {
-    "eli": "MP/2008/140",
-    "tytul": "Akt prawny MP/2008/140",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2008/140",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "MP/2008/142",
-    "tytul": "Akt prawny MP/2008/142",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2008/142",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
     "eli": "MP/2008/193",
     "tytul": "Akt prawny MP/2008/193",
     "typ": "Akt prawny",
@@ -889,18 +822,6 @@
     "pliki": []
   },
   {
-    "eli": "MP/2008/395",
-    "tytul": "Akt prawny MP/2008/395",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2008/395",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
     "eli": "MP/2008/581",
     "tytul": "Akt prawny MP/2008/581",
     "typ": "Akt prawny",
@@ -918,42 +839,6 @@
     "typ": "Akt prawny",
     "data_stanu": null,
     "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2008/797",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "MP/2009/112",
-    "tytul": "Akt prawny MP/2009/112",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2009/112",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "MP/2009/113",
-    "tytul": "Akt prawny MP/2009/113",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2009/113",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "MP/2009/114",
-    "tytul": "Akt prawny MP/2009/114",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2009/114",
     "url_isap": null,
     "korzysci": [],
     "wykonawcze": [],
@@ -985,47 +870,11 @@
     "pliki": []
   },
   {
-    "eli": "MP/2009/447",
-    "tytul": "Akt prawny MP/2009/447",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2009/447",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
     "eli": "MP/2009/497",
     "tytul": "Akt prawny MP/2009/497",
     "typ": "Akt prawny",
     "data_stanu": null,
     "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2009/497",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "MP/2009/498",
-    "tytul": "Akt prawny MP/2009/498",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2009/498",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "MP/2009/747",
-    "tytul": "Akt prawny MP/2009/747",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2009/747",
     "url_isap": null,
     "korzysci": [],
     "wykonawcze": [],
@@ -1285,6 +1134,18 @@
     "pliki": []
   },
   {
+    "eli": "MP/2025/133",
+    "tytul": "Akt prawny MP/2025/133",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2025/133",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
     "eli": "MP/2025/152",
     "tytul": "Akt prawny MP/2025/152",
     "typ": "Akt prawny",
@@ -1302,6 +1163,18 @@
     "typ": "Akt prawny",
     "data_stanu": null,
     "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/150",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "MP/2026/153",
+    "tytul": "Akt prawny MP/2026/153",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/153",
     "url_isap": null,
     "korzysci": [],
     "wykonawcze": [],

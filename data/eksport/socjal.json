@@ -2897,6 +2897,251 @@
         }
       ]
     },
+    "DU-2003-1268-renta-socjalna": {
+      "pochodzenie": "automat",
+      "zrodlo_id": "DU-2003-1268-renta-socjalna",
+      "rodzaj_zrodlowy": "swiadczenie_okresowe",
+      "status_zrodlowy": "kandydat_automatyczny",
+      "artykuly": [
+        "DU-2003-1268-art-1",
+        "DU-2003-1268-art-10",
+        "DU-2003-1268-art-11",
+        "DU-2003-1268-art-12",
+        "DU-2003-1268-art-12a",
+        "DU-2003-1268-art-12b",
+        "DU-2003-1268-art-12c",
+        "DU-2003-1268-art-12d",
+        "DU-2003-1268-art-13",
+        "DU-2003-1268-art-14",
+        "DU-2003-1268-art-16",
+        "DU-2003-1268-art-2",
+        "DU-2003-1268-art-4",
+        "DU-2003-1268-art-5",
+        "DU-2003-1268-art-6",
+        "DU-2003-1268-art-6a",
+        "DU-2003-1268-art-6c",
+        "DU-2003-1268-art-7",
+        "DU-2003-1268-art-8",
+        "DU-2003-1268-art-9"
+      ],
+      "jednostki": [
+        "DU/2003/1268#arti_10-pass_1@obowiazujace",
+        "DU/2003/1268#arti_10-pass_7@obowiazujace",
+        "DU/2003/1268#arti_10-pass_8@obowiazujace",
+        "DU/2003/1268#arti_11-pass_1@obowiazujace",
+        "DU/2003/1268#arti_11-pass_2@obowiazujace",
+        "DU/2003/1268#arti_11-pass_3@obowiazujace",
+        "DU/2003/1268#arti_12-pass_1@obowiazujace",
+        "DU/2003/1268#arti_12-pass_2@obowiazujace",
+        "DU/2003/1268#arti_12-pass_3@obowiazujace",
+        "DU/2003/1268#arti_12-pass_4@obowiazujace",
+        "DU/2003/1268#arti_12-pass_5@obowiazujace",
+        "DU/2003/1268#arti_12-pass_6@obowiazujace",
+        "DU/2003/1268#arti_12a-pass_1@obowiazujace",
+        "DU/2003/1268#arti_12b-pass_1@obowiazujace",
+        "DU/2003/1268#arti_12b-pass_2@obowiazujace",
+        "DU/2003/1268#arti_12b-pass_3@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_1-pint_1@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_1-pint_2@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_1@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_2-pint_1@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_2-pint_2@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_2@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_3@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_4@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_5@obowiazujace",
+        "DU/2003/1268#arti_12d-pass_1@obowiazujace",
+        "DU/2003/1268#arti_12d-pass_3@obowiazujace",
+        "DU/2003/1268#arti_12d-pass_4@obowiazujace",
+        "DU/2003/1268#arti_13-pass_1@obowiazujace",
+        "DU/2003/1268#arti_14-pass_1@obowiazujace",
+        "DU/2003/1268#arti_14-pass_2@obowiazujace",
+        "DU/2003/1268#arti_14-pass_3@obowiazujace",
+        "DU/2003/1268#arti_16@obowiazujace",
+        "DU/2003/1268#arti_1@obowiazujace",
+        "DU/2003/1268#arti_2-pint_1@obowiazujace",
+        "DU/2003/1268#arti_2-pint_2@obowiazujace",
+        "DU/2003/1268#arti_2-pint_3@obowiazujace",
+        "DU/2003/1268#arti_2-pint_4@obowiazujace",
+        "DU/2003/1268#arti_2@obowiazujace",
+        "DU/2003/1268#arti_4-pass_1-pint_1@obowiazujace",
+        "DU/2003/1268#arti_4-pass_1-pint_2@obowiazujace",
+        "DU/2003/1268#arti_4-pass_1-pint_3@obowiazujace",
+        "DU/2003/1268#arti_4-pass_1@obowiazujace",
+        "DU/2003/1268#arti_4-pass_2-pint_1@obowiazujace",
+        "DU/2003/1268#arti_4-pass_2-pint_2@obowiazujace",
+        "DU/2003/1268#arti_4-pass_2@obowiazujace",
+        "DU/2003/1268#arti_4-pass_3@obowiazujace",
+        "DU/2003/1268#arti_5-pass_2@dotychczasowe",
+        "DU/2003/1268#arti_6-pass_1@obowiazujace",
+        "DU/2003/1268#arti_6-pass_2@obowiazujace",
+        "DU/2003/1268#arti_6-pass_3@obowiazujace",
+        "DU/2003/1268#arti_6a-pass_1@obowiazujace",
+        "DU/2003/1268#arti_6a-pass_4@obowiazujace",
+        "DU/2003/1268#arti_6a-pass_9@obowiazujace",
+        "DU/2003/1268#arti_6c-pass_1@obowiazujace",
+        "DU/2003/1268#arti_7-pass_1@obowiazujace",
+        "DU/2003/1268#arti_7-pass_2@obowiazujace",
+        "DU/2003/1268#arti_8-pass_1@obowiazujace",
+        "DU/2003/1268#arti_8-pass_2@obowiazujace",
+        "DU/2003/1268#arti_8-pass_3@obowiazujace",
+        "DU/2003/1268#arti_9-pass_1@obowiazujace",
+        "DU/2003/1268#arti_9-pass_2@obowiazujace",
+        "DU/2003/1268#arti_9-pass_3@obowiazujace",
+        "DU/2003/1268#arti_9-pass_4@obowiazujace"
+      ],
+      "historia_parametr": null,
+      "sporne": [],
+      "nieustalone_zrodla": [
+        {
+          "pole": "ile.wartosc_reguly",
+          "powod": "podstawa reguły procentowej nie została rozwiązana do kwoty z dowodem"
+        },
+        {
+          "pole": "komu.opis",
+          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
+        }
+      ],
+      "plik_notatki": "Swiadczenia/RS/Renta socjalna (RS).md",
+      "opis_kwoty_z_notatki": null
+    },
+    "DU-2003-1268-dodatek-dopelniajacy": {
+      "pochodzenie": "automat",
+      "zrodlo_id": "DU-2003-1268-dodatek-dopelniajacy",
+      "rodzaj_zrodlowy": "swiadczenie_okresowe",
+      "status_zrodlowy": "kandydat_automatyczny",
+      "artykuly": [
+        "DU-2003-1268-art-1",
+        "DU-2003-1268-art-10",
+        "DU-2003-1268-art-12",
+        "DU-2003-1268-art-12b",
+        "DU-2003-1268-art-12c",
+        "DU-2003-1268-art-13",
+        "DU-2003-1268-art-14",
+        "DU-2003-1268-art-16",
+        "DU-2003-1268-art-5",
+        "DU-2003-1268-art-6a",
+        "DU-2003-1268-art-6b",
+        "DU-2003-1268-art-6c",
+        "DU-2003-1268-art-8",
+        "DU-2003-1268-art-9"
+      ],
+      "jednostki": [
+        "DU/2003/1268#arti_10-pass_1@obowiazujace",
+        "DU/2003/1268#arti_12-pass_3a@obowiazujace",
+        "DU/2003/1268#arti_12-pass_4@obowiazujace",
+        "DU/2003/1268#arti_12-pass_5@obowiazujace",
+        "DU/2003/1268#arti_12-pass_6@obowiazujace",
+        "DU/2003/1268#arti_12b-pass_1@obowiazujace",
+        "DU/2003/1268#arti_12b-pass_2@obowiazujace",
+        "DU/2003/1268#arti_12b-pass_3@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_1-pint_1@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_1-pint_2@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_1@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_2-pint_1@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_2-pint_2@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_2@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_3@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_4@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_5@obowiazujace",
+        "DU/2003/1268#arti_13-pass_1@obowiazujace",
+        "DU/2003/1268#arti_14-pass_1@obowiazujace",
+        "DU/2003/1268#arti_14-pass_2a@obowiazujace",
+        "DU/2003/1268#arti_14-pass_3@obowiazujace",
+        "DU/2003/1268#arti_16@obowiazujace",
+        "DU/2003/1268#arti_1@obowiazujace",
+        "DU/2003/1268#arti_5-pass_2@dotychczasowe",
+        "DU/2003/1268#arti_6a-pass_1@obowiazujace",
+        "DU/2003/1268#arti_6a-pass_2@obowiazujace",
+        "DU/2003/1268#arti_6a-pass_3@obowiazujace",
+        "DU/2003/1268#arti_6a-pass_4@obowiazujace",
+        "DU/2003/1268#arti_6a-pass_5@obowiazujace",
+        "DU/2003/1268#arti_6a-pass_6@obowiazujace",
+        "DU/2003/1268#arti_6a-pass_8@obowiazujace",
+        "DU/2003/1268#arti_6a-pass_9@obowiazujace",
+        "DU/2003/1268#arti_6b-pass_1-pint_1-lett_a@obowiazujace",
+        "DU/2003/1268#arti_6b-pass_1-pint_1-lett_b@obowiazujace",
+        "DU/2003/1268#arti_6b-pass_1-pint_1-lett_c@obowiazujace",
+        "DU/2003/1268#arti_6b-pass_1-pint_1-lett_d@obowiazujace",
+        "DU/2003/1268#arti_6b-pass_1-pint_1-lett_e@obowiazujace",
+        "DU/2003/1268#arti_6b-pass_1-pint_1-lett_f@obowiazujace",
+        "DU/2003/1268#arti_6b-pass_1-pint_1@obowiazujace",
+        "DU/2003/1268#arti_6b-pass_1-pint_2@obowiazujace",
+        "DU/2003/1268#arti_6b-pass_1@obowiazujace",
+        "DU/2003/1268#arti_6c-pass_1@obowiazujace",
+        "DU/2003/1268#arti_8-pass_1@obowiazujace",
+        "DU/2003/1268#arti_8-pass_3@obowiazujace",
+        "DU/2003/1268#arti_9-pass_4@obowiazujace"
+      ],
+      "historia_parametr": null,
+      "sporne": [],
+      "nieustalone_zrodla": [
+        {
+          "pole": "komu.opis",
+          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
+        }
+      ],
+      "plik_notatki": "Swiadczenia/RS/Dodatek dopełniający (RS).md",
+      "opis_kwoty_z_notatki": null
+    },
+    "DU-2003-1268-lokal": {
+      "pochodzenie": "automat",
+      "zrodlo_id": "DU-2003-1268-lokal",
+      "rodzaj_zrodlowy": "swiadczenie_rzeczowe",
+      "status_zrodlowy": "kandydat_automatyczny",
+      "artykuly": [
+        "DU-2003-1268-art-8"
+      ],
+      "jednostki": [
+        "DU/2003/1268#arti_8-pass_3@obowiazujace",
+        "DU/2003/1268#arti_8-pass_4@obowiazujace"
+      ],
+      "historia_parametr": null,
+      "sporne": [],
+      "nieustalone_zrodla": [
+        {
+          "pole": "ile.wartosc_reguly",
+          "powod": "podstawa reguły procentowej nie została rozwiązana do kwoty z dowodem"
+        },
+        {
+          "pole": "komu.opis",
+          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
+        }
+      ],
+      "plik_notatki": "Swiadczenia/RS/Lokal (RS).md",
+      "opis_kwoty_z_notatki": null
+    },
+    "DU-2003-1268-opieka": {
+      "pochodzenie": "automat",
+      "zrodlo_id": "DU-2003-1268-opieka",
+      "rodzaj_zrodlowy": "swiadczenie_rzeczowe",
+      "status_zrodlowy": "kandydat_automatyczny",
+      "artykuly": [
+        "DU-2003-1268-art-12b",
+        "DU-2003-1268-art-12c"
+      ],
+      "jednostki": [
+        "DU/2003/1268#arti_12b-pass_1@obowiazujace",
+        "DU/2003/1268#arti_12b-pass_2@obowiazujace",
+        "DU/2003/1268#arti_12b-pass_3@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_4@obowiazujace",
+        "DU/2003/1268#arti_12c-pass_5@obowiazujace"
+      ],
+      "historia_parametr": null,
+      "sporne": [],
+      "nieustalone_zrodla": [
+        {
+          "pole": "ile",
+          "powod": "w jednostkach wymieniających korzyść nie znaleziono kwoty ani reguły procentowej"
+        },
+        {
+          "pole": "komu.opis",
+          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
+        }
+      ],
+      "plik_notatki": "Swiadczenia/RS/Opieka (RS).md",
+      "opis_kwoty_z_notatki": null
+    },
     "DU-2004-593-schronienie": {
       "pochodzenie": "automat",
       "zrodlo_id": "DU-2004-593-schronienie",
@@ -20899,6 +21144,1710 @@
       "powiazane_akty": [],
       "korzysci": [
         "FUS-zasilek-pogrzebowy"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-1",
+      "eli": "DU/2003/1268",
+      "artykul": "1",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_1@obowiazujace",
+          "przepis": "art. 1",
+          "tekst": "Ustawa określa zasady i tryb przyznawania oraz wypłaty renty socjalnej oraz dodatku dopełniającego.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": null,
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-10",
+      "eli": "DU/2003/1268",
+      "artykul": "10",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_10-pass_1@obowiazujace",
+          "przepis": "art. 10 ust. 1",
+          "tekst": "Prawo do renty socjalnej oraz dodatku dopełniającego ulega zawieszeniu lub świadczenia te ulegają zmniejszeniu w razie osiągania przychodu z tytułu działalności podlegającej obowiązkowi ubezpieczenia społecznego, na zasadach określonych w art. 104 ustawy o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych.",
+          "role": [
+            "odeslanie_zewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_2@obowiazujace",
+          "przepis": "art. 10 ust. 2",
+          "tekst": "(uchylony)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_3@obowiazujace",
+          "przepis": "art. 10 ust. 3",
+          "tekst": "(uchylony)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_4@obowiazujace",
+          "przepis": "art. 10 ust. 4",
+          "tekst": "(uchylony)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_5@obowiazujace",
+          "przepis": "art. 10 ust. 5",
+          "tekst": "(uchylony)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_5a@obowiazujace",
+          "przepis": "art. 10 ust. 5a",
+          "tekst": "(uchylony)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_5b@obowiazujace",
+          "przepis": "art. 10 ust. 5b",
+          "tekst": "(uchylony)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_6@obowiazujace",
+          "przepis": "art. 10 ust. 6",
+          "tekst": "(uchylony)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_7@obowiazujace",
+          "przepis": "art. 10 ust. 7",
+          "tekst": "Osoba pobierająca rentę socjalną lub jej przedstawiciel ustawowy są obowiązani niezwłocznie powiadomić organ wypłacający rentę socjalną o okolicznościach powodujących zawieszenie prawa do tego świadczenia albo zmniejszenie jego wysokości. Powiadomienie następuje w formie pisemnego oświadczenia. W przypadku gdy składki na ubezpieczenia społeczne są odprowadzane przez płatnika składek, osoba pobierająca rentę socjalną jest obowiązana do przedstawienia zaświadczenia albo oświadczenia określającego kwotę przychodu.",
+          "role": [
+            "warunek"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_7a@obowiazujace",
+          "przepis": "art. 10 ust. 7a",
+          "tekst": "Oświadczenia, o których mowa w ust. 7, składa się pod rygorem odpowiedzialności karnej za składanie fałszywych zeznań. Składający oświadczenie jest obowiązany do zawarcia w nim klauzuli następującej treści: „Jestem świadomy odpowiedzialności karnej za złożenie fałszywego oświadczenia.”. Klauzula ta zastępuje pouczenie organu o odpowiedzialności karnej za składanie fałszywych zeznań.",
+          "role": [
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_8@obowiazujace",
+          "przepis": "art. 10 ust. 8",
+          "tekst": "Organ wypłacający rentę socjalną może wystąpić do urzędu skarbowego o przekazanie informacji o wysokości przychodów objętych podatkiem dochodowym od osób fizycznych lub zryczałtowanym podatkiem dochodowym od niektórych przychodów osiąganych przez osoby fizyczne lub informacji o opodatkowaniu działalności na zasadzie karty podatkowej w celu dokonania weryfikacji oświadczenia złożonego przez osobę pobierającą rentę.",
+          "role": [
+            "waloryzacja"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_10-pass_9@obowiazujace",
+          "przepis": "art. 10 ust. 9",
+          "tekst": "(uchylony)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": "DU/2003/1268#arti_10@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-11",
+      "eli": "DU/2003/1268",
+      "artykul": "11",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_11-pass_1@obowiazujace",
+          "przepis": "art. 11 ust. 1",
+          "tekst": "Postępowanie w sprawie przyznania renty socjalnej wszczyna się na podstawie wniosku osoby ubiegającej się o rentę socjalną lub jej przedstawiciela ustawowego.",
+          "role": [
+            "procedura"
+          ],
+          "rodzic": "DU/2003/1268#arti_11@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_11-pass_2@obowiazujace",
+          "przepis": "art. 11 ust. 2",
+          "tekst": "Postępowanie w sprawie przyznania renty socjalnej wszczyna się również na wniosek innej osoby albo kierownika ośrodka pomocy społecznej, a w przypadku przekształcenia ośrodka pomocy społecznej w centrum usług społecznych na podstawie przepisów ustawy z dnia 19 lipca 2019 r. o realizowaniu usług społecznych przez centrum usług społecznych – dyrektora centrum usług społecznych, działających za zgodą osób, o których mowa w ust. 1.",
+          "role": [
+            "procedura",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_11@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_11-pass_3@obowiazujace",
+          "przepis": "art. 11 ust. 3",
+          "tekst": "Minister właściwy do spraw zabezpieczenia społecznego określi, w drodze rozporządzenia, wzór wniosku o przyznanie renty socjalnej, uwzględniając instrukcję jego wypełnienia, wykaz dokumentów, które należy dołączyć do wniosku, szczegółowy tryb postępowania w sprawach o przyznanie renty socjalnej, tryb powiadamiania Zakładu oraz organów emerytalno-rentowych o tymczasowym aresztowaniu i odbywaniu kary pozbawienia wolności, wykaz dokumentów potwierdzających prawo do 50 % kwoty renty socjalnej, uwzględniając współdziałanie osoby aresztowanej lub odbywającej karę pozbawienia wolności z dyrektorem aresztu śledczego lub zakładu karnego.",
+          "role": [
+            "regula_procentowa",
+            "delegacja",
+            "procedura"
+          ],
+          "rodzic": "DU/2003/1268#arti_11@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-12",
+      "eli": "DU/2003/1268",
+      "artykul": "12",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_12-pass_1@obowiazujace",
+          "przepis": "art. 12 ust. 1",
+          "tekst": "Decyzję w sprawie przyznania renty socjalnej wydaje i świadczenie to wypłaca jednostka organizacyjna Zakładu właściwa ze względu na miejsce zamieszkania lub pobytu osoby ubiegającej się o rentę socjalną.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_12@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12-pass_2@obowiazujace",
+          "przepis": "art. 12 ust. 2",
+          "tekst": "W przypadku gdy rentę rodzinną wypłaca jednostka organizacyjna Zakładu wskazana przez Prezesa Zakładu, rentę socjalną przyznaje i wypłaca ta jednostka.",
+          "role": [
+            "warunek",
+            "procedura"
+          ],
+          "rodzic": "DU/2003/1268#arti_12@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12-pass_3@obowiazujace",
+          "przepis": "art. 12 ust. 3",
+          "tekst": "W przypadku gdy uprawnienia do renty rodzinnej lub świadczenia pieniężnego, o którym mowa w art. 9 ust. 1, zostały ustalone przez organ emerytalnorentowy, organ ten ustala, w drodze decyzji, wysokość renty socjalnej, wypłaca tę rentę, a w przypadku określonym w art. 9 ust. 2 odmawia wypłaty renty socjalnej lub wstrzymuje wypłatę tej renty.",
+          "role": [
+            "warunek",
+            "procedura",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12-pass_3a@obowiazujace",
+          "przepis": "art. 12 ust. 3a",
+          "tekst": "Przepisy ust. 1–3 stosuje się odpowiednio do przyznania i wypłaty dodatku dopełniającego.",
+          "role": [
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12-pass_4@obowiazujace",
+          "przepis": "art. 12 ust. 4",
+          "tekst": "Organ emerytalno-rentowy wypłacający rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wydaje decyzję o wstrzymaniu wypłaty renty socjalnej lub renty socjalnej z dodatkiem dopełniającym lub dodatku dopełniającego w razie wystąpienia okoliczności powodujących zawieszenie prawa do renty socjalnej lub renty socjalnej z dodatkiem dopełniającym lub wstrzymanie wypłaty renty socjalnej lub renty socjalnej z dodatkiem dopełniającym lub dodatku dopełniającego.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_12@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12-pass_5@obowiazujace",
+          "przepis": "art. 12 ust. 5",
+          "tekst": "W przypadku gdy organ emerytalno-rentowy ustali prawo do renty rodzinnej lub świadczenia pieniężnego, o którym mowa w art. 9 ust. 1, jest obowiązany do powiadomienia Zakładu o przyznaniu tej renty lub tego świadczenia osobom pobierającym rentę socjalną lub rentę socjalną z dodatkiem dopełniającym.",
+          "role": [
+            "warunek",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12-pass_6@obowiazujace",
+          "przepis": "art. 12 ust. 6",
+          "tekst": "Od decyzji w sprawie renty socjalnej lub renty socjalnej z dodatkiem dopełniającym lub dodatku dopełniającego wydanej przez jednostkę organizacyjną Zakładu lub przez organ emerytalno-rentowy osobie ubiegającej się o rentę socjalną lub o rentę socjalną z dodatkiem dopełniającym lub o dodatek dopełniający przysługują środki odwoławcze przewidziane dla decyzji w sprawach emerytur i rent w ustawie z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych.",
+          "role": [
+            "przyznanie_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_12@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [
+        "DU-2003-1268-art-9"
+      ],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-12a",
+      "eli": "DU/2003/1268",
+      "artykul": "12a",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_12a-pass_1@obowiazujace",
+          "przepis": "art. 12a ust. 1",
+          "tekst": "W razie śmierci osoby pobierającej rentę socjalną przysługuje zasiłek pogrzebowy, na zasadach i w wysokości określonych w przepisach o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych, o ile zasiłek pogrzebowy lub świadczenie w wysokości zasiłku pogrzebowego nie przysługuje z innego tytułu.",
+          "role": [
+            "przyznanie_korzysci",
+            "wylaczenie_lub_przedmiot_niematerialny",
+            "warunek"
+          ],
+          "rodzic": "DU/2003/1268#arti_12a@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12a-pass_2@obowiazujace",
+          "przepis": "art. 12a ust. 2",
+          "tekst": "Decyzję w sprawie przyznania zasiłku pogrzebowego wydaje oraz zasiłek wypłaca jednostka organizacyjna Zakładu albo Kasa Rolniczego Ubezpieczenia Społecznego.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_12a@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-12b",
+      "eli": "DU/2003/1268",
+      "artykul": "12b",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_12b-pass_1@obowiazujace",
+          "przepis": "art. 12b ust. 1",
+          "tekst": "Jeżeli dla osoby uprawnionej do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym ustanowiono opiekę prawną, świadczenie to wypłaca się osobie sprawującej tę opiekę.",
+          "role": [
+            "przyznanie_korzysci",
+            "warunek"
+          ],
+          "rodzic": "DU/2003/1268#arti_12b@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12b-pass_2@obowiazujace",
+          "przepis": "art. 12b ust. 2",
+          "tekst": "Jeżeli do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym uprawniona jest osoba, która wymaga opieki innej osoby oraz nad którą nie została ustanowiona opieka prawna, w przypadku gdy osoba uprawniona do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym nie może odebrać jej samodzielnie, świadczenia są wypłacane osobie sprawującej nad nią opiekę faktyczną, na podstawie oświadczenia o sprawowaniu tej opieki. Sprawowanie opieki faktycznej nad osobą uprawnioną do renty socjalnej potwierdza wójt (burmistrz, prezydent miasta) właściwy ze względu na miejsce zamieszkania lub pobytu osoby uprawnionej.",
+          "role": [
+            "warunek"
+          ],
+          "rodzic": "DU/2003/1268#arti_12b@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12b-pass_3@obowiazujace",
+          "przepis": "art. 12b ust. 3",
+          "tekst": "Rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wypłaca się osobom sprawującym opiekę prawną lub opiekę faktyczną nad osobami uprawnionymi do renty socjalnej lub do renty socjalnej z dodatkiem dopełniającym, po uprzednim pouczeniu o konieczności poinformowania organu rentowego o zajściu okoliczności powodujących ustanie lub zawieszenie prawa do świadczeń albo wstrzymanie wypłaty świadczeń w całości lub w części oraz o obowiązku zwrotu świadczenia przez te osoby w przypadku, gdy zostało pobrane nienależnie.",
+          "role": [
+            "przyznanie_korzysci",
+            "warunek"
+          ],
+          "rodzic": "DU/2003/1268#arti_12b@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-opieka",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-12c",
+      "eli": "DU/2003/1268",
+      "artykul": "12c",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_12c-pass_1@obowiazujace",
+          "przepis": "art. 12c ust. 1",
+          "tekst": "Rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wypłaca się osobie uprawnionej:",
+          "role": [
+            "przyznanie_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_12c@obowiazujace",
+          "dzieci": [
+            "DU/2003/1268#arti_12c-pass_1-pint_1@obowiazujace",
+            "DU/2003/1268#arti_12c-pass_1-pint_2@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_12c-pass_1-pint_1@obowiazujace",
+          "przepis": "art. 12c ust. 1 pkt 1",
+          "tekst": "w formie bezgotówkowej na wskazany przez nią jej rachunek płatniczy prowadzony w kraju lub wydany w kraju jej instrument płatniczy w rozumieniu ustawy z dnia 19 sierpnia 2011 r. o usługach płatniczych (Dz. U. z 2025 r. poz. 611 i 1069) albo",
+          "role": [
+            "odeslanie_zewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12c-pass_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12c-pass_1-pint_2@obowiazujace",
+          "przepis": "art. 12c ust. 1 pkt 2",
+          "tekst": "za pośrednictwem podmiotów prowadzących działalność w zakresie doręczania świadczeń.",
+          "role": [],
+          "rodzic": "DU/2003/1268#arti_12c-pass_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12c-pass_2@obowiazujace",
+          "przepis": "art. 12c ust. 2",
+          "tekst": "Osobie odbywającej karę pozbawienia wolności, karę aresztu wojskowego albo karę aresztu za wykroczenie oraz osobie tymczasowo aresztowanej rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wypłaca się:",
+          "role": [
+            "wylaczenie_lub_przedmiot_niematerialny"
+          ],
+          "rodzic": "DU/2003/1268#arti_12c@obowiazujace",
+          "dzieci": [
+            "DU/2003/1268#arti_12c-pass_2-pint_1@obowiazujace",
+            "DU/2003/1268#arti_12c-pass_2-pint_2@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_12c-pass_2-pint_1@obowiazujace",
+          "przepis": "art. 12c ust. 2 pkt 1",
+          "tekst": "w formie bezgotówkowej na wskazany przez nią jej rachunek płatniczy prowadzony w kraju lub wydany w kraju jej instrument płatniczy w rozumieniu ustawy z dnia 19 sierpnia 2011 r. o usługach płatniczych albo",
+          "role": [],
+          "rodzic": "DU/2003/1268#arti_12c-pass_2@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12c-pass_2-pint_2@obowiazujace",
+          "przepis": "art. 12c ust. 2 pkt 2",
+          "tekst": "na jej wniosek za pośrednictwem podmiotów prowadzących działalność w zakresie doręczania świadczeń pod adresem zakładu karnego lub aresztu.",
+          "role": [
+            "procedura"
+          ],
+          "rodzic": "DU/2003/1268#arti_12c-pass_2@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12c-pass_3@obowiazujace",
+          "przepis": "art. 12c ust. 3",
+          "tekst": "W przypadku gdy rentę socjalną lub rentę socjalną z dodatkiem dopełniającym wypłaca organ emerytalno-rentowy, wypłata następuje w tej samej formie, w której następuje wypłata renty rodzinnej lub świadczenia pieniężnego, o których mowa w art. 9 ust. 1, wypłacanych w zbiegu z rentą socjalną lub rentą socjalną z dodatkiem dopełniającym.",
+          "role": [
+            "warunek",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12c@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12c-pass_4@obowiazujace",
+          "przepis": "art. 12c ust. 4",
+          "tekst": "Przepis ust. 1 stosuje się odpowiednio do osób sprawujących opiekę prawną nad osobami uprawnionymi do renty socjalnej lub renty socjalnej z dodatkiem dopełniającym.",
+          "role": [
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12c@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12c-pass_5@obowiazujace",
+          "przepis": "art. 12c ust. 5",
+          "tekst": "Przepisu ust. 1 nie stosuje się w przypadku, gdy osoba sprawująca opiekę prawną nad osobą uprawnioną do renty socjalnej lub renty socjalnej z dodatkiem dopełniającym odbywa karę pozbawienia wolności, karę aresztu wojskowego albo karę aresztu za wykroczenie lub jest tymczasowo aresztowana.",
+          "role": [
+            "warunek",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12c@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [
+        "DU-2003-1268-art-9"
+      ],
+      "powiazane_akty": [
+        {
+          "eli": "DU/2025/611",
+          "akt_tytul": "ustawy z dnia 19 sierpnia 2011 r. o usługach płatniczych",
+          "cytat": "(Dz. U. z 2025 r. poz. 611 i 1069)",
+          "z_pozn_zm": false
+        }
+      ],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-opieka",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-12d",
+      "eli": "DU/2003/1268",
+      "artykul": "12d",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_12d-pass_1@obowiazujace",
+          "przepis": "art. 12d ust. 1",
+          "tekst": "Osoba uprawniona do renty z tytułu niezdolności do pracy na podstawie art. 63 ust. 1 ustawy z dnia 14 grudnia 1982 r. o zaopatrzeniu emerytalnym pracowników i ich rodzin (Dz. U. poz. 267, z późn. zm.) albo jej przedstawiciel ustawowy mogą złożyć do Zakładu wniosek o wydanie decyzji o zamianie tej renty na rentę socjalną.",
+          "role": [
+            "procedura",
+            "odeslanie_zewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12d@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12d-pass_2@obowiazujace",
+          "przepis": "art. 12d ust. 2",
+          "tekst": "Do wniosku, o którym mowa w ust. 1, dołącza się orzeczenie uprawniające do renty z tytułu niezdolności do pracy na podstawie art. 63 ust. 1 ustawy z dnia 14 grudnia 1982 r. o zaopatrzeniu emerytalnym pracowników i ich rodzin.",
+          "role": [
+            "procedura",
+            "odeslanie_zewnetrzne",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12d@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12d-pass_3@obowiazujace",
+          "przepis": "art. 12d ust. 3",
+          "tekst": "W przypadku, o którym mowa w ust. 1, całkowitą niezdolność do pracy osoby ubiegającej się o rentę socjalną ustala się na podstawie orzeczenia wymienionego w ust. 2.",
+          "role": [
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12d@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_12d-pass_4@obowiazujace",
+          "przepis": "art. 12d ust. 4",
+          "tekst": "Z dniem przyznania na podstawie ust. 1 prawa do renty socjalnej ustaje prawo do renty z tytułu niezdolności do pracy na podstawie art. 63 ust. 1 ustawy z dnia 14 grudnia 1982 r. o zaopatrzeniu emerytalnym pracowników i ich rodzin.",
+          "role": [
+            "odeslanie_zewnetrzne",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_12d@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [
+        {
+          "eli": "DU/2003/267",
+          "akt_tytul": "ustawy z dnia 14 grudnia 1982 r. o zaopatrzeniu emerytalnym pracowników i ich rodzin",
+          "cytat": "(Dz. U. poz. 267, z późn. zm.)",
+          "z_pozn_zm": true
+        }
+      ],
+      "korzysci": [
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-13",
+      "eli": "DU/2003/1268",
+      "artykul": "13",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_13-pass_1@obowiazujace",
+          "przepis": "art. 13 ust. 1",
+          "tekst": "Zakład jest uprawniony do przetwarzania danych osobowych w zakresie niezbędnym do przyznawania i wypłacania renty socjalnej, dodatku dopełniającego oraz zasiłku pogrzebowego, zapewniając rzetelność tych danych.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_13@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_13-pass_2@obowiazujace",
+          "przepis": "art. 13 ust. 2",
+          "tekst": "(uchylony)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": "DU/2003/1268#arti_13@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_13-pass_3@obowiazujace",
+          "przepis": "art. 13 ust. 3",
+          "tekst": "Przepis ust. 1 stosuje się odpowiednio do organu emerytalno-rentowego.",
+          "role": [
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_13@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-14",
+      "eli": "DU/2003/1268",
+      "artykul": "14",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_14-pass_1@obowiazujace",
+          "przepis": "art. 14 ust. 1",
+          "tekst": "Renta socjalna, odsetki za opóźnienia w wypłacie renty socjalnej, dodatek dopełniający, zasiłek pogrzebowy oraz koszty ich obsługi wypłacane przez Zakład i Kasę Rolniczego Ubezpieczenia Społecznego są finansowane ze środków Funduszu Solidarnościowego, o którym mowa w przepisach ustawy z dnia 23 października 2018 r. o Funduszu Solidarnościowym (Dz. U. z 2024 r. poz. 1848).",
+          "role": [
+            "odeslanie_zewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_14@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_14-pass_2@obowiazujace",
+          "przepis": "art. 14 ust. 2",
+          "tekst": "Koszty obsługi, o których mowa w ust. 1, wynoszą łącznie 2,5 % kwoty przeznaczonej na wypłatę renty socjalnej i zasiłku pogrzebowego.",
+          "role": [
+            "regula_procentowa",
+            "administracja_finansowanie",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_14@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_14-pass_2a@obowiazujace",
+          "przepis": "art. 14 ust. 2a",
+          "tekst": "Koszty obsługi wypłaty dodatku dopełniającego wynoszą 0,5 % kwoty przeznaczonej na jego wypłatę.",
+          "role": [
+            "regula_procentowa",
+            "administracja_finansowanie"
+          ],
+          "rodzic": "DU/2003/1268#arti_14@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_14-pass_3@obowiazujace",
+          "przepis": "art. 14 ust. 3",
+          "tekst": "Renta socjalna, dodatek dopełniający, zasiłek pogrzebowy oraz koszty ich obsługi wypłacane przez organy emerytalno-rentowe, z wyłączeniem Kasy Rolniczego Ubezpieczenia Społecznego, są finansowane ze środków budżetu państwa.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_14@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [
+        {
+          "eli": "DU/2024/1848",
+          "akt_tytul": "ustawy z dnia 23 października 2018 r. o Funduszu Solidarnościowym",
+          "cytat": "(Dz. U. z 2024 r. poz. 1848)",
+          "z_pozn_zm": false
+        }
+      ],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-15",
+      "eli": "DU/2003/1268",
+      "artykul": "15",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_15@obowiazujace",
+          "przepis": "art. 15",
+          "tekst": "W sprawach nieuregulowanych w ustawie stosuje się odpowiednio:",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": null,
+          "dzieci": [
+            "DU/2003/1268#arti_15-pint_1@obowiazujace",
+            "DU/2003/1268#arti_15-pint_2@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_15-pint_1@obowiazujace",
+          "przepis": "art. 15 pkt 1",
+          "tekst": "art. 12–14, art. 61, art. 78–81, art. 93 ust. 2, art. 98, art. 100 ust. 1 i 2, art. 101, art. 102 ust. 1, art. 104 ust. 4, art. 107, art. 114, art. 116 ust. 1b i 2, art. 118 ust. 1–5, art. 119 ust. 1, art. 121, art. 122 ust. 1, art. 126, art. 128, art. 129 ust. 1, art. 130 ust. 1, art. 133–135, art. 136a i art. 138–144 ustawy o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych oraz przepisy wydane na podstawie art. 128a tej ustawy;",
+          "role": [
+            "odeslanie_zewnetrzne",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_15@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_15-pint_2@obowiazujace",
+          "przepis": "art. 15 pkt 2",
+          "tekst": "art. 80–82, art. 84 ust. 1, 1a, 4, 4a, 6–8e i 11 oraz art. 85 ustawy o systemie ubezpieczeń społecznych.",
+          "role": [
+            "odeslanie_zewnetrzne",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_15@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [
+        "DU-2003-1268-art-12"
+      ],
+      "powiazane_akty": [],
+      "korzysci": []
+    },
+    {
+      "id": "DU-2003-1268-art-16",
+      "eli": "DU/2003/1268",
+      "artykul": "16",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_16@obowiazujace",
+          "przepis": "art. 16",
+          "tekst": "W postępowaniu w sprawach o rentę socjalną oraz dodatek dopełniający stosuje się przepisy Kodeksu postępowania administracyjnego, chyba że niniejsza ustawa stanowi inaczej.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": null,
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-17",
+      "eli": "DU/2003/1268",
+      "artykul": "17",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_17–25@obowiazujace",
+          "przepis": "art. 17–25",
+          "tekst": "(pominięte)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": null,
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": []
+    },
+    {
+      "id": "DU-2003-1268-art-2",
+      "eli": "DU/2003/1268",
+      "artykul": "2",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_2@obowiazujace",
+          "przepis": "art. 2",
+          "tekst": "Prawo do renty socjalnej przysługuje:",
+          "role": [
+            "przyznanie_korzysci"
+          ],
+          "rodzic": null,
+          "dzieci": [
+            "DU/2003/1268#arti_2-pint_1@obowiazujace",
+            "DU/2003/1268#arti_2-pint_2@obowiazujace",
+            "DU/2003/1268#arti_2-pint_3@obowiazujace",
+            "DU/2003/1268#arti_2-pint_4@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_2-pint_1@obowiazujace",
+          "przepis": "art. 2 pkt 1",
+          "tekst": "osobom posiadającym obywatelstwo polskie zamieszkującym na terytorium Rzeczypospolitej Polskiej;",
+          "role": [],
+          "rodzic": "DU/2003/1268#arti_2@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_2-pint_2@obowiazujace",
+          "przepis": "art. 2 pkt 2",
+          "tekst": "cudzoziemcom zamieszkującym na terytorium Rzeczypospolitej Polskiej na podstawie zezwolenia na pobyt stały, zezwolenia na pobyt rezydenta długoterminowego Unii Europejskiej, zezwolenia na pobyt czasowy udzielonego w związku z okolicznościami, o których mowa w art. 127, art. 137a lub art. 186 ust. 1 pkt 3 ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach (Dz. U. z 2025 r. poz. 1079 i 1794 oraz z 2026 r. poz. 203), lub w związku z uzyskaniem w Rzeczypospolitej Polskiej statusu uchodźcy albo ochrony uzupełniającej;",
+          "role": [
+            "odeslanie_zewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_2@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_2-pint_3@obowiazujace",
+          "przepis": "art. 2 pkt 3",
+          "tekst": "cudzoziemcom posiadającym kartę pobytu z adnotacją „dostęp do rynku pracy”, z wyłączeniem obywateli państw trzecich, którzy uzyskali zezwolenie na pracę na terytorium państwa członkowskiego na okres nieprzekraczający 6 miesięcy, obywateli państw trzecich przyjętych w celu podjęcia studiów lub pracy sezonowej oraz obywateli państw trzecich, którzy mają prawo do wykonywania pracy na podstawie wizy;",
+          "role": [
+            "wylaczenie_lub_przedmiot_niematerialny"
+          ],
+          "rodzic": "DU/2003/1268#arti_2@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_2-pint_4@obowiazujace",
+          "przepis": "art. 2 pkt 4",
+          "tekst": "mającym miejsce zamieszkania na terytorium Rzeczypospolitej Polskiej obywatelom państw członkowskich Unii Europejskiej, państw członkowskich Europejskiego Porozumienia o Wolnym Handlu (EFTA) – stron umowy o Europejskim Obszarze Gospodarczym lub Konfederacji Szwajcarskiej oraz członkom ich rodzin w rozumieniu art. 2 pkt 4 ustawy z dnia 14 lipca 2006 r. o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium obywateli państw członkowskich Unii Europejskiej i członków ich rodzin (Dz. U. z 2025 r. poz. 1164 i 1794), posiadającym prawo pobytu lub prawo stałego pobytu na terytorium Rzeczypospolitej Polskiej.",
+          "role": [
+            "odeslanie_zewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_2@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [
+        {
+          "eli": "DU/2025/1079",
+          "akt_tytul": "ustawy z dnia 12 grudnia 2013 r. o cudzoziemcach",
+          "cytat": "(Dz. U. z 2025 r. poz. 1079 i 1794 oraz z 2026 r. poz. 203)",
+          "z_pozn_zm": false
+        },
+        {
+          "eli": "DU/2025/1164",
+          "akt_tytul": null,
+          "cytat": "(Dz. U. z 2025 r. poz. 1164 i 1794)",
+          "z_pozn_zm": false
+        }
+      ],
+      "korzysci": [
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-26",
+      "eli": "DU/2003/1268",
+      "artykul": "26",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_26@obowiazujace",
+          "przepis": "art. 26",
+          "tekst": "(pominięty)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": null,
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": []
+    },
+    {
+      "id": "DU-2003-1268-art-27",
+      "eli": "DU/2003/1268",
+      "artykul": "27",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_27@obowiazujace",
+          "przepis": "art. 27",
+          "tekst": "(pominięty)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": null,
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": []
+    },
+    {
+      "id": "DU-2003-1268-art-28",
+      "eli": "DU/2003/1268",
+      "artykul": "28",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_28@obowiazujace",
+          "przepis": "art. 28",
+          "tekst": "(pominięty)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": null,
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": []
+    },
+    {
+      "id": "DU-2003-1268-art-29",
+      "eli": "DU/2003/1268",
+      "artykul": "29",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_29@obowiazujace",
+          "przepis": "art. 29",
+          "tekst": "(pominięty)",
+          "role": [
+            "uchylony"
+          ],
+          "rodzic": null,
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": []
+    },
+    {
+      "id": "DU-2003-1268-art-3",
+      "eli": "DU/2003/1268",
+      "artykul": "3",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_3@obowiazujace",
+          "przepis": "art. 3",
+          "tekst": "Użyte w ustawie określenia oznaczają:",
+          "role": [
+            "definicja"
+          ],
+          "rodzic": null,
+          "dzieci": [
+            "DU/2003/1268#arti_3-pint_1@obowiazujace",
+            "DU/2003/1268#arti_3-pint_2@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_3-pint_1@obowiazujace",
+          "przepis": "art. 3 pkt 1",
+          "tekst": "renta rodzinna – rentę rodzinną oraz uposażenie rodzinne przyznane na podstawie odrębnych przepisów;",
+          "role": [],
+          "rodzic": "DU/2003/1268#arti_3@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_3-pint_2@obowiazujace",
+          "przepis": "art. 3 pkt 2",
+          "tekst": "organ emerytalno-rentowy – organ wypłacający rentę rodzinną inny niż Zakład Ubezpieczeń Społecznych.",
+          "role": [],
+          "rodzic": "DU/2003/1268#arti_3@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": []
+    },
+    {
+      "id": "DU-2003-1268-art-30",
+      "eli": "DU/2003/1268",
+      "artykul": "30",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_30@obowiazujace",
+          "przepis": "art. 30",
+          "tekst": "Ustawa wchodzi w życie z dniem 1 października 2003 r., z wyjątkiem:",
+          "role": [
+            "termin"
+          ],
+          "rodzic": null,
+          "dzieci": [
+            "DU/2003/1268#arti_30-pint_1@obowiazujace",
+            "DU/2003/1268#arti_30-pint_2@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_30-pint_1@obowiazujace",
+          "przepis": "art. 30 pkt 1",
+          "tekst": "art. 13 ust. 1 i 2 oraz art. 26 ust. 4 i 5, które wchodzą w życie z dniem 1 sierpnia 2003 r.;",
+          "role": [
+            "termin",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_30@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_30-pint_2@obowiazujace",
+          "przepis": "art. 30 pkt 2",
+          "tekst": "art. 2 pkt 3, który wchodzi w życie z dniem uzyskania przez Rzeczpospolitą Polską członkostwa w Unii Europejskiej.",
+          "role": [
+            "termin",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_30@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [
+        "DU-2003-1268-art-13",
+        "DU-2003-1268-art-2"
+      ],
+      "powiazane_akty": [],
+      "korzysci": []
+    },
+    {
+      "id": "DU-2003-1268-art-4",
+      "eli": "DU/2003/1268",
+      "artykul": "4",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_4-pass_1@obowiazujace",
+          "przepis": "art. 4 ust. 1",
+          "tekst": "Renta socjalna przysługuje osobie pełnoletniej całkowicie niezdolnej do pracy z powodu naruszenia sprawności organizmu, które powstało:",
+          "role": [
+            "przyznanie_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_4@obowiazujace",
+          "dzieci": [
+            "DU/2003/1268#arti_4-pass_1-pint_1@obowiazujace",
+            "DU/2003/1268#arti_4-pass_1-pint_2@obowiazujace",
+            "DU/2003/1268#arti_4-pass_1-pint_3@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_4-pass_1-pint_1@obowiazujace",
+          "przepis": "art. 4 ust. 1 pkt 1",
+          "tekst": "przed ukończeniem 18. roku życia;",
+          "role": [],
+          "rodzic": "DU/2003/1268#arti_4-pass_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_4-pass_1-pint_2@obowiazujace",
+          "przepis": "art. 4 ust. 1 pkt 2",
+          "tekst": "w trakcie nauki w szkole lub w szkole wyższej – przed ukończeniem 25. roku życia;",
+          "role": [],
+          "rodzic": "DU/2003/1268#arti_4-pass_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_4-pass_1-pint_3@obowiazujace",
+          "przepis": "art. 4 ust. 1 pkt 3",
+          "tekst": "w trakcie kształcenia w szkole doktorskiej, studiów doktoranckich lub aspirantury naukowej.",
+          "role": [],
+          "rodzic": "DU/2003/1268#arti_4-pass_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_4-pass_2@obowiazujace",
+          "przepis": "art. 4 ust. 2",
+          "tekst": "Osobie, która spełnia warunki określone w ust. 1, przysługuje:",
+          "role": [
+            "zapowiedz_wyliczenia_korzysci",
+            "warunek",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_4@obowiazujace",
+          "dzieci": [
+            "DU/2003/1268#arti_4-pass_2-pint_1@obowiazujace",
+            "DU/2003/1268#arti_4-pass_2-pint_2@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_4-pass_2-pint_1@obowiazujace",
+          "przepis": "art. 4 ust. 2 pkt 1",
+          "tekst": "renta socjalna stała – jeżeli całkowita niezdolność do pracy jest trwała;",
+          "role": [
+            "przyznanie_korzysci",
+            "warunek"
+          ],
+          "rodzic": "DU/2003/1268#arti_4-pass_2@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_4-pass_2-pint_2@obowiazujace",
+          "przepis": "art. 4 ust. 2 pkt 2",
+          "tekst": "renta socjalna okresowa – jeżeli całkowita niezdolność do pracy jest okresowa.",
+          "role": [
+            "przyznanie_korzysci",
+            "warunek"
+          ],
+          "rodzic": "DU/2003/1268#arti_4-pass_2@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_4-pass_3@obowiazujace",
+          "przepis": "art. 4 ust. 3",
+          "tekst": "Renta socjalna okresowa przysługuje przez okres wskazany w decyzji jednostki organizacyjnej Zakładu Ubezpieczeń Społecznych, zwanego dalej „Zakładem”.",
+          "role": [
+            "przyznanie_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_4@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-5",
+      "eli": "DU/2003/1268",
+      "artykul": "5",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_5-pass_1@dotychczasowe",
+          "przepis": "art. 5 ust. 1",
+          "tekst": "Ustalenia całkowitej niezdolności do pracy dokonuje lekarz orzecznik Zakładu, zwany dalej „lekarzem orzecznikiem”, na zasadach i w trybie określonych w ustawie z dnia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2025 r. poz. 1749 oraz z 2026 r. poz. 26), zwanej dalej „ustawą o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych”.",
+          "role": [
+            "odeslanie_zewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_5@dotychczasowe",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_5-pass_2@dotychczasowe",
+          "przepis": "art. 5 ust. 2",
+          "tekst": "Ustalając całkowitą niezdolność do pracy, lekarz orzecznik, za zgodą osoby ubiegającej się o rentę socjalną lub jej przedstawiciela ustawowego, zgłoszoną niepóźniej niż w trakcie badania tej osoby, ustala niezdolność tej osoby do samodzielnej egzystencji, na zasadach i w trybie określonym ustawą o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych, w celu uzyskania świadczenia, o którym mowa w art. 1 ust. 1 ustawy z dnia 31 lipca 2019 r. o świadczeniu uzupełniającym dla osób niezdolnych do samodzielnej egzystencji (Dz. U. z 2024 r. poz. 1649, z 2025 r. poz. 1302 oraz z 2026 r. poz. 26), lub dodatku dopełniającego, o którym mowa w art. 6a.]",
+          "role": [
+            "odeslanie_zewnetrzne",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_5@dotychczasowe",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_5-pass_1@przyszle",
+          "przepis": "art. 5 ust. 1",
+          "tekst": "Ustalenia całkowitej niezdolności do pracy dokonuje lekarz orzecznik Zakładu, zwany dalej „lekarzem orzecznikiem”, na zasadach i w trybie określonych w ustawie z dnia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych (Dz. U. z 2025 r. poz. 1749 oraz z 2026 r. poz. 26), zwanej dalej „ustawą o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych”, oraz w ustawie z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych (Dz. U. z 2026 r. poz. 199 i 252).",
+          "role": [
+            "odeslanie_zewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_5@przyszle",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_5-pass_2@przyszle",
+          "przepis": "art. 5 ust. 2",
+          "tekst": "Ustalając całkowitą niezdolność do pracy, lekarz orzecznik, za zgodą osoby ubiegającej się o rentę socjalną lub jej przedstawiciela ustawowego, zgłoszoną niepóźniej niż w trakcie badania tej osoby, ustala niezdolność tej osoby do samodzielnej egzystencji, na zasadach i w trybie określonych w ustawie o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych oraz w ustawie z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych, w celu uzyskania świadczenia, o którym mowa w art. 1 ust. 1 ustawy z dnia 31 lipca 2019 r. o świadczeniu uzupełniającym dla osób niezdolnych do samodzielnej egzystencji (Dz. U. z 2024 r. poz. 1649, z 2025 r. poz. 1302 oraz z 2026 r. poz. 26), lub dodatku dopełniającego, o którym mowa w art. 6a.>",
+          "role": [
+            "odeslanie_zewnetrzne",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_5@przyszle",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [
+        "DU-2003-1268-art-6a"
+      ],
+      "powiazane_akty": [
+        {
+          "eli": "DU/2025/1749",
+          "akt_tytul": null,
+          "cytat": "(Dz. U. z 2025 r. poz. 1749 oraz z 2026 r. poz. 26)",
+          "z_pozn_zm": false
+        },
+        {
+          "eli": "DU/2024/1649",
+          "akt_tytul": "ustawy z dnia 31 lipca 2019 r. o świadczeniu uzupełniającym dla osób niezdolnych do samodzielnej egzystencji",
+          "cytat": "(Dz. U. z 2024 r. poz. 1649, z 2025 r. poz. 1302 oraz z 2026 r. poz. 26)",
+          "z_pozn_zm": false
+        },
+        {
+          "eli": "DU/2026/199",
+          "akt_tytul": null,
+          "cytat": "(Dz. U. z 2026 r. poz. 199 i 252)",
+          "z_pozn_zm": false
+        }
+      ],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-6",
+      "eli": "DU/2003/1268",
+      "artykul": "6",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_6-pass_1@obowiazujace",
+          "przepis": "art. 6 ust. 1",
+          "tekst": "Renta socjalna wynosi 100 % kwoty najniższej renty z tytułu całkowitej niezdolności do pracy ustalonej i podwyższonej zgodnie z ustawą o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych.",
+          "role": [
+            "regula_procentowa"
+          ],
+          "rodzic": "DU/2003/1268#arti_6@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6-pass_2@obowiazujace",
+          "przepis": "art. 6 ust. 2",
+          "tekst": "Podwyższenia renty socjalnej dokonuje jednostka organizacyjna Zakładu lub organ emerytalno-rentowy.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_6@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6-pass_3@obowiazujace",
+          "przepis": "art. 6 ust. 3",
+          "tekst": "Podwyższenie renty socjalnej następuje z urzędu, a jeżeli wypłata renty została wstrzymana – po jej wznowieniu.",
+          "role": [
+            "warunek"
+          ],
+          "rodzic": "DU/2003/1268#arti_6@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-6a",
+      "eli": "DU/2003/1268",
+      "artykul": "6a",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_6a-pass_1@obowiazujace",
+          "przepis": "art. 6a ust. 1",
+          "tekst": "Osobie uprawnionej do renty socjalnej, będącej całkowicie niezdolną do pracy oraz do samodzielnej egzystencji, przysługuje dodatek dopełniający w wysokości 2520 zł.",
+          "role": [
+            "przyznanie_korzysci",
+            "kwota"
+          ],
+          "rodzic": "DU/2003/1268#arti_6a@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6a-pass_2@obowiazujace",
+          "przepis": "art. 6a ust. 2",
+          "tekst": "Dodatek dopełniający przyznaje się na wniosek osoby ubiegającej się o ten dodatek lub jej przedstawiciela ustawowego.",
+          "role": [
+            "przyznanie_korzysci",
+            "procedura"
+          ],
+          "rodzic": "DU/2003/1268#arti_6a@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6a-pass_3@obowiazujace",
+          "przepis": "art. 6a ust. 3",
+          "tekst": "Dodatek dopełniający przyznaje się również na wniosek innej osoby albo kierownika ośrodka pomocy społecznej, a w przypadku przekształcenia ośrodka pomocy społecznej w centrum usług społecznych na podstawie przepisów ustawy z dnia 19 lipca 2019 r. o realizowaniu usług społecznych przez centrum usług społecznych (Dz. U. z 2026 r. poz. 165) – dyrektora centrum usług społecznych, działających za zgodą osób, o których mowa w ust. 2.",
+          "role": [
+            "przyznanie_korzysci",
+            "procedura",
+            "odeslanie_zewnetrzne",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_6a@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6a-pass_4@obowiazujace",
+          "przepis": "art. 6a ust. 4",
+          "tekst": "Dodatek dopełniający wypłaca się z rentą socjalną.",
+          "role": [
+            "przyznanie_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_6a@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6a-pass_5@obowiazujace",
+          "przepis": "art. 6a ust. 5",
+          "tekst": "Kwota dodatku dopełniającego podlega corocznie waloryzacji od dnia 1 marca.",
+          "role": [
+            "waloryzacja"
+          ],
+          "rodzic": "DU/2003/1268#arti_6a@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6a-pass_6@obowiazujace",
+          "przepis": "art. 6a ust. 6",
+          "tekst": "Waloryzacja polega na pomnożeniu kwoty dodatku dopełniającego przez wskaźnik waloryzacji. W wyniku przeprowadzonej waloryzacji kwota dodatku nie może ulec obniżeniu.",
+          "role": [
+            "waloryzacja"
+          ],
+          "rodzic": "DU/2003/1268#arti_6a@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6a-pass_7@obowiazujace",
+          "przepis": "art. 6a ust. 7",
+          "tekst": "Wskaźnik waloryzacji to średnioroczny wskaźnik cen towarów i usług konsumpcyjnych ogółem w poprzednim roku kalendarzowym ogłaszany przez Prezesa Głównego Urzędu Statystycznego na podstawie art. 94 ust. 1 pkt 1 lit. a ustawy o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych.",
+          "role": [
+            "waloryzacja",
+            "odeslanie_zewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_6a@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6a-pass_8@obowiazujace",
+          "przepis": "art. 6a ust. 8",
+          "tekst": "Prezes Zakładu ogłasza, w formie komunikatu, w Dzienniku Urzędowym Rzeczypospolitej Polskiej „Monitor Polski”, co najmniej na 14 dni roboczych przed najbliższym terminem waloryzacji należną od terminu waloryzacji kwotę dodatku dopełniającego.",
+          "role": [
+            "waloryzacja"
+          ],
+          "rodzic": "DU/2003/1268#arti_6a@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6a-pass_9@obowiazujace",
+          "przepis": "art. 6a ust. 9",
+          "tekst": "Podwyższenie kwoty dodatku dopełniającego w związku z waloryzacją następuje z urzędu i nie wymaga wydania decyzji. Zakład lub organ emerytalno- -rentowy przekazuje osobie pobierającej rentę socjalną informację o podwyższeniu wysokości dodatku dopełniającego, a Zakład udostępnia tę informację także na jej profilu informacyjnym utworzonym w systemie teleinformatycznym udostępnionym przez Zakład.",
+          "role": [
+            "waloryzacja",
+            "procedura"
+          ],
+          "rodzic": "DU/2003/1268#arti_6a@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [
+        {
+          "eli": "DU/2026/165",
+          "akt_tytul": "ustawy z dnia 19 lipca 2019 r. o realizowaniu usług społecznych przez centrum usług społecznych",
+          "cytat": "(Dz. U. z 2026 r. poz. 165)",
+          "z_pozn_zm": false
+        }
+      ],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-6b",
+      "eli": "DU/2003/1268",
+      "artykul": "6b",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_6b-pass_1@obowiazujace",
+          "przepis": "art. 6b ust. 1",
+          "tekst": "Wniosek o dodatek dopełniający zawiera:",
+          "role": [
+            "procedura"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b@obowiazujace",
+          "dzieci": [
+            "DU/2003/1268#arti_6b-pass_1-pint_1@obowiazujace",
+            "DU/2003/1268#arti_6b-pass_1-pint_2@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_1-pint_1@obowiazujace",
+          "przepis": "art. 6b ust. 1 pkt 1",
+          "tekst": "dane osoby ubiegającej się o dodatek dopełniający:",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b-pass_1@obowiazujace",
+          "dzieci": [
+            "DU/2003/1268#arti_6b-pass_1-pint_1-lett_a@obowiazujace",
+            "DU/2003/1268#arti_6b-pass_1-pint_1-lett_b@obowiazujace",
+            "DU/2003/1268#arti_6b-pass_1-pint_1-lett_c@obowiazujace",
+            "DU/2003/1268#arti_6b-pass_1-pint_1-lett_d@obowiazujace",
+            "DU/2003/1268#arti_6b-pass_1-pint_1-lett_e@obowiazujace",
+            "DU/2003/1268#arti_6b-pass_1-pint_1-lett_f@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_1-pint_1-lett_a@obowiazujace",
+          "przepis": "art. 6b ust. 1 pkt 1 lit. a",
+          "tekst": "imię i nazwisko,",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b-pass_1-pint_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_1-pint_1-lett_b@obowiazujace",
+          "przepis": "art. 6b ust. 1 pkt 1 lit. b",
+          "tekst": "datę urodzenia,",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b-pass_1-pint_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_1-pint_1-lett_c@obowiazujace",
+          "przepis": "art. 6b ust. 1 pkt 1 lit. c",
+          "tekst": "numer PESEL albo, jeżeli nie nadano tego numeru, serię i numer dowodu osobistego lub numer paszportu,",
+          "role": [
+            "warunek"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b-pass_1-pint_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_1-pint_1-lett_d@obowiazujace",
+          "przepis": "art. 6b ust. 1 pkt 1 lit. d",
+          "tekst": "adres miejsca zamieszkania,",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b-pass_1-pint_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_1-pint_1-lett_e@obowiazujace",
+          "przepis": "art. 6b ust. 1 pkt 1 lit. e",
+          "tekst": "adres miejsca pobytu lub ostatniego miejsca zamieszkania – w przypadku osoby nieposiadającej adresu miejsca zamieszkania,",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b-pass_1-pint_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_1-pint_1-lett_f@obowiazujace",
+          "przepis": "art. 6b ust. 1 pkt 1 lit. f",
+          "tekst": "adres do korespondencji, jeżeli jest inny niż adres miejsca zamieszkania;",
+          "role": [
+            "warunek"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b-pass_1-pint_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_1-pint_2@obowiazujace",
+          "przepis": "art. 6b ust. 1 pkt 2",
+          "tekst": "podpis osoby ubiegającej się o dodatek dopełniający lub jej przedstawiciela ustawowego albo pełnomocnika.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b-pass_1@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_2@obowiazujace",
+          "przepis": "art. 6b ust. 2",
+          "tekst": "Do wniosku należy dołączyć:",
+          "role": [
+            "procedura"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b@obowiazujace",
+          "dzieci": [
+            "DU/2003/1268#arti_6b-pass_2-pint_1@obowiazujace",
+            "DU/2003/1268#arti_6b-pass_2-pint_2@obowiazujace"
+          ]
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_2-pint_1@obowiazujace",
+          "przepis": "art. 6b ust. 2 pkt 1",
+          "tekst": "zaświadczenie o stanie zdrowia wystawione przez lekarza leczącego niewcześniej niż miesiąc przed dniem złożenia wniosku;",
+          "role": [
+            "procedura"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b-pass_2@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6b-pass_2-pint_2@obowiazujace",
+          "przepis": "art. 6b ust. 2 pkt 2",
+          "tekst": "posiadaną dokumentację medyczną z przebiegu leczenia.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_6b-pass_2@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-6c",
+      "eli": "DU/2003/1268",
+      "artykul": "6c",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_6c-pass_1@obowiazujace",
+          "przepis": "art. 6c ust. 1",
+          "tekst": "Dla celów ustalania uprawnień do świadczeń pieniężnych finansowanych ze środków publicznych oraz ustalania wysokości tych świadczeń, dodatek dopełniający uwzględnia się na tych samych zasadach jak rentę socjalną.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_6c@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_6c-pass_2@obowiazujace",
+          "przepis": "art. 6c ust. 2",
+          "tekst": "Przepis ust. 1 nie dotyczy świadczenia wspierającego, o którym mowa w art. 1 ustawy z dnia 7 lipca 2023 r. o świadczeniu wspierającym (Dz. U. poz. 1429 i 2760 oraz z 2025 r. poz. 619).",
+          "role": [
+            "odeslanie_zewnetrzne",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_6c@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [
+        {
+          "eli": "DU/2003/1429",
+          "akt_tytul": "ustawy z dnia 7 lipca 2023 r. o świadczeniu wspierającym",
+          "cytat": "(Dz. U. poz. 1429 i 2760 oraz z 2025 r. poz. 619)",
+          "z_pozn_zm": false
+        }
+      ],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-7",
+      "eli": "DU/2003/1268",
+      "artykul": "7",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_7-pass_1@obowiazujace",
+          "przepis": "art. 7 ust. 1",
+          "tekst": "Renta socjalna nie przysługuje osobie uprawnionej do emerytury, uposażenia w stanie spoczynku, renty z tytułu niezdolności do pracy, renty inwalidzkiej lub pobierającej świadczenie o charakterze rentowym z instytucji zagranicznych, renty strukturalnej, a także osobie uprawnionej do zasiłku przedemerytalnego, świadczenia przedemerytalnego lub nauczycielskiego świadczenia kompensacyjnego.",
+          "role": [
+            "wylaczenie_lub_przedmiot_niematerialny"
+          ],
+          "rodzic": "DU/2003/1268#arti_7@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_7-pass_2@obowiazujace",
+          "przepis": "art. 7 ust. 2",
+          "tekst": "Renta socjalna nie przysługuje osobie będącej właścicielem lub posiadaczem (samoistnym lub zależnym) nieruchomości rolnej w rozumieniu Kodeksu cywilnego o powierzchni użytków rolnych przekraczającej 5 ha przeliczeniowych. Osobie będącej współwłaścicielem nieruchomości rolnej nie przysługuje renta socjalna, jeśli udział tej osoby przekracza 5 ha przeliczeniowych.",
+          "role": [
+            "wylaczenie_lub_przedmiot_niematerialny"
+          ],
+          "rodzic": "DU/2003/1268#arti_7@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-8",
+      "eli": "DU/2003/1268",
+      "artykul": "8",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_8-pass_1@obowiazujace",
+          "przepis": "art. 8 ust. 1",
+          "tekst": "Renta socjalna oraz dodatek dopełniający nie przysługują za okres tymczasowego aresztowania lub odbywania kary pozbawienia wolności, z zastrzeżeniem ust. 1a.",
+          "role": [
+            "wylaczenie_lub_przedmiot_niematerialny",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_8@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_8-pass_1a@obowiazujace",
+          "przepis": "art. 8 ust. 1a",
+          "tekst": "Przepisu ust. 1 nie stosuje się do osób odbywających karę pozbawienia wolności w systemie dozoru elektronicznego.",
+          "role": [
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_8@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_8-pass_2@obowiazujace",
+          "przepis": "art. 8 ust. 2",
+          "tekst": "Osoba tymczasowo aresztowana lub odbywająca karę pozbawienia wolności jest obowiązana niezwłocznie powiadomić właściwy organ wypłacający rentę socjalną o tymczasowym aresztowaniu lub o odbywaniu kary pozbawienia wolności. Obowiązek ten spoczywa również na dyrektorze aresztu lub zakładu karnego.",
+          "role": [
+            "brak_cech_korzysci"
+          ],
+          "rodzic": "DU/2003/1268#arti_8@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_8-pass_3@obowiazujace",
+          "przepis": "art. 8 ust. 3",
+          "tekst": "Osobie, o której mowa w ust. 2, samotnie gospodarującej, nieposiadającej innego przychodu i niemającej prawa do renty rodzinnej, która jest właścicielem lokalu mieszkalnego (domu jednorodzinnego), której przysługuje spółdzielcze prawo do lokalu lub która jest najemcą lokalu mieszkalnego wchodzącego w skład mieszkaniowego zasobu gminy, innych jednostek samorządu terytorialnego albo stanowiącego własność Skarbu Państwa lub państwowych osób prawnych, może być wypłacane 50 % kwoty renty socjalnej oraz 50 % kwoty dodatku dopełniającego, jeżeli zobowiąże się pisemnie, że z kwoty tej będzie dokonywała opłat z tytułu czynszu lub innych należności za lokal mieszkalny (dom jednorodzinny), a w lokalu (domu jednorodzinnym) nie przebywają inne osoby.",
+          "role": [
+            "przyznanie_korzysci",
+            "regula_procentowa",
+            "warunek",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_8@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_8-pass_4@obowiazujace",
+          "przepis": "art. 8 ust. 4",
+          "tekst": "Z kwoty określonej w ust. 3 nie dokonuje się potrąceń i egzekucji.",
+          "role": [
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_8@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-lokal",
+        "DU-2003-1268-renta-socjalna"
+      ]
+    },
+    {
+      "id": "DU-2003-1268-art-9",
+      "eli": "DU/2003/1268",
+      "artykul": "9",
+      "stan_tekstu": "2026-04-17",
+      "jednostki": [
+        {
+          "id": "DU/2003/1268#arti_9-pass_1@obowiazujace",
+          "przepis": "art. 9 ust. 1",
+          "tekst": "W przypadku zbiegu uprawnień do renty socjalnej z uprawnieniem do renty rodzinnej lub świadczenia pieniężnego przyznanego na zasadach określonych w ustawie z dnia 8 lutego 2023 r. o świadczeniu pieniężnym przysługującym członkom rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą albo podjęciem poza służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia (Dz. U. poz. 658) kwota renty socjalnej ulega takiemu obniżeniu, aby łączna kwota obu świadczeń nie przekraczała 300 % kwoty najniższej renty z tytułu całkowitej niezdolności do pracy. Kwota obniżonej renty socjalnej nie może być niższa niż 10 % kwoty najniższej renty z tytułu całkowitej niezdolności do pracy.",
+          "role": [
+            "regula_procentowa",
+            "warunek",
+            "odeslanie_zewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_9@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_9-pass_2@obowiazujace",
+          "przepis": "art. 9 ust. 2",
+          "tekst": "Renta socjalna nie przysługuje, jeżeli kwota renty rodzinnej lub świadczenia pieniężnego, o którym mowa w ust. 1, przekracza 300 % kwoty najniższej renty z tytułu całkowitej niezdolności do pracy.",
+          "role": [
+            "wylaczenie_lub_przedmiot_niematerialny",
+            "regula_procentowa",
+            "warunek",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_9@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_9-pass_3@obowiazujace",
+          "przepis": "art. 9 ust. 3",
+          "tekst": "Osoba ubiegająca się o rentę socjalną bądź ją pobierająca jest obowiązana powiadomić jednostkę organizacyjną Zakładu przyjmującą wniosek bądź wypłacającą rentę socjalną o posiadaniu uprawnień do renty rodzinnej lub świadczenia pieniężnego, o którym mowa w ust. 1, oraz organ emerytalno-rentowy wypłacający rentę rodzinną lub świadczenie pieniężne, o którym mowa w ust. 1, o posiadaniu uprawnień do renty socjalnej.",
+          "role": [
+            "procedura",
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_9@obowiazujace",
+          "dzieci": []
+        },
+        {
+          "id": "DU/2003/1268#arti_9-pass_4@obowiazujace",
+          "przepis": "art. 9 ust. 4",
+          "tekst": "W przypadku obniżenia renty socjalnej z przyczyn, o których mowa w ust. 1, kwota dodatku dopełniającego ulega obniżeniu o taki sam procent, o jaki obniżono rentę socjalną.",
+          "role": [
+            "odeslanie_wewnetrzne"
+          ],
+          "rodzic": "DU/2003/1268#arti_9@obowiazujace",
+          "dzieci": []
+        }
+      ],
+      "powiazane_artykuly": [],
+      "powiazane_akty": [
+        {
+          "eli": "DU/2003/658",
+          "akt_tytul": null,
+          "cytat": "(Dz. U. poz. 658)",
+          "z_pozn_zm": false
+        }
+      ],
+      "korzysci": [
+        "DU-2003-1268-dodatek-dopelniajacy",
+        "DU-2003-1268-renta-socjalna"
       ]
     },
     {
@@ -73547,7 +75496,7 @@
   ],
   "statystyki": {
     "reczne": 48,
-    "automatyczne": 21,
+    "automatyczne": 25,
     "z_notatek": 0
   }
 }
