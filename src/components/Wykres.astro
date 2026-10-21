@@ -72,6 +72,16 @@ if (mozna) {
     return `<circle cx="${x}" cy="${y}" r="5" fill="${kolor}" stroke="#fff" stroke-width="1.5"/>`;
   };
 
+  // podpis po prawej tylko dla serii obowiązujących w dniu danych; podpisy rozsunięte, by się nie nakładały
+  const podpisy: { y: number; s: any; ost: any }[] = [];
+  serie.forEach((s) => {
+    const ost = s.punkty[s.punkty.length - 1];
+    const trwa = ost.do === null || (czyData(ost.do) && czyData(dzis) && ost.do >= dzis!) || !czyData(dzis);
+    if (trwa) podpisy.push({ y: Y(ost.y) + 4, s, ost });
+  });
+  podpisy.sort((a, b) => a.y - b.y);
+  podpisy.forEach((p, i) => { if (i && p.y - podpisy[i - 1].y < 15) p.y = podpisy[i - 1].y + 15; });
+
   serie.forEach((s) => {
     s.punkty.forEach((p: any, j: number) => {
       const xa = X(dzien(p.od)), ya = Y(p.y);
@@ -89,12 +99,16 @@ if (mozna) {
       }
     });
     s.punkty.forEach((p: any) => czesci.push(znacznik(s.ksztalt, X(dzien(p.od)), Y(p.y), s.kolor)));
-    const ost = s.punkty[s.punkty.length - 1];
-    czesci.push(`<text x="${W - R + 8}" y="${Y(ost.y) + 4}" font-size="12.5" font-weight="700" fill="${s.kolor}">${String(ost.napis).replace(/&/g, '&amp;').replace(/</g, '&lt;')}</text>`);
   });
+  podpisy.forEach(({ y, s, ost }) => czesci.push(`<text x="${W - R + 8}" y="${y}" font-size="12.5" font-weight="700" fill="${s.kolor}">${String(ost.napis).replace(/&/g, '&amp;').replace(/</g, '&lt;')}</text>`));
   svg = czesci.join('');
 }
 
+const znacznikLegendy = (ks: string, kolor: string) =>
+  ks === 'square' ? `<rect x="9" y="3" width="8" height="8" fill="${kolor}"/>`
+  : ks === 'diamond' ? `<path d="M13 1.5l5.5 5.5-5.5 5.5-5.5-5.5z" fill="${kolor}"/>`
+  : ks === 'triangle' ? `<path d="M13 2l5 9h-10z" fill="${kolor}"/>`
+  : `<circle cx="13" cy="7" r="4.5" fill="${kolor}"/>`;
 const opis = serie.map((s) => `${s.et ? `${s.et}: ` : ''}${s.punkty.map((p: any) => `${p.napis} od ${p.od}`).join(', ')}`).join('; ');
 ---
 {mozna ? (
@@ -103,7 +117,7 @@ const opis = serie.map((s) => `${s.et ? `${s.et}: ` : ''}${s.punkty.map((p: any)
       <ul class="legend" aria-label="Legenda">
         {serie.map((s) => (
           <li>
-            <svg viewBox="0 0 26 12" aria-hidden="true"><line x1="0" x2="26" y1="6" y2="6" stroke={s.kolor} stroke-width="2.5" /></svg>
+            <svg viewBox="0 0 26 14" aria-hidden="true" set:html={`<line x1="0" x2="26" y1="7" y2="7" stroke="${s.kolor}" stroke-width="2.5" />${znacznikLegendy(s.ksztalt, s.kolor)}`} />
             {s.et}
           </li>
         ))}

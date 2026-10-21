@@ -7,7 +7,7 @@ import unittest
 from aktualizuj_strone import UpdateError, validate_export
 from scripts.importuj_socjal import (generuj, bez_kwoty, przenies_podsumowanie,
                                      przenies_terminy, nominalna_zastepowana, etykieta_wariantu,
-                                     opis_wariantu, przenies_obliczona, przenies_limity)
+                                     etykiety_serii, przenies_obliczona, przenies_limity)
 
 
 class SocjalImportTests(unittest.TestCase):
@@ -154,15 +154,33 @@ class SocjalImportTests(unittest.TestCase):
         self.assertEqual(len(k['ile']['os_czasu']), 1)
         warianty = k['ile']['aktualna']['warianty']
         self.assertEqual([w['wartosc'] for w in warianty], ['1978,49 zł', '1483,87 zł'])
-        self.assertTrue(warianty[0]['etykieta'].startswith('kwoty najniższej emerytury i renty: emerytura'))
+        self.assertEqual(warianty[0]['etykieta'],
+                         'najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy')
         self.assertNotIn('nieustalone', [n['pole'] for n in k['nieustalone']])
+
+    def test_one_label_per_series_across_years(self):
+        stary = {'akt': 'MP/2016/1', 'tekst': '676,75 zł', 'wariant_klucz': 'rent czes', 'od': '2016-03-01',
+                 'do': '2017-02-28', 'wariant': '— dla rent z tytułu częściowej niezdolno- ści', 'cytat': 'x',
+                 'jednostka': 'MP/2016/1#tresc'}
+        nowy = {'akt': 'MP/2026/220', 'tekst': '1483,87 zł', 'wariant_klucz': 'rent czes', 'od': '2026-03-01',
+                'wariant': 'miesięcznie – renta dla osób częściowo niezdolnych do pracy',
+                'naglowek_punktu': 'kwoty najniższej emerytury i renty wynoszą', 'cytat': 'y',
+                'jednostka': 'MP/2026/220#tresc'}
+        rozlany = dict(stary, od='1999-06-01', do='2000-05-31', wariant_klucz='rent czes rent rodz',
+                       wariant='renta dla osoby częściowo niezdolnej, renta rodzinna. 2')
+        etykiety, klucz = etykiety_serii([rozlany, stary, nowy], 'renta')
+        self.assertEqual(etykiety, {'rent czes': 'najniższa: renta dla osób częściowo niezdolnych do pracy'})
+        self.assertEqual(klucz(rozlany), 'rent czes')
 
     def test_variant_label_drops_announcement_preamble_and_bare_name(self):
         self.assertEqual(etykieta_wariantu('U. z 2023 r. poz. 2194) ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku'),
                          'kwota dodatku')
-        self.assertIsNone(opis_wariantu({'wariant': 'ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku dopełniającego'},
-                                        'dodatek dopełniający'))
-        self.assertIn('maksymalną', opis_wariantu({'wariant': 'maksymalną kwotę zasiłku stałego'}, 'zasiłek stały'))
+        self.assertEqual(etykieta_wariantu('a) miesięcznie – emerytura'), 'emerytura')
+        etykiety, _ = etykiety_serii([{'wariant': 'ogłasza się, że od dnia 1 marca 2026 r. kwota dodatku dopełniającego'}],
+                                     'dodatek dopełniający')
+        self.assertEqual(list(etykiety.values()), [None])
+        etykiety, _ = etykiety_serii([{'wariant': 'maksymalną kwotę zasiłku stałego'}], 'zasiłek stały')
+        self.assertIn('maksymalną', list(etykiety.values())[0])
 
     def test_calculated_amount_and_limit_have_evidence(self):
         wielkosci = {'najnizsza': {'nazwa': 'kwota najniższej renty', 'seria': [

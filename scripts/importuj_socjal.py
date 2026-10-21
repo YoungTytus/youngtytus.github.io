@@ -127,23 +127,47 @@ def etykieta_wariantu(tekst):
     s = re.sub(r'^.*?\bogłasza\s+się,?\s*(?:że\s*)?', '', s, flags=re.I)
     s = re.sub(r'^od\s+dnia\s+\d{1,2}\s+\w+\s+\d{4}\s*r\.\s*', '', s, flags=re.I)
     s = re.sub(r'(\w)-\s+(\w)', r'\1\2', s)
-    s = re.sub(r'^(?:[a-z]\)\s*)?(?:miesięcznie\s*)?[–—-]?\s*', '', s, flags=re.I)
-    s = s.strip(' ,;:–—-')
+    s = re.sub(r'^(?:[a-z]\)\s*)?', '', s, flags=re.I)
+    s = re.sub(r'\bmiesięcznie\s*[–—-]?\s*', '', s, flags=re.I)
+    s = ' '.join(s.split()).strip(' ,;:–—-')
     return s or None
 
 
-def opis_wariantu(row, nazwa):
-    """Etykieta wariantu do wyświetlenia. Nagłówek punktu komunikatu („kwoty najniższej emerytury i renty”)
-    dopowiada, czym jest kwota; sama nazwa świadczenia bez dookreślenia nie jest wariantem."""
+PRZYMIOTNIKI_NAGLOWKA = {'najniższ': 'najniższa', 'maksymaln': 'maksymalna', 'minimaln': 'minimalna', 'najwyższ': 'najwyższa'}
+
+
+def opis_wariantu(row):
+    """Etykieta wariantu do wyświetlenia. Z nagłówka punktu komunikatu („kwoty najniższej emerytury i renty”)
+    bierzemy tylko dookreślenie („najniższa”), żeby opis był krótki."""
     et = etykieta_wariantu(row.get('wariant'))
-    nagl = re.sub(r'\s+wynos\w+$', '', ' '.join(str(row.get('naglowek_punktu') or '').split())).strip(' :')
-    if nagl and et and nagl.casefold() not in et.casefold():
-        et = '{}: {}'.format(nagl, et)
-    if et and not re.search(r'maksymal|minimal|najniż|najwyż', et, re.I):
-        rdzenie = [w[:5] for w in nazwa.casefold().split() if len(w) > 3]
-        if rdzenie and all(r in et.casefold() for r in rdzenie):
-            return None  # „kwota dodatku dopełniającego …” = sama nazwa karty
+    nagl = str(row.get('naglowek_punktu') or '').casefold()
+    for rdzen, przymiotnik in PRZYMIOTNIKI_NAGLOWKA.items():
+        if et and rdzen in nagl and rdzen not in et.casefold():
+            return '{}: {}'.format(przymiotnik, et)
     return et
+
+
+def etykiety_serii(rows, nazwa):
+    """Jeden opis na serię kwot przez wszystkie lata (klucz serii ze skryptu mapy), z najnowszego wpisu.
+    Bez tego ta sama seria rozpada się na wykresie na kilka linii, bo stare komunikaty mają inny układ."""
+    surowy = lambda r: r.get('wariant_klucz') or etykieta_wariantu(r.get('wariant')) or ''
+    # Opis rozlany na następną pozycję (uszkodzony tekst starego PDF: „…całkowicie niezdolnej do pracy,
+    # renta dla osoby częściowo …”) to ta sama seria co krótszy klucz, którym się zaczyna.
+    klucze = {surowy(r) for r in rows}
+    alias = {k: max((x for x in klucze if x and k.startswith(x + ' ')), key=len, default=k) for k in klucze}
+    klucz = lambda r: alias[surowy(r)]
+    wynik = {}
+    for r in sorted(rows, key=lambda r: data_tekstu(r.get('od')) or ''):
+        et = opis_wariantu(r) if surowy(r) == klucz(r) else None
+        if et or klucz(r) not in wynik:
+            wynik[klucz(r)] = et
+    if len(wynik) == 1:
+        (k, et), = wynik.items()
+        rdzenie = [w[:5] for w in nazwa.casefold().split() if len(w) > 3]
+        if et and rdzenie and all(x in et.casefold() for x in rdzenie) \
+                and not any(p in et.casefold() for p in PRZYMIOTNIKI_NAGLOWKA):
+            wynik[k] = None  # „kwota dodatku dopełniającego …” = sama nazwa karty
+    return wynik, klucz
 
 
 def zlote(liczba):
@@ -267,16 +291,19 @@ def przenies_podsumowanie(src, k, jednostki, dzien):
     # Kwoty z jednego aktu na ten sam okres (np. najniższa emerytura i renta częściowa
     # z jednego komunikatu) to warianty jednego wpisu, a nie nakładające się okresy.
     grupy = {}
+    etykiety, klucz_serii = etykiety_serii(rows, src['nazwa'])
+    kolejnosc = list(etykiety)
     for row in rows:
         value = wartosc_rekordu(row)
         if not value: continue
         klucz = (row.get('akt'), data_tekstu(row.get('od')), data_tekstu(row.get('do')))
         grupy.setdefault(klucz, []).append((row, value))
     for lista in grupy.values():
+        lista.sort(key=lambda rv: kolejnosc.index(klucz_serii(rv[0])))
         row = lista[0][0]
         warianty = []
         for r, value in lista:
-            w = {'etykieta': opis_wariantu(r, src['nazwa']), 'wartosc': value}
+            w = {'etykieta': etykiety[klucz_serii(r)], 'wartosc': value}
             if w not in warianty: warianty.append(w)
         jedna = len(warianty) == 1 and not warianty[0]['etykieta']
         poprzednie = []

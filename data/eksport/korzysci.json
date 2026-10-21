@@ -2605,7 +2605,7 @@
         "wartosc": null,
         "warianty": [
           {
-            "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+            "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
             "wartosc": "1978,49 zł"
           }
         ],
@@ -2617,8 +2617,13 @@
       "wyliczenie": null,
       "os_czasu": [
         {
-          "wartosc": "451,11 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "451,11 zł"
+            }
+          ],
           "od": "1999-06-01",
           "do": "2001-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
@@ -2635,8 +2640,13 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": "530,26 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "530,26 zł"
+            }
+          ],
           "od": "2001-06-01",
           "do": "2002-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
@@ -2653,8 +2663,13 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": "532,91 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "532,91 zł"
+            }
+          ],
           "od": "2002-06-01",
           "do": "2003-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
@@ -2671,8 +2686,13 @@
           "_roznica_zrodlowa": 2.65
         },
         {
-          "wartosc": "552,63 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "552,63 zł"
+            }
+          ],
           "od": "2003-03-01",
           "do": "2006-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
@@ -2689,8 +2709,13 @@
           "_roznica_zrodlowa": 19.72
         },
         {
-          "wartosc": "597,46 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "597,46 zł"
+            }
+          ],
           "od": "2006-03-01",
           "do": "2008-02-29",
           "rodzaj_zmiany": "akt_wykonawczy",
@@ -2710,7 +2735,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "636,29 zł"
             }
           ],
@@ -2733,7 +2758,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "675,10 zł"
             }
           ],
@@ -2756,7 +2781,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "706,29 zł"
             }
           ],
@@ -2779,7 +2804,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "728,18 zł"
             }
           ],
@@ -2802,7 +2827,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "831,15 zł"
             }
           ],
@@ -2825,7 +2850,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "844,45 zł"
             }
           ],
@@ -2848,7 +2873,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "882,56 zł"
             }
           ],
@@ -2871,7 +2896,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1029,80 zł"
             }
           ],
@@ -2894,7 +2919,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1338,44 zł"
             }
           ],
@@ -2917,7 +2942,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1780,96 zł"
             }
           ],
@@ -2940,7 +2965,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1878,91 zł"
             }
           ],
@@ -2963,7 +2988,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1978,49 zł"
             }
           ],
@@ -9459,7 +9484,7 @@
         "wartosc": null,
         "warianty": [
           {
-            "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+            "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
             "wartosc": "1978,49 zł"
           }
         ],
@@ -9471,8 +9496,13 @@
       "wyliczenie": null,
       "os_czasu": [
         {
-          "wartosc": "451,11 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "451,11 zł"
+            }
+          ],
           "od": "1999-06-01",
           "do": "2001-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
@@ -9489,8 +9519,13 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": "530,26 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "530,26 zł"
+            }
+          ],
           "od": "2001-06-01",
           "do": "2002-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
@@ -9507,8 +9542,13 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": "532,91 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "532,91 zł"
+            }
+          ],
           "od": "2002-06-01",
           "do": "2003-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
@@ -9525,8 +9565,13 @@
           "_roznica_zrodlowa": 2.65
         },
         {
-          "wartosc": "552,63 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "552,63 zł"
+            }
+          ],
           "od": "2003-03-01",
           "do": "2006-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
@@ -9543,8 +9588,13 @@
           "_roznica_zrodlowa": 19.72
         },
         {
-          "wartosc": "597,46 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "597,46 zł"
+            }
+          ],
           "od": "2006-03-01",
           "do": "2008-02-29",
           "rodzaj_zmiany": "akt_wykonawczy",
@@ -9564,7 +9614,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "636,29 zł"
             }
           ],
@@ -9587,7 +9637,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "675,10 zł"
             }
           ],
@@ -9610,7 +9660,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "706,29 zł"
             }
           ],
@@ -9633,7 +9683,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "728,18 zł"
             }
           ],
@@ -9656,7 +9706,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "831,15 zł"
             }
           ],
@@ -9679,7 +9729,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "844,45 zł"
             }
           ],
@@ -9702,7 +9752,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "882,56 zł"
             }
           ],
@@ -9725,7 +9775,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1029,80 zł"
             }
           ],
@@ -9748,7 +9798,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1338,44 zł"
             }
           ],
@@ -9771,7 +9821,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1780,96 zł"
             }
           ],
@@ -9794,7 +9844,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1878,91 zł"
             }
           ],
@@ -9817,7 +9867,7 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1978,49 zł"
             }
           ],
@@ -11392,11 +11442,11 @@
         "wartosc": null,
         "warianty": [
           {
-            "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+            "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
             "wartosc": "1978,49 zł"
           },
           {
-            "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+            "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
             "wartosc": "1483,87 zł"
           }
         ],
@@ -11408,8 +11458,13 @@
       "wyliczenie": null,
       "os_czasu": [
         {
-          "wartosc": "451,11 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "451,11 zł"
+            }
+          ],
           "od": "1999-06-01",
           "do": "2000-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
@@ -11426,8 +11481,13 @@
           "_roznica_zrodlowa": null
         },
         {
-          "wartosc": "361,92 zł",
-          "warianty": null,
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
+              "wartosc": "361,92 zł"
+            }
+          ],
           "od": "2000-06-01",
           "do": "2001-05-31",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
@@ -11447,11 +11507,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": null,
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "530,26 zł"
             },
             {
-              "etykieta": null,
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "407,88 zł"
             }
           ],
@@ -11474,11 +11534,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": null,
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "532,91 zł"
             },
             {
-              "etykieta": null,
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "409,92 zł"
             }
           ],
@@ -11504,11 +11564,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": null,
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "552,63 zł"
             },
             {
-              "etykieta": null,
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "425,09 zł"
             }
           ],
@@ -11534,11 +11594,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": null,
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "597,46 zł"
             },
             {
-              "etykieta": null,
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "459,57 zł"
             }
           ],
@@ -11564,11 +11624,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "636,29 zł"
             },
             {
-              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "489,44 zł"
             }
           ],
@@ -11594,11 +11654,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "675,10 zł"
             },
             {
-              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "519,30 zł"
             }
           ],
@@ -11624,11 +11684,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "706,29 zł"
             },
             {
-              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "543,29 zł"
             }
           ],
@@ -11654,11 +11714,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "728,18 zł"
             },
             {
-              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "560,13 zł"
             }
           ],
@@ -11684,26 +11744,26 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – renta dla osób częściowo niezdolnych do pracy",
-              "wartosc": "637,92 zł"
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "831,15 zł"
             },
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
-              "wartosc": "831,15 zł"
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
+              "wartosc": "637,92 zł"
             }
           ],
           "od": "2013-03-01",
           "do": "2014-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
           "poprzednia": [
-            "560.13",
-            "728.18"
+            "728.18",
+            "560.13"
           ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2013/95",
             "przepis": "treść",
-            "cytat": "\u0007 637,92 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy … a) \u0007 831,15 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
+            "cytat": "a) \u0007 831,15 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … \u0007 637,92 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2013/95",
             "data_stanu": null,
             "_sha256": "2fd0194afc46abf3f64a48f601ba9abd1526ca3240ba30afa090a335b9ac3e82"
@@ -11714,26 +11774,26 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – renta dla osób częściowo niezdolnych do pracy",
-              "wartosc": "648,13 zł"
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "844,45 zł"
             },
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
-              "wartosc": "844,45 zł"
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
+              "wartosc": "648,13 zł"
             }
           ],
           "od": "2014-03-01",
           "do": "2016-02-29",
           "rodzaj_zmiany": "akt_wykonawczy",
           "poprzednia": [
-            "637.92",
-            "831.15"
+            "831.15",
+            "637.92"
           ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2014/165",
             "przepis": "treść",
-            "cytat": "\u0007 648,13 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy … a) \u0007 844,45 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
+            "cytat": "a) \u0007 844,45 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … \u0007 648,13 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2014/165",
             "data_stanu": null,
             "_sha256": "a01c03e91df342bd29f9249f9f090c57c7394c494b720daba0edf492012bf14e"
@@ -11744,26 +11804,26 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – renta dla osób częściowo niezdolnych do pracy",
-              "wartosc": "676,75 zł"
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "wartosc": "882,56 zł"
             },
             {
-              "etykieta": "\u0007kwoty najniższej emerytury i renty: \u0007 miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
-              "wartosc": "882,56 zł"
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
+              "wartosc": "676,75 zł"
             }
           ],
           "od": "2016-03-01",
           "do": "2018-02-28",
           "rodzaj_zmiany": "akt_wykonawczy",
           "poprzednia": [
-            "648.13",
-            "844.45"
+            "844.45",
+            "648.13"
           ],
           "roznica": null,
           "dowod": {
             "eli": "MP/2016/168",
             "przepis": "treść",
-            "cytat": "\u0007 676,75 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy … a) \u0007 882,56 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy,",
+            "cytat": "a) \u0007 882,56 zł miesięcznie – emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy, … \u0007 676,75 zł miesięcznie – renta dla osób częściowo niezdolnych do pracy",
             "url": "https://api.sejm.gov.pl/eli/acts/MP/2016/168",
             "data_stanu": null,
             "_sha256": "b9cec6d4107c77d6e5303341db1d2f0a9af37df1ecf149b65defa9e64e4a90f1"
@@ -11774,11 +11834,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1029,80 zł"
             },
             {
-              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "772,35 zł"
             }
           ],
@@ -11804,11 +11864,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1338,44 zł"
             },
             {
-              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "1003,83 zł"
             }
           ],
@@ -11834,11 +11894,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1780,96 zł"
             },
             {
-              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "1335,72 zł"
             }
           ],
@@ -11864,11 +11924,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1878,91 zł"
             },
             {
-              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "1409,18 zł"
             }
           ],
@@ -11894,11 +11954,11 @@
           "wartosc": null,
           "warianty": [
             {
-              "etykieta": "kwoty najniższej emerytury i renty: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
+              "etykieta": "najniższa: emerytura, renta rodzinna i renta dla osób całkowicie niezdolnych do pracy",
               "wartosc": "1978,49 zł"
             },
             {
-              "etykieta": "kwoty najniższej emerytury i renty: renta dla osób częściowo niezdolnych do pracy",
+              "etykieta": "najniższa: renta dla osób częściowo niezdolnych do pracy",
               "wartosc": "1483,87 zł"
             }
           ],
