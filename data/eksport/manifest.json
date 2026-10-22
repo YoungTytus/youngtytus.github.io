@@ -1,14 +1,14 @@
 {
   "kontrakt": "strona-0.4",
-  "wygenerowano": "2026-10-22T14:08:28.000474+00:00",
+  "wygenerowano": "2026-10-22T20:08:15.789166+00:00",
   "wersja_kodu": "importuj_socjal-1.6",
   "na_dzien": "2026-10-22",
   "pliki": {
-    "korzysci.json": "ed2a8dc098074572d61b604e90276e77455d683094d5f8a2bde11c905edcb981",
-    "akty.json": "6e1f87085e67ce55038478d5fba76c0a3cfe8af56ecc65c28504f9caf7ee8b32",
+    "korzysci.json": "419f12d3bcc406551fd19b9a3e067a564839071a519d919adba331132e800ff4",
+    "akty.json": "5fcf337764b2224764efc6817d0c1b26cadccbf5d6774f57d7fef05b10826f38",
     "slowniki.json": "d6956b48072205c30c3265132ba90f37d4b6df025763e5c64ce91833ba867ae7",
-    "akty/SHA256SUMS": "671b47bcbacf764af49b7f48469b26e0f359a5ed79636354465f3d7ec52f9e69",
-    "socjal.json": "251ef44f3847d74f6a96c1f2ea1b441821c78c310f9bc67e1a73c16cc165feb4"
+    "akty/SHA256SUMS": "5bd06cd2c73869efe716e8da8340fb82729139a230cf7596333a9ae04738e79e",
+    "socjal.json": "eb442856f2a46ab881c398a81074cbe2cbadeec8f7ae58e4224bd1f90ea92cf9"
   },
   "zakres": [
     "DU/1998/1118",
@@ -16,12 +16,13 @@
     "DU/2004/593",
     "DU/2011/887",
     "DU/2016/195",
-    "DU/2022/1692"
+    "DU/2022/1692",
+    "DU/2025/1402"
   ],
   "liczby": {
-    "korzysci": 44,
-    "akty": 98,
-    "pliki_aktow": 103
+    "korzysci": 48,
+    "akty": 99,
+    "pliki_aktow": 104
   },
   "z_plikami_pdf": false
 }
