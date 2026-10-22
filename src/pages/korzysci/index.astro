@@ -9,12 +9,12 @@ const lista = posortowaneKorzysci();
 const akty = [...new Set(d.korzysci.map((k: any) => k.przepis.eli))].map((eli) => ({ eli, tytul: d.akty.find((a: any) => a.eli === eli)?.tytul ?? eli }));
 const opcje = (o: Record<string, string>) => Object.entries(o);
 ---
-<Uklad tytul="Wszystkie korzyści" opis="Lista świadczeń, ulg, zwolnień i uprawnień z filtrami według rodzaju, sytuacji życiowej, statusu i aktu prawnego." sekcja="korzysci">
+<Uklad tytul="Wszystkie korzyści" opis="Lista świadczeń i pomocy od państwa z filtrami według formy pomocy, rodzaju, sytuacji życiowej, statusu i aktu prawnego." sekcja="korzysci">
   <div class="page-head">
     <div class="wrap">
       <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span aria-current="page">Korzyści</span></nav>
       <h1>Wszystkie korzyści</h1>
-      <p class="lead">Świadczenia, ulgi, zwolnienia i uprawnienia z bazy. Wyszukiwarka zna polskie znaki i odmianę wyrazów: „renta” znajdzie też „renty socjalnej”.</p>
+      <p class="lead">Świadczenia pieniężne i pomoc niepieniężna od państwa. Wyszukiwarka zna polskie znaki i odmianę wyrazów: „renta” znajdzie też „renty socjalnej”.</p>
       <UwagaDanych />
     </div>
   </div>
@@ -23,6 +23,9 @@ const opcje = (o: Record<string, string>) => Object.entries(o);
     <form id="filtry" class="filters" role="search" action="/korzysci/" method="get">
       <label class="f-q">Szukaj
         <input type="search" name="q" id="q" placeholder="np. dodatek dopełniający" autocomplete="off" />
+      </label>
+      <label>Forma pomocy
+        <select name="forma"><option value="">wszystkie</option><option value="pieniezne">pieniądze</option><option value="niepieniezne">rzeczy i usługi</option></select>
       </label>
       <label>Rodzaj
         <select name="rodzaj"><option value="">wszystkie</option>{opcje(d.slowniki.rodzaj_korzysci).map(([k, v]) => <option value={k}>{v}</option>)}</select>
@@ -60,7 +63,7 @@ const opcje = (o: Record<string, string>) => Object.entries(o);
 
 <script>
   import { pasuje } from '../../lib/szukaj.mjs';
-  type Rekord = { id: string; nazwa: string; rodzaj: string; status: string; sytuacje: string[]; akt: string; kwota: number | null; tekst: string };
+  type Rekord = { id: string; nazwa: string; forma: string; rodzaj: string; status: string; sytuacje: string[]; akt: string; kwota: number | null; tekst: string };
   const indeks: Rekord[] = JSON.parse(document.getElementById('indeks')!.textContent!);
   const kontener = document.querySelector<HTMLElement>('[data-wyniki]')!;
   const karty = [...kontener.querySelectorAll<HTMLElement>('[data-id]')];
@@ -79,7 +82,7 @@ const opcje = (o: Record<string, string>) => Object.entries(o);
   function odswiez() {
     const f = Object.fromEntries(selecty.map((s) => [s.name, s.value]));
     const widoczne = indeks.filter((r) => pasuje(r.tekst, q.value)
-      && (!f.rodzaj || r.rodzaj === f.rodzaj) && (!f.status || r.status === f.status)
+      && (!f.forma || r.forma === f.forma) && (!f.rodzaj || r.rodzaj === f.rodzaj) && (!f.status || r.status === f.status)
       && (!f.sytuacja || r.sytuacje.includes(f.sytuacja)) && (!f.akt || r.akt === f.akt));
     if (f.sort === 'kwota') widoczne.sort((a, b) => (a.kwota ?? Infinity) - (b.kwota ?? Infinity) || a.nazwa.localeCompare(b.nazwa, 'pl'));
     else widoczne.sort((a, b) => a.nazwa.localeCompare(b.nazwa, 'pl'));

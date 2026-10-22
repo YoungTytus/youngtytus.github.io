@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="16" fill="#0b1f3a"/>
-  <path d="M112 86 128 65 162 60 179 47 207 53 225 39 255 50 275 61 303 59 329 66 352 65 359 91 350 111 366 139 355 165 369 191 354 215 364 241 345 261 328 286 306 294 290 284 272 307 246 289 226 284 209 269 190 273 177 253 150 251 135 236 115 226 118 201 108 182 117 157 105 140 117 117Z" transform="translate(-8 2) scale(.17)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mapa Polskiego Socjalu">
+  <!-- Znak: pinezka mapy (gdzie szukać) z sercem (pomoc od państwa). Granat i czerwień jak na stronie. -->
+  <rect x="1" y="1" width="62" height="62" rx="15" fill="#0b1f3a" stroke="#2a5486" stroke-width="2"/>
+  <ellipse cx="32" cy="54.5" rx="10" ry="2.6" fill="#9db4d6" opacity=".45"/>
+  <path d="M32 8.5c-9.9 0-17.5 7.7-17.5 17.4C14.5 38.8 32 54 32 54s17.5-15.2 17.5-28.1C49.5 16.2 41.9 8.5 32 8.5z" fill="#fff"/>
+  <path d="M32 36.8c-.6-.5-8.3-6.1-8.3-11.2a4.6 4.6 0 0 1 8.3-2.7 4.6 4.6 0 0 1 8.3 2.7c0 5.1-7.7 10.7-8.3 11.2z" fill="#c8102e"/>
 </svg>

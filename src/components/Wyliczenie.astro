@@ -30,7 +30,6 @@ for (let w = wyliczenie; w; w = w.podstawa?.lancuch) kroki.push(w);
         <p><strong>Zaokrąglanie:</strong> {typo(w.zaokraglenie.regula)}. <a class="link" href={`#${id}-zaokraglenie`}>Przepis</a></p>
         <Dowod dowod={w.zaokraglenie.dowod} id={`${id}-zaokraglenie`} />
       </>}
-      {w.flagi?.length > 0 && <p class="notice">Wyliczenie oznaczono w danych do przeglądu.</p>}
       {w.nieustalone?.length > 0 && <div class="missing"><ul>{w.nieustalone.map((n: any) => <li><strong>Nie ustalono:</strong> {typo(n.powod)}</li>)}</ul></div>}
     </div>;
   })}

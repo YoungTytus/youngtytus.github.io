@@ -7,8 +7,7 @@ export const GET: APIRoute = ({ site }) => {
   const d = dane();
   const extra = socjal();
   const sciezki = ['/', '/korzysci/', '/akty/', '/metodologia/', '/zmiany/', '/dane/',
-    ...(extra ? ['/przepisy/', '/historia/'] : []),
-    ...(extra?.artykuly ?? []).map((a: any) => `/przepis/${a.id}/`),
+    ...(extra ? ['/historia/'] : []),
     ...Object.keys(extra?.historia ?? {}).map((h) => `/historia/${h}/`),
     ...d.korzysci.map((k: any) => `/korzysc/${k.id}/`),
     ...d.akty.map((a: any) => `/akt/${eliSlug(a.eli)}/`),

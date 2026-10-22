@@ -1,15 +1,12 @@
 ---
 import Ikona from './Ikona.astro';
-import Kwota from './Kwota.astro';
 import Status from './Status.astro';
-import { czyKwotaWyliczona, dowodAktualnej, etykieta, kwotaPrezentowana, limitPrezentowany } from '../lib/model.mjs';
-import { typo, etykietaFormy, etykietaWariantu, opisUprawnionych } from '../lib/format.mjs';
+import { czyKwotaWyliczona, etykieta, kwotaPrezentowana, limitPrezentowany } from '../lib/model.mjs';
+import { typo, etykietaWariantu, opisUprawnionych } from '../lib/format.mjs';
 interface Props { k: any; naglowek?: 'h2' | 'h3' }
 const { k, naglowek = 'h3' } = Astro.props;
 const H = naglowek;
 const a = kwotaPrezentowana(k);
-const dowod = dowodAktualnej(k);
-const href = `/korzysc/${k.id}/${dowod.href}`;
 const limit = limitPrezentowany(k);
 const niepieniezne = k.forma === 'niepieniezne' && !a && !limit;
 const indywidualna = k.nieustalone?.find((n: any) => n.pole === 'ile.kwota_indywidualna');
@@ -30,17 +27,14 @@ const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.stat
     )}
     <div class="card-value">
       <span class="label">{etykietaWartosci}</span>
-      {a?.wartosc && <Kwota wartosc={a.wartosc} href={href} etykieta={dowod.etykieta} blok />}
+      {/* Kafelek to skrót: kwota bez odznaki dowodu; dowód, przepis i historia są na stronie karty. */}
+      {a?.wartosc && <span class="kwota-kafelek">{typo(a.wartosc)}</span>}
       {!a?.wartosc && a?.warianty?.length && (
-        <span class="kzd">
-          <span class="warianty">{a.warianty.map((w: any, i: number) => <span class="kwota" title={etykietaWariantu(w, i)}>{i > 0 && <span aria-hidden="true">/ </span>}<span class="sr-only">{etykietaWariantu(w, i)}: </span>{typo(w.wartosc)}</span>)}</span>
-          <a class="dowod dowod-blok" href={href}><span class="sr-only">Dowód: </span>{dowod.etykieta}</a>
-        </span>
+        <span class="warianty">{a.warianty.map((w: any, i: number) => <span class="kwota-kafelek" title={etykietaWariantu(w, i)}>{i > 0 && <span aria-hidden="true">/ </span>}<span class="sr-only">{etykietaWariantu(w, i)}: </span>{typo(w.wartosc)}</span>)}</span>
       )}
-      {!a && limit && <Kwota wartosc={limit.wartosc} href={`/korzysc/${k.id}/${limit.href}`} etykieta={limit.etykieta} blok />}
+      {!a && limit && <span class="kwota-kafelek">{typo(limit.wartosc)}</span>}
       {niepieniezne && <span class="forma-pomocy">Bez kwoty: rzecz, usługa albo miejsce</span>}
       {!a && !limit && !niepieniezne && <span class="muted">{indywidualna ? `Kwota indywidualna: ${indywidualna.powod}` : k.ile.regula ? 'Reguła procentowa — szczegóły na karcie' : 'Nie ustalono (szczegóły na karcie)'}</span>}
-      {k.flagi?.length > 0 && <span class="muted">Rekord wymaga przeglądu według eksportu.</span>}
     </div>
   </div>
   <div class="card-bottom" aria-hidden="true"><span>Warunki, historia i źródła</span><Ikona n="strzalka" /></div>

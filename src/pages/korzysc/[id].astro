@@ -9,8 +9,9 @@ import UwagaDanych from '../../components/UwagaDanych.astro';
 import Wykres from '../../components/Wykres.astro';
 import Progi from '../../components/Progi.astro';
 import Wyliczenie from '../../components/Wyliczenie.astro';
+import Zwijana from '../../components/Zwijana.astro';
 import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta, korzyscPoId, limitPrezentowany } from '../../lib/model.mjs';
-import { kartaSocjal, artykulSocjal } from '../../lib/socjal.mjs';
+import { kartaSocjal } from '../../lib/socjal.mjs';
 import {
   KOLEJNOSC_TERMINOW, OPIS_TERMINU, czyZaslepka, dataLubBrak, dataPL, eliSlug, etapZaslepki,
   etykietaFormy, etykietaRozwiazania, etykietaZmiany, etykietaWariantu, opisUprawnionych, typo, wielka,
@@ -22,7 +23,6 @@ export function getStaticPaths() {
 
 const k: any = korzyscPoId(Astro.params.id!);
 const sc = kartaSocjal(k.id);
-const przepisySocjal = (sc?.artykuly ?? []).map((id: string) => artykulSocjal(id)).filter(Boolean);
 const ile = k.ile;
 const a = ile.aktualna;
 const kwotyWariantow = new Map((ile.wyliczenie?.warianty ?? []).map((w: any) => [JSON.stringify([w.etykieta, w.udzial]), w.wartosc]));
@@ -52,7 +52,7 @@ const jsonLd = {
 
 const sekcje = [
   ['komu', 'Co i komu'], ['ile', 'Ile'], ['terminy', 'Do kiedy'], ['zrodla', 'Skąd to wiemy'],
-  ['warunki', 'Warunki i odwołania'], ...(sc ? [['mapa-socjal', 'Mapa przepisów']] : []), ...(k.nieustalone.length ? [['braki', 'Nie ustalono']] : []), ['akty', 'Pobierz akty'],
+  ['warunki', 'Warunki i odwołania'], ...(k.nieustalone.length ? [['braki', 'Nie ustalono']] : []), ['akty', 'Pobierz akty'],
 ];
 const etykietaDowodu = (d: any) => `${d.eli} · ${d.przepis}`;
 const dowodReguly = (udzial: string) => {
@@ -91,9 +91,7 @@ const dowodNominalnej = nominalnyKrok >= 0
       {zamknieta && (
         <p class="notice closed"><strong>Korzyść zakończona.</strong> Zostawiamy ją jako informację historyczną.{terminWniosku && <> Termin złożenia wniosku: {dataLubBrak(terminWniosku.data)}.{terminWniosku.skutek && ` ${terminWniosku.skutek}`} <a class="link" href="#terminy">Szczegóły i przepis</a>.</>}</p>
       )}
-      {k.sytuacje_zrodlo === 'automatyczne' && <p class="summary-note">Sytuacje życiowe przypisano automatycznie w eksporcie; wymagają przeglądu zespołu.</p>}
       <UwagaDanych />
-      {k.flagi?.length > 0 && <p class="notice">Eksport oznacza ten rekord do przeglądu. Pokazujemy wartości i cytaty z dostarczonych danych; wymagają one weryfikacji przez zespół.</p>}
     </div>
   </div>
 
@@ -190,15 +188,18 @@ const dowodNominalnej = nominalnyKrok >= 0
             </tbody>
           </table>
         </div>}
-        {ile.os_czasu.length > 0 && <><p class="summary-note">Różnice podaje pipeline danych, strona ich nie przelicza. „—” przy pierwszym wpisie oznacza brak poprzedniej kwoty w danych.</p><h3>Dowody wpisów</h3></>}
-        {ile.os_czasu.map((w: any, i: number) => (
-          <details id={`wpis-${i}`}>
-            <summary>{w.od ? dataLubBrak(w.od) : 'Data początku nie ustalona'}: {typo(etykietaDowodu(w.dowod))}</summary>
-            <Dowod dowod={w.dowod} />
-          </details>
-        ))}
+        {ile.os_czasu.length > 0 && <p class="summary-note">Różnice podaje pipeline danych, strona ich nie przelicza. „—” przy pierwszym wpisie oznacza brak poprzedniej kwoty w danych.</p>}
+        {ile.os_czasu.length > 0 && <Zwijana tytul="Dowody wpisów historii" liczba={ile.os_czasu.length} opis="Cytat i akt dla każdej kwoty z tabeli.">
+          {ile.os_czasu.map((w: any, i: number) => (
+            <details id={`wpis-${i}`}>
+              <summary>{w.od ? dataLubBrak(w.od) : 'Data początku nie ustalona'}: {typo(etykietaDowodu(w.dowod))}</summary>
+              <Dowod dowod={w.dowod} />
+            </details>
+          ))}
+        </Zwijana>}
         {ile.os_czasu.length > 0 && <a class="btn btn-sm" style="margin-top:22px" href={`/dane/historia/${k.id}.csv`} download={`historia_${k.id}.csv`}><Ikona n="pobierz" />Historia kwot (CSV)</a>}
         <Progi progi={ile.progi} />
+        {sc?.historia_parametr && <p><a class="text-link" href={`/historia/${sc.historia_parametr}/`}>Pełne zestawienie historii kwot <Ikona n="strzalka" /></a></p>}
       </section>
 
       <!-- DO KIEDY -->
@@ -206,10 +207,8 @@ const dowodNominalnej = nominalnyKrok >= 0
         <p class="kicker">Do kiedy</p>
         <h2 id="h-terminy">Terminy i okresy</h2>
         <p class="summary-note" style="margin:0 0 20px">Terminy dotyczą różnych zdarzeń i okresów. Pokazujemy każdy rodzaj osobno, z przepisem.</p>
-        {KOLEJNOSC_TERMINOW.map((r) => terminyWg[r].length ? (
-          <div class="termin">
-            <h3>{etykieta('rodzaj_terminu', r)}</h3>
-            <p class="termin-opis">{OPIS_TERMINU[r as keyof typeof OPIS_TERMINU]}</p>
+        {KOLEJNOSC_TERMINOW.filter((r) => terminyWg[r].length).map((r) => (
+          <Zwijana tytul={etykieta('rodzaj_terminu', r)} liczba={terminyWg[r].length} prog={2} opis={OPIS_TERMINU[r as keyof typeof OPIS_TERMINU]}>
             {terminyWg[r].map((t: any) => (
               <>
                 <p class="termin-data">{t.okres ? <>{typo(t.okres)}{t.zdarzenie && ` od zdarzenia: ${t.zdarzenie}`}</> : t.od ? <>Od {dataLubBrak(t.od)}{t.do && ` do ${dataLubBrak(t.do)}`}</> : dataLubBrak(t.data, 'brak konkretnej daty w eksporcie')}</p>
@@ -219,13 +218,9 @@ const dowodNominalnej = nominalnyKrok >= 0
                 {t.etapy?.map((e: any) => <div class="termin"><h4>Od {dataLubBrak(e.od)}</h4><p>{typo(e.zakres)}</p><Dowod dowod={e.dowod} /></div>)}
               </>
             ))}
-          </div>
-        ) : (
-          <div class="termin is-empty">
-            <h3>{etykieta('rodzaj_terminu', r)}</h3>
-            <p>Dane nie zawierają terminu tego rodzaju.</p>
-          </div>
+          </Zwijana>
         ))}
+        {KOLEJNOSC_TERMINOW.some((r) => !terminyWg[r].length) && <p class="summary-note">Brak terminów w danych: {KOLEJNOSC_TERMINOW.filter((r) => !terminyWg[r].length).map((r) => etykieta('rodzaj_terminu', r)).join(', ')}.</p>}
       </section>
 
       <!-- SKĄD TO WIEMY -->
@@ -233,14 +228,16 @@ const dowodNominalnej = nominalnyKrok >= 0
         <p class="kicker">Skąd to wiemy</p>
         <h2 id="h-zrodla">Droga do źródła</h2>
         {ile.trasa.length > 0 ? (
-          <ol style="list-style:none;margin:0;padding:0">
-            {ile.trasa.map((t: any, i: number) => (
-              <li class="step" id={`krok-${i}`}>
-                <span class="step-number" aria-hidden="true">{t.krok}</span>
-                <div><h3><span class="sr-only">Krok {t.krok}: </span>{t.opis}</h3><Dowod dowod={t.dowod} /></div>
-              </li>
-            ))}
-          </ol>
+          <Zwijana tytul="Kroki od przepisu do kwoty" liczba={ile.trasa.length} prog={4}>
+            <ol style="list-style:none;margin:0;padding:0">
+              {ile.trasa.map((t: any, i: number) => (
+                <li class="step" id={`krok-${i}`}>
+                  <span class="step-number" aria-hidden="true">{t.krok}</span>
+                  <div><h3><span class="sr-only">Krok {t.krok}: </span>{t.opis}</h3><Dowod dowod={t.dowod} /></div>
+                </li>
+              ))}
+            </ol>
+          </Zwijana>
         ) : (
           <p class="summary-note" style="margin-top:0">Trasa dowodowa (przepis → delegacja → akt wykonawczy) nie jest jeszcze w danych.{ile.os_czasu.length > 0 ? <> Zobacz dowody w <a class="link" href="#historia">tabeli historii</a>.</> : ile.wyliczenie ? <> Zobacz <a class="link" href="#wyliczenie">podstawę wyliczenia</a>.</> : <> Dostępny przepis przyznający pokazujemy <a class="link" href="#przepis">powyżej</a>.</>}</p>
         )}
@@ -251,6 +248,7 @@ const dowodNominalnej = nominalnyKrok >= 0
       <section class="detail-section" id="warunki" aria-labelledby="h-warunki">
         <h2 id="h-warunki">Warunki i odwołania</h2>
         {k.powiazane.length === 0 && <p class="summary-note" style="margin-top:0">Dane nie zawierają powiązanych przepisów (definicji, wyłączeń) dla tej korzyści.</p>}
+        {k.powiazane.length > 0 && <Zwijana tytul="Warunki, wyłączenia i powiązane przepisy" liczba={k.powiazane.length}>
         {k.powiazane.map((p: any) => {
           const cel = p.id_korzysci ? korzyscPoId(p.id_korzysci) : null;
           return (
@@ -263,27 +261,20 @@ const dowodNominalnej = nominalnyKrok >= 0
             </div>
           );
         })}
+        </Zwijana>}
       </section>
-
-      {sc && <section class="detail-section" id="mapa-socjal">
-        <p class="kicker">Mapa projektu Socjal</p>
-        <h2>Powiązania z przepisami</h2>
-        <p class="summary-note">Źródło: {sc.pochodzenie?.startsWith('reczna_') ? `karta opracowana ręcznie (${sc.pochodzenie.slice(7)})` : 'kandydat wykryty automatycznie, wymagający przeglądu'}. Powiązanie wskazuje przepis użyty w analizie, nie przesądza o prawie do wypłaty.</p>
-        {przepisySocjal.length > 0 ? <ul>{przepisySocjal.map((v: any) => <li><a class="link" href={`/przepis/${v.id}/`}>{v.eli}, art. {v.artykul}</a> <span class="muted">({v.jednostki.length} jednostek)</span></li>)}</ul> : <p class="summary-note">Nie ma jeszcze podstron przepisów dla tej karty.</p>}
-        {sc.historia_parametr && <p><a class="text-link" href={`/historia/${sc.historia_parametr}/`}>Otwórz pełne zestawienie historii kwot →</a></p>}
-        {sc.opis_kwoty_z_notatki && <details><summary>Opis kwoty i zasad z notatki analitycznej</summary><p style="white-space:pre-wrap">{sc.opis_kwoty_z_notatki}</p><p class="summary-note">Opis z notatki nie jest automatycznie przeliczany na aktualną kwotę; decydują rekordy z dowodami źródłowymi.</p></details>}
-        {sc.uwaga_czasowa && <p class="summary-note">{sc.uwaga_czasowa}</p>}
-      </section>}
 
       <!-- NIE USTALONO -->
       {k.nieustalone.length > 0 && (
         <section class="detail-section" id="braki" aria-labelledby="h-braki">
           <h2 id="h-braki">Czego jeszcze nie ustalono</h2>
-          <div class="missing">
-            <ul>
-              {k.nieustalone.map((n: any) => <li><strong>Nie ustalono: </strong><code>{n.pole}</code><br />Powód: {typo(n.powod)}</li>)}
-            </ul>
-          </div>
+          <Zwijana tytul="Brakujące informacje" liczba={k.nieustalone.length} prog={2}>
+            <div class="missing">
+              <ul>
+                {k.nieustalone.map((n: any) => <li><strong>Nie ustalono: </strong><code>{n.pole}</code><br />Powód: {typo(n.powod)}</li>)}
+              </ul>
+            </div>
+          </Zwijana>
         </section>
       )}
 
@@ -292,7 +283,9 @@ const dowodNominalnej = nominalnyKrok >= 0
         <p class="kicker">Teksty źródłowe</p>
         <h2 id="h-akty">Pobierz akty</h2>
         <p class="summary-note" style="margin:0 0 20px">Akt przyznający i akty wykonawcze z dowodów tej korzyści. <strong>Tekst ujednolicony</strong> pokazuje prawo w dniu stanu (informacyjnie); <strong>tekst ogłoszony</strong> jest wiążący, ale w brzmieniu z dnia ogłoszenia.</p>
-        {pobrania.map((p) => <PlikiAktu eli={p.eli} akt={p.akt} />)}
+        <Zwijana tytul="Akty do pobrania" liczba={pobrania.length}>
+          {pobrania.map((p) => <PlikiAktu eli={p.eli} akt={p.akt} />)}
+        </Zwijana>
       </section>
     </div>
   </div>

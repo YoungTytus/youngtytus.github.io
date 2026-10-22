@@ -33,7 +33,34 @@
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1998-1118/D19981118Lj.pdf",
+        "nazwa_pobierania": "DU-1998-1118_tekst-ujednolicony.pdf",
+        "sha256": "73edc508c4d7140d00a1aa8e34212894aa000b6a76eb902a8de3348eee5c5801",
+        "rozmiar": 1321898,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118/text/U/D19981118Lj.pdf",
+        "pobrano": "2026-10-21T10:35:47+00:00",
+        "data_stanu": "2026-10-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1998-1118/D19981118.pdf",
+        "nazwa_pobierania": "DU-1998-1118_tekst-ogloszony.pdf",
+        "sha256": "8e8cccd0b68ce01e2c3af5130542243ad42783f647bd117cd0e4777a8ee48428",
+        "rozmiar": 37113642,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118/text/O/D19981118.pdf",
+        "pobrano": "2026-10-18T09:52:44+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2003/1268",
@@ -49,7 +76,34 @@
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2003-1268/D20031268Lj.pdf",
+        "nazwa_pobierania": "DU-2003-1268_tekst-ujednolicony.pdf",
+        "sha256": "216fb4eef4f3fe404cd4dbc71ff1c874232d36f769d3a09727e692e2638dcc69",
+        "rozmiar": 293537,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268/text/U/D20031268Lj.pdf",
+        "pobrano": "2026-10-21T10:54:27+00:00",
+        "data_stanu": "2026-04-17",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2003-1268/D20031268.pdf",
+        "nazwa_pobierania": "DU-2003-1268_tekst-ogloszony.pdf",
+        "sha256": "e35a9209bf297bca804c62871ae3543748e9713e90afb0647e0d866d66f85be8",
+        "rozmiar": 302687,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2003/1268/text/O/D20031268.pdf",
+        "pobrano": "2026-10-17T14:39:33+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2004/593",
@@ -70,7 +124,34 @@
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2004-593/D20040593Lj.pdf",
+        "nazwa_pobierania": "DU-2004-593_tekst-ujednolicony.pdf",
+        "sha256": "69a093e6bd4d2c16a479deef9678e997698beb6cc8fc8f59731e9a97231b14fb",
+        "rozmiar": 1086588,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2004/593/text/U/D20040593Lj.pdf",
+        "pobrano": "2026-10-21T10:30:44+00:00",
+        "data_stanu": "2026-07-29",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2004-593/D20040593.pdf",
+        "nazwa_pobierania": "DU-2004-593_tekst-ogloszony.pdf",
+        "sha256": "06bebfc0970610565b3f444be22a28850486037cceb41dfb9f9d1f3ad9c8862c",
+        "rozmiar": 272104,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2004/593/text/O/D20040593.pdf",
+        "pobrano": "2026-10-18T09:53:52+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2006/950",
@@ -82,7 +163,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2006-950/D20060950.pdf",
+        "nazwa_pobierania": "DU-2006-950_tekst-ogloszony.pdf",
+        "sha256": "df855978233822aaf689a3af48aa6b6bc819644b6d058ead1b1a39c2692de105",
+        "rozmiar": 62399,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/950/text/O/D20060950.pdf",
+        "pobrano": "2026-10-21T10:34:20+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2009/1055",
@@ -94,7 +189,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2009-1055/D20091055.pdf",
+        "nazwa_pobierania": "DU-2009-1055_tekst-ogloszony.pdf",
+        "sha256": "771859270ef2425fd69b595355e678e5d7ffad5aca028e1d0fec0080ad21f14b",
+        "rozmiar": 299641,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2009/1055/text/O/D20091055.pdf",
+        "pobrano": "2026-10-21T10:34:03+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2010/1578",
@@ -106,7 +215,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2010-1578/D20101578.pdf",
+        "nazwa_pobierania": "DU-2010-1578_tekst-ogloszony.pdf",
+        "sha256": "89e71d43c726e975160eb95bb81bb9f930fbf6ba3a31a2ba9df963aa46e68084",
+        "rozmiar": 370163,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2010/1578/text/O/D20101578.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2011/887",
@@ -120,7 +243,34 @@
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2011-887/D20110887Lj.pdf",
+        "nazwa_pobierania": "DU-2011-887_tekst-ujednolicony.pdf",
+        "sha256": "5622c8ce9d64d8d7e5d7362403866f7939f6a94083a54968c200a075664d73ef",
+        "rozmiar": 1165118,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2011/887/text/U/D20110887Lj.pdf",
+        "pobrano": "2026-10-20T13:06:22+00:00",
+        "data_stanu": "2026-07-29",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2011-887/D20110887.pdf",
+        "nazwa_pobierania": "DU-2011-887_tekst-ogloszony.pdf",
+        "sha256": "1dc82cbfd9fa7f80c7baf9255ae5786a4a3c7dc24a0d60f31cba2d8ac7c07c35",
+        "rozmiar": 599772,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2011/887/text/O/D20110887.pdf",
+        "pobrano": "2026-10-18T09:54:07+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2012/823",
@@ -132,7 +282,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2012-823/D20120823.pdf",
+        "nazwa_pobierania": "DU-2012-823_tekst-ogloszony.pdf",
+        "sha256": "ee8a509b6d74ef00aa400689ba9e6657ff538796948e291bd7d5ea49fd19e224",
+        "rozmiar": 684535,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2012/823/text/O/D20120823.pdf",
+        "pobrano": "2026-10-21T10:32:44+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2015/1058",
@@ -144,7 +308,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2015-1058/D20151058.pdf",
+        "nazwa_pobierania": "DU-2015-1058_tekst-ogloszony.pdf",
+        "sha256": "7cad68f16b6130b7756a11472cc6efa50321847c2f30e8fe4db86a74aab349f9",
+        "rozmiar": 695507,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2015/1058/text/O/D20151058.pdf",
+        "pobrano": "2026-10-21T10:32:18+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2016/195",
@@ -165,7 +343,34 @@
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2016-195/D20160195Lj.pdf",
+        "nazwa_pobierania": "DU-2016-195_tekst-ujednolicony.pdf",
+        "sha256": "8cc5589b8f3ffabed0fcad44dcd426bbb4f216d8faf76d3a2b9e38f307c49b35",
+        "rozmiar": 425857,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2016/195/text/U/D20160195Lj.pdf",
+        "pobrano": "2026-10-21T15:16:58+00:00",
+        "data_stanu": "2026-04-27",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2016-195/D20160195.pdf",
+        "nazwa_pobierania": "DU-2016-195_tekst-ogloszony.pdf",
+        "sha256": "31069ef23e7dd324ced307338ba6b033469156702388271f5d934b58673827f4",
+        "rozmiar": 951963,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2016/195/text/O/D20160195.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2017/1428",
@@ -177,7 +382,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2017-1428/D20171428.pdf",
+        "nazwa_pobierania": "DU-2017-1428_tekst-ogloszony.pdf",
+        "sha256": "c8eb74ba85aa9b8fb6297c4d197029315560f7473c30ae04c4d13d7d4485f359",
+        "rozmiar": 466135,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2017/1428/text/O/D20171428.pdf",
+        "pobrano": "2026-10-21T09:55:48+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2018/1358",
@@ -189,7 +408,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2018-1358/D20181358.pdf",
+        "nazwa_pobierania": "DU-2018-1358_tekst-ogloszony.pdf",
+        "sha256": "efbb7e5eebb3c3c4f106b6594932503e9387d74601f5a51bd3849d9f09c8dc9e",
+        "rozmiar": 234407,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2018/1358/text/O/D20181358.pdf",
+        "pobrano": "2026-10-21T10:31:56+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2021/1296",
@@ -201,7 +434,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2021-1296/D20211296.pdf",
+        "nazwa_pobierania": "DU-2021-1296_tekst-ogloszony.pdf",
+        "sha256": "0a7b071e44a740f928c740ae34d36a23c9807a42d53b32d9c1e18cd5f3ac4066",
+        "rozmiar": 248349,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2021/1296/text/O/D20211296.pdf",
+        "pobrano": "2026-10-21T10:31:42+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2022/1692",
@@ -215,7 +462,21 @@
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2022-1692/D20221692Lj.pdf",
+        "nazwa_pobierania": "DU-2022-1692_tekst-ujednolicony.pdf",
+        "sha256": "3e37ce84995e310e6aac85aa7acb8dc2563eb75a219408766571632282812d44",
+        "rozmiar": 272089,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692/text/U/D20221692Lj.pdf",
+        "pobrano": "2026-10-21T10:35:38+00:00",
+        "data_stanu": "2024-09-04",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2023/1565",
@@ -227,7 +488,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2023-1565/D20231565.pdf",
+        "nazwa_pobierania": "DU-2023-1565_tekst-ogloszony.pdf",
+        "sha256": "0ec09b2de0165dedae9b1ab678b4e4c4ec22e981be4f1e4c856e0173a800238e",
+        "rozmiar": 184077,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2023/1565/text/O/D20231565.pdf",
+        "pobrano": "2026-10-21T09:55:32+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2024/1044",
@@ -239,7 +514,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2024-1044/D20241044.pdf",
+        "nazwa_pobierania": "DU-2024-1044_tekst-ogloszony.pdf",
+        "sha256": "97aac3573f0161bc45dd0e01c0576639d8a37994bd05babe66b68f6f6757b98c",
+        "rozmiar": 152348,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2024/1044/text/O/D20241044.pdf",
+        "pobrano": "2026-10-21T10:31:19+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2024/1243",
@@ -251,7 +540,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2024-1243/D20241243.pdf",
+        "nazwa_pobierania": "DU-2024-1243_tekst-ogloszony.pdf",
+        "sha256": "1cfdf84d732634a88b5ab56fb1dc41b8a202d30634f3e136d37e6698866781e1",
+        "rozmiar": 350865,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2024/1243/text/O/D20241243.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2025/1159",
@@ -263,7 +566,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2025-1159/D20251159.pdf",
+        "nazwa_pobierania": "DU-2025-1159_tekst-ogloszony.pdf",
+        "sha256": "c44a232b15b410c45a86d7f13594fdb47dcdc10a4c04ef895406c59595d3b7be",
+        "rozmiar": 166238,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/1159/text/O/D20251159.pdf",
+        "pobrano": "2026-10-18T10:04:22+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2025/718",
@@ -275,7 +592,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2025-718/D20250718.pdf",
+        "nazwa_pobierania": "DU-2025-718_tekst-ogloszony.pdf",
+        "sha256": "ce079fd28a12f22178839f41e6c1dcf9a28d03c7c5e43c97e8e29b7247da1b85",
+        "rozmiar": 189135,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/718/text/O/D20250718.pdf",
+        "pobrano": "2026-10-18T10:04:20+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/1998/572",
@@ -287,7 +618,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-1998-572/M19980572.pdf",
+        "nazwa_pobierania": "MP-1998-572_tekst-ogloszony.pdf",
+        "sha256": "0c7075f89ec4224e255985dd7726214253b4e838c660f17351f7fea1b703df42",
+        "rozmiar": 360659,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/1998/572/text/O/M19980572.pdf",
+        "pobrano": "2026-10-20T09:01:15+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/1999/255",
@@ -299,7 +644,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-1999-255/M19990255.pdf",
+        "nazwa_pobierania": "MP-1999-255_tekst-ogloszony.pdf",
+        "sha256": "10f46424e2665752e46e479fc97c170a263dc92390293f8d59c514a260c5f228",
+        "rozmiar": 253803,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/1999/255/text/O/M19990255.pdf",
+        "pobrano": "2026-10-18T13:46:13+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/1999/256",
@@ -311,7 +670,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-1999-256/M19990256.pdf",
+        "nazwa_pobierania": "MP-1999-256_tekst-ogloszony.pdf",
+        "sha256": "debd2ea519ff64d4682d62d9c4df3a89d561487294b8ff037a316e8bda9423d8",
+        "rozmiar": 258529,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/1999/256/text/O/M19990256.pdf",
+        "pobrano": "2026-10-21T10:53:27+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/1999/438",
@@ -323,7 +696,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-1999-438/M19990438.pdf",
+        "nazwa_pobierania": "MP-1999-438_tekst-ogloszony.pdf",
+        "sha256": "36004c2db0a526726aa9c472a894943728dbd8f6499c9331e5d2f084a82faa7c",
+        "rozmiar": 244034,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/1999/438/text/O/M19990438.pdf",
+        "pobrano": "2026-10-18T13:46:03+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/1999/553",
@@ -335,7 +722,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-1999-553/M19990553.pdf",
+        "nazwa_pobierania": "MP-1999-553_tekst-ogloszony.pdf",
+        "sha256": "6da814c68cae00950334d45fb347dfb3c32d7147bbd6ee5e21dddf417f546b95",
+        "rozmiar": 247356,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/1999/553/text/O/M19990553.pdf",
+        "pobrano": "2026-10-18T13:45:55+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/1999/78",
@@ -347,7 +748,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-1999-78/M19990078.pdf",
+        "nazwa_pobierania": "MP-1999-78_tekst-ogloszony.pdf",
+        "sha256": "a9c66fe4b4afbe32cfd931e7382e2c546c859e1b4e4146a720ce6816717af53e",
+        "rozmiar": 240563,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/1999/78/text/O/M19990078.pdf",
+        "pobrano": "2026-10-18T13:45:44+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2000/159",
@@ -359,7 +774,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2000-159/M20000159.pdf",
+        "nazwa_pobierania": "MP-2000-159_tekst-ogloszony.pdf",
+        "sha256": "3fe1c3ecf076aa955387470df0fb566e6e3162fc7a255e6f9746483f51e2e656",
+        "rozmiar": 36207,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2000/159/text/O/M20000159.pdf",
+        "pobrano": "2026-10-18T13:45:38+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2000/316",
@@ -371,7 +800,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2000-316/M20000316.pdf",
+        "nazwa_pobierania": "MP-2000-316_tekst-ogloszony.pdf",
+        "sha256": "b175de05c21bfe8e1c565535a4fb8b618ce5f456d1bcddd70eeb3b583bbbcbcb",
+        "rozmiar": 36685,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2000/316/text/O/M20000316.pdf",
+        "pobrano": "2026-10-21T10:52:49+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2000/321",
@@ -383,7 +826,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2000-321/M20000321.pdf",
+        "nazwa_pobierania": "MP-2000-321_tekst-ogloszony.pdf",
+        "sha256": "917a2ecb57399591c6d7f8a61a61336846ce3359bb87331f8949b2ecdcd16d9b",
+        "rozmiar": 36635,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2000/321/text/O/M20000321.pdf",
+        "pobrano": "2026-10-18T13:45:31+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2000/535",
@@ -395,7 +852,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2000-535/M20000535.pdf",
+        "nazwa_pobierania": "MP-2000-535_tekst-ogloszony.pdf",
+        "sha256": "21ef4382aa7b14f0690e99c5832a93fb70a5760573c98664fb763ad16462a539",
+        "rozmiar": 54698,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2000/535/text/O/M20000535.pdf",
+        "pobrano": "2026-10-18T13:45:24+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2000/772",
@@ -407,7 +878,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2000-772/M20000772.pdf",
+        "nazwa_pobierania": "MP-2000-772_tekst-ogloszony.pdf",
+        "sha256": "af3cb4ebbf9e11b83d993ea798b291d503c239715001b7fb7afbfbdadfb30476",
+        "rozmiar": 54780,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2000/772/text/O/M20000772.pdf",
+        "pobrano": "2026-10-18T13:45:21+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2001/123",
@@ -419,7 +904,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2001-123/M20010123.pdf",
+        "nazwa_pobierania": "MP-2001-123_tekst-ogloszony.pdf",
+        "sha256": "431a506bfbef2c58d256d6a4f520ae65abe942a4c79b6c7021a12baebb97996f",
+        "rozmiar": 23625,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2001/123/text/O/M20010123.pdf",
+        "pobrano": "2026-10-18T13:45:12+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2001/263",
@@ -431,7 +930,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2001-263/M20010263.pdf",
+        "nazwa_pobierania": "MP-2001-263_tekst-ogloszony.pdf",
+        "sha256": "d1b2168968a8c6ffa0958294aa2f33f134fb7d35676df2fe1c5a2e0a62ae3eca",
+        "rozmiar": 244083,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2001/263/text/O/M20010263.pdf",
+        "pobrano": "2026-10-21T10:52:19+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2001/270",
@@ -443,7 +956,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2001-270/M20010270.pdf",
+        "nazwa_pobierania": "MP-2001-270_tekst-ogloszony.pdf",
+        "sha256": "a1611bd103243f4e3dd6dbb4643c2338ab00a72a0db220139c04cb0b0922fca6",
+        "rozmiar": 243228,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2001/270/text/O/M20010270.pdf",
+        "pobrano": "2026-10-18T13:45:03+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2001/453",
@@ -455,7 +982,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2001-453/M20010453.pdf",
+        "nazwa_pobierania": "MP-2001-453_tekst-ogloszony.pdf",
+        "sha256": "fd94556f3317eb9f83e6efbdc8e9818a50510890eeee42200e0a5037d172531e",
+        "rozmiar": 26907,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2001/453/text/O/M20010453.pdf",
+        "pobrano": "2026-10-18T13:44:55+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2001/706",
@@ -467,7 +1008,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2001-706/M20010706.pdf",
+        "nazwa_pobierania": "MP-2001-706_tekst-ogloszony.pdf",
+        "sha256": "8edf28f3b6ff124c7ea1828f94d4c919a6d8f094388152fd730f33fd6756d9ac",
+        "rozmiar": 246449,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2001/706/text/O/M20010706.pdf",
+        "pobrano": "2026-10-18T13:44:49+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2002/177",
@@ -479,7 +1034,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2002-177/M20020177.pdf",
+        "nazwa_pobierania": "MP-2002-177_tekst-ogloszony.pdf",
+        "sha256": "be6d403483c1c5eae40e6455e8d845f1ab2735af97bbb8ed3ed8901086fdba7b",
+        "rozmiar": 238338,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2002/177/text/O/M20020177.pdf",
+        "pobrano": "2026-10-18T13:44:41+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2002/344",
@@ -491,7 +1060,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2002-344/M20020344.pdf",
+        "nazwa_pobierania": "MP-2002-344_tekst-ogloszony.pdf",
+        "sha256": "80e7dca494f0a9d5945b6aa242a6ed0ae4e701711af7036c36cb5f1322b6057c",
+        "rozmiar": 62957,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2002/344/text/O/M20020344.pdf",
+        "pobrano": "2026-10-21T10:51:46+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2002/347",
@@ -503,7 +1086,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2002-347/M20020347.pdf",
+        "nazwa_pobierania": "MP-2002-347_tekst-ogloszony.pdf",
+        "sha256": "a9b9c3c65ccabf99e6a57c5790b9897df78572c0102cb0602892b5ee546137c0",
+        "rozmiar": 88367,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2002/347/text/O/M20020347.pdf",
+        "pobrano": "2026-10-18T13:44:30+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2002/569",
@@ -515,7 +1112,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2002-569/M20020569.pdf",
+        "nazwa_pobierania": "MP-2002-569_tekst-ogloszony.pdf",
+        "sha256": "a8b2778d106ad5e4a0913dcca974756840d1cbb553eb4e42365b55aaf7d7a068",
+        "rozmiar": 27560,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2002/569/text/O/M20020569.pdf",
+        "pobrano": "2026-10-18T13:44:26+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2002/787",
@@ -527,7 +1138,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2002-787/M20020787.pdf",
+        "nazwa_pobierania": "MP-2002-787_tekst-ogloszony.pdf",
+        "sha256": "165a38fe8b0dd47ad85080521c390e07f714afbd420dc00880842cf86496bd6e",
+        "rozmiar": 22951,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2002/787/text/O/M20020787.pdf",
+        "pobrano": "2026-10-18T13:44:19+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2003/151",
@@ -539,7 +1164,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2003-151/M20030151.pdf",
+        "nazwa_pobierania": "MP-2003-151_tekst-ogloszony.pdf",
+        "sha256": "9e3042d689709b031d71f7e617c8c21ef2df7174b1d1ec66a57b1ff4a4c59e6a",
+        "rozmiar": 295170,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2003/151/text/O/M20030151.pdf",
+        "pobrano": "2026-10-18T13:44:08+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2003/152",
@@ -551,7 +1190,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2003-152/M20030152.pdf",
+        "nazwa_pobierania": "MP-2003-152_tekst-ogloszony.pdf",
+        "sha256": "0a1233df12bee8012e29879286b602511176cdb64eb327ee223832288882af9e",
+        "rozmiar": 298932,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2003/152/text/O/M20030152.pdf",
+        "pobrano": "2026-10-21T10:51:21+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2003/379",
@@ -563,7 +1216,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2003-379/M20030379.pdf",
+        "nazwa_pobierania": "MP-2003-379_tekst-ogloszony.pdf",
+        "sha256": "d673f39bf0e5a3e823067b735f25ba15b1b6f402e91fdfb006896f1135954c43",
+        "rozmiar": 194054,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2003/379/text/O/M20030379.pdf",
+        "pobrano": "2026-10-18T13:44:00+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2003/604",
@@ -575,7 +1242,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2003-604/M20030604.pdf",
+        "nazwa_pobierania": "MP-2003-604_tekst-ogloszony.pdf",
+        "sha256": "d9918edee1fceacb861b10c58a066125411f77657e8771cde9103fdb48d2d9f2",
+        "rozmiar": 51806,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2003/604/text/O/M20030604.pdf",
+        "pobrano": "2026-10-18T13:43:55+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2003/848",
@@ -587,7 +1268,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2003-848/M20030848.pdf",
+        "nazwa_pobierania": "MP-2003-848_tekst-ogloszony.pdf",
+        "sha256": "abfbfe6c106921a7d5305e37b2ec75b8ee798a058468379020f56cfe75574486",
+        "rozmiar": 29685,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2003/848/text/O/M20030848.pdf",
+        "pobrano": "2026-10-18T13:43:51+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2004/159",
@@ -599,7 +1294,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2004-159/M20040159.pdf",
+        "nazwa_pobierania": "MP-2004-159_tekst-ogloszony.pdf",
+        "sha256": "5abbaf21cbd7bbfd8bc2ad3c0c95c4b72145fec20f1c0d8ce19a7017abdd5d9a",
+        "rozmiar": 33902,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2004/159/text/O/M20040159.pdf",
+        "pobrano": "2026-10-18T13:43:43+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2004/162",
@@ -611,7 +1320,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2004-162/M20040162.pdf",
+        "nazwa_pobierania": "MP-2004-162_tekst-ogloszony.pdf",
+        "sha256": "7ce793c2d4f79d948d20b1269b50093c7eddf4865b3fc1ecb0f0480856405c05",
+        "rozmiar": 40222,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2004/162/text/O/M20040162.pdf",
+        "pobrano": "2026-10-18T13:43:41+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2004/407",
@@ -623,7 +1346,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2004-407/M20040407.pdf",
+        "nazwa_pobierania": "MP-2004-407_tekst-ogloszony.pdf",
+        "sha256": "a3aa494224f13398610ede356e2860f216c2d284ae5f4b0bfa40cc96c39267d6",
+        "rozmiar": 34747,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2004/407/text/O/M20040407.pdf",
+        "pobrano": "2026-10-18T13:43:37+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2004/619",
@@ -635,7 +1372,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2004-619/M20040619.pdf",
+        "nazwa_pobierania": "MP-2004-619_tekst-ogloszony.pdf",
+        "sha256": "c9d192296e259d4ba249cae133d454d3176829478c5a59a4d0d2ce5abb27fbed",
+        "rozmiar": 33983,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2004/619/text/O/M20040619.pdf",
+        "pobrano": "2026-10-18T13:43:32+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2004/853",
@@ -647,7 +1398,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2004-853/M20040853.pdf",
+        "nazwa_pobierania": "MP-2004-853_tekst-ogloszony.pdf",
+        "sha256": "13d21f5561bfabc0fc1aabac0e68eaa40067086c3f97cf575c34c68a23e3151f",
+        "rozmiar": 52103,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2004/853/text/O/M20040853.pdf",
+        "pobrano": "2026-10-18T13:43:23+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2005/1005",
@@ -659,7 +1424,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2005-1005/M20051005.pdf",
+        "nazwa_pobierania": "MP-2005-1005_tekst-ogloszony.pdf",
+        "sha256": "f8949fc3dd12830f6fd38fbfe82308d1aeed32b02a8ccb5d5f852d5ef5057ad2",
+        "rozmiar": 29913,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2005/1005/text/O/M20051005.pdf",
+        "pobrano": "2026-10-18T13:43:22+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2005/231",
@@ -671,7 +1450,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2005-231/M20050231.pdf",
+        "nazwa_pobierania": "MP-2005-231_tekst-ogloszony.pdf",
+        "sha256": "2d83037c5ed16b1bbfb3813c6c749282278b05350fb91055ac33bd8013cce1a8",
+        "rozmiar": 35658,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2005/231/text/O/M20050231.pdf",
+        "pobrano": "2026-10-18T13:43:14+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2005/436",
@@ -683,7 +1476,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2005-436/M20050436.pdf",
+        "nazwa_pobierania": "MP-2005-436_tekst-ogloszony.pdf",
+        "sha256": "c7ef880e17ed2f202dcd16c2c1580060078fc09ec56a17121c0fb97d5dbb19bb",
+        "rozmiar": 57170,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2005/436/text/O/M20050436.pdf",
+        "pobrano": "2026-10-21T10:50:18+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2005/683",
@@ -695,7 +1502,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2005-683/M20050683.pdf",
+        "nazwa_pobierania": "MP-2005-683_tekst-ogloszony.pdf",
+        "sha256": "6bedc9ae1ada60c40a5b6ae3d80b97f29266147d1c34bde4d84440d4967f45e9",
+        "rozmiar": 27694,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2005/683/text/O/M20050683.pdf",
+        "pobrano": "2026-10-18T13:43:00+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2006/165",
@@ -707,7 +1528,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2006-165/M20060165.pdf",
+        "nazwa_pobierania": "MP-2006-165_tekst-ogloszony.pdf",
+        "sha256": "1e5288d507f2a270e9e52e785088bcedacc47fab161460aa5c3047fda737ea48",
+        "rozmiar": 55930,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2006/165/text/O/M20060165.pdf",
+        "pobrano": "2026-10-18T13:42:49+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2006/166",
@@ -719,7 +1554,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2006-166/M20060166.pdf",
+        "nazwa_pobierania": "MP-2006-166_tekst-ogloszony.pdf",
+        "sha256": "809177dbdae671b9d6b65427735e8c91cecc4f6b111d1a2b1ee909f5c729c010",
+        "rozmiar": 55930,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2006/166/text/O/M20060166.pdf",
+        "pobrano": "2026-10-21T10:49:57+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2006/405",
@@ -731,7 +1580,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2006-405/M20060405.pdf",
+        "nazwa_pobierania": "MP-2006-405_tekst-ogloszony.pdf",
+        "sha256": "b9bab15cdbc9755c162c7d42cc500489b11fcfd601b4a8b11aa0fc8ab4869157",
+        "rozmiar": 57356,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2006/405/text/O/M20060405.pdf",
+        "pobrano": "2026-10-18T13:42:38+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2006/631",
@@ -743,7 +1606,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2006-631/M20060631.pdf",
+        "nazwa_pobierania": "MP-2006-631_tekst-ogloszony.pdf",
+        "sha256": "67164078d809bcd4c3c7a2fa08cdaccfe18dbc30008467d660b2cb65799f4ca6",
+        "rozmiar": 57656,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2006/631/text/O/M20060631.pdf",
+        "pobrano": "2026-10-18T13:42:33+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2006/871",
@@ -755,7 +1632,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2006-871/M20060871.pdf",
+        "nazwa_pobierania": "MP-2006-871_tekst-ogloszony.pdf",
+        "sha256": "ebf3e02705ff81b9cce520292f8d1b0fcd72f6b2b929cb3dd159babb1564ede8",
+        "rozmiar": 450367,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2006/871/text/O/M20060871.pdf",
+        "pobrano": "2026-10-18T13:42:24+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2007/152",
@@ -767,7 +1658,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2007-152/M20070152.pdf",
+        "nazwa_pobierania": "MP-2007-152_tekst-ogloszony.pdf",
+        "sha256": "64fe4b9470ec54545865d4f80c77c07acae7966ad5b9482354f3600ee87c48e8",
+        "rozmiar": 53407,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2007/152/text/O/M20070152.pdf",
+        "pobrano": "2026-10-18T13:42:13+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2007/401",
@@ -779,7 +1684,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2007-401/M20070401.pdf",
+        "nazwa_pobierania": "MP-2007-401_tekst-ogloszony.pdf",
+        "sha256": "c24558561c658df6f257692b6a3a2ebf4b4f87aaddbe66f7bc50343838c2095e",
+        "rozmiar": 56816,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2007/401/text/O/M20070401.pdf",
+        "pobrano": "2026-10-21T10:49:15+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2007/626",
@@ -791,7 +1710,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2007-626/M20070626.pdf",
+        "nazwa_pobierania": "MP-2007-626_tekst-ogloszony.pdf",
+        "sha256": "52ba8705f1bc209956142da4e015d44fd70526ed563cfcec63d5a5b92cd43036",
+        "rozmiar": 63643,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2007/626/text/O/M20070626.pdf",
+        "pobrano": "2026-10-18T13:41:56+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2007/968",
@@ -803,7 +1736,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2007-968/M20070968.pdf",
+        "nazwa_pobierania": "MP-2007-968_tekst-ogloszony.pdf",
+        "sha256": "06f47e4c89616161e201efdcddacc2754e4013b7ae6459e75ba08e28d9edf119",
+        "rozmiar": 57340,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2007/968/text/O/M20070968.pdf",
+        "pobrano": "2026-10-18T13:41:53+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2008/193",
@@ -815,7 +1762,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2008-193/M20080193.pdf",
+        "nazwa_pobierania": "MP-2008-193_tekst-ogloszony.pdf",
+        "sha256": "c195521e51c46a2de8717c25c9367ab488b2fdccd854d0b977dbc36b4cc1d510",
+        "rozmiar": 59598,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2008/193/text/O/M20080193.pdf",
+        "pobrano": "2026-10-18T13:41:46+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2008/211",
@@ -827,7 +1788,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2008-211/M20080211.pdf",
+        "nazwa_pobierania": "MP-2008-211_tekst-ogloszony.pdf",
+        "sha256": "bed688965b54d9cfaf0c604a29454fcc90c00a72d02a64f6fbfcefc40493c6d6",
+        "rozmiar": 58322,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2008/211/text/O/M20080211.pdf",
+        "pobrano": "2026-10-21T10:48:49+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2008/394",
@@ -839,7 +1814,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2008-394/M20080394.pdf",
+        "nazwa_pobierania": "MP-2008-394_tekst-ogloszony.pdf",
+        "sha256": "f8efce00b24ef376d0b4a4a8b1485e2beae02a0c08663e36e56fffe6ee2c19c0",
+        "rozmiar": 273668,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2008/394/text/O/M20080394.pdf",
+        "pobrano": "2026-10-21T10:48:40+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2008/581",
@@ -851,7 +1840,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2008-581/M20080581.pdf",
+        "nazwa_pobierania": "MP-2008-581_tekst-ogloszony.pdf",
+        "sha256": "e2a27d3d44d8b38c186844a0d0df8d86162d4f9dfe8c3067027805323b335149",
+        "rozmiar": 24835,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2008/581/text/O/M20080581.pdf",
+        "pobrano": "2026-10-21T10:48:35+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2008/797",
@@ -863,7 +1866,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2008-797/M20080797.pdf",
+        "nazwa_pobierania": "MP-2008-797_tekst-ogloszony.pdf",
+        "sha256": "ce353c85e87973eb8e62246e4b2aa334fef5b084d6405c7395c6291a90da1687",
+        "rozmiar": 26222,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2008/797/text/O/M20080797.pdf",
+        "pobrano": "2026-10-21T10:48:29+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2009/155",
@@ -875,7 +1892,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2009-155/M20090155.pdf",
+        "nazwa_pobierania": "MP-2009-155_tekst-ogloszony.pdf",
+        "sha256": "8b92a692e0568619b4c353786f88850d74974299a43d99b226084dda5c9231b8",
+        "rozmiar": 412827,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2009/155/text/O/M20090155.pdf",
+        "pobrano": "2026-10-21T10:48:18+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2009/188",
@@ -887,7 +1918,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2009-188/M20090188.pdf",
+        "nazwa_pobierania": "MP-2009-188_tekst-ogloszony.pdf",
+        "sha256": "4997498be34f22e9eed54b188af876d1b5f324dde51f4628ddb682b5c2230608",
+        "rozmiar": 123382,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2009/188/text/O/M20090188.pdf",
+        "pobrano": "2026-10-21T10:48:14+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2009/497",
@@ -899,7 +1944,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2009-497/M20090497.pdf",
+        "nazwa_pobierania": "MP-2009-497_tekst-ogloszony.pdf",
+        "sha256": "fc2afdd082d9c063be1630ff2220fd33b5ddd314deef62c213da345e845a7a5f",
+        "rozmiar": 333204,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2009/497/text/O/M20090497.pdf",
+        "pobrano": "2026-10-21T10:48:03+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2009/763",
@@ -911,7 +1970,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2009-763/M20090763.pdf",
+        "nazwa_pobierania": "MP-2009-763_tekst-ogloszony.pdf",
+        "sha256": "71c59e2e0705c0df96d0e338123871c8690a5e7b4c9b274c541a77b7096c62d3",
+        "rozmiar": 298963,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2009/763/text/O/M20090763.pdf",
+        "pobrano": "2026-10-21T10:47:53+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2009/949",
@@ -923,7 +1996,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2009-949/M20090949.pdf",
+        "nazwa_pobierania": "MP-2009-949_tekst-ogloszony.pdf",
+        "sha256": "6d6b21180caab0a56bca3376711d9ef6f965ef9562ee32a922917e178275883b",
+        "rozmiar": 307026,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2009/949/text/O/M20090949.pdf",
+        "pobrano": "2026-10-18T13:40:40+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2010/1038",
@@ -935,7 +2022,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2010-1038/M20101038.pdf",
+        "nazwa_pobierania": "MP-2010-1038_tekst-ogloszony.pdf",
+        "sha256": "16799e583d13bcf3c34c30bf2d42e242b4027d18355e1bd2bacdb82d3972be73",
+        "rozmiar": 305932,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2010/1038/text/O/M20101038.pdf",
+        "pobrano": "2026-10-18T13:40:32+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2010/109",
@@ -947,7 +2048,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2010-109/M20100109.pdf",
+        "nazwa_pobierania": "MP-2010-109_tekst-ogloszony.pdf",
+        "sha256": "20f1bf0c05661880b3f6ce101678996afe66d1ce8fdab81a87ecc94d76b7ebb2",
+        "rozmiar": 305852,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2010/109/text/O/M20100109.pdf",
+        "pobrano": "2026-10-18T13:40:27+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2010/110",
@@ -959,7 +2074,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2010-110/M20100110.pdf",
+        "nazwa_pobierania": "MP-2010-110_tekst-ogloszony.pdf",
+        "sha256": "0c71d333c7111928463903420d288ac93fafc511a72ff262ae0d082846319753",
+        "rozmiar": 306448,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2010/110/text/O/M20100110.pdf",
+        "pobrano": "2026-10-21T10:47:31+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2010/597",
@@ -971,7 +2100,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2010-597/M20100597.pdf",
+        "nazwa_pobierania": "MP-2010-597_tekst-ogloszony.pdf",
+        "sha256": "c3aefaa33ef7cbf62166c3f2757fba76b0d831d23d9ca7ae01964ebe557fa923",
+        "rozmiar": 303756,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2010/597/text/O/M20100597.pdf",
+        "pobrano": "2026-10-18T13:40:05+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2010/790",
@@ -983,7 +2126,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2010-790/M20100790.pdf",
+        "nazwa_pobierania": "MP-2010-790_tekst-ogloszony.pdf",
+        "sha256": "4cd3c6538e6fb3ece13bf99886fe947af5a4372e25645563afc131be815b80ac",
+        "rozmiar": 305613,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2010/790/text/O/M20100790.pdf",
+        "pobrano": "2026-10-18T13:39:49+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2011/162",
@@ -995,7 +2152,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2011-162/M20110162.pdf",
+        "nazwa_pobierania": "MP-2011-162_tekst-ogloszony.pdf",
+        "sha256": "528f50e348a1c13433d14d4a22c61417c9a92f34bed7ea05c8484bc8731c1dde",
+        "rozmiar": 304985,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2011/162/text/O/M20110162.pdf",
+        "pobrano": "2026-10-21T10:46:35+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2012/90",
@@ -1007,7 +2178,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2012-90/M20120090.pdf",
+        "nazwa_pobierania": "MP-2012-90_tekst-ogloszony.pdf",
+        "sha256": "2b8a943912ed04e8c15d8341cde418e0be85aa972244649af2e4e4f4384d16bc",
+        "rozmiar": 665122,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2012/90/text/O/M20120090.pdf",
+        "pobrano": "2026-10-19T17:28:23.540784+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2013/95",
@@ -1019,7 +2204,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2013-95/M20130095.pdf",
+        "nazwa_pobierania": "MP-2013-95_tekst-ogloszony.pdf",
+        "sha256": "2fd0194afc46abf3f64a48f601ba9abd1526ca3240ba30afa090a335b9ac3e82",
+        "rozmiar": 733380,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2013/95/text/O/M20130095.pdf",
+        "pobrano": "2026-10-21T10:44:24+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2014/165",
@@ -1031,7 +2230,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2014-165/M20140165.pdf",
+        "nazwa_pobierania": "MP-2014-165_tekst-ogloszony.pdf",
+        "sha256": "a01c03e91df342bd29f9249f9f090c57c7394c494b720daba0edf492012bf14e",
+        "rozmiar": 514584,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2014/165/text/O/M20140165.pdf",
+        "pobrano": "2026-10-21T10:43:59+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2015/213",
@@ -1043,7 +2256,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2015-213/M20150213.pdf",
+        "nazwa_pobierania": "MP-2015-213_tekst-ogloszony.pdf",
+        "sha256": "c3817323aca4834be2b7f41f0d1104d0f6e4e9f09f7ab6b278203207b54005ab",
+        "rozmiar": 780026,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2015/213/text/O/M20150213.pdf",
+        "pobrano": "2026-10-19T17:28:20.924367+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2016/168",
@@ -1055,7 +2282,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2016-168/M20160168.pdf",
+        "nazwa_pobierania": "MP-2016-168_tekst-ogloszony.pdf",
+        "sha256": "b9cec6d4107c77d6e5303341db1d2f0a9af37df1ecf149b65defa9e64e4a90f1",
+        "rozmiar": 529344,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2016/168/text/O/M20160168.pdf",
+        "pobrano": "2026-10-21T10:42:06+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2017/218",
@@ -1067,7 +2308,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2017-218/M20170218.pdf",
+        "nazwa_pobierania": "MP-2017-218_tekst-ogloszony.pdf",
+        "sha256": "73b264836c0287570e5ef6dad66a91ea1beb5d2a2b2197099f7f8f04ed502f7d",
+        "rozmiar": 239336,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2017/218/text/O/M20170218.pdf",
+        "pobrano": "2026-10-19T17:28:17.858840+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2018/216",
@@ -1079,7 +2334,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2018-216/M20180216.pdf",
+        "nazwa_pobierania": "MP-2018-216_tekst-ogloszony.pdf",
+        "sha256": "4a7232e1e2b960956b70de55ace22d7e9c8b5de2f0b990d4a687135986f2484b",
+        "rozmiar": 234247,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2018/216/text/O/M20180216.pdf",
+        "pobrano": "2026-10-21T10:40:39+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2019/202",
@@ -1091,7 +2360,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2019-202/M20190202.pdf",
+        "nazwa_pobierania": "MP-2019-202_tekst-ogloszony.pdf",
+        "sha256": "18667677b92656518049af2cef3fbcbae40e8e5c9a8db31e227621cdfd37977c",
+        "rozmiar": 264719,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2019/202/text/O/M20190202.pdf",
+        "pobrano": "2026-10-19T17:28:16.567688+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2020/197",
@@ -1103,7 +2386,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2020-197/M20200197.pdf",
+        "nazwa_pobierania": "MP-2020-197_tekst-ogloszony.pdf",
+        "sha256": "71e9459e9476a0218d38d9a0c5a817d6bffe08c5b485440da8916d22660a6a27",
+        "rozmiar": 335062,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2020/197/text/O/M20200197.pdf",
+        "pobrano": "2026-10-19T17:28:15.074870+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2021/222",
@@ -1115,7 +2412,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2021-222/M20210222.pdf",
+        "nazwa_pobierania": "MP-2021-222_tekst-ogloszony.pdf",
+        "sha256": "d277b579278bbab6e98b927f7d02d98dfa7aa0b435a778d4bd5ca18c6b95b4ca",
+        "rozmiar": 309476,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2021/222/text/O/M20210222.pdf",
+        "pobrano": "2026-10-19T17:28:13.321609+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2022/260",
@@ -1127,7 +2438,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2022-260/M20220260.pdf",
+        "nazwa_pobierania": "MP-2022-260_tekst-ogloszony.pdf",
+        "sha256": "66f82f28ba90e6c41975cb3ae840a4c70b0d4f9f1f613e83ed0cc744f290c5e1",
+        "rozmiar": 304511,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2022/260/text/O/M20220260.pdf",
+        "pobrano": "2026-10-21T10:38:25+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2023/209",
@@ -1139,7 +2464,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2023-209/M20230209.pdf",
+        "nazwa_pobierania": "MP-2023-209_tekst-ogloszony.pdf",
+        "sha256": "c5f239296a3e84ad45a963e4e70c90c54e96b3e9b2b9784a08c81fdbd24ca62a",
+        "rozmiar": 441032,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2023/209/text/O/M20230209.pdf",
+        "pobrano": "2026-10-19T17:28:11.148500+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2024/133",
@@ -1151,7 +2490,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2024-133/M20240133.pdf",
+        "nazwa_pobierania": "MP-2024-133_tekst-ogloszony.pdf",
+        "sha256": "d901ac18ab7ddbfaa34d6b4c31e9020be4941bcf43d0d59e9902d9eee9c2b111",
+        "rozmiar": 195873,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2024/133/text/O/M20240133.pdf",
+        "pobrano": "2026-10-21T10:37:17+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2025/133",
@@ -1163,7 +2516,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2025-133/M20250133.pdf",
+        "nazwa_pobierania": "MP-2025-133_tekst-ogloszony.pdf",
+        "sha256": "f95234bdf40dfd99567446f566e6b3ecb92633ea2d166c0c227ade70db30e9c3",
+        "rozmiar": 143619,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2025/133/text/O/M20250133.pdf",
+        "pobrano": "2026-10-21T10:54:30+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2025/152",
@@ -1175,7 +2542,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2025-152/M20250152.pdf",
+        "nazwa_pobierania": "MP-2025-152_tekst-ogloszony.pdf",
+        "sha256": "69f3af6e64da8858711bdfe8b179f4015e3812d5b86ae2c9b358014cc10bbfa8",
+        "rozmiar": 169718,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2025/152/text/O/M20250152.pdf",
+        "pobrano": "2026-10-21T10:36:41+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2026/150",
@@ -1187,7 +2568,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2026-150/M20260150.pdf",
+        "nazwa_pobierania": "MP-2026-150_tekst-ogloszony.pdf",
+        "sha256": "a14fabf598952bf22ddb3fa322823bd6510e9a10a9f3b3eafa2dc2d6d0e2283a",
+        "rozmiar": 146847,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/150/text/O/M20260150.pdf",
+        "pobrano": "2026-10-21T10:36:19+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2026/153",
@@ -1199,7 +2594,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2026-153/M20260153.pdf",
+        "nazwa_pobierania": "MP-2026-153_tekst-ogloszony.pdf",
+        "sha256": "dd8b9ceebeaf410abddb6ee75c413b1528dc98c13b4207c2b14341ae1e2c699f",
+        "rozmiar": 148747,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/153/text/O/M20260153.pdf",
+        "pobrano": "2026-10-21T10:54:29+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2026/220",
@@ -1211,7 +2620,21 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2026-220/M20260220.pdf",
+        "nazwa_pobierania": "MP-2026-220_tekst-ogloszony.pdf",
+        "sha256": "d574a1564621722c3f86b8d0cf1427d56093a5660bab560271870d36e3e3cc35",
+        "rozmiar": 173042,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/220/text/O/M20260220.pdf",
+        "pobrano": "2026-10-21T10:36:10+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2026/81",
@@ -1223,6 +2646,20 @@
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2026-81/M20260081.pdf",
+        "nazwa_pobierania": "MP-2026-81_tekst-ogloszony.pdf",
+        "sha256": "83871fa8b4d901ef773e5b5bad0c8de351d9e3b139e2efdc86a598302473909f",
+        "rozmiar": 153722,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/81/text/O/M20260081.pdf",
+        "pobrano": "2026-10-21T10:35:56+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   }
 ]

@@ -13,7 +13,7 @@ const nazwa = wielka(Astro.props.nazwa as string);
 const lista = posortowaneKorzysci(dane().korzysci.filter((k: any) => k.sytuacje.includes(kod)));
 const inne = Object.entries(dane().slowniki.sytuacje).filter(([k]) => k !== kod) as [string, string][];
 ---
-<Uklad tytul={`${nazwa}: wsparcie od państwa`} opis={`Świadczenia, ulgi i uprawnienia w sytuacji: ${nazwa.toLowerCase()}. Kwoty, terminy i podstawa prawna.`} sekcja="sytuacje">
+<Uklad tytul={`${nazwa}: wsparcie od państwa`} opis={`Świadczenia i pomoc od państwa w sytuacji: ${nazwa.toLowerCase()}. Kwoty, terminy i podstawa prawna.`} sekcja="sytuacje">
   <div class="page-head">
     <div class="wrap">
       <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><a href="/#sytuacje">Sytuacje życiowe</a><span aria-hidden="true">/</span><span aria-current="page">{nazwa}</span></nav>

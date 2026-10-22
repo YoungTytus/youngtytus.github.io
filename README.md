@@ -1,6 +1,6 @@
 # Mapa Polskiego Socjalu: witryna Astro + projekt Socjal
 
-**Wersja importera: 1.5** (zmiany: `ZMIANY-1.5.md` dla 1.5 — kwoty z mechanizmów i jednolite opisy, `ZMIANY-M20.md` dla 1.1, `ZMIANY-1.2.md` dla 1.2, `ZMIANY-1.3.md` dla 1.3 — świadczenie wychowawcze, `ZMIANY-1.4.md` dla 1.4 — co jest socjalem i forma świadczenia). Wygląd działającej witryny Astro zostaje zachowany. Dane pochodzą z osobnego projektu `Socjal` w formacie Obsidiana i JSON. Witryna nie wymaga bazy danych ani serwera aplikacyjnego. Python odczytuje dane, normalizuje powiązania i tworzy paczkę dla Astro, a Astro generuje strony statyczne.
+**Wersja importera: 1.6** (zmiany: `ZMIANY-1.6.md` dla 1.6 — kafelki, logo, PDF aktów, forma pomocy, zwijane listy, `ZMIANY-1.5.md` dla 1.5 — kwoty z mechanizmów i jednolite opisy, `ZMIANY-M20.md` dla 1.1, `ZMIANY-1.2.md` dla 1.2, `ZMIANY-1.3.md` dla 1.3 — świadczenie wychowawcze, `ZMIANY-1.4.md` dla 1.4 — co jest socjalem i forma świadczenia). Wygląd działającej witryny Astro zostaje zachowany. Dane pochodzą z osobnego projektu `Socjal` w formacie Obsidiana i JSON. Witryna nie wymaga bazy danych ani serwera aplikacyjnego. Python odczytuje dane, normalizuje powiązania i tworzy paczkę dla Astro, a Astro generuje strony statyczne.
 
 Do pracy wymagane są **Python 3.10.4**, **Node.js 22** (z npm) i opcjonalnie Git do publikacji. Importer nie wymaga dodatkowych bibliotek Pythona.
 

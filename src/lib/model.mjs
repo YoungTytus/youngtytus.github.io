@@ -100,6 +100,7 @@ export function indeksWyszukiwania() {
     id: k.id,
     nazwa: k.nazwa,
     rodzaj: k.rodzaj_korzysci,
+    forma: k.forma ?? 'nieustalona',
     status: k.status,
     sytuacje: k.sytuacje,
     akt: k.przepis.eli,

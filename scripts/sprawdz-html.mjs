@@ -1,6 +1,7 @@
 // Kontrola zbudowanej strony (SPEC 10, testy obowiązkowe):
 //  1. w tekście HTML nie ma „NaN”, „undefined”, „null”, „[object Object]”,
 //  2. każda kwota (.kwota) jest wewnątrz .kzd, który ma link .dowod,
+//     (kafelek katalogu pokazuje skrót .kwota-kafelek bez dowodu — cały kafelek prowadzi do karty z dowodem)
 //  3. linki wewnętrzne prowadzą do istniejących plików.
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';

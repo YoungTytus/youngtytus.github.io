@@ -12,7 +12,7 @@ const wyroznione = wyroznioneKorzysci(6);
 const liczbaPlikow = d.akty.reduce((s: number, a: any) => s + a.pliki.length, 0);
 const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
 ---
-<Uklad tytul="Mapa Polskiego Socjalu" opis="Świadczenia, ulgi i uprawnienia od państwa w jednym miejscu: komu przysługują, ile wynoszą, do kiedy, i na podstawie którego przepisu.">
+<Uklad tytul="Mapa Polskiego Socjalu" opis="Świadczenia i pomoc od państwa w jednym miejscu: komu przysługują, ile wynoszą, do kiedy, i na podstawie którego przepisu.">
   <div class="hero-outer">
     <div class="wrap">
       <section class="hero" aria-labelledby="hero-tytul">
@@ -20,7 +20,7 @@ const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
           <div>
             <p class="eyebrow">Przewodnik po wsparciu od państwa</p>
             <h1 id="hero-tytul">Wiedz, co<br />Ci <em>przysługuje.</em></h1>
-            <p class="hero-lead">Świadczenia, ulgi i uprawnienia w jednym miejscu. Sprawdź warunki, kwoty i terminy, a przy każdej liczbie znajdziesz przepis, z którego pochodzi.</p>
+            <p class="hero-lead">Pieniądze i pomoc od państwa w jednym miejscu. Sprawdź warunki, kwoty i terminy, a przy każdej liczbie znajdziesz przepis, z którego pochodzi.</p>
             <div class="actions">
               <a href="#sytuacje" class="btn btn-red">Znajdź wsparcie <Ikona n="strzalka" /></a>
               <a href="/metodologia/" class="btn btn-ghost">Jak to działa</a>
@@ -72,7 +72,7 @@ const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
     <form class="searchbox" action="/korzysci/" method="get" role="search">
       <Ikona n="szukaj" />
       <label class="sr-only" for="szukaj-glowna">Szukaj korzyści</label>
-      <input type="search" id="szukaj-glowna" name="q" placeholder="Nazwa świadczenia, ulgi albo słowo z przepisu…" autocomplete="off" />
+      <input type="search" id="szukaj-glowna" name="q" placeholder="Nazwa świadczenia albo słowo z przepisu…" autocomplete="off" />
       <button class="btn btn-red" type="submit">Szukaj</button>
     </form>
     <p class="search-help">Na przykład: <a href="/korzysci/?q=renta">renta</a>, <a href="/korzysci/?q=zasi%C5%82ek%20rodzinny">zasiłek rodzinny</a>, <a href="/korzysci/?q=dodatek%20w%C4%99glowy">dodatek węglowy</a></p>

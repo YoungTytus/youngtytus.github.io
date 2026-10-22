@@ -4,7 +4,6 @@ import KartaKorzysci from '../../components/KartaKorzysci.astro';
 import PlikiAktu from '../../components/PlikiAktu.astro';
 import UwagaDanych from '../../components/UwagaDanych.astro';
 import { aktPoEli, aktyNadrzedne, dane, korzyscPoId } from '../../lib/model.mjs';
-import { przepisyAktu } from '../../lib/socjal.mjs';
 import { dataLubBrak, dataPL, eliDziennik, eliSlug } from '../../lib/format.mjs';
 
 export function getStaticPaths() {
@@ -13,7 +12,6 @@ export function getStaticPaths() {
 const a: any = aktPoEli(Astro.props.eli);
 const korzysci = a.korzysci.map((id: string) => korzyscPoId(id)).filter(Boolean);
 const nadrzedne = aktyNadrzedne(a.eli);
-const przepisy = przepisyAktu(a.eli);
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Legislation',
@@ -67,11 +65,6 @@ const jsonLd = {
         </ul>
       </section>
     )}
-    {przepisy.length > 0 && <section class="detail-section">
-      <h2>Mapa artykułów ({przepisy.length})</h2>
-      <p class="summary-note">Podstrony wygenerowane z mapy jednostek projektu Socjal; obejmują także przepisy, które nie są samodzielnymi świadczeniami.</p>
-      <div class="tag-list" style="display:flex;flex-wrap:wrap;gap:8px">{przepisy.map((p: any) => <a class="tag" href={`/przepis/${p.id}/`}>art. {p.artykul}</a>)}</div>
-    </section>}
     <section class="detail-section" id="pliki">
       <h2>Pliki do pobrania</h2>
       <p class="summary-note" style="margin:0 0 18px">Kopie dokładnie tych tekstów, z których pochodzą dane. Link „aktualna wersja u źródła” prowadzi do bieżącego tekstu w API Sejmu, który mógł się od tego czasu zmienić.</p>

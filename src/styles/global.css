@@ -166,8 +166,8 @@ img, svg { max-width: 100%; }
 .card-sit { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
 .card-value { margin-top: auto; padding-top: 22px; }
 .card-value .label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 4px; border-top: 1px solid var(--line); padding-top: 18px; }
-.card-value .kwota { font: 600 1.9rem/1.2 var(--serif); color: var(--navy-800); }
-.card-value .warianty .kwota { font-size: 1.35rem; }
+.card-value .kwota, .card-value .kwota-kafelek { font: 600 1.9rem/1.2 var(--serif); color: var(--navy-800); display: inline-block; }
+.card-value .warianty .kwota, .card-value .warianty .kwota-kafelek { font-size: 1.35rem; }
 .card-value .warianty { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
 .card-bottom { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding: 15px 26px; font-size: .86rem; font-weight: 700; color: var(--navy-700); background: #fbfcfe; }
 .card-bottom svg { width: 18px; height: 18px; color: var(--red); }
@@ -210,7 +210,7 @@ img, svg { max-width: 100%; }
 .notice strong { font-weight: 700; }
 
 /* ---------- lista i filtry ---------- */
-.filters { display: grid; grid-template-columns: 2fr repeat(5, 1fr); gap: 14px; padding: 22px 0 6px; align-items: end; }
+.filters { display: grid; grid-template-columns: 1.5fr repeat(6, 1fr); gap: 14px; padding: 22px 0 6px; align-items: end; }
 .filters label { display: flex; flex-direction: column; gap: 6px; font-size: .78rem; font-weight: 700; color: var(--ink-2); }
 .filters select, .filters input { width: 100%; min-height: 46px; color: var(--ink); background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--radius-sm); padding: 8px 12px; font-size: .9rem; }
 .resultbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: .9rem; color: var(--muted); margin: 14px 0 22px; }
@@ -448,3 +448,5 @@ code { font-family: var(--mono); font-size: .88em; }
   .header, .footer, .detail-nav, .skip, .btn { display: none !important; }
   .page-head { background: none; }
 }
+.card .opis { margin: 8px 0 0; color: var(--ink-2); }
+.card .komu { margin-top: 10px; }

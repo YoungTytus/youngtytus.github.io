@@ -14,7 +14,7 @@ interface Props {
 }
 const { tytul, opis, sekcja, jsonLd, noindex } = Astro.props;
 const NAZWA = 'Mapa Polskiego Socjalu';
-const pelnyTytul = tytul === NAZWA ? `${NAZWA}: świadczenia, ulgi i uprawnienia z podstawą prawną` : `${tytul} | ${NAZWA}`;
+const pelnyTytul = tytul === NAZWA ? `${NAZWA}: co daje państwo — świadczenia i pomoc z podstawą prawną` : `${tytul} | ${NAZWA}`;
 const kanoniczny = new URL(Astro.url.pathname, Astro.site).href;
 const d = dane();
 const wersja = `${d.manifest.kontrakt} · ${d.manifest.wersja_kodu}`;
@@ -23,7 +23,6 @@ const nav = [
   { href: '/korzysci/', etykieta: 'Korzyści', id: 'korzysci' },
   { href: '/#sytuacje', etykieta: 'Sytuacje życiowe', id: 'sytuacje' },
   { href: '/akty/', etykieta: 'Akty prawne', id: 'akty' },
-  { href: '/przepisy/', etykieta: 'Przepisy', id: 'akty' },
   { href: '/metodologia/', etykieta: 'Jak to działa', id: 'metodologia' },
 ];
 ---
@@ -53,7 +52,7 @@ const nav = [
       <div class="wrap">
         <a class="brand" href="/" aria-label={`${NAZWA}, strona główna`}>
           <Logo />
-          <span><strong>Mapa Polskiego Socjalu</strong><small>Świadczenia · ulgi · uprawnienia</small></span>
+          <span><strong>Mapa Polskiego Socjalu</strong><small>Co daje państwo · z dowodem</small></span>
         </a>
         <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nawigacja">
           <Ikona n="menu" /><span>Menu</span>
@@ -83,7 +82,6 @@ const nav = [
                 <li><a href="/korzysci/">Wszystkie korzyści</a></li>
                 <li><a href="/#sytuacje">Sytuacje życiowe</a></li>
                 <li><a href="/akty/">Akty prawne</a></li>
-                <li><a href="/przepisy/">Mapa przepisów</a></li>
                 <li><a href="/historia/">Historia kwot</a></li>
               </ul>
             </div>

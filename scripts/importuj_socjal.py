@@ -811,6 +811,48 @@ def kwalifikuj_do_mapy(socjal, benefits, extra_karty):
     return zostaja, poza
 
 
+def pliki_aktow(socjal):
+    """Odnośniki do PDF w API Sejmu (bez kopiowania plików): tekst ujednolicony ustawy z przebiegu skryptu mapy
+    (Dane/Mapa/<kod>/przebieg.json) i teksty aktów wykonawczych (Dane/Mapa/<kod>/powiazane/*.json) — adres, SHA-256,
+    rozmiar i data pobrania zapisane przy odczycie."""
+    wynik = defaultdict(dict)
+    def dodaj(eli, z, data_stanu=None):
+        url, typ = z.get('url'), z.get('typ') or z.get('typ_tekstu')
+        if not (ELI_RE.fullmatch(str(eli)) and url and re.match(r'^https://api\.sejm\.gov\.pl/eli/acts/', url)
+                and typ in ('U', 'O') and re.fullmatch(r'[0-9a-f]{64}', str(z.get('sha256'))) and z.get('rozmiar')):
+            return
+        nazwa = re.sub(r'[^A-Za-z0-9_.-]', '_', z.get('nazwa_api') or url.rsplit('/', 1)[-1])
+        kod = eli.replace('/', '-')
+        wynik[eli][typ] = {'rodzaj': typ, 'plik': 'akty/{}/{}'.format(kod, nazwa),
+                           'nazwa_pobierania': '{}_{}.pdf'.format(kod, 'tekst-ujednolicony' if typ == 'U' else 'tekst-ogloszony'),
+                           'sha256': z['sha256'], 'rozmiar': int(z['rozmiar']), 'url_zrodla': url,
+                           'pobrano': z.get('pobrano'), 'data_stanu': data_tekstu(data_stanu or z.get('data_stanu')),
+                           'eli_obwieszczenia': None, 'uzyty_w_danych': True, 'zrodlo': 'API Sejmu (ELI)'}
+    for kat in sorted((socjal / 'Dane/Mapa').glob('DU-*')):
+        pr = kat / 'przebieg.json'
+        if pr.is_file():
+            meta = wczytaj(pr)
+            dodaj(meta.get('akt'), meta.get('zrodlo') or {})
+        for pw in sorted((kat / 'powiazane').glob('*.json')) if (kat / 'powiazane').is_dir() else []:
+            try:
+                z = json.loads(pw.read_text(encoding='utf-8'))
+            except (OSError, ValueError):
+                continue
+            dodaj(z.get('akt'), z.get('zrodlo') or {})
+    # rejestry źródeł ręcznych analiz (FUS, SW): akty cytowane w kartach i historii kwot (dawne komunikaty, nowelizacje)
+    for paczka in PACZKI_RECZNE:
+        rej = socjal / str(Path(paczka['karty']).parent) / 'zrodla_manifest.json'
+        for e in (wczytaj(rej) if rej.is_file() else []):
+            for f in e.get('pliki') or []:
+                typ = f.get('typ')
+                if typ in wynik.get(e.get('eli'), {}):
+                    continue
+                dodaj(e.get('eli'), {'url': f.get('url'), 'typ': typ, 'sha256': f.get('sha256'), 'rozmiar': f.get('bajtow') or f.get('rozmiar'),
+                                     'pobrano': f.get('pobrano'), 'nazwa_api': (f.get('url') or '').rsplit('/', 1)[-1]},
+                      f.get('data_stanu'))
+    return {eli: list(d.values()) for eli, d in wynik.items()}
+
+
 def generuj(socjal: Path, wynik: Path, na_dzien: str):
     for paczka in PACZKI_RECZNE:
         for relative in (paczka['karty'], paczka['historia']):
@@ -1007,13 +1049,14 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
             act_eli.add(row['dowod']['eli'])
         for row in b['do_kiedy']:
             act_eli.add(row['dowod']['eli'])
+    pliki_pdf = pliki_aktow(socjal)
     acts = []
     for eli in sorted(act_eli):
         m = akty_meta.get(eli, {})
         acts.append({'eli': eli, 'tytul': m.get('tytul') or 'Akt prawny {}'.format(eli),
           'typ': 'Ustawa' if eli in akty_meta else 'Akt prawny', 'data_stanu': m.get('stan'),
           'url_eli': eli_url(eli), 'url_isap': None, 'korzysci': sorted(set(akt_benefits[eli])),
-          'wykonawcze': [], 'status': 'Stan prawny należy zweryfikować u źródła', 'pliki': []})
+          'wykonawcze': [], 'status': 'Stan prawny należy zweryfikować u źródła', 'pliki': pliki_pdf.get(eli, [])})
     slowniki = {'rodzaj_korzysci': {'swiadczenie_okresowe':'świadczenie okresowe',
             'swiadczenie_jednorazowe':'świadczenie jednorazowe','ulga_podatkowa':'ulga podatkowa',
             'zwolnienie':'zwolnienie','swiadczenie_rzeczowe':'świadczenie rzeczowe',
@@ -1040,12 +1083,13 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
     zapis(wynik / 'slowniki.json', slowniki)
     zapis(wynik / 'socjal.json', extras)
     (wynik / 'akty').mkdir(parents=True, exist_ok=True)
-    (wynik / 'akty/SHA256SUMS').write_text('', encoding='utf-8')
+    (wynik / 'akty/SHA256SUMS').write_text(''.join(
+        '{}  {}\n'.format(d['sha256'], d['plik'].removeprefix('akty/')) for a in acts for d in a['pliki']), encoding='utf-8')
     manifest = {'kontrakt': KONTRAKT, 'wygenerowano': datetime.now(timezone.utc).isoformat(),
-                'wersja_kodu': 'importuj_socjal-1.5', 'na_dzien': na_dzien,
+                'wersja_kodu': 'importuj_socjal-1.6', 'na_dzien': na_dzien,
                 'pliki': {f: sha(wynik / f) for f in PODSTAWOWE},
                 'zakres': sorted(akty_meta),
-                'liczby': {'korzysci': len(benefits), 'akty': len(acts), 'pliki_aktow': 0},
+                'liczby': {'korzysci': len(benefits), 'akty': len(acts), 'pliki_aktow': sum(len(a['pliki']) for a in acts)},
                 'z_plikami_pdf': False}
     # Sidecar też jest integralnie weryfikowany przy imporcie Pythona.
     manifest['pliki']['socjal.json'] = sha(wynik / 'socjal.json')

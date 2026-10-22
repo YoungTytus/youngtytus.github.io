@@ -1,6 +1,7 @@
 ---
 import Kwota from './Kwota.astro';
 import Dowod from './Dowod.astro';
+import Zwijana from './Zwijana.astro';
 import { dataLubBrak, typo, etykietaWariantu } from '../lib/format.mjs';
 const { progi } = Astro.props;
 const przepis = (s: string) => s.replace(/^arti?_(\d+)-pass_(\d+)$/, 'art. $1 ust. $2');
@@ -19,6 +20,8 @@ const przepis = (s: string) => s.replace(/^arti?_(\d+)-pass_(\d+)$/, 'art. $1 us
         <td>{w.roznica ? <>{typo(w.roznica.kwota)} · {w.roznica.procent}</> : 'Nie podano'}</td>
       </tr>)}</tbody>
     </table></div>
-    {p.wpisy.map((w: any, i: number) => <details id={`prog-${pi}-${i}`}><summary>{dataLubBrak(w.od)} · {w.dowod.eli}</summary><Dowod dowod={w.dowod} /></details>)}
+    <Zwijana tytul="Dowody wpisów" liczba={p.wpisy.length} poziom="h4">
+      {p.wpisy.map((w: any, i: number) => <details id={`prog-${pi}-${i}`}><summary>{dataLubBrak(w.od)} · {w.dowod.eli}</summary><Dowod dowod={w.dowod} /></details>)}
+    </Zwijana>
   </>)}
 </>}

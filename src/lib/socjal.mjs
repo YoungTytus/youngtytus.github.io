@@ -8,5 +8,3 @@ export function socjal() {
   return cache;
 }
 export const kartaSocjal = (id) => socjal()?.karty?.[id] ?? null;
-export const artykulSocjal = (id) => socjal()?.artykuly?.find((v) => v.id === id) ?? null;
-export const przepisyAktu = (eli) => socjal()?.artykuly?.filter((v) => v.eli === eli) ?? [];
