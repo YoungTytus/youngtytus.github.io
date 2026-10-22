@@ -3,7 +3,7 @@
 // Zasady: punkt tylko dla wpisu ze znaną datą „od”; linia ciągła do daty „do” (albo do dnia
 // wygenerowania danych, gdy „do” = null, czyli obowiązuje nadal); linia przerywana, gdy koniec
 // okresu nie jest ustalony (zaślepka). Liczby z napisów służą tylko do położenia na osi.
-import { czyData, czyZaslepka, liczbaZKwoty, typo, etykietaWariantu } from '../lib/format.mjs';
+import { czyData, czyZaslepka, kwotaPL, liczbaZKwoty, typo, etykietaWariantu } from '../lib/format.mjs';
 
 interface Props { k: any; dzis: string | null; idTabeli: string }
 const { k, dzis, idTabeli } = Astro.props;
@@ -100,7 +100,7 @@ if (mozna) {
     });
     s.punkty.forEach((p: any) => czesci.push(znacznik(s.ksztalt, X(dzien(p.od)), Y(p.y), s.kolor)));
   });
-  podpisy.forEach(({ y, s, ost }) => czesci.push(`<text x="${W - R + 8}" y="${y}" font-size="12.5" font-weight="700" fill="${s.kolor}">${String(ost.napis).replace(/&/g, '&amp;').replace(/</g, '&lt;')}</text>`));
+  podpisy.forEach(({ y, s, ost }) => czesci.push(`<text x="${W - R + 8}" y="${y}" font-size="12.5" font-weight="700" fill="${s.kolor}">${String(kwotaPL(ost.napis)).replace(/&/g, '&amp;').replace(/</g, '&lt;')}</text>`));
   svg = czesci.join('');
 }
 

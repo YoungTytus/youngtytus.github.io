@@ -2,7 +2,7 @@
 import Ikona from './Ikona.astro';
 import Status from './Status.astro';
 import { czyKwotaWyliczona, etykieta, kwotaPrezentowana, limitPrezentowany } from '../lib/model.mjs';
-import { typo, etykietaWariantu, opisUprawnionych } from '../lib/format.mjs';
+import { kwotaPL, typo, etykietaWariantu, opisUprawnionych } from '../lib/format.mjs';
 interface Props { k: any; naglowek?: 'h2' | 'h3' }
 const { k, naglowek = 'h3' } = Astro.props;
 const H = naglowek;
@@ -28,11 +28,11 @@ const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.stat
     <div class="card-value">
       <span class="label">{etykietaWartosci}</span>
       {/* Kafelek to skrót: kwota bez odznaki dowodu; dowód, przepis i historia są na stronie karty. */}
-      {a?.wartosc && <span class="kwota-kafelek">{typo(a.wartosc)}</span>}
+      {a?.wartosc && <span class="kwota-kafelek">{kwotaPL(a.wartosc)}</span>}
       {!a?.wartosc && a?.warianty?.length && (
-        <span class="warianty">{a.warianty.map((w: any, i: number) => <span class="kwota-kafelek" title={etykietaWariantu(w, i)}>{i > 0 && <span aria-hidden="true">/ </span>}<span class="sr-only">{etykietaWariantu(w, i)}: </span>{typo(w.wartosc)}</span>)}</span>
+        <span class="warianty">{a.warianty.map((w: any, i: number) => <span class="kwota-kafelek" title={etykietaWariantu(w, i)}>{i > 0 && <span class="sep" aria-hidden="true">/</span>}<span class="sr-only">{etykietaWariantu(w, i)}: </span>{kwotaPL(w.wartosc)}</span>)}</span>
       )}
-      {!a && limit && <span class="kwota-kafelek">{typo(limit.wartosc)}</span>}
+      {!a && limit && <span class="kwota-kafelek">{kwotaPL(limit.wartosc)}</span>}
       {niepieniezne && <span class="forma-pomocy">Bez kwoty: rzecz, usługa albo miejsce</span>}
       {!a && !limit && !niepieniezne && <span class="muted">{indywidualna ? `Kwota indywidualna: ${indywidualna.powod}` : k.ile.regula ? 'Reguła procentowa — szczegóły na karcie' : 'Nie ustalono (szczegóły na karcie)'}</span>}
     </div>

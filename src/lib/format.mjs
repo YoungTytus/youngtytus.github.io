@@ -25,6 +25,19 @@ export function dataLubBrak(v, brak = 'nie ustalono') {
 }
 
 /** Twarde spacje w typowych miejscach polskiej typografii prawniczej. Nie zmienia znaków widocznych. */
+/**
+ * Jeden zapis kwoty na całej stronie: „1 978,49 zł” (spacja tysięcy niełamliwa, zawsze grosze, „zł”).
+ * Tylko dla wyświetlanych kwot — cytaty przepisów zostają dosłowne („3000 złotych”).
+ */
+export function kwotaPL(s) {
+  if (s == null) return s;
+  if (Array.isArray(s)) return s.map(kwotaPL).join(' / ');
+  return String(s).replace(/(\d{1,3}(?:[  ]\d{3})+|\d+)(?:[.,](\d{1,2}))?\s*(?:zł|złotych|złote|złoty)(?!\p{L})/gu, (m, cale, gr) => {
+    const tys = cale.replace(/[  ]/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, NBSP);
+    return `${tys},${(gr ?? '00').padEnd(2, '0')}${NBSP}zł`;
+  });
+}
+
 export function typo(s) {
   if (s == null) return s;
   if (Array.isArray(s)) return s.map(typo).join(' / ');

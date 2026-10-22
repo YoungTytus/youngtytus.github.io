@@ -1,7 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mapa Polskiego Socjalu">
-  <!-- Znak: pinezka mapy (gdzie szukać) z sercem (pomoc od państwa). Granat i czerwień jak na stronie. -->
+  <!-- Znak: pinezka mapy (gdzie szukać) ze znakiem dolara (co rozdaje państwo). Granat i czerwień jak na stronie. -->
   <rect x="1" y="1" width="62" height="62" rx="15" fill="#0b1f3a" stroke="#2a5486" stroke-width="2"/>
   <ellipse cx="32" cy="54.5" rx="10" ry="2.6" fill="#9db4d6" opacity=".45"/>
   <path d="M32 8.5c-9.9 0-17.5 7.7-17.5 17.4C14.5 38.8 32 54 32 54s17.5-15.2 17.5-28.1C49.5 16.2 41.9 8.5 32 8.5z" fill="#fff"/>
-  <path d="M32 36.8c-.6-.5-8.3-6.1-8.3-11.2a4.6 4.6 0 0 1 8.3-2.7 4.6 4.6 0 0 1 8.3 2.7c0 5.1-7.7 10.7-8.3 11.2z" fill="#c8102e"/>
+  <!-- dolar narysowany ścieżkami (bez zależności od fontu) -->
+  <g fill="none" stroke="#c8102e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M37.2 20.4c-1.2-1.5-3.1-2.3-5.2-2.3-3 0-5.3 1.6-5.3 4 0 5.4 10.6 3 10.6 8.6 0 2.5-2.4 4.2-5.4 4.2-2.4 0-4.4-1-5.6-2.6"/>
+    <path d="M32 15v3.1M32 34.9V38"/>
+  </g>
 </svg>

@@ -1,8 +1,8 @@
 ---
 // Kwota ZAWSZE z linkiem do dowodu (SPEC 10: „każda kwota na stronie ma obok link do dowodu”).
 // Napis źródłowy bez przeliczeń; dodajemy tylko twardą spację.
-import { typo } from '../lib/format.mjs';
+import { kwotaPL, typo } from '../lib/format.mjs';
 interface Props { wartosc: string; href: string; etykieta: string; zewn?: boolean; blok?: boolean }
 const { wartosc, href, etykieta, zewn = false, blok = false } = Astro.props;
 ---
-<span class="kzd"><span class="kwota">{typo(wartosc)}</span><a class:list={['dowod', { 'dowod-blok': blok }]} href={href} {...(zewn ? { target: '_blank', rel: 'noopener' } : {})}><span class="sr-only">Dowód: </span>{etykieta}{zewn ? ' ↗' : ''}</a></span>
+<span class="kzd"><span class="kwota">{typo(kwotaPL(wartosc))}</span><a class:list={['dowod', { 'dowod-blok': blok }]} href={href} {...(zewn ? { target: '_blank', rel: 'noopener' } : {})}><span class="sr-only">Dowód: </span>{etykieta}{zewn ? ' ↗' : ''}</a></span>

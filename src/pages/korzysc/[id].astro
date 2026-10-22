@@ -14,7 +14,7 @@ import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta,
 import { kartaSocjal } from '../../lib/socjal.mjs';
 import {
   KOLEJNOSC_TERMINOW, OPIS_TERMINU, czyZaslepka, dataLubBrak, dataPL, eliSlug, etapZaslepki,
-  etykietaFormy, etykietaRozwiazania, etykietaZmiany, etykietaWariantu, opisUprawnionych, typo, wielka,
+  etykietaFormy, etykietaRozwiazania, kwotaPL, etykietaZmiany, etykietaWariantu, opisUprawnionych, typo, wielka,
 } from '../../lib/format.mjs';
 
 export function getStaticPaths() {
@@ -38,7 +38,7 @@ const pobrania = aktyDoPobrania(k);
 const dzis = dataEksportu();
 
 const nazwaDuza = wielka(k.nazwa);
-const kwotaOpis = a?.wartosc ?? (a?.warianty?.length ? a.warianty.map((w: any) => w.wartosc).join(' / ') : null);
+const kwotaOpis = kwotaPL(a?.wartosc ?? (a?.warianty?.length ? a.warianty.map((w: any) => w.wartosc).join(' / ') : null));
 const opisSeo = `${nazwaDuza}${kwotaOpis ? `: ${kwotaOpis}${a?.od ? ` od ${dataPL(a.od)}` : ''}` : ''}. Komu przysługuje, terminy, historia kwot i podstawa prawna (${k.przepis.eli}, ${k.przepis.przepis}).`.replace(/ /g, ' ');
 const jsonLd = {
   '@context': 'https://schema.org',

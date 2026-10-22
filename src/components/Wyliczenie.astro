@@ -1,7 +1,7 @@
 ---
 import Dowod from './Dowod.astro';
 import Kwota from './Kwota.astro';
-import { dataLubBrak, typo } from '../lib/format.mjs';
+import { dataLubBrak, kwotaPL, typo } from '../lib/format.mjs';
 interface Props { wyliczenie: any }
 const { wyliczenie } = Astro.props;
 const kroki: any[] = [];
@@ -11,7 +11,7 @@ for (let w = wyliczenie; w; w = w.podstawa?.lancuch) kroki.push(w);
   <h3 id="h-wyliczenie">Wyliczenie pomocnicze z eksportu</h3>
   <p>To wynik obliczeń wykonanych przez generator danych. Nie jest kwotą przytoczoną wprost z przepisu ani niezależnym potwierdzeniem aktualnej wysokości świadczenia. Poniżej pokazujemy podstawę i zasady zaokrąglania.</p>
   {wyliczenie.wartosc && <p class="calculation-result"><Kwota wartosc={wyliczenie.wartosc} href="#wyliczenie-podstawa-0" etykieta="Podstawa wyliczenia" blok /></p>}
-  {wyliczenie.warianty?.length > 0 && <ul>{wyliczenie.warianty.map((v: any) => <li>{typo(v.etykieta ?? 'wariant')}: <strong>{typo(v.wartosc)}</strong></li>)}</ul>}
+  {wyliczenie.warianty?.length > 0 && <ul>{wyliczenie.warianty.map((v: any) => <li>{typo(v.etykieta ?? 'wariant')}: <strong>{kwotaPL(v.wartosc)}</strong></li>)}</ul>}
   {wyliczenie.od && <p class="summary-note">Przyjęto kwotę bazową od {dataLubBrak(wyliczenie.od)}.</p>}
   {wyliczenie._kroki?.length > 0 && <>
     <h4>Kroki obliczenia</h4>

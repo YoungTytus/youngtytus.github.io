@@ -65,7 +65,7 @@ img, svg { max-width: 100%; }
 .header { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 30; }
 .header .wrap { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: flex; align-items: center; gap: 12px; line-height: 1.15; }
-.brand:hover { text-decoration: none; }
+.brand, .brand:hover, .brand:hover * { text-decoration: none; }
 .brand img { width: 44px; height: 44px; flex-shrink: 0; }
 .brand strong { display: block; font: 600 1.28rem/1.05 var(--serif); color: var(--navy-800); }
 .brand small { display: block; margin-top: 3px; font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--red); }
@@ -166,8 +166,8 @@ img, svg { max-width: 100%; }
 .card-sit { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
 .card-value { margin-top: auto; padding-top: 22px; }
 .card-value .label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 4px; border-top: 1px solid var(--line); padding-top: 18px; }
-.card-value .kwota, .card-value .kwota-kafelek { font: 600 1.9rem/1.2 var(--serif); color: var(--navy-800); display: inline-block; }
-.card-value .warianty .kwota, .card-value .warianty .kwota-kafelek { font-size: 1.35rem; }
+.card-value .kwota, .card-value .kwota-kafelek { font: 600 1.75rem/1.2 var(--serif); color: var(--navy-800); display: inline-block; white-space: nowrap; }
+.card-value .warianty .sep { margin: 0 8px 0 2px; color: var(--muted); font-weight: 400; }
 .card-value .warianty { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
 .card-bottom { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding: 15px 26px; font-size: .86rem; font-weight: 700; color: var(--navy-700); background: #fbfcfe; }
 .card-bottom svg { width: 18px; height: 18px; color: var(--red); }
@@ -450,3 +450,4 @@ code { font-family: var(--mono); font-size: .88em; }
 }
 .card .opis { margin: 8px 0 0; color: var(--ink-2); }
 .card .komu { margin-top: 10px; }
+.footer-motto { margin: 28px 0 0; padding: 14px 18px; border-left: 4px solid var(--red); background: rgba(255,255,255,.06); color: #fff; font: 600 1.15rem/1.3 var(--serif); }
