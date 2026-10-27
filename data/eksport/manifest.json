@@ -1,28 +1,45 @@
 {
   "kontrakt": "strona-0.4",
-  "wygenerowano": "2026-10-22T20:08:15.789166+00:00",
+  "wygenerowano": "2026-10-27T22:29:18.873438+00:00",
   "wersja_kodu": "importuj_socjal-1.6",
-  "na_dzien": "2026-10-22",
+  "na_dzien": "2026-10-27",
   "pliki": {
-    "korzysci.json": "419f12d3bcc406551fd19b9a3e067a564839071a519d919adba331132e800ff4",
-    "akty.json": "5fcf337764b2224764efc6817d0c1b26cadccbf5d6774f57d7fef05b10826f38",
+    "korzysci.json": "9f0bd59bde14cf2cd9817beb201b5e867b0dd1b58636a596abc5880a11fd1e31",
+    "akty.json": "82da8d8b6a0e32b4f3bdc5c4e34ad7811a7e797374df157f1551d67f516ba41e",
     "slowniki.json": "d6956b48072205c30c3265132ba90f37d4b6df025763e5c64ce91833ba867ae7",
-    "akty/SHA256SUMS": "5bd06cd2c73869efe716e8da8340fb82729139a230cf7596333a9ae04738e79e",
-    "socjal.json": "eb442856f2a46ab881c398a81074cbe2cbadeec8f7ae58e4224bd1f90ea92cf9"
+    "akty/SHA256SUMS": "1bb13b49ed4297a0fb49521459abde2761a943739f8cb16b2e3fc5fbd9112807",
+    "socjal.json": "af82355b8b08dd79245d62d35b5d0e3b017bdc9c24e0add19ccc915261beb0a3"
   },
   "zakres": [
+    "DU/1982/269",
+    "DU/1983/33",
+    "DU/1989/190",
+    "DU/1989/443",
+    "DU/1990/206",
+    "DU/1990/540",
+    "DU/1990/99",
+    "DU/1994/3",
+    "DU/1994/385",
+    "DU/1995/443",
+    "DU/1997/652",
+    "DU/1997/782",
+    "DU/1998/1018",
     "DU/1998/1118",
+    "DU/1999/801",
+    "DU/1999/902",
+    "DU/2001/734",
     "DU/2003/1268",
     "DU/2004/593",
     "DU/2011/887",
+    "DU/2012/1544",
     "DU/2016/195",
     "DU/2022/1692",
     "DU/2025/1402"
   ],
   "liczby": {
-    "korzysci": 48,
-    "akty": 99,
-    "pliki_aktow": 104
+    "korzysci": 61,
+    "akty": 119,
+    "pliki_aktow": 121
   },
   "z_plikami_pdf": false
 }

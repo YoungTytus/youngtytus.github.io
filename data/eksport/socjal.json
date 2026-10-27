@@ -1,6 +1,6 @@
 {
   "kontrakt": "socjal-1",
-  "na_dzien": "2026-10-22",
+  "na_dzien": "2026-10-27",
   "karty": {
     "FUS-emerytura-tworcza": {
       "pochodzenie": "reczna_FUS",
@@ -649,6 +649,7 @@
       "jednostki": [
         "DU/2016/195#arti_1-pass_2@obowiazujace",
         "DU/2016/195#arti_1-pass_2a@obowiazujace",
+        "DU/2016/195#arti_1-pass_2c@obowiazujace",
         "DU/2016/195#arti_1-pass_2d@obowiazujace",
         "DU/2016/195#arti_1-pass_2g@obowiazujace",
         "DU/2016/195#arti_1-pass_3@obowiazujace",
@@ -789,6 +790,236 @@
       ],
       "plik_notatki": "Swiadczenia/SW/SW - Świadczenie wychowawcze przy koordynacji zagranicznej.md",
       "opis_kwoty_z_notatki": "Art 5ust 2b odsyła do kwoty ust. 1–2a także gdy ustawodawstwo polskie nie ma pierwszeństwa. Ostateczny zbieg i rozliczenia wymagają prawa UE; nie redukować automatycznie 800o dowolne zagraniczne świadczenie."
+    },
+    "DU-1990-206-S03": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-1990-206/S03",
+      "rodzaj_zrodlowy": "swiadczenie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-1990-206",
+      "artykuly": [
+        "DU-1990-206-art-22",
+        "DU-1990-206-art-23",
+        "DU-1990-206-art-25",
+        "DU-1990-206-art-31"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": null
+    },
+    "DU-1990-540-S01": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-1990-540/S01",
+      "rodzaj_zrodlowy": "swiadczenie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-1990-540",
+      "artykuly": [
+        "DU-1990-540-art-1",
+        "DU-1990-540-art-10",
+        "DU-1990-540-art-14",
+        "DU-1990-540-art-15",
+        "DU-1990-540-art-2",
+        "DU-1990-540-art-3",
+        "DU-1990-540-art-4",
+        "DU-1990-540-art-5",
+        "DU-1990-540-art-6",
+        "DU-1990-540-art-8"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": null
+    },
+    "DU-1990-540-S02": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-1990-540/S02",
+      "rodzaj_zrodlowy": "skladnik_swiadczenia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-1990-540",
+      "artykuly": [
+        "DU-1990-540-art-15",
+        "DU-1990-540-art-3",
+        "DU-1990-540-art-4",
+        "DU-1990-540-art-9"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": "DU-1990-540/S01"
+    },
+    "DU-1990-99-S01": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-1990-99/S01",
+      "rodzaj_zrodlowy": "swiadczenie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-1990-99",
+      "artykuly": [
+        "DU-1990-99-art-1",
+        "DU-1990-99-art-2",
+        "DU-1990-99-art-9"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": null
+    },
+    "DU-1994-385-S02": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-1994-385/S02",
+      "rodzaj_zrodlowy": "swiadczenie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-1994-385",
+      "artykuly": [
+        "DU-1994-385-art-1",
+        "DU-1994-385-art-10",
+        "DU-1994-385-art-2",
+        "DU-1994-385-art-4"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": null
+    },
+    "DU-1994-385-S03": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-1994-385/S03",
+      "rodzaj_zrodlowy": "swiadczenie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-1994-385",
+      "artykuly": [
+        "DU-1994-385-art-1",
+        "DU-1994-385-art-10",
+        "DU-1994-385-art-4"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": null
+    },
+    "DU-1997-652-S01": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-1997-652/S01",
+      "rodzaj_zrodlowy": "swiadczenie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-1997-652",
+      "artykuly": [
+        "DU-1997-652-art-2",
+        "DU-1997-652-art-3"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": null
+    },
+    "DU-1998-1018-S01": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-1998-1018/S01",
+      "rodzaj_zrodlowy": "swiadczenie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-1998-1018",
+      "artykuly": [
+        "DU-1998-1018-art-2",
+        "DU-1998-1018-art-3"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": null
+    },
+    "DU-2001-734-S01": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-2001-734/S01",
+      "rodzaj_zrodlowy": "swiadczenie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-2001-734",
+      "artykuly": [
+        "DU-2001-734-art-2",
+        "DU-2001-734-art-21",
+        "DU-2001-734-art-3",
+        "DU-2001-734-art-6",
+        "DU-2001-734-art-7",
+        "DU-2001-734-art-8",
+        "DU-2001-734-art-9a"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": null
+    },
+    "DU-2001-734-S02": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-2001-734/S02",
+      "rodzaj_zrodlowy": "skladnik_swiadczenia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-2001-734",
+      "artykuly": [
+        "DU-2001-734-art-11",
+        "DU-2001-734-art-6",
+        "DU-2001-734-art-6a"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": "DU-2001-734/S01"
+    },
+    "DU-2001-734-S06": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-2001-734/S06",
+      "rodzaj_zrodlowy": "wariant_w_innym_akcie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-2001-734",
+      "artykuly": [
+        "DU-2001-734-art-15z"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": "DU-2001-734/S01"
+    },
+    "DU-2001-734-S07": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-2001-734/S07",
+      "rodzaj_zrodlowy": "wariant_w_innym_akcie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-2001-734",
+      "artykuly": [
+        "DU-2001-734-art-24",
+        "DU-2001-734-art-49",
+        "DU-2001-734-art-51"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": "DU-2001-734/S01"
+    },
+    "DU-2012-1544-S01": {
+      "pochodzenie": "reczna_ELI",
+      "zrodlo_id": "DU-2012-1544/S01",
+      "rodzaj_zrodlowy": "swiadczenie",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
+      "analiza": "Analizy ELI/DU-2012-1544",
+      "artykuly": [
+        "DU-2012-1544-art-20",
+        "DU-2012-1544-art-21"
+      ],
+      "jednostki": [],
+      "historia_parametr": null,
+      "uwaga_czasowa": null,
+      "odsylacze_do_sprawdzenia": null,
+      "nadrzedne": null
     },
     "DU-1998-1118-zasilek-pielegnacyjny": {
       "pochodzenie": "automat",
@@ -2271,77 +2502,6 @@
       "plik_notatki": "Swiadczenia/RS/Lokal (RS).md",
       "opis_kwoty_z_notatki": null
     },
-    "DU-2004-593-schronienie": {
-      "pochodzenie": "automat",
-      "zrodlo_id": "DU-2004-593-schronienie",
-      "rodzaj_zrodlowy": "swiadczenie_rzeczowe",
-      "status_zrodlowy": "kandydat_automatyczny",
-      "artykuly": [
-        "DU-2004-593-art-106",
-        "DU-2004-593-art-17",
-        "DU-2004-593-art-18",
-        "DU-2004-593-art-22",
-        "DU-2004-593-art-36",
-        "DU-2004-593-art-47",
-        "DU-2004-593-art-48",
-        "DU-2004-593-art-48a",
-        "DU-2004-593-art-5",
-        "DU-2004-593-art-5a"
-      ],
-      "jednostki": [
-        "DU/2004/593#arti_106-pass_2@obowiazujace",
-        "DU/2004/593#arti_17-pass_1-pint_3@obowiazujace",
-        "DU/2004/593#arti_18-pass_1-pint_7@obowiazujace",
-        "DU/2004/593#arti_18-pass_1-pint_8@obowiazujace",
-        "DU/2004/593#arti_22-pint_4@obowiazujace",
-        "DU/2004/593#arti_36-pint_2-lett_i@obowiazujace",
-        "DU/2004/593#arti_47-pass_3@obowiazujace",
-        "DU/2004/593#arti_47-pass_3a@obowiazujace",
-        "DU/2004/593#arti_47-pass_4@obowiazujace",
-        "DU/2004/593#arti_48@obowiazujace",
-        "DU/2004/593#arti_48a-pass_10@obowiazujace",
-        "DU/2004/593#arti_48a-pass_11@obowiazujace",
-        "DU/2004/593#arti_48a-pass_11a-pint_1@obowiazujace",
-        "DU/2004/593#arti_48a-pass_11b-pint_3@obowiazujace",
-        "DU/2004/593#arti_48a-pass_1@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2a@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2b@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2d@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2e@obowiazujace",
-        "DU/2004/593#arti_48a-pass_2f@obowiazujace",
-        "DU/2004/593#arti_48a-pass_3@obowiazujace",
-        "DU/2004/593#arti_48a-pass_4@obowiazujace",
-        "DU/2004/593#arti_48a-pass_8@obowiazujace",
-        "DU/2004/593#arti_48a-pass_8a@obowiazujace",
-        "DU/2004/593#arti_48a-pass_9@obowiazujace",
-        "DU/2004/593#arti_5-pint_2-lett_b@obowiazujace",
-        "DU/2004/593#arti_5a-pint_1@obowiazujace",
-        "DU/2004/593#arti_5a-pint_2@obowiazujace",
-        "DU/2004/593#arti_5a-pint_3@obowiazujace",
-        "DU/2004/593#arti_5a@obowiazujace"
-      ],
-      "historia_parametr": null,
-      "sporne": [],
-      "nieustalone_zrodla": [
-        {
-          "pole": "ile",
-          "powod": "w jednostkach wymieniających korzyść nie znaleziono kwoty ani reguły procentowej"
-        },
-        {
-          "pole": "komu.opis",
-          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
-        }
-      ],
-      "kwalifikacja_automatu": {
-        "socjal": true,
-        "powod": null,
-        "regula": null,
-        "forma": "niepieniezne"
-      },
-      "plik_notatki": "Swiadczenia/PS/Schronienie (PS).md",
-      "opis_kwoty_z_notatki": null
-    },
     "DU-2004-593-zasilek-staly": {
       "pochodzenie": "automat",
       "zrodlo_id": "DU-2004-593-zasilek-staly",
@@ -2477,6 +2637,77 @@
         "forma": "pieniezne"
       },
       "plik_notatki": "Swiadczenia/PS/Zasiłek okresowy (PS).md",
+      "opis_kwoty_z_notatki": null
+    },
+    "DU-2004-593-schronienie": {
+      "pochodzenie": "automat",
+      "zrodlo_id": "DU-2004-593-schronienie",
+      "rodzaj_zrodlowy": "swiadczenie_rzeczowe",
+      "status_zrodlowy": "kandydat_automatyczny",
+      "artykuly": [
+        "DU-2004-593-art-106",
+        "DU-2004-593-art-17",
+        "DU-2004-593-art-18",
+        "DU-2004-593-art-22",
+        "DU-2004-593-art-36",
+        "DU-2004-593-art-47",
+        "DU-2004-593-art-48",
+        "DU-2004-593-art-48a",
+        "DU-2004-593-art-5",
+        "DU-2004-593-art-5a"
+      ],
+      "jednostki": [
+        "DU/2004/593#arti_106-pass_2@obowiazujace",
+        "DU/2004/593#arti_17-pass_1-pint_3@obowiazujace",
+        "DU/2004/593#arti_18-pass_1-pint_7@obowiazujace",
+        "DU/2004/593#arti_18-pass_1-pint_8@obowiazujace",
+        "DU/2004/593#arti_22-pint_4@obowiazujace",
+        "DU/2004/593#arti_36-pint_2-lett_i@obowiazujace",
+        "DU/2004/593#arti_47-pass_3@obowiazujace",
+        "DU/2004/593#arti_47-pass_3a@obowiazujace",
+        "DU/2004/593#arti_47-pass_4@obowiazujace",
+        "DU/2004/593#arti_48@obowiazujace",
+        "DU/2004/593#arti_48a-pass_10@obowiazujace",
+        "DU/2004/593#arti_48a-pass_11@obowiazujace",
+        "DU/2004/593#arti_48a-pass_11a-pint_1@obowiazujace",
+        "DU/2004/593#arti_48a-pass_11b-pint_3@obowiazujace",
+        "DU/2004/593#arti_48a-pass_1@obowiazujace",
+        "DU/2004/593#arti_48a-pass_2@obowiazujace",
+        "DU/2004/593#arti_48a-pass_2a@obowiazujace",
+        "DU/2004/593#arti_48a-pass_2b@obowiazujace",
+        "DU/2004/593#arti_48a-pass_2d@obowiazujace",
+        "DU/2004/593#arti_48a-pass_2e@obowiazujace",
+        "DU/2004/593#arti_48a-pass_2f@obowiazujace",
+        "DU/2004/593#arti_48a-pass_3@obowiazujace",
+        "DU/2004/593#arti_48a-pass_4@obowiazujace",
+        "DU/2004/593#arti_48a-pass_8@obowiazujace",
+        "DU/2004/593#arti_48a-pass_8a@obowiazujace",
+        "DU/2004/593#arti_48a-pass_9@obowiazujace",
+        "DU/2004/593#arti_5-pint_2-lett_b@obowiazujace",
+        "DU/2004/593#arti_5a-pint_1@obowiazujace",
+        "DU/2004/593#arti_5a-pint_2@obowiazujace",
+        "DU/2004/593#arti_5a-pint_3@obowiazujace",
+        "DU/2004/593#arti_5a@obowiazujace"
+      ],
+      "historia_parametr": null,
+      "sporne": [],
+      "nieustalone_zrodla": [
+        {
+          "pole": "ile",
+          "powod": "w jednostkach wymieniających korzyść nie znaleziono kwoty ani reguły procentowej"
+        },
+        {
+          "pole": "komu.opis",
+          "powod": "krąg uprawnionych podano jako cytat przepisu; opis prostym językiem wymaga przeglądu"
+        }
+      ],
+      "kwalifikacja_automatu": {
+        "socjal": true,
+        "powod": null,
+        "regula": null,
+        "forma": "niepieniezne"
+      },
+      "plik_notatki": "Swiadczenia/PS/Schronienie (PS).md",
       "opis_kwoty_z_notatki": null
     },
     "DU-2004-593-posilek": {
@@ -18620,7 +18851,7 @@
           "przepis": "art. 81 ust. 1",
           "tekst": "Prawo do zasiłku pogrzebowego wygasa w razie niezgłoszenia wniosku o jego przyznanie w okresie 12 miesięcy od dnia śmierci osoby, po której zasiłek przysługuje.",
           "role": [
-            "wylaczenie_lub_przedmiot_niematerialny",
+            "przyznanie_korzysci",
             "termin",
             "procedura"
           ],
@@ -70788,7 +71019,7 @@
           "przepis": "art. 1 ust. 2c",
           "tekst": "Prawo do świadczenia wychowawczego na zasadach określonych w ust. 2b przysługuje niedłużej niż do końca okresu, o którym mowa w art. 18 ust. 1, oraz niewięcej niż jeden raz w okresie, o którym mowa w tym przepisie.",
           "role": [
-            "wylaczenie_lub_przedmiot_niematerialny",
+            "przyznanie_korzysci",
             "odeslanie_wewnetrzne"
           ],
           "rodzic": "DU/2016/195#arti_1@obowiazujace",
@@ -96305,6 +96536,226 @@
       "pochodzenie": "reczna_SW"
     },
     {
+      "id": "DU-1982-269-S01",
+      "nazwa": "Przejściowe podwyższenie rent inwalidzkich i rodzinnych z ustawy z 1974 r. (art. 2)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1983-33-S01",
+      "nazwa": "Ponowne przyznanie (przeliczenie) emerytur i rent z pięciu systemów od 1.01.1983 r. (art. 1)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1989-190-S01",
+      "nazwa": "Przyznanie renty inwalidzkiej z wyrównaniem do 3 lat wstecz (art. 8 pkt 2)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1989-443-S01",
+      "nazwa": "Zachowanie nabytych ulg i odliczeń inwestycyjnych do ich wyczerpania (art. 12)",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-206-S01",
+      "nazwa": "Ochrona praw nabytych i dotychczasowej wysokości świadczeń (art. 20, art. 22 ust. 3, art. 25 pkt 4, art. 26 pkt 2)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-206-S02",
+      "nazwa": "Przyznanie świadczenia lub wzrostu z tytułu stażu pracy na wniosek (art. 21)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-540-S03",
+      "nazwa": "Gwarancja dotychczasowej wysokości i minimum świadczenia (art. 8 ust. 3-4)",
+      "powod": "ochrona_istniejacego_swiadczenia",
+      "opis_powodu": "Ochrona istniejącego świadczenia (przed egzekucją, potrąceniem, wliczeniem do dochodu) — cecha karty głównej, nie nowa korzyść.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1994-3-S01",
+      "nazwa": "Umorzenie należności nabywców nieruchomości z art. 42 (art. 16)",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1994-3-S02",
+      "nazwa": "Odroczenie początku obowiązku opłat rocznych za zarząd i użytkowanie wieczyste nieruchomości rolnych (art. 15)",
+      "powod": "zwolnienie_z_oplat_lub_podatku",
+      "opis_powodu": "Zwolnienie z opłaty lub podatku — państwo nie pobiera, ale nic nie daje; ustaw podatkowych nie mapujemy.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1994-3-S03",
+      "nazwa": "Wygaśnięcie niezaspokojonych zobowiązań zlikwidowanych PGR wobec Skarbu Państwa (art. 18)",
+      "powod": "procedura_wyplaty_lub_zwrotu",
+      "opis_powodu": "Procedura wypłaty, wyrównania, zaliczki, forma realizacji albo ulga w zwrocie nienależnego świadczenia — reguła postępowania przy istniejącym świadczeniu (kamień 3).",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1994-385-S01",
+      "nazwa": "Obniżenie wieku emerytalnego za pracę górniczą (art. 2 ust. 1)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1994-385-S04",
+      "nazwa": "Rekompensacyjne świadectwa udziałowe zamiast podwyższenia emerytury lub renty (art. 5)",
+      "powod": "duplikat",
+      "opis_powodu": "Ta sama korzyść co inna karta (odmiana nazwy albo postać tej samej pomocy).",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "niepieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1995-443-S01",
+      "nazwa": "Zwrot opłaty od niezałatwionego podania o rewizję nadzwyczajną (art. 2 ust. 3)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "nieustalona",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1997-782-S01",
+      "nazwa": "Uposażenie w stanie spoczynku i uposażenie rodzinne dla dotychczasowych emerytów i rencistów sądownictwa (art. 6, 7)",
+      "powod": "duplikat",
+      "opis_powodu": "Ta sama korzyść co inna karta (odmiana nazwy albo postać tej samej pomocy).",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1999-801-S01",
+      "nazwa": "Rekompensata pieniężna zamiast świadectw rekompensacyjnych: przejście i wartość nominalna (art. 6)",
+      "powod": "duplikat",
+      "opis_powodu": "Ta sama korzyść co inna karta (odmiana nazwy albo postać tej samej pomocy).",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1999-902-S01",
+      "nazwa": "Kontynuacja wypłaty dotychczasowego dodatku jako świadczenia pieniężnego (art. 3)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1999-902-S02",
+      "nazwa": "Ryczałt energetyczny dla dotychczasowych pobierających dodatek i wdów (art. 4)",
+      "powod": "duplikat",
+      "opis_powodu": "Ta sama korzyść co inna karta (odmiana nazwy albo postać tej samej pomocy).",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2001-734-S03",
+      "nazwa": "Wypłata dodatku zarządcy albo do rąk właściciela domu jednorodzinnego",
+      "powod": "sposob_wyplaty",
+      "opis_powodu": "Komu i jak wypłaca się istniejące świadczenie (np. opiekunowi prawnemu) — nie osobne świadczenie.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2001-734-S04",
+      "nazwa": "Ochrona dodatku mieszkaniowego przed egzekucją",
+      "powod": "ochrona_istniejacego_swiadczenia",
+      "opis_powodu": "Ochrona istniejącego świadczenia (przed egzekucją, potrąceniem, wliczeniem do dochodu) — cecha karty głównej, nie nowa korzyść.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2001-734-S05",
+      "nazwa": "Wyłączenie wskazanych świadczeń z dochodu przy dodatku (2002–30.06.2021)",
+      "powod": "obowiazek_lub_parametr",
+      "opis_powodu": "Obowiązek obywatela wobec państwa albo parametr obliczeń (składka, wskaźnik) — nie korzyść.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2001-734-S08",
+      "nazwa": "Dotacje celowe dla gmin na dofinansowanie dodatków (2002–2003)",
+      "powod": "odbiorca_nie_osoba",
+      "opis_powodu": "Odbiorcą jest instytucja albo osoba wykonująca zadanie publiczne (koszty obsługi, dotacje, diety komisji) — nie osoba lub rodzina, której pomaga państwo.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2001-734-S09",
+      "nazwa": "Dodatek energetyczny – uprawnienie zależne od dodatku mieszkaniowego",
+      "powod": "duplikat",
+      "opis_powodu": "Ta sama korzyść co inna karta (odmiana nazwy albo postać tej samej pomocy).",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
       "id": "DU-1998-1118-skladka",
       "nazwa": "składka",
       "powod": "obowiazek_lub_parametr",
@@ -96376,7 +96827,7 @@
     }
   ],
   "statystyki": {
-    "reczne": 25,
+    "reczne": 38,
     "automatyczne": 23,
     "z_notatek": 0
   }

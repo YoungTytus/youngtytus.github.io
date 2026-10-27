@@ -1,5 +1,357 @@
 [
   {
+    "eli": "DU/1982/269",
+    "tytul": "Ustawa z dnia 14 grudnia 1982 r. o zmianie ustawy o zaopatrzeniu inwalidów wojennych i wojskowych oraz ich rodzin.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1982/269",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1982-269/D19820269.pdf",
+        "nazwa_pobierania": "DU-1982-269_tekst-ogloszony.pdf",
+        "sha256": "8c66184a1fb39c9edfa0c8e2d9af5d79420563b5df29b348e2c4e926c6cbe295",
+        "rozmiar": 2473102,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1982/269/text/O/D19820269.pdf",
+        "pobrano": "2026-10-26T10:28:03+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1983/33",
+    "tytul": "Ustawa z dnia 1 lutego 1983 r. o zmianie niektórych przepisów o świadczeniach z ubezpieczenia społecznego i o zaopatrzeniu emerytalnym.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1983/33",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1983-33/D19830033.pdf",
+        "nazwa_pobierania": "DU-1983-33_tekst-ogloszony.pdf",
+        "sha256": "1fd140c5c4b68db617ef49d159f48c1947512dd0d7c8382a5ec4345600fa0686",
+        "rozmiar": 4683663,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1983/33/text/O/D19830033.pdf",
+        "pobrano": "2026-10-26T10:10:06+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1989/190",
+    "tytul": "Ustawa z dnia 30 maja 1989 r. o zmianie niektórych przepisów o zaopatrzeniu emerytalnym i o świadczeniach z ubezpieczenia społecznego.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1989/190",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1989-190/D19890190.pdf",
+        "nazwa_pobierania": "DU-1989-190_tekst-ogloszony.pdf",
+        "sha256": "a74cb7736f6370f4cf85da39fa95b65755307fe970389dcd6326b0f4511350bb",
+        "rozmiar": 10854616,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1989/190/text/O/D19890190.pdf",
+        "pobrano": "2026-10-26T11:15:36+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1989/443",
+    "tytul": "Ustawa z dnia 28 grudnia 1989 r. o zmianie niektórych ustaw regulujących zasady opodatkowania.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1989/443",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1989-443/D19890443.pdf",
+        "nazwa_pobierania": "DU-1989-443_tekst-ogloszony.pdf",
+        "sha256": "04ff81be2b1785eb6d57a5712b380bfd8cffc53644071e112f3fb9074e3001fe",
+        "rozmiar": 23530335,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1989/443/text/O/D19890443.pdf",
+        "pobrano": "2026-10-26T14:02:04+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1990/206",
+    "tytul": "Ustawa z dnia 24 maja 1990 r. o zmianie niektórych przepisów o zaopatrzeniu emerytalnym.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1990/206",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1990-206-S03"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1990-206/D19900206.pdf",
+        "nazwa_pobierania": "DU-1990-206_tekst-ogloszony.pdf",
+        "sha256": "4a0db2d32f4b09e7df644d1ac457bd4614744a3d32a6de8be80138993bf3587e",
+        "rozmiar": 5568612,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/206/text/O/D19900206.pdf",
+        "pobrano": "2026-10-26T10:28:03+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1990/540",
+    "tytul": "Ustawa z dnia 14 grudnia 1990 r. o rewaloryzacji emerytur i rent dla osób, które ukończyły 80 lat, oraz o zmianie niektórych przepisów o zaopatrzeniu emerytalnym.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1990/540",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1990-540-S01",
+      "DU-1990-540-S02"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1990-540/D19900540.pdf",
+        "nazwa_pobierania": "DU-1990-540_tekst-ogloszony.pdf",
+        "sha256": "499105caa59a0d16f5dca33f5864e40467ed934cfd5abe602ebb69c744c050b5",
+        "rozmiar": 1161193,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/540/text/O/D19900540.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1990/99",
+    "tytul": "Ustawa z dnia 9 marca 1990 r. o zmianie ustawy o przedsiębiorstwach państwowych.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1990/99",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1990-99-S01"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1990-99/D19900099.pdf",
+        "nazwa_pobierania": "DU-1990-99_tekst-ogloszony.pdf",
+        "sha256": "8d62a3ec6aab6548a4a098d55cce102494e339e1c13e5d22bc7c60591142bfc3",
+        "rozmiar": 1700025,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/99/text/O/D19900099.pdf",
+        "pobrano": "2026-10-26T13:07:08+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1994/3",
+    "tytul": "Ustawa z dnia 29 grudnia 1993 r. o zmianie ustawy o gospodarowaniu nieruchomościami rolnymi Skarbu Państwa oraz o zmianie niektórych ustaw.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1994/3",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1994-3/D19940003.pdf",
+        "nazwa_pobierania": "DU-1994-3_tekst-ogloszony.pdf",
+        "sha256": "c7242768d3dce3fbc7b2489691f7b631a7c3fdb3a0fa42a158146e0b4e06e605",
+        "rozmiar": 5660783,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1994/3/text/O/D19940003.pdf",
+        "pobrano": "2026-10-26T09:37:13+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1994/385",
+    "tytul": "Ustawa z dnia 30 czerwca 1994 r. o zmianie ustawy o zaopatrzeniu emerytalnym górników i ich rodzin oraz o zmianie niektórych innych ustaw.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1994/385",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1994-385-S02",
+      "DU-1994-385-S03"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1994-385/D19940385.pdf",
+        "nazwa_pobierania": "DU-1994-385_tekst-ogloszony.pdf",
+        "sha256": "bfe0d56d7e1f81456665e52a15a6285872b89fc6c6107c7c6e0dd1af8b27a263",
+        "rozmiar": 3603263,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1994/385/text/O/D19940385.pdf",
+        "pobrano": "2026-10-26T14:10:24+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1995/443",
+    "tytul": "Ustawa z dnia 29 czerwca 1995 r. o zmianie Kodeksu postępowania karnego, ustawy o ustroju sądów wojskowych, ustawy o opłatach w sprawach karnych i ustawy o postępowaniu w sprawach nieletnich.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1995/443",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1995-443/D19950443.pdf",
+        "nazwa_pobierania": "DU-1995-443_tekst-ogloszony.pdf",
+        "sha256": "fa8e67cdf1d3cdc3e339093a14a657e72f1f27fb378250c7b47cd4d05e828add",
+        "rozmiar": 6830800,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1995/443/text/O/D19950443.pdf",
+        "pobrano": "2026-10-26T13:09:24+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1997/652",
+    "tytul": "Ustawa z dnia 1 sierpnia 1997 r. o zmianie ustawy o pomocy państwa w spłacie niektórych kredytów mieszkaniowych, refundacji bankom wypłaconych premii gwarancyjnych oraz zmianie niektórych ustaw.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1997/652",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1997-652-S01"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1997-652/D19970652.pdf",
+        "nazwa_pobierania": "DU-1997-652_tekst-ogloszony.pdf",
+        "sha256": "af85e3156ec0ef96f6dada86aa13e8c0dda8bb6b43988530fd0342a722e078c0",
+        "rozmiar": 544646,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1997/652/text/O/D19970652.pdf",
+        "pobrano": "2026-10-26T13:10:15+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1997/782",
+    "tytul": "Ustawa z dnia 28 sierpnia 1997 r. o zmianie ustawy - Prawo o ustroju sądów powszechnych oraz niektórych innych ustaw.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1997/782",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1997-782/D19970782.pdf",
+        "nazwa_pobierania": "DU-1997-782_tekst-ogloszony.pdf",
+        "sha256": "760d26b58074edb5f5783bb1c5ce8e69217cca25bad4c76227448ccb97d25f3e",
+        "rozmiar": 1533821,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1997/782/text/O/D19970782.pdf",
+        "pobrano": "2026-10-26T13:13:12+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1998/1018",
+    "tytul": "Ustawa z dnia 26 listopada 1998 r. o zmianie ustawy o zakazie stosowania wyrobów zawierających azbest.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1998/1018",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1998-1018-S01"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1998-1018/D19981018.pdf",
+        "nazwa_pobierania": "DU-1998-1018_tekst-ogloszony.pdf",
+        "sha256": "2ff57b8cab8a1ece5a00660f7ae548b4fbdc376c4428d40ba87eaf1f04be8cc8",
+        "rozmiar": 1326833,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1998/1018/text/O/D19981018.pdf",
+        "pobrano": "2026-10-26T13:13:21+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/1998/1118",
     "tytul": "Ustawa z dnia 17 grudnia 1998 r. o emeryturach i rentach z Funduszu Ubezpieczeń Społecznych.",
     "typ": "Ustawa",
@@ -55,6 +407,99 @@
         "rozmiar": 37113642,
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1998/1118/text/O/D19981118.pdf",
         "pobrano": "2026-10-18T09:52:44+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1999/801",
+    "tytul": "Ustawa z dnia 23 lipca 1999 r. o zmianie ustawy o zrekompensowaniu okresowego niepodwyższania płac w sferze budżetowej oraz utraty niektórych wzrostów lub dodatków do emerytur i rent.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1999/801",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1999-801/D19990801.pdf",
+        "nazwa_pobierania": "DU-1999-801_tekst-ogloszony.pdf",
+        "sha256": "53d0ef21d3911ab470021e0a52773d7708cba7000844cb893be7483e95d21f16",
+        "rozmiar": 2150853,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1999/801/text/O/D19990801.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1999/902",
+    "tytul": "Ustawa z dnia 10 września 1999 r. o zmianie ustawy o dodatku i uprawnieniach przysługujących żołnierzom zastępczej służby wojskowej przymusowo zatrudnionym w kopalniach węgla, kamieniołomach i zakładach wydobywania rud uranu.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1999/902",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1999-902/D19990902.pdf",
+        "nazwa_pobierania": "DU-1999-902_tekst-ogloszony.pdf",
+        "sha256": "e4559d85220c25b8c0f013b31f610345f09a98dc0675c6265ec578c151729998",
+        "rozmiar": 2196240,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1999/902/text/O/D19990902.pdf",
+        "pobrano": "2026-10-26T14:27:34+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2001/1817",
+    "tytul": "Akt prawny DU/2001/1817",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2001/1817",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2001/734",
+    "tytul": "Ustawa z dnia 21 czerwca 2001 r. o dodatkach mieszkaniowych.",
+    "typ": "Ustawa",
+    "data_stanu": "2023-07-18",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2001/734",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2001-734-S01",
+      "DU-2001-734-S02"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2001-734/D20010734.pdf",
+        "nazwa_pobierania": "DU-2001-734_tekst-ogloszony.pdf",
+        "sha256": "86fc4d62acebdc5471ebff53d67a493e9b1daeac266caa9f73a2e36167ab0298",
+        "rozmiar": 263183,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2001/734/text/O/D20010734.pdf",
+        "pobrano": "2026-10-21T09:55:53+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
@@ -273,6 +718,34 @@
     ]
   },
   {
+    "eli": "DU/2012/1544",
+    "tytul": "Ustawa z dnia 23 listopada 2012 r. o zmianie niektórych ustaw w związku z podwyższeniem wieku emerytalnego",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2012/1544",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2012-1544-S01"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2012-1544/D20121544.pdf",
+        "nazwa_pobierania": "DU-2012-1544_tekst-ogloszony.pdf",
+        "sha256": "b298e0bd29c47780c795b4c4f25f3829a59587097543f941c1d251e8550213f8",
+        "rozmiar": 801453,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2012/1544/text/O/D20121544.pdf",
+        "pobrano": "2026-10-26T09:55:57+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/2012/823",
     "tytul": "Akt prawny DU/2012/823",
     "typ": "Akt prawny",
@@ -423,6 +896,34 @@
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "DU/2020/374",
+    "tytul": "Akt prawny DU/2020/374",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2020/374",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2001-734-S06"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2021/11",
+    "tytul": "Akt prawny DU/2021/11",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2021/11",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2001-734-S07"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "DU/2021/1296",

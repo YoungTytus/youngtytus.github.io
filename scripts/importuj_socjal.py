@@ -853,6 +853,172 @@ def pliki_aktow(socjal):
     return {eli: list(d.values()) for eli, d in wynik.items()}
 
 
+# ---------------------------------------------------------------- Analizy ELI (analizy ustaw przez AI z kolejki)
+# Publikujemy tylko analizy zamknięte kontrolą (`dane/stan.json`: status). Pozostałe zostają w sejfie.
+STATUSY_ANALIZ_ELI = ('sprawdzona_w_zakresie',)
+TERMINY_ANALIZ = {'okres_przyznania': 'okres_zasilkowy', 'okres_zasilkowy': 'okres_zasilkowy', 'termin_wniosku': 'termin_wniosku',
+                  'termin_wyplaty': 'termin_wyplaty', 'okres_kwoty': 'okres_kwoty'}
+DENOMINACJA = '1995-01-01'   # 10 000 starych zł = 1 nowy zł: kwot sprzed tej daty nie porównuje się bez przeliczenia
+
+
+def kwota_z_wyrazenia(wyrazenie):
+    """Jedna kwota w wyrażeniu reguły („14000 zł”, „1 978,49 zł”) albo None (wzór, kilka kwot, procent)."""
+    kw = re.findall(r'(?<![\d,.])(\d{1,3}(?:[  .]\d{3})+|\d+)(?:,(\d{1,2}))?\s*zł', str(wyrazenie or ''))
+    if len(kw) != 1 or '%' in str(wyrazenie):
+        return None
+    cale, gr = kw[0]
+    return '{}.{}'.format(re.sub(r'[  .]', '', cale), (gr or '00').ljust(2, '0'))
+
+
+def karty_analiz_eli(socjal, na_dzien, benefits, extra_karty, akty_meta, pomijane_akty):
+    """Analizy ELI (`Analizy ELI/<KOD>/dane`, schemat 0.1) → karty strony: świadczenie (co) i adresat (komu),
+    reguły kwot (kwota, ryczałt → oś czasu i kwota aktualna; procent, wzór → formuła; limit, minimum → progi),
+    parametry świadczenia → progi, okresy → do kiedy, wersje warunków i warianty → warunki, ustalenia → trasa dowodów.
+    Zwraca zbiór ELI opublikowanych w ten sposób (dla nich karty automatu skryptu mapy są pomijane)."""
+    katalog = socjal / 'Analizy ELI'
+    opublikowane = set()
+    for p_stan in sorted(katalog.glob('DU-*/dane/stan.json')) if katalog.is_dir() else []:
+        stan = wczytaj(p_stan)
+        eli = stan.get('eli')
+        if stan.get('status') not in STATUSY_ANALIZ_ELI or not ELI_RE.fullmatch(str(eli)) or eli in pomijane_akty:
+            continue
+        d = p_stan.parent
+        czyt = lambda nazwa, klucz: (wczytaj(d / nazwa).get(klucz, []) if (d / nazwa).is_file() else [])
+        sw, ust = czyt('swiadczenia.json', 'swiadczenia'), {u['id']: u for u in czyt('ustalenia.json', 'ustalenia')}
+        reguly, parametry, okresy = czyt('reguly_kwot.json', 'reguly'), czyt('parametry.json', 'parametry'), czyt('okresy.json', 'okresy')
+        wersje, warianty = czyt('wersje_warunkow.json', 'wersje'), czyt('warianty.json', 'warianty')
+        if not sw:
+            continue
+
+        def dowod_u(uid):
+            u = ust.get(uid) or {}
+            src = u.get('akt_eli') or u.get('dokument_eli')
+            if not (ELI_RE.fullmatch(str(src)) and u.get('cytat')):
+                return None
+            x = dowod(src, u.get('jednostka'), u['cytat'], (u.get('wersja') or {}).get('stan_na'))
+            for a, b in (('zrodlo_sha256', '_sha256'), ('strona_pdf', '_strona')):
+                if u.get(a) is not None:
+                    x[b] = u[a]
+            return x
+
+        def pierwszy_dowod(uids):
+            return next((x for x in (dowod_u(i) for i in uids or []) if x), None)
+
+        stan_tekstu = next((data_tekstu((u.get('wersja') or {}).get('stan_na')) for u in ust.values()
+                            if u.get('akt_eli') == eli and (u.get('wersja') or {}).get('stan_na')), None)
+        meta_us = socjal.parent / 'Ustawy_Socjale' / eli.replace('/', '_') / 'metadane.json'
+        m_us = wczytaj(meta_us) if meta_us.is_file() else {}
+        w_mocy = m_us.get('inForce') == 'IN_FORCE'
+        akty_meta.setdefault(eli, {'tytul': m_us.get('title') or 'Akt ' + eli, 'stan': stan_tekstu, 'tryb': 'analiza_eli'})
+        for s in sw:
+            prz = pierwszy_dowod(s.get('ustalenia'))
+            if not prz or not s.get('id') or not s.get('nazwa'):
+                continue
+            bid = slug(s['id'].replace('/', '-')).upper()
+            rodzaj = (s.get('rodzaj') or '').lower()
+            koniec = data_tekstu(s.get('okres_do'))
+            k = {'id': bid, 'slug': bid.lower(), 'nazwa': s['nazwa'],
+                 'rodzaj_korzysci': ('dofinansowanie' if rodzaj.startswith('finansowanie') else 'zwolnienie' if rodzaj in ('ulga', 'zwolnienie')
+                                     else 'uprawnienie' if rodzaj.startswith(('ochrona', 'wylaczenie', 'umorzenie', 'mechanizm', 'sposob'))
+                                     else 'swiadczenie_rzeczowe' if s.get('forma') == 'niepieniezne'
+                                     else 'swiadczenie_jednorazowe' if 'jednoraz' in (s.get('opis') or '').lower() + s['nazwa'].lower()
+                                     else 'swiadczenie_okresowe'),
+                 # „obowiązuje” tylko dla zwykłego świadczenia bez daty końca w obowiązującej ustawie; warianty z innych
+                 # aktów (np. COVID-19) i jednorazowe przeliczenia bez daty końca: do ustalenia
+                 'status': ('zamknieta' if koniec and koniec < na_dzien
+                            else 'obowiazuje' if rodzaj == 'swiadczenie' and not koniec and w_mocy
+                            else 'do_ustalenia'),
+                 'komu': s.get('adresat') or 'Krąg uprawnionych nieustalony w analizie.',
+                 'opis_prosty': s.get('opis'), 'sytuacje': [], 'sytuacje_zrodlo': None,
+                 'przepis': prz, 'ile': bez_kwoty(), 'do_kiedy': [], 'powiazane': [],
+                 # tekst stały wg schematu strony; pochodzenie karty (Analizy ELI) jest w extra_karty['pochodzenie']
+                 'stan': {'data_stanu': prz['data_stanu'] or stan_tekstu or na_dzien, 'tekst': 'tekst ujednolicony (informacyjny)'},
+                 'nieustalone': [], 'flagi': []}
+            ile = k['ile']
+            # --- ile: reguły kwot świadczenia
+            r_s = sorted([r for r in reguly if r.get('swiadczenie') == s['id']], key=lambda r: (r.get('od') or '', r['id']))
+            kwotowe = [(r, kwota_z_wyrazenia(r.get('wyrazenie'))) for r in r_s if r.get('typ') in ('kwota', 'ryczalt')]
+            kwotowe = [(r, w) for r, w in kwotowe if w]
+            for od in sorted({r.get('od') for r, _ in kwotowe}, key=lambda x: x or ''):
+                grupa = [(r, w) for r, w in kwotowe if r.get('od') == od]
+                dw = pierwszy_dowod([u for r, _ in grupa for u in r.get('ustalenia') or []]) or prz
+                stare = bool(od and od < DENOMINACJA)
+                tekst = lambda w: zlote(w) + (' (stare złote, przed denominacją 1.01.1995)' if stare else '')
+                jedna = len(grupa) == 1
+                ile['os_czasu'].append({'wartosc': tekst(grupa[0][1]) if jedna else None,
+                                        'warianty': None if jedna else [{'etykieta': r['nazwa'], 'wartosc': tekst(w)} for r, w in grupa],
+                                        'od': data_tekstu(od), 'do': data_tekstu(grupa[0][0].get('do')),
+                                        'rodzaj_zmiany': 'pierwszy_znany_wpis' if not ile['os_czasu'] else 'nowelizacja',
+                                        'poprzednia': None, 'roznica': None, 'dowod': dw})
+            if ile['os_czasu']:
+                ile['rozwiazanie'] = 'kwota_w_ustawie'
+                biezace = [w for w in ile['os_czasu'] if w['od'] and w['od'] <= na_dzien and (w['do'] is None or w['do'] >= na_dzien)]
+                if len(biezace) == 1 and not (biezace[0]['od'] < DENOMINACJA):
+                    x = biezace[0]
+                    ile['aktualna'] = {'wartosc': x['wartosc'], 'warianty': x['warianty'], 'od': x['od'], 'do': x['do']}
+            wzory = [r for r in r_s if r.get('typ') in ('wzor', 'procent')]
+            if wzory and not ile['aktualna']:
+                ile['rozwiazanie'] = ile['rozwiazanie'] if ile['os_czasu'] else 'formula'
+                ile['regula'] = {'udzial': None, 'podstawa_id': None,
+                                 'opis': '; '.join('{}: {}'.format(r['nazwa'], r['wyrazenie']) for r in wzory)[:900]}
+            for r in [r for r in r_s if r.get('typ') in ('limit', 'minimum')]:
+                ile['progi'].append({'przepis': '{} — {}'.format(r['nazwa'], r.get('wyrazenie')),
+                                     'wpisy': [{'wartosc': zlote(kwota_z_wyrazenia(r['wyrazenie'])) if kwota_z_wyrazenia(r['wyrazenie']) else str(r['wyrazenie'])[:200],
+                                                'warianty': None, 'od': data_tekstu(r.get('od')), 'do': data_tekstu(r.get('do')),
+                                                'rodzaj_zmiany': 'pierwszy_znany_wpis', 'poprzednia': None, 'roznica': None,
+                                                'dowod': pierwszy_dowod(r.get('ustalenia')) or prz}]})
+            # --- progi: parametry świadczenia (np. progi dochodowe, kwoty minimalne) z historią
+            serie = defaultdict(list)
+            for x in parametry:
+                if x.get('swiadczenie') == s['id'] and x.get('wartosc') is not None:
+                    serie[(x.get('seria'), x.get('nazwa'))].append(x)
+            for (seria, nazwa), wpisy in serie.items():
+                wpisy.sort(key=lambda x: x.get('od') or '')
+                rows = []
+                for x in wpisy:
+                    po = x.get('pochodzenie') or {}
+                    dw = (dowod(po['eli'], po.get('przepis'), po.get('cytat') or x.get('nazwa')) if ELI_RE.fullmatch(str(po.get('eli')))
+                          else pierwszy_dowod(x.get('ustalenia'))) or prz
+                    rows.append({'wartosc': zlote(x['wartosc']) if 'PLN' in str(x.get('jednostka')) else str(x['wartosc']),
+                                 'warianty': None, 'od': data_tekstu(x.get('od')), 'do': data_tekstu(x.get('do')),
+                                 'rodzaj_zmiany': 'pierwszy_znany_wpis' if not rows else 'waloryzacja',
+                                 'poprzednia': rows[-1]['wartosc'] if rows else None, 'roznica': None, 'dowod': dw,
+                                 '_charakter': x.get('charakter')})
+                ile['progi'].append({'przepis': nazwa or seria, 'wpisy': rows})
+            if not (ile['os_czasu'] or ile['regula'] or ile['progi']):
+                k['nieustalone'].append(nieustalone('ile', 'Analiza nie podaje kwoty ani reguły kwoty dla tego świadczenia.'))
+            ile['trasa'] = [{'krok': i + 1, 'opis': (ust[u].get('tresc') or 'ustalenie')[:240], 'dowod': x}
+                            for i, (u, x) in enumerate((u, dowod_u(u)) for u in (s.get('ustalenia') or [])[:10] if dowod_u(u))]
+            # --- do kiedy i warunki
+            for o in [o for o in okresy if o.get('swiadczenie') == s['id']]:
+                dw = pierwszy_dowod(o.get('ustalenia')) or prz
+                if o.get('rodzaj') in TERMINY_ANALIZ:
+                    row = {'rodzaj': TERMINY_ANALIZ[o['rodzaj']], 'data': data_tekstu(o.get('od')),
+                           'opis': ' — '.join(x for x in (o.get('tresc'), o.get('regula')) if x), 'skutek': None, 'dowod': dw}
+                    for f in ('od', 'do'):
+                        if o.get(f): row[f] = data_tekstu(o[f])
+                    k['do_kiedy'].append(row)
+                else:
+                    k['powiazane'].append({'typ': 'warunek', 'cytat': '{}: {}'.format(o.get('rodzaj'), o.get('tresc'))})
+            if koniec:
+                k['do_kiedy'].append({'rodzaj': 'granica_przepisu', 'data': koniec, 'opis': 'Świadczenie przysługiwało do {}.'.format(koniec),
+                                      'skutek': None, 'dowod': prz})
+            for v in [v for v in wersje if v.get('swiadczenie') == s['id']]:
+                k['powiazane'].append({'typ': 'warunek', 'cytat': '{}: {} (od {} do {})'.format(
+                    v.get('element'), v.get('tresc'), v.get('od') or '?', v.get('do') or 'nadal')})
+            for w in [w for w in warianty if w.get('swiadczenie') == s['id']]:
+                k['powiazane'].append({'typ': 'warunek', 'cytat': 'Wariant: {}'.format(w.get('nazwa'))})
+            benefits.append(k)
+            extra_karty[bid] = {'pochodzenie': 'reczna_ELI', 'zrodlo_id': s['id'], 'rodzaj_zrodlowy': rodzaj,
+                                'status_zrodlowy': stan.get('status'), 'analiza': d.parent.relative_to(socjal).as_posix(),
+                                'artykuly': sorted({a for a in (art_z_przepisu(eli, (ust.get(u) or {}).get('jednostka'))
+                                                                for u in s.get('ustalenia') or []) if a}),
+                                'jednostki': [], 'historia_parametr': None, 'uwaga_czasowa': None,
+                                'odsylacze_do_sprawdzenia': None, 'nadrzedne': s.get('nadrzedne')}
+            opublikowane.add(eli)
+    return opublikowane
+
+
 def generuj(socjal: Path, wynik: Path, na_dzien: str):
     for paczka in PACZKI_RECZNE:
         for relative in (paczka['karty'], paczka['historia']):
@@ -916,6 +1082,9 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
     for paczka in PACZKI_RECZNE:
         if (socjal / paczka['karty']).is_file():
             karty_paczki(socjal, paczka, historia, jednostki, na_dzien, benefits, extra_karty, aliasy)
+    # analizy AI (Analizy ELI): ręczne paczki FUS i SW mają pierwszeństwo; dla pozostałych aktów analiza
+    # zastępuje karty automatu skryptu mapy tej samej ustawy
+    analizy_eli = karty_analiz_eli(socjal, na_dzien, benefits, extra_karty, akty_meta, {p['akt'] for p in PACZKI_RECZNE})
     # Dokładna nazwa (z pominięciem dopisku w nawiasie) i ten sam akt.
     # Nie utożsamiamy np. „opieki” z wcześniejszą emeryturą opiekuna.
     nazwa_klucz = lambda n: ' '.join(re.sub(r'\([^)]*\)', '', n).casefold().split())
@@ -937,6 +1106,9 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
             eli = src.get('akt')
             if not ELI_RE.fullmatch(str(eli)):
                 raise BladSocjal('Błędny ELI automatycznej karty: ' + bid)
+            if eli in analizy_eli:
+                pominiete.append({'id': bid, 'karta_reczna': None, 'powod': 'Ustawa ma sprawdzoną analizę w Analizy ELI.'})
+                continue
             if (eli, nazwa_klucz(src['nazwa'])) in pomin:
                 pominiete.append({'id': bid, 'karta_reczna': None, 'powod': pomin[(eli, nazwa_klucz(src['nazwa']))]})
                 continue
@@ -1050,6 +1222,21 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
         for row in b['do_kiedy']:
             act_eli.add(row['dowod']['eli'])
     pliki_pdf = pliki_aktow(socjal)
+    # akty z Analiz ELI: teksty ustawy z dokumenty.json w Ustawy_Socjale (adres w API, SHA-256, rozmiar)
+    for eli in analizy_eli - set(pliki_pdf):
+        p_dok = socjal.parent / 'Ustawy_Socjale' / eli.replace('/', '_') / 'dokumenty.json'
+        for x in (wczytaj(p_dok).get('dokumenty', []) if p_dok.is_file() else []):
+            if x.get('grupa') == 'Tekst aktu' and x.get('typ') in ('U', 'O') and str(x.get('nazwa_api', '')).lower().endswith('.pdf'):
+                # tekst ujednolicony wymaga daty stanu: ta z analizy (tekst, na którym ją wykonano); bez niej pomijamy plik
+                stan_u = (akty_meta.get(eli) or {}).get('stan') if x['typ'] == 'U' else None
+                if x['typ'] == 'U' and not stan_u:
+                    continue
+                kod = eli.replace('/', '-')
+                pliki_pdf.setdefault(eli, []).append({
+                    'rodzaj': x['typ'], 'plik': 'akty/{}/{}'.format(kod, x['nazwa_api']),
+                    'nazwa_pobierania': '{}_{}.pdf'.format(kod, 'tekst-ujednolicony' if x['typ'] == 'U' else 'tekst-ogloszony'),
+                    'sha256': x['sha256'], 'rozmiar': int(x['rozmiar']), 'url_zrodla': x['url'], 'pobrano': x.get('pobrano'),
+                    'data_stanu': stan_u, 'eli_obwieszczenia': None, 'uzyty_w_danych': True, 'zrodlo': 'API Sejmu (ELI)'})
     acts = []
     for eli in sorted(act_eli):
         m = akty_meta.get(eli, {})
