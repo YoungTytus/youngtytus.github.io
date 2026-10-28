@@ -1,6 +1,6 @@
 {
   "kontrakt": "socjal-1",
-  "na_dzien": "2026-10-27",
+  "na_dzien": "2026-10-28",
   "karty": {
     "FUS-emerytura-tworcza": {
       "pochodzenie": "reczna_FUS",
@@ -791,48 +791,6 @@
       "plik_notatki": "Swiadczenia/SW/SW - Świadczenie wychowawcze przy koordynacji zagranicznej.md",
       "opis_kwoty_z_notatki": "Art 5ust 2b odsyła do kwoty ust. 1–2a także gdy ustawodawstwo polskie nie ma pierwszeństwa. Ostateczny zbieg i rozliczenia wymagają prawa UE; nie redukować automatycznie 800o dowolne zagraniczne świadczenie."
     },
-    "DU-1990-206-S03": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-206/S03",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "sprawdzona_w_zakresie",
-      "analiza": "Analizy ELI/DU-1990-206",
-      "artykuly": [
-        "DU-1990-206-art-22",
-        "DU-1990-206-art-23",
-        "DU-1990-206-art-25",
-        "DU-1990-206-art-31"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1990-540-S01": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-540/S01",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "sprawdzona_w_zakresie",
-      "analiza": "Analizy ELI/DU-1990-540",
-      "artykuly": [
-        "DU-1990-540-art-1",
-        "DU-1990-540-art-10",
-        "DU-1990-540-art-14",
-        "DU-1990-540-art-15",
-        "DU-1990-540-art-2",
-        "DU-1990-540-art-3",
-        "DU-1990-540-art-4",
-        "DU-1990-540-art-5",
-        "DU-1990-540-art-6",
-        "DU-1990-540-art-8"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
     "DU-1990-540-S02": {
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1990-540/S02",
@@ -851,58 +809,6 @@
       "odsylacze_do_sprawdzenia": null,
       "nadrzedne": "DU-1990-540/S01"
     },
-    "DU-1990-99-S01": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-99/S01",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "sprawdzona_w_zakresie",
-      "analiza": "Analizy ELI/DU-1990-99",
-      "artykuly": [
-        "DU-1990-99-art-1",
-        "DU-1990-99-art-2",
-        "DU-1990-99-art-9"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1994-385-S02": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1994-385/S02",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "sprawdzona_w_zakresie",
-      "analiza": "Analizy ELI/DU-1994-385",
-      "artykuly": [
-        "DU-1994-385-art-1",
-        "DU-1994-385-art-10",
-        "DU-1994-385-art-2",
-        "DU-1994-385-art-4"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1994-385-S03": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1994-385/S03",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "sprawdzona_w_zakresie",
-      "analiza": "Analizy ELI/DU-1994-385",
-      "artykuly": [
-        "DU-1994-385-art-1",
-        "DU-1994-385-art-10",
-        "DU-1994-385-art-4"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
     "DU-1997-652-S01": {
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1997-652/S01",
@@ -912,22 +818,6 @@
       "artykuly": [
         "DU-1997-652-art-2",
         "DU-1997-652-art-3"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1998-1018-S01": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1998-1018/S01",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "sprawdzona_w_zakresie",
-      "analiza": "Analizy ELI/DU-1998-1018",
-      "artykuly": [
-        "DU-1998-1018-art-2",
-        "DU-1998-1018-art-3"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -1004,22 +894,6 @@
       "uwaga_czasowa": null,
       "odsylacze_do_sprawdzenia": null,
       "nadrzedne": "DU-2001-734/S01"
-    },
-    "DU-2012-1544-S01": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2012-1544/S01",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "sprawdzona_w_zakresie",
-      "analiza": "Analizy ELI/DU-2012-1544",
-      "artykuly": [
-        "DU-2012-1544-art-20",
-        "DU-2012-1544-art-21"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
     },
     "DU-1998-1118-zasilek-pielegnacyjny": {
       "pochodzenie": "automat",
@@ -96596,6 +96470,26 @@
       "pochodzenie": "reczna_ELI"
     },
     {
+      "id": "DU-1990-206-S03",
+      "nazwa": "Waloryzacja podstawy wymiaru emerytur i rent w I kwartale 1990 (art. 23, 25 pkt 3, 26 pkt 1)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-540-S01",
+      "nazwa": "Rewaloryzacja emerytur i rent osób w wieku 80+ (art. 1-8, 10)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
       "id": "DU-1990-540-S03",
       "nazwa": "Gwarancja dotychczasowej wysokości i minimum świadczenia (art. 8 ust. 3-4)",
       "powod": "ochrona_istniejacego_swiadczenia",
@@ -96643,6 +96537,26 @@
       "zrodlo_decyzji": "regula_kart_recznych",
       "uwaga": null,
       "forma": "nieustalona",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1994-385-S02",
+      "nazwa": "Przeliczniki wysokości emerytur i rent górniczych (art. 2 ust. 2-3, art. 4 ust. 2)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1994-385-S03",
+      "nazwa": "Ponowne obliczenie świadczeń górniczych z przelicznikiem 1,4 (art. 4 ust. 1)",
+      "powod": "mechanizm_obliczenia",
+      "opis_powodu": "Sposób obliczenia lub przeliczenia kwoty istniejącego świadczenia (kapitał, przeliczenie, zwiększenie) — należy do „ile” karty głównej.",
+      "zrodlo_decyzji": "regula_kart_recznych",
+      "uwaga": null,
+      "forma": "pieniezne",
       "pochodzenie": "reczna_ELI"
     },
     {
@@ -96827,7 +96741,7 @@
     }
   ],
   "statystyki": {
-    "reczne": 38,
+    "reczne": 31,
     "automatyczne": 23,
     "z_notatek": 0
   }

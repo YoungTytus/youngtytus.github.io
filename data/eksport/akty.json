@@ -110,9 +110,7 @@
     "data_stanu": null,
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1990/206",
     "url_isap": null,
-    "korzysci": [
-      "DU-1990-206-S03"
-    ],
+    "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": [
@@ -139,7 +137,6 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1990/540",
     "url_isap": null,
     "korzysci": [
-      "DU-1990-540-S01",
       "DU-1990-540-S02"
     ],
     "wykonawcze": [],
@@ -153,34 +150,6 @@
         "rozmiar": 1161193,
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/540/text/O/D19900540.pdf",
         "pobrano": null,
-        "data_stanu": null,
-        "eli_obwieszczenia": null,
-        "uzyty_w_danych": true,
-        "zrodlo": "API Sejmu (ELI)"
-      }
-    ]
-  },
-  {
-    "eli": "DU/1990/99",
-    "tytul": "Ustawa z dnia 9 marca 1990 r. o zmianie ustawy o przedsiębiorstwach państwowych.",
-    "typ": "Ustawa",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1990/99",
-    "url_isap": null,
-    "korzysci": [
-      "DU-1990-99-S01"
-    ],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": [
-      {
-        "rodzaj": "O",
-        "plik": "akty/DU-1990-99/D19900099.pdf",
-        "nazwa_pobierania": "DU-1990-99_tekst-ogloszony.pdf",
-        "sha256": "8d62a3ec6aab6548a4a098d55cce102494e339e1c13e5d22bc7c60591142bfc3",
-        "rozmiar": 1700025,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/99/text/O/D19900099.pdf",
-        "pobrano": "2026-10-26T13:07:08+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
@@ -221,10 +190,7 @@
     "data_stanu": null,
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1994/385",
     "url_isap": null,
-    "korzysci": [
-      "DU-1994-385-S02",
-      "DU-1994-385-S03"
-    ],
+    "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": [
@@ -316,34 +282,6 @@
         "rozmiar": 1533821,
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1997/782/text/O/D19970782.pdf",
         "pobrano": "2026-10-26T13:13:12+00:00",
-        "data_stanu": null,
-        "eli_obwieszczenia": null,
-        "uzyty_w_danych": true,
-        "zrodlo": "API Sejmu (ELI)"
-      }
-    ]
-  },
-  {
-    "eli": "DU/1998/1018",
-    "tytul": "Ustawa z dnia 26 listopada 1998 r. o zmianie ustawy o zakazie stosowania wyrobów zawierających azbest.",
-    "typ": "Ustawa",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1998/1018",
-    "url_isap": null,
-    "korzysci": [
-      "DU-1998-1018-S01"
-    ],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": [
-      {
-        "rodzaj": "O",
-        "plik": "akty/DU-1998-1018/D19981018.pdf",
-        "nazwa_pobierania": "DU-1998-1018_tekst-ogloszony.pdf",
-        "sha256": "2ff57b8cab8a1ece5a00660f7ae548b4fbdc376c4428d40ba87eaf1f04be8cc8",
-        "rozmiar": 1326833,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1998/1018/text/O/D19981018.pdf",
-        "pobrano": "2026-10-26T13:13:21+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
@@ -710,34 +648,6 @@
         "rozmiar": 599772,
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2011/887/text/O/D20110887.pdf",
         "pobrano": "2026-10-18T09:54:07+00:00",
-        "data_stanu": null,
-        "eli_obwieszczenia": null,
-        "uzyty_w_danych": true,
-        "zrodlo": "API Sejmu (ELI)"
-      }
-    ]
-  },
-  {
-    "eli": "DU/2012/1544",
-    "tytul": "Ustawa z dnia 23 listopada 2012 r. o zmianie niektórych ustaw w związku z podwyższeniem wieku emerytalnego",
-    "typ": "Ustawa",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2012/1544",
-    "url_isap": null,
-    "korzysci": [
-      "DU-2012-1544-S01"
-    ],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": [
-      {
-        "rodzaj": "O",
-        "plik": "akty/DU-2012-1544/D20121544.pdf",
-        "nazwa_pobierania": "DU-2012-1544_tekst-ogloszony.pdf",
-        "sha256": "b298e0bd29c47780c795b4c4f25f3829a59587097543f941c1d251e8550213f8",
-        "rozmiar": 801453,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2012/1544/text/O/D20121544.pdf",
-        "pobrano": "2026-10-26T09:55:57+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
