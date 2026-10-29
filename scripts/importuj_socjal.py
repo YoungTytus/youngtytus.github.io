@@ -854,8 +854,11 @@ def pliki_aktow(socjal):
 
 
 # ---------------------------------------------------------------- Analizy ELI (analizy ustaw przez AI z kolejki)
-# Publikujemy tylko analizy zamknięte kontrolą (`dane/stan.json`: status). Pozostałe zostają w sejfie.
-STATUSY_ANALIZ_ELI = ('sprawdzona_w_zakresie',)
+# Publikujemy analizy z kontrolą cytatów: zamknięte w zakresie i częściowe („wymaga_uzupelnienia” — metoda zostawia
+# jawne luki: pełne katalogi, historia). Częściowe dostają flagę na karcie. Sam wynik automatu
+# („wymaga_potwierdzenia”) zostaje w sejfie. Decyzja właściciela 29.10.2026: nowe analizy mają być widoczne na stronie.
+STATUSY_ANALIZ_ELI = ('sprawdzona_w_zakresie', 'wymaga_uzupelnienia')
+FLAGA_CZESCIOWA = 'Analiza częściowa: krąg uprawnionych, historia kwot i warunki mogą być niepełne.'
 TERMINY_ANALIZ = {'okres_przyznania': 'okres_zasilkowy', 'okres_zasilkowy': 'okres_zasilkowy', 'termin_wniosku': 'termin_wniosku',
                   'termin_wyplaty': 'termin_wyplaty', 'okres_kwoty': 'okres_kwoty'}
 DENOMINACJA = '1995-01-01'   # 10 000 starych zł = 1 nowy zł: kwot sprzed tej daty nie porównuje się bez przeliczenia
@@ -910,6 +913,8 @@ def karty_analiz_eli(socjal, na_dzien, benefits, extra_karty, akty_meta, pomijan
         m_us = wczytaj(meta_us) if meta_us.is_file() else {}
         w_mocy = m_us.get('inForce') == 'IN_FORCE'
         akty_meta.setdefault(eli, {'tytul': m_us.get('title') or 'Akt ' + eli, 'stan': stan_tekstu, 'tryb': 'analiza_eli'})
+        if not akty_meta[eli].get('stan'):        # akt znany już z Dane/Mapa, ale bez daty stanu tekstu
+            akty_meta[eli]['stan'] = stan_tekstu
         for s in sw:
             prz = pierwszy_dowod(s.get('ustalenia'))
             if not prz or not s.get('id') or not s.get('nazwa'):
@@ -933,7 +938,7 @@ def karty_analiz_eli(socjal, na_dzien, benefits, extra_karty, akty_meta, pomijan
                  'przepis': prz, 'ile': bez_kwoty(), 'do_kiedy': [], 'powiazane': [],
                  # tekst stały wg schematu strony; pochodzenie karty (Analizy ELI) jest w extra_karty['pochodzenie']
                  'stan': {'data_stanu': prz['data_stanu'] or stan_tekstu or na_dzien, 'tekst': 'tekst ujednolicony (informacyjny)'},
-                 'nieustalone': [], 'flagi': []}
+                 'nieustalone': [], 'flagi': [FLAGA_CZESCIOWA] if stan.get('status') != 'sprawdzona_w_zakresie' else []}
             ile = k['ile']
             # --- ile: reguły kwot świadczenia
             r_s = sorted([r for r in reguly if r.get('swiadczenie') == s['id']], key=lambda r: (r.get('od') or '', r['id']))
@@ -1222,6 +1227,12 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
         for row in b['do_kiedy']:
             act_eli.add(row['dowod']['eli'])
     pliki_pdf = pliki_aktow(socjal)
+    # tekst ujednolicony bez daty stanu (np. z rejestru źródeł FUS): data z analizy aktu albo plik pomijamy
+    for eli, pl in pliki_pdf.items():
+        for p in pl:
+            if p['rodzaj'] == 'U' and not p.get('data_stanu'):
+                p['data_stanu'] = (akty_meta.get(eli) or {}).get('stan')
+        pliki_pdf[eli] = [p for p in pl if p['rodzaj'] != 'U' or p.get('data_stanu')]
     # akty z Analiz ELI: teksty ustawy z dokumenty.json w Ustawy_Socjale (adres w API, SHA-256, rozmiar)
     for eli in analizy_eli - set(pliki_pdf):
         p_dok = socjal.parent / 'Ustawy_Socjale' / eli.replace('/', '_') / 'dokumenty.json'

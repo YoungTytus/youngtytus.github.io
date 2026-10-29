@@ -1,5 +1,81 @@
 [
   {
+    "eli": "DU/1974/117",
+    "tytul": "Ustawa z dnia 29 maja 1974 r. o zaopatrzeniu inwalidów wojennych i wojskowych oraz ich rodzin.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-04-17",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1974/117",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1974-117-S001",
+      "DU-1974-117-S002"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1974-117/D19740117.pdf",
+        "nazwa_pobierania": "DU-1974-117_tekst-ogloszony.pdf",
+        "sha256": "317626e272c1e37aaa9598c9247b83aa3d76f28c07c67b3d00881a807a50ca84",
+        "rozmiar": 3740299,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1974/117/text/O/D19740117.pdf",
+        "pobrano": "2026-10-26T10:27:57+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1974-117/D19740117Lj.pdf",
+        "nazwa_pobierania": "DU-1974-117_tekst-ujednolicony.pdf",
+        "sha256": "09145acba5b2cc954ee9eba2451cb2120140b19ea9254b6561d0e117db104d61",
+        "rozmiar": 365356,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1974/117/text/U/D19740117Lj.pdf",
+        "pobrano": "2026-10-26T10:27:57+00:00",
+        "data_stanu": "2026-04-17",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1974/141",
+    "tytul": "Ustawa z dnia 26 czerwca 1974 r. Kodeks pracy.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-10-14",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1974/141",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1974-141-S001",
+      "DU-1974-141-S002",
+      "DU-1974-141-S003",
+      "DU-1974-141-S004",
+      "DU-1974-141-S005",
+      "DU-1974-141-S006",
+      "DU-1974-141-S007"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1974-141/D19740141.pdf",
+        "nazwa_pobierania": "DU-1974-141_tekst-ogloszony.pdf",
+        "sha256": "7eb26248183039ec19fb66ac815eb1222bea9fec08d0d1ee789e96e8ab607401",
+        "rozmiar": 14483801,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1974/141/text/O/D19740141.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/1982/269",
     "tytul": "Ustawa z dnia 14 grudnia 1982 r. o zmianie ustawy o zaopatrzeniu inwalidów wojennych i wojskowych oraz ich rodzin.",
     "typ": "Ustawa",
@@ -104,6 +180,52 @@
     ]
   },
   {
+    "eli": "DU/1990/179",
+    "tytul": "Ustawa z dnia 6 kwietnia 1990 r. o Policji.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1990/179",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1990-179-S001",
+      "DU-1990-179-S002",
+      "DU-1990-179-S003",
+      "DU-1990-179-S004",
+      "DU-1990-179-S005",
+      "DU-1990-179-S006"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1990-179/D19900179.pdf",
+        "nazwa_pobierania": "DU-1990-179_tekst-ogloszony.pdf",
+        "sha256": "e01f6ec05619e8c41e1c4c707b5cfe846575d20619335b1b6fbf939337543148",
+        "rozmiar": 7059561,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/179/text/O/D19900179.pdf",
+        "pobrano": "2026-10-26T09:40:22+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1990-179/D19900179Lj.pdf",
+        "nazwa_pobierania": "DU-1990-179_tekst-ujednolicony.pdf",
+        "sha256": "b3aa981f10811f35dadeaf757bf6e62b24b5e26bc80df664befab7cd7721f6cb",
+        "rozmiar": 1791395,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/179/text/U/D19900179Lj.pdf",
+        "pobrano": "2026-10-26T09:40:23+00:00",
+        "data_stanu": "2026-09-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/1990/206",
     "tytul": "Ustawa z dnia 24 maja 1990 r. o zmianie niektórych przepisów o zaopatrzeniu emerytalnym.",
     "typ": "Ustawa",
@@ -123,6 +245,53 @@
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/206/text/O/D19900206.pdf",
         "pobrano": "2026-10-26T10:28:03+00:00",
         "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1990/462",
+    "tytul": "Ustawa z dnia 12 października 1990 r. o Straży Granicznej.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1990/462",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1990-462-S001",
+      "DU-1990-462-S002",
+      "DU-1990-462-S003",
+      "DU-1990-462-S004",
+      "DU-1990-462-S005",
+      "DU-1990-462-S006",
+      "DU-1990-462-S007"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1990-462/D19900462.pdf",
+        "nazwa_pobierania": "DU-1990-462_tekst-ogloszony.pdf",
+        "sha256": "bdb40f791cb624646e21b89407f79682a735e5e7313a3e33851d826c583abf13",
+        "rozmiar": 6909019,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/462/text/O/D19900462.pdf",
+        "pobrano": "2026-10-26T09:46:25+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1990-462/D19900462Lj.pdf",
+        "nazwa_pobierania": "DU-1990-462_tekst-ujednolicony.pdf",
+        "sha256": "00feaf67f12cbedcd94d1081ef58d4403eeaba37ec46567472f496b0ac366586",
+        "rozmiar": 1736109,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/462/text/U/D19900462Lj.pdf",
+        "pobrano": "2026-10-26T09:46:26+00:00",
+        "data_stanu": "2026-09-16",
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
         "zrodlo": "API Sejmu (ELI)"
@@ -158,6 +327,210 @@
     ]
   },
   {
+    "eli": "DU/1990/99",
+    "tytul": "Ustawa z dnia 9 marca 1990 r. o zmianie ustawy o przedsiębiorstwach państwowych.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1990/99",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1990-99-S01"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1990-99/D19900099.pdf",
+        "nazwa_pobierania": "DU-1990-99_tekst-ogloszony.pdf",
+        "sha256": "8d62a3ec6aab6548a4a098d55cce102494e339e1c13e5d22bc7c60591142bfc3",
+        "rozmiar": 1700025,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1990/99/text/O/D19900099.pdf",
+        "pobrano": "2026-10-26T13:07:08+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1991/24",
+    "tytul": "Ustawa z dnia 20 grudnia 1990 r. o ubezpieczeniu społecznym rolników.",
+    "typ": "Ustawa",
+    "data_stanu": "2025-12-18",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1991-24-S001",
+      "DU-1991-24-S002",
+      "DU-1991-24-S003",
+      "DU-1991-24-S004"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1991-24/D19910024.pdf",
+        "nazwa_pobierania": "DU-1991-24_tekst-ogloszony.pdf",
+        "sha256": "6862f76820283cdb639364fcd998f80db97d4ea78da065dfebe4d20a528c7d85",
+        "rozmiar": 5366833,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1991/24/text/O/D19910024.pdf",
+        "pobrano": "2026-10-26T09:36:15+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1991-24/D19910024Lj.pdf",
+        "nazwa_pobierania": "DU-1991-24_tekst-ujednolicony.pdf",
+        "sha256": "c18dade06b97349fba23f16ecaa92312a8db0c8cfe43c84522e9165d909aebd1",
+        "rozmiar": 683147,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1991/24/text/U/D19910024Lj.pdf",
+        "pobrano": "2026-10-26T09:36:15+00:00",
+        "data_stanu": "2025-12-18",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1991/400",
+    "tytul": "Ustawa z dnia 24 sierpnia 1991 r. o Państwowej Straży Pożarnej.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1991/400",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1991-400-S001",
+      "DU-1991-400-S002",
+      "DU-1991-400-S003",
+      "DU-1991-400-S004",
+      "DU-1991-400-S005",
+      "DU-1991-400-S006"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1991-400/D19910400.pdf",
+        "nazwa_pobierania": "DU-1991-400_tekst-ogloszony.pdf",
+        "sha256": "7ab118670eec62231aecda7e5bedea6618ad29e58d66c0413223f74b50a8b44b",
+        "rozmiar": 6574109,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1991/400/text/O/D19910400.pdf",
+        "pobrano": "2026-10-26T09:48:18+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1991-400/D19910400Lj.pdf",
+        "nazwa_pobierania": "DU-1991-400_tekst-ujednolicony.pdf",
+        "sha256": "54da3e06f8ec45482b192411f1aa609fd0c0a3da790f1c5eb159864276841e53",
+        "rozmiar": 1032145,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1991/400/text/U/D19910400Lj.pdf",
+        "pobrano": "2026-10-26T09:48:19+00:00",
+        "data_stanu": "2026-09-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1991/75",
+    "tytul": "Ustawa z dnia 24 stycznia 1991 r. o kombatantach oraz niektórych osobach będących ofiarami represji wojennych i okresu powojennego.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-04-21",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1991/75",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1991-75-S001",
+      "DU-1991-75-S002",
+      "DU-1991-75-S003",
+      "DU-1991-75-S004"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1991-75/D19910075.pdf",
+        "nazwa_pobierania": "DU-1991-75_tekst-ogloszony.pdf",
+        "sha256": "45f8b758fdaf40bbe8e1c06c007c25e62b2e2b86124dfd21e88ba369160fdedc",
+        "rozmiar": 1845199,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1991/75/text/O/D19910075.pdf",
+        "pobrano": "2026-10-26T10:15:38+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1991-75/D19910075Lj.pdf",
+        "nazwa_pobierania": "DU-1991-75_tekst-ujednolicony.pdf",
+        "sha256": "e573e95d1ec83be76ddd637b86571b1ff424b40c898289300705af9868d56924",
+        "rozmiar": 381139,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1991/75/text/U/D19910075Lj.pdf",
+        "pobrano": "2026-10-26T10:15:38+00:00",
+        "data_stanu": "2026-04-21",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1994/214",
+    "tytul": "Ustawa z dnia 18 lutego 1994 r. o zaopatrzeniu emerytalnym funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Straży Granicznej, Straży Marszałkowskiej, Służby Ochrony Państwa, Państwowej Straży Pożarnej, Służby Celno-Skarbowej i Służby Więziennej oraz ich rodzin",
+    "typ": "Ustawa",
+    "data_stanu": "2026-07-10",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1994/214",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1994-214-S001",
+      "DU-1994-214-S002"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1994-214/D19940214.pdf",
+        "nazwa_pobierania": "DU-1994-214_tekst-ogloszony.pdf",
+        "sha256": "1b9af1bbe7de5174fb170250de3bb3a398557271c50e0aaa2edd4ef9cfd6767e",
+        "rozmiar": 13473429,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1994/214/text/O/D19940214.pdf",
+        "pobrano": "2026-10-26T09:42:58+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1994-214/D19940214Lj.pdf",
+        "nazwa_pobierania": "DU-1994-214_tekst-ujednolicony.pdf",
+        "sha256": "a1f18c6dd2f932a8bec5d08ddf10aa71d21fe10478e9560396d7844e87954099",
+        "rozmiar": 530788,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1994/214/text/U/D19940214Lj.pdf",
+        "pobrano": "2026-10-26T09:42:58+00:00",
+        "data_stanu": "2026-07-10",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/1994/3",
     "tytul": "Ustawa z dnia 29 grudnia 1993 r. o zmianie ustawy o gospodarowaniu nieruchomościami rolnymi Skarbu Państwa oraz o zmianie niektórych ustaw.",
     "typ": "Ustawa",
@@ -177,6 +550,48 @@
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1994/3/text/O/D19940003.pdf",
         "pobrano": "2026-10-26T09:37:13+00:00",
         "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1994/36",
+    "tytul": "Ustawa z dnia 10 grudnia 1993 r. o zaopatrzeniu emerytalnym żołnierzy zawodowych oraz ich rodzin.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-04-17",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1994/36",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1994-36-S001",
+      "DU-1994-36-S002"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1994-36/D19940036.pdf",
+        "nazwa_pobierania": "DU-1994-36_tekst-ogloszony.pdf",
+        "sha256": "51ecfcde2e2c563013d50433f18ff9a0fa069b8d46b314286be8ed67ef5b2357",
+        "rozmiar": 9342728,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1994/36/text/O/D19940036.pdf",
+        "pobrano": "2026-10-26T10:10:09+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1994-36/D19940036Lj.pdf",
+        "nazwa_pobierania": "DU-1994-36_tekst-ujednolicony.pdf",
+        "sha256": "cb8c6ea29fd8fa872684fe3215c082181e497283d6ade963516cbc3d9bf7c0fd",
+        "rozmiar": 443358,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1994/36/text/U/D19940036Lj.pdf",
+        "pobrano": "2026-10-26T10:10:09+00:00",
+        "data_stanu": "2026-04-17",
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
         "zrodlo": "API Sejmu (ELI)"
@@ -236,6 +651,87 @@
     ]
   },
   {
+    "eli": "DU/1996/279",
+    "tytul": "Akt prawny DU/1996/279",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1996/279",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/1996/32",
+    "tytul": "Ustawa z dnia 30 listopada 1995 r. o pomocy państwa w spłacie niektórych kredytów mieszkaniowych, udzielaniu premii gwarancyjnych oraz refundacji bankom wypłaconych premii gwarancyjnych",
+    "typ": "Ustawa",
+    "data_stanu": "2024-12-13",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1996/32",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1996-32-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1996-32/D19960032.pdf",
+        "nazwa_pobierania": "DU-1996-32_tekst-ogloszony.pdf",
+        "sha256": "6b204d9944882bb8d0972f2c7009d8062369839787a239053c56b3cf832fcc2d",
+        "rozmiar": 2538445,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1996/32/text/O/D19960032.pdf",
+        "pobrano": "2026-10-21T09:55:59+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1997/1080",
+    "tytul": "Ustawa z dnia 12 grudnia 1997 r. o dodatkowym wynagrodzeniu rocznym dla pracowników jednostek sfery budżetowej.",
+    "typ": "Ustawa",
+    "data_stanu": "2025-05-06",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1997/1080",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1997-1080-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1997-1080/D19971080.pdf",
+        "nazwa_pobierania": "DU-1997-1080_tekst-ogloszony.pdf",
+        "sha256": "00a165fcfaee2f48d54cd56e496376f037c692ad34ddc477a6854044097281ed",
+        "rozmiar": 688408,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1997/1080/text/O/D19971080.pdf",
+        "pobrano": "2026-10-26T10:32:39+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1997-1080/D19971080Lj.pdf",
+        "nazwa_pobierania": "DU-1997-1080_tekst-ujednolicony.pdf",
+        "sha256": "f20b367b176ba3f07cfb014fd179f45f8ac4b03ace8785baffe7f0d4eb639265",
+        "rozmiar": 206520,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1997/1080/text/U/D19971080Lj.pdf",
+        "pobrano": "2026-10-26T10:32:40+00:00",
+        "data_stanu": "2025-05-06",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/1997/652",
     "tytul": "Ustawa z dnia 1 sierpnia 1997 r. o zmianie ustawy o pomocy państwa w spłacie niektórych kredytów mieszkaniowych, refundacji bankom wypłaconych premii gwarancyjnych oraz zmianie niektórych ustaw.",
     "typ": "Ustawa",
@@ -264,6 +760,32 @@
     ]
   },
   {
+    "eli": "DU/1997/776",
+    "tytul": "Ustawa z dnia 27 sierpnia 1997 r. o rehabilitacji zawodowej i społecznej oraz zatrudnianiu osób niepełnosprawnych.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-08-21",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1997/776",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1997-776/D19970776.pdf",
+        "nazwa_pobierania": "DU-1997-776_tekst-ogloszony.pdf",
+        "sha256": "eb3a0dabe104554e2565ab4cbb1e3b058dd1da66511c89639669e329eb0ba6aa",
+        "rozmiar": 6269509,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1997/776/text/O/D19970776.pdf",
+        "pobrano": "2026-10-21T09:56:07+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/1997/782",
     "tytul": "Ustawa z dnia 28 sierpnia 1997 r. o zmianie ustawy - Prawo o ustroju sądów powszechnych oraz niektórych innych ustaw.",
     "typ": "Ustawa",
@@ -282,6 +804,34 @@
         "rozmiar": 1533821,
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1997/782/text/O/D19970782.pdf",
         "pobrano": "2026-10-26T13:13:12+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1998/1018",
+    "tytul": "Ustawa z dnia 26 listopada 1998 r. o zmianie ustawy o zakazie stosowania wyrobów zawierających azbest.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1998/1018",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1998-1018-S01"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1998-1018/D19981018.pdf",
+        "nazwa_pobierania": "DU-1998-1018_tekst-ogloszony.pdf",
+        "sha256": "2ff57b8cab8a1ece5a00660f7ae548b4fbdc376c4428d40ba87eaf1f04be8cc8",
+        "rozmiar": 1326833,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1998/1018/text/O/D19981018.pdf",
+        "pobrano": "2026-10-26T13:13:21+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
@@ -353,6 +903,76 @@
     ]
   },
   {
+    "eli": "DU/1998/887",
+    "tytul": "Ustawa z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-10-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1998/887",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1998-887/D19980887.pdf",
+        "nazwa_pobierania": "DU-1998-887_tekst-ogloszony.pdf",
+        "sha256": "281b2cc4a59cb5dbb673bec4d0f1f57c854fc13951d0b4bc38c78b4183bf0bde",
+        "rozmiar": 27417195,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1998/887/text/O/D19980887.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-1998-887/D19980887Lj.pdf",
+        "nazwa_pobierania": "DU-1998-887_tekst-ujednolicony.pdf",
+        "sha256": "6a12eda921b5f6e8b7e2b12d918afa3852f9080b5cdd2a3a4b08f64afc67816f",
+        "rozmiar": 1343924,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1998/887/text/U/D19980887Lj.pdf",
+        "pobrano": null,
+        "data_stanu": "2026-10-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/1999/636",
+    "tytul": "Ustawa z dnia 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1999/636",
+    "url_isap": null,
+    "korzysci": [
+      "DU-1999-636-S001",
+      "DU-1999-636-S002",
+      "DU-1999-636-S003",
+      "DU-1999-636-S004"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-1999-636/D19990636.pdf",
+        "nazwa_pobierania": "DU-1999-636_tekst-ogloszony.pdf",
+        "sha256": "d08f409da04adf8bfe13b8c817ddbdaf499208e0daedb27650f4fcd2719af47b",
+        "rozmiar": 14138070,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/1999/636/text/O/D19990636.pdf",
+        "pobrano": "2026-10-18T09:53:26+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/1999/801",
     "tytul": "Ustawa z dnia 23 lipca 1999 r. o zmianie ustawy o zrekompensowaniu okresowego niepodwyższania płac w sferze budżetowej oraz utraty niektórych wzrostów lub dodatków do emerytur i rent.",
     "typ": "Ustawa",
@@ -405,6 +1025,39 @@
     ]
   },
   {
+    "eli": "DU/2001/1070",
+    "tytul": "Ustawa z dnia 27 lipca 2001 r. Prawo o ustroju sądów powszechnych.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2001/1070",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2001-1070-S001",
+      "DU-2001-1070-S002",
+      "DU-2001-1070-S003",
+      "DU-2001-1070-S004",
+      "DU-2001-1070-S005",
+      "DU-2001-1070-S006"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2001-1070/D20011070.pdf",
+        "nazwa_pobierania": "DU-2001-1070_tekst-ogloszony.pdf",
+        "sha256": "1d8c79a91da5c78b5c32b70d6309b3fa6efa5a34efd6a99bad4ac52140252ce8",
+        "rozmiar": 237910,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2001/1070/text/O/D20011070.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/2001/1817",
     "tytul": "Akt prawny DU/2001/1817",
     "typ": "Akt prawny",
@@ -415,6 +1068,73 @@
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": []
+  },
+  {
+    "eli": "DU/2001/27",
+    "tytul": "Ustawa z dnia 15 grudnia 2000 r. o spółdzielniach mieszkaniowych.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-07-10",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2001/27",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2001-27/D20010027.pdf",
+        "nazwa_pobierania": "DU-2001-27_tekst-ogloszony.pdf",
+        "sha256": "b2da11c60ce7c13c3a813dc28365327b9e7820486791eaa2db512f4ed333a299",
+        "rozmiar": 77526,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2001/27/text/O/D20010027.pdf",
+        "pobrano": "2026-10-26T10:17:53+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2001-27/D20010027Lj.pdf",
+        "nazwa_pobierania": "DU-2001-27_tekst-ujednolicony.pdf",
+        "sha256": "567e543b7bfd6cd792d369a09da0d0420670f43d95f8926b1d406172bfcf8c49",
+        "rozmiar": 373474,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2001/27/text/U/D20010027Lj.pdf",
+        "pobrano": "2026-10-26T10:17:53+00:00",
+        "data_stanu": "2026-07-10",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2001/539",
+    "tytul": "Ustawa z dnia 26 kwietnia 2001 r. o rentach strukturalnych w rolnictwie.",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2001/539",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2001-539-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2001-539/D20010539.pdf",
+        "nazwa_pobierania": "DU-2001-539_tekst-ogloszony.pdf",
+        "sha256": "240fd76d632e50b6f73db26c5d157729d12b8e5d3d63dae9c849c150e014f682",
+        "rozmiar": 256434,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2001/539/text/O/D20010539.pdf",
+        "pobrano": "2026-10-26T10:32:45+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2001/734",
@@ -439,6 +1159,207 @@
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2001/734/text/O/D20010734.pdf",
         "pobrano": "2026-10-21T09:55:53+00:00",
         "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2001/953",
+    "tytul": "Akt prawny DU/2001/953",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2001/953",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2002/1673",
+    "tytul": "Ustawa z dnia 30 października 2002 r. o ubezpieczeniu społecznym z tytułu wypadków przy pracy i chorób zawodowych.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-04-17",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2002/1673",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2002-1673-S001",
+      "DU-2002-1673-S002",
+      "DU-2002-1673-S003",
+      "DU-2002-1673-S004"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2002-1673/D20021673.pdf",
+        "nazwa_pobierania": "DU-2002-1673_tekst-ogloszony.pdf",
+        "sha256": "db15c1f859e410efcf1a242360cf20736f4ddae755876e4290fe886d15fe5877",
+        "rozmiar": 255025,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2002/1673/text/O/D20021673.pdf",
+        "pobrano": "2026-10-18T17:24:17+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2002/1800",
+    "tytul": "Ustawa z dnia 30 października 2002 r. o pomocy publicznej dla przedsiębiorców o szczególnym znaczeniu dla rynku pracy.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-03-05",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2002/1800",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2002-1800-S001",
+      "DU-2002-1800-S002",
+      "DU-2002-1800-S003"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2002-1800/D20021800.pdf",
+        "nazwa_pobierania": "DU-2002-1800_tekst-ogloszony.pdf",
+        "sha256": "9e073435dc36fe7ddad98e650d545dcc31d4aa17e8009cb7ac3bf7b2fc4fa18b",
+        "rozmiar": 210558,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2002/1800/text/O/D20021800.pdf",
+        "pobrano": "2026-10-26T14:49:02+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2002-1800/D20021800Lj.pdf",
+        "nazwa_pobierania": "DU-2002-1800_tekst-ujednolicony.pdf",
+        "sha256": "84a92b26a4235c472009f6ef2d9e263323fe6ca6fbeab0bdba7c73159a6da92c",
+        "rozmiar": 379846,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2002/1800/text/U/D20021800Lj.pdf",
+        "pobrano": "2026-10-26T14:49:02+00:00",
+        "data_stanu": "2026-03-05",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2002/1922",
+    "tytul": "Ustawa z dnia 5 grudnia 2002 r. o dopłatach do oprocentowania kredytów mieszkaniowych o stałej stopie procentowej.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-05-22",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2002/1922",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2002-1922-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2002-1922/D20021922.pdf",
+        "nazwa_pobierania": "DU-2002-1922_tekst-ogloszony.pdf",
+        "sha256": "d146742648bfa0081fe3cd6bea5e3c02bb08d71eb72c122bc9ca1c5cbb5b7f2d",
+        "rozmiar": 258555,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2002/1922/text/O/D20021922.pdf",
+        "pobrano": "2026-10-26T13:19:58+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2002-1922/D20021922Lj.pdf",
+        "nazwa_pobierania": "DU-2002-1922_tekst-ujednolicony.pdf",
+        "sha256": "a629cfd74b982a7173f2ddaa63ceba372c510b19e9274b1dbab06bcc3ac1fc3a",
+        "rozmiar": 245551,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2002/1922/text/U/D20021922Lj.pdf",
+        "pobrano": "2026-10-26T13:19:58+00:00",
+        "data_stanu": "2026-05-22",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2002/676",
+    "tytul": "Ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu.",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2002/676",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2002-676-S001",
+      "DU-2002-676-S002",
+      "DU-2002-676-S003",
+      "DU-2002-676-S004"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2002-676/D20020676.pdf",
+        "nazwa_pobierania": "DU-2002-676_tekst-ogloszony.pdf",
+        "sha256": "cbd0a8a84fbfeaf906c7fae7a9e77b6dec6ff948bcf7c2740f31c6085301efee",
+        "rozmiar": 191683,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2002/676/text/O/D20020676.pdf",
+        "pobrano": "2026-10-18T17:23:46+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2003/1152",
+    "tytul": "Ustawa z dnia 22 maja 2003 r. o ubezpieczeniach obowiązkowych, Ubezpieczeniowym Funduszu Gwarancyjnym i Polskim Biurze Ubezpieczycieli Komunikacyjnych",
+    "typ": "Ustawa",
+    "data_stanu": "2026-07-28",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2003/1152",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2003-1152-S001",
+      "DU-2003-1152-S002",
+      "DU-2003-1152-S003"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2003-1152/D20031152.pdf",
+        "nazwa_pobierania": "DU-2003-1152_tekst-ogloszony.pdf",
+        "sha256": "ae3e72be216580c836f4737d32773dd3178d018d22630ebb500c532b6913bc79",
+        "rozmiar": 340266,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2003/1152/text/O/D20031152.pdf",
+        "pobrano": "2026-10-26T09:55:15+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2003-1152/D20031152Lj.pdf",
+        "nazwa_pobierania": "DU-2003-1152_tekst-ujednolicony.pdf",
+        "sha256": "09bd1936915a23865b4752f1480e8a99967f335a5d23e343f1ca1c9a0a314949",
+        "rozmiar": 739624,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2003/1152/text/U/D20031152Lj.pdf",
+        "pobrano": "2026-10-26T09:55:16+00:00",
+        "data_stanu": "2026-07-28",
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
         "zrodlo": "API Sejmu (ELI)"
@@ -489,6 +1410,174 @@
     ]
   },
   {
+    "eli": "DU/2003/2255",
+    "tytul": "Ustawa z dnia 28 listopada 2003 r. o świadczeniach rodzinnych",
+    "typ": "Ustawa",
+    "data_stanu": "2026-08-05",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2003-2255-S01",
+      "DU-2003-2255-S02",
+      "DU-2003-2255-S03",
+      "DU-2003-2255-S04",
+      "DU-2003-2255-S05",
+      "DU-2003-2255-S06",
+      "DU-2003-2255-S07",
+      "DU-2003-2255-S08",
+      "DU-2003-2255-S09",
+      "DU-2003-2255-S10",
+      "DU-2003-2255-S11",
+      "DU-2003-2255-S12",
+      "DU-2003-2255-S15",
+      "DU-2003-2255-S16",
+      "DU-2003-2255-S23",
+      "DU-2003-2255-S24",
+      "DU-2003-2255-S26",
+      "DU-2003-2255-S28"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2003-2255/D20032255.pdf",
+        "nazwa_pobierania": "DU-2003-2255_tekst-ogloszony.pdf",
+        "sha256": "bab0960daf85803e8b54a374e845628fb54e61b4162542c686c2a74b32f230c8",
+        "rozmiar": 373742,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2003/2255/text/O/D20032255.pdf",
+        "pobrano": "2026-10-17T14:39:45+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2003/600",
+    "tytul": "Akt prawny DU/2003/600",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2003/600",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2003/844",
+    "tytul": "Akt prawny DU/2003/844",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2003/844",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2004/1252",
+    "tytul": "Ustawa z dnia 30 kwietnia 2004 r. o świadczeniach przedemerytalnych",
+    "typ": "Ustawa",
+    "data_stanu": "2026-02-11",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2004-1252-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2004-1252/D20041252.pdf",
+        "nazwa_pobierania": "DU-2004-1252_tekst-ogloszony.pdf",
+        "sha256": "91289ea4cfbc6ba80df6803f0e26ade19770c8de63dca34a18af3cb68e202b8d",
+        "rozmiar": 104923,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252/text/O/D20041252.pdf",
+        "pobrano": "2026-10-18T09:54:22+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2004/2135",
+    "tytul": "Ustawa z dnia 27 sierpnia 2004 r. o świadczeniach opieki zdrowotnej finansowanych ze środków publicznych",
+    "typ": "Ustawa",
+    "data_stanu": "2026-08-03",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2004/2135",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2004-2135-S001",
+      "DU-2004-2135-S002",
+      "DU-2004-2135-S003",
+      "DU-2004-2135-S004"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2004-2135/D20042135.pdf",
+        "nazwa_pobierania": "DU-2004-2135_tekst-ogloszony.pdf",
+        "sha256": "ef5d86bb9477aa1190c3db7c9f98d1122f735d2db6754073f2d4ac7149a42438",
+        "rozmiar": 440446,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2004/2135/text/O/D20042135.pdf",
+        "pobrano": "2026-10-18T17:22:13+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2004/2779",
+    "tytul": "Ustawa z dnia 16 grudnia 2004 r. o rekompensacie przysługującej w związku z odstąpieniem w roku 2002 od waloryzacji dodatku kombatanckiego",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2004/2779",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2004-2779-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2004-2779/D20042779.pdf",
+        "nazwa_pobierania": "DU-2004-2779_tekst-ogloszony.pdf",
+        "sha256": "cb8ac21b66ce9080ca3ee8add75961559b803e2f026f18ab144c1d17cfd504e9",
+        "rozmiar": 46536,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2004/2779/text/O/D20042779.pdf",
+        "pobrano": "2026-10-26T10:15:56+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2004/305",
+    "tytul": "Akt prawny DU/2004/305",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2004/305",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
     "eli": "DU/2004/593",
     "tytul": "Ustawa z dnia 12 marca 2004 r. o pomocy społecznej",
     "typ": "Ustawa",
@@ -496,14 +1585,22 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2004/593",
     "url_isap": null,
     "korzysci": [
-      "DU-2004-593-nagroda",
-      "DU-2004-593-opieka",
-      "DU-2004-593-pomoc-dorazna",
-      "DU-2004-593-posilek",
-      "DU-2004-593-schronienie",
-      "DU-2004-593-specjalny-zasilek-celowy",
-      "DU-2004-593-zasilek-okresowy",
-      "DU-2004-593-zasilek-staly"
+      "DU-2004-593-S01",
+      "DU-2004-593-S02",
+      "DU-2004-593-S03",
+      "DU-2004-593-S04",
+      "DU-2004-593-S05",
+      "DU-2004-593-S06",
+      "DU-2004-593-S07",
+      "DU-2004-593-S08",
+      "DU-2004-593-S09",
+      "DU-2004-593-S10",
+      "DU-2004-593-S12",
+      "DU-2004-593-S13",
+      "DU-2004-593-S14",
+      "DU-2004-593-S15",
+      "DU-2004-593-S18",
+      "DU-2004-593-S20"
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
@@ -537,24 +1634,93 @@
     ]
   },
   {
-    "eli": "DU/2006/950",
-    "tytul": "Akt prawny DU/2006/950",
+    "eli": "DU/2005/1487",
+    "tytul": "Akt prawny DU/2005/1487",
     "typ": "Akt prawny",
     "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/950",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2005/1487",
     "url_isap": null,
     "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2005/2260",
+    "tytul": "Akt prawny DU/2005/2260",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2005/2260",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2005/67",
+    "tytul": "Ustawa z dnia 17 grudnia 2004 r. o prawie pomocy w postępowaniu w sprawach cywilnych prowadzonym w państwach członkowskich Unii Europejskiej oraz o prawie pomocy w celu ugodowego załatwienia sporu przed wszczęciem takiego postępowania",
+    "typ": "Ustawa",
+    "data_stanu": "2022-02-10",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2005/67",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2005-67-S001",
+      "DU-2005-67-S002",
+      "DU-2005-67-S004"
+    ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": [
       {
         "rodzaj": "O",
-        "plik": "akty/DU-2006-950/D20060950.pdf",
-        "nazwa_pobierania": "DU-2006-950_tekst-ogloszony.pdf",
-        "sha256": "df855978233822aaf689a3af48aa6b6bc819644b6d058ead1b1a39c2692de105",
-        "rozmiar": 62399,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/950/text/O/D20060950.pdf",
-        "pobrano": "2026-10-22T14:50:41+00:00",
+        "plik": "akty/DU-2005-67/D20050067.pdf",
+        "nazwa_pobierania": "DU-2005-67_tekst-ogloszony.pdf",
+        "sha256": "191bca2e5f44f81416142d739b495e5750901c668b841a387975726c37b0ab65",
+        "rozmiar": 72194,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2005/67/text/O/D20050067.pdf",
+        "pobrano": "2026-10-26T13:24:11+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2005-67/D20050067Lj.pdf",
+        "nazwa_pobierania": "DU-2005-67_tekst-ujednolicony.pdf",
+        "sha256": "0f9e3793805236d1b601c659e2ae5ab6dea1c63cbab7e73a1450b29a6941689a",
+        "rozmiar": 438531,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2005/67/text/U/D20050067Lj.pdf",
+        "pobrano": "2026-10-26T13:24:13+00:00",
+        "data_stanu": "2022-02-10",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2005/725",
+    "tytul": "Ustawa z dnia 15 kwietnia 2005 r. o rekompensacie przysługującej w związku z odstąpieniem w roku 2002 od waloryzacji świadczeń pieniężnych przysługujących żołnierzom zastępczej służby wojskowej przymusowo zatrudnianym w kopalniach węgla, kamieniołomach, zakładach rud uranu i batalionach budowlanych oraz osobom deportowanym do pracy przymusowej oraz osadzonym w obozach pracy przez III Rzeszę i Związek Socjalistycznych Republik Radzieckich",
+    "typ": "Ustawa",
+    "data_stanu": "2005-06-02",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2005/725",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2005-725-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2005-725/D20050725.pdf",
+        "nazwa_pobierania": "DU-2005-725_tekst-ogloszony.pdf",
+        "sha256": "e053054aacbd5e7b7b383bb6cf48e24a84ef67aacdcb17f74a908ad08f8bfeb7",
+        "rozmiar": 64319,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2005/725/text/O/D20050725.pdf",
+        "pobrano": "2026-10-26T10:44:31+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
@@ -563,11 +1729,23 @@
     ]
   },
   {
-    "eli": "DU/2009/1055",
-    "tytul": "Akt prawny DU/2009/1055",
+    "eli": "DU/2005/732",
+    "tytul": "Akt prawny DU/2005/732",
     "typ": "Akt prawny",
     "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2009/1055",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2005/732",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2006/1225",
+    "tytul": "Ustawa z dnia 25 sierpnia 2006 r. o bezpieczeństwie żywności i żywienia",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/1225",
     "url_isap": null,
     "korzysci": [],
     "wykonawcze": [],
@@ -575,13 +1753,522 @@
     "pliki": [
       {
         "rodzaj": "O",
-        "plik": "akty/DU-2009-1055/D20091055.pdf",
-        "nazwa_pobierania": "DU-2009-1055_tekst-ogloszony.pdf",
-        "sha256": "771859270ef2425fd69b595355e678e5d7ffad5aca028e1d0fec0080ad21f14b",
-        "rozmiar": 299641,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2009/1055/text/O/D20091055.pdf",
-        "pobrano": "2026-10-22T14:50:24+00:00",
+        "plik": "akty/DU-2006-1225/D20061225.pdf",
+        "nazwa_pobierania": "DU-2006-1225_tekst-ogloszony.pdf",
+        "sha256": "4a1a07bcc11ecfc2ca6e51ec8479cf54f72dca0fb4619c8985234ba482ab4ecf",
+        "rozmiar": 259802,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/1225/text/O/D20061225.pdf",
+        "pobrano": "2026-10-26T14:33:55+00:00",
         "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2006-1225/D20061225Lj.pdf",
+        "nazwa_pobierania": "DU-2006-1225_tekst-ujednolicony.pdf",
+        "sha256": "6baafaefbce2717b6243884d5d1445c54f88c83f0c1ac555831e9d47f2e5ef4a",
+        "rozmiar": 692266,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/1225/text/U/D20061225Lj.pdf",
+        "pobrano": "2026-10-26T14:33:58+00:00",
+        "data_stanu": "2026-09-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2006/1354",
+    "tytul": "Ustawa z dnia 8 września 2006 r. o finansowym wsparciu rodzin i innych osób w nabywaniu własnego mieszkania",
+    "typ": "Ustawa",
+    "data_stanu": "2023-07-18",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/1354",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2006-1354-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2006-1354/D20061354.pdf",
+        "nazwa_pobierania": "DU-2006-1354_tekst-ogloszony.pdf",
+        "sha256": "86060c2fa5444965b4e4bff0448f9bc09a1e1b7648f4a9aa4c754a1f66edf0b4",
+        "rozmiar": 80388,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/1354/text/O/D20061354.pdf",
+        "pobrano": "2026-10-26T11:38:08+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2006-1354/D20061354Lj.pdf",
+        "nazwa_pobierania": "DU-2006-1354_tekst-ujednolicony.pdf",
+        "sha256": "a34687c35bc3158db4294c89faeca7db209087467bb8b53434b8a02abf2f247d",
+        "rozmiar": 501204,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/1354/text/U/D20061354Lj.pdf",
+        "pobrano": "2026-10-26T11:38:08+00:00",
+        "data_stanu": "2023-07-18",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2006/1592",
+    "tytul": "Ustawa z dnia 18 października 2006 r. o ujawnianiu informacji o dokumentach organów bezpieczeństwa państwa z lat 1944-1990 oraz treści tych dokumentów",
+    "typ": "Ustawa",
+    "data_stanu": "2025-11-14",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/1592",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2006-1592-S001",
+      "DU-2006-1592-S002"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2006-1592/D20061592.pdf",
+        "nazwa_pobierania": "DU-2006-1592_tekst-ogloszony.pdf",
+        "sha256": "899d02588730763c7acf4ad10eba52f0c3deed4f22203645095cad8d5663e9cc",
+        "rozmiar": 647165,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/1592/text/O/D20061592.pdf",
+        "pobrano": "2026-10-26T09:44:37+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2006-1592/D20061592Lj.pdf",
+        "nazwa_pobierania": "DU-2006-1592_tekst-ujednolicony.pdf",
+        "sha256": "530ae0906ab3c5401f132726552c2b3fa7f855130df4cbcf0c20370bb4b7a096",
+        "rozmiar": 564151,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/1592/text/U/D20061592Lj.pdf",
+        "pobrano": "2026-10-26T09:44:38+00:00",
+        "data_stanu": "2025-11-14",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2006/1630",
+    "tytul": "Akt prawny DU/2006/1630",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/1630",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2006/1824",
+    "tytul": "Ustawa z dnia 16 listopada 2006 r. o świadczeniu pieniężnym i uprawnieniach przysługującym cywilnym niewidomym ofiarom działań wojennych",
+    "typ": "Ustawa",
+    "data_stanu": "2026-04-17",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/1824",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2006-1824-S001",
+      "DU-2006-1824-S002"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2006-1824/D20061824.pdf",
+        "nazwa_pobierania": "DU-2006-1824_tekst-ogloszony.pdf",
+        "sha256": "5a10cee335b2e5456e3bc75ab51b4b0444bb04f6935008b9b5f16b6c37488e5a",
+        "rozmiar": 72070,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/1824/text/O/D20061824.pdf",
+        "pobrano": "2026-10-26T09:53:37+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2006-1824/D20061824Lj.pdf",
+        "nazwa_pobierania": "DU-2006-1824_tekst-ujednolicony.pdf",
+        "sha256": "d4a733bbab0e9074f7a690fa167cb7ab5edc7044424f2dabfdeebb53c6cea268",
+        "rozmiar": 243264,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/1824/text/U/D20061824Lj.pdf",
+        "pobrano": "2026-10-26T09:53:38+00:00",
+        "data_stanu": "2026-04-17",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2006/1844",
+    "tytul": "Ustawa z dnia 8 grudnia 2006 r. o finansowym wsparciu niektórych przedsięwzięć mieszkaniowych",
+    "typ": "Ustawa",
+    "data_stanu": "2026-07-29",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/1844",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2006-1844/D20061844.pdf",
+        "nazwa_pobierania": "DU-2006-1844_tekst-ogloszony.pdf",
+        "sha256": "2492aa950f5241c410e06b3c13d0a282dfb8dda8f90a41b991059fd3302ac7e5",
+        "rozmiar": 470410,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/1844/text/O/D20061844.pdf",
+        "pobrano": "2026-10-26T09:56:00+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2006-1844/D20061844Lj.pdf",
+        "nazwa_pobierania": "DU-2006-1844_tekst-ujednolicony.pdf",
+        "sha256": "148b7810a360a8cecbf01faed8fb6c862908234d2214a07d3c30034d9560e34f",
+        "rozmiar": 466298,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/1844/text/U/D20061844Lj.pdf",
+        "pobrano": "2026-10-26T09:56:02+00:00",
+        "data_stanu": "2026-07-29",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2006/67",
+    "tytul": "Akt prawny DU/2006/67",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/67",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2006/710",
+    "tytul": "Ustawa z dnia 9 czerwca 2006 r. o służbie funkcjonariuszy Służby Kontrwywiadu Wojskowego oraz Służby Wywiadu Wojskowego",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/710",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2006-710-S001",
+      "DU-2006-710-S002",
+      "DU-2006-710-S003",
+      "DU-2006-710-S004",
+      "DU-2006-710-S005",
+      "DU-2006-710-S006"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2006-710/D20060710.pdf",
+        "nazwa_pobierania": "DU-2006-710_tekst-ogloszony.pdf",
+        "sha256": "d8f96baa448fa5e36549ade3a676d4fc5184297a8ef89ae70a28a1c98aebf8a9",
+        "rozmiar": 156122,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/710/text/O/D20060710.pdf",
+        "pobrano": "2026-10-26T09:44:46+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2006-710/D20060710Lj.pdf",
+        "nazwa_pobierania": "DU-2006-710_tekst-ujednolicony.pdf",
+        "sha256": "b19c06d90f966d8b52b142ba5ff238c87211aa7d56d10a95ea6c0f6a368b8bae",
+        "rozmiar": 682883,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2006/710/text/U/D20060710Lj.pdf",
+        "pobrano": "2026-10-26T09:44:47+00:00",
+        "data_stanu": "2026-09-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2006/903",
+    "tytul": "Akt prawny DU/2006/903",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/903",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2007/1378",
+    "tytul": "Ustawa z dnia 7 września 2007 r. o pomocy osobom uprawnionym do alimentów",
+    "typ": "Ustawa",
+    "data_stanu": "2026-02-03",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2007-1378-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2007-1378/D20071378.pdf",
+        "nazwa_pobierania": "DU-2007-1378_tekst-ogloszony.pdf",
+        "sha256": "4e8bfe5750005888b16a2b381dcd750781f950e20699369f5cb9bfc21c7d15ea",
+        "rozmiar": 115957,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2007/1378/text/O/D20071378.pdf",
+        "pobrano": "2026-10-21T09:55:51+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2007/1379",
+    "tytul": "Ustawa z dnia 7 września 2007 r. o funkcjonowaniu górnictwa węgla kamiennego",
+    "typ": "Ustawa",
+    "data_stanu": "2026-04-27",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2007/1379",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2007-1379-S001",
+      "DU-2007-1379-S002",
+      "DU-2007-1379-S003",
+      "DU-2007-1379-S004"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2007-1379/D20071379.pdf",
+        "nazwa_pobierania": "DU-2007-1379_tekst-ogloszony.pdf",
+        "sha256": "ee3481a2719d14760458ec4c3d989b9691142ba15bb04c9a0b68b0f0ab323e2e",
+        "rozmiar": 82548,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2007/1379/text/O/D20071379.pdf",
+        "pobrano": "2026-10-26T11:40:58+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2007-1379/D20071379Lj.pdf",
+        "nazwa_pobierania": "DU-2007-1379_tekst-ujednolicony.pdf",
+        "sha256": "85a4b0cfbe52b1edba56d57174e3f6ffd76529cdfdc23f5dbdd4ecd937abe3c9",
+        "rozmiar": 440722,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2007/1379/text/U/D20071379Lj.pdf",
+        "pobrano": "2026-10-26T11:40:59+00:00",
+        "data_stanu": "2026-04-27",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2007/320",
+    "tytul": "Akt prawny DU/2007/320",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2007/320",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2007-320/D20070320.pdf",
+        "nazwa_pobierania": "DU-2007-320_tekst-ogloszony.pdf",
+        "sha256": "8095c4b225a25e139ad725a4fbcb6053797329cbbef5387a7045a0ffc068afe3",
+        "rozmiar": 134099,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2007/320/text/O/D20070320.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2007/343",
+    "tytul": "Ustawa z dnia 16 lutego 2007 r. o zapasach ropy naftowej, produktów naftowych i gazu ziemnego oraz zasadach postępowania w sytuacjach zagrożenia bezpieczeństwa paliwowego państwa i zakłóceń na rynku naftowym",
+    "typ": "Ustawa",
+    "data_stanu": "2026-07-27",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2007/343",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2007-343-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2007-343/D20070343.pdf",
+        "nazwa_pobierania": "DU-2007-343_tekst-ogloszony.pdf",
+        "sha256": "d0b8ced67b7e0064452af8acc7eef4cd94e5446ae75cb7494449d1d6338d2b4a",
+        "rozmiar": 199550,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2007/343/text/O/D20070343.pdf",
+        "pobrano": "2026-10-26T10:44:42+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2007-343/D20070343Lj.pdf",
+        "nazwa_pobierania": "DU-2007-343_tekst-ujednolicony.pdf",
+        "sha256": "5d530c7587dca8ff0115c389c8eddb5acea3cf94868e11e5358d7d266b779bc4",
+        "rozmiar": 821461,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2007/343/text/U/D20070343Lj.pdf",
+        "pobrano": "2026-10-26T10:44:43+00:00",
+        "data_stanu": "2026-07-27",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2008/1507",
+    "tytul": "Ustawa z dnia 21 listopada 2008 r. o emeryturach kapitałowych",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2008/1507",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2008-1507-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2008-1507/D20081507.pdf",
+        "nazwa_pobierania": "DU-2008-1507_tekst-ogloszony.pdf",
+        "sha256": "3b24a1ca0ce55640be79ebf8cfc77f1a633806e72c3e6a86c250b7769c6026ab",
+        "rozmiar": 84034,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2008/1507/text/O/D20081507.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2008/1656",
+    "tytul": "Ustawa z dnia 19 grudnia 2008 r. o emeryturach pomostowych",
+    "typ": "Ustawa",
+    "data_stanu": "2025-01-21",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2008/1656",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2008-1656-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2008-1656/D20081656.pdf",
+        "nazwa_pobierania": "DU-2008-1656_tekst-ogloszony.pdf",
+        "sha256": "3c0db54c2d87a74e2aafd795717b5e514913ba8ce9c3ed87f89f2c9e0fd165b7",
+        "rozmiar": 81339,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2008/1656/text/O/D20081656.pdf",
+        "pobrano": "2026-10-18T17:24:01+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2009/1058",
+    "tytul": "Akt prawny DU/2009/1058",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2009/1058",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2009/33",
+    "tytul": "Ustawa z dnia 19 grudnia 2008 r. o zmianie ustawy o promocji zatrudnienia i instytucjach rynku pracy oraz o zmianie niektórych innych ustaw",
+    "typ": "Ustawa",
+    "data_stanu": "2011-10-14",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2009/33",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2009-33-S001",
+      "DU-2009-33-S002",
+      "DU-2009-33-S003"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2009-33/D20090033.pdf",
+        "nazwa_pobierania": "DU-2009-33_tekst-ogloszony.pdf",
+        "sha256": "b2bb35d9e36f7fe81d921389712e894bfc9c5cb9304825543730cb5cf6d962ef",
+        "rozmiar": 223906,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2009/33/text/O/D20090033.pdf",
+        "pobrano": "2026-10-26T09:50:29+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2009-33/D20090033Lj.pdf",
+        "nazwa_pobierania": "DU-2009-33_tekst-ujednolicony.pdf",
+        "sha256": "469b05eab3b7c5c8c39856abca6153cbdf3847f55d15a6d3279033677d2d63c4",
+        "rozmiar": 380363,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2009/33/text/U/D20090033Lj.pdf",
+        "pobrano": "2026-10-26T09:50:30+00:00",
+        "data_stanu": "2011-10-14",
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
         "zrodlo": "API Sejmu (ELI)"
@@ -615,6 +2302,171 @@
     ]
   },
   {
+    "eli": "DU/2010/523",
+    "tytul": "Ustawa z dnia 9 kwietnia 2010 r. o Służbie Więziennej",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2010/523",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2010-523-S001",
+      "DU-2010-523-S002",
+      "DU-2010-523-S003",
+      "DU-2010-523-S004",
+      "DU-2010-523-S005",
+      "DU-2010-523-S006"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2010-523/D20100523.pdf",
+        "nazwa_pobierania": "DU-2010-523_tekst-ogloszony.pdf",
+        "sha256": "4c52950ede4063d6ca52d1793bd9105edb0a9d9c68b7c19a04e959157b2a5062",
+        "rozmiar": 554188,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2010/523/text/O/D20100523.pdf",
+        "pobrano": "2026-10-25T23:03:08+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2010-523/D20100523Lj.pdf",
+        "nazwa_pobierania": "DU-2010-523_tekst-ujednolicony.pdf",
+        "sha256": "5a39d5cc646b8664dc3661843df688edda09a38af0dc88bd61f950d28bee96de",
+        "rozmiar": 1436795,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2010/523/text/U/D20100523Lj.pdf",
+        "pobrano": "2026-10-25T23:03:26+00:00",
+        "data_stanu": "2026-09-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2011/1203",
+    "tytul": "Ustawa z dnia 19 sierpnia 2011 r. o weteranach działań poza granicami państwa",
+    "typ": "Ustawa",
+    "data_stanu": "2026-02-10",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2011/1203",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2011-1203-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2011-1203/D20111203.pdf",
+        "nazwa_pobierania": "DU-2011-1203_tekst-ogloszony.pdf",
+        "sha256": "0c927ab8b8a517d94cfab6e612bfd2fdc08b31964d6620fa5033981292e2925c",
+        "rozmiar": 867138,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2011/1203/text/O/D20111203.pdf",
+        "pobrano": "2026-10-18T17:22:56+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2011/1368",
+    "tytul": "Ustawa z dnia 18 sierpnia 2011 r. o bezpieczeństwie morskim",
+    "typ": "Ustawa",
+    "data_stanu": "2026-04-30",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2011/1368",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2011-1368-S001",
+      "DU-2011-1368-S002",
+      "DU-2011-1368-S003",
+      "DU-2011-1368-S004",
+      "DU-2011-1368-S005",
+      "DU-2011-1368-S006",
+      "DU-2011-1368-S007"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2011-1368/D20111368.pdf",
+        "nazwa_pobierania": "DU-2011-1368_tekst-ogloszony.pdf",
+        "sha256": "210f8966fb977b50183dd3c64c605e64da59621d7960dc507cebdc5a4960dff3",
+        "rozmiar": 1011387,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2011/1368/text/O/D20111368.pdf",
+        "pobrano": "2026-10-26T10:47:37+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2011-1368/D20111368Lj.pdf",
+        "nazwa_pobierania": "DU-2011-1368_tekst-ujednolicony.pdf",
+        "sha256": "991fdc83879b9300387f14717feea42bec748b5aed44960ddb19c262020e5e85",
+        "rozmiar": 998290,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2011/1368/text/U/D20111368Lj.pdf",
+        "pobrano": "2026-10-26T10:47:38+00:00",
+        "data_stanu": "2026-04-30",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2011/1385",
+    "tytul": "Ustawa z dnia 16 września 2011 r. o szczególnych rozwiązaniach związanych z usuwaniem skutków powodzi",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2011/1385",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2011-1385-S001",
+      "DU-2011-1385-S002",
+      "DU-2011-1385-S003",
+      "DU-2011-1385-S005"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2011-1385/D20111385.pdf",
+        "nazwa_pobierania": "DU-2011-1385_tekst-ogloszony.pdf",
+        "sha256": "b3407e06cc3d3807b13705b2291bee64f59c97d9a1e98b73e1cc1d1b16b662e0",
+        "rozmiar": 370490,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2011/1385/text/O/D20111385.pdf",
+        "pobrano": "2026-10-26T15:44:58+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2011-1385/D20111385Lj.pdf",
+        "nazwa_pobierania": "DU-2011-1385_tekst-ujednolicony.pdf",
+        "sha256": "827a89d83b23877e314c1898ded20bd3783a382ea7771e66f45c1263ea0a943e",
+        "rozmiar": 927152,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2011/1385/text/U/D20111385Lj.pdf",
+        "pobrano": "2026-10-26T15:45:00+00:00",
+        "data_stanu": "2026-09-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/2011/887",
     "tytul": "Ustawa z dnia 9 czerwca 2011 r. o wspieraniu rodziny i systemie pieczy zastępczej",
     "typ": "Ustawa",
@@ -622,7 +2474,12 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2011/887",
     "url_isap": null,
     "korzysci": [
-      "DU-2011-887-dofinansowanie"
+      "DU-2011-887-S001",
+      "DU-2011-887-S002",
+      "DU-2011-887-S003",
+      "DU-2011-887-S004",
+      "DU-2011-887-S005",
+      "DU-2011-887-S006"
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
@@ -656,24 +2513,38 @@
     ]
   },
   {
-    "eli": "DU/2012/823",
-    "tytul": "Akt prawny DU/2012/823",
+    "eli": "DU/2012/1255",
+    "tytul": "Akt prawny DU/2012/1255",
     "typ": "Akt prawny",
     "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2012/823",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2012/1255",
     "url_isap": null,
     "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2012/1544",
+    "tytul": "Ustawa z dnia 23 listopada 2012 r. o zmianie niektórych ustaw w związku z podwyższeniem wieku emerytalnego",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2012/1544",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2012-1544-S01"
+    ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": [
       {
         "rodzaj": "O",
-        "plik": "akty/DU-2012-823/D20120823.pdf",
-        "nazwa_pobierania": "DU-2012-823_tekst-ogloszony.pdf",
-        "sha256": "ee8a509b6d74ef00aa400689ba9e6657ff538796948e291bd7d5ea49fd19e224",
-        "rozmiar": 684535,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2012/823/text/O/D20120823.pdf",
-        "pobrano": "2026-10-22T14:49:14+00:00",
+        "plik": "akty/DU-2012-1544/D20121544.pdf",
+        "nazwa_pobierania": "DU-2012-1544_tekst-ogloszony.pdf",
+        "sha256": "b298e0bd29c47780c795b4c4f25f3829a59587097543f941c1d251e8550213f8",
+        "rozmiar": 801453,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2012/1544/text/O/D20121544.pdf",
+        "pobrano": "2026-10-26T09:55:57+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
@@ -682,11 +2553,201 @@
     ]
   },
   {
-    "eli": "DU/2015/1058",
-    "tytul": "Akt prawny DU/2015/1058",
+    "eli": "DU/2012/1548",
+    "tytul": "Akt prawny DU/2012/1548",
     "typ": "Akt prawny",
     "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2015/1058",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2012/1548",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2003-2255-S13"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2012-1548/D20121548.pdf",
+        "nazwa_pobierania": "DU-2012-1548_tekst-ogloszony.pdf",
+        "sha256": "dcd0ab00f4e1c15d3e26086ba25be0878f6f03cc52c0b5888c77fec3501159eb",
+        "rozmiar": 859075,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2012/1548/text/O/D20121548.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2012/830",
+    "tytul": "Akt prawny DU/2012/830",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2012/830",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2013/1304",
+    "tytul": "Ustawa z dnia 27 września 2013 r. o pomocy państwa w nabyciu pierwszego mieszkania przez młodych ludzi",
+    "typ": "Ustawa",
+    "data_stanu": "2023-01-03",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2013/1304",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2013-1304-S001",
+      "DU-2013-1304-S002"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2013-1304/D20131304.pdf",
+        "nazwa_pobierania": "DU-2013-1304_tekst-ogloszony.pdf",
+        "sha256": "eb6c849efb53188d3be700bde4990c7d3da3734f1e1dd9d22cada112f955c852",
+        "rozmiar": 824964,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2013/1304/text/O/D20131304.pdf",
+        "pobrano": "2026-10-26T10:58:10+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2013-1304/D20131304Lj.pdf",
+        "nazwa_pobierania": "DU-2013-1304_tekst-ujednolicony.pdf",
+        "sha256": "e3004ceea03e7bf7353b3db23fdc67ae385b029d634e3971e0919099888276b0",
+        "rozmiar": 541787,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2013/1304/text/U/D20131304Lj.pdf",
+        "pobrano": "2026-10-26T10:58:12+00:00",
+        "data_stanu": "2023-01-03",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2014/40",
+    "tytul": "Ustawa z dnia 13 grudnia 2013 r. o rodzinnych ogrodach działkowych",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2014/40",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2014-40-S001",
+      "DU-2014-40-S002"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2014-40/D20140040.pdf",
+        "nazwa_pobierania": "DU-2014-40_tekst-ogloszony.pdf",
+        "sha256": "6d73a1217de9debe95c9e49908a1bfd1fc286757366bc63335054190713472e2",
+        "rozmiar": 634686,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2014/40/text/O/D20140040.pdf",
+        "pobrano": "2026-10-26T09:55:03+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2014/616",
+    "tytul": "Ustawa z dnia 4 kwietnia 2014 r. o świadczeniach odszkodowawczych przysługujących w razie wypadku lub choroby pozostających w związku ze służbą",
+    "typ": "Ustawa",
+    "data_stanu": "2023-09-29",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2014/616",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2014-616-S001",
+      "DU-2014-616-S002",
+      "DU-2014-616-S003"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2014-616/D20140616.pdf",
+        "nazwa_pobierania": "DU-2014-616_tekst-ogloszony.pdf",
+        "sha256": "d4868c8bd7b3a05f4aa18bd1ae81ca0b64fcadcf3ad0ca38cc42be810941159f",
+        "rozmiar": 590740,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2014/616/text/O/D20140616.pdf",
+        "pobrano": "2026-10-26T09:30:03+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2014-616/D20140616Lj.pdf",
+        "nazwa_pobierania": "DU-2014-616_tekst-ujednolicony.pdf",
+        "sha256": "848c0f7ef715432cc2b2559b38a79967044296c5bbc380c3bfc523920014c042",
+        "rozmiar": 535757,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2014/616/text/U/D20140616Lj.pdf",
+        "pobrano": "2026-10-26T09:30:04+00:00",
+        "data_stanu": "2023-09-29",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2015/1217",
+    "tytul": "Akt prawny DU/2015/1217",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2015/1217",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2015/1238",
+    "tytul": "Akt prawny DU/2015/1238",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2015/1310",
+    "tytul": "Akt prawny DU/2015/1310",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2015/1310",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2015/1844",
+    "tytul": "Ustawa z dnia 11 września 2015 r. o działalności ubezpieczeniowej i reasekuracyjnej",
+    "typ": "Ustawa",
+    "data_stanu": "2026-10-08",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2015/1844",
     "url_isap": null,
     "korzysci": [],
     "wykonawcze": [],
@@ -694,18 +2755,55 @@
     "pliki": [
       {
         "rodzaj": "O",
-        "plik": "akty/DU-2015-1058/D20151058.pdf",
-        "nazwa_pobierania": "DU-2015-1058_tekst-ogloszony.pdf",
-        "sha256": "7cad68f16b6130b7756a11472cc6efa50321847c2f30e8fe4db86a74aab349f9",
-        "rozmiar": 695507,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2015/1058/text/O/D20151058.pdf",
-        "pobrano": "2026-10-22T14:48:47+00:00",
+        "plik": "akty/DU-2015-1844/D20151844.pdf",
+        "nazwa_pobierania": "DU-2015-1844_tekst-ogloszony.pdf",
+        "sha256": "c9a9da80c4ba52405fdfeb406db6a523b6a5c3582fc556eab933715cb1893dd5",
+        "rozmiar": 1897615,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2015/1844/text/O/D20151844.pdf",
+        "pobrano": "2026-10-26T09:53:26+00:00",
         "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2015-1844/D20151844Lj.pdf",
+        "nazwa_pobierania": "DU-2015-1844_tekst-ujednolicony.pdf",
+        "sha256": "c83cfa343b4bb2f681de2a3fc393b2b1c318afc8070a62cfc1cd3a76aa683d34",
+        "rozmiar": 2035276,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2015/1844/text/U/D20151844Lj.pdf",
+        "pobrano": "2026-10-26T09:53:30+00:00",
+        "data_stanu": "2026-10-08",
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "DU/2015/557",
+    "tytul": "Akt prawny DU/2015/557",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2015/557",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2015/606",
+    "tytul": "Akt prawny DU/2015/606",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2015/606",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "DU/2016/195",
@@ -782,24 +2880,31 @@
     ]
   },
   {
-    "eli": "DU/2018/1358",
-    "tytul": "Akt prawny DU/2018/1358",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2018/1358",
+    "eli": "DU/2018/138",
+    "tytul": "Ustawa z dnia 8 grudnia 2017 r. o Służbie Ochrony Państwa",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2018/138",
     "url_isap": null,
-    "korzysci": [],
+    "korzysci": [
+      "DU-2018-138-S001",
+      "DU-2018-138-S002",
+      "DU-2018-138-S003",
+      "DU-2018-138-S004",
+      "DU-2018-138-S005",
+      "DU-2018-138-S006"
+    ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": [
       {
         "rodzaj": "O",
-        "plik": "akty/DU-2018-1358/D20181358.pdf",
-        "nazwa_pobierania": "DU-2018-1358_tekst-ogloszony.pdf",
-        "sha256": "efbb7e5eebb3c3c4f106b6594932503e9387d74601f5a51bd3849d9f09c8dc9e",
-        "rozmiar": 234407,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2018/1358/text/O/D20181358.pdf",
-        "pobrano": "2026-10-22T14:48:23+00:00",
+        "plik": "akty/DU-2018-138/D20180138.pdf",
+        "nazwa_pobierania": "DU-2018-138_tekst-ogloszony.pdf",
+        "sha256": "23f834994885b29e2973bf9adebc7ea96fea69ae00a0411377eec77779432274",
+        "rozmiar": 844103,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2018/138/text/O/D20180138.pdf",
+        "pobrano": "2026-10-18T17:24:10+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
@@ -808,18 +2913,198 @@
     ]
   },
   {
-    "eli": "DU/2020/374",
-    "tytul": "Akt prawny DU/2020/374",
+    "eli": "DU/2018/1497",
+    "tytul": "Akt prawny DU/2018/1497",
     "typ": "Akt prawny",
     "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2020/374",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2018/1497",
     "url_isap": null,
-    "korzysci": [
-      "DU-2001-734-S06"
-    ],
+    "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": []
+  },
+  {
+    "eli": "DU/2018/1540",
+    "tytul": "Ustawa z dnia 20 lipca 2018 r. o pomocy państwa w ponoszeniu wydatków mieszkaniowych w pierwszych latach najmu mieszkania",
+    "typ": "Ustawa",
+    "data_stanu": "2024-04-10",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2018/1540",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2018-1540-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2018-1540/D20181540.pdf",
+        "nazwa_pobierania": "DU-2018-1540_tekst-ogloszony.pdf",
+        "sha256": "2fdb8d3a031806715ad99401912be1513708e034b1149d37bab30cd043d61c72",
+        "rozmiar": 440414,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2018/1540/text/O/D20181540.pdf",
+        "pobrano": "2026-10-26T10:18:12+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2018-1540/D20181540Lj.pdf",
+        "nazwa_pobierania": "DU-2018-1540_tekst-ujednolicony.pdf",
+        "sha256": "a14bc4aa322581440247b063bcf537056e9aac6456fee71ecb6a73e2bb91e362",
+        "rozmiar": 350211,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2018/1540/text/U/D20181540Lj.pdf",
+        "pobrano": "2026-10-26T10:18:13+00:00",
+        "data_stanu": "2024-04-10",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2018/1668",
+    "tytul": "Ustawa z dnia 20 lipca 2018 r. - Prawo o szkolnictwie wyższym i nauce",
+    "typ": "Ustawa",
+    "data_stanu": "2026-10-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2018/1668",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2018-1668-S001",
+      "DU-2018-1668-S002",
+      "DU-2018-1668-S003",
+      "DU-2018-1668-S004",
+      "DU-2018-1668-S005",
+      "DU-2018-1668-S006"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2018-1668/D20181668.pdf",
+        "nazwa_pobierania": "DU-2018-1668_tekst-ogloszony.pdf",
+        "sha256": "f08f9a15c858336e2ca0d2557a7b719ba5aeb417b31e70e05f8364678da54ff8",
+        "rozmiar": 1025468,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2018/1668/text/O/D20181668.pdf",
+        "pobrano": "2026-10-26T09:34:35+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2018-1668/D20181668Lj.pdf",
+        "nazwa_pobierania": "DU-2018-1668_tekst-ujednolicony.pdf",
+        "sha256": "d4d5bc87109dc14af2f05066963750e12d260242212c8093c6303e20ec3d6df4",
+        "rozmiar": 1738875,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2018/1668/text/U/D20181668Lj.pdf",
+        "pobrano": "2026-10-26T09:34:37+00:00",
+        "data_stanu": "2026-10-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2019/1160",
+    "tytul": "Akt prawny DU/2019/1160",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2019/1160",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2019/29",
+    "tytul": "Ustawa z dnia 23 listopada 2018 r. o świadczeniu rekompensacyjnym z tytułu utraty prawa do bezpłatnego węgla oraz z tytułu zaprzestania pobierania bezpłatnego węgla przez osoby niebędące pracownikami przedsiębiorstwa górniczego",
+    "typ": "Ustawa",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2019/29",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2019-29-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2019-29/D20190029.pdf",
+        "nazwa_pobierania": "DU-2019-29_tekst-ogloszony.pdf",
+        "sha256": "5bb1a33a3bbca9428e81d004d4d2f8d3e66f79e247d3bcf56ddb5aa3a5898cfc",
+        "rozmiar": 304985,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2019/29/text/O/D20190029.pdf",
+        "pobrano": "2026-10-26T13:36:55+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2019/645",
+    "tytul": "Akt prawny DU/2019/645",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2019/645",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2020/374",
+    "tytul": "Ustawa z dnia 2 marca 2020 r. o szczególnych rozwiązaniach związanych z zapobieganiem, przeciwdziałaniem i zwalczaniem COVID-19, innych chorób zakaźnych oraz wywołanych nimi sytuacji kryzysowych",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2020/374",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2001-734-S06",
+      "DU-2020-374-S001",
+      "DU-2020-374-S002"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2020-374/D20200374.pdf",
+        "nazwa_pobierania": "DU-2020-374_tekst-ogloszony.pdf",
+        "sha256": "626318524db502236c801a1d799fd1b6bce1fb37fb3f21e331566444277f959e",
+        "rozmiar": 480732,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2020/374/text/O/D20200374.pdf",
+        "pobrano": "2026-10-26T09:36:07+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2020-374/D20200374Lj.pdf",
+        "nazwa_pobierania": "DU-2020-374_tekst-ujednolicony.pdf",
+        "sha256": "bd51eaabfb468e3c8a6b3d78183b04f961ec8ab7d9ce7c2fcb1d2c2bba02552b",
+        "rozmiar": 2120254,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2020/374/text/U/D20200374Lj.pdf",
+        "pobrano": "2026-10-26T09:36:10+00:00",
+        "data_stanu": "2026-09-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2021/11",
@@ -836,30 +3121,147 @@
     "pliki": []
   },
   {
-    "eli": "DU/2021/1296",
-    "tytul": "Akt prawny DU/2021/1296",
+    "eli": "DU/2021/1481",
+    "tytul": "Akt prawny DU/2021/1481",
     "typ": "Akt prawny",
     "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2021/1296",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2021/1481",
     "url_isap": null,
     "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2021/2133",
+    "tytul": "Ustawa z dnia 1 października 2021 r. o rodzinnym kredycie mieszkaniowym i bezpiecznym kredycie 2%",
+    "typ": "Ustawa",
+    "data_stanu": "2026-05-22",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2021/2133",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2021-2133-S001",
+      "DU-2021-2133-S002"
+    ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": [
       {
         "rodzaj": "O",
-        "plik": "akty/DU-2021-1296/D20211296.pdf",
-        "nazwa_pobierania": "DU-2021-1296_tekst-ogloszony.pdf",
-        "sha256": "0a7b071e44a740f928c740ae34d36a23c9807a42d53b32d9c1e18cd5f3ac4066",
-        "rozmiar": 248349,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2021/1296/text/O/D20211296.pdf",
-        "pobrano": "2026-10-22T14:48:06+00:00",
+        "plik": "akty/DU-2021-2133/D20212133.pdf",
+        "nazwa_pobierania": "DU-2021-2133_tekst-ogloszony.pdf",
+        "sha256": "7984ba17199123500a14cbca71a5c0ebe6368b8458b9fd0f8fccdbcfaa865d93",
+        "rozmiar": 221564,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2021/2133/text/O/D20212133.pdf",
+        "pobrano": "2026-10-26T13:37:51+00:00",
         "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2021-2133/D20212133Lj.pdf",
+        "nazwa_pobierania": "DU-2021-2133_tekst-ujednolicony.pdf",
+        "sha256": "f8bcc4fdb026a7b597265ab60a65b400035d0dbcbd8f49cdf56a1ee22bd4cf2d",
+        "rozmiar": 376777,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2021/2133/text/U/D20212133Lj.pdf",
+        "pobrano": "2026-10-26T18:38:46+00:00",
+        "data_stanu": "2026-05-22",
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "DU/2021/2333",
+    "tytul": "Ustawa z dnia 2 grudnia 2021 r. o szczególnych zasadach wynagradzania osób realizujących zadania z zakresu cyberbezpieczeństwa",
+    "typ": "Ustawa",
+    "data_stanu": "2026-07-07",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2021/2333",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2021-2333-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2021-2333/D20212333.pdf",
+        "nazwa_pobierania": "DU-2021-2333_tekst-ogloszony.pdf",
+        "sha256": "0aaf182f687c97c88a6101fe607e863267dc615270b12e7d6641791ea9dc473e",
+        "rozmiar": 463640,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2021/2333/text/O/D20212333.pdf",
+        "pobrano": "2026-10-26T09:34:27+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2021-2333/D20212333Lj.pdf",
+        "nazwa_pobierania": "DU-2021-2333_tekst-ujednolicony.pdf",
+        "sha256": "b60fed5b88ca05219be56ed69c92f2d2c59f2120c734dd6d37a1c1c8362aab37",
+        "rozmiar": 196673,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2021/2333/text/U/D20212333Lj.pdf",
+        "pobrano": "2026-10-26T09:34:28+00:00",
+        "data_stanu": "2026-07-07",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2021/2396",
+    "tytul": "Akt prawny DU/2021/2396",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2021/2396",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2021/803",
+    "tytul": "Akt prawny DU/2021/803",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2021/803",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2022/1020",
+    "tytul": "Akt prawny DU/2022/1020",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/1020",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2022/131",
+    "tytul": "Akt prawny DU/2022/131",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/131",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "DU/2022/1692",
@@ -869,7 +3271,7 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
     "url_isap": null,
     "korzysci": [
-      "DU-2022-1692-dodatek-weglowy"
+      "DU-2022-1692-S001"
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
@@ -883,6 +3285,347 @@
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692/text/U/D20221692Lj.pdf",
         "pobrano": "2026-10-22T14:52:07+00:00",
         "data_stanu": "2024-09-04",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2022/1967",
+    "tytul": "Ustawa z dnia 15 września 2022 r. o szczególnych rozwiązaniach w zakresie niektórych źródeł ciepła w związku z sytuacją na rynku paliw",
+    "typ": "Ustawa",
+    "data_stanu": "2026-10-12",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/1967",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2022-1967-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2022-1967/D20221967.pdf",
+        "nazwa_pobierania": "DU-2022-1967_tekst-ogloszony.pdf",
+        "sha256": "13b41838d8b985665930bca9d6b155e7891c22c9c3b95a4ec41821fea5a951cd",
+        "rozmiar": 549181,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/1967/text/O/D20221967.pdf",
+        "pobrano": "2026-10-26T09:55:52+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2022-1967/D20221967Lj.pdf",
+        "nazwa_pobierania": "DU-2022-1967_tekst-ujednolicony.pdf",
+        "sha256": "7547111bfe0b99c6d26c1feea2848cb1fc983f1145348ac0af2f86ba87bc5487",
+        "rozmiar": 705956,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/1967/text/U/D20221967Lj.pdf",
+        "pobrano": "2026-10-26T09:55:54+00:00",
+        "data_stanu": "2026-10-12",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2022/2236",
+    "tytul": "Ustawa z dnia 27 października 2022 r. o zakupie preferencyjnym paliwa stałego dla gospodarstw domowych",
+    "typ": "Ustawa",
+    "data_stanu": "2024-02-12",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/2236",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2022-2236/D20222236.pdf",
+        "nazwa_pobierania": "DU-2022-2236_tekst-ogloszony.pdf",
+        "sha256": "1585c1a9c75e0d15d01b3739adefb67662f4e1b8831caaae2bce4c6668052c28",
+        "rozmiar": 467462,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/2236/text/O/D20222236.pdf",
+        "pobrano": "2026-10-26T13:00:54+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2022-2236/D20222236Lj.pdf",
+        "nazwa_pobierania": "DU-2022-2236_tekst-ujednolicony.pdf",
+        "sha256": "f9262ac3cc98f4d78a6ed4a36e466b360c88b626691a436775d366ec3285b2d9",
+        "rozmiar": 530916,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/2236/text/U/D20222236Lj.pdf",
+        "pobrano": "2026-10-26T13:00:55+00:00",
+        "data_stanu": "2024-02-12",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2022/230",
+    "tytul": "Akt prawny DU/2022/230",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/230",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2022/2687",
+    "tytul": "Ustawa z dnia 15 grudnia 2022 r. o szczególnej ochronie niektórych odbiorców paliw gazowych w 2023 r. oraz w 2024 r. w związku z sytuacją na rynku gazu",
+    "typ": "Ustawa",
+    "data_stanu": "2025-03-06",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/2687",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2022-2687-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2022-2687/D20222687.pdf",
+        "nazwa_pobierania": "DU-2022-2687_tekst-ogloszony.pdf",
+        "sha256": "59f98879469ebf9b19e1bd33f39430bd32668a6deeea88372a60574980592552",
+        "rozmiar": 1123647,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/2687/text/O/D20222687.pdf",
+        "pobrano": "2026-10-26T09:57:19+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2022-2687/D20222687Lj.pdf",
+        "nazwa_pobierania": "DU-2022-2687_tekst-ujednolicony.pdf",
+        "sha256": "e18131240f5ac76d138302ae1df2aefd3b679b8cda37e2e105e65847dee0165e",
+        "rozmiar": 616619,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/2687/text/U/D20222687Lj.pdf",
+        "pobrano": "2026-10-26T09:57:20+00:00",
+        "data_stanu": "2025-03-06",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2022/583",
+    "tytul": "Ustawa z dnia 12 marca 2022 r. o pomocy obywatelom Ukrainy w związku z konfliktem zbrojnym na terytorium tego państwa",
+    "typ": "Ustawa",
+    "data_stanu": "2026-10-14",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/583",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2022-583-S001",
+      "DU-2022-583-S002"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2022-583/D20220583.pdf",
+        "nazwa_pobierania": "DU-2022-583_tekst-ogloszony.pdf",
+        "sha256": "840e748b93f1b5b69f0805d697b150312220a00d8452bee4adcee4be74cba1e1",
+        "rozmiar": 1054883,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/583/text/O/D20220583.pdf",
+        "pobrano": "2026-10-21T09:58:23+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2022/605",
+    "tytul": "Akt prawny DU/2022/605",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/605",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2022/655",
+    "tytul": "Ustawa z dnia 11 marca 2022 r. o obronie Ojczyzny",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/655",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2022-655-S001",
+      "DU-2022-655-S002",
+      "DU-2022-655-S003",
+      "DU-2022-655-S004",
+      "DU-2022-655-S005",
+      "DU-2022-655-S006",
+      "DU-2022-655-S007"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2022-655/D20220655.pdf",
+        "nazwa_pobierania": "DU-2022-655_tekst-ogloszony.pdf",
+        "sha256": "a649561122ee00925604a47cb4052b5e067c0c8353ecd4f4bfd4c1060bf48581",
+        "rozmiar": 2447854,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/655/text/O/D20220655.pdf",
+        "pobrano": "2026-10-25T22:26:34+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2022-655/D20220655Lj.pdf",
+        "nazwa_pobierania": "DU-2022-655_tekst-ujednolicony.pdf",
+        "sha256": "5b177ec835403ba3ecd05ebb6dbb73334366cdd869ebc809bc4dee967a48210a",
+        "rozmiar": 2566370,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/655/text/U/D20220655Lj.pdf",
+        "pobrano": "2026-10-25T22:27:00+00:00",
+        "data_stanu": "2026-09-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2023/1030",
+    "tytul": "Ustawa z dnia 14 kwietnia 2023 r. o Państwowej Komisji do spraw badania wpływów rosyjskich na bezpieczeństwo wewnętrzne Rzeczypospolitej Polskiej w latach 2007-2022",
+    "typ": "Ustawa",
+    "data_stanu": "2024-04-22",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/1030",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2023-1030/D20231030.pdf",
+        "nazwa_pobierania": "DU-2023-1030_tekst-ogloszony.pdf",
+        "sha256": "0364a089e546137ed716812dbc7cd5653a52693e94a4e8398ffcf04146e9995b",
+        "rozmiar": 295182,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2023/1030/text/O/D20231030.pdf",
+        "pobrano": "2026-10-26T10:14:25+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2023-1030/D20231030Lj.pdf",
+        "nazwa_pobierania": "DU-2023-1030_tekst-ujednolicony.pdf",
+        "sha256": "1e89f965d5ae4e3e9bdfe82659c1027f70e89f5dab2c49970200240a774a5c09",
+        "rozmiar": 298239,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2023/1030/text/U/D20231030Lj.pdf",
+        "pobrano": "2026-10-26T10:14:27+00:00",
+        "data_stanu": "2024-04-22",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2023/1114",
+    "tytul": "Ustawa z dnia 26 maja 2023 r. o pomocy państwa w oszczędzaniu na cele mieszkaniowe",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-25",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/1114",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2023-1114-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2023-1114/D20231114.pdf",
+        "nazwa_pobierania": "DU-2023-1114_tekst-ogloszony.pdf",
+        "sha256": "a654bb97445b1b1718090b2a7245c913dc19d90ed65e4a3dcb39d4b2c0de419a",
+        "rozmiar": 554841,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2023/1114/text/O/D20231114.pdf",
+        "pobrano": "2026-10-26T10:27:15+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2023-1114/D20231114Lj.pdf",
+        "nazwa_pobierania": "DU-2023-1114_tekst-ujednolicony.pdf",
+        "sha256": "6646179d12d20459be1ce1d094ccfb55080450bf8b204190b814a0816e7b4573",
+        "rozmiar": 446738,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2023/1114/text/U/D20231114Lj.pdf",
+        "pobrano": "2026-10-26T10:27:16+00:00",
+        "data_stanu": "2026-09-25",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2023/1192",
+    "tytul": "Akt prawny DU/2023/1192",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/1192",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2023/1429",
+    "tytul": "Ustawa z dnia 7 lipca 2023 r. o świadczeniu wspierającym",
+    "typ": "Ustawa",
+    "data_stanu": "2026-06-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2023-1429-S01"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2023-1429/D20231429.pdf",
+        "nazwa_pobierania": "DU-2023-1429_tekst-ogloszony.pdf",
+        "sha256": "16d090deb0371b437850732f67b32e4b3ddebc225a92dcc454cc8897c6418175",
+        "rozmiar": 608165,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429/text/O/D20231429.pdf",
+        "pobrano": "2026-10-17T14:39:30+00:00",
+        "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
         "zrodlo": "API Sejmu (ELI)"
@@ -916,11 +3659,47 @@
     ]
   },
   {
-    "eli": "DU/2024/1044",
-    "tytul": "Akt prawny DU/2024/1044",
+    "eli": "DU/2023/1693",
+    "tytul": "Akt prawny DU/2023/1693",
     "typ": "Akt prawny",
     "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/1044",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/1693",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2023/1938",
+    "tytul": "Akt prawny DU/2023/1938",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/1938",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2023/2414",
+    "tytul": "Akt prawny DU/2023/2414",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/2414",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2023/28",
+    "tytul": "Ustawa z dnia 4 listopada 2022 r. o kooperatywach mieszkaniowych oraz zasadach zbywania nieruchomości należących do gminnego zasobu nieruchomości w celu wsparcia realizacji inwestycji mieszkaniowych",
+    "typ": "Ustawa",
+    "data_stanu": "2025-01-20",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/28",
     "url_isap": null,
     "korzysci": [],
     "wykonawcze": [],
@@ -928,18 +3707,97 @@
     "pliki": [
       {
         "rodzaj": "O",
-        "plik": "akty/DU-2024-1044/D20241044.pdf",
-        "nazwa_pobierania": "DU-2024-1044_tekst-ogloszony.pdf",
-        "sha256": "97aac3573f0161bc45dd0e01c0576639d8a37994bd05babe66b68f6f6757b98c",
-        "rozmiar": 152348,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2024/1044/text/O/D20241044.pdf",
-        "pobrano": "2026-10-22T14:47:37+00:00",
+        "plik": "akty/DU-2023-28/D20230028.pdf",
+        "nazwa_pobierania": "DU-2023-28_tekst-ogloszony.pdf",
+        "sha256": "76716f1121345a96f89e55cda6ff8c3d18d246825373c0b30a64ec72e59cc36d",
+        "rozmiar": 321855,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2023/28/text/O/D20230028.pdf",
+        "pobrano": "2026-10-26T10:36:16+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2023-28/D20230028Lj.pdf",
+        "nazwa_pobierania": "DU-2023-28_tekst-ujednolicony.pdf",
+        "sha256": "547f7b2af75b4033d48e2abd71fbecdbd89a2a24e446b3f3585ad0b2cfba1eba",
+        "rozmiar": 305653,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2023/28/text/U/D20230028Lj.pdf",
+        "pobrano": "2026-10-26T10:36:16+00:00",
+        "data_stanu": "2025-01-20",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2023/658",
+    "tytul": "Ustawa z dnia 8 lutego 2023 r. o świadczeniu pieniężnym przysługującym członkom rodziny funkcjonariuszy lub żołnierzy zawodowych, których śmierć nastąpiła w związku ze służbą albo podjęciem poza służbą czynności ratowania życia lub zdrowia ludzkiego albo mienia",
+    "typ": "Ustawa",
+    "data_stanu": "2023-04-11",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/658",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2023-658-S001"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2023-658/D20230658.pdf",
+        "nazwa_pobierania": "DU-2023-658_tekst-ogloszony.pdf",
+        "sha256": "caa19443fa86d3b012dcbf7beb47c981d041f8c84b6ce8fc35c37885a3e2c6e2",
+        "rozmiar": 417211,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2023/658/text/O/D20230658.pdf",
+        "pobrano": "2026-10-25T22:20:22+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "DU/2024/1048",
+    "tytul": "Akt prawny DU/2024/1048",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/1048",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2024/1184",
+    "tytul": "Akt prawny DU/2024/1184",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/1184",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2024/1238",
+    "tytul": "Akt prawny DU/2024/1238",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2003-2255-S14"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "DU/2024/1243",
@@ -968,6 +3826,156 @@
     ]
   },
   {
+    "eli": "DU/2024/1387",
+    "tytul": "Akt prawny DU/2024/1387",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/1387",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2024/1481",
+    "tytul": "Akt prawny DU/2024/1481",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/1481",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2024/854",
+    "tytul": "Akt prawny DU/2024/854",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/854",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2024-854/D20240854.pdf",
+        "nazwa_pobierania": "DU-2024-854_tekst-ogloszony.pdf",
+        "sha256": "e53034c8c6a7a9d0ae8c45b440a1eb75e8cb164f57759555437fb6486fa6511e",
+        "rozmiar": 873173,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2024/854/text/O/D20240854.pdf",
+        "pobrano": "2026-10-21T09:58:24+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2024/858",
+    "tytul": "Ustawa z dnia 15 maja 2024 r. o wspieraniu rodziców w aktywności zawodowej oraz w wychowaniu dziecka - \"Aktywny rodzic\"",
+    "typ": "Ustawa",
+    "data_stanu": "2026-09-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/858",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2024-858-S001",
+      "DU-2024-858-S002",
+      "DU-2024-858-S003"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2024-858/D20240858.pdf",
+        "nazwa_pobierania": "DU-2024-858_tekst-ogloszony.pdf",
+        "sha256": "36ad8c7a5b9cf08fc71079a30c79e2c31199479fac49869375d87302d5882446",
+        "rozmiar": 865169,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2024/858/text/O/D20240858.pdf",
+        "pobrano": "2026-10-18T17:22:32+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2025/101",
+    "tytul": "Akt prawny DU/2025/101",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/101",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2025/1077",
+    "tytul": "Akt prawny DU/2025/1077",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/1077",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2025/1080",
+    "tytul": "Ustawa z dnia 25 lipca 2025 r. o szczególnych zasadach przygotowania i realizacji strategicznych inwestycji w zakresie potrzeb obronności państwa lub kluczowych inwestycji w zakresie potrzeb obronności państwa lub bezpieczeństwa publicznego oraz ustanawiania stref ochronnych terenów zamkniętych",
+    "typ": "Ustawa",
+    "data_stanu": "2026-10-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/1080",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2025-1080-S001",
+      "DU-2025-1080-S002",
+      "DU-2025-1080-S003",
+      "DU-2025-1080-S004",
+      "DU-2025-1080-S005",
+      "DU-2025-1080-S006"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2025-1080/D20251080.pdf",
+        "nazwa_pobierania": "DU-2025-1080_tekst-ogloszony.pdf",
+        "sha256": "1e99ee1b6cda70a58897b1e41f5c7c70f7cdaa08d76494212fc30d7a1246e412",
+        "rozmiar": 445104,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/1080/text/O/D20251080.pdf",
+        "pobrano": "2026-10-25T22:56:29+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2025-1080/D20251080Lj.pdf",
+        "nazwa_pobierania": "DU-2025-1080_tekst-ujednolicony.pdf",
+        "sha256": "47cc1e602285ccff20b845bf746b45c4122bf6d6983c5f85e7d1f72c4b0d155b",
+        "rozmiar": 445971,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/1080/text/U/D20251080Lj.pdf",
+        "pobrano": "2026-10-25T22:56:33+00:00",
+        "data_stanu": "2026-10-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/2025/1159",
     "tytul": "Akt prawny DU/2025/1159",
     "typ": "Akt prawny",
@@ -986,6 +3994,32 @@
         "rozmiar": 166238,
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/1159/text/O/D20251159.pdf",
         "pobrano": "2026-10-18T10:04:22+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2025/1366",
+    "tytul": "Ustawa z dnia 12 września 2025 r. o zmianie niektórych ustaw w związku z określeniem zasad zakwaterowania funkcjonariuszy Policji, Straży Granicznej, Państwowej Straży Pożarnej, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Służby Ochrony Państwa oraz poprawy niektórych warunków pełnienia służby",
+    "typ": "Ustawa",
+    "data_stanu": "2025-10-14",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/1366",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2025-1366/D20251366.pdf",
+        "nazwa_pobierania": "DU-2025-1366_tekst-ogloszony.pdf",
+        "sha256": "92e753c5468c8e3dc3a026dc505d082eb45cb87f3314ee9534d45e4b6599130f",
+        "rozmiar": 1297111,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/1366/text/O/D20251366.pdf",
+        "pobrano": "2026-10-26T09:34:26+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
@@ -1025,6 +4059,141 @@
     ]
   },
   {
+    "eli": "DU/2025/1405",
+    "tytul": "Akt prawny DU/2025/1405",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/1405",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2025/1430",
+    "tytul": "Akt prawny DU/2025/1430",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/1430",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2025/1435",
+    "tytul": "Akt prawny DU/2025/1435",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/1435",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2025/1451",
+    "tytul": "Akt prawny DU/2025/1451",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/1451",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2025/1832",
+    "tytul": "Akt prawny DU/2025/1832",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/1832",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2025/1895",
+    "tytul": "Akt prawny DU/2025/1895",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/1895",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2025/1899",
+    "tytul": "Akt prawny DU/2025/1899",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/1899",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2025/620",
+    "tytul": "Ustawa z dnia 20 marca 2025 r. o rynku pracy i służbach zatrudnienia",
+    "typ": "Ustawa",
+    "data_stanu": "2026-10-16",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2025-620-S001",
+      "DU-2025-620-S002",
+      "DU-2025-620-S003",
+      "DU-2025-620-S004",
+      "DU-2025-620-S005",
+      "DU-2025-620-S006",
+      "DU-2025-620-S007",
+      "DU-2025-620-S008",
+      "DU-2025-620-S009",
+      "DU-2025-620-S010",
+      "DU-2025-620-S011"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2025-620/D20250620.pdf",
+        "nazwa_pobierania": "DU-2025-620_tekst-ogloszony.pdf",
+        "sha256": "b4ea60e14600765173e317a19c4d41110395f87a18fbd8e6c7f6b3200c2ecd51",
+        "rozmiar": 3764021,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/620/text/O/D20250620.pdf",
+        "pobrano": "2026-10-25T22:56:05+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      },
+      {
+        "rodzaj": "U",
+        "plik": "akty/DU-2025-620/D20250620Lj.pdf",
+        "nazwa_pobierania": "DU-2025-620_tekst-ujednolicony.pdf",
+        "sha256": "28d063a8cc64162f03d23f07c26f1c59ec5975da91125c82bfb620e72ffe2660",
+        "rozmiar": 2318853,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/620/text/U/D20250620Lj.pdf",
+        "pobrano": "2026-10-25T22:56:27+00:00",
+        "data_stanu": "2026-10-16",
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/2025/718",
     "tytul": "Akt prawny DU/2025/718",
     "typ": "Akt prawny",
@@ -1043,6 +4212,88 @@
         "rozmiar": 189135,
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2025/718/text/O/D20250718.pdf",
         "pobrano": "2026-10-18T10:04:20+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "DU/2026/1277",
+    "tytul": "Akt prawny DU/2026/1277",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2026/1277",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2026/135",
+    "tytul": "Akt prawny DU/2026/135",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2026/135",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2026/525",
+    "tytul": "Akt prawny DU/2026/525",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2026/525",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2026/974",
+    "tytul": "Akt prawny DU/2026/974",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2026/974",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "DU/2026/986",
+    "tytul": "Ustawa z dnia 11 czerwca 2026 r. o osobach starszych i koordynacji opieki długoterminowej",
+    "typ": "Ustawa",
+    "data_stanu": "2026-07-24",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2026/986",
+    "url_isap": null,
+    "korzysci": [
+      "DU-2026-986-S001",
+      "DU-2026-986-S002",
+      "DU-2026-986-S003",
+      "DU-2026-986-S004",
+      "DU-2026-986-S005",
+      "DU-2026-986-S006",
+      "DU-2026-986-S007"
+    ],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2026-986/D20260986.pdf",
+        "nazwa_pobierania": "DU-2026-986_tekst-ogloszony.pdf",
+        "sha256": "264580830ac123153052ec42268ffde6cd45467206e9e40dd71a26b36fbc3de6",
+        "rozmiar": 372941,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2026/986/text/O/D20260986.pdf",
+        "pobrano": "2026-10-26T09:53:06+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,
@@ -3001,6 +6252,42 @@
     ]
   },
   {
+    "eli": "MP/2025/510",
+    "tytul": "Akt prawny MP/2025/510",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2025/510",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "MP/2026/104",
+    "tytul": "Akt prawny MP/2026/104",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/104",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "MP/2026/138",
+    "tytul": "Akt prawny MP/2026/138",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/138",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
     "eli": "MP/2026/150",
     "tytul": "Akt prawny MP/2026/150",
     "typ": "Akt prawny",
@@ -3053,6 +6340,32 @@
     ]
   },
   {
+    "eli": "MP/2026/192",
+    "tytul": "Akt prawny MP/2026/192",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/192",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2026-192/M20260192.pdf",
+        "nazwa_pobierania": "MP-2026-192_tekst-ogloszony.pdf",
+        "sha256": "823ff4a0bb42127eaef3ef5f30c7e3572fe110ca57a375ebf8ed6d89594a947e",
+        "rozmiar": 148214,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/192/text/O/M20260192.pdf",
+        "pobrano": "2026-10-22T14:52:48+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "MP/2026/220",
     "tytul": "Akt prawny MP/2026/220",
     "typ": "Akt prawny",
@@ -3077,6 +6390,66 @@
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "MP/2026/222",
+    "tytul": "Akt prawny MP/2026/222",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/222",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "MP/2026/268",
+    "tytul": "Akt prawny MP/2026/268",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/268",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "MP/2026/292",
+    "tytul": "Akt prawny MP/2026/292",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/292",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "MP/2026/318",
+    "tytul": "Akt prawny MP/2026/318",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/318",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "MP/2026/341",
+    "tytul": "Akt prawny MP/2026/341",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/341",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "MP/2026/81",
