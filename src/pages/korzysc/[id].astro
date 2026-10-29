@@ -1,4 +1,6 @@
 ---
+import { existsSync, readFileSync } from 'node:fs';
+import path from 'node:path';
 import Uklad from '../../layouts/Uklad.astro';
 import Dowod from '../../components/Dowod.astro';
 import Ikona from '../../components/Ikona.astro';
@@ -18,9 +20,17 @@ import {
 } from '../../lib/format.mjs';
 
 export function getStaticPaths() {
-  return dane().korzysci.map((k: any) => ({ params: { id: k.id } }));
+  const obecne = dane().korzysci.map((k: any) => ({ params: { id: k.id } }));
+  // dawne adresy kart (usunięte albo przenumerowane między wersjami danych): przekierowanie zamiast 404
+  const plik = path.resolve(process.cwd(), 'data', 'adresy_archiwalne.json');
+  const archiwum = existsSync(plik) ? JSON.parse(readFileSync(plik, 'utf8')).adresy ?? {} : {};
+  const ids = new Set(obecne.map((p: any) => p.params.id));
+  const dawne = Object.entries(archiwum).filter(([id, w]: any) => !ids.has(id) && w.cel)
+    .map(([id, w]: any) => ({ params: { id }, props: { przekierowanie: w.cel } }));
+  return [...obecne, ...dawne];
 }
 
+if (Astro.props.przekierowanie) return Astro.redirect(Astro.props.przekierowanie);
 const k: any = korzyscPoId(Astro.params.id!);
 const sc = kartaSocjal(k.id);
 const ile = k.ile;

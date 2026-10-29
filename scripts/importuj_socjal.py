@@ -1024,7 +1024,42 @@ def karty_analiz_eli(socjal, na_dzien, benefits, extra_karty, akty_meta, pomijan
     return opublikowane
 
 
-def generuj(socjal: Path, wynik: Path, na_dzien: str):
+# ---------------------------------------------------------------- dawne adresy kart (przekierowania zamiast 404)
+REPO = Path(__file__).resolve().parents[1]
+ARCHIWUM_ADRESOW = REPO / 'data' / 'adresy_archiwalne.json'
+
+
+def adresy_archiwalne(benefits, acts, na_dzien):
+    """Każdy adres /korzysc/<id>/, który był kiedyś opublikowany, a zniknął z danych, dostaje następcę: tę samą
+    kartę pod nowym numerem (S03 ↔ S003), kartę o tej samej nazwie z tego samego aktu, stronę aktu albo listę korzyści.
+    Rejestr rośnie przy każdym imporcie (poprzedni eksport z data/eksport), strona generuje z niego przekierowania."""
+    rej = wczytaj(ARCHIWUM_ADRESOW) if ARCHIWUM_ADRESOW.is_file() else {'_opis': '', 'adresy': {}}
+    adresy = rej.setdefault('adresy', {})
+    poprzedni = REPO / 'data' / 'eksport' / 'korzysci.json'
+    for k in (wczytaj(poprzedni) if poprzedni.is_file() else []):
+        adresy.setdefault(k['id'], {'nazwa': k.get('nazwa'), 'eli': (k.get('przepis') or {}).get('eli'), 'zniknal': None})
+    obecne = {k['id']: k for k in benefits}
+    norm = lambda n: ' '.join(re.sub(r'\([^)]*\)', '', str(n or '')).casefold().split())
+    po_nazwie = {(k['przepis']['eli'], norm(k['nazwa'])): k['id'] for k in benefits}
+    numer = lambda i: re.sub(r'-S0*(\d+)$', lambda m: '-S' + m.group(1), i)          # S03, S003 → S3
+    po_numerze = {numer(i): i for i in obecne}
+    akty = {a['eli'] for a in acts}
+    for i, w in list(adresy.items()):
+        if i in obecne:
+            del adresy[i]                                    # adres znów istnieje: przekierowanie zbędne
+            continue
+        w['zniknal'] = w.get('zniknal') or na_dzien
+        cel = po_numerze.get(numer(i)) or po_nazwie.get((w.get('eli'), norm(w.get('nazwa'))))
+        w['cel'] = ('/korzysc/{}/'.format(cel) if cel
+                    else '/akt/{}/'.format(w['eli'].replace('/', '-')) if w.get('eli') in akty else '/korzysci/')
+    rej['_opis'] = ('Dawne adresy kart (/korzysc/<id>/) usunięte albo przenumerowane między wersjami danych, z następcą. '
+                    'Strona generuje z nich przekierowania (src/pages/korzysc/[id].astro), żeby zakładki i linki nie dawały 404.')
+    rej['adresy'] = dict(sorted(adresy.items()))
+    zapis(ARCHIWUM_ADRESOW, rej)
+
+
+def generuj(socjal: Path, wynik: Path, na_dzien: str, archiwum_adresow: bool = False):
+    """archiwum_adresow: tylko przy imporcie z wiersza poleceń (main); testy nie zmieniają rejestru dawnych adresów."""
     for paczka in PACZKI_RECZNE:
         for relative in (paczka['karty'], paczka['historia']):
             if paczka['wymagana'] and not (socjal / relative).is_file():
@@ -1276,6 +1311,8 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str):
               'statystyki': {'reczne': sum(v['pochodzenie'].startswith('reczna_') for v in extra_karty.values()),
                             'automatyczne': sum(v['pochodzenie']=='automat' for v in extra_karty.values()),
                             'z_notatek': sum(v['pochodzenie']=='notatka' for v in extra_karty.values())}}
+    if archiwum_adresow:
+        adresy_archiwalne(benefits, acts, na_dzien)
     zapis(wynik / 'korzysci.json', benefits)
     zapis(wynik / 'akty.json', acts)
     zapis(wynik / 'slowniki.json', slowniki)
@@ -1305,7 +1342,7 @@ def main():
     parser.add_argument('--na-dzien', default=datetime.now().date().isoformat())
     args = parser.parse_args()
     try:
-        generuj(args.socjal.expanduser().resolve(), args.wyjscie.expanduser().resolve(), args.na_dzien)
+        generuj(args.socjal.expanduser().resolve(), args.wyjscie.expanduser().resolve(), args.na_dzien, archiwum_adresow=True)
     except (BladSocjal, OSError, ValueError) as error:
         parser.exit(1, 'BŁĄD SOCJAL: {}\n'.format(error))
 

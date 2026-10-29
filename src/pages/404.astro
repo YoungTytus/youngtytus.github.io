@@ -16,3 +16,14 @@ import Ikona from '../components/Ikona.astro';
     <p style="margin-top:24px"><a class="text-link" href="/">Strona główna <Ikona n="strzalka" /></a></p>
   </div>
 </Uklad>
+<script is:inline>
+  // Dawne adresy bez własnej strony: podstrony przepisów usunięte w 1.6 (/przepis/DU-2004-593-art-37/ → strona ustawy,
+  // /przepisy/ → lista aktów) i nieznane karty (/korzysc/…/ → wyszukiwarka). Przenumerowane karty mają osobne
+  // przekierowania (data/adresy_archiwalne.json).
+  (function () {
+    var p = location.pathname, m;
+    if ((m = p.match(/^(.*)\/przepis\/((?:DU|MP)-\d{4}-\d+)-art[^/]*\/?$/))) location.replace(m[1] + '/akt/' + m[2] + '/');
+    else if ((m = p.match(/^(.*)\/przepisy\/?$/))) location.replace(m[1] + '/akty/');
+    else if ((m = p.match(/^(.*)\/korzysc\/([^/]+)\/?$/))) location.replace(m[1] + '/korzysci/?q=' + encodeURIComponent(m[2].replace(/-/g, ' ')));
+  })();
+</script>

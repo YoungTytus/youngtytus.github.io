@@ -1,0 +1,1062 @@
+{
+  "_opis": "Dawne adresy kart (/korzysc/<id>/) usunięte albo przenumerowane między wersjami danych, z następcą. Strona generuje z nich przekierowania (src/pages/korzysc/[id].astro), żeby zakładki i linki nie dawały 404.",
+  "adresy": {
+    "DU-1990-206-S03": {
+      "nazwa": "Waloryzacja podstawy wymiaru emerytur i rent w I kwartale 1990 (art. 23, 25 pkt 3, 26 pkt 1)",
+      "eli": "DU/1990/206",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-27",
+      "cel": "/akt/DU-1990-206/"
+    },
+    "DU-1990-540-S01": {
+      "nazwa": "Rewaloryzacja emerytur i rent osób w wieku 80+ (art. 1-8, 10)",
+      "eli": "DU/1990/540",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-27",
+      "cel": "/akt/DU-1990-540/"
+    },
+    "DU-1991-24-art14-ust1": {
+      "nazwa": "zasiłek chorobowy",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art19-ust1": {
+      "nazwa": "emerytura rolnicza",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-1991-24-S003/"
+    },
+    "DU-1991-24-art21-ust1": {
+      "nazwa": "renta rolnicza z tytułu niezdolności do pracy",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art21b-ust1": {
+      "nazwa": "renta rolnicza szkoleniowa",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art22-ust1": {
+      "nazwa": "renta",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art22-ust1-renta-okresowa": {
+      "nazwa": "renta okresowa",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art22-ust3": {
+      "nazwa": "emerytura",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art27-ust1": {
+      "nazwa": "dodatek pielęgnacyjny",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art27-ust2": {
+      "nazwa": "dodatek z tytułu pracy przymusowej",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art27a-ust1": {
+      "nazwa": "dodatek z tytułu opłacania składki",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art29-ust1": {
+      "nazwa": "renta rodzinna",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art31-ust1": {
+      "nazwa": "dodatek przewidziany",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art31-ust2": {
+      "nazwa": "dodatek dla sieroty zupełnej",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art35-ust1": {
+      "nazwa": "zasiłek pogrzebowy",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art35a-ust1": {
+      "nazwa": "zasiłek macierzyński",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art35b-ust1": {
+      "nazwa": "świadczenia rodzicielskiego",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1991-24-art55-ust2": {
+      "nazwa": "świadczenie przewidziane",
+      "eli": "DU/1991/24",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1991-24/"
+    },
+    "DU-1994-385-S02": {
+      "nazwa": "Przeliczniki wysokości emerytur i rent górniczych (art. 2 ust. 2-3, art. 4 ust. 2)",
+      "eli": "DU/1994/385",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-27",
+      "cel": "/akt/DU-1994-385/"
+    },
+    "DU-1994-385-S03": {
+      "nazwa": "Ponowne obliczenie świadczeń górniczych z przelicznikiem 1,4 (art. 4 ust. 1)",
+      "eli": "DU/1994/385",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-27",
+      "cel": "/akt/DU-1994-385/"
+    },
+    "DU-1998-1118-art194j-ust4": {
+      "nazwa": "emerytura w ponownie ustalonej wysokości",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "DU-1998-1118-art24a-ust1": {
+      "nazwa": "renty",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "DU-1998-1118-art50-ust1": {
+      "nazwa": "emerytura kolejowa",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "DU-1998-1118-art57-ust1": {
+      "nazwa": "renta z tytułu niezdolności do pracy",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-1998-1118-renta-z-tytulu-niezdolnosci-do-pracy/"
+    },
+    "DU-1998-1118-art59-ust2": {
+      "nazwa": "renta okresowa",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "DU-1998-1118-art60-ust1": {
+      "nazwa": "renta szkoleniowa",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/FUS-renta-szkoleniowa/"
+    },
+    "DU-1998-1118-art65-ust1": {
+      "nazwa": "renta rodzinna",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/FUS-renta-rodzinna/"
+    },
+    "DU-1998-1118-art75-ust1": {
+      "nazwa": "dodatek pielęgnacyjny",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/FUS-dodatek-pielegnacyjny/"
+    },
+    "DU-1998-1118-art76-ust1": {
+      "nazwa": "dodatek dla sierot zupełnych",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "DU-1998-1118-art77-ust1": {
+      "nazwa": "zasiłek pogrzebowy",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/FUS-zasilek-pogrzebowy/"
+    },
+    "DU-1998-1118-art85-ust6": {
+      "nazwa": "emerytury przysługującej",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "DU-1998-1118-dodatek-pielegnacyjny": {
+      "nazwa": "dodatek pielęgnacyjny",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-20",
+      "cel": "/korzysc/FUS-dodatek-pielegnacyjny/"
+    },
+    "DU-1998-1118-renta-rodzinna": {
+      "nazwa": "renta rodzinna",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-20",
+      "cel": "/korzysc/FUS-renta-rodzinna/"
+    },
+    "DU-1998-1118-renta-szkoleniowa": {
+      "nazwa": "renta szkoleniowa",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-20",
+      "cel": "/korzysc/FUS-renta-szkoleniowa/"
+    },
+    "DU-1998-1118-skladka": {
+      "nazwa": "składka",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "DU-1998-1118-zasilek-pogrzebowy": {
+      "nazwa": "zasiłek pogrzebowy",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-20",
+      "cel": "/korzysc/FUS-zasilek-pogrzebowy/"
+    },
+    "DU-1998-1118-zwiekszenie": {
+      "nazwa": "zwiększenie",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "DU-1999-636-art1-ust1": {
+      "nazwa": "świadczenia pieniężne",
+      "eli": "DU/1999/636",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1999-636/"
+    },
+    "DU-1999-636-art18-ust1": {
+      "nazwa": "świadczenie rehabilitacyjne",
+      "eli": "DU/1999/636",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-1999-636-S002/"
+    },
+    "DU-1999-636-art23-ust1": {
+      "nazwa": "zasiłek wyrównawczy",
+      "eli": "DU/1999/636",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1999-636/"
+    },
+    "DU-1999-636-art29-ust1": {
+      "nazwa": "zasiłek macierzyński",
+      "eli": "DU/1999/636",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-1999-636-S003/"
+    },
+    "DU-1999-636-art32-ust1": {
+      "nazwa": "zasiłek opiekuńczy",
+      "eli": "DU/1999/636",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-1999-636-S004/"
+    },
+    "DU-1999-636-art33-ust1": {
+      "nazwa": "zwolnienia",
+      "eli": "DU/1999/636",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-1999-636/"
+    },
+    "DU-1999-636-art6-ust1": {
+      "nazwa": "zasiłek chorobowy",
+      "eli": "DU/1999/636",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-1999-636-S001/"
+    },
+    "DU-2001-734-art3-ust1": {
+      "nazwa": "dodatek mieszkaniowy",
+      "eli": "DU/2001/734",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2001-734-S01/"
+    },
+    "DU-2001-734-art6-ust7": {
+      "nazwa": "ryczałt",
+      "eli": "DU/2001/734",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2001-734/"
+    },
+    "DU-2003-1268-art12a-ust1": {
+      "nazwa": "zasiłek pogrzebowy",
+      "eli": "DU/2003/1268",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2003-1268/"
+    },
+    "DU-2003-1268-art4-ust1": {
+      "nazwa": "renta socjalna",
+      "eli": "DU/2003/1268",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-1268-renta-socjalna/"
+    },
+    "DU-2003-1268-art4-ust3": {
+      "nazwa": "renta socjalna okresowa",
+      "eli": "DU/2003/1268",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2003-1268/"
+    },
+    "DU-2003-1268-art6a-ust1": {
+      "nazwa": "dodatek dopełniający",
+      "eli": "DU/2003/1268",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2003-1268/"
+    },
+    "DU-2003-1268-art8-ust3": {
+      "nazwa": "renty rodzinnej",
+      "eli": "DU/2003/1268",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2003-1268/"
+    },
+    "DU-2003-1268-opieka": {
+      "nazwa": "opieka",
+      "eli": "DU/2003/1268",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2003-1268/"
+    },
+    "DU-2003-2255-art1-ust2": {
+      "nazwa": "świadczenia rodzinne",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2003-2255/"
+    },
+    "DU-2003-2255-art10-ust1": {
+      "nazwa": "dodatek z tytułu opieki nad dzieckiem w okresie korzystania z urlopu wychowawczego",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-2255-S03/"
+    },
+    "DU-2003-2255-art11a-ust1": {
+      "nazwa": "dodatek z tytułu samotnego wychowywania dziecka",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-2255-S04/"
+    },
+    "DU-2003-2255-art12a-ust1": {
+      "nazwa": "dodatek z tytułu wychowywania dziecka w rodzinie wielodzietnej",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-2255-S06/"
+    },
+    "DU-2003-2255-art13-ust1": {
+      "nazwa": "dodatek z tytułu kształcenia i rehabilitacji dziecka",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2003-2255/"
+    },
+    "DU-2003-2255-art14-ust1": {
+      "nazwa": "dodatek z tytułu rozpoczęcia roku szkolnego",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-2255-S08/"
+    },
+    "DU-2003-2255-art15-ust1": {
+      "nazwa": "dodatek z tytułu podjęcia przez dziecko nauki w szkole poza miejscem zamieszkania",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-2255-S09/"
+    },
+    "DU-2003-2255-art15b-ust1": {
+      "nazwa": "zapomoga",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2003-2255/"
+    },
+    "DU-2003-2255-art16-ust2": {
+      "nazwa": "zasiłek pielęgnacyjny",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-2255-S11/"
+    },
+    "DU-2003-2255-art17-ust1": {
+      "nazwa": "świadczenie pielęgnacyjne",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-2255-S12/"
+    },
+    "DU-2003-2255-art17c-ust1": {
+      "nazwa": "świadczenie rodzicielskie",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-2255-S15/"
+    },
+    "DU-2003-2255-art5-ust1": {
+      "nazwa": "zasiłek rodzinny",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-2255-S01/"
+    },
+    "DU-2003-2255-art9-ust1": {
+      "nazwa": "dodatek z tytułu urodzenia dziecka",
+      "eli": "DU/2003/2255",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2003-2255-S02/"
+    },
+    "DU-2004-1252-art10-ust1-pkt2": {
+      "nazwa": "zasiłek pogrzebowy",
+      "eli": "DU/2004/1252",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2004-1252/"
+    },
+    "DU-2004-1252-art2-ust3": {
+      "nazwa": "świadczenie przedemerytalne",
+      "eli": "DU/2004/1252",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2004-1252-S001/"
+    },
+    "DU-2004-593-art106-ust3": {
+      "nazwa": "świadczenia pieniężne",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2004-593/"
+    },
+    "DU-2004-593-art121-ust3a": {
+      "nazwa": "dodatek do wynagrodzenia",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2004-593/"
+    },
+    "DU-2004-593-art121-ust3c": {
+      "nazwa": "świadczenie pracy socjalnej",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2004-593/"
+    },
+    "DU-2004-593-art37-ust1": {
+      "nazwa": "zasiłek stały",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2004-593-S01/"
+    },
+    "DU-2004-593-art38-ust1": {
+      "nazwa": "zasiłek okresowy",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2004-593-S02/"
+    },
+    "DU-2004-593-dieta": {
+      "nazwa": "dieta",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2004-593/"
+    },
+    "DU-2004-593-nagroda": {
+      "nazwa": "Nagroda specjalna ministra w pomocy społecznej",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-29",
+      "cel": "/akt/DU-2004-593/"
+    },
+    "DU-2004-593-opieka": {
+      "nazwa": "Opłacanie składek emerytalnych za opiekuna chorego członka rodziny",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-29",
+      "cel": "/akt/DU-2004-593/"
+    },
+    "DU-2004-593-pomoc-dorazna": {
+      "nazwa": "Gorący posiłek (pomoc doraźna lub okresowa)",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-29",
+      "cel": "/akt/DU-2004-593/"
+    },
+    "DU-2004-593-posilek": {
+      "nazwa": "Posiłek lub całodzienne wyżywienie",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-29",
+      "cel": "/akt/DU-2004-593/"
+    },
+    "DU-2004-593-schronienie": {
+      "nazwa": "Schronienie",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-29",
+      "cel": "/akt/DU-2004-593/"
+    },
+    "DU-2004-593-specjalny-zasilek-celowy": {
+      "nazwa": "Specjalny zasiłek celowy",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-29",
+      "cel": "/korzysc/DU-2004-593-S04/"
+    },
+    "DU-2004-593-tymczasowe-schronienie": {
+      "nazwa": "tymczasowe schronienie",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2004-593/"
+    },
+    "DU-2004-593-zasilek-celowy": {
+      "nazwa": "zasiłek celowy",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/korzysc/DU-2004-593-S03/"
+    },
+    "DU-2004-593-zasilek-okresowy": {
+      "nazwa": "Zasiłek okresowy",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-29",
+      "cel": "/korzysc/DU-2004-593-S02/"
+    },
+    "DU-2004-593-zasilek-staly": {
+      "nazwa": "Zasiłek stały",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-29",
+      "cel": "/korzysc/DU-2004-593-S01/"
+    },
+    "DU-2007-1378-art1a-ust1": {
+      "nazwa": "świadczenia z funduszu alimentacyjnego",
+      "eli": "DU/2007/1378",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2007-1378/"
+    },
+    "DU-2007-1378-art2-pkt12": {
+      "nazwa": "świadczenie pielęgnacyjne",
+      "eli": "DU/2007/1378",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2007-1378/"
+    },
+    "DU-2011-887-art120": {
+      "nazwa": "świadczenia opieki zdrowotnej",
+      "eli": "DU/2011/887",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2011-887/"
+    },
+    "DU-2011-887-art80-ust1": {
+      "nazwa": "świadczenie na pokrycie kosztów jego utrzymania",
+      "eli": "DU/2011/887",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2011-887/"
+    },
+    "DU-2011-887-dofinansowanie": {
+      "nazwa": "Dofinansowanie wypoczynku dziecka w rodzinnej pieczy zastępczej",
+      "eli": "DU/2011/887",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-29",
+      "cel": "/akt/DU-2011-887/"
+    },
+    "DU-2014-567-art2-ust1": {
+      "nazwa": "zasiłek dla opiekuna",
+      "eli": "DU/2014/567",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysci/"
+    },
+    "DU-2016-195-art4-ust2": {
+      "nazwa": "świadczenie wychowawcze",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/SW-wychowawcze/"
+    },
+    "DU-2022-1692-art2-ust1": {
+      "nazwa": "dodatek węglowy",
+      "eli": "DU/2022/1692",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2022-1692-S001/"
+    },
+    "DU-2022-1692-dodatek-weglowy": {
+      "nazwa": "Dodatek węglowy (2022)",
+      "eli": "DU/2022/1692",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-29",
+      "cel": "/korzysc/DU-2022-1692-S001/"
+    },
+    "DU-2023-1429-art2-ust1": {
+      "nazwa": "świadczenie wspierające",
+      "eli": "DU/2023/1429",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2023-1429-S01/"
+    },
+    "DU-2025-620-art121-ust1": {
+      "nazwa": "dodatek do stypendium",
+      "eli": "DU/2025/620",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2025-620/"
+    },
+    "DU-2025-620-art141-ust2": {
+      "nazwa": "dofinansowanie wynagrodzenia",
+      "eli": "DU/2025/620",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2025-620/"
+    },
+    "DU-2025-620-art145-ust2": {
+      "nazwa": "świadczenie aktywizacyjne",
+      "eli": "DU/2025/620",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2025-620/"
+    },
+    "DU-2025-620-art146-ust2": {
+      "nazwa": "refundacja",
+      "eli": "DU/2025/620",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2025-620/"
+    },
+    "DU-2025-620-art217-ust6": {
+      "nazwa": "świadczenie szkoleniowe",
+      "eli": "DU/2025/620",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2025-620/"
+    },
+    "DU-2025-620-art218-ust3": {
+      "nazwa": "zwolnieniu",
+      "eli": "DU/2025/620",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2025-620/"
+    },
+    "DU-2025-620-art233-ust2": {
+      "nazwa": "dodatek aktywizacyjny",
+      "eli": "DU/2025/620",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/korzysc/DU-2025-620-S008/"
+    },
+    "DU-2025-620-art234-ust6": {
+      "nazwa": "stypendium",
+      "eli": "DU/2025/620",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-18",
+      "cel": "/akt/DU-2025-620/"
+    },
+    "FUS-c-bezplatne-poswiadczenia": {
+      "nazwa": "Nieodpłatne poświadczanie podpisów w sprawach rentowych",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-emerytura-184": {
+      "nazwa": "Wcześniejsza emerytura na podstawie art184",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-emerytura-posel": {
+      "nazwa": "Zachowana dawna emerytura posła lub senatora",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-kapital-185": {
+      "nazwa": "Podwyższenie kapitału przy wcześniejszej emeryturze art184",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-kapital-poczatkowy": {
+      "nazwa": "Kapitał początkowy jako część podstawy emerytury",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-kapital-studia": {
+      "nazwa": "Uwzględnienie studiów przy przeliczeniu kapitału początkowego",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-ochrona-potracenia": {
+      "nazwa": "Kwota emerytury/renty wolna od potrąceń i egzekucji",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-odstapienie-zwrot": {
+      "nazwa": "Odstąpienie od żądania zwrotu i ulgi w potrąceniach",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-przeliczenie-1953": {
+      "nazwa": "Przeliczenie i wyrównanie emerytury rocznika1953",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-przeliczenie-baza": {
+      "nazwa": "Przeliczenie świadczeń od pełnej kwoty bazowej",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-przeliczenie-okresy": {
+      "nazwa": "Podwyższenie przez doliczenie okresów składkowych",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-przeliczenie-podstawa": {
+      "nazwa": "Ponowne obliczenie emerytury/renty od lepszej podstawy",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-przeliczenie-skladki": {
+      "nazwa": "Powiększenie emerytury o składki po jej przyznaniu",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-przeliczenie-zawieszonej": {
+      "nazwa": "Jednorazowe ponowne obliczenie emerytury zawieszonej od2011",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-wczesniejsza-opieka": {
+      "nazwa": "Zachowane prawo do wcześniejszej emerytury opiekuna dziecka",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-wyplata-zaliczkowa": {
+      "nazwa": "Zaliczkowa wypłata należnego świadczenia",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-wyrownanie-blad": {
+      "nazwa": "Wyrównanie świadczenia po błędzie organu",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-wyrownanie-uniewinnienie": {
+      "nazwa": "Wyrównanie świadczenia wstrzymanego w czasie pozbawienia wolności przed1999",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-wyrownanie-wznowienie": {
+      "nazwa": "Wznowienie wypłaty i wyrównanie okresu wstrzymania",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-zachowane-przed1999": {
+      "nazwa": "Zachowane emerytury i renty przyznane przed reformą",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-zachowane-zasilki1998": {
+      "nazwa": "Dawne zasiłki i świadczenie rehabilitacyjne na przełomie1998/1999",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-c-zwolnienie-oplat": {
+      "nazwa": "Zwolnienie z opłat przy ubieganiu się o świadczenia",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-emerytura-gornicza": {
+      "nazwa": "Emerytura górnicza",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-emerytura-kolejowa": {
+      "nazwa": "Emerytura kolejowa",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-emerytura-obnizony-wiek-gorniczy": {
+      "nazwa": "Emerytura z obniżonym wiekiem za pracę górniczą (art.39)",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-emerytura-powszechna": {
+      "nazwa": "Emerytura powszechna — nowe zasady",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-emerytura-stare-zasady": {
+      "nazwa": "Emerytura dla urodzonych przed1.01.1949 — stare zasady",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-emerytura-szczegolne-warunki": {
+      "nazwa": "Emerytura w obniżonym wieku za szczególne warunki lub charakter pracy",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-emerytura-wczesniejsza-art29": {
+      "nazwa": "Wcześniejsza emerytura pracownicza (art.29 i46)",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-emerytura-wypadkowa-art31": {
+      "nazwa": "Wcześniejsza emerytura osoby uprawnionej do renty wypadkowej (art.31)",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "FUS-zwiekszenie-rolne": {
+      "nazwa": "Zwiększenie emerytury FUS za składki i okresy rolnicze",
+      "eli": "DU/1998/1118",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-1998-1118/"
+    },
+    "SW-bez-oplat-skarbowych": {
+      "nazwa": "Brak opłaty skarbowej w sprawach programu",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-bezplatne-zaswiadczenia-historyczne": {
+      "nazwa": "Historyczne bezpłatne zaświadczenia do świadczenia",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-dodatek-piecza-historyczny": {
+      "nazwa": "Historyczny dodatek wychowawczy w rodzinnej pieczy",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-dodatek-placowka-historyczny": {
+      "nazwa": "Historyczny dodatek do kwoty placówki rodzinnej",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-inne-swiadczenia-historyczne": {
+      "nazwa": "Historyczne powiązania świadczeń rodzinnych, alimentów i stypendiów",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-koszty-gmina-historyczne": {
+      "nazwa": "Historyczne finansowanie obsługi i wdrożenia w gminach",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-koszty-piecza-historyczne": {
+      "nazwa": "Historyczny koszt obsługi dodatków w pieczy",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-koszty-powiat": {
+      "nazwa": "Finansowanie szczególnego zadania powiatu",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-koszty-zus": {
+      "nazwa": "Finansowanie obsługi świadczenia przez ZUS",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-ochrona-egzekucji": {
+      "nazwa": "Ochrona świadczeń przed egzekucją",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-ochrona-innych-uprawnien": {
+      "nazwa": "Wyłączenie świadczenia z wybranych kryteriów dochodowych",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-pomoc-techniczna": {
+      "nazwa": "Pomoc w elektronicznym złożeniu i odbiorze dokumentów",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-przejecie-po-smierci": {
+      "nazwa": "Zachowanie początku prawa przy zmianie opiekuna po śmierci",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-rodzina-pomocowa-historyczna": {
+      "nazwa": "Historyczna część dodatku dla rodziny pomocowej",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-rzeczowa": {
+      "nazwa": "Świadczenie wychowawcze w naturze lub usługach",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-ulgi-zwrot": {
+      "nazwa": "Odstąpienie od zwrotu, odroczenie i raty świadczenia",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-wygasniecie-zwrotu": {
+      "nazwa": "Wygaśnięcie należności zwrotnej po śmierci",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    },
+    "SW-zwolnienie-pit": {
+      "nazwa": "Zwolnienie podatkowe świadczenia i wskazanych kwot pieczy",
+      "eli": "DU/2016/195",
+      "zniknal": "2026-10-29",
+      "ostatnio_w_publikacji": "2026-10-21",
+      "cel": "/akt/DU-2016-195/"
+    }
+  }
+}
