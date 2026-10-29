@@ -1,14 +1,14 @@
 {
   "kontrakt": "strona-0.4",
-  "wygenerowano": "2026-10-28T18:54:36.956440+00:00",
+  "wygenerowano": "2026-10-29T11:47:39.405985+00:00",
   "wersja_kodu": "importuj_socjal-1.6",
-  "na_dzien": "2026-10-28",
+  "na_dzien": "2026-10-29",
   "pliki": {
-    "korzysci.json": "ee7b4400701ba253ceebe2ed8bb6c4a01cd8f22f3ef75824f139fde2ef4949e9",
+    "korzysci.json": "70f6b6084e08d88ced3d0e6c1c0e90026d7fc753e2b3925cc86aba39b697814f",
     "akty.json": "fd4bb435fdbea405107c371834a8a37ea950f91d73bec052f8574b90610b0582",
     "slowniki.json": "d6956b48072205c30c3265132ba90f37d4b6df025763e5c64ce91833ba867ae7",
     "akty/SHA256SUMS": "792372852abe76156b5b0c5cbb9f0564e57ce9bc6f0466b9d14e699ea60df107",
-    "socjal.json": "b8c7a273b85324b6bfedb62f0ae1c73ca065d4757be9cc174db64ca0bbbb54a7"
+    "socjal.json": "be1d6c0eabf1908f7c46acb126fb0b239ea2761f072cf06fecfff5d8e3cd0636"
   },
   "zakres": [
     "DU/1982/269",
