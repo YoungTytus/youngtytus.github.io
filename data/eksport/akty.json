@@ -2545,6 +2545,18 @@
     "pliki": []
   },
   {
+    "eli": "DU/2012/959",
+    "tytul": "Akt prawny DU/2012/959",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2012/959",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
     "eli": "DU/2013/1304",
     "tytul": "Ustawa z dnia 27 września 2013 r. o pomocy państwa w nabyciu pierwszego mieszkania przez młodych ludzi",
     "typ": "Ustawa",
@@ -2614,6 +2626,18 @@
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "DU/2014/559",
+    "tytul": "Akt prawny DU/2014/559",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2014/559",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "DU/2014/616",
@@ -5914,6 +5938,18 @@
     ]
   },
   {
+    "eli": "MP/2016/1103",
+    "tytul": "Akt prawny MP/2016/1103",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2016/1103",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
     "eli": "MP/2016/168",
     "tytul": "Akt prawny MP/2016/168",
     "typ": "Akt prawny",
@@ -5938,6 +5974,18 @@
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "MP/2017/1014",
+    "tytul": "Akt prawny MP/2017/1014",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2017/1014",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "MP/2017/218",
@@ -5966,6 +6014,18 @@
     ]
   },
   {
+    "eli": "MP/2018/1099",
+    "tytul": "Akt prawny MP/2018/1099",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2018/1099",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
     "eli": "MP/2018/216",
     "tytul": "Akt prawny MP/2018/216",
     "typ": "Akt prawny",
@@ -5990,6 +6050,18 @@
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "MP/2019/1067",
+    "tytul": "Akt prawny MP/2019/1067",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2019/1067",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "MP/2019/202",
@@ -6018,6 +6090,18 @@
     ]
   },
   {
+    "eli": "MP/2020/1031",
+    "tytul": "Akt prawny MP/2020/1031",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2020/1031",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
     "eli": "MP/2020/197",
     "tytul": "Akt prawny MP/2020/197",
     "typ": "Akt prawny",
@@ -6042,6 +6126,18 @@
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "MP/2021/1021",
+    "tytul": "Akt prawny MP/2021/1021",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2021/1021",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "MP/2021/222",
@@ -6070,6 +6166,18 @@
     ]
   },
   {
+    "eli": "MP/2022/1070",
+    "tytul": "Akt prawny MP/2022/1070",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2022/1070",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
     "eli": "MP/2022/260",
     "tytul": "Akt prawny MP/2022/260",
     "typ": "Akt prawny",
@@ -6094,6 +6202,18 @@
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "MP/2023/1224",
+    "tytul": "Akt prawny MP/2023/1224",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2023/1224",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "MP/2023/209",
@@ -6146,6 +6266,30 @@
         "zrodlo": "API Sejmu (ELI)"
       }
     ]
+  },
+  {
+    "eli": "MP/2024/967",
+    "tytul": "Akt prawny MP/2024/967",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2024/967",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
+    "eli": "MP/2025/1127",
+    "tytul": "Akt prawny MP/2025/1127",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2025/1127",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
   },
   {
     "eli": "MP/2025/133",

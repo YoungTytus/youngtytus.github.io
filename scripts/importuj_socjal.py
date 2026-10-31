@@ -744,6 +744,33 @@ def zastosuj_standard(socjal, benefits):
             k['rodzaj_korzysci'] = 'swiadczenie_rzeczowe'
         if s.get('rodzaj'):
             k['rodzaj_korzysci'] = s['rodzaj']
+        # Standard karty 2.0: sytuacje życiowe ustalone przy ujednolicaniu tekstów (pierwszeństwo przed tematami z nazwy)
+        if s.get('sytuacje'):
+            k['sytuacje'] = list(s['sytuacje'])
+            k['sytuacje_zrodlo'] = 'standard karty (Dane/Mapa/standard_kart.json)'
+
+
+def zastosuj_status_paczek(socjal, benefits):
+    """Ustalenia audytu kart 2026-11 dla ręcznych paczek FUS i SW (Dane/<FUS|SW>/status_kart.json; zgoda właściciela 31.10.2026):
+    status karty z dowodem (przepis przyznający w aktualnym tekście ujednoliconym), data „od” kwoty aktualnej z dowodem.
+    Paczki same nie niosą statusu, więc bez tego pliku karty mają „do ustalenia”."""
+    for prefiks in ('FUS', 'SW'):
+        p = socjal / 'Dane' / prefiks / 'status_kart.json'
+        nad = wczytaj(p).get('karty', {}) if p.is_file() else {}
+        for k in benefits:
+            o = nad.get(k['id'])
+            if not o:
+                continue
+            if o.get('status') in ('obowiazuje', 'zamknieta') and o.get('dowod'):
+                k['status'] = o['status']
+                k['_status_dowod'] = o['dowod']
+            a = k['ile'].get('aktualna')
+            if o.get('kwota_od') and o.get('kwota_od_dowod') and a and not a.get('od'):
+                a['od'] = o['kwota_od']
+                for w in k['ile'].get('os_czasu') or []:
+                    if not w.get('od') and (w.get('wartosc') == a.get('wartosc') or w.get('wartosc') is None):
+                        w['od'] = o['kwota_od']
+                        w['_od_dowod'] = o['kwota_od_dowod']
 
 
 def uporzadkuj_prezentacje(benefits, na_dzien):
@@ -809,6 +836,9 @@ def uporzadkuj_prezentacje(benefits, na_dzien):
             ('opieka_nad_bliskim', r'opiekuń|opiekun|opieki nad|pielęgnac|wytchnieni|świadczenie wspierające'),
             ('niski_dochod', r'zasiłek (?:stały|okresowy|celowy)|pomoc społeczn|posiłek|dożywian|dodatek mieszkaniow|osłonow|ubóst|kryteri\w* dochodow|niskie\w* dochod|najniższ'),
             ('cudzoziemiec', r'cudzoziem|ukrain|repatria|uchodź|ochron\w* międzynarod'),
+            # sytuacje dodane 31.10.2026 (decyzja właściciela, audyt kart): zdrowie i choroba, śmierć bliskiej osoby
+            ('smierc_bliskiej', r'pogrzeb|pośmiertn|po śmierci|śmierci członka|zmarłego|zmarłej|renta rodzinna'),
+            ('zdrowie_choroba', r'chorobow|chorob\w* zawodow|leczeni|uzdrowisk|opieki zdrowotnej|transport sanitarny|wypadk\w* przy pracy|wypadkow'),
         ]
         auto = (k.get('sytuacje_zrodlo') or '').startswith('automat') and len(k['sytuacje']) > 2
         if not k['sytuacje'] or auto:
@@ -1291,7 +1321,8 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str, archiwum_adresow: bool = F
                  'rodzaj_korzysci': typ, 'status': status, 'komu': opis,
                  'opis_prosty': None, 'sytuacje': [x for x in src.get('sytuacje', [])
                     if x in ('dziecko','ciaza_porod','niepelnosprawnosc','opieka_nad_bliskim',
-                             'senior','niski_dochod','utrata_pracy','mieszkanie_energia','edukacja','cudzoziemiec')],
+                             'senior','niski_dochod','utrata_pracy','mieszkanie_energia','edukacja','cudzoziemiec',
+                             'zdrowie_choroba','smierc_bliskiej')],
                  'sytuacje_zrodlo': 'automatyczne', 'przepis': pr, 'ile': bez_kwoty(),
                  'do_kiedy': [], 'powiazane': [],
                  'stan': {'data_stanu': akty_meta.get(eli, {}).get('stan') or na_dzien,
@@ -1343,6 +1374,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str, archiwum_adresow: bool = F
     benefits, poza_mapa = kwalifikuj_do_mapy(socjal, benefits, extra_karty)
     zastosuj_standard(socjal, benefits)
     uporzadkuj_prezentacje(benefits, na_dzien)
+    zastosuj_status_paczek(socjal, benefits)
     if not benefits: raise BladSocjal('Brak kart do publikacji.')
     ids = [b['id'] for b in benefits]
     if len(ids) != len(set(ids)):
@@ -1410,7 +1442,8 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str, archiwum_adresow: bool = F
         'sytuacje': {'dziecko':'dziecko','ciaza_porod':'ciąża i poród',
            'niepelnosprawnosc':'niepełnosprawność','opieka_nad_bliskim':'opieka nad bliskim',
            'senior':'senior','niski_dochod':'niski dochód','utrata_pracy':'utrata pracy',
-           'mieszkanie_energia':'mieszkanie i energia','edukacja':'edukacja', 'cudzoziemiec':'cudzoziemiec'}}
+           'mieszkanie_energia':'mieszkanie i energia','edukacja':'edukacja', 'cudzoziemiec':'cudzoziemiec',
+           'zdrowie_choroba':'zdrowie i choroba', 'smierc_bliskiej':'śmierć bliskiej osoby'}}
     extras = {'kontrakt': 'socjal-1', 'na_dzien': na_dzien,
               'karty': extra_karty, 'artykuly': sorted(artykuly.values(), key=lambda a: a['id']),
               'historia': historia, 'pominiete_duplikaty': pominiete, 'poza_mapa': poza_mapa,
