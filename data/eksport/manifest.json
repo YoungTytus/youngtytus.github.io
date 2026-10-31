@@ -1,14 +1,14 @@
 {
   "kontrakt": "strona-0.4",
-  "wygenerowano": "2026-10-29T12:30:48.973100+00:00",
+  "wygenerowano": "2026-10-31T12:18:22.028518+00:00",
   "wersja_kodu": "importuj_socjal-1.6",
-  "na_dzien": "2026-10-29",
+  "na_dzien": "2026-10-31",
   "pliki": {
-    "korzysci.json": "16cef4b3dc8973ce55192be4bc4e2046c5ea185a39d407698a528f26264dd64c",
+    "korzysci.json": "eb617bd549232285e3a7de5d5cfaf18ee95e444ff0560210264419d9e0e44010",
     "akty.json": "f11bf6fa014b658f9e25fbe02773f51c17772b75fbb40afc4279b999cb1a1f90",
     "slowniki.json": "d6956b48072205c30c3265132ba90f37d4b6df025763e5c64ce91833ba867ae7",
     "akty/SHA256SUMS": "a45252932c992fabe9a57f8c096058d1e27007fab451541980ee35dc5067d83d",
-    "socjal.json": "ea5cabbafb231f2e48e86b50cb633ad0f4e61735e82202dca7e84ee0ea51b918"
+    "socjal.json": "f6f27ecfc89e70ec3c833a96644b397daf6a6a61bfb4731368168b0d5869df35"
   },
   "zakres": [
     "DU/1974/117",
