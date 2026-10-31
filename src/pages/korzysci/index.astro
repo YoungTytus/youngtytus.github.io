@@ -3,10 +3,14 @@ import Uklad from '../../layouts/Uklad.astro';
 import KartaKorzysci from '../../components/KartaKorzysci.astro';
 import UwagaDanych from '../../components/UwagaDanych.astro';
 import { dane, indeksWyszukiwania, posortowaneKorzysci } from '../../lib/model.mjs';
+import { krotkiTytul } from '../../lib/format.mjs';
 
 const d = dane();
 const lista = posortowaneKorzysci();
-const akty = [...new Set(d.korzysci.map((k: any) => k.przepis.eli))].map((eli) => ({ eli, tytul: d.akty.find((a: any) => a.eli === eli)?.tytul ?? eli }));
+// filtr ustaw: krótka nazwa zamiast kodu ELI, alfabetycznie
+const akty = [...new Set(d.korzysci.map((k: any) => k.przepis.eli))]
+  .map((eli) => ({ eli, tytul: krotkiTytul(d.akty.find((a: any) => a.eli === eli)?.tytul, eli) }))
+  .sort((a, b) => a.tytul.localeCompare(b.tytul, 'pl'));
 const opcje = (o: Record<string, string>) => Object.entries(o);
 ---
 <Uklad tytul="Wszystkie korzyści" opis="Lista świadczeń i pomocy od państwa z filtrami według formy pomocy, rodzaju, sytuacji życiowej, statusu i aktu prawnego." sekcja="korzysci">
@@ -37,7 +41,7 @@ const opcje = (o: Record<string, string>) => Object.entries(o);
         <select name="status"><option value="">wszystkie</option>{opcje(d.slowniki.status).map(([k, v]) => <option value={k}>{v}</option>)}</select>
       </label>
       <label>Akt prawny
-        <select name="akt"><option value="">wszystkie</option>{akty.map((a) => <option value={a.eli}>{a.eli}</option>)}</select>
+        <select name="akt"><option value="">wszystkie</option>{akty.map((a) => <option value={a.eli} title={a.eli}>{a.tytul.length > 70 ? a.tytul.slice(0, 68) + '…' : a.tytul}</option>)}</select>
       </label>
       <label>Sortuj
         <select name="sort"><option value="nazwa">po nazwie</option><option value="kwota">po kwocie</option></select>

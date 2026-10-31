@@ -102,6 +102,7 @@ const dowodNominalnej = nominalnyKrok >= 0
         <p class="notice closed"><strong>Korzyść zakończona.</strong> Zostawiamy ją jako informację historyczną.{terminWniosku && <> Termin złożenia wniosku: {dataLubBrak(terminWniosku.data)}.{terminWniosku.skutek && ` ${terminWniosku.skutek}`} <a class="link" href="#terminy">Szczegóły i przepis</a>.</>}</p>
       )}
       <UwagaDanych />
+      {k.flagi?.length > 0 && <aside class="notice"><ul>{k.flagi.map((f: string) => <li>{typo(f)}</li>)}</ul></aside>}
     </div>
   </div>
 
@@ -137,8 +138,8 @@ const dowodNominalnej = nominalnyKrok >= 0
             <p class="amount-date">Limit z przepisu: {typo(limit.przepis)}. Od {dataPL(limit.od)} Dokładną kwotę ustala organ w decyzji.</p>
           </>}
           {!a && !limit && k.forma === 'niepieniezne' && <p class="amount-missing">Świadczenie niepieniężne: państwo daje rzecz, usługę albo miejsce (np. posiłek, schronienie, opiekę). Taka pomoc nie ma kwoty.</p>}
-          {!a && !limit && k.forma !== 'niepieniezne' && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : indywidualna ? `Kwota indywidualna. ${indywidualna.powod}` : ile.regula ? 'Kwota określona regułą' : 'Nie ustalono'}</p>}
-          {a && <p class="amount-date">{a.od ? `Od ${dataPL(a.od)}` : `Data początku: ${dataLubBrak(a.od)}`}</p>}
+          {!a && !limit && k.forma !== 'niepieniezne' && <p class="amount-missing">{ile.wyliczenie ? 'Brak odrębnie potwierdzonej kwoty aktualnej. Dostępne jest wyliczenie pomocnicze poniżej.' : indywidualna ? `Kwota indywidualna. ${indywidualna.powod}` : ile.regula ? 'Kwota zależy od sytuacji osoby — zasada obliczenia niżej, w punkcie „Reguła”.' : 'Kwoty nie ustalono.'}</p>}
+          {a && <p class="amount-date">{a.od ? `Od ${dataPL(a.od)}` : 'Kwota z obecnego tekstu ustawy; daty, od której obowiązuje, nie ustalono.'}</p>}
           {a?.do && <p class="amount-date">Do {dataLubBrak(a.do)}</p>}
           {!a && ile.wyliczenie && <p class="amount-date"><a href="#wyliczenie" style="text-decoration:underline">Zobacz wyliczenie pomocnicze i jego źródła</a>.</p>}
           {ile.zwiekszenia?.map((z: any, i: number) => <p>+ <Kwota wartosc={z.kwota} href={`#zwiekszenie-${i}`} etykieta={etykietaDowodu(z.dowod)} />{z.limit && <> (najwyżej <Kwota wartosc={z.limit} href={z.dowod_limitu ? `#limit-zwiekszenia-${i}` : `#zwiekszenie-${i}`} etykieta="Dowód limitu" />)</>}: {typo(z.warunek)}</p>)}
@@ -149,7 +150,7 @@ const dowodNominalnej = nominalnyKrok >= 0
           {k.forma && <li><span>Forma świadczenia</span><span>{etykietaFormy[k.forma as keyof typeof etykietaFormy]}</span></li>}
           <li><span>Jak ustalono kwotę</span><span>{etykietaRozwiazania[ile.rozwiazanie as keyof typeof etykietaRozwiazania]}</span></li>
           {ile.regula && (
-            <li><span>Reguła</span><span>{ile.regula.udzial && <><Kwota wartosc={ile.regula.udzial} href={dowodR!.href} etykieta={dowodR!.etykieta} /> </>}{ile.regula.opis}{podstawa ? <>, zob. <a class="link" href={`/korzysc/${podstawa.id}/`}>{podstawa.nazwa}</a></> : ile.regula.podstawa_id ? <span class="muted"> (korzyść bazowa nie ma karty w tej wersji danych)</span> : <span class="muted"> (brak powiązanej karty kwoty bazowej w eksporcie)</span>}</span></li>
+            <li><span>Reguła</span><span>{ile.regula.udzial && <><Kwota wartosc={ile.regula.udzial} href={dowodR!.href} etykieta={dowodR!.etykieta} /> </>}{ile.regula.opis}{podstawa ? <>, zob. <a class="link" href={`/korzysc/${podstawa.id}/`}>{podstawa.nazwa}</a></> : null}</span></li>
           )}
           {ile.kwota_ustawowa_zastapiona !== null && (
             <li><span>Kwota zapisana w ustawie</span>
@@ -169,27 +170,27 @@ const dowodNominalnej = nominalnyKrok >= 0
           <div class="table-wrap" tabindex="0"><table><caption>Udziały w kwocie bazowej według przepisu{kwotyWariantow.size > 0 && ' i wyliczenia pomocnicze'}</caption><thead><tr><th scope="col">Warunek</th><th scope="col">Udział</th>{kwotyWariantow.size > 0 && <th scope="col">Wyliczenie pomocnicze</th>}</tr></thead><tbody>
             {ile.regula.warianty.map((v: any, vi: number) => { const dowod = dowodReguly(v.udzial); const kwota = kwotyWariantow.get(JSON.stringify([v.etykieta, v.udzial])); return <tr><td>{typo(etykietaWariantu(v, vi))}</td><td><Kwota wartosc={v.udzial} href={dowod.href} etykieta={dowod.etykieta} /></td>{kwotyWariantow.size > 0 && <td>{kwota ? <Kwota wartosc={kwota as string} href="#wyliczenie" etykieta="Wyliczenie i źródła" /> : 'Nie ustalono'}</td>}</tr>; })}
           </tbody></table></div>
-          <p class="summary-note">{kwotyWariantow.size > 0 ? 'Kwoty obliczono w eksporcie danych według reguły procentowej. Strona pokazuje dostarczony wynik.' : 'Strona pokazuje regułę z eksportu. Dane nie zawierają wyliczonej kwoty w złotych.'}</p>
+          <p class="summary-note">{kwotyWariantow.size > 0 ? 'Kwoty obliczono według reguły procentowej z przepisu; źródła obliczenia są w wyliczeniu.' : 'Przepis podaje regułę procentową; kwoty w złotych nie wyliczono.'}</p>
         </>}
         {ile.wyliczenie && <Wyliczenie wyliczenie={ile.wyliczenie} />}
 
         <h3>Historia kwot</h3>
         {ile.os_czasu.length > 0 && <Wykres k={k} dzis={dzis} idTabeli="historia" />}
-        {ile.os_czasu.length === 0 && <p class="summary-note">Eksport nie zawiera historycznych kwot zapisanych wprost w aktach.{ile.wyliczenie && <> Bieżący wynik obliczenia pokazujemy w sekcji <a class="link" href="#wyliczenie">Jak wyliczono kwotę</a>.</>}</p>}
+        {ile.os_czasu.length === 0 && <p class="summary-note">Brak historii kwot zapisanych wprost w przepisach.{ile.wyliczenie && <> Bieżący wynik obliczenia pokazujemy w sekcji <a class="link" href="#wyliczenie">Jak wyliczono kwotę</a>.</>}</p>}
         {ile.os_czasu.length > 0 && <div class="table-wrap" id="historia" tabindex="0">
           <table>
-            <caption>Historia wartości: kwoty, okresy, zmiany i dowody z eksportu</caption>
+            <caption>Historia kwot: okresy, zmiany i źródła</caption>
             <thead><tr><th scope="col">Wartość</th><th scope="col">Od</th><th scope="col">Do</th><th scope="col">Rodzaj zmiany</th><th scope="col">Różnica</th><th scope="col">Dowód</th></tr></thead>
             <tbody>
               {ile.os_czasu.map((w: any, i: number) => (
                 <tr>
                   <td>
-                    {w.wartosc && <Kwota wartosc={w.wartosc} href={`#wpis-${i}`} etykieta="cytat" />}
-                    {!w.wartosc && w.warianty?.map((v: any, vi: number) => <div class="table-variant"><Kwota wartosc={v.wartosc} href={`#wpis-${i}`} etykieta="cytat" /><span>{etykietaWariantu(v, vi)}</span></div>)}
+                    {w.wartosc && <Kwota wartosc={w.wartosc} href={`#wpis-${i}`} etykieta="źródło" />}
+                    {!w.wartosc && w.warianty?.map((v: any, vi: number) => <div class="table-variant"><Kwota wartosc={v.wartosc} href={`#wpis-${i}`} etykieta="źródło" /><span>{etykietaWariantu(v, vi)}</span></div>)}
                     {w._przyklad && <><br /><span class="example-tag">przykład</span></>}
                   </td>
                   <td>{w.od ? dataLubBrak(w.od) : <span class="muted">nie ustalono</span>}</td>
-                  <td>{w.do === null ? <span class="muted">brak daty końca w eksporcie</span> : <span class:list={{ muted: czyZaslepka(w.do) }}>{dataLubBrak(w.do)}</span>}</td>
+                  <td>{w.do === null ? <span class="muted">bez daty końca</span> : <span class:list={{ muted: czyZaslepka(w.do) }}>{dataLubBrak(w.do)}</span>}</td>
                   <td>{etykietaZmiany[w.rodzaj_zmiany as keyof typeof etykietaZmiany]}{w.poprzednia && <><br /><span class="muted">poprzednio: {typo(w.poprzednia)}</span></>}</td>
                   <td>{w.roznica ? <>{typo(w.roznica.kwota)}<br /><span class="muted">{w.roznica.procent}</span></> : <span class="muted">{i === 0 || !w.poprzednia ? '—' : 'nie podano'}</span>}</td>
                   <td><a class="link" href={`#wpis-${i}`}>{typo(etykietaDowodu(w.dowod))}</a></td>
@@ -198,7 +199,7 @@ const dowodNominalnej = nominalnyKrok >= 0
             </tbody>
           </table>
         </div>}
-        {ile.os_czasu.length > 0 && <p class="summary-note">Różnice podaje pipeline danych, strona ich nie przelicza. „—” przy pierwszym wpisie oznacza brak poprzedniej kwoty w danych.</p>}
+        {ile.os_czasu.length > 0 && <p class="summary-note">„—” przy pierwszym wpisie: brak wcześniejszej kwoty w źródłach.</p>}
         {ile.os_czasu.length > 0 && <Zwijana tytul="Dowody wpisów historii" liczba={ile.os_czasu.length} opis="Cytat i akt dla każdej kwoty z tabeli.">
           {ile.os_czasu.map((w: any, i: number) => (
             <details id={`wpis-${i}`}>
@@ -221,7 +222,7 @@ const dowodNominalnej = nominalnyKrok >= 0
           <Zwijana tytul={etykieta('rodzaj_terminu', r)} liczba={terminyWg[r].length} prog={2} opis={OPIS_TERMINU[r as keyof typeof OPIS_TERMINU]}>
             {terminyWg[r].map((t: any) => (
               <>
-                <p class="termin-data">{t.okres ? <>{typo(t.okres)}{t.zdarzenie && ` od zdarzenia: ${t.zdarzenie}`}</> : t.od ? <>Od {dataLubBrak(t.od)}{t.do && ` do ${dataLubBrak(t.do)}`}</> : dataLubBrak(t.data, 'brak konkretnej daty w eksporcie')}</p>
+                <p class="termin-data">{t.okres ? <>{typo(t.okres)}{t.zdarzenie && ` od zdarzenia: ${t.zdarzenie}`}</> : t.od ? <>Od {dataLubBrak(t.od)}{t.do && ` do ${dataLubBrak(t.do)}`}</> : dataLubBrak(t.data, 'bez konkretnej daty w przepisie')}</p>
                 <p>{typo(t.opis)}</p>
                 {t.skutek && <p class="skutek"><Ikona n="uwaga" /><span><strong>Skutek: </strong>{typo(t.skutek)}</span></p>}
                 <Dowod dowod={t.dowod} />
@@ -230,7 +231,7 @@ const dowodNominalnej = nominalnyKrok >= 0
             ))}
           </Zwijana>
         ))}
-        {KOLEJNOSC_TERMINOW.some((r) => !terminyWg[r].length) && <p class="summary-note">Brak terminów w danych: {KOLEJNOSC_TERMINOW.filter((r) => !terminyWg[r].length).map((r) => etykieta('rodzaj_terminu', r)).join(', ')}.</p>}
+        {KOLEJNOSC_TERMINOW.every((r) => !terminyWg[r].length) && <p class="summary-note">Przepisy nie podają terminów ani okresów dla tej pozycji; świadczenie przysługuje, dopóki spełnione są warunki.</p>}
       </section>
 
       <!-- SKĄD TO WIEMY -->

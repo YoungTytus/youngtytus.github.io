@@ -106,7 +106,7 @@ const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
         {wyroznione.map((k) => <KartaKorzysci k={k} />)}
       </div>
       <UwagaDanych />
-      <p class="summary-note">W bazie: {d.korzysci.length} {d.korzysci.length === 1 ? 'korzyść' : 'korzyści'}, {d.akty.length} aktów prawnych, {liczbaPlikow} plików tekstów aktów. Zakres: {d.manifest.zakres.join(', ')}.</p>
+      <p class="summary-note">W bazie: {d.korzysci.length} {d.korzysci.length === 1 ? 'korzyść' : 'korzyści'}, {d.akty.length} aktów prawnych, {liczbaPlikow} plików tekstów aktów. <a class="link" href="/akty/">Lista ustaw</a>.</p>
     </div>
   </section>
 

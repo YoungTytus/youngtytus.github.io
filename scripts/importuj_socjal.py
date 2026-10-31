@@ -746,6 +746,96 @@ def zastosuj_standard(socjal, benefits):
             k['rodzaj_korzysci'] = s['rodzaj']
 
 
+def uporzadkuj_prezentacje(benefits, na_dzien):
+    """Zachowuje role danych: minimum, termin naboru i temat nie ustalają indywidualnego prawa."""
+    for k in benefits:
+        ile = k['ile']
+        a = ile.get('aktualna')
+        warianty = (a or {}).get('warianty') or []
+        jest_min = lambda v: bool(re.search(r'najniższ|minim', v.get('etykieta') or '', re.I))
+        cel_doplaty = bool(a) and a.get('_mechanizm') == 'kwota_do_minimum'
+        if cel_doplaty or any(jest_min(v) for v in warianty):
+            # Minimum (albo kwota docelowa dopłaty) to próg, nie wypłata każdej osobie: przenosimy do progów
+            # tylko warianty minimum, z historią i dowodami; pełne kwoty (także dawne) zostają na osi czasu.
+            ma_min = (lambda v: True) if cel_doplaty else jest_min
+            serie, nowa_os = defaultdict(list), []
+            for w in ile['os_czasu']:
+                vs = w.get('warianty') or ([{'etykieta': 'Minimum', 'wartosc': w.get('wartosc')}] if cel_doplaty else [])
+                mins = [v for v in vs if ma_min(v)]
+                for v in mins:
+                    wpis = dict(w, wartosc=v['wartosc'], warianty=None)
+                    if not cel_doplaty:
+                        wpis['_rodzaj'] = 'minimum'
+                    serie[v.get('etykieta') or 'Minimum'].append(wpis)
+                reszta = [v for v in (w.get('warianty') or []) if not ma_min(v)]
+                if not mins:
+                    nowa_os.append(w)                     # wpis bez minimum (np. dawna pełna kwota) zostaje bez zmian
+                elif reszta:
+                    nowa_os.append(dict(w, wartosc=reszta[0]['wartosc'] if len(reszta) == 1 else None,
+                                        warianty=None if len(reszta) == 1 else reszta))
+            if not serie:                                 # minimum bez historii: zachować jedyną znaną wartość
+                for v in (warianty if not cel_doplaty else [{'etykieta': 'Minimum', 'wartosc': a.get('wartosc')}]):
+                    if ma_min(v):
+                        serie[v.get('etykieta') or 'Minimum'].append({
+                            'wartosc': v['wartosc'], 'warianty': None, 'od': a.get('od'), 'do': a.get('do'),
+                            'rodzaj_zmiany': 'pierwszy_znany_wpis', 'poprzednia': None, 'roznica': None,
+                            'dowod': k.get('przepis'), **({} if cel_doplaty else {'_rodzaj': 'minimum'})})
+            for etykieta, wpisy in serie.items():
+                ile['progi'].append({'przepis': ('Kwota docelowa, nie wysokość dopłaty: ' if cel_doplaty else 'Minimum: ')+etykieta, 'wpisy': wpisy})
+            ile['os_czasu'] = nowa_os
+            pelne = [] if cel_doplaty else [v for v in warianty if not jest_min(v)]
+            ile['aktualna'] = dict(a, warianty=pelne) if pelne else None
+            if not ile['aktualna']:
+                ile['rozwiazanie'] = 'formula' if ile.get('regula') else 'nieustalone'
+            k['flagi'].append('Podane minimum nie jest kwotą wypłacaną każdej osobie. Pełna kwota zależy od właściwego wzoru i warunków.')
+        # Termin wniosku oznacza koniec naboru, nie automatyczny koniec wypłat i roszczeń. Gałąź bez daty
+        # (np. „12 miesięcy od zdarzenia”) oznacza, że nabór nadal trwa.
+        terminy = [t for t in k['do_kiedy'] if t['rodzaj'] == 'termin_wniosku']
+        if terminy and all(data_tekstu(t.get('do') or t.get('data')) and (t.get('do') or t['data']) < na_dzien for t in terminy) \
+                and k['status'] == 'obowiazuje':
+            k['status'] = 'do_ustalenia'
+            k['flagi'].append('Wskazany termin składania wniosków minął. Dalsze wypłaty lub rozliczenia wymagają sprawdzenia przepisów przejściowych.')
+        # Tematy porządkują wyszukiwarkę; nie są dodatkowym warunkiem prawa do świadczenia. Najpierw nazwa, gdy
+        # nic nie pasuje — opis. Tagi automatu skryptu mapy (słowa z warunków, np. „emerytura” → „dziecko”) zastępujemy
+        # tematem z nazwy, gdy jest ich więcej niż dwa.
+        tematy = [
+            ('utrata_pracy', r'bezrobot|zasiedleni|kształcenie ustawiczne|aktywizac|bon\w* (?:szkoleni|stażow|zatrudnieni)|stypendium (?:staż|szkoleni)|poszukując\w* prac|restruktur'),
+            ('edukacja', r'stypend|nauk|kształc|szkoln|student|doktorant|wyprawk'),
+            ('mieszkanie_energia', r'mieszkan|czynsz|lokal|węgl|energi|gaz\b|gazow|ciepł|ogrzew|opał|schronieni|grzewcz|termomoderniz|kredyt\w* mieszk'),
+            ('niepelnosprawnosc', r'niepełnospraw|niezdoln|inwalid|renta socjalna|dodatek dopełniając|rehabilit|niewidom|samodzielnej egzystencji|turnus'),
+            ('senior', r'emerytur|senior|80\+|kombatan|w wieku'),
+            ('ciaza_porod', r'urodzeni|rodzicielsk|macierzyń|ciąż|poród|becik'),
+            ('dziecko', r'dziec|rodzinn|wychowaw|żłob|siero|pieczy|usamodzieln|alimenta|rodzic'),
+            ('opieka_nad_bliskim', r'opiekuń|opiekun|opieki nad|pielęgnac|wytchnieni|świadczenie wspierające'),
+            ('niski_dochod', r'zasiłek (?:stały|okresowy|celowy)|pomoc społeczn|posiłek|dożywian|dodatek mieszkaniow|osłonow|ubóst|kryteri\w* dochodow|niskie\w* dochod|najniższ'),
+            ('cudzoziemiec', r'cudzoziem|ukrain|repatria|uchodź|ochron\w* międzynarod'),
+        ]
+        auto = (k.get('sytuacje_zrodlo') or '').startswith('automat') and len(k['sytuacje']) > 2
+        if not k['sytuacje'] or auto:
+            for tekst, zrodlo in ((k['nazwa'], 'nazwy'), (k.get('opis_prosty') or '', 'opisu')):
+                znalezione = [tag for tag, pat in tematy if re.search(pat, tekst.casefold())]
+                if znalezione:
+                    k['sytuacje'] = znalezione
+                    k['sytuacje_zrodlo'] = 'redakcyjne: temat z {} świadczenia, nie ocena uprawnienia'.format(zrodlo)
+                    break
+        # Rodzaj: zasiłki pogrzebowe, odprawy, odszkodowania, zapomogi i świadczenia „jednorazowe” wypłaca się raz.
+        if k.get('rodzaj_korzysci') == 'swiadczenie_okresowe' and re.search(
+                r'pogrzeb|odpraw|odszkodow|zapomog|jednoraz|wyprawk|becik|zagospodarow|gratyfik|rekompensat|wyrównani|bon\b',
+                k['nazwa'].casefold()):
+            k['rodzaj_korzysci'] = 'swiadczenie_jednorazowe'
+        # Wewnętrzne skróty analiz („w U”, „tekst U-2026-…”) w opisie i „komu” → język odbiorcy (cytaty bez zmian).
+        for pole in ('opis_prosty', 'komu'):
+            if k.get(pole):
+                t = re.sub(r'\b(?:w\s+)?(?:odczytanym\s+)?(?:tekście\s+)?U(?:-\d{4}-\d{2}-\d{2})?\b(?=[\s:;,)]|\.(?!\w))', 'w obecnym tekście ustawy', k[pole])
+                k[pole] = re.sub(r'\bNominał\b', 'Kwota nominalna', t)
+        # Opis nie powtarza nazwy („Aktywni rodzice w pracy. 1500 zł…” → „1500 zł…”).
+        opis = k.get('opis_prosty') or ''
+        if opis.casefold().startswith(k['nazwa'].casefold()) and len(opis) > len(k['nazwa']) + 3:
+            reszta = opis[len(k['nazwa']):].lstrip(' .:–—-')
+            if reszta:
+                k['opis_prosty'] = reszta[0].upper() + reszta[1:]
+
+
 def forma_karty(k, rodzaj_zrodlowy, reguly):
     """Pieniężne / niepieniężne (rzecz, usługa, miejsce). Karta z kwotą jest pieniężna."""
     if k['ile']['aktualna'] or k['ile']['wyliczenie'] or k['ile']['os_czasu']:
@@ -950,19 +1040,31 @@ def karty_analiz_eli(socjal, na_dzien, benefits, extra_karty, akty_meta, pomijan
                 stare = bool(od and od < DENOMINACJA)
                 tekst = lambda w: zlote(w) + (' (stare złote, przed denominacją 1.01.1995)' if stare else '')
                 jedna = len(grupa) == 1
+                konce = [data_tekstu(r.get('do')) for r, _ in grupa]
+                # warianty z tą samą datą „od” mogą kończyć się w różnych dniach: każdy zachowuje własne `_do`,
+                # a wpis trwa, dopóki trwa którykolwiek wariant
                 ile['os_czasu'].append({'wartosc': tekst(grupa[0][1]) if jedna else None,
-                                        'warianty': None if jedna else [{'etykieta': r['nazwa'], 'wartosc': tekst(w)} for r, w in grupa],
-                                        'od': data_tekstu(od), 'do': data_tekstu(grupa[0][0].get('do')),
+                                        'warianty': None if jedna else [{'etykieta': r['nazwa'], 'wartosc': tekst(w), '_do': data_tekstu(r.get('do'))}
+                                                                        for r, w in grupa],
+                                        'od': data_tekstu(od), 'do': None if None in konce else max(konce),
                                         'rodzaj_zmiany': 'pierwszy_znany_wpis' if not ile['os_czasu'] else 'nowelizacja',
                                         'poprzednia': None, 'roznica': None, 'dowod': dw})
             if ile['os_czasu']:
                 ile['rozwiazanie'] = 'kwota_w_ustawie'
                 biezace = [w for w in ile['os_czasu'] if w['od'] and w['od'] <= na_dzien and (w['do'] is None or w['do'] >= na_dzien)]
-                if len(biezace) == 1 and not (biezace[0]['od'] < DENOMINACJA):
+                if not biezace and k['status'] != 'zamknieta':
+                    # kwota z obecnego tekstu ustawy bez daty początku (np. „w wysokości 7000 zł”): obowiązuje według
+                    # tekstu, data od której — nieustalona (strona pokazuje to wprost)
+                    bez_dat = [w for w in ile['os_czasu'] if not w['od'] and w['do'] is None]
+                    biezace = bez_dat if len(bez_dat) == 1 else []
+                if len(biezace) == 1 and not (biezace[0]['od'] and biezace[0]['od'] < DENOMINACJA):
                     x = biezace[0]
-                    ile['aktualna'] = {'wartosc': x['wartosc'], 'warianty': x['warianty'], 'od': x['od'], 'do': x['do']}
+                    trwajace = [{'etykieta': v['etykieta'], 'wartosc': v['wartosc']} for v in x['warianty'] or []
+                                if v.get('_do') is None or v['_do'] >= na_dzien]
+                    ile['aktualna'] = {'wartosc': x['wartosc'], 'warianty': trwajace or None if x['warianty'] else None,
+                                       'od': x['od'], 'do': x['do']}
             wzory = [r for r in r_s if r.get('typ') in ('wzor', 'procent')]
-            if wzory and not ile['aktualna']:
+            if wzory:
                 ile['rozwiazanie'] = ile['rozwiazanie'] if ile['os_czasu'] else 'formula'
                 ile['regula'] = {'udzial': None, 'podstawa_id': None,
                                  'opis': '; '.join('{}: {}'.format(r['nazwa'], r['wyrazenie']) for r in wzory)[:900]}
@@ -971,7 +1073,9 @@ def karty_analiz_eli(socjal, na_dzien, benefits, extra_karty, akty_meta, pomijan
                                      'wpisy': [{'wartosc': zlote(kwota_z_wyrazenia(r['wyrazenie'])) if kwota_z_wyrazenia(r['wyrazenie']) else str(r['wyrazenie'])[:200],
                                                 'warianty': None, 'od': data_tekstu(r.get('od')), 'do': data_tekstu(r.get('do')),
                                                 'rodzaj_zmiany': 'pierwszy_znany_wpis', 'poprzednia': None, 'roznica': None,
-                                                'dowod': pierwszy_dowod(r.get('ustalenia')) or prz}]})
+                                                'dowod': pierwszy_dowod(r.get('ustalenia')) or prz,
+                                                **({'_rodzaj': 'minimum' if r['rola'] == 'minimum_swiadczenia' else 'maksimum'}
+                                                   if r.get('rola') in ('minimum_swiadczenia', 'limit_swiadczenia') else {})}]})
             # --- progi: parametry świadczenia (np. progi dochodowe, kwoty minimalne) z historią
             serie = defaultdict(list)
             for x in parametry:
@@ -998,7 +1102,8 @@ def karty_analiz_eli(socjal, na_dzien, benefits, extra_karty, akty_meta, pomijan
             for o in [o for o in okresy if o.get('swiadczenie') == s['id']]:
                 dw = pierwszy_dowod(o.get('ustalenia')) or prz
                 if o.get('rodzaj') in TERMINY_ANALIZ:
-                    row = {'rodzaj': TERMINY_ANALIZ[o['rodzaj']], 'data': data_tekstu(o.get('od')),
+                    row = {'rodzaj': TERMINY_ANALIZ[o['rodzaj']],
+                           'data': data_tekstu(o.get('do') if o['rodzaj'] in ('termin_wniosku', 'termin_wyplaty') else o.get('od')),
                            'opis': ' — '.join(x for x in (o.get('tresc'), o.get('regula')) if x), 'skutek': None, 'dowod': dw}
                     for f in ('od', 'do'):
                         if o.get(f): row[f] = data_tekstu(o[f])
@@ -1237,6 +1342,7 @@ def generuj(socjal: Path, wynik: Path, na_dzien: str, archiwum_adresow: bool = F
     przenies_wyliczenia(socjal, benefits, wielkosci, na_dzien)
     benefits, poza_mapa = kwalifikuj_do_mapy(socjal, benefits, extra_karty)
     zastosuj_standard(socjal, benefits)
+    uporzadkuj_prezentacje(benefits, na_dzien)
     if not benefits: raise BladSocjal('Brak kart do publikacji.')
     ids = [b['id'] for b in benefits]
     if len(ids) != len(set(ids)):

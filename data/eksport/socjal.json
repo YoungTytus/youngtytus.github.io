@@ -823,66 +823,6 @@
       "odsylacze_do_sprawdzenia": null,
       "nadrzedne": null
     },
-    "DU-1974-141-S001": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1974-141/S001",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1974-141",
-      "artykuly": [
-        "DU-1974-141-art-92"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1974-141-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1974-141/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1974-141",
-      "artykuly": [
-        "DU-1974-141-art-92"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1974-141-S003": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1974-141/S003",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1974-141",
-      "artykuly": [
-        "DU-1974-141-art-93"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1974-141-S004": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1974-141/S004",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1974-141",
-      "artykuly": [
-        "DU-1974-141-art-171"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
     "DU-1974-141-S005": {
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1974-141/S005",
@@ -946,69 +886,6 @@
       "odsylacze_do_sprawdzenia": null,
       "nadrzedne": null
     },
-    "DU-1990-179-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-179/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1990-179",
-      "artykuly": [
-        "DU-1990-179-art-110"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1990-179-S003": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-179/S003",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1990-179",
-      "artykuly": [
-        "DU-1990-179-art-111"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1990-179-S004": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-179/S004",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1990-179",
-      "artykuly": [
-        "DU-1990-179-art-114",
-        "DU-1990-179-art-115",
-        "DU-1990-179-art-118"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1990-179-S005": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-179/S005",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1990-179",
-      "artykuly": [
-        "DU-1990-179-art-115",
-        "DU-1990-179-art-116"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
     "DU-1990-179-S006": {
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1990-179/S006",
@@ -1034,69 +911,6 @@
       "artykuly": [
         "DU-1990-462-art-92",
         "DU-1990-462-art-98b"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1990-462-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-462/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1990-462",
-      "artykuly": [
-        "DU-1990-462-art-113a"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1990-462-S003": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-462/S003",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1990-462",
-      "artykuly": [
-        "DU-1990-462-art-115"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1990-462-S004": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-462/S004",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1990-462",
-      "artykuly": [
-        "DU-1990-462-art-118",
-        "DU-1990-462-art-119",
-        "DU-1990-462-art-122"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1990-462-S005": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-462/S005",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1990-462",
-      "artykuly": [
-        "DU-1990-462-art-119",
-        "DU-1990-462-art-120"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -1152,23 +966,6 @@
       "uwaga_czasowa": null,
       "odsylacze_do_sprawdzenia": null,
       "nadrzedne": "DU-1990-540/S01"
-    },
-    "DU-1990-99-S01": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1990-99/S01",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1990-99",
-      "artykuly": [
-        "DU-1990-99-art-1",
-        "DU-1990-99-art-2",
-        "DU-1990-99-art-9"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
     },
     "DU-1991-24-S001": {
       "pochodzenie": "reczna_ELI",
@@ -1227,38 +1024,6 @@
         "DU-1991-24-art-17c",
         "DU-1991-24-art-35a",
         "DU-1991-24-art-35b"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1991-400-S001": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1991-400/S001",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1991-400",
-      "artykuly": [
-        "DU-1991-400-art-98",
-        "DU-1991-400-art-99"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-1991-400-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1991-400/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1991-400",
-      "artykuly": [
-        "DU-1991-400-art-100",
-        "DU-1991-400-art-99"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -1476,25 +1241,6 @@
       "odsylacze_do_sprawdzenia": null,
       "nadrzedne": null
     },
-    "DU-1997-1080-S001": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-1997-1080/S001",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-1997-1080",
-      "artykuly": [
-        "DU-1997-1080-art-1",
-        "DU-1997-1080-art-2",
-        "DU-1997-1080-art-3",
-        "DU-1997-1080-art-4",
-        "DU-1997-1080-art-5"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
     "DU-1997-652-S01": {
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1997-652/S01",
@@ -1585,81 +1331,6 @@
       "artykuly": [
         "DU-1999-636-art-32",
         "DU-1999-636-art-35"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2001-1070-S001": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2001-1070/S001",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2001-1070",
-      "artykuly": [
-        "DU-2001-1070-art-100"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2001-1070-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2001-1070/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2001-1070",
-      "artykuly": [
-        "DU-2001-1070-art-100"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2001-1070-S003": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2001-1070/S003",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2001-1070",
-      "artykuly": [
-        "DU-2001-1070-art-102"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2001-1070-S004": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2001-1070/S004",
-      "rodzaj_zrodlowy": "skladnik_swiadczenia",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2001-1070",
-      "artykuly": [
-        "DU-2001-1070-art-102"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2001-1070-S005": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2001-1070/S005",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2001-1070",
-      "artykuly": [
-        "DU-2001-1070-art-92"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -1895,68 +1566,6 @@
         "DU-2002-1922-art-3",
         "DU-2002-1922-art-4",
         "DU-2002-1922-art-8"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2002-676-S001": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2002-676/S001",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2002-676",
-      "artykuly": [
-        "DU-2002-676-art-86"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2002-676-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2002-676/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2002-676",
-      "artykuly": [
-        "DU-2002-676-art-89"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2002-676-S003": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2002-676/S003",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2002-676",
-      "artykuly": [
-        "DU-2002-676-art-128",
-        "DU-2002-676-art-130"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2002-676-S004": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2002-676/S004",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2002-676",
-      "artykuly": [
-        "DU-2002-676-art-130",
-        "DU-2002-676-art-131"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2674,21 +2283,6 @@
       "odsylacze_do_sprawdzenia": null,
       "nadrzedne": null
     },
-    "DU-2004-593-S20": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2004-593/S20",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2004-593",
-      "artykuly": [
-        "DU-2004-593-art-121"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
     "DU-2005-67-S001": {
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2005-67/S001",
@@ -2800,23 +2394,6 @@
       "odsylacze_do_sprawdzenia": null,
       "nadrzedne": null
     },
-    "DU-2006-1592-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2006-1592/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2006-1592",
-      "artykuly": [
-        "DU-2006-1592-art-60",
-        "DU-2006-1592-art-67",
-        "DU-2006-1592-art-8"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
     "DU-2006-1824-S001": {
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2006-1824/S001",
@@ -2860,38 +2437,6 @@
       "artykuly": [
         "DU-2006-710-art-62",
         "DU-2006-710-art-68b"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2006-710-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2006-710/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2006-710",
-      "artykuly": [
-        "DU-2006-710-art-88",
-        "DU-2006-710-art-90"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2006-710-S003": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2006-710/S003",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2006-710",
-      "artykuly": [
-        "DU-2006-710-art-90",
-        "DU-2006-710-art-91"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -3132,38 +2677,6 @@
       "odsylacze_do_sprawdzenia": null,
       "nadrzedne": null
     },
-    "DU-2010-523-S001": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2010-523/S001",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2010-523",
-      "artykuly": [
-        "DU-2010-523-art-100",
-        "DU-2010-523-art-99"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2010-523-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2010-523/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2010-523",
-      "artykuly": [
-        "DU-2010-523-art-100",
-        "DU-2010-523-art-101"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
     "DU-2010-523-S003": {
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2010-523/S003",
@@ -3243,21 +2756,6 @@
       "odsylacze_do_sprawdzenia": null,
       "nadrzedne": null
     },
-    "DU-2011-1368-S001": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2011-1368/S001",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2011-1368",
-      "artykuly": [
-        "DU-2011-1368-art-124"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
     "DU-2011-1368-S002": {
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2011-1368/S002",
@@ -3291,21 +2789,6 @@
     "DU-2011-1368-S004": {
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2011-1368/S004",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2011-1368",
-      "artykuly": [
-        "DU-2011-1368-art-124"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2011-1368-S005": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2011-1368/S005",
       "rodzaj_zrodlowy": "swiadczenie",
       "status_zrodlowy": "wymaga_uzupelnienia",
       "analiza": "Analizy ELI/DU-2011-1368",
@@ -3633,37 +3116,6 @@
       "analiza": "Analizy ELI/DU-2014-616",
       "artykuly": [
         "DU-2014-616-art-15"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2018-138-S001": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2018-138/S001",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2018-138",
-      "artykuly": [
-        "DU-2018-138-art-187"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2018-138-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2018-138/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2018-138",
-      "artykuly": [
-        "DU-2018-138-art-187",
-        "DU-2018-138-art-190"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -4048,36 +3500,6 @@
       "analiza": "Analizy ELI/DU-2022-655",
       "artykuly": [
         "DU-2022-655-art-6"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2022-655-S002": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2022-655/S002",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2022-655",
-      "artykuly": [
-        "DU-2022-655-art-6"
-      ],
-      "jednostki": [],
-      "historia_parametr": null,
-      "uwaga_czasowa": null,
-      "odsylacze_do_sprawdzenia": null,
-      "nadrzedne": null
-    },
-    "DU-2022-655-S003": {
-      "pochodzenie": "reczna_ELI",
-      "zrodlo_id": "DU-2022-655/S003",
-      "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
-      "analiza": "Analizy ELI/DU-2022-655",
-      "artykuly": [
-        "DU-2022-655-art-458"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -28780,8 +28202,7 @@
         }
       ],
       "korzysci": [
-        "DU-2004-593-S18",
-        "DU-2004-593-S20"
+        "DU-2004-593-S18"
       ]
     },
     {
@@ -99335,6 +98756,46 @@
       "pochodzenie": "reczna_SW"
     },
     {
+      "id": "DU-1974-141-S001",
+      "nazwa": "Wynagrodzenie za czas niezdolności do pracy finansowane przez pracodawcę",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1974-141-S002",
+      "nazwa": "Odprawa rentowa lub emerytalna pracownika",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1974-141-S003",
+      "nazwa": "Odprawa pośmiertna rodziny pracownika",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1974-141-S004",
+      "nazwa": "Ekwiwalent pieniężny za niewykorzystany urlop wypoczynkowy",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
       "id": "DU-1982-269-S01",
       "nazwa": "Przejściowe podwyższenie rent inwalidzkich i rodzinnych z ustawy z 1974 r. (art. 2)",
       "powod": "mechanizm_obliczenia",
@@ -99375,6 +98836,46 @@
       "pochodzenie": "reczna_ELI"
     },
     {
+      "id": "DU-1990-179-S002",
+      "nazwa": "Nagroda roczna policjanta",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-179-S003",
+      "nazwa": "Nagroda jubileuszowa policjanta",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-179-S004",
+      "nazwa": "Odprawa policjanta zwalnianego ze służby",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-179-S005",
+      "nazwa": "Odprawa pośmiertna rodziny policjanta",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
       "id": "DU-1990-206-S01",
       "nazwa": "Ochrona praw nabytych i dotychczasowej wysokości świadczeń (art. 20, art. 22 ust. 3, art. 25 pkt 4, art. 26 pkt 2)",
       "powod": "mechanizm_obliczenia",
@@ -99405,6 +98906,46 @@
       "pochodzenie": "reczna_ELI"
     },
     {
+      "id": "DU-1990-462-S002",
+      "nazwa": "Nagroda roczna funkcjonariusza Straży Granicznej",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-462-S003",
+      "nazwa": "Nagroda jubileuszowa funkcjonariusza Straży Granicznej",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-462-S004",
+      "nazwa": "Odprawa funkcjonariusza Straży Granicznej zwalnianego ze służby",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-462-S005",
+      "nazwa": "Odprawa pośmiertna rodziny funkcjonariusza Straży Granicznej",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
       "id": "DU-1990-540-S01",
       "nazwa": "Rewaloryzacja emerytur i rent osób w wieku 80+ (art. 1-8, 10)",
       "powod": "mechanizm_obliczenia",
@@ -99421,6 +98962,36 @@
       "opis_powodu": "Ochrona istniejącego świadczenia (przed egzekucją, potrąceniem, wliczeniem do dochodu) — cecha karty głównej, nie nowa korzyść.",
       "zrodlo_decyzji": "regula_kart_recznych",
       "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1990-99-S01",
+      "nazwa": "Odprawa dla dyrektora przedsiębiorstwa państwowego przy wygaśnięciu stosunku pracy (art. 2 ust. 3)",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1991-400-S001",
+      "nazwa": "Odprawa strażaka Państwowej Straży Pożarnej",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-1991-400-S002",
+      "nazwa": "Odprawa pośmiertna rodziny strażaka PSP",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
       "forma": "pieniezne",
       "pochodzenie": "reczna_ELI"
     },
@@ -99535,6 +99106,16 @@
       "pochodzenie": "reczna_ELI"
     },
     {
+      "id": "DU-1997-1080-S001",
+      "nazwa": "Dodatkowe wynagrodzenie roczne pracownika sfery budżetowej",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
       "id": "DU-1997-776-S001",
       "nazwa": "Dofinansowanie wynagrodzenia pracownika z niepełnosprawnością",
       "powod": "odbiorca_nie_osoba",
@@ -99615,6 +99196,56 @@
       "pochodzenie": "reczna_ELI"
     },
     {
+      "id": "DU-2001-1070-S001",
+      "nazwa": "Uposażenie sędziego w stanie spoczynku",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2001-1070-S002",
+      "nazwa": "Jednorazowa odprawa sędziego przy stanie spoczynku",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2001-1070-S003",
+      "nazwa": "Uposażenie rodzinne po sędzim",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2001-1070-S004",
+      "nazwa": "Dodatek dla sieroty zupełnej do uposażenia rodzinnego po sędzim",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2001-1070-S005",
+      "nazwa": "Gratyfikacja jubileuszowa sędziego",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
       "id": "DU-2001-27-S001",
       "nazwa": "Przeniesienie własności lokalu z prawem lokatorskim",
       "powod": "mechanizm_obliczenia",
@@ -99691,6 +99322,46 @@
       "opis_powodu": "Ta sama korzyść co inna karta (odmiana nazwy albo postać tej samej pomocy).",
       "zrodlo_decyzji": "regula_kart_recznych",
       "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2002-676-S001",
+      "nazwa": "Umundurowanie albo równoważnik ABW i AW",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "niepieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2002-676-S002",
+      "nazwa": "Wyżywienie albo równoważnik ABW i AW",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "niepieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2002-676-S003",
+      "nazwa": "Odprawa po zwolnieniu ze służby ABW i AW",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2002-676-S004",
+      "nazwa": "Odprawa pośmiertna ABW i AW",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
       "forma": "pieniezne",
       "pochodzenie": "reczna_ELI"
     },
@@ -99815,6 +99486,16 @@
       "pochodzenie": "reczna_ELI"
     },
     {
+      "id": "DU-2004-593-S20",
+      "nazwa": "Nagrody specjalne ministra",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
       "id": "DU-2005-67-S003",
       "nazwa": "Zwolnienie od kosztów sądowych w sprawie transgranicznej",
       "powod": "zwolnienie_z_oplat_lub_podatku",
@@ -99855,6 +99536,16 @@
       "pochodzenie": "reczna_ELI"
     },
     {
+      "id": "DU-2006-1592-S002",
+      "nazwa": "Historyczna odprawa niemianowanego pracownika Biura Rzecznika Interesu Publicznego",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
       "id": "DU-2006-1844-S001",
       "nazwa": "Finansowe wsparcie komunalnych przedsięwzięć mieszkaniowych",
       "powod": "odbiorca_nie_osoba",
@@ -99872,6 +99563,26 @@
       "zrodlo_decyzji": "regula_kart_recznych",
       "uwaga": null,
       "forma": "niepieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2006-710-S002",
+      "nazwa": "Odprawa funkcjonariusza SKW lub SWW przy zwolnieniu",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2006-710-S003",
+      "nazwa": "Odprawa pośmiertna rodziny funkcjonariusza SKW lub SWW",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
       "pochodzenie": "reczna_ELI"
     },
     {
@@ -99925,6 +99636,46 @@
       "pochodzenie": "reczna_ELI"
     },
     {
+      "id": "DU-2010-523-S001",
+      "nazwa": "Odprawa funkcjonariusza Służby Więziennej przy odejściu",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2010-523-S002",
+      "nazwa": "Odprawa pośmiertna rodziny funkcjonariusza Służby Więziennej",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2011-1368-S001",
+      "nazwa": "Bezpłatne korzystanie z odzieży ochronnej przez ochotnika SAR",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "niepieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2011-1368-S005",
+      "nazwa": "Wyżywienie ochotnika SAR podczas akcji i szkolenia",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "niepieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
       "id": "DU-2011-1385-S004",
       "nazwa": "Umorzenie prawidłowo wykorzystanej pożyczki powodziowej",
       "powod": "procedura_wyplaty_lub_zwrotu",
@@ -99972,6 +99723,26 @@
       "zrodlo_decyzji": "regula_kart_recznych",
       "uwaga": null,
       "forma": "nieustalona",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2018-138-S001",
+      "nazwa": "Odprawa funkcjonariusza Służby Ochrony Państwa",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2018-138-S002",
+      "nazwa": "Odprawa pośmiertna rodziny funkcjonariusza SOP",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "pieniezne",
       "pochodzenie": "reczna_ELI"
     },
     {
@@ -100061,6 +99832,26 @@
       "opis_powodu": "Odbiorcą jest instytucja albo osoba wykonująca zadanie publiczne (koszty obsługi, dotacje, diety komisji) — nie osoba lub rodzina, której pomaga państwo.",
       "zrodlo_decyzji": "regula_kart_recznych",
       "uwaga": null,
+      "forma": "pieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2022-655-S002",
+      "nazwa": "Zwrot kosztów przejazdu na wezwanie w sprawie obowiązku obrony",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
+      "forma": "niepieniezne",
+      "pochodzenie": "reczna_ELI"
+    },
+    {
+      "id": "DU-2022-655-S003",
+      "nazwa": "Odprawa przy zwolnieniu z zawodowej służby wojskowej",
+      "powod": "panstwo_jako_pracodawca",
+      "opis_powodu": "Świadczenie pracownicze albo służbowe: państwo płaci jako pracodawca (nagrody, odprawy, umundurowanie, wyżywienie, uposażenie w stanie spoczynku, wynagrodzenie chorobowe, zwrot kosztów służby) — nie pomoc dla obywatela.",
+      "zrodlo_decyzji": "decyzja_wlasciciela",
+      "uwaga": "audyt strony 31.10.2026: świadczenie pracownicze/służbowe poza mapą socjalu",
       "forma": "pieniezne",
       "pochodzenie": "reczna_ELI"
     },
@@ -100346,7 +100137,7 @@
     }
   ],
   "statystyki": {
-    "reczne": 262,
+    "reczne": 225,
     "automatyczne": 13,
     "z_notatek": 0
   }

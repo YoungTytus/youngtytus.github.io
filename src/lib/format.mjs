@@ -137,6 +137,11 @@ export const OPIS_TERMINU = {
 };
 
 export const wielka = (s) => (s ? s.charAt(0).toLocaleUpperCase('pl') + s.slice(1) : s);
+/** „Ustawa z dnia 12 marca 2004 r. o pomocy społecznej” → „O pomocy społecznej”; kodeksy zostają z nazwą. */
+export function krotkiTytul(tytul, eli) {
+  const t = String(tytul ?? '').replace(/^\s*(?:ustawa|rozporządzenie|obwieszczenie)\s+z\s+dnia\s+\d{1,2}\s+\S+\s+\d{4}\s*r\.\s*[–-]?\s*/i, '').replace(/\.$/, '').trim();
+  return t ? wielka(t) : eli;
+}
 export const etykietaWariantu = (w, i) => w.etykieta ?? `Wariant ${i + 1} (opis nieustalony)`;
 export const opisUprawnionych = (s) => typeof s === 'string' && /\p{L}/u.test(s) ? s : 'Krąg uprawnionych nie został opisany w eksporcie. Zobacz cytat przepisu na karcie.';
 

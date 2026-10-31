@@ -49,10 +49,6 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1974/141",
     "url_isap": null,
     "korzysci": [
-      "DU-1974-141-S001",
-      "DU-1974-141-S002",
-      "DU-1974-141-S003",
-      "DU-1974-141-S004",
       "DU-1974-141-S005",
       "DU-1974-141-S006",
       "DU-1974-141-S007"
@@ -188,10 +184,6 @@
     "url_isap": null,
     "korzysci": [
       "DU-1990-179-S001",
-      "DU-1990-179-S002",
-      "DU-1990-179-S003",
-      "DU-1990-179-S004",
-      "DU-1990-179-S005",
       "DU-1990-179-S006"
     ],
     "wykonawcze": [],
@@ -260,10 +252,6 @@
     "url_isap": null,
     "korzysci": [
       "DU-1990-462-S001",
-      "DU-1990-462-S002",
-      "DU-1990-462-S003",
-      "DU-1990-462-S004",
-      "DU-1990-462-S005",
       "DU-1990-462-S006",
       "DU-1990-462-S007"
     ],
@@ -333,9 +321,7 @@
     "data_stanu": null,
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1990/99",
     "url_isap": null,
-    "korzysci": [
-      "DU-1990-99-S01"
-    ],
+    "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": [
@@ -406,8 +392,6 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1991/400",
     "url_isap": null,
     "korzysci": [
-      "DU-1991-400-S001",
-      "DU-1991-400-S002",
       "DU-1991-400-S003",
       "DU-1991-400-S004",
       "DU-1991-400-S005",
@@ -697,9 +681,7 @@
     "data_stanu": "2025-05-06",
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/1997/1080",
     "url_isap": null,
-    "korzysci": [
-      "DU-1997-1080-S001"
-    ],
+    "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": [
@@ -1032,11 +1014,6 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2001/1070",
     "url_isap": null,
     "korzysci": [
-      "DU-2001-1070-S001",
-      "DU-2001-1070-S002",
-      "DU-2001-1070-S003",
-      "DU-2001-1070-S004",
-      "DU-2001-1070-S005",
       "DU-2001-1070-S006"
     ],
     "wykonawcze": [],
@@ -1299,12 +1276,7 @@
     "data_stanu": "2026-09-16",
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2002/676",
     "url_isap": null,
-    "korzysci": [
-      "DU-2002-676-S001",
-      "DU-2002-676-S002",
-      "DU-2002-676-S003",
-      "DU-2002-676-S004"
-    ],
+    "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": [
@@ -1467,18 +1439,6 @@
     "pliki": []
   },
   {
-    "eli": "DU/2003/844",
-    "tytul": "Akt prawny DU/2003/844",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2003/844",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
     "eli": "DU/2004/1252",
     "tytul": "Ustawa z dnia 30 kwietnia 2004 r. o świadczeniach przedemerytalnych",
     "typ": "Ustawa",
@@ -1599,8 +1559,7 @@
       "DU-2004-593-S13",
       "DU-2004-593-S14",
       "DU-2004-593-S15",
-      "DU-2004-593-S18",
-      "DU-2004-593-S20"
+      "DU-2004-593-S18"
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
@@ -1828,8 +1787,7 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2006/1592",
     "url_isap": null,
     "korzysci": [
-      "DU-2006-1592-S001",
-      "DU-2006-1592-S002"
+      "DU-2006-1592-S001"
     ],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
@@ -1976,8 +1934,6 @@
     "url_isap": null,
     "korzysci": [
       "DU-2006-710-S001",
-      "DU-2006-710-S002",
-      "DU-2006-710-S003",
       "DU-2006-710-S004",
       "DU-2006-710-S005",
       "DU-2006-710-S006"
@@ -2309,8 +2265,6 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2010/523",
     "url_isap": null,
     "korzysci": [
-      "DU-2010-523-S001",
-      "DU-2010-523-S002",
       "DU-2010-523-S003",
       "DU-2010-523-S004",
       "DU-2010-523-S005",
@@ -2383,11 +2337,9 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2011/1368",
     "url_isap": null,
     "korzysci": [
-      "DU-2011-1368-S001",
       "DU-2011-1368-S002",
       "DU-2011-1368-S003",
       "DU-2011-1368-S004",
-      "DU-2011-1368-S005",
       "DU-2011-1368-S006",
       "DU-2011-1368-S007"
     ],
@@ -2887,8 +2839,6 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2018/138",
     "url_isap": null,
     "korzysci": [
-      "DU-2018-138-S001",
-      "DU-2018-138-S002",
       "DU-2018-138-S003",
       "DU-2018-138-S004",
       "DU-2018-138-S005",
@@ -3474,8 +3424,6 @@
     "url_isap": null,
     "korzysci": [
       "DU-2022-655-S001",
-      "DU-2022-655-S002",
-      "DU-2022-655-S003",
       "DU-2022-655-S004",
       "DU-2022-655-S005",
       "DU-2022-655-S006",

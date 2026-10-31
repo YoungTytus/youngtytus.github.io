@@ -18,6 +18,7 @@ const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.stat
     <div class="card-top">
       <span class="type">{etykieta('rodzaj_korzysci', k.rodzaj_korzysci)}{k.forma && k.forma !== 'nieustalona' && <> · {k.forma === 'pieniezne' ? 'pieniężne' : 'niepieniężne'}</>}</span>
       <Status status={k.status} />
+      {k.flagi?.some((f: string) => f.startsWith('Analiza częściowa')) && <span class="tag">Analiza częściowa</span>}
     </div>
     <H><a href={`/korzysc/${k.id}/`} class="first-up">{k.nazwa}</a></H>
     {k.opis_prosty && <p class="opis">{typo(k.opis_prosty)}</p>}
@@ -34,7 +35,7 @@ const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.stat
       )}
       {!a && limit && <span class="kwota-kafelek">{kwotaPL(limit.wartosc)}</span>}
       {niepieniezne && <span class="forma-pomocy">Bez kwoty: rzecz, usługa albo miejsce</span>}
-      {!a && !limit && !niepieniezne && <span class="muted">{indywidualna ? `Kwota indywidualna: ${indywidualna.powod}` : k.ile.regula ? 'Reguła procentowa — szczegóły na karcie' : 'Nie ustalono (szczegóły na karcie)'}</span>}
+      {!a && !limit && !niepieniezne && <span class="muted">{indywidualna ? `Kwota indywidualna: ${indywidualna.powod}` : k.ile.regula ? 'Zależy od sytuacji osoby — zasada na karcie' : 'Kwota nieustalona (szczegóły na karcie)'}</span>}
     </div>
   </div>
   <div class="card-bottom" aria-hidden="true"><span>Warunki, historia i źródła</span><Ikona n="strzalka" /></div>

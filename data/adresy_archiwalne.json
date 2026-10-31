@@ -1,6 +1,54 @@
 {
   "_opis": "Dawne adresy kart (/korzysc/<id>/) usunięte albo przenumerowane między wersjami danych, z następcą. Strona generuje z nich przekierowania (src/pages/korzysc/[id].astro), żeby zakładki i linki nie dawały 404.",
   "adresy": {
+    "DU-1974-141-S001": {
+      "nazwa": "Wynagrodzenie za czas niezdolności do pracy finansowane przez pracodawcę",
+      "eli": "DU/1974/141",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1974-141/"
+    },
+    "DU-1974-141-S002": {
+      "nazwa": "Odprawa rentowa lub emerytalna pracownika",
+      "eli": "DU/1974/141",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1974-141/"
+    },
+    "DU-1974-141-S003": {
+      "nazwa": "Odprawa pośmiertna rodziny pracownika",
+      "eli": "DU/1974/141",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1974-141/"
+    },
+    "DU-1974-141-S004": {
+      "nazwa": "Ekwiwalent pieniężny za niewykorzystany urlop wypoczynkowy",
+      "eli": "DU/1974/141",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1974-141/"
+    },
+    "DU-1990-179-S002": {
+      "nazwa": "Nagroda roczna policjanta",
+      "eli": "DU/1990/179",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1990-179/"
+    },
+    "DU-1990-179-S003": {
+      "nazwa": "Nagroda jubileuszowa policjanta",
+      "eli": "DU/1990/179",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1990-179/"
+    },
+    "DU-1990-179-S004": {
+      "nazwa": "Odprawa policjanta zwalnianego ze służby",
+      "eli": "DU/1990/179",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1990-179/"
+    },
+    "DU-1990-179-S005": {
+      "nazwa": "Odprawa pośmiertna rodziny policjanta",
+      "eli": "DU/1990/179",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1990-179/"
+    },
     "DU-1990-206-S03": {
       "nazwa": "Waloryzacja podstawy wymiaru emerytur i rent w I kwartale 1990 (art. 23, 25 pkt 3, 26 pkt 1)",
       "eli": "DU/1990/206",
@@ -8,12 +56,42 @@
       "ostatnio_w_publikacji": "2026-10-27",
       "cel": "/akt/DU-1990-206/"
     },
+    "DU-1990-462-S002": {
+      "nazwa": "Nagroda roczna funkcjonariusza Straży Granicznej",
+      "eli": "DU/1990/462",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1990-462/"
+    },
+    "DU-1990-462-S003": {
+      "nazwa": "Nagroda jubileuszowa funkcjonariusza Straży Granicznej",
+      "eli": "DU/1990/462",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1990-462/"
+    },
+    "DU-1990-462-S004": {
+      "nazwa": "Odprawa funkcjonariusza Straży Granicznej zwalnianego ze służby",
+      "eli": "DU/1990/462",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1990-462/"
+    },
+    "DU-1990-462-S005": {
+      "nazwa": "Odprawa pośmiertna rodziny funkcjonariusza Straży Granicznej",
+      "eli": "DU/1990/462",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1990-462/"
+    },
     "DU-1990-540-S01": {
       "nazwa": "Rewaloryzacja emerytur i rent osób w wieku 80+ (art. 1-8, 10)",
       "eli": "DU/1990/540",
       "zniknal": "2026-10-29",
       "ostatnio_w_publikacji": "2026-10-27",
       "cel": "/akt/DU-1990-540/"
+    },
+    "DU-1990-99-S01": {
+      "nazwa": "Odprawa dla dyrektora przedsiębiorstwa państwowego przy wygaśnięciu stosunku pracy (art. 2 ust. 3)",
+      "eli": "DU/1990/99",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1990-99/"
     },
     "DU-1991-24-art14-ust1": {
       "nazwa": "zasiłek chorobowy",
@@ -134,6 +212,18 @@
       "ostatnio_w_publikacji": "2026-10-18",
       "cel": "/akt/DU-1991-24/"
     },
+    "DU-1991-400-S001": {
+      "nazwa": "Odprawa strażaka Państwowej Straży Pożarnej",
+      "eli": "DU/1991/400",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1991-400/"
+    },
+    "DU-1991-400-S002": {
+      "nazwa": "Odprawa pośmiertna rodziny strażaka PSP",
+      "eli": "DU/1991/400",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1991-400/"
+    },
     "DU-1994-385-S02": {
       "nazwa": "Przeliczniki wysokości emerytur i rent górniczych (art. 2 ust. 2-3, art. 4 ust. 2)",
       "eli": "DU/1994/385",
@@ -147,6 +237,12 @@
       "zniknal": "2026-10-29",
       "ostatnio_w_publikacji": "2026-10-27",
       "cel": "/akt/DU-1994-385/"
+    },
+    "DU-1997-1080-S001": {
+      "nazwa": "Dodatkowe wynagrodzenie roczne pracownika sfery budżetowej",
+      "eli": "DU/1997/1080",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-1997-1080/"
     },
     "DU-1998-1118-art194j-ust4": {
       "nazwa": "emerytura w ponownie ustalonej wysokości",
@@ -316,6 +412,36 @@
       "ostatnio_w_publikacji": "2026-10-18",
       "cel": "/korzysc/DU-1999-636-S001/"
     },
+    "DU-2001-1070-S001": {
+      "nazwa": "Uposażenie sędziego w stanie spoczynku",
+      "eli": "DU/2001/1070",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2001-1070/"
+    },
+    "DU-2001-1070-S002": {
+      "nazwa": "Jednorazowa odprawa sędziego przy stanie spoczynku",
+      "eli": "DU/2001/1070",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2001-1070/"
+    },
+    "DU-2001-1070-S003": {
+      "nazwa": "Uposażenie rodzinne po sędzim",
+      "eli": "DU/2001/1070",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2001-1070/"
+    },
+    "DU-2001-1070-S004": {
+      "nazwa": "Dodatek dla sieroty zupełnej do uposażenia rodzinnego po sędzim",
+      "eli": "DU/2001/1070",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2001-1070/"
+    },
+    "DU-2001-1070-S005": {
+      "nazwa": "Gratyfikacja jubileuszowa sędziego",
+      "eli": "DU/2001/1070",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2001-1070/"
+    },
     "DU-2001-734-art3-ust1": {
       "nazwa": "dodatek mieszkaniowy",
       "eli": "DU/2001/734",
@@ -329,6 +455,30 @@
       "zniknal": "2026-10-29",
       "ostatnio_w_publikacji": "2026-10-18",
       "cel": "/akt/DU-2001-734/"
+    },
+    "DU-2002-676-S001": {
+      "nazwa": "Umundurowanie albo równoważnik ABW i AW",
+      "eli": "DU/2002/676",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2002-676/"
+    },
+    "DU-2002-676-S002": {
+      "nazwa": "Wyżywienie albo równoważnik ABW i AW",
+      "eli": "DU/2002/676",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2002-676/"
+    },
+    "DU-2002-676-S003": {
+      "nazwa": "Odprawa po zwolnieniu ze służby ABW i AW",
+      "eli": "DU/2002/676",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2002-676/"
+    },
+    "DU-2002-676-S004": {
+      "nazwa": "Odprawa pośmiertna ABW i AW",
+      "eli": "DU/2002/676",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2002-676/"
     },
     "DU-2003-1268-art12a-ust1": {
       "nazwa": "zasiłek pogrzebowy",
@@ -477,6 +627,12 @@
       "ostatnio_w_publikacji": "2026-10-18",
       "cel": "/korzysc/DU-2004-1252-S001/"
     },
+    "DU-2004-593-S20": {
+      "nazwa": "Nagrody specjalne ministra",
+      "eli": "DU/2004/593",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2004-593/"
+    },
     "DU-2004-593-art106-ust3": {
       "nazwa": "świadczenia pieniężne",
       "eli": "DU/2004/593",
@@ -589,6 +745,24 @@
       "ostatnio_w_publikacji": "2026-10-29",
       "cel": "/korzysc/DU-2004-593-S01/"
     },
+    "DU-2006-1592-S002": {
+      "nazwa": "Historyczna odprawa niemianowanego pracownika Biura Rzecznika Interesu Publicznego",
+      "eli": "DU/2006/1592",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2006-1592/"
+    },
+    "DU-2006-710-S002": {
+      "nazwa": "Odprawa funkcjonariusza SKW lub SWW przy zwolnieniu",
+      "eli": "DU/2006/710",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2006-710/"
+    },
+    "DU-2006-710-S003": {
+      "nazwa": "Odprawa pośmiertna rodziny funkcjonariusza SKW lub SWW",
+      "eli": "DU/2006/710",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2006-710/"
+    },
     "DU-2007-1378-art1a-ust1": {
       "nazwa": "świadczenia z funduszu alimentacyjnego",
       "eli": "DU/2007/1378",
@@ -602,6 +776,30 @@
       "zniknal": "2026-10-29",
       "ostatnio_w_publikacji": "2026-10-18",
       "cel": "/akt/DU-2007-1378/"
+    },
+    "DU-2010-523-S001": {
+      "nazwa": "Odprawa funkcjonariusza Służby Więziennej przy odejściu",
+      "eli": "DU/2010/523",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2010-523/"
+    },
+    "DU-2010-523-S002": {
+      "nazwa": "Odprawa pośmiertna rodziny funkcjonariusza Służby Więziennej",
+      "eli": "DU/2010/523",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2010-523/"
+    },
+    "DU-2011-1368-S001": {
+      "nazwa": "Bezpłatne korzystanie z odzieży ochronnej przez ochotnika SAR",
+      "eli": "DU/2011/1368",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2011-1368/"
+    },
+    "DU-2011-1368-S005": {
+      "nazwa": "Wyżywienie ochotnika SAR podczas akcji i szkolenia",
+      "eli": "DU/2011/1368",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2011-1368/"
     },
     "DU-2011-887-art120": {
       "nazwa": "świadczenia opieki zdrowotnej",
@@ -638,6 +836,18 @@
       "ostatnio_w_publikacji": "2026-10-18",
       "cel": "/korzysc/SW-wychowawcze/"
     },
+    "DU-2018-138-S001": {
+      "nazwa": "Odprawa funkcjonariusza Służby Ochrony Państwa",
+      "eli": "DU/2018/138",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2018-138/"
+    },
+    "DU-2018-138-S002": {
+      "nazwa": "Odprawa pośmiertna rodziny funkcjonariusza SOP",
+      "eli": "DU/2018/138",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2018-138/"
+    },
     "DU-2022-1692-art2-ust1": {
       "nazwa": "dodatek węglowy",
       "eli": "DU/2022/1692",
@@ -651,6 +861,18 @@
       "zniknal": "2026-10-29",
       "ostatnio_w_publikacji": "2026-10-29",
       "cel": "/korzysc/DU-2022-1692-S001/"
+    },
+    "DU-2022-655-S002": {
+      "nazwa": "Zwrot kosztów przejazdu na wezwanie w sprawie obowiązku obrony",
+      "eli": "DU/2022/655",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2022-655/"
+    },
+    "DU-2022-655-S003": {
+      "nazwa": "Odprawa przy zwolnieniu z zawodowej służby wojskowej",
+      "eli": "DU/2022/655",
+      "zniknal": "2026-10-31",
+      "cel": "/akt/DU-2022-655/"
     },
     "DU-2023-1429-art2-ust1": {
       "nazwa": "świadczenie wspierające",
