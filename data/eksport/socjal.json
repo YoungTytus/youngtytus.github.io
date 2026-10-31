@@ -3372,7 +3372,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2020-374/S001",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2020-374",
       "artykuly": [
         "DU-2020-374-art-15z"
@@ -3387,7 +3387,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2020-374/S002",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2020-374",
       "artykuly": [
         "DU-2020-374-art-4"

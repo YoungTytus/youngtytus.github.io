@@ -11943,7 +11943,32 @@
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [],
-      "progi": [],
+      "progi": [
+        {
+          "przepis": "Emerytura rolnicza: co najmniej (podwyższenie do najniższej emerytury) — 1978,49 zł",
+          "wpisy": [
+            {
+              "wartosc": "1978,49 zł",
+              "warianty": null,
+              "od": "2026-03-01",
+              "do": null,
+              "rodzaj_zmiany": "pierwszy_znany_wpis",
+              "poprzednia": null,
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/1991/24",
+                "przepis": "art. 48 ust. 2a",
+                "cytat": "Jeżeli wysokość świadczenia ustalonego w sposób określony w ust. 1 jest niższa od kwoty najniższej emerytury określonej w przepisach emerytalnych, wysokość takiego świadczenia podwyższa się z urzędu do tej kwoty.",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/1991/24",
+                "data_stanu": null,
+                "_sha256": "c18dade06b97349fba23f16ecaa92312a8db0c8cfe43c84522e9165d909aebd1",
+                "_strona": 53
+              },
+              "_rodzaj": "minimum"
+            }
+          ]
+        }
+      ],
       "trasa": [
         {
           "krok": 1,
@@ -17960,7 +17985,7 @@
     "slug": "du-2001-734-s06",
     "nazwa": "Dodatek mieszkaniowy przyznawany wstecz za okres epidemii COVID-19",
     "rodzaj_korzysci": "swiadczenie_okresowe",
-    "status": "do_ustalenia",
+    "status": "zamknieta",
     "komu": "Osoba uprawniona do dodatku mieszkaniowego w okresie stanu zagrożenia epidemicznego albo stanu epidemii ogłoszonych z powodu COVID-19.",
     "opis_prosty": "Możliwość przyznania dodatku mieszkaniowego z mocą wsteczną za okres stanu zagrożenia epidemicznego albo stanu epidemii.",
     "sytuacje": [
@@ -17978,8 +18003,12 @@
       "_strona": 212
     },
     "ile": {
-      "rozwiazanie": "nieustalone",
-      "regula": null,
+      "rozwiazanie": "formula",
+      "regula": {
+        "udzial": null,
+        "podstawa_id": null,
+        "opis": "Dodatek z mocą wsteczną — reguła kwoty: Kwota jak w zwykłym dodatku mieszkaniowym (ustawa o dodatkach mieszkaniowych), przyznana za wskazany we wniosku okres stanu zagrożenia epidemicznego albo epidemii; nie za okres objęty inną decyzją o dodatku."
+      },
       "aktualna": null,
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
@@ -18025,6 +18054,32 @@
             "_sha256": "bd51eaabfb468e3c8a6b3d78183b04f961ec8ab7d9ce7c2fcb1d2c2bba02552b",
             "_strona": 213
           }
+        },
+        {
+          "krok": 4,
+          "opis": "Stan zagrożenia epidemicznego odwołany z dniem 1 lipca 2023 r.",
+          "dowod": {
+            "eli": "DU/2023/1118",
+            "przepis": "§ 1",
+            "cytat": "Z dniem 1 lipca 2023 r. odwołuje się na obszarze Rzeczypospolitej Polskiej stan zagrożenia epidemicznego w związku z zakażeniami wirusem SARS-CoV-2.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1118",
+            "data_stanu": null,
+            "_sha256": "3c0e07df2d79fcea1a0ef441592e3b4173bea290fc9703d63351cb5ec241b400",
+            "_strona": 1
+          }
+        },
+        {
+          "krok": 5,
+          "opis": "Rozporządzenie ogłaszające stan zagrożenia epidemicznego traci moc z dniem 1 lipca 2023 r.",
+          "dowod": {
+            "eli": "DU/2023/1118",
+            "przepis": "§ 2",
+            "cytat": "Z dniem 1 lipca 2023 r. traci moc rozporządzenie Ministra Zdrowia z dnia 12 maja 2022 r. w sprawie ogłoszenia na obszarze Rzeczypospolitej Polskiej stanu zagrożenia epidemicznego",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1118",
+            "data_stanu": null,
+            "_sha256": "3c0e07df2d79fcea1a0ef441592e3b4173bea290fc9703d63351cb5ec241b400",
+            "_strona": 1
+          }
         }
       ]
     },
@@ -18043,6 +18098,21 @@
           "_sha256": "bd51eaabfb468e3c8a6b3d78183b04f961ec8ab7d9ce7c2fcb1d2c2bba02552b",
           "_strona": 212
         }
+      },
+      {
+        "rodzaj": "granica_przepisu",
+        "data": "2023-07-31",
+        "opis": "Świadczenie przysługiwało do 2023-07-31.",
+        "skutek": null,
+        "dowod": {
+          "eli": "DU/2020/374",
+          "przepis": "art. 15zzzib ust. 1",
+          "cytat": "Za okres stanu zagrożenia epidemicznego albo stanu epidemii,\nogłoszonych z powodu COVID-19, dodatek mieszkaniowy, o którym mowa\nw ustawie z dnia 21 czerwca 2001 r. o dodatkach mieszkaniowych (Dz. U. z 2023 r.\npoz. 1335), może zostać przyznany z mocą wsteczną.",
+          "url": "https://api.sejm.gov.pl/eli/acts/DU/2020/374",
+          "data_stanu": null,
+          "_sha256": "bd51eaabfb468e3c8a6b3d78183b04f961ec8ab7d9ce7c2fcb1d2c2bba02552b",
+          "_strona": 212
+        }
       }
     ],
     "powiazane": [],
@@ -18050,12 +18120,7 @@
       "data_stanu": "2023-07-18",
       "tekst": "tekst ujednolicony (informacyjny)"
     },
-    "nieustalone": [
-      {
-        "pole": "ile",
-        "powod": "Analiza nie podaje kwoty ani reguły kwoty dla tego świadczenia."
-      }
-    ],
+    "nieustalone": [],
     "flagi": [],
     "forma": "pieniezne",
     "_nazwa_zrodlowa": "Dodatek mieszkaniowy z mocą wsteczną (COVID-19)",
@@ -18066,7 +18131,7 @@
     "slug": "du-2001-734-s07",
     "nazwa": "Dodatek mieszkaniowy z dopłatą do czynszu w czasie epidemii COVID-19",
     "rodzaj_korzysci": "swiadczenie_okresowe",
-    "status": "do_ustalenia",
+    "status": "zamknieta",
     "komu": "Najemca albo podnajemca, którego dochód spadł o co najmniej 25% wobec 2019 r., spełniający warunki dodatku mieszkaniowego.",
     "opis_prosty": "Dodatek mieszkaniowy powiększony o dopłatę z funduszu COVID-19, łącznie do 75% czynszu i nie więcej niż 1500 zł miesięcznie.",
     "sytuacje": [
@@ -18095,7 +18160,32 @@
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [],
-      "progi": [],
+      "progi": [
+        {
+          "przepis": "Dodatek powiększony o dopłatę do czynszu: maksimum — 1500,00 zł",
+          "wpisy": [
+            {
+              "wartosc": "1500,00 zł",
+              "warianty": null,
+              "od": "2021-01-05",
+              "do": null,
+              "rodzaj_zmiany": "pierwszy_znany_wpis",
+              "poprzednia": null,
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2021/11",
+                "przepis": "art. 24 pkt 7",
+                "cytat": "Wysokość dodatku mieszkaniowego powiększonego o dopłatę do czynszu stanowi 75% miesięcznego czynszu opłacanego przez najemcę, jednak nie więcej niż 1500 zł.",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/11",
+                "data_stanu": null,
+                "_sha256": "32036534bddfcf8b5d8cf5022c75b279bffa65ab5b479cbe6e7af7e86d00cd09",
+                "_strona": 40
+              },
+              "_rodzaj": "maksimum"
+            }
+          ]
+        }
+      ],
       "trasa": [
         {
           "krok": 1,
@@ -18210,6 +18300,21 @@
           "_strona": 47
         },
         "od": "2021-01-05"
+      },
+      {
+        "rodzaj": "granica_przepisu",
+        "data": "2021-03-31",
+        "opis": "Świadczenie przysługiwało do 2021-03-31.",
+        "skutek": null,
+        "dowod": {
+          "eli": "DU/2021/11",
+          "przepis": "art. 24 pkt 7",
+          "cytat": "Osobom, o których mowa w art. 2 ust. 1 pkt 1 ustawy z dnia 21 czerwca 2001 r. o dodatkach\nmieszkaniowych (Dz. U. z 2019 r. poz. 2133 oraz z 2021 r. poz. 11), może zostać przyznany dodatek mieszkaniowy\npowiększony o dopłatę z Funduszu Przeciwdziałania COVID-19, zwaną dalej „dopłatą do czynszu”.",
+          "url": "https://api.sejm.gov.pl/eli/acts/DU/2021/11",
+          "data_stanu": null,
+          "_sha256": "32036534bddfcf8b5d8cf5022c75b279bffa65ab5b479cbe6e7af7e86d00cd09",
+          "_strona": 40
+        }
       }
     ],
     "powiazane": [
@@ -24532,7 +24637,7 @@
     "slug": "du-2004-2779-s001",
     "nazwa": "Rekompensata za brak waloryzacji dodatków kombatanckich w latach 2002–2005",
     "rodzaj_korzysci": "swiadczenie_jednorazowe",
-    "status": "obowiazuje",
+    "status": "zamknieta",
     "komu": "Kombatant albo inna osoba uprawniona, która w latach 2002–2005 miała prawo do dodatku kombatanckiego lub kompensacyjnego.",
     "opis_prosty": "Jednorazowe wyrównanie niedopłaconego dodatku kombatanckiego, świadczenia w tej wysokości albo dodatku kompensacyjnego.",
     "sytuacje": [
@@ -24560,7 +24665,31 @@
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [],
-      "progi": [],
+      "progi": [
+        {
+          "przepis": "Przykład: należność główna za cały okres 1.06.2002–31.01.2005 (dodatek kombatancki), bez odsetek — 22,56 zł",
+          "wpisy": [
+            {
+              "wartosc": "22,56 zł",
+              "warianty": null,
+              "od": "2002-06-01",
+              "do": "2005-01-31",
+              "rodzaj_zmiany": "pierwszy_znany_wpis",
+              "poprzednia": null,
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2004/2779",
+                "przepis": "art. 3 ust. 1 pkt 1",
+                "cytat": "kwoty odpowiadającej iloczynowi niedopłaty wynoszącej 0,68 zł i liczby miesięcy, za które przysługiwał osobie dodatek kombatancki lub świadcze- nie w wysokości dodatku kombatanckiego, za okres od dnia 1 czerwca 2002 r. do dnia 28 lutego 2003 r.;",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/2779",
+                "data_stanu": null,
+                "_sha256": "d3a10f18e5274321220b0ac4484fc43a4b0234b81adb13870102ec54365cc1b9",
+                "_strona": 1
+              }
+            }
+          ]
+        }
+      ],
       "trasa": [
         {
           "krok": 1,
@@ -24728,6 +24857,21 @@
           "data_stanu": null,
           "_sha256": "d3a10f18e5274321220b0ac4484fc43a4b0234b81adb13870102ec54365cc1b9",
           "_strona": 2
+        }
+      },
+      {
+        "rodzaj": "granica_przepisu",
+        "data": "2008-02-29",
+        "opis": "Świadczenie przysługiwało do 2008-02-29.",
+        "skutek": null,
+        "dowod": {
+          "eli": "DU/2004/2779",
+          "przepis": "art. 2",
+          "cytat": "Rekompensata przysługuje osobie, która za okres od dnia 1 czerwca 2002 r. do dnia 31 stycznia 2005 r. lub za część tego okresu ma prawo do wypłaty co najmniej jed- nego z następujących świadczeń:",
+          "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/2779",
+          "data_stanu": null,
+          "_sha256": "d3a10f18e5274321220b0ac4484fc43a4b0234b81adb13870102ec54365cc1b9",
+          "_strona": 1
         }
       }
     ],
@@ -28923,7 +29067,7 @@
     "slug": "du-2005-725-s001",
     "nazwa": "Rekompensata za pominiętą waloryzację świadczeń dla przymusowo zatrudnianych",
     "rodzaj_korzysci": "swiadczenie_jednorazowe",
-    "status": "obowiazuje",
+    "status": "zamknieta",
     "komu": "Osoba, która w latach 2002–2005 miała prawo do świadczenia dla żołnierzy przymusowo zatrudnianych albo osób deportowanych do pracy przymusowej.",
     "opis_prosty": "Jednorazowe wyrównanie za lata 2002–2005, gdy nie podwyższono świadczeń dla żołnierzy przymusowo zatrudnianych i deportowanych.",
     "sytuacje": [
@@ -28951,7 +29095,31 @@
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [],
-      "progi": [],
+      "progi": [
+        {
+          "przepis": "Przykład: należność główna za cały okres 1.06.2002–31.05.2005, bez odsetek — 25,44 zł",
+          "wpisy": [
+            {
+              "wartosc": "25,44 zł",
+              "warianty": null,
+              "od": "2002-06-01",
+              "do": "2005-05-31",
+              "rodzaj_zmiany": "pierwszy_znany_wpis",
+              "poprzednia": null,
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2005/725",
+                "przepis": "art. 3 ust. 1 pkt 1",
+                "cytat": "kwoty odpowiadającej iloczynowi niedopłaty wynoszącej 0,68 zł i liczby miesięcy, za które przysługiwało osobie świadczenie pieniężne, o którym mowa w art. 2, za okres od dnia 1 czerwca 2002 r. do dnia 28 lutego 2003 r.;",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2005/725",
+                "data_stanu": "2005-06-02",
+                "_sha256": "6731f8d2fe105ca93d08e7099a4b225de99cbc262c1637d4845721d0da6466c6",
+                "_strona": 2
+              }
+            }
+          ]
+        }
+      ],
       "trasa": [
         {
           "krok": 1,
@@ -29102,6 +29270,21 @@
         },
         "od": "2002-06-01",
         "do": "2005-05-31"
+      },
+      {
+        "rodzaj": "granica_przepisu",
+        "data": "2008-06-30",
+        "opis": "Świadczenie przysługiwało do 2008-06-30.",
+        "skutek": null,
+        "dowod": {
+          "eli": "DU/2005/725",
+          "przepis": "art. 2",
+          "cytat": "Rekompensata przysługuje osobie, która za okres od dnia 1 czerwca 2002 r. do dnia 31 maja 2005 r. lub za część tego okresu ma prawo do co najmniej jednego z nastę- pujących świadczeń:",
+          "url": "https://api.sejm.gov.pl/eli/acts/DU/2005/725",
+          "data_stanu": "2005-06-02",
+          "_sha256": "6731f8d2fe105ca93d08e7099a4b225de99cbc262c1637d4845721d0da6466c6",
+          "_strona": 1
+        }
       }
     ],
     "powiazane": [
@@ -38239,7 +38422,80 @@
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [],
-      "progi": [],
+      "progi": [
+        {
+          "przepis": "Zapomoga SOP: górna granica w 2024 r. (10 × kwota bazowa) — 20887,70 zł",
+          "wpisy": [
+            {
+              "wartosc": "20887,70 zł",
+              "warianty": null,
+              "od": "2024-01-01",
+              "do": "2024-12-31",
+              "rodzaj_zmiany": "pierwszy_znany_wpis",
+              "poprzednia": null,
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2018/340",
+                "przepis": "§ 4",
+                "cytat": "Zapomogę można przyznać do wysokości dziesięciokrotności kwoty bazowej ustalonej dla funkcjonariuszy w ustawie budżetowej.",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/340",
+                "data_stanu": null,
+                "_sha256": "e311d1712e1d6fbfa4e864199184264f6d0980bfd91df77675aa2ebc1f26b154",
+                "_strona": 1
+              },
+              "_rodzaj": "maksimum"
+            }
+          ]
+        },
+        {
+          "przepis": "Zapomoga SOP: górna granica w 2025 r. (10 × kwota bazowa) — 21932,10 zł",
+          "wpisy": [
+            {
+              "wartosc": "21932,10 zł",
+              "warianty": null,
+              "od": "2025-01-01",
+              "do": "2025-12-31",
+              "rodzaj_zmiany": "pierwszy_znany_wpis",
+              "poprzednia": null,
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2018/340",
+                "przepis": "§ 4",
+                "cytat": "Zapomogę można przyznać do wysokości dziesięciokrotności kwoty bazowej ustalonej dla funkcjonariuszy w ustawie budżetowej.",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/340",
+                "data_stanu": null,
+                "_sha256": "e311d1712e1d6fbfa4e864199184264f6d0980bfd91df77675aa2ebc1f26b154",
+                "_strona": 1
+              },
+              "_rodzaj": "maksimum"
+            }
+          ]
+        },
+        {
+          "przepis": "Zapomoga SOP: górna granica w 2026 r. (10 × kwota bazowa) — 22590,10 zł",
+          "wpisy": [
+            {
+              "wartosc": "22590,10 zł",
+              "warianty": null,
+              "od": "2026-01-01",
+              "do": "2026-12-31",
+              "rodzaj_zmiany": "pierwszy_znany_wpis",
+              "poprzednia": null,
+              "roznica": null,
+              "dowod": {
+                "eli": "DU/2018/340",
+                "przepis": "§ 4",
+                "cytat": "Zapomogę można przyznać do wysokości dziesięciokrotności kwoty bazowej ustalonej dla funkcjonariuszy w ustawie budżetowej.",
+                "url": "https://api.sejm.gov.pl/eli/acts/DU/2018/340",
+                "data_stanu": null,
+                "_sha256": "e311d1712e1d6fbfa4e864199184264f6d0980bfd91df77675aa2ebc1f26b154",
+                "_strona": 1
+              },
+              "_rodzaj": "maksimum"
+            }
+          ]
+        }
+      ],
       "trasa": [
         {
           "krok": 1,
@@ -40004,7 +40260,7 @@
     "slug": "du-2020-374-s001",
     "nazwa": "Świadczenie postojowe w czasie epidemii COVID-19",
     "rodzaj_korzysci": "swiadczenie_okresowe",
-    "status": "obowiazuje",
+    "status": "zamknieta",
     "komu": "Osoba prowadząca działalność gospodarczą albo wykonująca umowę cywilnoprawną, której działalność przestała przynosić przychody z powodu COVID-19.",
     "opis_prosty": "Jednorazowe albo powtarzane świadczenie z ZUS dla przedsiębiorców i osób na umowach cywilnych, które straciły przychody przez epidemię.",
     "sytuacje": [
@@ -40219,6 +40475,21 @@
           "_sha256": "bd51eaabfb468e3c8a6b3d78183b04f961ec8ab7d9ce7c2fcb1d2c2bba02552b",
           "_strona": 132
         }
+      },
+      {
+        "rodzaj": "granica_przepisu",
+        "data": "2022-08-31",
+        "opis": "Świadczenie przysługiwało do 2022-08-31.",
+        "skutek": null,
+        "dowod": {
+          "eli": "DU/2020/374",
+          "przepis": "art. 15zq ust. 1 pkt 2",
+          "cytat": "wykonującej umowę agencyjną, umowę zlecenia, inną umowę o świadczenie usług, do której zgodnie z ustawą z dnia 23 kwietnia 1964 r. – Kodeks cywilny stosuje się przepisy dotyczące zlecenia albo umowę o dzieło, zwane dalej „umową cywilnoprawną” – przysługuje świadczenie postojowe.",
+          "url": "https://api.sejm.gov.pl/eli/acts/DU/2020/374",
+          "data_stanu": "2026-09-16",
+          "_sha256": "bd51eaabfb468e3c8a6b3d78183b04f961ec8ab7d9ce7c2fcb1d2c2bba02552b",
+          "_strona": 130
+        }
       }
     ],
     "powiazane": [
@@ -40232,9 +40503,7 @@
       "tekst": "tekst ujednolicony (informacyjny)"
     },
     "nieustalone": [],
-    "flagi": [
-      "Analiza częściowa: krąg uprawnionych, historia kwot i warunki mogą być niepełne."
-    ],
+    "flagi": [],
     "forma": "pieniezne",
     "_nazwa_zrodlowa": "Historyczne świadczenie postojowe związane z COVID-19",
     "_komu_zrodlowe": "Osoba prowadząca wskazaną działalność lub wykonująca umowę cywilnoprawną, przy przestoju COVID-19 i właściwych warunkach oraz terminie wniosku."
@@ -40387,9 +40656,7 @@
       "tekst": "tekst ujednolicony (informacyjny)"
     },
     "nieustalone": [],
-    "flagi": [
-      "Analiza częściowa: krąg uprawnionych, historia kwot i warunki mogą być niepełne."
-    ],
+    "flagi": [],
     "forma": "pieniezne",
     "_nazwa_zrodlowa": "Historyczny dodatkowy zasiłek opiekuńczy COVID-19",
     "_komu_zrodlowe": "Ubezpieczony zwolniony od pracy do osobistej opieki w przypadkach określonych we właściwej historycznej wersji ustawy i rozporządzenia; katalog dzieci i placówek zmieniał się."
@@ -43833,17 +44100,223 @@
       "_strona": 1
     },
     "ile": {
-      "rozwiazanie": "formula",
+      "rozwiazanie": "kwota_w_ustawie",
       "regula": {
         "udzial": null,
         "podstawa_id": null,
         "opis": "Świadczenie pieniężne dla rodziny zmarłego funkcjonariusza lub żołnierza — co i ile: 100% przeciętnego uposażenia właściwej służby dla małżonka lub sieroty zupełnej; 50% dla pozostałego uprawnionego dziecka i rodzica. Podstawa według 31 grudnia roku poprzedzającego wniosek. Kwota złotowa wymaga odpowiedniej służby i roku, nie jednej wspólnej stawki."
       },
-      "aktualna": null,
+      "aktualna": {
+        "wartosc": null,
+        "warianty": [
+          {
+            "etykieta": "Policja, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "9275,09 zł"
+          },
+          {
+            "etykieta": "Policja, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "4637,54 zł"
+          },
+          {
+            "etykieta": "Straż Graniczna, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "9275,09 zł"
+          },
+          {
+            "etykieta": "Straż Graniczna, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "4637,54 zł"
+          },
+          {
+            "etykieta": "Państwowa Straż Pożarna, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "9152,27 zł"
+          },
+          {
+            "etykieta": "Państwowa Straż Pożarna, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "4576,13 zł"
+          },
+          {
+            "etykieta": "Centralne Biuro Antykorupcyjne, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "7676,24 zł"
+          },
+          {
+            "etykieta": "Centralne Biuro Antykorupcyjne, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "3838,12 zł"
+          },
+          {
+            "etykieta": "Służba Kontrwywiadu Wojskowego, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "10834,46 zł"
+          },
+          {
+            "etykieta": "Służba Kontrwywiadu Wojskowego, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "5417,23 zł"
+          },
+          {
+            "etykieta": "Służba Wywiadu Wojskowego, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "10944,12 zł"
+          },
+          {
+            "etykieta": "Służba Wywiadu Wojskowego, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "5472,06 zł"
+          },
+          {
+            "etykieta": "Służba Więzienna, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "9275,09 zł"
+          },
+          {
+            "etykieta": "Służba Więzienna, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "4637,54 zł"
+          },
+          {
+            "etykieta": "Służba Celno-Skarbowa, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "10505,48 zł"
+          },
+          {
+            "etykieta": "Służba Celno-Skarbowa, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "5252,74 zł"
+          },
+          {
+            "etykieta": "Służba Ochrony Państwa, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "10744,54 zł"
+          },
+          {
+            "etykieta": "Służba Ochrony Państwa, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "5372,27 zł"
+          },
+          {
+            "etykieta": "żołnierze zawodowi, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "9715,92 zł"
+          },
+          {
+            "etykieta": "żołnierze zawodowi, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+            "wartosc": "4857,96 zł"
+          }
+        ],
+        "od": "2026-01-01",
+        "do": "2026-12-31"
+      },
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
       "wyliczenie": null,
-      "os_czasu": [],
+      "os_czasu": [
+        {
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "Policja, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "9275,09 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Policja, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "4637,54 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Straż Graniczna, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "9275,09 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Straż Graniczna, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "4637,54 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Państwowa Straż Pożarna, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "9152,27 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Państwowa Straż Pożarna, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "4576,13 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Centralne Biuro Antykorupcyjne, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "7676,24 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Centralne Biuro Antykorupcyjne, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "3838,12 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Służba Kontrwywiadu Wojskowego, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "10834,46 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Służba Kontrwywiadu Wojskowego, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "5417,23 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Służba Wywiadu Wojskowego, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "10944,12 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Służba Wywiadu Wojskowego, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "5472,06 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Służba Więzienna, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "9275,09 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Służba Więzienna, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "4637,54 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Służba Celno-Skarbowa, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "10505,48 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Służba Celno-Skarbowa, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "5252,74 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Służba Ochrony Państwa, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "10744,54 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "Służba Ochrony Państwa, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "5372,27 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "żołnierze zawodowi, małżonek albo sierota zupełna: 100% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "9715,92 zł",
+              "_do": "2026-12-31"
+            },
+            {
+              "etykieta": "żołnierze zawodowi, inne dziecko albo rodzic: 50% przeciętnego uposażenia (wniosek w 2026 r.)",
+              "wartosc": "4857,96 zł",
+              "_do": "2026-12-31"
+            }
+          ],
+          "od": "2026-01-01",
+          "do": "2026-12-31",
+          "rodzaj_zmiany": "pierwszy_znany_wpis",
+          "poprzednia": null,
+          "roznica": null,
+          "dowod": {
+            "eli": "DU/2023/658",
+            "przepis": "art. 4 ust. 1 pkt 1",
+            "cytat": "100% przeciętnego uposażenia odpowiednio funkcjonariusza lub żołnierza zawodowego – w przypadku małżonka albo każdego dziecka, które nie posiada obojga rodziców (sierota zupełna);",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/658",
+            "data_stanu": "2023-04-11",
+            "_sha256": "43ccc77d5fb38255579eea02f0fabb4fb97f353b4cfaa03cf60894328b5b48ee",
+            "_strona": 2
+          }
+        }
+      ],
       "progi": [],
       "trasa": [
         {
@@ -45425,37 +45898,18 @@
       "_strona": 190
     },
     "ile": {
-      "rozwiazanie": "nieustalone",
-      "regula": null,
+      "rozwiazanie": "formula",
+      "regula": {
+        "udzial": null,
+        "podstawa_id": null,
+        "opis": "Bon na zasiedlenie — reguła kwoty: Do 200% przeciętnego wynagrodzenia za pracę; konkretna kwota w umowie."
+      },
       "aktualna": null,
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [],
       "progi": [
-        {
-          "przepis": "Bon na zasiedlenie — reguła kwoty — Do 200% przeciętnego wynagrodzenia za pracę; konkretna kwota w umowie.",
-          "wpisy": [
-            {
-              "wartosc": "Do 200% przeciętnego wynagrodzenia za pracę; konkretna kwota w umowie.",
-              "warianty": null,
-              "od": null,
-              "do": null,
-              "rodzaj_zmiany": "pierwszy_znany_wpis",
-              "poprzednia": null,
-              "roznica": null,
-              "dowod": {
-                "eli": "DU/2025/620",
-                "przepis": "art. 208 ust. 1",
-                "cytat": "Na wniosek bezrobotnego starosta może na podstawie umowy przyznać bon na zasiedlenie w wysokości określonej w umowie, nie wyższej jednak niż 200 % przeciętnego wynagrodzenia za pracę, w związku z zamiarem podjęcia przez bezrobotnego zatrudnienia, wykonywania innej pracy zarobkowej lub działalności gospodarczej, jeżeli odległość od miejsca dotychczasowego zamieszkania do miejscowości, w której bezrobotny zamieszka w związku z zamiarem podjęcia zatrudnienia, wykonywania innej pracy zarobkowej lub działalności gospodarczej, wynosi co najmniej 80 km lub łączny najkrótszy czas dotarcia do tej miejscowości i powrotu do dotychczasowego miejsca zamieszkania przekracza 3 godziny dziennie.",
-                "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
-                "data_stanu": "2026-10-16",
-                "_sha256": "28d063a8cc64162f03d23f07c26f1c59ec5975da91125c82bfb620e72ffe2660",
-                "_strona": 190
-              }
-            }
-          ]
-        },
         {
           "przepis": "Bon na zasiedlenie: maksimum (200% przeciętnego wynagrodzenia), od 2026-06-01 — 19125,76 zł",
           "wpisy": [
@@ -46714,37 +47168,18 @@
       "_strona": 54
     },
     "ile": {
-      "rozwiazanie": "nieustalone",
-      "regula": null,
+      "rozwiazanie": "formula",
+      "regula": {
+        "udzial": null,
+        "podstawa_id": null,
+        "opis": "Pożyczka edukacyjna — reguła kwoty: Do 400% przeciętnego wynagrodzenia z dnia umowy; nieoprocentowana. Możliwe umorzenie 20% po warunkach ustawowych."
+      },
       "aktualna": null,
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
       "wyliczenie": null,
       "os_czasu": [],
       "progi": [
-        {
-          "przepis": "Pożyczka edukacyjna — reguła kwoty — Do 400% przeciętnego wynagrodzenia z dnia umowy; nieoprocentowana. Możliwe umorzenie 20% po warunkach ustawowych.",
-          "wpisy": [
-            {
-              "wartosc": "Do 400% przeciętnego wynagrodzenia z dnia umowy; nieoprocentowana. Możliwe umorzenie 20% po warunkach ustawowych.",
-              "warianty": null,
-              "od": null,
-              "do": null,
-              "rodzaj_zmiany": "pierwszy_znany_wpis",
-              "poprzednia": null,
-              "roznica": null,
-              "dowod": {
-                "eli": "DU/2025/620",
-                "przepis": "art. 111 ust. 1",
-                "cytat": "Starosta może, na wniosek bezrobotnego lub poszukującego pracy, udzielić pożyczki edukacyjnej na sfinan- sowanie kosztów należnych instytucji prowadzącej kształcenie lub instytucji szkoleniowej, instytucji potwierdzającej naby- cie wiedzy i umiejętności lub instytucji wydającej dokumenty potwierdzające nabycie wiedzy i umiejętności, w celu po- prawy jego sytuacji na rynku pracy. W ramach pożyczki, o której mowa w zdaniu pierwszym, nie finansuje się studiów pierwszego i drugiego stopnia, jednolitych studiów magisterskich oraz kształcenia w szkole doktorskiej.",
-                "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/620",
-                "data_stanu": "2025-05-12",
-                "_sha256": "b4ea60e14600765173e317a19c4d41110395f87a18fbd8e6c7f6b3200c2ecd51",
-                "_strona": 54
-              }
-            }
-          ]
-        },
         {
           "przepis": "Pożyczka edukacyjna: maksimum (400% przeciętnego wynagrodzenia), od 2026-06-01 — 38251,52 zł",
           "wpisy": [
@@ -47017,8 +47452,12 @@
       "_strona": 118
     },
     "ile": {
-      "rozwiazanie": "nieustalone",
-      "regula": null,
+      "rozwiazanie": "formula",
+      "regula": {
+        "udzial": null,
+        "podstawa_id": null,
+        "opis": "Dodatek motywacyjny — reguła kwoty: Kwota przyznawana przez pracodawcę, nie wyższa niż 1000 zł miesięcznie, na okres nie dłuższy niż 6 miesięcy."
+      },
       "aktualna": null,
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
