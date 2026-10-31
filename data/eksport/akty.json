@@ -3358,6 +3358,32 @@
     "pliki": []
   },
   {
+    "eli": "DU/2022/2461",
+    "tytul": "Akt prawny DU/2022/2461",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2022/2461",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2022-2461/D20222461.pdf",
+        "nazwa_pobierania": "DU-2022-2461_tekst-ogloszony.pdf",
+        "sha256": "23b1236dd839e223db133a137703d97993ab12f392d74352e33e4e62b313d1e4",
+        "rozmiar": 269383,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2022/2461/text/O/D20222461.pdf",
+        "pobrano": null,
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/2022/2687",
     "tytul": "Ustawa z dnia 15 grudnia 2022 r. o szczególnej ochronie niektórych odbiorców paliw gazowych w 2023 r. oraz w 2024 r. w związku z sytuacją na rynku gazu",
     "typ": "Ustawa",
@@ -6242,6 +6268,32 @@
     ]
   },
   {
+    "eli": "MP/2024/114",
+    "tytul": "Akt prawny MP/2024/114",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2024/114",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2024-114/M20240114.pdf",
+        "nazwa_pobierania": "MP-2024-114_tekst-ogloszony.pdf",
+        "sha256": "533da5a0b90fdc161a7e79adef372b8df657370a5348eafd083b7c6b00db14fe",
+        "rozmiar": 205561,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2024/114/text/O/M20240114.pdf",
+        "pobrano": "2026-10-22T14:54:09+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "MP/2024/133",
     "tytul": "Akt prawny MP/2024/133",
     "typ": "Akt prawny",
@@ -6290,6 +6342,32 @@
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": []
+  },
+  {
+    "eli": "MP/2025/129",
+    "tytul": "Akt prawny MP/2025/129",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2025/129",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2025-129/M20250129.pdf",
+        "nazwa_pobierania": "MP-2025-129_tekst-ogloszony.pdf",
+        "sha256": "79ee77f73b70aff2d137657948438a310d2f00b453abc339e9d793ceab5ded0f",
+        "rozmiar": 168836,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2025/129/text/O/M20250129.pdf",
+        "pobrano": "2026-10-22T14:53:17+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "MP/2025/133",
@@ -6450,6 +6528,32 @@
         "rozmiar": 148214,
         "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/192/text/O/M20260192.pdf",
         "pobrano": "2026-10-22T14:52:48+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
+    "eli": "MP/2026/202",
+    "tytul": "Akt prawny MP/2026/202",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/MP/2026/202",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/MP-2026-202/M20260202.pdf",
+        "nazwa_pobierania": "MP-2026-202_tekst-ogloszony.pdf",
+        "sha256": "1629e2ef04e02e6c68d1829972d7d266d29e2af8b1dcec474b29accd68a0ee63",
+        "rozmiar": 154271,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/MP/2026/202/text/O/M20260202.pdf",
+        "pobrano": "2026-10-22T14:52:44+00:00",
         "data_stanu": null,
         "eli_obwieszczenia": null,
         "uzyty_w_danych": true,

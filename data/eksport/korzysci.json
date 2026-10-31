@@ -9938,17 +9938,148 @@
       "_strona": 3
     },
     "ile": {
-      "rozwiazanie": "formula",
+      "rozwiazanie": "kwota_w_ustawie",
       "regula": {
         "udzial": null,
         "podstawa_id": null,
-        "opis": "Renta inwalidy wojennego — co i ile: I i II grupa: 100% podstawy; III: 75%. Podstawa podlega waloryzacji FUS, dlatego nominalne 3485,25 zł nie jest automatycznie kwotą bieżącą. Zweryfikowana aktualna podstawa renty wojennej pozostaje luką."
+        "opis": "Renta inwalidy wojennego — co i ile: I i II grupa: 100% podstawy; III grupa: 75% podstawy. Podstawa (od 1.03.2023: 3485,25 zł) podlega corocznej waloryzacji od 1 marca wskaźnikiem waloryzacji emerytur i rent."
       },
-      "aktualna": null,
+      "aktualna": {
+        "wartosc": null,
+        "warianty": [
+          {
+            "etykieta": "Renta inwalidy wojennego I i II grupy (100% podstawy)",
+            "wartosc": "4341,08 zł"
+          },
+          {
+            "etykieta": "Renta inwalidy wojennego III grupy (75% podstawy)",
+            "wartosc": "3255,81 zł"
+          }
+        ],
+        "od": "2026-03-01",
+        "do": null
+      },
       "kwota_ustawowa_zastapiona": null,
       "zwiekszenia": [],
       "wyliczenie": null,
-      "os_czasu": [],
+      "os_czasu": [
+        {
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "Renta inwalidy wojennego I i II grupy (100% podstawy)",
+              "wartosc": "3485,25 zł",
+              "_do": "2024-02-29"
+            },
+            {
+              "etykieta": "Renta inwalidy wojennego III grupy (75% podstawy)",
+              "wartosc": "2613,94 zł",
+              "_do": "2024-02-29"
+            }
+          ],
+          "od": "2023-03-01",
+          "do": "2024-02-29",
+          "rodzaj_zmiany": "pierwszy_znany_wpis",
+          "poprzednia": null,
+          "roznica": null,
+          "dowod": {
+            "eli": "DU/2022/2461",
+            "przepis": "art. 2",
+            "cytat": "Podstawę wymiaru renty inwalidzkiej stanowi kwota 3485,25 zł.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/2461",
+            "data_stanu": null,
+            "_sha256": "23b1236dd839e223db133a137703d97993ab12f392d74352e33e4e62b313d1e4",
+            "_strona": 1
+          }
+        },
+        {
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "Renta inwalidy wojennego I i II grupy (100% podstawy)",
+              "wartosc": "3907,66 zł",
+              "_do": "2025-02-28"
+            },
+            {
+              "etykieta": "Renta inwalidy wojennego III grupy (75% podstawy)",
+              "wartosc": "2930,75 zł",
+              "_do": "2025-02-28"
+            }
+          ],
+          "od": "2024-03-01",
+          "do": "2025-02-28",
+          "rodzaj_zmiany": "nowelizacja",
+          "poprzednia": null,
+          "roznica": null,
+          "dowod": {
+            "eli": "DU/2022/2461",
+            "przepis": "art. 2",
+            "cytat": "Podstawę wymiaru renty inwalidzkiej stanowi kwota 3485,25 zł.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/2461",
+            "data_stanu": null,
+            "_sha256": "23b1236dd839e223db133a137703d97993ab12f392d74352e33e4e62b313d1e4",
+            "_strona": 1
+          }
+        },
+        {
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "Renta inwalidy wojennego I i II grupy (100% podstawy)",
+              "wartosc": "4122,58 zł",
+              "_do": "2026-02-28"
+            },
+            {
+              "etykieta": "Renta inwalidy wojennego III grupy (75% podstawy)",
+              "wartosc": "3091,94 zł",
+              "_do": "2026-02-28"
+            }
+          ],
+          "od": "2025-03-01",
+          "do": "2026-02-28",
+          "rodzaj_zmiany": "nowelizacja",
+          "poprzednia": null,
+          "roznica": null,
+          "dowod": {
+            "eli": "DU/2022/2461",
+            "przepis": "art. 2",
+            "cytat": "Podstawę wymiaru renty inwalidzkiej stanowi kwota 3485,25 zł.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/2461",
+            "data_stanu": null,
+            "_sha256": "23b1236dd839e223db133a137703d97993ab12f392d74352e33e4e62b313d1e4",
+            "_strona": 1
+          }
+        },
+        {
+          "wartosc": null,
+          "warianty": [
+            {
+              "etykieta": "Renta inwalidy wojennego I i II grupy (100% podstawy)",
+              "wartosc": "4341,08 zł",
+              "_do": null
+            },
+            {
+              "etykieta": "Renta inwalidy wojennego III grupy (75% podstawy)",
+              "wartosc": "3255,81 zł",
+              "_do": null
+            }
+          ],
+          "od": "2026-03-01",
+          "do": null,
+          "rodzaj_zmiany": "nowelizacja",
+          "poprzednia": null,
+          "roznica": null,
+          "dowod": {
+            "eli": "DU/2022/2461",
+            "przepis": "art. 2",
+            "cytat": "Podstawę wymiaru renty inwalidzkiej stanowi kwota 3485,25 zł.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/2461",
+            "data_stanu": null,
+            "_sha256": "23b1236dd839e223db133a137703d97993ab12f392d74352e33e4e62b313d1e4",
+            "_strona": 1
+          }
+        }
+      ],
       "progi": [],
       "trasa": [
         {
@@ -11929,7 +12060,7 @@
       "aktualna": {
         "wartosc": "1000,00 zł",
         "warianty": null,
-        "od": null,
+        "od": "2016-01-01",
         "do": null
       },
       "kwota_ustawowa_zastapiona": null,
@@ -11939,7 +12070,7 @@
         {
           "wartosc": "1000,00 zł",
           "warianty": null,
-          "od": null,
+          "od": "2016-01-01",
           "do": null,
           "rodzaj_zmiany": "pierwszy_znany_wpis",
           "poprzednia": null,
@@ -23221,12 +23352,12 @@
       "regula": {
         "udzial": null,
         "podstawa_id": null,
-        "opis": "Świadczenie przedemerytalne — co i ile: Kwota ustawowa z osobnej reguły podlega waloryzacji na zasadach i w terminach FUS. Dla wskazanych byłych rencistów świadczenie nie może przekraczać ostatnio otrzymywanej renty. Zweryfikowana stawka po najnowszej waloryzacji pozostaje do uzupełnienia."
+        "opis": "Świadczenie przedemerytalne — co i ile: Kwota ustawowa (od 1.03.2023: 1600,70 zł) podlega corocznej waloryzacji od 1 marca wskaźnikiem waloryzacji emerytur i rent. Dla wskazanych byłych rencistów świadczenie nie może przekraczać ostatnio otrzymywanej renty."
       },
       "aktualna": {
-        "wartosc": "1600,70 zł",
+        "wartosc": "1993,76 zł",
         "warianty": null,
-        "od": null,
+        "od": "2026-03-01",
         "do": null
       },
       "kwota_ustawowa_zastapiona": null,
@@ -23236,19 +23367,73 @@
         {
           "wartosc": "1600,70 zł",
           "warianty": null,
-          "od": null,
-          "do": null,
+          "od": "2023-03-01",
+          "do": "2024-02-29",
           "rodzaj_zmiany": "pierwszy_znany_wpis",
           "poprzednia": null,
           "roznica": null,
           "dowod": {
-            "eli": "DU/2004/1252",
-            "przepis": "art. 3 ust. 1",
-            "cytat": "Kwota świadczenia przedemerytalnego wynosi 1600,70 zł miesięcznie, z wyjątkiem świadczeń dla osób, o których mowa w art. 2 ust. 1 pkt 4, których świadczenie nie może być wyższe niż ostatnio otrzymywana renta.",
-            "url": "https://api.sejm.gov.pl/eli/acts/DU/2004/1252",
-            "data_stanu": "2026-02-11",
-            "_sha256": "5e426e8ff9d4051759fe9f9685d2fff03c57f2eca52d48d03ffca77a5c4df8e2",
-            "_strona": 4
+            "eli": "DU/2022/2461",
+            "przepis": "art. 3 pkt 1",
+            "cytat": "Kwota świadczenia przedemerytalnego wynosi 1600,70 zł miesięcznie",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/2461",
+            "data_stanu": null,
+            "_sha256": "23b1236dd839e223db133a137703d97993ab12f392d74352e33e4e62b313d1e4",
+            "_strona": 1
+          }
+        },
+        {
+          "wartosc": "1794,70 zł",
+          "warianty": null,
+          "od": "2024-03-01",
+          "do": "2025-02-28",
+          "rodzaj_zmiany": "nowelizacja",
+          "poprzednia": null,
+          "roznica": null,
+          "dowod": {
+            "eli": "MP/2024/114",
+            "przepis": "komunikat",
+            "cytat": "wskaźnik waloryzacji emerytur i rent w 2024 r. wynosi 112,12%",
+            "url": "https://api.sejm.gov.pl/eli/acts/MP/2024/114",
+            "data_stanu": null,
+            "_sha256": "533da5a0b90fdc161a7e79adef372b8df657370a5348eafd083b7c6b00db14fe",
+            "_strona": 1
+          }
+        },
+        {
+          "wartosc": "1893,41 zł",
+          "warianty": null,
+          "od": "2025-03-01",
+          "do": "2026-02-28",
+          "rodzaj_zmiany": "nowelizacja",
+          "poprzednia": null,
+          "roznica": null,
+          "dowod": {
+            "eli": "MP/2025/129",
+            "przepis": "komunikat",
+            "cytat": "wskaźnik waloryzacji emerytur i rent w 2025 r. wynosi 105,5 %",
+            "url": "https://api.sejm.gov.pl/eli/acts/MP/2025/129",
+            "data_stanu": null,
+            "_sha256": "79ee77f73b70aff2d137657948438a310d2f00b453abc339e9d793ceab5ded0f",
+            "_strona": 1
+          }
+        },
+        {
+          "wartosc": "1993,76 zł",
+          "warianty": null,
+          "od": "2026-03-01",
+          "do": null,
+          "rodzaj_zmiany": "nowelizacja",
+          "poprzednia": null,
+          "roznica": null,
+          "dowod": {
+            "eli": "MP/2026/202",
+            "przepis": "komunikat",
+            "cytat": "wskaźnik waloryzacji emerytur i rent w 2026 r. wynosi 105,3 %",
+            "url": "https://api.sejm.gov.pl/eli/acts/MP/2026/202",
+            "data_stanu": null,
+            "_sha256": "1629e2ef04e02e6c68d1829972d7d266d29e2af8b1dcec474b29accd68a0ee63",
+            "_strona": 1
           }
         }
       ],
@@ -23346,9 +23531,7 @@
       "tekst": "tekst ujednolicony (informacyjny)"
     },
     "nieustalone": [],
-    "flagi": [
-      "Analiza częściowa: krąg uprawnionych, historia kwot i warunki mogą być niepełne."
-    ],
+    "flagi": [],
     "forma": "pieniezne",
     "_nazwa_zrodlowa": "Świadczenie przedemerytalne",
     "_komu_zrodlowe": "Osoba z ustawowego katalogu, po co najmniej 180 dniach zasiłku i z dodatkowymi warunkami, nadal zarejestrowana, z wnioskiem w terminie."
@@ -29621,7 +29804,7 @@
       "aktualna": {
         "wartosc": "120000,00 zł",
         "warianty": null,
-        "od": null,
+        "od": "2021-12-01",
         "do": null
       },
       "kwota_ustawowa_zastapiona": null,
@@ -29631,7 +29814,7 @@
         {
           "wartosc": "120000,00 zł",
           "warianty": null,
-          "od": null,
+          "od": "2021-12-01",
           "do": null,
           "rodzaj_zmiany": "pierwszy_znany_wpis",
           "poprzednia": null,
@@ -29750,7 +29933,7 @@
       "aktualna": {
         "wartosc": "170000,00 zł",
         "warianty": null,
-        "od": null,
+        "od": "2026-01-01",
         "do": null
       },
       "kwota_ustawowa_zastapiona": null,
@@ -29760,7 +29943,7 @@
         {
           "wartosc": "170000,00 zł",
           "warianty": null,
-          "od": null,
+          "od": "2026-01-01",
           "do": null,
           "rodzaj_zmiany": "pierwszy_znany_wpis",
           "poprzednia": null,
@@ -32398,7 +32581,7 @@
       "aktualna": {
         "wartosc": "1000,00 zł",
         "warianty": null,
-        "od": null,
+        "od": "2024-10-05",
         "do": null
       },
       "kwota_ustawowa_zastapiona": null,
@@ -32408,7 +32591,7 @@
         {
           "wartosc": "1000,00 zł",
           "warianty": null,
-          "od": null,
+          "od": "2024-10-05",
           "do": null,
           "rodzaj_zmiany": "pierwszy_znany_wpis",
           "poprzednia": null,
@@ -38406,7 +38589,7 @@
     "slug": "du-2022-1692-s001",
     "nazwa": "Dodatek węglowy",
     "rodzaj_korzysci": "swiadczenie_jednorazowe",
-    "status": "do_ustalenia",
+    "status": "zamknieta",
     "komu": "Osoba w gospodarstwie domowym ogrzewanym głównie paliwem stałym z węgla, zgłoszonym do centralnej ewidencji emisyjności budynków.",
     "opis_prosty": "Jednorazowe świadczenie 3000 zł na zakup opału dla gospodarstw ogrzewanych węglem; wnioski przyjmowano do 30 listopada 2022 r.",
     "sytuacje": [
@@ -38573,6 +38756,32 @@
             "_sha256": "3e37ce84995e310e6aac85aa7acb8dc2563eb75a219408766571632282812d44",
             "_strona": 4
           }
+        },
+        {
+          "krok": 8,
+          "opis": "DU/2022/1692 art. 2 ust. 9: termin wniosku o dodatek węglowy 30.11.2022.",
+          "dowod": {
+            "eli": "DU/2022/1692",
+            "przepis": "art. 2 ust. 9",
+            "cytat": "Wniosek o wypłatę dodatku węglowego składa się w terminie do dnia 30 listopada 2022 r.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+            "data_stanu": null,
+            "_sha256": "b4808fb4913770325b48e7cc489c7574d3e48650325563897fd6d98c79607c11",
+            "_strona": 2
+          }
+        },
+        {
+          "krok": 9,
+          "opis": "DU/2022/1692 art. 2 ust. 10: termin wniosku o dodatek węglowy 30.11.2022.",
+          "dowod": {
+            "eli": "DU/2022/1692",
+            "przepis": "art. 2 ust. 10",
+            "cytat": "Wnioski o wypłatę dodatku węglowego złożone po dniu 30 listopada 2022 r. pozostawia się bez rozpoznania.",
+            "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+            "data_stanu": null,
+            "_sha256": "b4808fb4913770325b48e7cc489c7574d3e48650325563897fd6d98c79607c11",
+            "_strona": 2
+          }
         }
       ]
     },
@@ -38607,6 +38816,21 @@
           "_sha256": "3e37ce84995e310e6aac85aa7acb8dc2563eb75a219408766571632282812d44",
           "_strona": 4
         }
+      },
+      {
+        "rodzaj": "granica_przepisu",
+        "data": "2022-11-30",
+        "opis": "Świadczenie przysługiwało do 2022-11-30.",
+        "skutek": null,
+        "dowod": {
+          "eli": "DU/2022/1692",
+          "przepis": "art. 2 ust. 1",
+          "cytat": "Dodatek węglowy przysługuje osobie w gospodarstwie domowym w przypadku, gdy głównym źródłem ogrzewania gospodarstwa domowego jest kocioł na paliwo stałe, kominek, koza, ogrzewacz powietrza, trzon kuchenny, piecokuchnia, kuchnia węglowa lub piec kaflowy na paliwo stałe, zasilane paliwami stałymi, wpisane lub zgłoszone do centralnej ewidencji emisyjności budynków, o której mowa w art. 27a ust. 1 ustawy z dnia 21 listopada 2008 r. o wspieraniu termomodernizacji i remontów oraz o centralnej ewidencji emisyjności budynków (Dz. U. z 2023 r. poz. 2496 oraz z 2024 r. poz. 1089), do dnia 11 sierpnia 2022 r., albo po tym dniu – w przypadku głównych źródeł ogrzewania wpisanych lub zgłoszonych po raz pierwszy do centralnej ewidencji emisyjności budynków, o których mowa w art. 27g ust. 1 tej ustawy.",
+          "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1692",
+          "data_stanu": "2024-09-04",
+          "_sha256": "3e37ce84995e310e6aac85aa7acb8dc2563eb75a219408766571632282812d44",
+          "_strona": 1
+        }
       }
     ],
     "powiazane": [
@@ -38620,9 +38844,7 @@
       "tekst": "tekst ujednolicony (informacyjny)"
     },
     "nieustalone": [],
-    "flagi": [
-      "Wskazany termin składania wniosków minął. Dalsze wypłaty lub rozliczenia wymagają sprawdzenia przepisów przejściowych."
-    ],
+    "flagi": [],
     "forma": "pieniezne",
     "_nazwa_zrodlowa": "Dodatek węglowy",
     "_komu_zrodlowe": "Osoba w gospodarstwie spełniającym przesłanki źródła ogrzewania, paliwa i CEEB; zasady wspólnego adresu i wyjątki do uzupełnienia."
@@ -38632,7 +38854,7 @@
     "slug": "du-2022-1967-s001",
     "nazwa": "Dodatek dla gospodarstwa domowego ogrzewanego innym źródłem ciepła",
     "rodzaj_korzysci": "swiadczenie_jednorazowe",
-    "status": "do_ustalenia",
+    "status": "zamknieta",
     "komu": "Osoba w gospodarstwie domowym ogrzewanym głównie peletem, drewnem, gazem LPG albo olejem opałowym, zgłoszonym do centralnej ewidencji emisyjności budynków.",
     "opis_prosty": "Jednorazowe świadczenie z 2022 r. na zakup paliwa, w kwocie od 500 do 3000 zł zależnie od głównego źródła ciepła.",
     "sytuacje": [
@@ -38671,7 +38893,7 @@
             "wartosc": "2000,00 zł"
           }
         ],
-        "od": null,
+        "od": "2022-09-20",
         "do": null
       },
       "kwota_ustawowa_zastapiona": null,
@@ -38702,7 +38924,7 @@
               "_do": null
             }
           ],
-          "od": null,
+          "od": "2022-09-20",
           "do": null,
           "rodzaj_zmiany": "pierwszy_znany_wpis",
           "poprzednia": null,
@@ -38883,6 +39105,21 @@
           "_sha256": "7547111bfe0b99c6d26c1feea2848cb1fc983f1145348ac0af2f86ba87bc5487",
           "_strona": 48
         }
+      },
+      {
+        "rodzaj": "granica_przepisu",
+        "data": "2022-11-30",
+        "opis": "Świadczenie przysługiwało do 2022-11-30.",
+        "skutek": null,
+        "dowod": {
+          "eli": "DU/2022/1967",
+          "przepis": "art. 24 ust. 1",
+          "cytat": "Dodatek dla gospodarstw domowych przysługuje osobie w gospodarstwie domowym, w przypadku gdy głównym źródłem ciepła gospodarstwa domowego jest:",
+          "url": "https://api.sejm.gov.pl/eli/acts/DU/2022/1967",
+          "data_stanu": null,
+          "_sha256": "7547111bfe0b99c6d26c1feea2848cb1fc983f1145348ac0af2f86ba87bc5487",
+          "_strona": 45
+        }
       }
     ],
     "powiazane": [
@@ -38896,10 +39133,7 @@
       "tekst": "tekst ujednolicony (informacyjny)"
     },
     "nieustalone": [],
-    "flagi": [
-      "Analiza częściowa: krąg uprawnionych, historia kwot i warunki mogą być niepełne.",
-      "Wskazany termin składania wniosków minął. Dalsze wypłaty lub rozliczenia wymagają sprawdzenia przepisów przejściowych."
-    ],
+    "flagi": [],
     "forma": "pieniezne",
     "_nazwa_zrodlowa": "Historyczny dodatek dla gospodarstwa domowego na wybrane źródło ciepła",
     "_komu_zrodlowe": "Osoba w gospodarstwie domowym korzystającym z ustawowego głównego źródła ciepła, przy spełnieniu warunków ewidencji i braku wyłączeń; zamknięty termin wniosku z 2022 r."

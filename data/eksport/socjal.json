@@ -1947,7 +1947,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2004-1252/S001",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2004-1252",
       "artykuly": [
         "DU-2004-1252-art-2",
@@ -3425,7 +3425,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2022-1967/S001",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2022-1967",
       "artykuly": [
         "DU-2022-1967-art-24"
