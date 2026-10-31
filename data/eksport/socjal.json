@@ -827,7 +827,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1974-141/S005",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-1974-141",
       "artykuly": [
         "DU-1974-141-art-45",
@@ -843,7 +843,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1974-141/S006",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-1974-141",
       "artykuly": [
         "DU-1974-141-art-56",
@@ -859,7 +859,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1974-141/S007",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-1974-141",
       "artykuly": [
         "DU-1974-141-art-232"
@@ -906,7 +906,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1990-462/S001",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-1990-462",
       "artykuly": [
         "DU-1990-462-art-92",
@@ -922,7 +922,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1990-462/S006",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-1990-462",
       "artykuly": [
         "DU-1990-462-art-123",
@@ -938,7 +938,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-1990-462/S007",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-1990-462",
       "artykuly": [
         "DU-1990-462-art-113"
@@ -1357,7 +1357,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2001-539/S001",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2001-539",
       "artykuly": [
         "DU-2001-539-art-11",
@@ -1843,7 +1843,9 @@
       "rodzaj_zrodlowy": "wariant_w_innym_akcie",
       "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2003-2255",
-      "artykuly": [],
+      "artykuly": [
+        "DU-2003-2255-art-63"
+      ],
       "jednostki": [],
       "historia_parametr": null,
       "uwaga_czasowa": null,
@@ -1874,7 +1876,6 @@
       "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2003-2255",
       "artykuly": [
-        "DU-2003-2255-art-1",
         "DU-2003-2255-art-22a"
       ],
       "jednostki": [],
@@ -2045,6 +2046,7 @@
       "analiza": "Analizy ELI/DU-2004-593",
       "artykuly": [
         "DU-2004-593-art-1",
+        "DU-2004-593-art-106",
         "DU-2004-593-art-15",
         "DU-2004-593-art-37"
       ],
@@ -2062,9 +2064,11 @@
       "analiza": "Analizy ELI/DU-2004-593",
       "artykuly": [
         "DU-2004-593-art-1",
+        "DU-2004-593-art-106",
         "DU-2004-593-art-13",
         "DU-2004-593-art-147",
-        "DU-2004-593-art-38"
+        "DU-2004-593-art-38",
+        "DU-2004-593-art-8"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2085,7 +2089,8 @@
         "DU-2004-593-art-39",
         "DU-2004-593-art-39a",
         "DU-2004-593-art-40",
-        "DU-2004-593-art-6"
+        "DU-2004-593-art-6",
+        "DU-2004-593-art-8"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2146,7 +2151,9 @@
       "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2004-593",
       "artykuly": [
-        "DU-2004-593-art-44"
+        "DU-2004-593-art-17",
+        "DU-2004-593-art-44",
+        "DU-2004-593-art-96"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2164,7 +2171,8 @@
         "DU-2004-593-art-1",
         "DU-2004-593-art-48",
         "DU-2004-593-art-48a",
-        "DU-2004-593-art-48b"
+        "DU-2004-593-art-48b",
+        "DU-2004-593-art-97"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2195,7 +2203,11 @@
       "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2004-593",
       "artykuly": [
-        "DU-2004-593-art-61"
+        "DU-2004-593-art-54",
+        "DU-2004-593-art-60",
+        "DU-2004-593-art-61",
+        "DU-2004-593-art-64",
+        "DU-2004-593-art-64a"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2210,7 +2222,9 @@
       "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2004-593",
       "artykuly": [
-        "DU-2004-593-art-45"
+        "DU-2004-593-art-45",
+        "DU-2004-593-art-46",
+        "DU-2004-593-art-47"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2226,6 +2240,7 @@
       "analiza": "Analizy ELI/DU-2004-593",
       "artykuly": [
         "DU-2004-593-art-78",
+        "DU-2004-593-art-88",
         "DU-2004-593-art-89"
       ],
       "jednostki": [],
@@ -2242,7 +2257,9 @@
       "analiza": "Analizy ELI/DU-2004-593",
       "artykuly": [
         "DU-2004-593-art-91",
-        "DU-2004-593-art-92"
+        "DU-2004-593-art-92",
+        "DU-2004-593-art-93",
+        "DU-2004-593-art-95"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2287,7 +2304,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2005-67/S001",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2005-67",
       "artykuly": [
         "DU-2005-67-art-1",
@@ -2306,7 +2323,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2005-67/S002",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2005-67",
       "artykuly": [
         "DU-2005-67-art-13",
@@ -2325,7 +2342,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2005-67/S004",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2005-67",
       "artykuly": [
         "DU-2005-67-art-16",
@@ -2905,7 +2922,9 @@
       "analiza": "Analizy ELI/DU-2011-887",
       "artykuly": [
         "DU-2011-887-art-80",
-        "DU-2011-887-art-86"
+        "DU-2011-887-art-82",
+        "DU-2011-887-art-86",
+        "DU-2011-887-art-87"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2920,7 +2939,9 @@
       "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2011-887",
       "artykuly": [
-        "DU-2011-887-art-81"
+        "DU-2011-887-art-81",
+        "DU-2011-887-art-82",
+        "DU-2011-887-art-87"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2935,7 +2956,9 @@
       "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2011-887",
       "artykuly": [
-        "DU-2011-887-art-81"
+        "DU-2011-887-art-81",
+        "DU-2011-887-art-82",
+        "DU-2011-887-art-87"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2951,7 +2974,15 @@
       "analiza": "Analizy ELI/DU-2011-887",
       "artykuly": [
         "DU-2011-887-art-140",
-        "DU-2011-887-art-146"
+        "DU-2011-887-art-141",
+        "DU-2011-887-art-142",
+        "DU-2011-887-art-143",
+        "DU-2011-887-art-145",
+        "DU-2011-887-art-146",
+        "DU-2011-887-art-147",
+        "DU-2011-887-art-148",
+        "DU-2011-887-art-152",
+        "DU-2011-887-art-152a"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2967,7 +2998,14 @@
       "analiza": "Analizy ELI/DU-2011-887",
       "artykuly": [
         "DU-2011-887-art-140",
-        "DU-2011-887-art-149"
+        "DU-2011-887-art-141",
+        "DU-2011-887-art-142",
+        "DU-2011-887-art-143",
+        "DU-2011-887-art-145",
+        "DU-2011-887-art-149",
+        "DU-2011-887-art-151",
+        "DU-2011-887-art-152",
+        "DU-2011-887-art-152a"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -2983,7 +3021,13 @@
       "analiza": "Analizy ELI/DU-2011-887",
       "artykuly": [
         "DU-2011-887-art-140",
-        "DU-2011-887-art-150"
+        "DU-2011-887-art-141",
+        "DU-2011-887-art-142",
+        "DU-2011-887-art-143",
+        "DU-2011-887-art-150",
+        "DU-2011-887-art-151",
+        "DU-2011-887-art-152",
+        "DU-2011-887-art-152a"
       ],
       "jednostki": [],
       "historia_parametr": null,
@@ -3075,7 +3119,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2014-616/S001",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2014-616",
       "artykuly": [
         "DU-2014-616-art-10",
@@ -3094,7 +3138,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2014-616/S002",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2014-616",
       "artykuly": [
         "DU-2014-616-art-10",
@@ -3112,7 +3156,7 @@
       "pochodzenie": "reczna_ELI",
       "zrodlo_id": "DU-2014-616/S003",
       "rodzaj_zrodlowy": "swiadczenie",
-      "status_zrodlowy": "wymaga_uzupelnienia",
+      "status_zrodlowy": "sprawdzona_w_zakresie",
       "analiza": "Analizy ELI/DU-2014-616",
       "artykuly": [
         "DU-2014-616-art-15"
@@ -25313,7 +25357,10 @@
         "DU-2004-593-art-38"
       ],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S01",
+        "DU-2004-593-S02"
+      ]
     },
     {
       "id": "DU-2004-593-art-106a",
@@ -33333,7 +33380,9 @@
         "DU-2004-593-art-16a"
       ],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S07"
+      ]
     },
     {
       "id": "DU-2004-593-art-18",
@@ -37122,7 +37171,9 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S12"
+      ]
     },
     {
       "id": "DU-2004-593-art-46a",
@@ -37237,7 +37288,9 @@
         "DU-2004-593-art-5a"
       ],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S12"
+      ]
     },
     {
       "id": "DU-2004-593-art-48",
@@ -39611,7 +39664,9 @@
           "z_pozn_zm": false
         }
       ],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S10"
+      ]
     },
     {
       "id": "DU-2004-593-art-54a",
@@ -41572,7 +41627,9 @@
         "DU-2004-593-art-6"
       ],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S10"
+      ]
     },
     {
       "id": "DU-2004-593-art-61",
@@ -41980,7 +42037,9 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S10"
+      ]
     },
     {
       "id": "DU-2004-593-art-64a",
@@ -42002,7 +42061,9 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S10"
+      ]
     },
     {
       "id": "DU-2004-593-art-64b",
@@ -44730,7 +44791,10 @@
           "z_pozn_zm": false
         }
       ],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S02",
+        "DU-2004-593-S03"
+      ]
     },
     {
       "id": "DU-2004-593-art-80",
@@ -45243,7 +45307,9 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S13"
+      ]
     },
     {
       "id": "DU-2004-593-art-89",
@@ -46423,7 +46489,9 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S14"
+      ]
     },
     {
       "id": "DU-2004-593-art-94",
@@ -46836,7 +46904,9 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S14"
+      ]
     },
     {
       "id": "DU-2004-593-art-96",
@@ -46923,7 +46993,9 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S07"
+      ]
     },
     {
       "id": "DU-2004-593-art-97",
@@ -46997,7 +47069,9 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2004-593-S08"
+      ]
     },
     {
       "id": "DU-2004-593-art-97a",
@@ -51009,7 +51083,11 @@
           "z_pozn_zm": false
         }
       ],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S004",
+        "DU-2011-887-S005",
+        "DU-2011-887-S006"
+      ]
     },
     {
       "id": "DU-2011-887-art-141a",
@@ -51055,7 +51133,11 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S004",
+        "DU-2011-887-S005",
+        "DU-2011-887-S006"
+      ]
     },
     {
       "id": "DU-2011-887-art-143",
@@ -51109,7 +51191,11 @@
         "DU-2011-887-art-140"
       ],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S004",
+        "DU-2011-887-S005",
+        "DU-2011-887-S006"
+      ]
     },
     {
       "id": "DU-2011-887-art-144",
@@ -51291,7 +51377,10 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S004",
+        "DU-2011-887-S005"
+      ]
     },
     {
       "id": "DU-2011-887-art-146",
@@ -51527,7 +51616,9 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S004"
+      ]
     },
     {
       "id": "DU-2011-887-art-148",
@@ -51581,7 +51672,9 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S004"
+      ]
     },
     {
       "id": "DU-2011-887-art-149",
@@ -52077,7 +52170,10 @@
         "DU-2011-887-art-140"
       ],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S005",
+        "DU-2011-887-S006"
+      ]
     },
     {
       "id": "DU-2011-887-art-152",
@@ -52165,7 +52261,11 @@
       ],
       "powiazane_artykuly": [],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S004",
+        "DU-2011-887-S005",
+        "DU-2011-887-S006"
+      ]
     },
     {
       "id": "DU-2011-887-art-152a",
@@ -52189,7 +52289,11 @@
         "DU-2011-887-art-140"
       ],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S004",
+        "DU-2011-887-S005",
+        "DU-2011-887-S006"
+      ]
     },
     {
       "id": "DU-2011-887-art-153",
@@ -70866,7 +70970,11 @@
         "DU-2011-887-art-37"
       ],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S001",
+        "DU-2011-887-S002",
+        "DU-2011-887-S003"
+      ]
     },
     {
       "id": "DU-2011-887-art-83",
@@ -71473,7 +71581,11 @@
         "DU-2011-887-art-37"
       ],
       "powiazane_akty": [],
-      "korzysci": []
+      "korzysci": [
+        "DU-2011-887-S001",
+        "DU-2011-887-S002",
+        "DU-2011-887-S003"
+      ]
     },
     {
       "id": "DU-2011-887-art-88",

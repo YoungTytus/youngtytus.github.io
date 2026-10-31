@@ -1049,9 +1049,11 @@ def karty_analiz_eli(socjal, na_dzien, benefits, extra_karty, akty_meta, pomijan
                                      else 'swiadczenie_jednorazowe' if 'jednoraz' in (s.get('opis') or '').lower() + s['nazwa'].lower()
                                      else 'swiadczenie_okresowe'),
                  # „obowiązuje” tylko dla zwykłego świadczenia bez daty końca w obowiązującej ustawie; warianty z innych
-                 # aktów (np. COVID-19) i jednorazowe przeliczenia bez daty końca: do ustalenia
+                 # aktów (np. COVID-19) i jednorazowe przeliczenia bez daty końca: do ustalenia. Składnik lub wariant
+                 # może mieć „obowiązuje”, gdy analiza jawnie to potwierdza (pole obowiazywanie z ustaleniami, audyt 2026-11)
                  'status': ('zamknieta' if koniec and koniec < na_dzien
-                            else 'obowiazuje' if rodzaj == 'swiadczenie' and not koniec and w_mocy
+                            else 'obowiazuje' if (rodzaj == 'swiadczenie' or (s.get('obowiazywanie') or {}).get('status') == 'obowiazuje')
+                            and not koniec and w_mocy
                             else 'do_ustalenia'),
                  'komu': s.get('adresat') or 'Krąg uprawnionych nieustalony w analizie.',
                  'opis_prosty': s.get('opis'), 'sytuacje': [], 'sytuacje_zrodlo': None,

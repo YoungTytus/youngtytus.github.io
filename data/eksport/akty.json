@@ -2054,32 +2054,6 @@
     ]
   },
   {
-    "eli": "DU/2007/320",
-    "tytul": "Akt prawny DU/2007/320",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2007/320",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": [
-      {
-        "rodzaj": "O",
-        "plik": "akty/DU-2007-320/D20070320.pdf",
-        "nazwa_pobierania": "DU-2007-320_tekst-ogloszony.pdf",
-        "sha256": "8095c4b225a25e139ad725a4fbcb6053797329cbbef5387a7045a0ffc068afe3",
-        "rozmiar": 134099,
-        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2007/320/text/O/D20070320.pdf",
-        "pobrano": null,
-        "data_stanu": null,
-        "eli_obwieszczenia": null,
-        "uzyty_w_danych": true,
-        "zrodlo": "API Sejmu (ELI)"
-      }
-    ]
-  },
-  {
     "eli": "DU/2007/343",
     "tytul": "Ustawa z dnia 16 lutego 2007 r. o zapasach ropy naftowej, produktów naftowych i gazu ziemnego oraz zasadach postępowania w sytuacjach zagrożenia bezpieczeństwa paliwowego państwa i zakłóceń na rynku naftowym",
     "typ": "Ustawa",
@@ -2545,6 +2519,32 @@
     "pliki": []
   },
   {
+    "eli": "DU/2012/954",
+    "tytul": "Akt prawny DU/2012/954",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2012/954",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2012-954/D20120954.pdf",
+        "nazwa_pobierania": "DU-2012-954_tekst-ogloszony.pdf",
+        "sha256": "3ca464b24c1cf64358015735d935a9b07facf68da4980ef0cd7ea734dfa6002a",
+        "rozmiar": 766779,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2012/954/text/O/D20120954.pdf",
+        "pobrano": "2026-10-22T14:49:12+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/2012/959",
     "tytul": "Akt prawny DU/2012/959",
     "typ": "Akt prawny",
@@ -2700,18 +2700,6 @@
     "typ": "Akt prawny",
     "data_stanu": null,
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2015/1238",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "DU/2015/1310",
-    "tytul": "Akt prawny DU/2015/1310",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2015/1310",
     "url_isap": null,
     "korzysci": [],
     "wykonawcze": [],
@@ -3610,6 +3598,7 @@
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/1429",
     "url_isap": null,
     "korzysci": [
+      "DU-2003-2255-S14",
       "DU-2023-1429-S01"
     ],
     "wykonawcze": [],
@@ -3669,16 +3658,30 @@
     "pliki": []
   },
   {
-    "eli": "DU/2023/1938",
-    "tytul": "Akt prawny DU/2023/1938",
+    "eli": "DU/2023/1929",
+    "tytul": "Akt prawny DU/2023/1929",
     "typ": "Akt prawny",
     "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/1938",
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2023/1929",
     "url_isap": null,
     "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2023-1929/D20231929.pdf",
+        "nazwa_pobierania": "DU-2023-1929_tekst-ogloszony.pdf",
+        "sha256": "82e73857846eee971b979d8fbc06c4a64fa25a1ae2e6288ac286f61d391affb5",
+        "rozmiar": 201118,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2023/1929/text/O/D20231929.pdf",
+        "pobrano": "2026-10-22T14:47:48+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
   },
   {
     "eli": "DU/2023/2414",
@@ -3760,6 +3763,32 @@
     ]
   },
   {
+    "eli": "DU/2024/1044",
+    "tytul": "Akt prawny DU/2024/1044",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/1044",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": [
+      {
+        "rodzaj": "O",
+        "plik": "akty/DU-2024-1044/D20241044.pdf",
+        "nazwa_pobierania": "DU-2024-1044_tekst-ogloszony.pdf",
+        "sha256": "97aac3573f0161bc45dd0e01c0576639d8a37994bd05babe66b68f6f6757b98c",
+        "rozmiar": 152348,
+        "url_zrodla": "https://api.sejm.gov.pl/eli/acts/DU/2024/1044/text/O/D20241044.pdf",
+        "pobrano": "2026-10-22T14:47:37+00:00",
+        "data_stanu": null,
+        "eli_obwieszczenia": null,
+        "uzyty_w_danych": true,
+        "zrodlo": "API Sejmu (ELI)"
+      }
+    ]
+  },
+  {
     "eli": "DU/2024/1048",
     "tytul": "Akt prawny DU/2024/1048",
     "typ": "Akt prawny",
@@ -3790,9 +3819,7 @@
     "data_stanu": null,
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2024/1238",
     "url_isap": null,
-    "korzysci": [
-      "DU-2003-2255-S14"
-    ],
+    "korzysci": [],
     "wykonawcze": [],
     "status": "Stan prawny należy zweryfikować u źródła",
     "pliki": []
@@ -4218,6 +4245,18 @@
     ]
   },
   {
+    "eli": "DU/2026/1067",
+    "tytul": "Akt prawny DU/2026/1067",
+    "typ": "Akt prawny",
+    "data_stanu": null,
+    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2026/1067",
+    "url_isap": null,
+    "korzysci": [],
+    "wykonawcze": [],
+    "status": "Stan prawny należy zweryfikować u źródła",
+    "pliki": []
+  },
+  {
     "eli": "DU/2026/1277",
     "tytul": "Akt prawny DU/2026/1277",
     "typ": "Akt prawny",
@@ -4247,18 +4286,6 @@
     "typ": "Akt prawny",
     "data_stanu": null,
     "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2026/525",
-    "url_isap": null,
-    "korzysci": [],
-    "wykonawcze": [],
-    "status": "Stan prawny należy zweryfikować u źródła",
-    "pliki": []
-  },
-  {
-    "eli": "DU/2026/974",
-    "tytul": "Akt prawny DU/2026/974",
-    "typ": "Akt prawny",
-    "data_stanu": null,
-    "url_eli": "https://api.sejm.gov.pl/eli/acts/DU/2026/974",
     "url_isap": null,
     "korzysci": [],
     "wykonawcze": [],
