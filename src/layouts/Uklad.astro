@@ -14,7 +14,7 @@ interface Props {
 }
 const { tytul, opis, sekcja, jsonLd, noindex } = Astro.props;
 const NAZWA = 'Mapa Polskiego Socjalu';
-const pelnyTytul = tytul === NAZWA ? `${NAZWA}: co rozdaje nasze państwo — świadczenia i pomoc z podstawą prawną` : `${tytul} | ${NAZWA}`;
+const pelnyTytul = tytul === NAZWA ? `${NAZWA}: co rozdaje nasze państwo. Świadczenia i pomoc z podstawą prawną` : `${tytul} | ${NAZWA}`;
 const kanoniczny = new URL(Astro.url.pathname, Astro.site).href;
 const d = dane();
 const wersja = `${d.manifest.kontrakt} · ${d.manifest.wersja_kodu}`;
@@ -95,7 +95,6 @@ const nav = [
             </div>
           </div>
         </div>
-        <p class="footer-motto">Ten socjal jest do usunięcia.</p>
         <div class="disclaimer">
           <p><strong>Informacje mają charakter poglądowy i nie stanowią porady prawnej. O prawie do świadczenia rozstrzyga właściwy organ.</strong></p>
           <p>Źródło tekstów: Kancelaria Sejmu, Internetowy System Aktów Prawnych (API ELI). Teksty aktów normatywnych nie są przedmiotem prawa autorskiego (art.&nbsp;4 ustawy o prawie autorskim i prawach pokrewnych).</p>

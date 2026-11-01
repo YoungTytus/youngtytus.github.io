@@ -6,7 +6,7 @@ import { dane, plikiDanych } from '../../lib/model.mjs';
 import { rozmiar } from '../../lib/format.mjs';
 const d = dane();
 const OPISY: Record<string, string> = {
-  'manifest.json': 'Wersja kontraktu, data wygenerowania, wersja kodu pipeline’u, sumy SHA-256 plików paczki.',
+  'manifest.json': 'Wersja kontraktu, data wygenerowania, wersja kodu, sumy SHA-256 plików paczki.',
   'korzysci.json': 'Wszystkie rekordy korzyści: komu, ile, oś czasu kwot, terminy, trasa dowodowa, braki.',
   'akty.json': 'Rekordy aktów prawnych z aktami wykonawczymi i opisem plików tekstów.',
   'slowniki.json': 'Etykiety: rodzaje korzyści, rodzaje terminów, statusy, sytuacje życiowe.',
@@ -27,8 +27,8 @@ const liczbaPdf = d.akty.reduce((s: number, a: any) => s + a.pliki.length, 0);
     </div>
   </div>
   <div class="wrap section prose" style="max-width:1000px">
-    <h2 style="margin-top:0">Pliki eksportu</h2>
-    <p>Wersja kontraktu <strong>{d.manifest.kontrakt}</strong>, kod pipeline’u <code>{d.manifest.wersja_kodu}</code>, wygenerowano {d.manifest.wygenerowano}.</p>
+    <h2 style="margin-top:0">Pliki do pobrania</h2>
+    <p>Wersja kontraktu <strong>{d.manifest.kontrakt}</strong>, kod <code>{d.manifest.wersja_kodu}</code>, wygenerowano {d.manifest.wygenerowano}.</p>
     {pliki.map((p) => (
       <div class="file-row">
         <div>
@@ -42,7 +42,7 @@ const liczbaPdf = d.akty.reduce((s: number, a: any) => s + a.pliki.length, 0);
 
     <h2>Teksty aktów (PDF)</h2>
     <p>W danych opisano {liczbaPdf} plików tekstów aktów. Odnośniki do dokumentów w API Sejmu znajdziesz na kartach aktów i korzyści. Witryna nie przechowuje kopii PDF.</p>
-    <p class="muted">Dokument u źródła może zostać zaktualizowany i różnić się od historycznego cytatu. Sumy SHA-256 w metadanych dotyczą wersji opisanej w eksporcie.</p>
+    <p class="muted">Dokument u źródła może zostać zaktualizowany i różnić się od historycznego cytatu. Sumy SHA-256 dotyczą wersji, z której korzystaliśmy.</p>
     <p>Źródło tekstów: Kancelaria Sejmu, Internetowy System Aktów Prawnych (API ELI). Teksty aktów normatywnych i urzędowe dokumenty nie są przedmiotem prawa autorskiego (art.&nbsp;4 pkt&nbsp;1 i&nbsp;2 ustawy o prawie autorskim i prawach pokrewnych).</p>
 
     <h2>Licencja</h2>

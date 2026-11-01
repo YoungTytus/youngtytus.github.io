@@ -19,9 +19,9 @@ const przyklady = d.korzysci.filter((k: any) => k._przyklad || k.ile.os_czasu.so
     <div class="version">
       <p class="kicker">Bieżąca wersja</p>
       <h2 style="margin:0">{m.wygenerowano}</h2>
-      <p>Kontrakt {m.kontrakt} · kod pipeline’u <code>{m.wersja_kodu}</code>{d.tryb === 'przyklad' && ' · dane przykładowe'}</p>
+      <p>Kontrakt {m.kontrakt} · kod <code>{m.wersja_kodu}</code>{d.tryb === 'przyklad' && ' · dane przykładowe'}</p>
       <p>Korzyści: {d.korzysci.length} · akty: {d.akty.length} · zakres: {m.zakres.join(', ')}</p>
-      {przyklady > 0 && <p>Rekordy z wartościami przykładowymi (jeszcze niewyliczanymi przez pipeline): {przyklady}.</p>}
+      {przyklady > 0 && <p>Rekordy z wartościami przykładowymi (jeszcze niewyliczonymi): {przyklady}.</p>}
     </div>
     <p class="todo"><strong>Do uzgodnienia z zespołem danych:</strong> podsumowanie różnic między wersjami (dodane, zmienione i usunięte rekordy) wymaga pola w manifeście albo osobnego pliku w paczce. Do tego czasu strona pokazuje tylko bieżącą wersję.</p>
   </div>

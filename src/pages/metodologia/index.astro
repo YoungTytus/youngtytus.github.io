@@ -1,5 +1,5 @@
 ---
-// Szablon metodologii (SPEC 4.5): treść merytoryczną dostarczy fundacja.
+// Metodologia: jak powstają dane (proces z 25.10–31.10.2026), statusy, terminy, sposób ustalania kwot.
 // Słowniki i definicje rodzajów terminów pochodzą z kontraktu danych.
 import Uklad from '../../layouts/Uklad.astro';
 import { dane } from '../../lib/model.mjs';
@@ -16,19 +16,22 @@ const OPIS_STATUSU: Record<string, string> = {
     <div class="wrap">
       <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span aria-current="page">Metodologia</span></nav>
       <h1>Jak to działa</h1>
-      <p class="lead">Jak powstają dane, co oznacza każdy status i każdy rodzaj terminu, i dlaczego przy każdej liczbie jest przepis.</p>
+      <p class="lead">Jak powstają dane, co znaczą statusy i terminy oraz dlaczego przy każdej liczbie jest przepis.</p>
     </div>
   </div>
   <div class="wrap section prose">
-    <p class="todo"><strong>Szablon.</strong> Sekcje oznaczone jako szablon uzupełni fundacja. Definicje statusów i terminów poniżej pochodzą ze specyfikacji danych.</p>
-
     <h2>Zasada: każda liczba ma dowód</h2>
-    <p>Każda kwota i data na stronie ma przy sobie akt prawny (identyfikator ELI), przepis (np. „art.&nbsp;6a ust.&nbsp;1”), dosłowny cytat i link do źródła. Strona niczego nie liczy i niczego nie dopowiada: pokazuje tylko to, co jest w eksporcie danych.</p>
-    <p>Treść pochodzi z tekstów ujednoliconych Kancelarii Sejmu. Mają one charakter informacyjny; wiążący jest tekst w Dzienniku Ustaw albo Monitorze Polskim.</p>
+    <p>Każda kwota i data ma przy sobie akt prawny, przepis (np. „art.&nbsp;6a ust.&nbsp;1”), dosłowny cytat i link do tekstu w systemie Sejmu. Jeśli kwotę trzeba obliczyć z reguły (np. procent najniższej renty), oznaczamy ją jako wyliczenie i pokazujemy, z czego wynika.</p>
+    <p>Cytaty pochodzą z tekstów ujednoliconych Kancelarii Sejmu. Mają charakter informacyjny, wiążący jest tekst w Dzienniku Ustaw albo Monitorze Polskim.</p>
 
     <h2>Skąd pochodzą dane</h2>
-    <p class="todo"><strong>Szablon:</strong> opis pipeline’u (pobranie tekstów z API ELI, segmentacja przepisów, graf odwołań i aktów wykonawczych, ustalanie kwot i terminów, przegląd ręczny), zakres ustaw, częstotliwość aktualizacji.</p>
-    <p>Obecny zakres danych: {d.manifest.zakres.join(', ')}.</p>
+    <ol>
+      <li><strong>Przesiew ustaw.</strong> Program bez sztucznej inteligencji przeczytał 6054 obowiązujące ustawy z systemu Sejmu i wskazał 572, w których przepisy coś przyznają osobie albo rodzinie: zasiłek, dodatek, rentę, pomoc rzeczową. Ustaw podatkowych na razie nie analizujemy.</li>
+      <li><strong>Dokumenty.</strong> Dla każdej z nich pobraliśmy z systemu Sejmu tekst obecny i dawne brzmienia, nowelizacje, rozporządzenia i obwieszczenia z kwotami oraz druki sejmowe, razem ponad 88 tysięcy dokumentów.</li>
+      <li><strong>Analiza.</strong> Każdą ustawę rozbieramy na przepisy: co przysługuje, komu, ile i do kiedy. Kwoty bierzemy z ustawy albo z rozporządzeń i obwieszczeń, które je ogłaszają. Każde ustalenie ma cytat, stronę dokumentu i sumę kontrolną pliku, więc da się je sprawdzić.</li>
+      <li><strong>Kontrola.</strong> Program porównuje każdy cytat z tekstem źródłowym i sprawdza kompletność karty. Karta z niepełną analizą ma oznaczenie „analiza częściowa”.</li>
+    </ol>
+    <p>Na stronie jest teraz {d.korzysci.length} kart z {d.akty.length} aktów prawnych. <a class="link" href="/akty/">Lista ustaw</a>. Dane aktualizujemy po każdej partii analiz; data wersji jest w stopce.</p>
 
     <h2>Statusy korzyści</h2>
     <dl>
@@ -44,8 +47,8 @@ const OPIS_STATUSU: Record<string, string> = {
     <dl>
       {Object.entries(etykietaRozwiazania).map(([k, v]) => <><dt>{wielka(v)}</dt><dd>{{
         kwota_w_ustawie: 'Kwota stoi wprost w przepisie ustawy.',
-        kwota_z_aktu_wykonawczego: 'Ustawa podaje kwotę bazową, a aktualną ogłasza akt wykonawczy (rozporządzenie, komunikat). Pokazujemy całą trasę: przepis, delegację i akt.',
-        regula_procentowa: 'Kwota jest częścią innej kwoty (np. „220 % renty socjalnej”). Pokazujemy regułę i link do korzyści bazowej. Jeżeli eksport zawiera wynik obliczenia w złotych, oznaczamy go jako wyliczenie pomocnicze i pokazujemy źródło podstawy oraz zasady zaokrąglania. To nie jest niezależne potwierdzenie aktualnej wysokości świadczenia. Strona nie wykonuje własnych obliczeń.',
+        kwota_z_aktu_wykonawczego: 'Ustawa podaje kwotę bazową, a aktualną ogłasza rozporządzenie albo komunikat. Pokazujemy przepis ustawy i akt z kwotą.',
+        regula_procentowa: 'Kwota jest częścią innej kwoty (np. „220 % renty socjalnej”). Pokazujemy regułę i link do kwoty bazowej, a gdy ją znamy, także wynik w złotych z oznaczeniem „wyliczenie”.',
         odeslanie: 'Przepis odsyła do innego przepisu, który wyznacza kwotę.',
         nieustalone: 'Nie udało się ustalić kwoty. Powód jest podany w sekcji „Nie ustalono”.',
       }[k]}</dd></>)}
@@ -61,7 +64,5 @@ const OPIS_STATUSU: Record<string, string> = {
       <dt>Tekst jednolity (wiążący)</dt><dd>Ogłoszony obwieszczeniem; wiąże na dzień obwieszczenia. Zmiany po tej dacie zawiera tekst ujednolicony.</dd>
     </dl>
 
-    <h2>Kto przygotowuje dane</h2>
-    <p class="todo"><strong>Szablon:</strong> fundacja, zespół, kontakt w sprawie błędów w danych.</p>
   </div>
 </Uklad>

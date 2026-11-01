@@ -29,13 +29,13 @@ const urlEli = akt?.url_eli ?? `https://api.sejm.gov.pl/eli/acts/${eli}`;
         <div>
           <h4><Ikona n="plik" />{et.nazwa} <span class:list={['moc', et.moc === 'wiążący' ? 'wiazacy' : 'informacyjny']}>{et.moc}</span>{p.uzyty_w_danych && <span class="tag">źródło cytatów</span>}</h4>
           <p>{et.opis}</p>
-          <p class="muted">PDF · {rozmiar(p.rozmiar)} w eksporcie · metadane z {dataPL(p.pobrano?.slice(0, 10)) ?? 'brak daty w eksporcie'}</p>
+          <p class="muted">PDF · {rozmiar(p.rozmiar)} · pobrano {dataPL(p.pobrano?.slice(0, 10)) ?? '(data nieznana)'}</p>
           <details>
             <summary>SHA-256: <code>{p.sha256.slice(0, 16)}…</code></summary>
             <p class="checksum">{p.sha256}</p>
             <p class="checksum">Plik u źródła: {p.url_zrodla}</p>
           </details>
-          <p class="muted">Plik w API Sejmu może być aktualizowany i różnić się od cytowanego stanu historycznego. Sumę podano dla wersji opisanej w eksporcie.</p>
+          <p class="muted">Plik w systemie Sejmu może się zmienić. Suma kontrolna dotyczy wersji, z której korzystaliśmy.</p>
           {p.warstwa_tekstowa === 'uszkodzona_naprawiona' && <p class="muted">Kopiowanie tekstu z tego PDF daje błędne znaki. Poprawiony tekst do czytania i kopiowania: <a class="link" href={`/teksty/${eliSlug(eli)}-${p.rodzaj}-do-kopiowania.txt`} download>Tekst ogłoszony, wersja do kopiowania (TXT)</a>. Jest to plik pochodny przygotowany w eksporcie.</p>}
           {p.warstwa_tekstowa === 'uszkodzona' && <p class="muted">Kopiowanie tekstu z tego PDF daje błędne znaki; do cytowania użyj tekstu ujednoliconego.</p>}
         </div>

@@ -12,7 +12,7 @@ const wyroznione = wyroznioneKorzysci(6);
 const liczbaPlikow = d.akty.reduce((s: number, a: any) => s + a.pliki.length, 0);
 const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
 ---
-<Uklad tytul="Mapa Polskiego Socjalu" opis="Świadczenia i pomoc od państwa w jednym miejscu: komu przysługują, ile wynoszą, do kiedy, i na podstawie którego przepisu.">
+<Uklad tytul="Mapa Polskiego Socjalu" opis="Świadczenia i pomoc od państwa: komu przysługują, ile wynoszą, do kiedy i na podstawie którego przepisu.">
   <div class="hero-outer">
     <div class="wrap">
       <section class="hero" aria-labelledby="hero-tytul">
@@ -20,7 +20,7 @@ const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
           <div>
             <p class="eyebrow">Przewodnik po wsparciu od państwa</p>
             <h1 id="hero-tytul">Wiedz, co<br />Ci <em>przysługuje.</em></h1>
-            <p class="hero-lead">Pieniądze i pomoc od państwa w jednym miejscu. Sprawdź warunki, kwoty i terminy, a przy każdej liczbie znajdziesz przepis, z którego pochodzi.</p>
+            <p class="hero-lead">Zasiłki, dodatki, renty i pomoc rzeczowa z polskich ustaw. Przy każdej kwocie i dacie podajemy przepis, z którego pochodzi.</p>
             <div class="actions">
               <a href="#sytuacje" class="btn btn-red">Znajdź wsparcie <Ikona n="strzalka" /></a>
               <a href="/metodologia/" class="btn btn-ghost">Jak to działa</a>
@@ -45,7 +45,6 @@ const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
             <a class="map-label two" href="/sytuacja/niepelnosprawnosc/"><Ikona n="niepelnosprawnosc" />Niepełnosprawność</a>
             <a class="map-label three" href="/sytuacja/mieszkanie_energia/"><Ikona n="mieszkanie_energia" />Mieszkanie i energia</a>
             <span class="map-dot" aria-hidden="true"></span>
-            <span class="map-caption" aria-hidden="true">Twoja sytuacja. Twoje możliwości.</span>
           </div>
         </div>
       </section>
@@ -90,7 +89,7 @@ const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
         );
       })}
     </ul>
-    <p class="summary-note">{d.korzysci.every((k: any) => k.sytuacje.length === 0) ? 'Eksport nie zawiera jeszcze przypisania do sytuacji życiowych. Wszystkie korzyści znajdziesz w wyszukiwarce i katalogu.' : 'Liczby pokazują rekordy w obecnej wersji danych. Brak rekordu nie oznacza braku prawa do wsparcia.'}</p>
+    <p class="summary-note">{d.korzysci.every((k: any) => k.sytuacje.length === 0) ? 'Karty nie mają jeszcze przypisanych sytuacji życiowych. Wszystkie znajdziesz w wyszukiwarce.' : 'Liczby to karty w bazie. Brak karty nie znaczy, że wsparcie Ci nie przysługuje.'}</p>
   </section>
 
   <section class="section section-soft" aria-labelledby="baza-tytul">
@@ -112,16 +111,16 @@ const etykieta = (kod: string) => d.slowniki.sytuacje[kod];
 
   <section class="section wrap principles" aria-labelledby="zasady-tytul">
     <div>
-      <p class="kicker">Przejrzystość przede wszystkim</p>
-      <h2 id="zasady-tytul">Za każdą informacją stoi konkretny przepis.</h2>
-      <p>Pokazujemy nie tylko wysokość świadczenia, ale całą drogę do jej źródła: ustawę, akt wykonawczy i dosłowny cytat. Strona niczego nie dopowiada: czego nie ustalono, tego nie zgadujemy.</p>
+      <p class="kicker">Skąd to wiemy</p>
+      <h2 id="zasady-tytul">Każda liczba ma swój przepis.</h2>
+      <p>Przy kwocie podajemy ustawę, rozporządzenie i dosłowny cytat. Jeśli czegoś nie ustaliliśmy, piszemy to wprost, zamiast zgadywać.</p>
       <a class="btn" style="margin-top:28px" href="/metodologia/">Jak czytać dane <Ikona n="strzalka" /></a>
     </div>
     <div>
       <div class="principle"><span class="principle-num">01</span><div><h3>Sprawdzasz u źródła</h3><p>Cytat przepisu, numer artykułu i link do aktu w systemie Sejmu przy każdej kwocie i dacie.</p></div></div>
-      <div class="principle"><span class="principle-num">02</span><div><h3>Widzisz, co się zmieniało</h3><p>Historia kwot z datami i aktami, terminy wniosków. Świadczenia zakończone zostają jako archiwum.</p></div></div>
-      <div class="principle"><span class="principle-num">03</span><div><h3>Wiesz, czego jeszcze nie ustalono</h3><p>Braki w danych są opisane wprost, z powodem. Nie zastępujemy ich zerem ani domysłem.</p></div></div>
-      <div class="principle"><span class="principle-num">04</span><div><h3>Pobierasz teksty aktów</h3><p>Bezpośrednie odnośniki do dokumentów w API Sejmu, z opisem wersji tekstu.</p></div></div>
+      <div class="principle"><span class="principle-num">02</span><div><h3>Widzisz, co się zmieniało</h3><p>Historia kwot z datami i terminy wniosków. Zakończone świadczenia zostają w archiwum.</p></div></div>
+      <div class="principle"><span class="principle-num">03</span><div><h3>Wiesz, czego jeszcze nie ustalono</h3><p>Braki opisujemy z powodem. Nie wpisujemy zera ani domysłu.</p></div></div>
+      <div class="principle"><span class="principle-num">04</span><div><h3>Pobierasz teksty aktów</h3><p>Linki do tekstów ustaw i rozporządzeń w systemie Sejmu.</p></div></div>
     </div>
   </section>
 </Uklad>

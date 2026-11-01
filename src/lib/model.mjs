@@ -105,6 +105,7 @@ export function indeksWyszukiwania() {
     sytuacje: k.sytuacje,
     akt: k.przepis.eli,
     kwota: kwotaDoSortowania(k),
+    glowny: [k.nazwa, k.komu, k.opis_prosty, ...k.sytuacje.map((s) => etykieta('sytuacje', s))].filter(Boolean).join(' '),
     tekst: [k.nazwa, k.komu, k.opis_prosty, k.przepis.eli, k.przepis.przepis, k.przepis.cytat,
       ...k.ile.trasa.map((t) => `${t.opis} ${t.dowod.cytat}`),
       ...k.sytuacje.map((s) => etykieta('sytuacje', s)),

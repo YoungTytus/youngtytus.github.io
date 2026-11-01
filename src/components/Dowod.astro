@@ -1,22 +1,19 @@
 ---
 // Cytat przepisu z oznaczeniem aktu i linkiem do źródła. Treść cytatu bez zmian.
+// Stan prawny strony jest w nagłówku karty; przy cytacie data tylko, gdy inna (np. tekst ogłoszony aktu wykonawczego).
 import Ikona from './Ikona.astro';
-import { dataPL, eliSlug, typo } from '../lib/format.mjs';
+import { dataPL, krotkiTytul, typo } from '../lib/format.mjs';
 import { aktPoEli } from '../lib/model.mjs';
-interface Props { dowod: { eli: string; przepis: string; cytat: string; url: string; data_stanu: string | null }; id?: string }
-const { dowod, id } = Astro.props;
+interface Props { dowod: { eli: string; przepis: string; cytat: string; url: string; data_stanu: string | null }; id?: string; stanStrony?: string | null }
+const { dowod, id, stanStrony = null } = Astro.props;
 const akt = aktPoEli(dowod.eli);
-const stan = dataPL(dowod.data_stanu);
+const stan = stanStrony && dowod.data_stanu && dowod.data_stanu !== stanStrony ? dataPL(dowod.data_stanu) : null;
 ---
 <figure class="quote" id={id}>
   <figcaption class="proof-title">
-    <span>{dowod.eli} · {typo(dowod.przepis)}</span>
-    {akt && <a href={`/akt/${eliSlug(dowod.eli)}/`}>Karta aktu</a>}
-    <a href={dowod.url} target="_blank" rel="noopener">Źródło (API ELI)<Ikona n="zewn" /><span class="sr-only"> (otwiera się w nowej karcie)</span></a>
+    <span>{typo(dowod.przepis)} · {akt ? krotkiTytul(akt.tytul, dowod.eli) : dowod.eli}</span>
+    <a href={dowod.url} target="_blank" rel="noopener">Tekst aktu<Ikona n="zewn" /><span class="sr-only"> ({dowod.eli}, otwiera się w nowej karcie)</span></a>
   </figcaption>
   <blockquote lang="pl">{typo(dowod.cytat)}</blockquote>
-  <p class="proof-date">
-    {stan ? `Stan tekstu źródłowego: ${stan} (tekst ujednolicony, informacyjny).` : 'Tekst ogłoszony aktu (brak daty stanu tekstu ujednoliconego).'}
-    {akt && ` ${akt.tytul}.`}
-  </p>
+  {stan && <p class="proof-date">Stan tekstu: {stan}.</p>}
 </figure>

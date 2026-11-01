@@ -15,7 +15,7 @@ import Zwijana from '../../components/Zwijana.astro';
 import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta, korzyscPoId, limitPrezentowany } from '../../lib/model.mjs';
 import { kartaSocjal } from '../../lib/socjal.mjs';
 import {
-  KOLEJNOSC_TERMINOW, OPIS_TERMINU, czyZaslepka, dataLubBrak, dataPL, eliSlug, etapZaslepki,
+  KOLEJNOSC_TERMINOW, OPIS_TERMINU, czyData, czyZaslepka, dataLubBrak, liczbaZKwoty, dataPL, eliSlug, etapZaslepki,
   etykietaFormy, etykietaRozwiazania, kwotaPL, etykietaZmiany, etykietaWariantu, opisUprawnionych, typo, wielka,
 } from '../../lib/format.mjs';
 
@@ -34,6 +34,8 @@ if (Astro.props.przekierowanie) return Astro.redirect(Astro.props.przekierowanie
 const k: any = korzyscPoId(Astro.params.id!);
 const sc = kartaSocjal(k.id);
 const ile = k.ile;
+// wykres historii kwot: wystarczy jedna kwota z datą (linia od tej daty do dnia danych)
+const maWykres = ile.os_czasu.some((w: any) => czyData(w.od) && [w.wartosc, ...(w.warianty ?? []).map((v: any) => v.wartosc)].some((x: any) => liczbaZKwoty(x) !== null));
 const a = ile.aktualna;
 const kwotyWariantow = new Map((ile.wyliczenie?.warianty ?? []).map((w: any) => [JSON.stringify([w.etykieta, w.udzial]), w.wartosc]));
 const dowodA = dowodAktualnej(k);
@@ -60,10 +62,19 @@ const jsonLd = {
   url: new URL(`/korzysc/${k.id}/`, Astro.site).href,
 };
 
+// sekcje bez treści nie są pokazywane (ani w spisie) — karta ma mówić tylko to, co wiadomo
+const maTerminy = KOLEJNOSC_TERMINOW.some((r) => (k.do_kiedy ?? []).some((t: any) => t.rodzaj === r));
 const sekcje = [
-  ['komu', 'Co i komu'], ['ile', 'Ile'], ['terminy', 'Do kiedy'], ['zrodla', 'Skąd to wiemy'],
-  ['warunki', 'Warunki i odwołania'], ...(k.nieustalone.length ? [['braki', 'Nie ustalono']] : []), ['akty', 'Pobierz akty'],
+  ['komu', 'Co i komu'], ['ile', 'Ile'], ...(maTerminy ? [['terminy', 'Do kiedy']] : []),
+  ...(k.powiazane.length ? [['warunki', 'Warunki']] : []), ['zrodla', 'Skąd to wiemy'],
+  ...(k.nieustalone.length ? [['braki', 'Czego nie wiemy']] : []), ['akty', 'Teksty ustaw'],
 ];
+// nazwy pól z danych → słowa dla czytelnika (sekcja „Czego nie wiemy”)
+const POLE: Record<string, string> = {
+  'ile': 'kwota', 'ile.aktualna': 'aktualna kwota', 'ile.wartosc_reguly': 'kwota wynikająca z reguły', 'ile.regula_kwoty': 'zasada obliczania kwoty',
+  'ile.kwota_indywidualna': 'kwota (ustalana indywidualnie)', 'komu': 'krąg uprawnionych', 'komu.opis': 'opis uprawnionych prostym językiem',
+  'do_kiedy': 'terminy', 'status': 'czy świadczenie nadal przysługuje',
+};
 const etykietaDowodu = (d: any) => `${d.eli} · ${d.przepis}`;
 const dowodReguly = (udzial: string) => {
   const szukany = udzial.replace(/\s/g, '');
@@ -114,12 +125,11 @@ const dowodNominalnej = nominalnyKrok >= 0
     <div class="detail-content">
       <!-- CO / KOMU -->
       <section class="detail-section" id="komu" aria-labelledby="h-komu">
-        <p class="kicker">Co / komu</p>
+        <p class="kicker">Co i komu</p>
         <h2 id="h-komu">Komu przysługuje?</h2>
-        {k.opis_prosty && <p class="summary-note"><strong>Co to jest: </strong>{typo(k.opis_prosty)}</p>}
         <p class="lead-komu">{typo(opisUprawnionych(k.komu))}</p>
-        {k._komu_zrodlowe && <p class="summary-note">Opis uprawnionych ujednolicono na podstawie przepisu poniżej. Pełne warunki: sekcja „Warunki i odwołania”.</p>}
-        <h3>Przepis przyznający</h3>
+        {k.opis_prosty && <p class="summary-note"><strong>Co to jest: </strong>{typo(k.opis_prosty)}</p>}
+        <h3>Przepis</h3>
         <Dowod dowod={k.przepis} id="przepis" />
       </section>
 
@@ -148,7 +158,6 @@ const dowodNominalnej = nominalnyKrok >= 0
 
         <ul class="fact-list">
           {k.forma && <li><span>Forma świadczenia</span><span>{etykietaFormy[k.forma as keyof typeof etykietaFormy]}</span></li>}
-          <li><span>Jak ustalono kwotę</span><span>{etykietaRozwiazania[ile.rozwiazanie as keyof typeof etykietaRozwiazania]}</span></li>
           {ile.regula && (
             <li><span>Reguła</span><span>{ile.regula.udzial && <><Kwota wartosc={ile.regula.udzial} href={dowodR!.href} etykieta={dowodR!.etykieta} /> </>}{ile.regula.opis}{podstawa ? <>, zob. <a class="link" href={`/korzysc/${podstawa.id}/`}>{podstawa.nazwa}</a></> : null}</span></li>
           )}
@@ -174,10 +183,10 @@ const dowodNominalnej = nominalnyKrok >= 0
         </>}
         {ile.wyliczenie && <Wyliczenie wyliczenie={ile.wyliczenie} />}
 
-        <h3>Historia kwot</h3>
-        {ile.os_czasu.length > 0 && <Wykres k={k} dzis={dzis} idTabeli="historia" />}
-        {ile.os_czasu.length === 0 && <p class="summary-note">Brak historii kwot zapisanych wprost w przepisach.{ile.wyliczenie && <> Bieżący wynik obliczenia pokazujemy w sekcji <a class="link" href="#wyliczenie">Jak wyliczono kwotę</a>.</>}</p>}
-        {ile.os_czasu.length > 0 && <div class="table-wrap" id="historia" tabindex="0">
+        {/* wykres przy każdej kwocie z datą; tabela tylko, gdy kwota się zmieniała (co najmniej dwa wpisy) */}
+        {(maWykres || ile.os_czasu.length > 1) && <h3>Historia kwot</h3>}
+        {maWykres && <Wykres k={k} dzis={dzis} idTabeli={ile.os_czasu.length > 1 ? 'historia' : 'zrodla-kwot'} />}
+        {ile.os_czasu.length > 1 && <div class="table-wrap" id="historia" tabindex="0">
           <table>
             <caption>Historia kwot: okresy, zmiany i źródła</caption>
             <thead><tr><th scope="col">Wartość</th><th scope="col">Od</th><th scope="col">Do</th><th scope="col">Rodzaj zmiany</th><th scope="col">Różnica</th><th scope="col">Dowód</th></tr></thead>
@@ -199,25 +208,24 @@ const dowodNominalnej = nominalnyKrok >= 0
             </tbody>
           </table>
         </div>}
-        {ile.os_czasu.length > 0 && <p class="summary-note">„—” przy pierwszym wpisie: brak wcześniejszej kwoty w źródłach.</p>}
-        {ile.os_czasu.length > 0 && <Zwijana tytul="Dowody wpisów historii" liczba={ile.os_czasu.length} opis="Cytat i akt dla każdej kwoty z tabeli.">
+        {ile.os_czasu.length > 0 && <div id="zrodla-kwot" /> }
+        {ile.os_czasu.length > 0 && <Zwijana tytul={ile.os_czasu.length > 1 ? 'Źródła kwot z historii' : 'Źródło kwoty'} liczba={ile.os_czasu.length} prog={1}>
           {ile.os_czasu.map((w: any, i: number) => (
-            <details id={`wpis-${i}`}>
-              <summary>{w.od ? dataLubBrak(w.od) : 'Data początku nie ustalona'}: {typo(etykietaDowodu(w.dowod))}</summary>
+            <details id={`wpis-${i}`} open={ile.os_czasu.length === 1}>
+              <summary>{w.od ? dataLubBrak(w.od) : 'Obecny tekst ustawy'}: {typo(w.dowod.przepis)}</summary>
               <Dowod dowod={w.dowod} />
             </details>
           ))}
         </Zwijana>}
-        {ile.os_czasu.length > 0 && <a class="btn btn-sm" style="margin-top:22px" href={`/dane/historia/${k.id}.csv`} download={`historia_${k.id}.csv`}><Ikona n="pobierz" />Historia kwot (CSV)</a>}
+        {ile.os_czasu.length > 1 && <a class="btn btn-sm" style="margin-top:22px" href={`/dane/historia/${k.id}.csv`} download={`historia_${k.id}.csv`}><Ikona n="pobierz" />Historia kwot (CSV)</a>}
         <Progi progi={ile.progi} />
         {sc?.historia_parametr && <p><a class="text-link" href={`/historia/${sc.historia_parametr}/`}>Pełne zestawienie historii kwot <Ikona n="strzalka" /></a></p>}
       </section>
 
       <!-- DO KIEDY -->
-      <section class="detail-section" id="terminy" aria-labelledby="h-terminy">
+      {maTerminy && <section class="detail-section" id="terminy" aria-labelledby="h-terminy">
         <p class="kicker">Do kiedy</p>
         <h2 id="h-terminy">Terminy i okresy</h2>
-        <p class="summary-note" style="margin:0 0 20px">Terminy dotyczą różnych zdarzeń i okresów. Pokazujemy każdy rodzaj osobno, z przepisem.</p>
         {KOLEJNOSC_TERMINOW.filter((r) => terminyWg[r].length).map((r) => (
           <Zwijana tytul={etykieta('rodzaj_terminu', r)} liczba={terminyWg[r].length} prog={2} opis={OPIS_TERMINU[r as keyof typeof OPIS_TERMINU]}>
             {terminyWg[r].map((t: any) => (
@@ -231,15 +239,14 @@ const dowodNominalnej = nominalnyKrok >= 0
             ))}
           </Zwijana>
         ))}
-        {KOLEJNOSC_TERMINOW.every((r) => !terminyWg[r].length) && <p class="summary-note">Przepisy nie podają terminów ani okresów dla tej pozycji; świadczenie przysługuje, dopóki spełnione są warunki.</p>}
-      </section>
+      </section>}
 
       <!-- SKĄD TO WIEMY -->
       <section class="detail-section" id="zrodla" aria-labelledby="h-zrodla">
         <p class="kicker">Skąd to wiemy</p>
         <h2 id="h-zrodla">Droga do źródła</h2>
-        {ile.trasa.length > 0 ? (
-          <Zwijana tytul="Kroki od przepisu do kwoty" liczba={ile.trasa.length} prog={4}>
+        {ile.trasa.length > 0 && (
+          <Zwijana tytul="Kroki od przepisu do kwoty" liczba={ile.trasa.length} prog={2}>
             <ol style="list-style:none;margin:0;padding:0">
               {ile.trasa.map((t: any, i: number) => (
                 <li class="step" id={`krok-${i}`}>
@@ -249,17 +256,14 @@ const dowodNominalnej = nominalnyKrok >= 0
               ))}
             </ol>
           </Zwijana>
-        ) : (
-          <p class="summary-note" style="margin-top:0">Trasa dowodowa (przepis → delegacja → akt wykonawczy) nie jest jeszcze w danych.{ile.os_czasu.length > 0 ? <> Zobacz dowody w <a class="link" href="#historia">tabeli historii</a>.</> : ile.wyliczenie ? <> Zobacz <a class="link" href="#wyliczenie">podstawę wyliczenia</a>.</> : <> Dostępny przepis przyznający pokazujemy <a class="link" href="#przepis">powyżej</a>.</>}</p>
         )}
-        <p style="margin-top:18px"><a class="text-link" href={`/akt/${eliSlug(k.przepis.eli)}/`}>Karta aktu {k.przepis.eli} <Ikona n="strzalka" /></a></p>
+        <p style="margin-top:18px"><a class="text-link" href={`/akt/${eliSlug(k.przepis.eli)}/`}>Wszystko o tej ustawie <Ikona n="strzalka" /></a></p>
       </section>
 
-      <!-- WARUNKI I ODWOŁANIA -->
-      <section class="detail-section" id="warunki" aria-labelledby="h-warunki">
-        <h2 id="h-warunki">Warunki i odwołania</h2>
-        {k.powiazane.length === 0 && <p class="summary-note" style="margin-top:0">Dane nie zawierają powiązanych przepisów (definicji, wyłączeń) dla tej korzyści.</p>}
-        {k.powiazane.length > 0 && <Zwijana tytul="Warunki, wyłączenia i powiązane przepisy" liczba={k.powiazane.length}>
+      <!-- WARUNKI -->
+      {k.powiazane.length > 0 && <section class="detail-section" id="warunki" aria-labelledby="h-warunki">
+        <h2 id="h-warunki">Warunki</h2>
+        <Zwijana tytul="Warunki, wyłączenia i powiązane przepisy" liczba={k.powiazane.length}>
         {k.powiazane.map((p: any) => {
           const cel = p.id_korzysci ? korzyscPoId(p.id_korzysci) : null;
           return (
@@ -268,21 +272,20 @@ const dowodNominalnej = nominalnyKrok >= 0
               <p>„{typo(p.cytat)}”</p>
               {p.przepis && <p class="muted">{typo(p.przepis)}</p>}
               {cel && <p><a class="link" href={`/korzysc/${cel.id}/`}>{wielka(cel.nazwa)}</a></p>}
-              {p.id_korzysci && !cel && <p class="summary-note">Powiązana korzyść ({p.id_korzysci}) nie ma jeszcze karty w tej wersji danych.</p>}
             </div>
           );
         })}
-        </Zwijana>}
-      </section>
+        </Zwijana>
+      </section>}
 
       <!-- NIE USTALONO -->
       {k.nieustalone.length > 0 && (
         <section class="detail-section" id="braki" aria-labelledby="h-braki">
-          <h2 id="h-braki">Czego jeszcze nie ustalono</h2>
+          <h2 id="h-braki">Czego jeszcze nie wiemy</h2>
           <Zwijana tytul="Brakujące informacje" liczba={k.nieustalone.length} prog={2}>
             <div class="missing">
               <ul>
-                {k.nieustalone.map((n: any) => <li><strong>Nie ustalono: </strong><code>{n.pole}</code><br />Powód: {typo(n.powod)}</li>)}
+                {k.nieustalone.map((n: any) => <li><strong>{wielka(POLE[n.pole] ?? 'Inna informacja')}: </strong>{typo(n.powod)}</li>)}
               </ul>
             </div>
           </Zwijana>
@@ -292,8 +295,8 @@ const dowodNominalnej = nominalnyKrok >= 0
       <!-- POBIERZ AKTY -->
       <section class="detail-section" id="akty" aria-labelledby="h-akty">
         <p class="kicker">Teksty źródłowe</p>
-        <h2 id="h-akty">Pobierz akty</h2>
-        <p class="summary-note" style="margin:0 0 20px">Akt przyznający i akty wykonawcze z dowodów tej korzyści. <strong>Tekst ujednolicony</strong> pokazuje prawo w dniu stanu (informacyjnie); <strong>tekst ogłoszony</strong> jest wiążący, ale w brzmieniu z dnia ogłoszenia.</p>
+        <h2 id="h-akty">Teksty ustaw</h2>
+        <p class="summary-note" style="margin:0 0 20px">Ustawa i akty wykonawcze, z których pochodzą informacje na tej stronie. Tekst ujednolicony pokazuje obecne brzmienie (informacyjnie), tekst ogłoszony jest wiążący w brzmieniu z dnia ogłoszenia.</p>
         <Zwijana tytul="Akty do pobrania" liczba={pobrania.length}>
           {pobrania.map((p) => <PlikiAktu eli={p.eli} akt={p.akt} />)}
         </Zwijana>

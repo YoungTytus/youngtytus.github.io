@@ -44,7 +44,7 @@ const opcje = (o: Record<string, string>) => Object.entries(o);
         <select name="akt"><option value="">wszystkie</option>{akty.map((a) => <option value={a.eli} title={a.eli}>{a.tytul.length > 70 ? a.tytul.slice(0, 68) + '…' : a.tytul}</option>)}</select>
       </label>
       <label>Sortuj
-        <select name="sort"><option value="nazwa">po nazwie</option><option value="kwota">po kwocie</option></select>
+        <select name="sort"><option value="nazwa">po trafności i nazwie</option><option value="kwota">po kwocie</option></select>
       </label>
       <noscript><button class="btn btn-sm" type="submit">Filtruj</button></noscript>
     </form>
@@ -66,8 +66,8 @@ const opcje = (o: Record<string, string>) => Object.entries(o);
 </Uklad>
 
 <script>
-  import { pasuje } from '../../lib/szukaj.mjs';
-  type Rekord = { id: string; nazwa: string; forma: string; rodzaj: string; status: string; sytuacje: string[]; akt: string; kwota: number | null; tekst: string };
+  import { szukaj } from '../../lib/szukaj.mjs';
+  type Rekord = { id: string; nazwa: string; forma: string; rodzaj: string; status: string; sytuacje: string[]; akt: string; kwota: number | null; glowny: string; tekst: string };
   const indeks: Rekord[] = JSON.parse(document.getElementById('indeks')!.textContent!);
   const kontener = document.querySelector<HTMLElement>('[data-wyniki]')!;
   const karty = [...kontener.querySelectorAll<HTMLElement>('[data-id]')];
@@ -85,17 +85,18 @@ const opcje = (o: Record<string, string>) => Object.entries(o);
   let timer: number | undefined;
   function odswiez() {
     const f = Object.fromEntries(selecty.map((s) => [s.name, s.value]));
-    const widoczne = indeks.filter((r) => pasuje(r.tekst, q.value)
-      && (!f.forma || r.forma === f.forma) && (!f.rodzaj || r.rodzaj === f.rodzaj) && (!f.status || r.status === f.status)
+    const { wyniki, wTresci } = szukaj(indeks, q.value);
+    const trafnosc = new Map(wyniki.map(([r, o]) => [r.id, o]));
+    const widoczne = wyniki.map(([r]) => r).filter((r) => (!f.forma || r.forma === f.forma) && (!f.rodzaj || r.rodzaj === f.rodzaj) && (!f.status || r.status === f.status)
       && (!f.sytuacja || r.sytuacje.includes(f.sytuacja)) && (!f.akt || r.akt === f.akt));
     if (f.sort === 'kwota') widoczne.sort((a, b) => (a.kwota ?? Infinity) - (b.kwota ?? Infinity) || a.nazwa.localeCompare(b.nazwa, 'pl'));
-    else widoczne.sort((a, b) => a.nazwa.localeCompare(b.nazwa, 'pl'));
+    else widoczne.sort((a, b) => trafnosc.get(b.id)! - trafnosc.get(a.id)! || a.nazwa.localeCompare(b.nazwa, 'pl'));
     const kolejnosc = new Map(widoczne.map((r, i) => [r.id, i]));
     karty.forEach((k) => { k.hidden = !kolejnosc.has(k.dataset.id!); });
     karty.filter((k) => !k.hidden).sort((a, b) => kolejnosc.get(a.dataset.id!)! - kolejnosc.get(b.dataset.id!)!).forEach((k) => kontener.insertBefore(k, pusto));
     pusto.hidden = widoczne.length > 0;
     nota.hidden = f.sort !== 'kwota';
-    wynik.textContent = `Liczba wyników: ${widoczne.length}`;
+    wynik.textContent = `Liczba wyników: ${widoczne.length}${wTresci && widoczne.length ? ' (brak w nazwach i opisach, pokazujemy trafienia w treści przepisów)' : ''}`;
     const next = new URLSearchParams();
     if (q.value.trim()) next.set('q', q.value.trim());
     selecty.forEach((s) => { if (s.value && s.value !== 'nazwa') next.set(s.name, s.value); });

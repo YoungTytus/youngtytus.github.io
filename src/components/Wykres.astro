@@ -26,7 +26,8 @@ const serie = (etykiety.length ? etykiety : [null]).map((et, si) => {
 
 const wszystkie = serie.flatMap((s) => s.punkty);
 const pominiete = os.filter((w: any) => !czyData(w.od)).length;
-const mozna = wszystkie.length >= 2 || (wszystkie.length === 1 && serie.length > 1);
+// jedna kwota z datą też daje wykres: linia od tej daty do dnia wygenerowania danych
+const mozna = wszystkie.length >= 1;
 
 let svg = '';
 let W = 720, H = 300;
@@ -129,9 +130,7 @@ const opis = serie.map((s) => `${s.et ? `${s.et}: ` : ''}${s.punkty.map((p: any)
     <figcaption id={`${idTabeli}-podpis`}>
       Linia ciągła: okres ze znaną datą końca albo obowiązujący nadal (do dnia wygenerowania danych). Linia przerywana: data końca nie jest jeszcze ustalona.
       {pominiete > 0 && ` Wpisy bez daty początku (${pominiete}) są tylko w tabeli.`}
-      {' '}Wartości, daty i dowody: <a class="link" href={`#${idTabeli}`}>tabela historii</a>.
+      {' '}Wartości, daty i dowody: <a class="link" href={`#${idTabeli}`}>{idTabeli === 'historia' ? 'tabela historii' : 'źródło kwoty'}</a>.
     </figcaption>
   </figure>
-) : (
-  <p class="summary-note">Za mało wpisów z datą początku, by narysować wykres. Wszystkie wpisy są w tabeli poniżej.</p>
-)}
+) : null}

@@ -143,7 +143,7 @@ export function krotkiTytul(tytul, eli) {
   return t ? wielka(t) : eli;
 }
 export const etykietaWariantu = (w, i) => w.etykieta ?? `Wariant ${i + 1} (opis nieustalony)`;
-export const opisUprawnionych = (s) => typeof s === 'string' && /\p{L}/u.test(s) ? s : 'Krąg uprawnionych nie został opisany w eksporcie. Zobacz cytat przepisu na karcie.';
+export const opisUprawnionych = (s) => typeof s === 'string' && /\p{L}/u.test(s) ? s : 'Krąg uprawnionych opisuje przepis cytowany na tej stronie.';
 
 /** Etykieta dowodu: "MP/2026/153 · komunikat". */
 export const etykietaDowodu = (d) => `${d.eli} · ${d.przepis}`;

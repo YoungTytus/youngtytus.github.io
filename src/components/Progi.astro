@@ -7,21 +7,23 @@ const { progi } = Astro.props;
 const przepis = (s: string) => s.replace(/^arti?_(\d+)-pass_(\d+)$/, 'art. $1 ust. $2');
 ---
 {progi?.length > 0 && <>
-  <h3 id="progi">Progi i limity kwoty z historią</h3>
-  <p class="summary-note">Progi opisują warunki uzyskania świadczenia, a limity — najwyższą albo najniższą kwotę, jaką przepis dopuszcza. Każdy wpis ma osobny cytat źródłowy.</p>
-  {progi.map((p: any, pi: number) => <>
-    <h4>{przepis(p.przepis)}</h4>
+  <h3 id="progi">Progi i limity</h3>
+  <p class="summary-note">Próg to warunek, który trzeba spełnić. Limit to najwyższa albo najniższa kwota, jaką dopuszcza przepis.</p>
+  {progi.map((p: any, pi: number) => /\d/.test(p.wpisy.map((w: any) => w.wartosc ?? '').join('')) ? <>
+    <h4>{typo(przepis(p.przepis))}</h4>
     <div class="table-wrap" tabindex="0"><table>
-      <caption>Historia progu: {przepis(p.przepis)}</caption>
-      <thead><tr><th scope="col">Wartość</th><th scope="col">Od</th><th scope="col">Do</th><th scope="col">Zmiana</th></tr></thead>
+      <caption class="sr-only">{przepis(p.przepis)}</caption>
+      <thead><tr><th scope="col">Wartość</th><th scope="col">Od</th><th scope="col">Do</th></tr></thead>
       <tbody>{p.wpisy.map((w: any, i: number) => <tr>
-        <td>{w.wartosc && <Kwota wartosc={w.wartosc} href={`#prog-${pi}-${i}`} etykieta={`${w.dowod.eli} · ${w.dowod.przepis}`} />}{w.warianty?.map((v: any, vi: number) => <div>{etykietaWariantu(v, vi)}: <Kwota wartosc={v.wartosc} href={`#prog-${pi}-${i}`} etykieta="cytat" /></div>)}</td>
-        <td>{dataLubBrak(w.od)}</td><td>{w.do === null ? 'Brak daty końca w eksporcie' : dataLubBrak(w.do)}</td>
-        <td>{w.roznica ? <>{typo(w.roznica.kwota)} · {w.roznica.procent}</> : 'Nie podano'}</td>
+        <td>{w.wartosc && <Kwota wartosc={w.wartosc} href={`#prog-${pi}-${i}`} etykieta="źródło" />}{w.warianty?.map((v: any, vi: number) => <div>{etykietaWariantu(v, vi)}: <Kwota wartosc={v.wartosc} href={`#prog-${pi}-${i}`} etykieta="źródło" /></div>)}</td>
+        <td>{dataLubBrak(w.od)}</td><td>{w.do === null ? 'bez daty końca' : dataLubBrak(w.do)}</td>
       </tr>)}</tbody>
     </table></div>
-    <Zwijana tytul="Dowody wpisów" liczba={p.wpisy.length} poziom="h4">
-      {p.wpisy.map((w: any, i: number) => <details id={`prog-${pi}-${i}`}><summary>{dataLubBrak(w.od)} · {w.dowod.eli}</summary><Dowod dowod={w.dowod} /></details>)}
+    <Zwijana tytul="Źródła" liczba={p.wpisy.length} poziom="h4" prog={0}>
+      {p.wpisy.map((w: any, i: number) => <details id={`prog-${pi}-${i}`}><summary>{dataLubBrak(w.od)} · {typo(w.dowod.przepis)}</summary><Dowod dowod={w.dowod} /></details>)}
     </Zwijana>
+  </> : <>
+    {/* limit opisany słowami (bez liczby): zdanie z przepisem zamiast tabeli z pustymi datami */}
+    <p id={`prog-${pi}-0`}><strong>{typo(przepis(p.przepis).split(/\s[—–-]\s/)[0])}:</strong> {typo(String(p.wpisy[0]?.wartosc ?? ''))} <span class="muted">({typo(p.wpisy[0]?.dowod?.przepis ?? '')})</span></p>
   </>)}
 </>}
