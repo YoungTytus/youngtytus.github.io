@@ -4,11 +4,12 @@ import Logo from '../components/Logo.astro';
 import Ikona from '../components/Ikona.astro';
 import { dane, dataEksportu } from '../lib/model.mjs';
 import { dataPL } from '../lib/format.mjs';
+import { liczby } from '../lib/liczby.mjs';
 
 interface Props {
   tytul: string;
   opis: string;
-  sekcja?: 'korzysci' | 'sytuacje' | 'akty' | 'metodologia' | 'dane' | 'zmiany';
+  sekcja?: 'korzysci' | 'liczby' | 'sytuacje' | 'akty' | 'metodologia' | 'dane' | 'zmiany';
   jsonLd?: Record<string, unknown>;
   noindex?: boolean;
 }
@@ -21,6 +22,7 @@ const wersja = `${d.manifest.kontrakt} · ${d.manifest.wersja_kodu}`;
 const stan = dataPL(dataEksportu());
 const nav = [
   { href: '/korzysci/', etykieta: 'Korzyści', id: 'korzysci' },
+  ...(liczby() ? [{ href: '/liczby/', etykieta: 'Liczby', id: 'liczby' }] : []),
   { href: '/#sytuacje', etykieta: 'Sytuacje życiowe', id: 'sytuacje' },
   { href: '/akty/', etykieta: 'Akty prawne', id: 'akty' },
   { href: '/metodologia/', etykieta: 'Jak to działa', id: 'metodologia' },
@@ -80,6 +82,7 @@ const nav = [
               <h2>Przeglądaj</h2>
               <ul>
                 <li><a href="/korzysci/">Wszystkie korzyści</a></li>
+                {liczby() && <li><a href="/liczby/">Liczby: ile kosztuje socjal</a></li>}
                 <li><a href="/#sytuacje">Sytuacje życiowe</a></li>
                 <li><a href="/akty/">Akty prawne</a></li>
                 <li><a href="/historia/">Historia kwot</a></li>

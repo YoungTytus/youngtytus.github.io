@@ -2,6 +2,7 @@
 import { readFileSync } from 'node:fs';
 import { eksport, sha256 } from './eksport.mjs';
 import { czyData, liczbaZKwoty, posortujPliki } from './format.mjs';
+import { SCIEZKA_LICZB, liczby } from './liczby.mjs';
 
 export const dane = () => eksport();
 
@@ -142,6 +143,8 @@ export function historiaCsv(lista = dane().korzysci) {
   return '﻿' + wiersze.map((r) => r.map(csvPole).join(',')).join('\r\n') + '\r\n';
 }
 
+const csvZ = (wiersze) => '\ufeff' + wiersze.map((r) => r.map(csvPole).join(',')).join('\r\n') + '\r\n';
+
 const json = (v) => JSON.stringify(v, null, 1) + '\n';
 
 /** Pliki serwowane w /dane/: nazwa → treść. W trybie paczki to dokładne bajty z paczki. */
@@ -161,6 +164,15 @@ export function plikiDanych() {
     pliki.set('slowniki.json', Buffer.from(json(d.slowniki)));
   }
   pliki.set('historia_kwot.csv', Buffer.from(historiaCsv()));
+  const l = liczby();
+  if (l) {
+    pliki.set('liczby.json', readFileSync(SCIEZKA_LICZB));
+    const lata = Object.keys(l.programy[0].mld).sort();
+    pliki.set('liczby-programy.csv', Buffer.from(csvZ([['program', ...lata.map((r) => `mld_${r}`), 'wzrost_nominalny_proc', 'wzrost_realny_proc'],
+      ...l.programy.map((p) => [p.nazwa, ...lata.map((r) => p.mld[r]), p.wzrost_nominalny_proc, p.wzrost_realny_proc])])));
+    pliki.set('liczby-powiaty.csv', Buffer.from(csvZ([['teryt', 'powiat', 'rok', 'ludnosc', 'jst_socjal_zl_os', 'jst_srodki_wlasne_zl_os'],
+      ...l.powiaty.map((p) => [p.teryt, p.nazwa, p.rok, p.ludnosc, p.jst_socjal_zl_os, p.jst_srodki_wlasne_zl_os])])));
+  }
   return [...pliki].map(([nazwa, bajty]) => ({ nazwa, bajty, sha256: sha256(bajty), rozmiar: bajty.length }));
 }
 

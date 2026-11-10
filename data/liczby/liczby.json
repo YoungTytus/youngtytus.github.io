@@ -1,0 +1,7034 @@
+{
+ "meta": {
+  "wersja": "1.0",
+  "wygenerowano": "2026-11-10",
+  "jednostki": "mld zł (wykonanie kasowe) lub zł na mieszkańca",
+  "zrodla": [
+   "MF Sprawozdanie z wykonania budżetu państwa 2020-2025 (TOM I tab. 011, 012, 014, 015, 040; Omówienie)",
+   "MF bazy Rb-28S i Rb-27S JST 2022-2025 (IV kw.)",
+   "MF Informacja kwartalna o stanie finansów publicznych IV kw. 2022-2025 (COFOG 10)",
+   "GUS Ludność. Stan i struktura 31.12.2024 i 31.12.2025",
+   "GUS CPI średnioroczne"
+  ],
+  "zastrzezenia": [
+   "Suma to dolna granica: bez funduszy BGK, NFZ i ulg podatkowych.",
+   "Dotacje budżetu do funduszy i JST nie są doliczane drugi raz.",
+   "Mapa pokazuje tylko wydatki samorządów; emerytury ZUS i 800+ nie mają podziału terytorialnego.",
+   "2020-2021 bez baz JST (przybliżenie)."
+  ]
+ },
+ "licznik_2025": {
+  "zl_na_sekunde": 22428,
+  "zl_na_godzine": 80739726,
+  "zl_na_dzien": 1937753425
+ },
+ "bez_emerytur_zus_2025": {
+  "mld": 303.42,
+  "zl_na_mieszkanca": 8128,
+  "dotacja_budzetu_do_FUS_mld": 64.37,
+  "uwaga": "M2 2025 minus emerytury i renty FUS z dodatkami; dotacja do FUS z tabeli 040 MF"
+ },
+ "suma": [
+  {
+   "rok": 2020,
+   "transfery_mld": 386.4,
+   "razem_z_uslugami_jst_mld": null,
+   "metoda": "przybliżenie: dotacje budżetu do JST zamiast wydatków JST",
+   "budzet_panstwa_mld": 493.14,
+   "cofog10_sektor_mld": null,
+   "cofog10_proc_pkb": null
+  },
+  {
+   "rok": 2021,
+   "transfery_mld": 415.0,
+   "razem_z_uslugami_jst_mld": null,
+   "metoda": "przybliżenie: dotacje budżetu do JST zamiast wydatków JST",
+   "budzet_panstwa_mld": 513.6,
+   "cofog10_sektor_mld": 454.9,
+   "cofog10_proc_pkb": 17.3
+  },
+  {
+   "rok": 2022,
+   "transfery_mld": 460.66,
+   "razem_z_uslugami_jst_mld": 490.0,
+   "metoda": "pełna z JST (Rb-28S)",
+   "budzet_panstwa_mld": 517.4,
+   "cofog10_sektor_mld": 517.3,
+   "cofog10_proc_pkb": 16.9
+  },
+  {
+   "rok": 2023,
+   "transfery_mld": 520.83,
+   "razem_z_uslugami_jst_mld": 552.23,
+   "metoda": "pełna z JST (Rb-28S)",
+   "budzet_panstwa_mld": 659.59,
+   "cofog10_sektor_mld": 575.2,
+   "cofog10_proc_pkb": 16.9
+  },
+  {
+   "rok": 2024,
+   "transfery_mld": 608.89,
+   "razem_z_uslugami_jst_mld": 644.21,
+   "metoda": "pełna z JST (Rb-28S)",
+   "budzet_panstwa_mld": 834.24,
+   "cofog10_sektor_mld": 668.8,
+   "cofog10_proc_pkb": 18.3
+  },
+  {
+   "rok": 2025,
+   "transfery_mld": 665.63,
+   "razem_z_uslugami_jst_mld": 707.28,
+   "metoda": "pełna z JST (Rb-28S)",
+   "budzet_panstwa_mld": 870.14,
+   "cofog10_sektor_mld": null,
+   "cofog10_proc_pkb": null
+  }
+ ],
+ "platnicy_2022_2025_mld": {
+  "FUS: transfery na rzecz ludności": {
+   "2022": 299.97,
+   "2023": 352.08,
+   "2024": 406.19,
+   "2025": 445.21
+  },
+  "FER (KRUS): transfery": {
+   "2022": 18.77,
+   "2023": 22.5,
+   "2024": 25.36,
+   "2025": 26.95
+  },
+  "FEP: emerytury pomostowe": {
+   "2022": 1.81,
+   "2023": 2.26,
+   "2024": 2.55,
+   "2025": 2.63
+  },
+  "Fundusz Solidarnościowy: koszty zadań": {
+   "2022": 32.26,
+   "2023": 45.18,
+   "2024": 10.97,
+   "2025": 15.68
+  },
+  "Fundusz Pracy: zasiłki i świadczenia": {
+   "2022": 2.92,
+   "2023": 3.26,
+   "2024": 3.43,
+   "2025": 3.83
+  },
+  "Budżet państwa: świadczenia na rzecz osób fizycznych (753, 851-855)": {
+   "2022": 55.62,
+   "2023": 76.95,
+   "2024": 137.16,
+   "2025": 149.03
+  },
+  "JST: świadczenia społeczne § 3110 (wszystkie źródła finansowania)": {
+   "2022": 49.32,
+   "2023": 18.6,
+   "2024": 23.23,
+   "2025": 22.3
+  },
+  "JST: usługi (OPS, DPS, piecza, żłobki)": {
+   "2022": 29.34,
+   "2023": 31.4,
+   "2024": 35.31,
+   "2025": 41.65
+  }
+ },
+ "programy": [
+  {
+   "nazwa": "Emerytury i renty FUS (z dodatkami)",
+   "mld": {
+    "2020": 229.09,
+    "2021": 245.51,
+    "2022": 269.36,
+    "2023": 319.53,
+    "2024": 369.03,
+    "2025": 403.86
+   },
+   "wzrost_nominalny_proc": 76.29,
+   "wzrost_realny_proc": 22.63
+  },
+  {
+   "nazwa": "Zasiłki i pozostałe świadczenia FUS",
+   "mld": {
+    "2020": 31.38,
+    "2021": 30.7,
+    "2022": 30.61,
+    "2023": 32.55,
+    "2024": 37.16,
+    "2025": 41.36
+   },
+   "wzrost_nominalny_proc": 31.79,
+   "wzrost_realny_proc": -8.33
+  },
+  {
+   "nazwa": "Emerytury i renty rolnicze (FER)",
+   "mld": {
+    "2020": 18.74,
+    "2021": 18.65,
+    "2022": 18.77,
+    "2023": 22.5,
+    "2024": 25.36,
+    "2025": 26.95
+   },
+   "wzrost_nominalny_proc": 43.82,
+   "wzrost_realny_proc": 0.05
+  },
+  {
+   "nazwa": "Emerytury mundurowe (75301)",
+   "mld": {
+    "2020": 18.79,
+    "2021": 20.36,
+    "2022": 22.82,
+    "2023": 27.43,
+    "2024": 32.27,
+    "2025": 34.37
+   },
+   "wzrost_nominalny_proc": 82.97,
+   "wzrost_realny_proc": 27.27
+  },
+  {
+   "nazwa": "Sędziowie i prokuratorzy w stanie spoczynku (75302, 75312)",
+   "mld": {
+    "2020": 0.99,
+    "2021": 1.01,
+    "2022": 1.08,
+    "2023": 1.35,
+    "2024": 1.64,
+    "2025": 1.94
+   },
+   "wzrost_nominalny_proc": 96.64,
+   "wzrost_realny_proc": 36.78
+  },
+  {
+   "nazwa": "13. i 14. emerytura",
+   "mld": {
+    "2020": 11.5,
+    "2021": 22.3,
+    "2022": 23.14,
+    "2023": 35.14,
+    "2024": 28.68,
+    "2025": 29.75
+   },
+   "wzrost_nominalny_proc": 158.56,
+   "wzrost_realny_proc": 79.86
+  },
+  {
+   "nazwa": "500+/800+ (85501)",
+   "mld": {
+    "2020": 40.26,
+    "2021": 40.21,
+    "2022": 40.24,
+    "2023": 40.25,
+    "2024": 63.93,
+    "2025": 62.92
+   },
+   "wzrost_nominalny_proc": 56.26,
+   "wzrost_realny_proc": 8.7
+  },
+  {
+   "nazwa": "Świadczenia rodzinne i fundusz alimentacyjny (85502)",
+   "mld": {
+    "2020": 12.94,
+    "2021": 13.29,
+    "2022": 13.76,
+    "2023": 14.94,
+    "2024": 17.64,
+    "2025": 18.02
+   },
+   "wzrost_nominalny_proc": 39.25,
+   "wzrost_realny_proc": -3.14
+  },
+  {
+   "nazwa": "Świadczenie wspierające (85518)",
+   "mld": {
+    "2020": 0.0,
+    "2021": 0.0,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 2.74,
+    "2025": 8.75
+   },
+   "wzrost_nominalny_proc": null,
+   "wzrost_realny_proc": null
+  },
+  {
+   "nazwa": "Aktywny rodzic (85519)",
+   "mld": {
+    "2020": 0.0,
+    "2021": 0.0,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 6.23
+   },
+   "wzrost_nominalny_proc": null,
+   "wzrost_realny_proc": null
+  },
+  {
+   "nazwa": "Rodzinny kapitał opiekuńczy (85517)",
+   "mld": {
+    "2020": 0.0,
+    "2021": 0.0,
+    "2022": 3.44,
+    "2023": 2.16,
+    "2024": 1.82,
+    "2025": 0.36
+   },
+   "wzrost_nominalny_proc": null,
+   "wzrost_realny_proc": null
+  },
+  {
+   "nazwa": "Pomoc społeczna, dział 852 (BP)",
+   "mld": {
+    "2020": 4.68,
+    "2021": 4.58,
+    "2022": 7.43,
+    "2023": 5.37,
+    "2024": 8.55,
+    "2025": 8.39
+   },
+   "wzrost_nominalny_proc": 79.45,
+   "wzrost_realny_proc": 24.83
+  },
+  {
+   "nazwa": "Emerytury pomostowe (FEP)",
+   "mld": {
+    "2020": 1.28,
+    "2021": 1.53,
+    "2022": 1.81,
+    "2023": 2.26,
+    "2024": 2.55,
+    "2025": 2.63
+   },
+   "wzrost_nominalny_proc": 106.18,
+   "wzrost_realny_proc": 43.42
+  },
+  {
+   "nazwa": "Zasiłki dla bezrobotnych i przedemerytalne (FP)",
+   "mld": {
+    "2020": 2.92,
+    "2021": 3.23,
+    "2022": 2.92,
+    "2023": 3.26,
+    "2024": 3.43,
+    "2025": 3.83
+   },
+   "wzrost_nominalny_proc": 31.27,
+   "wzrost_realny_proc": -8.68
+  }
+ ],
+ "na_mieszkanca": [
+  {
+   "pozycja": "M1 TRANSFERY PIENIĘŻNE DO LUDZI",
+   "2024": 16242.0,
+   "2025": 17830.0
+  },
+  {
+   "pozycja": "M2 WYDATKI SOCJALNE (transfery + usługi JST)",
+   "2024": 17184.0,
+   "2025": 18945.0
+  },
+  {
+   "pozycja": "Emerytury i renty FUS (z dodatkami)",
+   "2024": 9844.0,
+   "2025": 10818.0
+  },
+  {
+   "pozycja": "Zasiłki i pozostałe świadczenia FUS",
+   "2024": 991.0,
+   "2025": 1108.0
+  },
+  {
+   "pozycja": "Emerytury i renty rolnicze (FER)",
+   "2024": 676.0,
+   "2025": 722.0
+  },
+  {
+   "pozycja": "Emerytury mundurowe (75301)",
+   "2024": 861.0,
+   "2025": 921.0
+  },
+  {
+   "pozycja": "Sędziowie i prokuratorzy w stanie spoczynku (75302, 75312)",
+   "2024": 44.0,
+   "2025": 52.0
+  },
+  {
+   "pozycja": "13. i 14. emerytura",
+   "2024": 765.0,
+   "2025": 797.0
+  },
+  {
+   "pozycja": "500+/800+ (85501)",
+   "2024": 1705.0,
+   "2025": 1685.0
+  },
+  {
+   "pozycja": "Świadczenia rodzinne i fundusz alimentacyjny (85502)",
+   "2024": 471.0,
+   "2025": 483.0
+  },
+  {
+   "pozycja": "Świadczenie wspierające (85518)",
+   "2024": 73.0,
+   "2025": 234.0
+  },
+  {
+   "pozycja": "Aktywny rodzic (85519)",
+   "2024": 0.0,
+   "2025": 167.0
+  },
+  {
+   "pozycja": "Rodzinny kapitał opiekuńczy (85517)",
+   "2024": 49.0,
+   "2025": 10.0
+  },
+  {
+   "pozycja": "Pomoc społeczna, dział 852 (BP)",
+   "2024": 228.0,
+   "2025": 225.0
+  },
+  {
+   "pozycja": "Emerytury pomostowe (FEP)",
+   "2024": 68.0,
+   "2025": 70.0
+  },
+  {
+   "pozycja": "Zasiłki dla bezrobotnych i przedemerytalne (FP)",
+   "2024": 91.0,
+   "2025": 103.0
+  }
+ ],
+ "dzialy_budzetu": [
+  {
+   "kod": "753",
+   "nazwa": "Obowiązkowe ubezpieczenia społeczne",
+   "2020_mld": 89.42,
+   "2025_mld": 162.82,
+   "udzial_2025_proc": 18.71
+  },
+  {
+   "kod": "752",
+   "nazwa": "Obrona narodowa",
+   "2020_mld": 43.02,
+   "2025_mld": 108.91,
+   "udzial_2025_proc": 12.52
+  },
+  {
+   "kod": "757",
+   "nazwa": "Obsługa długu publicznego",
+   "2020_mld": 29.3,
+   "2025_mld": 107.49,
+   "udzial_2025_proc": 12.35
+  },
+  {
+   "kod": "855",
+   "nazwa": "Rodzina",
+   "2020_mld": 59.04,
+   "2025_mld": 103.13,
+   "udzial_2025_proc": 11.85
+  },
+  {
+   "kod": "758",
+   "nazwa": "Różne rozliczenia",
+   "2020_mld": 93.92,
+   "2025_mld": 88.82,
+   "udzial_2025_proc": 10.21
+  },
+  {
+   "kod": "750",
+   "nazwa": "Administracja publiczna",
+   "2020_mld": 25.98,
+   "2025_mld": 52.87,
+   "udzial_2025_proc": 6.08
+  },
+  {
+   "kod": "851",
+   "nazwa": "Ochrona zdrowia",
+   "2020_mld": 9.55,
+   "2025_mld": 48.56,
+   "udzial_2025_proc": 5.58
+  },
+  {
+   "kod": "730",
+   "nazwa": "Szkolnictwo wyższe i nauka",
+   "2020_mld": 25.61,
+   "2025_mld": 39.7,
+   "udzial_2025_proc": 4.56
+  },
+  {
+   "kod": "754",
+   "nazwa": "Bezpieczeństwo publiczne i ochrona przeciwpożarowa",
+   "2020_mld": 18.5,
+   "2025_mld": 33.8,
+   "udzial_2025_proc": 3.88
+  },
+  {
+   "kod": "600",
+   "nazwa": "Transport i łączność",
+   "2020_mld": 22.21,
+   "2025_mld": 28.16,
+   "udzial_2025_proc": 3.24
+  },
+  {
+   "kod": "755",
+   "nazwa": "Wymiar sprawiedliwości",
+   "2020_mld": 14.84,
+   "2025_mld": 27.14,
+   "udzial_2025_proc": 3.12
+  },
+  {
+   "kod": "10",
+   "nazwa": "Rolnictwo i łowiectwo",
+   "2020_mld": 10.71,
+   "2025_mld": 17.82,
+   "udzial_2025_proc": 2.05
+  },
+  {
+   "kod": "852",
+   "nazwa": "Pomoc społeczna",
+   "2020_mld": 4.68,
+   "2025_mld": 8.39,
+   "udzial_2025_proc": 0.96
+  },
+  {
+   "kod": "921",
+   "nazwa": "Kultura i ochrona dziedzictwa narodowego",
+   "2020_mld": 2.93,
+   "2025_mld": 7.42,
+   "udzial_2025_proc": 0.85
+  },
+  {
+   "kod": "700",
+   "nazwa": "Gospodarka mieszkaniowa",
+   "2020_mld": 0.88,
+   "2025_mld": 5.19,
+   "udzial_2025_proc": 0.6
+  },
+  {
+   "kod": "801",
+   "nazwa": "Oświata i wychowanie",
+   "2020_mld": 4.33,
+   "2025_mld": 5.14,
+   "udzial_2025_proc": 0.59
+  },
+  {
+   "kod": "853",
+   "nazwa": "Pozostałe zadania w zakresie polityki społecznej",
+   "2020_mld": 28.24,
+   "2025_mld": 4.97,
+   "udzial_2025_proc": 0.57
+  },
+  {
+   "kod": "751",
+   "nazwa": "Urzędy naczelnych organów władzy państwowej, kontroli i ochrony prawa oraz sądownictwa",
+   "2020_mld": 2.88,
+   "2025_mld": 4.64,
+   "udzial_2025_proc": 0.53
+  },
+  {
+   "kod": "900",
+   "nazwa": "Gospodarka komunalna i ochrona środowiska",
+   "2020_mld": 1.25,
+   "2025_mld": 4.06,
+   "udzial_2025_proc": 0.47
+  },
+  {
+   "kod": "100",
+   "nazwa": "Górnictwo i kopalnictwo",
+   "2020_mld": 2.05,
+   "2025_mld": 3.29,
+   "udzial_2025_proc": 0.38
+  },
+  {
+   "kod": "150",
+   "nazwa": "Przetwórstwo przemysłowe",
+   "2020_mld": 0.58,
+   "2025_mld": 2.9,
+   "udzial_2025_proc": 0.33
+  },
+  {
+   "kod": "926",
+   "nazwa": "Kultura fizyczna",
+   "2020_mld": 0.28,
+   "2025_mld": 1.55,
+   "udzial_2025_proc": 0.18
+  },
+  {
+   "kod": "500",
+   "nazwa": "Handel",
+   "2020_mld": 1.66,
+   "2025_mld": 0.98,
+   "udzial_2025_proc": 0.11
+  },
+  {
+   "kod": "710",
+   "nazwa": "Działalność usługowa",
+   "2020_mld": 0.49,
+   "2025_mld": 0.96,
+   "udzial_2025_proc": 0.11
+  },
+  {
+   "kod": "854",
+   "nazwa": "Edukacyjna opieka wychowawcza",
+   "2020_mld": 0.37,
+   "2025_mld": 0.46,
+   "udzial_2025_proc": 0.05
+  },
+  {
+   "kod": "720",
+   "nazwa": "Informatyka",
+   "2020_mld": 0.02,
+   "2025_mld": 0.28,
+   "udzial_2025_proc": 0.03
+  },
+  {
+   "kod": "50",
+   "nazwa": "Rybołówstwo i rybactwo",
+   "2020_mld": 0.18,
+   "2025_mld": 0.24,
+   "udzial_2025_proc": 0.03
+  },
+  {
+   "kod": "925",
+   "nazwa": "Ogrody botaniczne i zoologiczne oraz naturalne obszary i obiekty chronionej przyrody",
+   "2020_mld": 0.12,
+   "2025_mld": 0.21,
+   "udzial_2025_proc": 0.02
+  },
+  {
+   "kod": "630",
+   "nazwa": "Turystyka",
+   "2020_mld": 0.06,
+   "2025_mld": 0.12,
+   "udzial_2025_proc": 0.01
+  },
+  {
+   "kod": "550",
+   "nazwa": "Hotele i restauracje",
+   "2020_mld": 0.01,
+   "2025_mld": 0.07,
+   "udzial_2025_proc": 0.01
+  },
+  {
+   "kod": "20",
+   "nazwa": "Leśnictwo",
+   "2020_mld": 0.01,
+   "2025_mld": 0.01,
+   "udzial_2025_proc": 0.0
+  },
+  {
+   "kod": "400",
+   "nazwa": "Wytwarzanie i zaopatrywanie w energię elektryczną, gaz i wodę",
+   "2020_mld": 0.0,
+   "2025_mld": 0.01,
+   "udzial_2025_proc": 0.0
+  },
+  {
+   "kod": "756",
+   "nazwa": "Dochody od osób prawnych, od osób fizycznych i od innych jednostek nieposiadających osobowości prawnej oraz wydatki związane z ich poborem",
+   "2020_mld": 0.01,
+   "2025_mld": 0.0,
+   "udzial_2025_proc": 0.0
+  }
+ ],
+ "fundusz_solidarnosciowy": {
+  "opis": "13. i 14. emerytura 2020-2023 wypłacane z Funduszu Solidarnościowego finansowanego pożyczkami; od 2024 z budżetu państwa (rozdz. 75313).",
+  "pozyczki": [
+   {
+    "rok": 2020,
+    "od": "Fundusz Rezerwy Demograficznej",
+    "tys_zl": 11504268,
+    "zrodlo": "Omówienie MF 2020, s. 294"
+   },
+   {
+    "rok": 2023,
+    "od": "budżet państwa (pożyczka płynnościowa)",
+    "tys_zl": 8100000,
+    "zrodlo": "Omówienie MF 2023, s. 52"
+   }
+  ],
+  "stan_funduszu_mld": {
+   "koniec 2022": -9.17,
+   "początek 2024": -29.58,
+   "koniec 2024": -21.6
+  },
+  "zobowiazania_z_pozyczek_mld": {
+   "początek 2024": 32.2,
+   "koniec 2024": 30.7
+  }
+ },
+ "wojewodztwa": [
+  {
+   "teryt": "02",
+   "nazwa": "dolnośląskie",
+   "rok": 2024,
+   "ludnosc": 2868242,
+   "jst_socjal_zl_os": 1652.18,
+   "jst_swiadczenia_gotowka_zl_os": 651.56,
+   "jst_srodki_wlasne_zl_os": 837.37
+  },
+  {
+   "teryt": "04",
+   "nazwa": "kujawsko-pomorskie",
+   "rok": 2024,
+   "ludnosc": 1984479,
+   "jst_socjal_zl_os": 1825.2,
+   "jst_swiadczenia_gotowka_zl_os": 758.28,
+   "jst_srodki_wlasne_zl_os": 822.99
+  },
+  {
+   "teryt": "06",
+   "nazwa": "lubelskie",
+   "rok": 2024,
+   "ludnosc": 1996440,
+   "jst_socjal_zl_os": 1552.14,
+   "jst_swiadczenia_gotowka_zl_os": 627.28,
+   "jst_srodki_wlasne_zl_os": 685.54
+  },
+  {
+   "teryt": "08",
+   "nazwa": "lubuskie",
+   "rok": 2024,
+   "ludnosc": 969819,
+   "jst_socjal_zl_os": 1915.52,
+   "jst_swiadczenia_gotowka_zl_os": 751.02,
+   "jst_srodki_wlasne_zl_os": 926.45
+  },
+  {
+   "teryt": "10",
+   "nazwa": "łódzkie",
+   "rok": 2024,
+   "ludnosc": 2345924,
+   "jst_socjal_zl_os": 1524.34,
+   "jst_swiadczenia_gotowka_zl_os": 579.26,
+   "jst_srodki_wlasne_zl_os": 744.89
+  },
+  {
+   "teryt": "12",
+   "nazwa": "małopolskie",
+   "rok": 2024,
+   "ludnosc": 3429084,
+   "jst_socjal_zl_os": 1299.53,
+   "jst_swiadczenia_gotowka_zl_os": 451.32,
+   "jst_srodki_wlasne_zl_os": 701.04
+  },
+  {
+   "teryt": "14",
+   "nazwa": "mazowieckie",
+   "rok": 2024,
+   "ludnosc": 5508322,
+   "jst_socjal_zl_os": 1344.1,
+   "jst_swiadczenia_gotowka_zl_os": 471.49,
+   "jst_srodki_wlasne_zl_os": 742.96
+  },
+  {
+   "teryt": "16",
+   "nazwa": "opolskie",
+   "rok": 2024,
+   "ludnosc": 930296,
+   "jst_socjal_zl_os": 2022.12,
+   "jst_swiadczenia_gotowka_zl_os": 912.2,
+   "jst_srodki_wlasne_zl_os": 873.87
+  },
+  {
+   "teryt": "18",
+   "nazwa": "podkarpackie",
+   "rok": 2024,
+   "ludnosc": 2062997,
+   "jst_socjal_zl_os": 1700.76,
+   "jst_swiadczenia_gotowka_zl_os": 751.16,
+   "jst_srodki_wlasne_zl_os": 668.38
+  },
+  {
+   "teryt": "20",
+   "nazwa": "podlaskie",
+   "rok": 2024,
+   "ludnosc": 1132641,
+   "jst_socjal_zl_os": 1553.59,
+   "jst_swiadczenia_gotowka_zl_os": 663.61,
+   "jst_srodki_wlasne_zl_os": 698.12
+  },
+  {
+   "teryt": "22",
+   "nazwa": "pomorskie",
+   "rok": 2024,
+   "ludnosc": 2359493,
+   "jst_socjal_zl_os": 1712.11,
+   "jst_swiadczenia_gotowka_zl_os": 737.31,
+   "jst_srodki_wlasne_zl_os": 763.2
+  },
+  {
+   "teryt": "24",
+   "nazwa": "śląskie",
+   "rok": 2024,
+   "ludnosc": 4291441,
+   "jst_socjal_zl_os": 1353.12,
+   "jst_swiadczenia_gotowka_zl_os": 528.64,
+   "jst_srodki_wlasne_zl_os": 709.36
+  },
+  {
+   "teryt": "26",
+   "nazwa": "świętokrzyskie",
+   "rok": 2024,
+   "ludnosc": 1157991,
+   "jst_socjal_zl_os": 1966.47,
+   "jst_swiadczenia_gotowka_zl_os": 861.7,
+   "jst_srodki_wlasne_zl_os": 810.9
+  },
+  {
+   "teryt": "28",
+   "nazwa": "warmińsko-mazurskie",
+   "rok": 2024,
+   "ludnosc": 1349172,
+   "jst_socjal_zl_os": 1882.38,
+   "jst_swiadczenia_gotowka_zl_os": 807.95,
+   "jst_srodki_wlasne_zl_os": 853.29
+  },
+  {
+   "teryt": "30",
+   "nazwa": "wielkopolskie",
+   "rok": 2024,
+   "ludnosc": 3479986,
+   "jst_socjal_zl_os": 1506.64,
+   "jst_swiadczenia_gotowka_zl_os": 622.32,
+   "jst_srodki_wlasne_zl_os": 731.38
+  },
+  {
+   "teryt": "32",
+   "nazwa": "zachodniopomorskie",
+   "rok": 2024,
+   "ludnosc": 1622760,
+   "jst_socjal_zl_os": 1678.56,
+   "jst_swiadczenia_gotowka_zl_os": 585.31,
+   "jst_srodki_wlasne_zl_os": 921.68
+  },
+  {
+   "teryt": "02",
+   "nazwa": "dolnośląskie",
+   "rok": 2025,
+   "ludnosc": 2857273,
+   "jst_socjal_zl_os": 1725.92,
+   "jst_swiadczenia_gotowka_zl_os": 541.82,
+   "jst_srodki_wlasne_zl_os": 955.34
+  },
+  {
+   "teryt": "04",
+   "nazwa": "kujawsko-pomorskie",
+   "rok": 2025,
+   "ludnosc": 1971891,
+   "jst_socjal_zl_os": 2051.22,
+   "jst_swiadczenia_gotowka_zl_os": 769.57,
+   "jst_srodki_wlasne_zl_os": 955.6
+  },
+  {
+   "teryt": "06",
+   "nazwa": "lubelskie",
+   "rok": 2025,
+   "ludnosc": 1980772,
+   "jst_socjal_zl_os": 1705.27,
+   "jst_swiadczenia_gotowka_zl_os": 594.67,
+   "jst_srodki_wlasne_zl_os": 804.17
+  },
+  {
+   "teryt": "08",
+   "nazwa": "lubuskie",
+   "rok": 2025,
+   "ludnosc": 963601,
+   "jst_socjal_zl_os": 2128.19,
+   "jst_swiadczenia_gotowka_zl_os": 763.97,
+   "jst_srodki_wlasne_zl_os": 1049.87
+  },
+  {
+   "teryt": "10",
+   "nazwa": "łódzkie",
+   "rok": 2025,
+   "ludnosc": 2328825,
+   "jst_socjal_zl_os": 1692.05,
+   "jst_swiadczenia_gotowka_zl_os": 578.32,
+   "jst_srodki_wlasne_zl_os": 876.74
+  },
+  {
+   "teryt": "12",
+   "nazwa": "małopolskie",
+   "rok": 2025,
+   "ludnosc": 3429342,
+   "jst_socjal_zl_os": 1458.77,
+   "jst_swiadczenia_gotowka_zl_os": 434.88,
+   "jst_srodki_wlasne_zl_os": 795.33
+  },
+  {
+   "teryt": "14",
+   "nazwa": "mazowieckie",
+   "rok": 2025,
+   "ludnosc": 5505857,
+   "jst_socjal_zl_os": 1479.75,
+   "jst_swiadczenia_gotowka_zl_os": 460.84,
+   "jst_srodki_wlasne_zl_os": 846.57
+  },
+  {
+   "teryt": "16",
+   "nazwa": "opolskie",
+   "rok": 2025,
+   "ludnosc": 923536,
+   "jst_socjal_zl_os": 1871.72,
+   "jst_swiadczenia_gotowka_zl_os": 596.73,
+   "jst_srodki_wlasne_zl_os": 1001.9
+  },
+  {
+   "teryt": "18",
+   "nazwa": "podkarpackie",
+   "rok": 2025,
+   "ludnosc": 2053760,
+   "jst_socjal_zl_os": 1833.11,
+   "jst_swiadczenia_gotowka_zl_os": 724.11,
+   "jst_srodki_wlasne_zl_os": 778.48
+  },
+  {
+   "teryt": "20",
+   "nazwa": "podlaskie",
+   "rok": 2025,
+   "ludnosc": 1126679,
+   "jst_socjal_zl_os": 1719.38,
+   "jst_swiadczenia_gotowka_zl_os": 639.3,
+   "jst_srodki_wlasne_zl_os": 834.48
+  },
+  {
+   "teryt": "22",
+   "nazwa": "pomorskie",
+   "rok": 2025,
+   "ludnosc": 2358409,
+   "jst_socjal_zl_os": 1940.5,
+   "jst_swiadczenia_gotowka_zl_os": 774.08,
+   "jst_srodki_wlasne_zl_os": 910.07
+  },
+  {
+   "teryt": "24",
+   "nazwa": "śląskie",
+   "rok": 2025,
+   "ludnosc": 4261792,
+   "jst_socjal_zl_os": 1503.54,
+   "jst_swiadczenia_gotowka_zl_os": 527.67,
+   "jst_srodki_wlasne_zl_os": 805.28
+  },
+  {
+   "teryt": "26",
+   "nazwa": "świętokrzyskie",
+   "rok": 2025,
+   "ludnosc": 1147293,
+   "jst_socjal_zl_os": 2157.36,
+   "jst_swiadczenia_gotowka_zl_os": 820.66,
+   "jst_srodki_wlasne_zl_os": 948.94
+  },
+  {
+   "teryt": "28",
+   "nazwa": "warmińsko-mazurskie",
+   "rok": 2025,
+   "ludnosc": 1339498,
+   "jst_socjal_zl_os": 2066.2,
+   "jst_swiadczenia_gotowka_zl_os": 790.25,
+   "jst_srodki_wlasne_zl_os": 960.25
+  },
+  {
+   "teryt": "30",
+   "nazwa": "wielkopolskie",
+   "rok": 2025,
+   "ludnosc": 3471302,
+   "jst_socjal_zl_os": 1630.32,
+   "jst_swiadczenia_gotowka_zl_os": 621.82,
+   "jst_srodki_wlasne_zl_os": 815.4
+  },
+  {
+   "teryt": "32",
+   "nazwa": "zachodniopomorskie",
+   "rok": 2025,
+   "ludnosc": 1612680,
+   "jst_socjal_zl_os": 1936.03,
+   "jst_swiadczenia_gotowka_zl_os": 581.5,
+   "jst_srodki_wlasne_zl_os": 1077.73
+  }
+ ],
+ "powiaty": [
+  {
+   "teryt": "0201",
+   "nazwa": "bolesławiecki",
+   "rok": 2024,
+   "ludnosc": 87255,
+   "jst_socjal_zl_os": 1295.25,
+   "jst_srodki_wlasne_zl_os": 561.76
+  },
+  {
+   "teryt": "0202",
+   "nazwa": "dzierżoniowski",
+   "rok": 2024,
+   "ludnosc": 93863,
+   "jst_socjal_zl_os": 1632.47,
+   "jst_srodki_wlasne_zl_os": 783.51
+  },
+  {
+   "teryt": "0203",
+   "nazwa": "głogowski",
+   "rok": 2024,
+   "ludnosc": 84387,
+   "jst_socjal_zl_os": 1576.78,
+   "jst_srodki_wlasne_zl_os": 938.33
+  },
+  {
+   "teryt": "0204",
+   "nazwa": "górowski",
+   "rok": 2024,
+   "ludnosc": 32054,
+   "jst_socjal_zl_os": 2080.5,
+   "jst_srodki_wlasne_zl_os": 991.53
+  },
+  {
+   "teryt": "0205",
+   "nazwa": "jaworski",
+   "rok": 2024,
+   "ludnosc": 46822,
+   "jst_socjal_zl_os": 1709.88,
+   "jst_srodki_wlasne_zl_os": 1014.79
+  },
+  {
+   "teryt": "0206",
+   "nazwa": "karkonoski",
+   "rok": 2024,
+   "ludnosc": 59864,
+   "jst_socjal_zl_os": 2460.42,
+   "jst_srodki_wlasne_zl_os": 999.84
+  },
+  {
+   "teryt": "0207",
+   "nazwa": "kamiennogórski",
+   "rok": 2024,
+   "ludnosc": 39875,
+   "jst_socjal_zl_os": 2163.63,
+   "jst_srodki_wlasne_zl_os": 931.85
+  },
+  {
+   "teryt": "0208",
+   "nazwa": "kłodzki",
+   "rok": 2024,
+   "ludnosc": 145243,
+   "jst_socjal_zl_os": 3630.2,
+   "jst_srodki_wlasne_zl_os": 1092.63
+  },
+  {
+   "teryt": "0209",
+   "nazwa": "legnicki",
+   "rok": 2024,
+   "ludnosc": 54967,
+   "jst_socjal_zl_os": 2368.13,
+   "jst_srodki_wlasne_zl_os": 1220.47
+  },
+  {
+   "teryt": "0210",
+   "nazwa": "lubański",
+   "rok": 2024,
+   "ludnosc": 50909,
+   "jst_socjal_zl_os": 1616.36,
+   "jst_srodki_wlasne_zl_os": 693.62
+  },
+  {
+   "teryt": "0211",
+   "nazwa": "lubiński",
+   "rok": 2024,
+   "ludnosc": 102376,
+   "jst_socjal_zl_os": 1303.64,
+   "jst_srodki_wlasne_zl_os": 713.75
+  },
+  {
+   "teryt": "0212",
+   "nazwa": "lwówecki",
+   "rok": 2024,
+   "ludnosc": 42465,
+   "jst_socjal_zl_os": 2179.34,
+   "jst_srodki_wlasne_zl_os": 847.81
+  },
+  {
+   "teryt": "0213",
+   "nazwa": "milicki",
+   "rok": 2024,
+   "ludnosc": 35396,
+   "jst_socjal_zl_os": 2122.87,
+   "jst_srodki_wlasne_zl_os": 1022.68
+  },
+  {
+   "teryt": "0214",
+   "nazwa": "oleśnicki",
+   "rok": 2024,
+   "ludnosc": 106706,
+   "jst_socjal_zl_os": 1568.82,
+   "jst_srodki_wlasne_zl_os": 754.09
+  },
+  {
+   "teryt": "0215",
+   "nazwa": "oławski",
+   "rok": 2024,
+   "ludnosc": 77387,
+   "jst_socjal_zl_os": 1359.26,
+   "jst_srodki_wlasne_zl_os": 661.58
+  },
+  {
+   "teryt": "0216",
+   "nazwa": "polkowicki",
+   "rok": 2024,
+   "ludnosc": 60913,
+   "jst_socjal_zl_os": 1397.2,
+   "jst_srodki_wlasne_zl_os": 783.37
+  },
+  {
+   "teryt": "0217",
+   "nazwa": "strzeliński",
+   "rok": 2024,
+   "ludnosc": 41473,
+   "jst_socjal_zl_os": 1453.72,
+   "jst_srodki_wlasne_zl_os": 558.28
+  },
+  {
+   "teryt": "0218",
+   "nazwa": "średzki",
+   "rok": 2024,
+   "ludnosc": 59713,
+   "jst_socjal_zl_os": 1239.76,
+   "jst_srodki_wlasne_zl_os": 576.63
+  },
+  {
+   "teryt": "0219",
+   "nazwa": "świdnicki",
+   "rok": 2024,
+   "ludnosc": 149312,
+   "jst_socjal_zl_os": 1579.85,
+   "jst_srodki_wlasne_zl_os": 769.57
+  },
+  {
+   "teryt": "0220",
+   "nazwa": "trzebnicki",
+   "rok": 2024,
+   "ludnosc": 87765,
+   "jst_socjal_zl_os": 1534.92,
+   "jst_srodki_wlasne_zl_os": 774.12
+  },
+  {
+   "teryt": "0221",
+   "nazwa": "wałbrzyski",
+   "rok": 2024,
+   "ludnosc": 52275,
+   "jst_socjal_zl_os": 2022.99,
+   "jst_srodki_wlasne_zl_os": 874.94
+  },
+  {
+   "teryt": "0222",
+   "nazwa": "wołowski",
+   "rok": 2024,
+   "ludnosc": 45112,
+   "jst_socjal_zl_os": 1385.84,
+   "jst_srodki_wlasne_zl_os": 598.41
+  },
+  {
+   "teryt": "0223",
+   "nazwa": "wrocławski",
+   "rok": 2024,
+   "ludnosc": 191110,
+   "jst_socjal_zl_os": 782.23,
+   "jst_srodki_wlasne_zl_os": 428.81
+  },
+  {
+   "teryt": "0224",
+   "nazwa": "ząbkowicki",
+   "rok": 2024,
+   "ludnosc": 59803,
+   "jst_socjal_zl_os": 2728.72,
+   "jst_srodki_wlasne_zl_os": 1039.55
+  },
+  {
+   "teryt": "0225",
+   "nazwa": "zgorzelecki",
+   "rok": 2024,
+   "ludnosc": 84337,
+   "jst_socjal_zl_os": 1723.79,
+   "jst_srodki_wlasne_zl_os": 1041.16
+  },
+  {
+   "teryt": "0226",
+   "nazwa": "złotoryjski",
+   "rok": 2024,
+   "ludnosc": 40213,
+   "jst_socjal_zl_os": 1786.09,
+   "jst_srodki_wlasne_zl_os": 740.66
+  },
+  {
+   "teryt": "0261",
+   "nazwa": "M.Jelenia Góra",
+   "rok": 2024,
+   "ludnosc": 74194,
+   "jst_socjal_zl_os": 2042.04,
+   "jst_srodki_wlasne_zl_os": 859.87
+  },
+  {
+   "teryt": "0262",
+   "nazwa": "M.Legnica",
+   "rok": 2024,
+   "ludnosc": 90823,
+   "jst_socjal_zl_os": 1687.93,
+   "jst_srodki_wlasne_zl_os": 990.94
+  },
+  {
+   "teryt": "0264",
+   "nazwa": "M.Wrocław",
+   "rok": 2024,
+   "ludnosc": 672882,
+   "jst_socjal_zl_os": 1091.94,
+   "jst_srodki_wlasne_zl_os": 747.09
+  },
+  {
+   "teryt": "0265",
+   "nazwa": "M.Wałbrzych",
+   "rok": 2024,
+   "ludnosc": 98748,
+   "jst_socjal_zl_os": 2067.2,
+   "jst_srodki_wlasne_zl_os": 1086.41
+  },
+  {
+   "teryt": "0401",
+   "nazwa": "aleksandrowski",
+   "rok": 2024,
+   "ludnosc": 53086,
+   "jst_socjal_zl_os": 1880.67,
+   "jst_srodki_wlasne_zl_os": 737.95
+  },
+  {
+   "teryt": "0402",
+   "nazwa": "brodnicki",
+   "rok": 2024,
+   "ludnosc": 77345,
+   "jst_socjal_zl_os": 1616.92,
+   "jst_srodki_wlasne_zl_os": 546.39
+  },
+  {
+   "teryt": "0403",
+   "nazwa": "bydgoski",
+   "rok": 2024,
+   "ludnosc": 127915,
+   "jst_socjal_zl_os": 1373.7,
+   "jst_srodki_wlasne_zl_os": 605.34
+  },
+  {
+   "teryt": "0404",
+   "nazwa": "chełmiński",
+   "rok": 2024,
+   "ludnosc": 48715,
+   "jst_socjal_zl_os": 1956.16,
+   "jst_srodki_wlasne_zl_os": 829.69
+  },
+  {
+   "teryt": "0405",
+   "nazwa": "golubsko-dobrzyński",
+   "rok": 2024,
+   "ludnosc": 42998,
+   "jst_socjal_zl_os": 1826.81,
+   "jst_srodki_wlasne_zl_os": 606.61
+  },
+  {
+   "teryt": "0406",
+   "nazwa": "grudziądzki",
+   "rok": 2024,
+   "ludnosc": 39123,
+   "jst_socjal_zl_os": 1673.06,
+   "jst_srodki_wlasne_zl_os": 598.14
+  },
+  {
+   "teryt": "0407",
+   "nazwa": "inowrocławski",
+   "rok": 2024,
+   "ludnosc": 149000,
+   "jst_socjal_zl_os": 1954.91,
+   "jst_srodki_wlasne_zl_os": 912.62
+  },
+  {
+   "teryt": "0408",
+   "nazwa": "lipnowski",
+   "rok": 2024,
+   "ludnosc": 62058,
+   "jst_socjal_zl_os": 2311.64,
+   "jst_srodki_wlasne_zl_os": 792.43
+  },
+  {
+   "teryt": "0409",
+   "nazwa": "mogileński",
+   "rok": 2024,
+   "ludnosc": 43209,
+   "jst_socjal_zl_os": 1949.08,
+   "jst_srodki_wlasne_zl_os": 808.26
+  },
+  {
+   "teryt": "0410",
+   "nazwa": "nakielski",
+   "rok": 2024,
+   "ludnosc": 82435,
+   "jst_socjal_zl_os": 1979.57,
+   "jst_srodki_wlasne_zl_os": 849.73
+  },
+  {
+   "teryt": "0411",
+   "nazwa": "radziejowski",
+   "rok": 2024,
+   "ludnosc": 37331,
+   "jst_socjal_zl_os": 2016.68,
+   "jst_srodki_wlasne_zl_os": 754.66
+  },
+  {
+   "teryt": "0412",
+   "nazwa": "rypiński",
+   "rok": 2024,
+   "ludnosc": 40798,
+   "jst_socjal_zl_os": 1922.16,
+   "jst_srodki_wlasne_zl_os": 648.62
+  },
+  {
+   "teryt": "0413",
+   "nazwa": "sępoleński",
+   "rok": 2024,
+   "ludnosc": 38633,
+   "jst_socjal_zl_os": 2663.86,
+   "jst_srodki_wlasne_zl_os": 1320.78
+  },
+  {
+   "teryt": "0414",
+   "nazwa": "świecki",
+   "rok": 2024,
+   "ludnosc": 94358,
+   "jst_socjal_zl_os": 2066.07,
+   "jst_srodki_wlasne_zl_os": 822.8
+  },
+  {
+   "teryt": "0415",
+   "nazwa": "toruński",
+   "rok": 2024,
+   "ludnosc": 114956,
+   "jst_socjal_zl_os": 1520.56,
+   "jst_srodki_wlasne_zl_os": 692.94
+  },
+  {
+   "teryt": "0416",
+   "nazwa": "tucholski",
+   "rok": 2024,
+   "ludnosc": 46763,
+   "jst_socjal_zl_os": 2001.67,
+   "jst_srodki_wlasne_zl_os": 817.53
+  },
+  {
+   "teryt": "0417",
+   "nazwa": "wąbrzeski",
+   "rok": 2024,
+   "ludnosc": 32155,
+   "jst_socjal_zl_os": 2190.19,
+   "jst_srodki_wlasne_zl_os": 833.12
+  },
+  {
+   "teryt": "0418",
+   "nazwa": "włocławski",
+   "rok": 2024,
+   "ludnosc": 81591,
+   "jst_socjal_zl_os": 2017.02,
+   "jst_srodki_wlasne_zl_os": 831.55
+  },
+  {
+   "teryt": "0419",
+   "nazwa": "żniński",
+   "rok": 2024,
+   "ludnosc": 67080,
+   "jst_socjal_zl_os": 2053.83,
+   "jst_srodki_wlasne_zl_os": 986.78
+  },
+  {
+   "teryt": "0461",
+   "nazwa": "M.Bydgoszcz",
+   "rok": 2024,
+   "ludnosc": 324043,
+   "jst_socjal_zl_os": 1418.24,
+   "jst_srodki_wlasne_zl_os": 645.23
+  },
+  {
+   "teryt": "0462",
+   "nazwa": "M.Grudziądz",
+   "rok": 2024,
+   "ludnosc": 87696,
+   "jst_socjal_zl_os": 2274.84,
+   "jst_srodki_wlasne_zl_os": 1183.72
+  },
+  {
+   "teryt": "0463",
+   "nazwa": "M.Toruń",
+   "rok": 2024,
+   "ludnosc": 193717,
+   "jst_socjal_zl_os": 1296.6,
+   "jst_srodki_wlasne_zl_os": 662.94
+  },
+  {
+   "teryt": "0464",
+   "nazwa": "M.Włocławek",
+   "rok": 2024,
+   "ludnosc": 99474,
+   "jst_socjal_zl_os": 2028.83,
+   "jst_srodki_wlasne_zl_os": 1108.34
+  },
+  {
+   "teryt": "0601",
+   "nazwa": "bialski",
+   "rok": 2024,
+   "ludnosc": 104108,
+   "jst_socjal_zl_os": 1605.57,
+   "jst_srodki_wlasne_zl_os": 722.35
+  },
+  {
+   "teryt": "0602",
+   "nazwa": "biłgorajski",
+   "rok": 2024,
+   "ludnosc": 95219,
+   "jst_socjal_zl_os": 1588.4,
+   "jst_srodki_wlasne_zl_os": 585.37
+  },
+  {
+   "teryt": "0603",
+   "nazwa": "chełmski",
+   "rok": 2024,
+   "ludnosc": 73117,
+   "jst_socjal_zl_os": 1848.6,
+   "jst_srodki_wlasne_zl_os": 776.81
+  },
+  {
+   "teryt": "0604",
+   "nazwa": "hrubieszowski",
+   "rok": 2024,
+   "ludnosc": 55911,
+   "jst_socjal_zl_os": 1414.97,
+   "jst_srodki_wlasne_zl_os": 510.13
+  },
+  {
+   "teryt": "0605",
+   "nazwa": "janowski",
+   "rok": 2024,
+   "ludnosc": 42260,
+   "jst_socjal_zl_os": 1559.12,
+   "jst_srodki_wlasne_zl_os": 614.85
+  },
+  {
+   "teryt": "0606",
+   "nazwa": "krasnostawski",
+   "rok": 2024,
+   "ludnosc": 58307,
+   "jst_socjal_zl_os": 2283.59,
+   "jst_srodki_wlasne_zl_os": 1217.54
+  },
+  {
+   "teryt": "0607",
+   "nazwa": "kraśnicki",
+   "rok": 2024,
+   "ludnosc": 88198,
+   "jst_socjal_zl_os": 1724.96,
+   "jst_srodki_wlasne_zl_os": 809.31
+  },
+  {
+   "teryt": "0608",
+   "nazwa": "lubartowski",
+   "rok": 2024,
+   "ludnosc": 83385,
+   "jst_socjal_zl_os": 1431.03,
+   "jst_srodki_wlasne_zl_os": 571.31
+  },
+  {
+   "teryt": "0609",
+   "nazwa": "lubelski",
+   "rok": 2024,
+   "ludnosc": 165359,
+   "jst_socjal_zl_os": 1202.02,
+   "jst_srodki_wlasne_zl_os": 460.63
+  },
+  {
+   "teryt": "0610",
+   "nazwa": "łęczyński",
+   "rok": 2024,
+   "ludnosc": 55531,
+   "jst_socjal_zl_os": 1353.47,
+   "jst_srodki_wlasne_zl_os": 543.91
+  },
+  {
+   "teryt": "0611",
+   "nazwa": "łukowski",
+   "rok": 2024,
+   "ludnosc": 100230,
+   "jst_socjal_zl_os": 1379.76,
+   "jst_srodki_wlasne_zl_os": 549.31
+  },
+  {
+   "teryt": "0612",
+   "nazwa": "opolski",
+   "rok": 2024,
+   "ludnosc": 55078,
+   "jst_socjal_zl_os": 1514.81,
+   "jst_srodki_wlasne_zl_os": 523.23
+  },
+  {
+   "teryt": "0613",
+   "nazwa": "parczewski",
+   "rok": 2024,
+   "ludnosc": 31832,
+   "jst_socjal_zl_os": 1578.64,
+   "jst_srodki_wlasne_zl_os": 635.45
+  },
+  {
+   "teryt": "0614",
+   "nazwa": "puławski",
+   "rok": 2024,
+   "ludnosc": 106181,
+   "jst_socjal_zl_os": 1544.13,
+   "jst_srodki_wlasne_zl_os": 564.07
+  },
+  {
+   "teryt": "0615",
+   "nazwa": "radzyński",
+   "rok": 2024,
+   "ludnosc": 54531,
+   "jst_socjal_zl_os": 1319.01,
+   "jst_srodki_wlasne_zl_os": 487.86
+  },
+  {
+   "teryt": "0616",
+   "nazwa": "rycki",
+   "rok": 2024,
+   "ludnosc": 50898,
+   "jst_socjal_zl_os": 1323.74,
+   "jst_srodki_wlasne_zl_os": 501.61
+  },
+  {
+   "teryt": "0617",
+   "nazwa": "świdnicki",
+   "rok": 2024,
+   "ludnosc": 68991,
+   "jst_socjal_zl_os": 1575.19,
+   "jst_srodki_wlasne_zl_os": 737.46
+  },
+  {
+   "teryt": "0618",
+   "nazwa": "tomaszowski",
+   "rok": 2024,
+   "ludnosc": 76155,
+   "jst_socjal_zl_os": 1492.46,
+   "jst_srodki_wlasne_zl_os": 596.83
+  },
+  {
+   "teryt": "0619",
+   "nazwa": "włodawski",
+   "rok": 2024,
+   "ludnosc": 34989,
+   "jst_socjal_zl_os": 2357.64,
+   "jst_srodki_wlasne_zl_os": 991.79
+  },
+  {
+   "teryt": "0620",
+   "nazwa": "zamojski",
+   "rok": 2024,
+   "ludnosc": 100017,
+   "jst_socjal_zl_os": 1513.71,
+   "jst_srodki_wlasne_zl_os": 626.3
+  },
+  {
+   "teryt": "0661",
+   "nazwa": "M.Biała Podlaska",
+   "rok": 2024,
+   "ludnosc": 53888,
+   "jst_socjal_zl_os": 1231.8,
+   "jst_srodki_wlasne_zl_os": 498.89
+  },
+  {
+   "teryt": "0662",
+   "nazwa": "M.Chełm",
+   "rok": 2024,
+   "ludnosc": 56434,
+   "jst_socjal_zl_os": 1443.44,
+   "jst_srodki_wlasne_zl_os": 509.51
+  },
+  {
+   "teryt": "0663",
+   "nazwa": "M.Lublin",
+   "rok": 2024,
+   "ludnosc": 328305,
+   "jst_socjal_zl_os": 1445.73,
+   "jst_srodki_wlasne_zl_os": 784.23
+  },
+  {
+   "teryt": "0664",
+   "nazwa": "M.Zamość",
+   "rok": 2024,
+   "ludnosc": 57516,
+   "jst_socjal_zl_os": 1481.14,
+   "jst_srodki_wlasne_zl_os": 544.89
+  },
+  {
+   "teryt": "0801",
+   "nazwa": "gorzowski",
+   "rok": 2024,
+   "ludnosc": 74079,
+   "jst_socjal_zl_os": 1808.92,
+   "jst_srodki_wlasne_zl_os": 783.83
+  },
+  {
+   "teryt": "0802",
+   "nazwa": "krośnieński",
+   "rok": 2024,
+   "ludnosc": 52187,
+   "jst_socjal_zl_os": 1930.87,
+   "jst_srodki_wlasne_zl_os": 791.81
+  },
+  {
+   "teryt": "0803",
+   "nazwa": "międzyrzecki",
+   "rok": 2024,
+   "ludnosc": 54439,
+   "jst_socjal_zl_os": 2457.66,
+   "jst_srodki_wlasne_zl_os": 1227.11
+  },
+  {
+   "teryt": "0804",
+   "nazwa": "nowosolski",
+   "rok": 2024,
+   "ludnosc": 81809,
+   "jst_socjal_zl_os": 1788.01,
+   "jst_srodki_wlasne_zl_os": 819.42
+  },
+  {
+   "teryt": "0805",
+   "nazwa": "słubicki",
+   "rok": 2024,
+   "ludnosc": 45679,
+   "jst_socjal_zl_os": 1490.9,
+   "jst_srodki_wlasne_zl_os": 711.04
+  },
+  {
+   "teryt": "0806",
+   "nazwa": "strzelecko-drezdenecki",
+   "rok": 2024,
+   "ludnosc": 46204,
+   "jst_socjal_zl_os": 2262.34,
+   "jst_srodki_wlasne_zl_os": 946.44
+  },
+  {
+   "teryt": "0807",
+   "nazwa": "sulęciński",
+   "rok": 2024,
+   "ludnosc": 33191,
+   "jst_socjal_zl_os": 2323.74,
+   "jst_srodki_wlasne_zl_os": 1254.61
+  },
+  {
+   "teryt": "0808",
+   "nazwa": "świebodziński",
+   "rok": 2024,
+   "ludnosc": 53609,
+   "jst_socjal_zl_os": 1989.45,
+   "jst_srodki_wlasne_zl_os": 1058.91
+  },
+  {
+   "teryt": "0809",
+   "nazwa": "zielonogórski",
+   "rok": 2024,
+   "ludnosc": 74754,
+   "jst_socjal_zl_os": 1836.39,
+   "jst_srodki_wlasne_zl_os": 814.98
+  },
+  {
+   "teryt": "0810",
+   "nazwa": "żagański",
+   "rok": 2024,
+   "ludnosc": 72933,
+   "jst_socjal_zl_os": 1997.26,
+   "jst_srodki_wlasne_zl_os": 770.53
+  },
+  {
+   "teryt": "0811",
+   "nazwa": "żarski",
+   "rok": 2024,
+   "ludnosc": 90364,
+   "jst_socjal_zl_os": 1902.91,
+   "jst_srodki_wlasne_zl_os": 911.98
+  },
+  {
+   "teryt": "0812",
+   "nazwa": "wschowski",
+   "rok": 2024,
+   "ludnosc": 37002,
+   "jst_socjal_zl_os": 1479.33,
+   "jst_srodki_wlasne_zl_os": 483.17
+  },
+  {
+   "teryt": "0861",
+   "nazwa": "M.Gorzów Wielkopolski",
+   "rok": 2024,
+   "ludnosc": 114700,
+   "jst_socjal_zl_os": 1684.54,
+   "jst_srodki_wlasne_zl_os": 907.69
+  },
+  {
+   "teryt": "0862",
+   "nazwa": "M.Zielona Góra",
+   "rok": 2024,
+   "ludnosc": 138869,
+   "jst_socjal_zl_os": 1735.32,
+   "jst_srodki_wlasne_zl_os": 947.94
+  },
+  {
+   "teryt": "1001",
+   "nazwa": "bełchatowski",
+   "rok": 2024,
+   "ludnosc": 108003,
+   "jst_socjal_zl_os": 1442.32,
+   "jst_srodki_wlasne_zl_os": 735.69
+  },
+  {
+   "teryt": "1002",
+   "nazwa": "kutnowski",
+   "rok": 2024,
+   "ludnosc": 89709,
+   "jst_socjal_zl_os": 1926.54,
+   "jst_srodki_wlasne_zl_os": 1002.71
+  },
+  {
+   "teryt": "1003",
+   "nazwa": "łaski",
+   "rok": 2024,
+   "ludnosc": 48498,
+   "jst_socjal_zl_os": 1269.4,
+   "jst_srodki_wlasne_zl_os": 374.54
+  },
+  {
+   "teryt": "1004",
+   "nazwa": "łęczycki",
+   "rok": 2024,
+   "ludnosc": 46137,
+   "jst_socjal_zl_os": 1677.33,
+   "jst_srodki_wlasne_zl_os": 745.85
+  },
+  {
+   "teryt": "1005",
+   "nazwa": "łowicki",
+   "rok": 2024,
+   "ludnosc": 73368,
+   "jst_socjal_zl_os": 1197.77,
+   "jst_srodki_wlasne_zl_os": 467.29
+  },
+  {
+   "teryt": "1006",
+   "nazwa": "łódzki wschodni",
+   "rok": 2024,
+   "ludnosc": 75149,
+   "jst_socjal_zl_os": 1460.4,
+   "jst_srodki_wlasne_zl_os": 693.84
+  },
+  {
+   "teryt": "1007",
+   "nazwa": "opoczyński",
+   "rok": 2024,
+   "ludnosc": 71234,
+   "jst_socjal_zl_os": 1637.92,
+   "jst_srodki_wlasne_zl_os": 619.25
+  },
+  {
+   "teryt": "1008",
+   "nazwa": "pabianicki",
+   "rok": 2024,
+   "ludnosc": 118704,
+   "jst_socjal_zl_os": 1556.62,
+   "jst_srodki_wlasne_zl_os": 829.63
+  },
+  {
+   "teryt": "1009",
+   "nazwa": "pajęczański",
+   "rok": 2024,
+   "ludnosc": 48086,
+   "jst_socjal_zl_os": 1328.09,
+   "jst_srodki_wlasne_zl_os": 622.2
+  },
+  {
+   "teryt": "1010",
+   "nazwa": "piotrkowski",
+   "rok": 2024,
+   "ludnosc": 89717,
+   "jst_socjal_zl_os": 1251.14,
+   "jst_srodki_wlasne_zl_os": 471.58
+  },
+  {
+   "teryt": "1011",
+   "nazwa": "poddębicki",
+   "rok": 2024,
+   "ludnosc": 39169,
+   "jst_socjal_zl_os": 1507.48,
+   "jst_srodki_wlasne_zl_os": 579.48
+  },
+  {
+   "teryt": "1012",
+   "nazwa": "radomszczański",
+   "rok": 2024,
+   "ludnosc": 105623,
+   "jst_socjal_zl_os": 1751.12,
+   "jst_srodki_wlasne_zl_os": 784.66
+  },
+  {
+   "teryt": "1013",
+   "nazwa": "rawski",
+   "rok": 2024,
+   "ludnosc": 45664,
+   "jst_socjal_zl_os": 1476.76,
+   "jst_srodki_wlasne_zl_os": 629.49
+  },
+  {
+   "teryt": "1014",
+   "nazwa": "sieradzki",
+   "rok": 2024,
+   "ludnosc": 110665,
+   "jst_socjal_zl_os": 1547.42,
+   "jst_srodki_wlasne_zl_os": 777.77
+  },
+  {
+   "teryt": "1015",
+   "nazwa": "skierniewicki",
+   "rok": 2024,
+   "ludnosc": 37670,
+   "jst_socjal_zl_os": 1122.26,
+   "jst_srodki_wlasne_zl_os": 387.78
+  },
+  {
+   "teryt": "1016",
+   "nazwa": "tomaszowski",
+   "rok": 2024,
+   "ludnosc": 109588,
+   "jst_socjal_zl_os": 1663.16,
+   "jst_srodki_wlasne_zl_os": 725.09
+  },
+  {
+   "teryt": "1017",
+   "nazwa": "wieluński",
+   "rok": 2024,
+   "ludnosc": 72013,
+   "jst_socjal_zl_os": 1444.92,
+   "jst_srodki_wlasne_zl_os": 661.87
+  },
+  {
+   "teryt": "1018",
+   "nazwa": "wieruszowski",
+   "rok": 2024,
+   "ludnosc": 41295,
+   "jst_socjal_zl_os": 1596.16,
+   "jst_srodki_wlasne_zl_os": 682.11
+  },
+  {
+   "teryt": "1019",
+   "nazwa": "zduńskowolski",
+   "rok": 2024,
+   "ludnosc": 62876,
+   "jst_socjal_zl_os": 1421.87,
+   "jst_srodki_wlasne_zl_os": 659.24
+  },
+  {
+   "teryt": "1020",
+   "nazwa": "zgierski",
+   "rok": 2024,
+   "ludnosc": 165840,
+   "jst_socjal_zl_os": 1251.87,
+   "jst_srodki_wlasne_zl_os": 571.67
+  },
+  {
+   "teryt": "1021",
+   "nazwa": "brzeziński",
+   "rok": 2024,
+   "ludnosc": 30080,
+   "jst_socjal_zl_os": 1724.42,
+   "jst_srodki_wlasne_zl_os": 890.69
+  },
+  {
+   "teryt": "1061",
+   "nazwa": "M.Łódź",
+   "rok": 2024,
+   "ludnosc": 645693,
+   "jst_socjal_zl_os": 1444.2,
+   "jst_srodki_wlasne_zl_os": 773.18
+  },
+  {
+   "teryt": "1062",
+   "nazwa": "M.Piotrków Trybunalski",
+   "rok": 2024,
+   "ludnosc": 66022,
+   "jst_socjal_zl_os": 1947.85,
+   "jst_srodki_wlasne_zl_os": 1007.63
+  },
+  {
+   "teryt": "1063",
+   "nazwa": "M.Skierniewice",
+   "rok": 2024,
+   "ludnosc": 45121,
+   "jst_socjal_zl_os": 1567.49,
+   "jst_srodki_wlasne_zl_os": 854.53
+  },
+  {
+   "teryt": "1201",
+   "nazwa": "bocheński",
+   "rok": 2024,
+   "ludnosc": 106985,
+   "jst_socjal_zl_os": 1047.78,
+   "jst_srodki_wlasne_zl_os": 470.71
+  },
+  {
+   "teryt": "1202",
+   "nazwa": "brzeski",
+   "rok": 2024,
+   "ludnosc": 91340,
+   "jst_socjal_zl_os": 1020.26,
+   "jst_srodki_wlasne_zl_os": 484.19
+  },
+  {
+   "teryt": "1203",
+   "nazwa": "chrzanowski",
+   "rok": 2024,
+   "ludnosc": 117756,
+   "jst_socjal_zl_os": 1330.54,
+   "jst_srodki_wlasne_zl_os": 728.91
+  },
+  {
+   "teryt": "1204",
+   "nazwa": "dąbrowski",
+   "rok": 2024,
+   "ludnosc": 57253,
+   "jst_socjal_zl_os": 1249.69,
+   "jst_srodki_wlasne_zl_os": 461.52
+  },
+  {
+   "teryt": "1205",
+   "nazwa": "gorlicki",
+   "rok": 2024,
+   "ludnosc": 104592,
+   "jst_socjal_zl_os": 1663.57,
+   "jst_srodki_wlasne_zl_os": 753.6
+  },
+  {
+   "teryt": "1206",
+   "nazwa": "krakowski",
+   "rok": 2024,
+   "ludnosc": 304278,
+   "jst_socjal_zl_os": 1063.07,
+   "jst_srodki_wlasne_zl_os": 585.46
+  },
+  {
+   "teryt": "1207",
+   "nazwa": "limanowski",
+   "rok": 2024,
+   "ludnosc": 131626,
+   "jst_socjal_zl_os": 1215.42,
+   "jst_srodki_wlasne_zl_os": 472.47
+  },
+  {
+   "teryt": "1208",
+   "nazwa": "miechowski",
+   "rok": 2024,
+   "ludnosc": 46305,
+   "jst_socjal_zl_os": 1637.17,
+   "jst_srodki_wlasne_zl_os": 807.23
+  },
+  {
+   "teryt": "1209",
+   "nazwa": "myślenicki",
+   "rok": 2024,
+   "ludnosc": 129984,
+   "jst_socjal_zl_os": 1078.6,
+   "jst_srodki_wlasne_zl_os": 475.74
+  },
+  {
+   "teryt": "1210",
+   "nazwa": "nowosądecki",
+   "rok": 2024,
+   "ludnosc": 214876,
+   "jst_socjal_zl_os": 1209.47,
+   "jst_srodki_wlasne_zl_os": 447.93
+  },
+  {
+   "teryt": "1211",
+   "nazwa": "nowotarski",
+   "rok": 2024,
+   "ludnosc": 189984,
+   "jst_socjal_zl_os": 967.93,
+   "jst_srodki_wlasne_zl_os": 341.02
+  },
+  {
+   "teryt": "1212",
+   "nazwa": "olkuski",
+   "rok": 2024,
+   "ludnosc": 105000,
+   "jst_socjal_zl_os": 1152.45,
+   "jst_srodki_wlasne_zl_os": 621.79
+  },
+  {
+   "teryt": "1213",
+   "nazwa": "oświęcimski",
+   "rok": 2024,
+   "ludnosc": 147678,
+   "jst_socjal_zl_os": 1368.19,
+   "jst_srodki_wlasne_zl_os": 612.08
+  },
+  {
+   "teryt": "1214",
+   "nazwa": "proszowicki",
+   "rok": 2024,
+   "ludnosc": 41929,
+   "jst_socjal_zl_os": 1531.2,
+   "jst_srodki_wlasne_zl_os": 831.17
+  },
+  {
+   "teryt": "1215",
+   "nazwa": "suski",
+   "rok": 2024,
+   "ludnosc": 82546,
+   "jst_socjal_zl_os": 1266.81,
+   "jst_srodki_wlasne_zl_os": 431.25
+  },
+  {
+   "teryt": "1216",
+   "nazwa": "tarnowski",
+   "rok": 2024,
+   "ludnosc": 197119,
+   "jst_socjal_zl_os": 1325.57,
+   "jst_srodki_wlasne_zl_os": 650.68
+  },
+  {
+   "teryt": "1217",
+   "nazwa": "tatrzański",
+   "rok": 2024,
+   "ludnosc": 66346,
+   "jst_socjal_zl_os": 1092.4,
+   "jst_srodki_wlasne_zl_os": 514.67
+  },
+  {
+   "teryt": "1218",
+   "nazwa": "wadowicki",
+   "rok": 2024,
+   "ludnosc": 157099,
+   "jst_socjal_zl_os": 1363.92,
+   "jst_srodki_wlasne_zl_os": 654.91
+  },
+  {
+   "teryt": "1219",
+   "nazwa": "wielicki",
+   "rok": 2024,
+   "ludnosc": 145276,
+   "jst_socjal_zl_os": 979.66,
+   "jst_srodki_wlasne_zl_os": 474.43
+  },
+  {
+   "teryt": "1261",
+   "nazwa": "M.Kraków",
+   "rok": 2024,
+   "ludnosc": 809168,
+   "jst_socjal_zl_os": 1330.33,
+   "jst_srodki_wlasne_zl_os": 930.86
+  },
+  {
+   "teryt": "1262",
+   "nazwa": "M.Nowy Sącz",
+   "rok": 2024,
+   "ludnosc": 79821,
+   "jst_socjal_zl_os": 1663.26,
+   "jst_srodki_wlasne_zl_os": 960.02
+  },
+  {
+   "teryt": "1263",
+   "nazwa": "M.Tarnów",
+   "rok": 2024,
+   "ludnosc": 102123,
+   "jst_socjal_zl_os": 1642.87,
+   "jst_srodki_wlasne_zl_os": 900.04
+  },
+  {
+   "teryt": "1401",
+   "nazwa": "białobrzeski",
+   "rok": 2024,
+   "ludnosc": 32350,
+   "jst_socjal_zl_os": 1279.49,
+   "jst_srodki_wlasne_zl_os": 520.65
+  },
+  {
+   "teryt": "1402",
+   "nazwa": "ciechanowski",
+   "rok": 2024,
+   "ludnosc": 84565,
+   "jst_socjal_zl_os": 1709.17,
+   "jst_srodki_wlasne_zl_os": 826.94
+  },
+  {
+   "teryt": "1403",
+   "nazwa": "garwoliński",
+   "rok": 2024,
+   "ludnosc": 105213,
+   "jst_socjal_zl_os": 1110.78,
+   "jst_srodki_wlasne_zl_os": 424.14
+  },
+  {
+   "teryt": "1404",
+   "nazwa": "gostyniński",
+   "rok": 2024,
+   "ludnosc": 41756,
+   "jst_socjal_zl_os": 1913.91,
+   "jst_srodki_wlasne_zl_os": 931.79
+  },
+  {
+   "teryt": "1405",
+   "nazwa": "grodziski",
+   "rok": 2024,
+   "ludnosc": 106973,
+   "jst_socjal_zl_os": 1116.29,
+   "jst_srodki_wlasne_zl_os": 551.9
+  },
+  {
+   "teryt": "1406",
+   "nazwa": "grójecki",
+   "rok": 2024,
+   "ludnosc": 96662,
+   "jst_socjal_zl_os": 1309.9,
+   "jst_srodki_wlasne_zl_os": 737.77
+  },
+  {
+   "teryt": "1407",
+   "nazwa": "kozienicki",
+   "rok": 2024,
+   "ludnosc": 56754,
+   "jst_socjal_zl_os": 1454.21,
+   "jst_srodki_wlasne_zl_os": 768.33
+  },
+  {
+   "teryt": "1408",
+   "nazwa": "legionowski",
+   "rok": 2024,
+   "ludnosc": 133097,
+   "jst_socjal_zl_os": 987.37,
+   "jst_srodki_wlasne_zl_os": 558.27
+  },
+  {
+   "teryt": "1409",
+   "nazwa": "lipski",
+   "rok": 2024,
+   "ludnosc": 31251,
+   "jst_socjal_zl_os": 1966.41,
+   "jst_srodki_wlasne_zl_os": 727.66
+  },
+  {
+   "teryt": "1410",
+   "nazwa": "łosicki",
+   "rok": 2024,
+   "ludnosc": 28338,
+   "jst_socjal_zl_os": 1256.6,
+   "jst_srodki_wlasne_zl_os": 410.79
+  },
+  {
+   "teryt": "1411",
+   "nazwa": "makowski",
+   "rok": 2024,
+   "ludnosc": 41254,
+   "jst_socjal_zl_os": 1411.89,
+   "jst_srodki_wlasne_zl_os": 521.48
+  },
+  {
+   "teryt": "1412",
+   "nazwa": "miński",
+   "rok": 2024,
+   "ludnosc": 159535,
+   "jst_socjal_zl_os": 1140.23,
+   "jst_srodki_wlasne_zl_os": 564.63
+  },
+  {
+   "teryt": "1413",
+   "nazwa": "mławski",
+   "rok": 2024,
+   "ludnosc": 68556,
+   "jst_socjal_zl_os": 1540.89,
+   "jst_srodki_wlasne_zl_os": 543.99
+  },
+  {
+   "teryt": "1414",
+   "nazwa": "nowodworski",
+   "rok": 2024,
+   "ludnosc": 79351,
+   "jst_socjal_zl_os": 1285.96,
+   "jst_srodki_wlasne_zl_os": 701.0
+  },
+  {
+   "teryt": "1415",
+   "nazwa": "ostrołęcki",
+   "rok": 2024,
+   "ludnosc": 87397,
+   "jst_socjal_zl_os": 1396.7,
+   "jst_srodki_wlasne_zl_os": 504.96
+  },
+  {
+   "teryt": "1416",
+   "nazwa": "ostrowski",
+   "rok": 2024,
+   "ludnosc": 67854,
+   "jst_socjal_zl_os": 1284.3,
+   "jst_srodki_wlasne_zl_os": 443.65
+  },
+  {
+   "teryt": "1417",
+   "nazwa": "otwocki",
+   "rok": 2024,
+   "ludnosc": 126669,
+   "jst_socjal_zl_os": 1132.38,
+   "jst_srodki_wlasne_zl_os": 575.71
+  },
+  {
+   "teryt": "1418",
+   "nazwa": "piaseczyński",
+   "rok": 2024,
+   "ludnosc": 217738,
+   "jst_socjal_zl_os": 1140.62,
+   "jst_srodki_wlasne_zl_os": 661.68
+  },
+  {
+   "teryt": "1419",
+   "nazwa": "płocki",
+   "rok": 2024,
+   "ludnosc": 109144,
+   "jst_socjal_zl_os": 1835.01,
+   "jst_srodki_wlasne_zl_os": 968.76
+  },
+  {
+   "teryt": "1420",
+   "nazwa": "płoński",
+   "rok": 2024,
+   "ludnosc": 83436,
+   "jst_socjal_zl_os": 1241.65,
+   "jst_srodki_wlasne_zl_os": 519.5
+  },
+  {
+   "teryt": "1421",
+   "nazwa": "pruszkowski",
+   "rok": 2024,
+   "ludnosc": 181026,
+   "jst_socjal_zl_os": 1071.73,
+   "jst_srodki_wlasne_zl_os": 593.66
+  },
+  {
+   "teryt": "1422",
+   "nazwa": "przasnyski",
+   "rok": 2024,
+   "ludnosc": 48615,
+   "jst_socjal_zl_os": 2112.01,
+   "jst_srodki_wlasne_zl_os": 788.84
+  },
+  {
+   "teryt": "1423",
+   "nazwa": "przysuski",
+   "rok": 2024,
+   "ludnosc": 38291,
+   "jst_socjal_zl_os": 1397.68,
+   "jst_srodki_wlasne_zl_os": 416.44
+  },
+  {
+   "teryt": "1424",
+   "nazwa": "pułtuski",
+   "rok": 2024,
+   "ludnosc": 50163,
+   "jst_socjal_zl_os": 2306.8,
+   "jst_srodki_wlasne_zl_os": 1203.88
+  },
+  {
+   "teryt": "1425",
+   "nazwa": "radomski",
+   "rok": 2024,
+   "ludnosc": 151367,
+   "jst_socjal_zl_os": 1552.88,
+   "jst_srodki_wlasne_zl_os": 556.71
+  },
+  {
+   "teryt": "1426",
+   "nazwa": "siedlecki",
+   "rok": 2024,
+   "ludnosc": 80446,
+   "jst_socjal_zl_os": 1060.81,
+   "jst_srodki_wlasne_zl_os": 359.01
+  },
+  {
+   "teryt": "1427",
+   "nazwa": "sierpecki",
+   "rok": 2024,
+   "ludnosc": 47742,
+   "jst_socjal_zl_os": 1549.79,
+   "jst_srodki_wlasne_zl_os": 721.81
+  },
+  {
+   "teryt": "1428",
+   "nazwa": "sochaczewski",
+   "rok": 2024,
+   "ludnosc": 82854,
+   "jst_socjal_zl_os": 1275.84,
+   "jst_srodki_wlasne_zl_os": 556.22
+  },
+  {
+   "teryt": "1429",
+   "nazwa": "sokołowski",
+   "rok": 2024,
+   "ludnosc": 49551,
+   "jst_socjal_zl_os": 1505.53,
+   "jst_srodki_wlasne_zl_os": 654.87
+  },
+  {
+   "teryt": "1430",
+   "nazwa": "szydłowiecki",
+   "rok": 2024,
+   "ludnosc": 37244,
+   "jst_socjal_zl_os": 1700.43,
+   "jst_srodki_wlasne_zl_os": 734.07
+  },
+  {
+   "teryt": "1432",
+   "nazwa": "warszawski zachodni",
+   "rok": 2024,
+   "ludnosc": 136493,
+   "jst_socjal_zl_os": 1120.28,
+   "jst_srodki_wlasne_zl_os": 599.28
+  },
+  {
+   "teryt": "1433",
+   "nazwa": "węgrowski",
+   "rok": 2024,
+   "ludnosc": 61472,
+   "jst_socjal_zl_os": 1234.46,
+   "jst_srodki_wlasne_zl_os": 468.19
+  },
+  {
+   "teryt": "1434",
+   "nazwa": "wołomiński",
+   "rok": 2024,
+   "ludnosc": 277725,
+   "jst_socjal_zl_os": 965.4,
+   "jst_srodki_wlasne_zl_os": 412.24
+  },
+  {
+   "teryt": "1435",
+   "nazwa": "wyszkowski",
+   "rok": 2024,
+   "ludnosc": 73179,
+   "jst_socjal_zl_os": 1546.53,
+   "jst_srodki_wlasne_zl_os": 602.64
+  },
+  {
+   "teryt": "1436",
+   "nazwa": "zwoleński",
+   "rok": 2024,
+   "ludnosc": 34091,
+   "jst_socjal_zl_os": 1579.7,
+   "jst_srodki_wlasne_zl_os": 651.19
+  },
+  {
+   "teryt": "1437",
+   "nazwa": "żuromiński",
+   "rok": 2024,
+   "ludnosc": 35122,
+   "jst_socjal_zl_os": 1437.91,
+   "jst_srodki_wlasne_zl_os": 472.4
+  },
+  {
+   "teryt": "1438",
+   "nazwa": "żyrardowski",
+   "rok": 2024,
+   "ludnosc": 74935,
+   "jst_socjal_zl_os": 1614.34,
+   "jst_srodki_wlasne_zl_os": 855.48
+  },
+  {
+   "teryt": "1461",
+   "nazwa": "M.Ostrołęka",
+   "rok": 2024,
+   "ludnosc": 47696,
+   "jst_socjal_zl_os": 1565.09,
+   "jst_srodki_wlasne_zl_os": 778.15
+  },
+  {
+   "teryt": "1462",
+   "nazwa": "M.Płock",
+   "rok": 2024,
+   "ludnosc": 110015,
+   "jst_socjal_zl_os": 1579.98,
+   "jst_srodki_wlasne_zl_os": 820.68
+  },
+  {
+   "teryt": "1463",
+   "nazwa": "M.Radom",
+   "rok": 2024,
+   "ludnosc": 193777,
+   "jst_socjal_zl_os": 1678.28,
+   "jst_srodki_wlasne_zl_os": 730.32
+  },
+  {
+   "teryt": "1464",
+   "nazwa": "M.Siedlce",
+   "rok": 2024,
+   "ludnosc": 74780,
+   "jst_socjal_zl_os": 1377.39,
+   "jst_srodki_wlasne_zl_os": 625.75
+  },
+  {
+   "teryt": "1465",
+   "nazwa": "M.Warszawa",
+   "rok": 2024,
+   "ludnosc": 1863845,
+   "jst_socjal_zl_os": 1210.83,
+   "jst_srodki_wlasne_zl_os": 864.47
+  },
+  {
+   "teryt": "1601",
+   "nazwa": "brzeski",
+   "rok": 2024,
+   "ludnosc": 85613,
+   "jst_socjal_zl_os": 2586.87,
+   "jst_srodki_wlasne_zl_os": 829.53
+  },
+  {
+   "teryt": "1602",
+   "nazwa": "głubczycki",
+   "rok": 2024,
+   "ludnosc": 42092,
+   "jst_socjal_zl_os": 3318.81,
+   "jst_srodki_wlasne_zl_os": 1940.9
+  },
+  {
+   "teryt": "1603",
+   "nazwa": "kędzierzyńsko-kozielski",
+   "rok": 2024,
+   "ludnosc": 85435,
+   "jst_socjal_zl_os": 1529.99,
+   "jst_srodki_wlasne_zl_os": 926.66
+  },
+  {
+   "teryt": "1604",
+   "nazwa": "kluczborski",
+   "rok": 2024,
+   "ludnosc": 60536,
+   "jst_socjal_zl_os": 1624.14,
+   "jst_srodki_wlasne_zl_os": 725.02
+  },
+  {
+   "teryt": "1605",
+   "nazwa": "krapkowicki",
+   "rok": 2024,
+   "ludnosc": 59288,
+   "jst_socjal_zl_os": 1685.63,
+   "jst_srodki_wlasne_zl_os": 810.61
+  },
+  {
+   "teryt": "1606",
+   "nazwa": "namysłowski",
+   "rok": 2024,
+   "ludnosc": 41753,
+   "jst_socjal_zl_os": 1347.39,
+   "jst_srodki_wlasne_zl_os": 651.31
+  },
+  {
+   "teryt": "1607",
+   "nazwa": "nyski",
+   "rok": 2024,
+   "ludnosc": 126897,
+   "jst_socjal_zl_os": 3348.08,
+   "jst_srodki_wlasne_zl_os": 695.8
+  },
+  {
+   "teryt": "1608",
+   "nazwa": "oleski",
+   "rok": 2024,
+   "ludnosc": 60798,
+   "jst_socjal_zl_os": 1214.88,
+   "jst_srodki_wlasne_zl_os": 542.34
+  },
+  {
+   "teryt": "1609",
+   "nazwa": "opolski",
+   "rok": 2024,
+   "ludnosc": 120754,
+   "jst_socjal_zl_os": 1122.34,
+   "jst_srodki_wlasne_zl_os": 588.4
+  },
+  {
+   "teryt": "1610",
+   "nazwa": "prudnicki",
+   "rok": 2024,
+   "ludnosc": 50875,
+   "jst_socjal_zl_os": 2643.89,
+   "jst_srodki_wlasne_zl_os": 837.31
+  },
+  {
+   "teryt": "1611",
+   "nazwa": "strzelecki",
+   "rok": 2024,
+   "ludnosc": 70763,
+   "jst_socjal_zl_os": 1493.83,
+   "jst_srodki_wlasne_zl_os": 805.54
+  },
+  {
+   "teryt": "1661",
+   "nazwa": "M.Opole",
+   "rok": 2024,
+   "ludnosc": 125492,
+   "jst_socjal_zl_os": 1634.32,
+   "jst_srodki_wlasne_zl_os": 948.14
+  },
+  {
+   "teryt": "1801",
+   "nazwa": "bieszczadzki",
+   "rok": 2024,
+   "ludnosc": 20423,
+   "jst_socjal_zl_os": 2221.3,
+   "jst_srodki_wlasne_zl_os": 1175.31
+  },
+  {
+   "teryt": "1802",
+   "nazwa": "brzozowski",
+   "rok": 2024,
+   "ludnosc": 62822,
+   "jst_socjal_zl_os": 1904.56,
+   "jst_srodki_wlasne_zl_os": 578.97
+  },
+  {
+   "teryt": "1803",
+   "nazwa": "dębicki",
+   "rok": 2024,
+   "ludnosc": 131981,
+   "jst_socjal_zl_os": 1455.89,
+   "jst_srodki_wlasne_zl_os": 620.81
+  },
+  {
+   "teryt": "1804",
+   "nazwa": "jarosławski",
+   "rok": 2024,
+   "ludnosc": 115103,
+   "jst_socjal_zl_os": 1859.38,
+   "jst_srodki_wlasne_zl_os": 646.27
+  },
+  {
+   "teryt": "1805",
+   "nazwa": "jasielski",
+   "rok": 2024,
+   "ludnosc": 108084,
+   "jst_socjal_zl_os": 1908.66,
+   "jst_srodki_wlasne_zl_os": 665.5
+  },
+  {
+   "teryt": "1806",
+   "nazwa": "kolbuszowski",
+   "rok": 2024,
+   "ludnosc": 60895,
+   "jst_socjal_zl_os": 1525.66,
+   "jst_srodki_wlasne_zl_os": 406.38
+  },
+  {
+   "teryt": "1807",
+   "nazwa": "krośnieński",
+   "rok": 2024,
+   "ludnosc": 108034,
+   "jst_socjal_zl_os": 1389.31,
+   "jst_srodki_wlasne_zl_os": 444.01
+  },
+  {
+   "teryt": "1808",
+   "nazwa": "leżajski",
+   "rok": 2024,
+   "ludnosc": 66263,
+   "jst_socjal_zl_os": 1785.09,
+   "jst_srodki_wlasne_zl_os": 604.23
+  },
+  {
+   "teryt": "1809",
+   "nazwa": "lubaczowski",
+   "rok": 2024,
+   "ludnosc": 51997,
+   "jst_socjal_zl_os": 1962.83,
+   "jst_srodki_wlasne_zl_os": 691.06
+  },
+  {
+   "teryt": "1810",
+   "nazwa": "łańcucki",
+   "rok": 2024,
+   "ludnosc": 80749,
+   "jst_socjal_zl_os": 1445.78,
+   "jst_srodki_wlasne_zl_os": 518.92
+  },
+  {
+   "teryt": "1811",
+   "nazwa": "mielecki",
+   "rok": 2024,
+   "ludnosc": 132484,
+   "jst_socjal_zl_os": 1450.55,
+   "jst_srodki_wlasne_zl_os": 554.73
+  },
+  {
+   "teryt": "1812",
+   "nazwa": "niżański",
+   "rok": 2024,
+   "ludnosc": 63189,
+   "jst_socjal_zl_os": 1914.65,
+   "jst_srodki_wlasne_zl_os": 535.11
+  },
+  {
+   "teryt": "1813",
+   "nazwa": "przemyski",
+   "rok": 2024,
+   "ludnosc": 70688,
+   "jst_socjal_zl_os": 1793.57,
+   "jst_srodki_wlasne_zl_os": 455.14
+  },
+  {
+   "teryt": "1814",
+   "nazwa": "przeworski",
+   "rok": 2024,
+   "ludnosc": 75370,
+   "jst_socjal_zl_os": 1713.43,
+   "jst_srodki_wlasne_zl_os": 509.53
+  },
+  {
+   "teryt": "1815",
+   "nazwa": "ropczycko-sędziszowski",
+   "rok": 2024,
+   "ludnosc": 74083,
+   "jst_socjal_zl_os": 1627.68,
+   "jst_srodki_wlasne_zl_os": 592.81
+  },
+  {
+   "teryt": "1816",
+   "nazwa": "rzeszowski",
+   "rok": 2024,
+   "ludnosc": 176821,
+   "jst_socjal_zl_os": 1402.55,
+   "jst_srodki_wlasne_zl_os": 577.87
+  },
+  {
+   "teryt": "1817",
+   "nazwa": "sanocki",
+   "rok": 2024,
+   "ludnosc": 89001,
+   "jst_socjal_zl_os": 1690.45,
+   "jst_srodki_wlasne_zl_os": 588.41
+  },
+  {
+   "teryt": "1818",
+   "nazwa": "stalowowolski",
+   "rok": 2024,
+   "ludnosc": 100034,
+   "jst_socjal_zl_os": 1925.44,
+   "jst_srodki_wlasne_zl_os": 745.5
+  },
+  {
+   "teryt": "1819",
+   "nazwa": "strzyżowski",
+   "rok": 2024,
+   "ludnosc": 58775,
+   "jst_socjal_zl_os": 1864.69,
+   "jst_srodki_wlasne_zl_os": 774.18
+  },
+  {
+   "teryt": "1820",
+   "nazwa": "tarnobrzeski",
+   "rok": 2024,
+   "ludnosc": 50550,
+   "jst_socjal_zl_os": 1579.33,
+   "jst_srodki_wlasne_zl_os": 596.1
+  },
+  {
+   "teryt": "1821",
+   "nazwa": "leski",
+   "rok": 2024,
+   "ludnosc": 25224,
+   "jst_socjal_zl_os": 1689.01,
+   "jst_srodki_wlasne_zl_os": 591.06
+  },
+  {
+   "teryt": "1861",
+   "nazwa": "M.Krosno",
+   "rok": 2024,
+   "ludnosc": 43594,
+   "jst_socjal_zl_os": 1809.51,
+   "jst_srodki_wlasne_zl_os": 897.99
+  },
+  {
+   "teryt": "1862",
+   "nazwa": "M.Przemyśl",
+   "rok": 2024,
+   "ludnosc": 55292,
+   "jst_socjal_zl_os": 2236.15,
+   "jst_srodki_wlasne_zl_os": 897.56
+  },
+  {
+   "teryt": "1863",
+   "nazwa": "M.Rzeszów",
+   "rok": 2024,
+   "ludnosc": 198317,
+   "jst_socjal_zl_os": 1431.44,
+   "jst_srodki_wlasne_zl_os": 858.38
+  },
+  {
+   "teryt": "1864",
+   "nazwa": "M.Tarnobrzeg",
+   "rok": 2024,
+   "ludnosc": 43224,
+   "jst_socjal_zl_os": 1473.68,
+   "jst_srodki_wlasne_zl_os": 672.03
+  },
+  {
+   "teryt": "2001",
+   "nazwa": "augustowski",
+   "rok": 2024,
+   "ludnosc": 54022,
+   "jst_socjal_zl_os": 1531.22,
+   "jst_srodki_wlasne_zl_os": 561.52
+  },
+  {
+   "teryt": "2002",
+   "nazwa": "białostocki",
+   "rok": 2024,
+   "ludnosc": 159170,
+   "jst_socjal_zl_os": 1563.8,
+   "jst_srodki_wlasne_zl_os": 730.31
+  },
+  {
+   "teryt": "2003",
+   "nazwa": "bielski",
+   "rok": 2024,
+   "ludnosc": 49987,
+   "jst_socjal_zl_os": 1423.55,
+   "jst_srodki_wlasne_zl_os": 618.64
+  },
+  {
+   "teryt": "2004",
+   "nazwa": "grajewski",
+   "rok": 2024,
+   "ludnosc": 43756,
+   "jst_socjal_zl_os": 1597.92,
+   "jst_srodki_wlasne_zl_os": 572.04
+  },
+  {
+   "teryt": "2005",
+   "nazwa": "hajnowski",
+   "rok": 2024,
+   "ludnosc": 38237,
+   "jst_socjal_zl_os": 1889.24,
+   "jst_srodki_wlasne_zl_os": 785.69
+  },
+  {
+   "teryt": "2006",
+   "nazwa": "kolneński",
+   "rok": 2024,
+   "ludnosc": 35440,
+   "jst_socjal_zl_os": 1439.89,
+   "jst_srodki_wlasne_zl_os": 487.12
+  },
+  {
+   "teryt": "2007",
+   "nazwa": "łomżyński",
+   "rok": 2024,
+   "ludnosc": 49496,
+   "jst_socjal_zl_os": 1301.74,
+   "jst_srodki_wlasne_zl_os": 339.5
+  },
+  {
+   "teryt": "2008",
+   "nazwa": "moniecki",
+   "rok": 2024,
+   "ludnosc": 36975,
+   "jst_socjal_zl_os": 1529.95,
+   "jst_srodki_wlasne_zl_os": 613.88
+  },
+  {
+   "teryt": "2009",
+   "nazwa": "sejneński",
+   "rok": 2024,
+   "ludnosc": 18434,
+   "jst_socjal_zl_os": 1652.36,
+   "jst_srodki_wlasne_zl_os": 579.29
+  },
+  {
+   "teryt": "2010",
+   "nazwa": "siemiatycki",
+   "rok": 2024,
+   "ludnosc": 40212,
+   "jst_socjal_zl_os": 1576.28,
+   "jst_srodki_wlasne_zl_os": 699.48
+  },
+  {
+   "teryt": "2011",
+   "nazwa": "sokólski",
+   "rok": 2024,
+   "ludnosc": 60592,
+   "jst_socjal_zl_os": 1642.18,
+   "jst_srodki_wlasne_zl_os": 666.83
+  },
+  {
+   "teryt": "2012",
+   "nazwa": "suwalski",
+   "rok": 2024,
+   "ludnosc": 34585,
+   "jst_socjal_zl_os": 1696.79,
+   "jst_srodki_wlasne_zl_os": 618.15
+  },
+  {
+   "teryt": "2013",
+   "nazwa": "wysokomazowiecki",
+   "rok": 2024,
+   "ludnosc": 52834,
+   "jst_socjal_zl_os": 1335.77,
+   "jst_srodki_wlasne_zl_os": 560.05
+  },
+  {
+   "teryt": "2014",
+   "nazwa": "zambrowski",
+   "rok": 2024,
+   "ludnosc": 41109,
+   "jst_socjal_zl_os": 1426.27,
+   "jst_srodki_wlasne_zl_os": 591.73
+  },
+  {
+   "teryt": "2061",
+   "nazwa": "M.Białystok",
+   "rok": 2024,
+   "ludnosc": 290386,
+   "jst_socjal_zl_os": 1400.53,
+   "jst_srodki_wlasne_zl_os": 726.12
+  },
+  {
+   "teryt": "2062",
+   "nazwa": "M.Łomża",
+   "rok": 2024,
+   "ludnosc": 59263,
+   "jst_socjal_zl_os": 1526.29,
+   "jst_srodki_wlasne_zl_os": 705.14
+  },
+  {
+   "teryt": "2063",
+   "nazwa": "M.Suwałki",
+   "rok": 2024,
+   "ludnosc": 68143,
+   "jst_socjal_zl_os": 1686.94,
+   "jst_srodki_wlasne_zl_os": 799.09
+  },
+  {
+   "teryt": "2201",
+   "nazwa": "bytowski",
+   "rok": 2024,
+   "ludnosc": 76266,
+   "jst_socjal_zl_os": 1755.11,
+   "jst_srodki_wlasne_zl_os": 438.15
+  },
+  {
+   "teryt": "2202",
+   "nazwa": "chojnicki",
+   "rok": 2024,
+   "ludnosc": 95536,
+   "jst_socjal_zl_os": 1949.78,
+   "jst_srodki_wlasne_zl_os": 620.54
+  },
+  {
+   "teryt": "2203",
+   "nazwa": "człuchowski",
+   "rok": 2024,
+   "ludnosc": 52747,
+   "jst_socjal_zl_os": 2564.43,
+   "jst_srodki_wlasne_zl_os": 1114.71
+  },
+  {
+   "teryt": "2204",
+   "nazwa": "gdański",
+   "rok": 2024,
+   "ludnosc": 133490,
+   "jst_socjal_zl_os": 1214.8,
+   "jst_srodki_wlasne_zl_os": 510.82
+  },
+  {
+   "teryt": "2205",
+   "nazwa": "kartuski",
+   "rok": 2024,
+   "ludnosc": 155382,
+   "jst_socjal_zl_os": 1506.38,
+   "jst_srodki_wlasne_zl_os": 500.44
+  },
+  {
+   "teryt": "2206",
+   "nazwa": "kościerski",
+   "rok": 2024,
+   "ludnosc": 72113,
+   "jst_socjal_zl_os": 1721.37,
+   "jst_srodki_wlasne_zl_os": 672.81
+  },
+  {
+   "teryt": "2207",
+   "nazwa": "kwidzyński",
+   "rok": 2024,
+   "ludnosc": 79612,
+   "jst_socjal_zl_os": 2024.4,
+   "jst_srodki_wlasne_zl_os": 955.49
+  },
+  {
+   "teryt": "2208",
+   "nazwa": "lęborski",
+   "rok": 2024,
+   "ludnosc": 63448,
+   "jst_socjal_zl_os": 2566.76,
+   "jst_srodki_wlasne_zl_os": 918.48
+  },
+  {
+   "teryt": "2209",
+   "nazwa": "malborski",
+   "rok": 2024,
+   "ludnosc": 60351,
+   "jst_socjal_zl_os": 2180.0,
+   "jst_srodki_wlasne_zl_os": 931.47
+  },
+  {
+   "teryt": "2210",
+   "nazwa": "nowodworski",
+   "rok": 2024,
+   "ludnosc": 33392,
+   "jst_socjal_zl_os": 2062.37,
+   "jst_srodki_wlasne_zl_os": 1001.78
+  },
+  {
+   "teryt": "2211",
+   "nazwa": "pucki",
+   "rok": 2024,
+   "ludnosc": 92383,
+   "jst_socjal_zl_os": 1582.58,
+   "jst_srodki_wlasne_zl_os": 662.07
+  },
+  {
+   "teryt": "2212",
+   "nazwa": "słupski",
+   "rok": 2024,
+   "ludnosc": 95888,
+   "jst_socjal_zl_os": 2265.41,
+   "jst_srodki_wlasne_zl_os": 1058.1
+  },
+  {
+   "teryt": "2213",
+   "nazwa": "starogardzki",
+   "rok": 2024,
+   "ludnosc": 124774,
+   "jst_socjal_zl_os": 1857.16,
+   "jst_srodki_wlasne_zl_os": 728.96
+  },
+  {
+   "teryt": "2214",
+   "nazwa": "tczewski",
+   "rok": 2024,
+   "ludnosc": 110511,
+   "jst_socjal_zl_os": 2251.36,
+   "jst_srodki_wlasne_zl_os": 1059.87
+  },
+  {
+   "teryt": "2215",
+   "nazwa": "wejherowski",
+   "rok": 2024,
+   "ludnosc": 230818,
+   "jst_socjal_zl_os": 1609.74,
+   "jst_srodki_wlasne_zl_os": 564.19
+  },
+  {
+   "teryt": "2216",
+   "nazwa": "sztumski",
+   "rok": 2024,
+   "ludnosc": 37836,
+   "jst_socjal_zl_os": 1837.53,
+   "jst_srodki_wlasne_zl_os": 659.0
+  },
+  {
+   "teryt": "2261",
+   "nazwa": "M.Gdańsk",
+   "rok": 2024,
+   "ludnosc": 488651,
+   "jst_socjal_zl_os": 1289.63,
+   "jst_srodki_wlasne_zl_os": 704.64
+  },
+  {
+   "teryt": "2262",
+   "nazwa": "M.Gdynia",
+   "rok": 2024,
+   "ludnosc": 240084,
+   "jst_socjal_zl_os": 1336.45,
+   "jst_srodki_wlasne_zl_os": 748.01
+  },
+  {
+   "teryt": "2263",
+   "nazwa": "M.Słupsk",
+   "rok": 2024,
+   "ludnosc": 84767,
+   "jst_socjal_zl_os": 1830.78,
+   "jst_srodki_wlasne_zl_os": 875.65
+  },
+  {
+   "teryt": "2264",
+   "nazwa": "M.Sopot",
+   "rok": 2024,
+   "ludnosc": 31444,
+   "jst_socjal_zl_os": 2406.85,
+   "jst_srodki_wlasne_zl_os": 1554.62
+  },
+  {
+   "teryt": "2401",
+   "nazwa": "będziński",
+   "rok": 2024,
+   "ludnosc": 143640,
+   "jst_socjal_zl_os": 1294.46,
+   "jst_srodki_wlasne_zl_os": 748.0
+  },
+  {
+   "teryt": "2402",
+   "nazwa": "bielski",
+   "rok": 2024,
+   "ludnosc": 165708,
+   "jst_socjal_zl_os": 1105.68,
+   "jst_srodki_wlasne_zl_os": 393.85
+  },
+  {
+   "teryt": "2403",
+   "nazwa": "cieszyński",
+   "rok": 2024,
+   "ludnosc": 173694,
+   "jst_socjal_zl_os": 1413.95,
+   "jst_srodki_wlasne_zl_os": 688.17
+  },
+  {
+   "teryt": "2404",
+   "nazwa": "częstochowski",
+   "rok": 2024,
+   "ludnosc": 131042,
+   "jst_socjal_zl_os": 1337.25,
+   "jst_srodki_wlasne_zl_os": 572.32
+  },
+  {
+   "teryt": "2405",
+   "nazwa": "gliwicki",
+   "rok": 2024,
+   "ludnosc": 112952,
+   "jst_socjal_zl_os": 1113.81,
+   "jst_srodki_wlasne_zl_os": 573.16
+  },
+  {
+   "teryt": "2406",
+   "nazwa": "kłobucki",
+   "rok": 2024,
+   "ludnosc": 81495,
+   "jst_socjal_zl_os": 1179.27,
+   "jst_srodki_wlasne_zl_os": 485.29
+  },
+  {
+   "teryt": "2407",
+   "nazwa": "lubliniecki",
+   "rok": 2024,
+   "ludnosc": 74419,
+   "jst_socjal_zl_os": 1789.44,
+   "jst_srodki_wlasne_zl_os": 902.62
+  },
+  {
+   "teryt": "2408",
+   "nazwa": "mikołowski",
+   "rok": 2024,
+   "ludnosc": 100019,
+   "jst_socjal_zl_os": 1144.77,
+   "jst_srodki_wlasne_zl_os": 662.95
+  },
+  {
+   "teryt": "2409",
+   "nazwa": "myszkowski",
+   "rok": 2024,
+   "ludnosc": 67049,
+   "jst_socjal_zl_os": 1653.93,
+   "jst_srodki_wlasne_zl_os": 537.02
+  },
+  {
+   "teryt": "2410",
+   "nazwa": "pszczyński",
+   "rok": 2024,
+   "ludnosc": 110722,
+   "jst_socjal_zl_os": 980.6,
+   "jst_srodki_wlasne_zl_os": 450.34
+  },
+  {
+   "teryt": "2411",
+   "nazwa": "raciborski",
+   "rok": 2024,
+   "ludnosc": 98665,
+   "jst_socjal_zl_os": 1518.74,
+   "jst_srodki_wlasne_zl_os": 803.69
+  },
+  {
+   "teryt": "2412",
+   "nazwa": "rybnicki",
+   "rok": 2024,
+   "ludnosc": 76250,
+   "jst_socjal_zl_os": 1252.07,
+   "jst_srodki_wlasne_zl_os": 634.21
+  },
+  {
+   "teryt": "2413",
+   "nazwa": "tarnogórski",
+   "rok": 2024,
+   "ludnosc": 138856,
+   "jst_socjal_zl_os": 1357.55,
+   "jst_srodki_wlasne_zl_os": 673.38
+  },
+  {
+   "teryt": "2414",
+   "nazwa": "bieruńsko-lędziński",
+   "rok": 2024,
+   "ludnosc": 59400,
+   "jst_socjal_zl_os": 1082.59,
+   "jst_srodki_wlasne_zl_os": 555.19
+  },
+  {
+   "teryt": "2415",
+   "nazwa": "wodzisławski",
+   "rok": 2024,
+   "ludnosc": 149463,
+   "jst_socjal_zl_os": 1223.66,
+   "jst_srodki_wlasne_zl_os": 563.21
+  },
+  {
+   "teryt": "2416",
+   "nazwa": "zawierciański",
+   "rok": 2024,
+   "ludnosc": 110383,
+   "jst_socjal_zl_os": 1295.33,
+   "jst_srodki_wlasne_zl_os": 658.66
+  },
+  {
+   "teryt": "2417",
+   "nazwa": "żywiecki",
+   "rok": 2024,
+   "ludnosc": 148090,
+   "jst_socjal_zl_os": 1100.93,
+   "jst_srodki_wlasne_zl_os": 381.72
+  },
+  {
+   "teryt": "2461",
+   "nazwa": "M.Bielsko-Biała",
+   "rok": 2024,
+   "ludnosc": 164318,
+   "jst_socjal_zl_os": 1290.44,
+   "jst_srodki_wlasne_zl_os": 654.63
+  },
+  {
+   "teryt": "2462",
+   "nazwa": "M.Bytom",
+   "rok": 2024,
+   "ludnosc": 146290,
+   "jst_socjal_zl_os": 1496.2,
+   "jst_srodki_wlasne_zl_os": 785.07
+  },
+  {
+   "teryt": "2463",
+   "nazwa": "M.Chorzów",
+   "rok": 2024,
+   "ludnosc": 99420,
+   "jst_socjal_zl_os": 1767.19,
+   "jst_srodki_wlasne_zl_os": 987.75
+  },
+  {
+   "teryt": "2464",
+   "nazwa": "M.Częstochowa",
+   "rok": 2024,
+   "ludnosc": 203615,
+   "jst_socjal_zl_os": 1454.75,
+   "jst_srodki_wlasne_zl_os": 725.04
+  },
+  {
+   "teryt": "2465",
+   "nazwa": "M.Dąbrowa Górnicza",
+   "rok": 2024,
+   "ludnosc": 112408,
+   "jst_socjal_zl_os": 1098.78,
+   "jst_srodki_wlasne_zl_os": 661.88
+  },
+  {
+   "teryt": "2466",
+   "nazwa": "M.Gliwice",
+   "rok": 2024,
+   "ludnosc": 168248,
+   "jst_socjal_zl_os": 1198.45,
+   "jst_srodki_wlasne_zl_os": 712.73
+  },
+  {
+   "teryt": "2467",
+   "nazwa": "M.Jastrzębie-Zdrój",
+   "rok": 2024,
+   "ludnosc": 81338,
+   "jst_socjal_zl_os": 1125.63,
+   "jst_srodki_wlasne_zl_os": 533.93
+  },
+  {
+   "teryt": "2468",
+   "nazwa": "M.Jaworzno",
+   "rok": 2024,
+   "ludnosc": 86075,
+   "jst_socjal_zl_os": 1664.24,
+   "jst_srodki_wlasne_zl_os": 869.24
+  },
+  {
+   "teryt": "2469",
+   "nazwa": "M.Katowice",
+   "rok": 2024,
+   "ludnosc": 278885,
+   "jst_socjal_zl_os": 1286.33,
+   "jst_srodki_wlasne_zl_os": 816.53
+  },
+  {
+   "teryt": "2470",
+   "nazwa": "M.Mysłowice",
+   "rok": 2024,
+   "ludnosc": 70741,
+   "jst_socjal_zl_os": 1187.24,
+   "jst_srodki_wlasne_zl_os": 636.65
+  },
+  {
+   "teryt": "2471",
+   "nazwa": "M.Piekary Śląskie",
+   "rok": 2024,
+   "ludnosc": 51373,
+   "jst_socjal_zl_os": 1668.06,
+   "jst_srodki_wlasne_zl_os": 1049.0
+  },
+  {
+   "teryt": "2472",
+   "nazwa": "M.Ruda Śląska",
+   "rok": 2024,
+   "ludnosc": 128793,
+   "jst_socjal_zl_os": 1587.72,
+   "jst_srodki_wlasne_zl_os": 838.93
+  },
+  {
+   "teryt": "2473",
+   "nazwa": "M.Rybnik",
+   "rok": 2024,
+   "ludnosc": 129817,
+   "jst_socjal_zl_os": 1321.92,
+   "jst_srodki_wlasne_zl_os": 741.07
+  },
+  {
+   "teryt": "2474",
+   "nazwa": "M.Siemianowice Śląskie",
+   "rok": 2024,
+   "ludnosc": 62817,
+   "jst_socjal_zl_os": 1536.67,
+   "jst_srodki_wlasne_zl_os": 852.45
+  },
+  {
+   "teryt": "2475",
+   "nazwa": "M.Sosnowiec",
+   "rok": 2024,
+   "ludnosc": 184988,
+   "jst_socjal_zl_os": 1345.27,
+   "jst_srodki_wlasne_zl_os": 782.98
+  },
+  {
+   "teryt": "2476",
+   "nazwa": "M.Świętochłowice",
+   "rok": 2024,
+   "ludnosc": 45021,
+   "jst_socjal_zl_os": 1855.72,
+   "jst_srodki_wlasne_zl_os": 961.92
+  },
+  {
+   "teryt": "2477",
+   "nazwa": "M.Tychy",
+   "rok": 2024,
+   "ludnosc": 121063,
+   "jst_socjal_zl_os": 1066.99,
+   "jst_srodki_wlasne_zl_os": 584.36
+  },
+  {
+   "teryt": "2478",
+   "nazwa": "M.Zabrze",
+   "rok": 2024,
+   "ludnosc": 152461,
+   "jst_socjal_zl_os": 1501.63,
+   "jst_srodki_wlasne_zl_os": 868.09
+  },
+  {
+   "teryt": "2479",
+   "nazwa": "M.Żory",
+   "rok": 2024,
+   "ludnosc": 61923,
+   "jst_socjal_zl_os": 1150.66,
+   "jst_srodki_wlasne_zl_os": 609.18
+  },
+  {
+   "teryt": "2601",
+   "nazwa": "buski",
+   "rok": 2024,
+   "ludnosc": 67157,
+   "jst_socjal_zl_os": 1785.94,
+   "jst_srodki_wlasne_zl_os": 565.85
+  },
+  {
+   "teryt": "2602",
+   "nazwa": "jędrzejowski",
+   "rok": 2024,
+   "ludnosc": 80365,
+   "jst_socjal_zl_os": 1581.69,
+   "jst_srodki_wlasne_zl_os": 583.91
+  },
+  {
+   "teryt": "2603",
+   "nazwa": "kazimierski",
+   "rok": 2024,
+   "ludnosc": 31373,
+   "jst_socjal_zl_os": 2132.92,
+   "jst_srodki_wlasne_zl_os": 950.98
+  },
+  {
+   "teryt": "2604",
+   "nazwa": "kielecki",
+   "rok": 2024,
+   "ludnosc": 211645,
+   "jst_socjal_zl_os": 1620.72,
+   "jst_srodki_wlasne_zl_os": 519.72
+  },
+  {
+   "teryt": "2605",
+   "nazwa": "konecki",
+   "rok": 2024,
+   "ludnosc": 72810,
+   "jst_socjal_zl_os": 2083.39,
+   "jst_srodki_wlasne_zl_os": 771.78
+  },
+  {
+   "teryt": "2606",
+   "nazwa": "opatowski",
+   "rok": 2024,
+   "ludnosc": 47876,
+   "jst_socjal_zl_os": 2903.14,
+   "jst_srodki_wlasne_zl_os": 1683.14
+  },
+  {
+   "teryt": "2607",
+   "nazwa": "ostrowiecki",
+   "rok": 2024,
+   "ludnosc": 98766,
+   "jst_socjal_zl_os": 1900.89,
+   "jst_srodki_wlasne_zl_os": 723.93
+  },
+  {
+   "teryt": "2608",
+   "nazwa": "pińczowski",
+   "rok": 2024,
+   "ludnosc": 36283,
+   "jst_socjal_zl_os": 1620.11,
+   "jst_srodki_wlasne_zl_os": 635.66
+  },
+  {
+   "teryt": "2609",
+   "nazwa": "sandomierski",
+   "rok": 2024,
+   "ludnosc": 70999,
+   "jst_socjal_zl_os": 1848.92,
+   "jst_srodki_wlasne_zl_os": 648.0
+  },
+  {
+   "teryt": "2610",
+   "nazwa": "skarżyski",
+   "rok": 2024,
+   "ludnosc": 67152,
+   "jst_socjal_zl_os": 1814.93,
+   "jst_srodki_wlasne_zl_os": 855.84
+  },
+  {
+   "teryt": "2611",
+   "nazwa": "starachowicki",
+   "rok": 2024,
+   "ludnosc": 82681,
+   "jst_socjal_zl_os": 1978.1,
+   "jst_srodki_wlasne_zl_os": 703.94
+  },
+  {
+   "teryt": "2612",
+   "nazwa": "staszowski",
+   "rok": 2024,
+   "ludnosc": 67817,
+   "jst_socjal_zl_os": 1651.25,
+   "jst_srodki_wlasne_zl_os": 619.35
+  },
+  {
+   "teryt": "2613",
+   "nazwa": "włoszczowski",
+   "rok": 2024,
+   "ludnosc": 42530,
+   "jst_socjal_zl_os": 1413.61,
+   "jst_srodki_wlasne_zl_os": 590.61
+  },
+  {
+   "teryt": "2661",
+   "nazwa": "M.Kielce",
+   "rok": 2024,
+   "ludnosc": 180537,
+   "jst_socjal_zl_os": 2411.86,
+   "jst_srodki_wlasne_zl_os": 1321.05
+  },
+  {
+   "teryt": "2801",
+   "nazwa": "bartoszycki",
+   "rok": 2024,
+   "ludnosc": 52001,
+   "jst_socjal_zl_os": 2722.97,
+   "jst_srodki_wlasne_zl_os": 1361.22
+  },
+  {
+   "teryt": "2802",
+   "nazwa": "braniewski",
+   "rok": 2024,
+   "ludnosc": 36812,
+   "jst_socjal_zl_os": 2313.18,
+   "jst_srodki_wlasne_zl_os": 917.54
+  },
+  {
+   "teryt": "2803",
+   "nazwa": "działdowski",
+   "rok": 2024,
+   "ludnosc": 61003,
+   "jst_socjal_zl_os": 1550.47,
+   "jst_srodki_wlasne_zl_os": 742.01
+  },
+  {
+   "teryt": "2804",
+   "nazwa": "elbląski",
+   "rok": 2024,
+   "ludnosc": 53765,
+   "jst_socjal_zl_os": 2010.96,
+   "jst_srodki_wlasne_zl_os": 759.14
+  },
+  {
+   "teryt": "2805",
+   "nazwa": "ełcki",
+   "rok": 2024,
+   "ludnosc": 87992,
+   "jst_socjal_zl_os": 1779.19,
+   "jst_srodki_wlasne_zl_os": 889.31
+  },
+  {
+   "teryt": "2806",
+   "nazwa": "giżycki",
+   "rok": 2024,
+   "ludnosc": 53165,
+   "jst_socjal_zl_os": 1740.46,
+   "jst_srodki_wlasne_zl_os": 857.12
+  },
+  {
+   "teryt": "2807",
+   "nazwa": "iławski",
+   "rok": 2024,
+   "ludnosc": 89540,
+   "jst_socjal_zl_os": 1928.85,
+   "jst_srodki_wlasne_zl_os": 874.64
+  },
+  {
+   "teryt": "2808",
+   "nazwa": "kętrzyński",
+   "rok": 2024,
+   "ludnosc": 56262,
+   "jst_socjal_zl_os": 2032.27,
+   "jst_srodki_wlasne_zl_os": 821.97
+  },
+  {
+   "teryt": "2809",
+   "nazwa": "lidzbarski",
+   "rok": 2024,
+   "ludnosc": 37756,
+   "jst_socjal_zl_os": 1803.18,
+   "jst_srodki_wlasne_zl_os": 746.17
+  },
+  {
+   "teryt": "2810",
+   "nazwa": "mrągowski",
+   "rok": 2024,
+   "ludnosc": 47074,
+   "jst_socjal_zl_os": 1930.32,
+   "jst_srodki_wlasne_zl_os": 812.11
+  },
+  {
+   "teryt": "2811",
+   "nazwa": "nidzicki",
+   "rok": 2024,
+   "ludnosc": 30207,
+   "jst_socjal_zl_os": 1914.0,
+   "jst_srodki_wlasne_zl_os": 686.69
+  },
+  {
+   "teryt": "2812",
+   "nazwa": "nowomiejski",
+   "rok": 2024,
+   "ludnosc": 41726,
+   "jst_socjal_zl_os": 1915.35,
+   "jst_srodki_wlasne_zl_os": 651.81
+  },
+  {
+   "teryt": "2813",
+   "nazwa": "olecki",
+   "rok": 2024,
+   "ludnosc": 31717,
+   "jst_socjal_zl_os": 2207.67,
+   "jst_srodki_wlasne_zl_os": 917.07
+  },
+  {
+   "teryt": "2814",
+   "nazwa": "olsztyński",
+   "rok": 2024,
+   "ludnosc": 130560,
+   "jst_socjal_zl_os": 1773.07,
+   "jst_srodki_wlasne_zl_os": 917.64
+  },
+  {
+   "teryt": "2815",
+   "nazwa": "ostródzki",
+   "rok": 2024,
+   "ludnosc": 98242,
+   "jst_socjal_zl_os": 1858.2,
+   "jst_srodki_wlasne_zl_os": 698.11
+  },
+  {
+   "teryt": "2816",
+   "nazwa": "piski",
+   "rok": 2024,
+   "ludnosc": 51550,
+   "jst_socjal_zl_os": 1555.06,
+   "jst_srodki_wlasne_zl_os": 571.47
+  },
+  {
+   "teryt": "2817",
+   "nazwa": "szczycieński",
+   "rok": 2024,
+   "ludnosc": 66133,
+   "jst_socjal_zl_os": 2137.49,
+   "jst_srodki_wlasne_zl_os": 927.17
+  },
+  {
+   "teryt": "2818",
+   "nazwa": "gołdapski",
+   "rok": 2024,
+   "ludnosc": 24612,
+   "jst_socjal_zl_os": 1638.89,
+   "jst_srodki_wlasne_zl_os": 617.49
+  },
+  {
+   "teryt": "2819",
+   "nazwa": "węgorzewski",
+   "rok": 2024,
+   "ludnosc": 20611,
+   "jst_socjal_zl_os": 2847.85,
+   "jst_srodki_wlasne_zl_os": 1550.05
+  },
+  {
+   "teryt": "2861",
+   "nazwa": "M.Elbląg",
+   "rok": 2024,
+   "ludnosc": 112052,
+   "jst_socjal_zl_os": 1634.4,
+   "jst_srodki_wlasne_zl_os": 785.53
+  },
+  {
+   "teryt": "2862",
+   "nazwa": "M.Olsztyn",
+   "rok": 2024,
+   "ludnosc": 166392,
+   "jst_socjal_zl_os": 1564.78,
+   "jst_srodki_wlasne_zl_os": 802.7
+  },
+  {
+   "teryt": "3001",
+   "nazwa": "chodzieski",
+   "rok": 2024,
+   "ludnosc": 44876,
+   "jst_socjal_zl_os": 1697.69,
+   "jst_srodki_wlasne_zl_os": 913.58
+  },
+  {
+   "teryt": "3002",
+   "nazwa": "czarnkowsko-trzcianecki",
+   "rok": 2024,
+   "ludnosc": 82852,
+   "jst_socjal_zl_os": 1768.8,
+   "jst_srodki_wlasne_zl_os": 783.9
+  },
+  {
+   "teryt": "3003",
+   "nazwa": "gnieźnieński",
+   "rok": 2024,
+   "ludnosc": 140653,
+   "jst_socjal_zl_os": 1485.98,
+   "jst_srodki_wlasne_zl_os": 664.56
+  },
+  {
+   "teryt": "3004",
+   "nazwa": "gostyński",
+   "rok": 2024,
+   "ludnosc": 72977,
+   "jst_socjal_zl_os": 1616.25,
+   "jst_srodki_wlasne_zl_os": 813.11
+  },
+  {
+   "teryt": "3005",
+   "nazwa": "grodziski",
+   "rok": 2024,
+   "ludnosc": 51541,
+   "jst_socjal_zl_os": 1275.66,
+   "jst_srodki_wlasne_zl_os": 444.7
+  },
+  {
+   "teryt": "3006",
+   "nazwa": "jarociński",
+   "rok": 2024,
+   "ludnosc": 69540,
+   "jst_socjal_zl_os": 1609.73,
+   "jst_srodki_wlasne_zl_os": 692.16
+  },
+  {
+   "teryt": "3007",
+   "nazwa": "kaliski",
+   "rok": 2024,
+   "ludnosc": 81950,
+   "jst_socjal_zl_os": 1315.68,
+   "jst_srodki_wlasne_zl_os": 457.24
+  },
+  {
+   "teryt": "3008",
+   "nazwa": "kępiński",
+   "rok": 2024,
+   "ludnosc": 55762,
+   "jst_socjal_zl_os": 1518.69,
+   "jst_srodki_wlasne_zl_os": 789.24
+  },
+  {
+   "teryt": "3009",
+   "nazwa": "kolski",
+   "rok": 2024,
+   "ludnosc": 80743,
+   "jst_socjal_zl_os": 1690.13,
+   "jst_srodki_wlasne_zl_os": 525.87
+  },
+  {
+   "teryt": "3010",
+   "nazwa": "koniński",
+   "rok": 2024,
+   "ludnosc": 128469,
+   "jst_socjal_zl_os": 1779.3,
+   "jst_srodki_wlasne_zl_os": 511.66
+  },
+  {
+   "teryt": "3011",
+   "nazwa": "kościański",
+   "rok": 2024,
+   "ludnosc": 76875,
+   "jst_socjal_zl_os": 1510.63,
+   "jst_srodki_wlasne_zl_os": 630.22
+  },
+  {
+   "teryt": "3012",
+   "nazwa": "krotoszyński",
+   "rok": 2024,
+   "ludnosc": 74463,
+   "jst_socjal_zl_os": 1506.22,
+   "jst_srodki_wlasne_zl_os": 746.59
+  },
+  {
+   "teryt": "3013",
+   "nazwa": "leszczyński",
+   "rok": 2024,
+   "ludnosc": 60562,
+   "jst_socjal_zl_os": 949.29,
+   "jst_srodki_wlasne_zl_os": 368.37
+  },
+  {
+   "teryt": "3014",
+   "nazwa": "międzychodzki",
+   "rok": 2024,
+   "ludnosc": 35485,
+   "jst_socjal_zl_os": 2383.2,
+   "jst_srodki_wlasne_zl_os": 1310.36
+  },
+  {
+   "teryt": "3015",
+   "nazwa": "nowotomyski",
+   "rok": 2024,
+   "ludnosc": 75015,
+   "jst_socjal_zl_os": 1157.09,
+   "jst_srodki_wlasne_zl_os": 499.63
+  },
+  {
+   "teryt": "3016",
+   "nazwa": "obornicki",
+   "rok": 2024,
+   "ludnosc": 58657,
+   "jst_socjal_zl_os": 1325.29,
+   "jst_srodki_wlasne_zl_os": 551.57
+  },
+  {
+   "teryt": "3017",
+   "nazwa": "ostrowski",
+   "rok": 2024,
+   "ludnosc": 157734,
+   "jst_socjal_zl_os": 1681.89,
+   "jst_srodki_wlasne_zl_os": 783.54
+  },
+  {
+   "teryt": "3018",
+   "nazwa": "ostrzeszowski",
+   "rok": 2024,
+   "ludnosc": 54319,
+   "jst_socjal_zl_os": 1960.37,
+   "jst_srodki_wlasne_zl_os": 1063.33
+  },
+  {
+   "teryt": "3019",
+   "nazwa": "pilski",
+   "rok": 2024,
+   "ludnosc": 129629,
+   "jst_socjal_zl_os": 1687.52,
+   "jst_srodki_wlasne_zl_os": 800.28
+  },
+  {
+   "teryt": "3020",
+   "nazwa": "pleszewski",
+   "rok": 2024,
+   "ludnosc": 60871,
+   "jst_socjal_zl_os": 2273.07,
+   "jst_srodki_wlasne_zl_os": 997.44
+  },
+  {
+   "teryt": "3021",
+   "nazwa": "poznański",
+   "rok": 2024,
+   "ludnosc": 454283,
+   "jst_socjal_zl_os": 866.06,
+   "jst_srodki_wlasne_zl_os": 403.37
+  },
+  {
+   "teryt": "3022",
+   "nazwa": "rawicki",
+   "rok": 2024,
+   "ludnosc": 58338,
+   "jst_socjal_zl_os": 1615.91,
+   "jst_srodki_wlasne_zl_os": 820.17
+  },
+  {
+   "teryt": "3023",
+   "nazwa": "słupecki",
+   "rok": 2024,
+   "ludnosc": 56994,
+   "jst_socjal_zl_os": 1963.86,
+   "jst_srodki_wlasne_zl_os": 805.58
+  },
+  {
+   "teryt": "3024",
+   "nazwa": "szamotulski",
+   "rok": 2024,
+   "ludnosc": 91631,
+   "jst_socjal_zl_os": 1511.06,
+   "jst_srodki_wlasne_zl_os": 706.49
+  },
+  {
+   "teryt": "3025",
+   "nazwa": "średzki",
+   "rok": 2024,
+   "ludnosc": 60058,
+   "jst_socjal_zl_os": 1390.45,
+   "jst_srodki_wlasne_zl_os": 447.31
+  },
+  {
+   "teryt": "3026",
+   "nazwa": "śremski",
+   "rok": 2024,
+   "ludnosc": 60939,
+   "jst_socjal_zl_os": 1495.95,
+   "jst_srodki_wlasne_zl_os": 680.08
+  },
+  {
+   "teryt": "3027",
+   "nazwa": "turecki",
+   "rok": 2024,
+   "ludnosc": 80513,
+   "jst_socjal_zl_os": 1618.91,
+   "jst_srodki_wlasne_zl_os": 561.77
+  },
+  {
+   "teryt": "3028",
+   "nazwa": "wągrowiecki",
+   "rok": 2024,
+   "ludnosc": 68899,
+   "jst_socjal_zl_os": 1515.92,
+   "jst_srodki_wlasne_zl_os": 646.19
+  },
+  {
+   "teryt": "3029",
+   "nazwa": "wolsztyński",
+   "rok": 2024,
+   "ludnosc": 56446,
+   "jst_socjal_zl_os": 1212.04,
+   "jst_srodki_wlasne_zl_os": 447.52
+  },
+  {
+   "teryt": "3030",
+   "nazwa": "wrzesiński",
+   "rok": 2024,
+   "ludnosc": 78199,
+   "jst_socjal_zl_os": 1300.14,
+   "jst_srodki_wlasne_zl_os": 525.35
+  },
+  {
+   "teryt": "3031",
+   "nazwa": "złotowski",
+   "rok": 2024,
+   "ludnosc": 66975,
+   "jst_socjal_zl_os": 1677.77,
+   "jst_srodki_wlasne_zl_os": 708.07
+  },
+  {
+   "teryt": "3061",
+   "nazwa": "M.Kalisz",
+   "rok": 2024,
+   "ludnosc": 91963,
+   "jst_socjal_zl_os": 2003.13,
+   "jst_srodki_wlasne_zl_os": 1029.58
+  },
+  {
+   "teryt": "3062",
+   "nazwa": "M.Konin",
+   "rok": 2024,
+   "ludnosc": 66103,
+   "jst_socjal_zl_os": 2023.58,
+   "jst_srodki_wlasne_zl_os": 779.2
+  },
+  {
+   "teryt": "3063",
+   "nazwa": "M.Leszno",
+   "rok": 2024,
+   "ludnosc": 59521,
+   "jst_socjal_zl_os": 1590.85,
+   "jst_srodki_wlasne_zl_os": 836.25
+  },
+  {
+   "teryt": "3064",
+   "nazwa": "M.Poznań",
+   "rok": 2024,
+   "ludnosc": 536151,
+   "jst_socjal_zl_os": 1242.02,
+   "jst_srodki_wlasne_zl_os": 849.26
+  },
+  {
+   "teryt": "3201",
+   "nazwa": "białogardzki",
+   "rok": 2024,
+   "ludnosc": 43964,
+   "jst_socjal_zl_os": 2205.86,
+   "jst_srodki_wlasne_zl_os": 1022.65
+  },
+  {
+   "teryt": "3202",
+   "nazwa": "choszczeński",
+   "rok": 2024,
+   "ludnosc": 44105,
+   "jst_socjal_zl_os": 2071.5,
+   "jst_srodki_wlasne_zl_os": 843.34
+  },
+  {
+   "teryt": "3203",
+   "nazwa": "drawski",
+   "rok": 2024,
+   "ludnosc": 53003,
+   "jst_socjal_zl_os": 1936.18,
+   "jst_srodki_wlasne_zl_os": 1053.42
+  },
+  {
+   "teryt": "3204",
+   "nazwa": "goleniowski",
+   "rok": 2024,
+   "ludnosc": 81118,
+   "jst_socjal_zl_os": 1651.02,
+   "jst_srodki_wlasne_zl_os": 812.05
+  },
+  {
+   "teryt": "3205",
+   "nazwa": "gryficki",
+   "rok": 2024,
+   "ludnosc": 56095,
+   "jst_socjal_zl_os": 2250.25,
+   "jst_srodki_wlasne_zl_os": 1235.96
+  },
+  {
+   "teryt": "3206",
+   "nazwa": "gryfiński",
+   "rok": 2024,
+   "ludnosc": 76489,
+   "jst_socjal_zl_os": 1897.12,
+   "jst_srodki_wlasne_zl_os": 987.02
+  },
+  {
+   "teryt": "3207",
+   "nazwa": "kamieński",
+   "rok": 2024,
+   "ludnosc": 43773,
+   "jst_socjal_zl_os": 1497.63,
+   "jst_srodki_wlasne_zl_os": 814.04
+  },
+  {
+   "teryt": "3208",
+   "nazwa": "kołobrzeski",
+   "rok": 2024,
+   "ludnosc": 76390,
+   "jst_socjal_zl_os": 1693.67,
+   "jst_srodki_wlasne_zl_os": 1026.61
+  },
+  {
+   "teryt": "3209",
+   "nazwa": "koszaliński",
+   "rok": 2024,
+   "ludnosc": 64359,
+   "jst_socjal_zl_os": 2343.23,
+   "jst_srodki_wlasne_zl_os": 1341.74
+  },
+  {
+   "teryt": "3210",
+   "nazwa": "myśliborski",
+   "rok": 2024,
+   "ludnosc": 61756,
+   "jst_socjal_zl_os": 1978.12,
+   "jst_srodki_wlasne_zl_os": 1023.07
+  },
+  {
+   "teryt": "3211",
+   "nazwa": "policki",
+   "rok": 2024,
+   "ludnosc": 86834,
+   "jst_socjal_zl_os": 967.78,
+   "jst_srodki_wlasne_zl_os": 575.09
+  },
+  {
+   "teryt": "3212",
+   "nazwa": "pyrzycki",
+   "rok": 2024,
+   "ludnosc": 35991,
+   "jst_socjal_zl_os": 1595.02,
+   "jst_srodki_wlasne_zl_os": 790.6
+  },
+  {
+   "teryt": "3213",
+   "nazwa": "sławieński",
+   "rok": 2024,
+   "ludnosc": 52394,
+   "jst_socjal_zl_os": 1806.23,
+   "jst_srodki_wlasne_zl_os": 905.06
+  },
+  {
+   "teryt": "3214",
+   "nazwa": "stargardzki",
+   "rok": 2024,
+   "ludnosc": 118844,
+   "jst_socjal_zl_os": 1530.43,
+   "jst_srodki_wlasne_zl_os": 742.05
+  },
+  {
+   "teryt": "3215",
+   "nazwa": "szczecinecki",
+   "rok": 2024,
+   "ludnosc": 72023,
+   "jst_socjal_zl_os": 1884.45,
+   "jst_srodki_wlasne_zl_os": 848.44
+  },
+  {
+   "teryt": "3216",
+   "nazwa": "świdwiński",
+   "rok": 2024,
+   "ludnosc": 42754,
+   "jst_socjal_zl_os": 2250.63,
+   "jst_srodki_wlasne_zl_os": 1035.74
+  },
+  {
+   "teryt": "3217",
+   "nazwa": "wałecki",
+   "rok": 2024,
+   "ludnosc": 49384,
+   "jst_socjal_zl_os": 1652.34,
+   "jst_srodki_wlasne_zl_os": 839.17
+  },
+  {
+   "teryt": "3218",
+   "nazwa": "łobeski",
+   "rok": 2024,
+   "ludnosc": 32974,
+   "jst_socjal_zl_os": 2265.48,
+   "jst_srodki_wlasne_zl_os": 1312.35
+  },
+  {
+   "teryt": "3261",
+   "nazwa": "M.Koszalin",
+   "rok": 2024,
+   "ludnosc": 105263,
+   "jst_socjal_zl_os": 1406.07,
+   "jst_srodki_wlasne_zl_os": 860.45
+  },
+  {
+   "teryt": "3262",
+   "nazwa": "M.Szczecin",
+   "rok": 2024,
+   "ludnosc": 386706,
+   "jst_socjal_zl_os": 1271.23,
+   "jst_srodki_wlasne_zl_os": 780.25
+  },
+  {
+   "teryt": "3263",
+   "nazwa": "M.Świnoujście",
+   "rok": 2024,
+   "ludnosc": 38541,
+   "jst_socjal_zl_os": 1342.83,
+   "jst_srodki_wlasne_zl_os": 879.91
+  },
+  {
+   "teryt": "0201",
+   "nazwa": "bolesławiecki",
+   "rok": 2025,
+   "ludnosc": 86878,
+   "jst_socjal_zl_os": 1302.0,
+   "jst_srodki_wlasne_zl_os": 600.2
+  },
+  {
+   "teryt": "0202",
+   "nazwa": "dzierżoniowski",
+   "rok": 2025,
+   "ludnosc": 92968,
+   "jst_socjal_zl_os": 1666.33,
+   "jst_srodki_wlasne_zl_os": 905.01
+  },
+  {
+   "teryt": "0203",
+   "nazwa": "głogowski",
+   "rok": 2025,
+   "ludnosc": 83761,
+   "jst_socjal_zl_os": 2028.02,
+   "jst_srodki_wlasne_zl_os": 1060.42
+  },
+  {
+   "teryt": "0204",
+   "nazwa": "górowski",
+   "rok": 2025,
+   "ludnosc": 31722,
+   "jst_socjal_zl_os": 2302.05,
+   "jst_srodki_wlasne_zl_os": 1118.03
+  },
+  {
+   "teryt": "0205",
+   "nazwa": "jaworski",
+   "rok": 2025,
+   "ludnosc": 46284,
+   "jst_socjal_zl_os": 1862.03,
+   "jst_srodki_wlasne_zl_os": 1150.21
+  },
+  {
+   "teryt": "0206",
+   "nazwa": "karkonoski",
+   "rok": 2025,
+   "ludnosc": 59279,
+   "jst_socjal_zl_os": 2447.64,
+   "jst_srodki_wlasne_zl_os": 1167.48
+  },
+  {
+   "teryt": "0207",
+   "nazwa": "kamiennogórski",
+   "rok": 2025,
+   "ludnosc": 39466,
+   "jst_socjal_zl_os": 1923.59,
+   "jst_srodki_wlasne_zl_os": 946.6
+  },
+  {
+   "teryt": "0208",
+   "nazwa": "kłodzki",
+   "rok": 2025,
+   "ludnosc": 143484,
+   "jst_socjal_zl_os": 2528.54,
+   "jst_srodki_wlasne_zl_os": 1247.64
+  },
+  {
+   "teryt": "0209",
+   "nazwa": "legnicki",
+   "rok": 2025,
+   "ludnosc": 54773,
+   "jst_socjal_zl_os": 2712.71,
+   "jst_srodki_wlasne_zl_os": 1470.02
+  },
+  {
+   "teryt": "0210",
+   "nazwa": "lubański",
+   "rok": 2025,
+   "ludnosc": 50392,
+   "jst_socjal_zl_os": 1844.06,
+   "jst_srodki_wlasne_zl_os": 893.81
+  },
+  {
+   "teryt": "0211",
+   "nazwa": "lubiński",
+   "rok": 2025,
+   "ludnosc": 101752,
+   "jst_socjal_zl_os": 1430.67,
+   "jst_srodki_wlasne_zl_os": 809.04
+  },
+  {
+   "teryt": "0212",
+   "nazwa": "lwówecki",
+   "rok": 2025,
+   "ludnosc": 41941,
+   "jst_socjal_zl_os": 2089.19,
+   "jst_srodki_wlasne_zl_os": 976.98
+  },
+  {
+   "teryt": "0213",
+   "nazwa": "milicki",
+   "rok": 2025,
+   "ludnosc": 35164,
+   "jst_socjal_zl_os": 2291.44,
+   "jst_srodki_wlasne_zl_os": 1152.12
+  },
+  {
+   "teryt": "0214",
+   "nazwa": "oleśnicki",
+   "rok": 2025,
+   "ludnosc": 106771,
+   "jst_socjal_zl_os": 1644.72,
+   "jst_srodki_wlasne_zl_os": 773.54
+  },
+  {
+   "teryt": "0215",
+   "nazwa": "oławski",
+   "rok": 2025,
+   "ludnosc": 77446,
+   "jst_socjal_zl_os": 1609.56,
+   "jst_srodki_wlasne_zl_os": 737.15
+  },
+  {
+   "teryt": "0216",
+   "nazwa": "polkowicki",
+   "rok": 2025,
+   "ludnosc": 60653,
+   "jst_socjal_zl_os": 1797.41,
+   "jst_srodki_wlasne_zl_os": 1016.25
+  },
+  {
+   "teryt": "0217",
+   "nazwa": "strzeliński",
+   "rok": 2025,
+   "ludnosc": 41204,
+   "jst_socjal_zl_os": 1627.15,
+   "jst_srodki_wlasne_zl_os": 637.09
+  },
+  {
+   "teryt": "0218",
+   "nazwa": "średzki",
+   "rok": 2025,
+   "ludnosc": 60282,
+   "jst_socjal_zl_os": 1438.87,
+   "jst_srodki_wlasne_zl_os": 652.02
+  },
+  {
+   "teryt": "0219",
+   "nazwa": "świdnicki",
+   "rok": 2025,
+   "ludnosc": 148064,
+   "jst_socjal_zl_os": 1621.62,
+   "jst_srodki_wlasne_zl_os": 874.66
+  },
+  {
+   "teryt": "0220",
+   "nazwa": "trzebnicki",
+   "rok": 2025,
+   "ludnosc": 88002,
+   "jst_socjal_zl_os": 1641.09,
+   "jst_srodki_wlasne_zl_os": 834.29
+  },
+  {
+   "teryt": "0221",
+   "nazwa": "wałbrzyski",
+   "rok": 2025,
+   "ludnosc": 51761,
+   "jst_socjal_zl_os": 2148.45,
+   "jst_srodki_wlasne_zl_os": 909.25
+  },
+  {
+   "teryt": "0222",
+   "nazwa": "wołowski",
+   "rok": 2025,
+   "ludnosc": 44763,
+   "jst_socjal_zl_os": 1515.49,
+   "jst_srodki_wlasne_zl_os": 647.78
+  },
+  {
+   "teryt": "0223",
+   "nazwa": "wrocławski",
+   "rok": 2025,
+   "ludnosc": 194555,
+   "jst_socjal_zl_os": 900.7,
+   "jst_srodki_wlasne_zl_os": 510.22
+  },
+  {
+   "teryt": "0224",
+   "nazwa": "ząbkowicki",
+   "rok": 2025,
+   "ludnosc": 59097,
+   "jst_socjal_zl_os": 2187.71,
+   "jst_srodki_wlasne_zl_os": 1194.11
+  },
+  {
+   "teryt": "0225",
+   "nazwa": "zgorzelecki",
+   "rok": 2025,
+   "ludnosc": 83523,
+   "jst_socjal_zl_os": 1995.6,
+   "jst_srodki_wlasne_zl_os": 1151.24
+  },
+  {
+   "teryt": "0226",
+   "nazwa": "złotoryjski",
+   "rok": 2025,
+   "ludnosc": 39752,
+   "jst_socjal_zl_os": 2159.25,
+   "jst_srodki_wlasne_zl_os": 1115.61
+  },
+  {
+   "teryt": "0261",
+   "nazwa": "M.Jelenia Góra",
+   "rok": 2025,
+   "ludnosc": 73470,
+   "jst_socjal_zl_os": 2043.56,
+   "jst_srodki_wlasne_zl_os": 929.68
+  },
+  {
+   "teryt": "0262",
+   "nazwa": "M.Legnica",
+   "rok": 2025,
+   "ludnosc": 89919,
+   "jst_socjal_zl_os": 1839.98,
+   "jst_srodki_wlasne_zl_os": 1075.65
+  },
+  {
+   "teryt": "0264",
+   "nazwa": "M.Wrocław",
+   "rok": 2025,
+   "ludnosc": 672601,
+   "jst_socjal_zl_os": 1209.67,
+   "jst_srodki_wlasne_zl_os": 833.55
+  },
+  {
+   "teryt": "0265",
+   "nazwa": "M.Wałbrzych",
+   "rok": 2025,
+   "ludnosc": 97546,
+   "jst_socjal_zl_os": 2163.18,
+   "jst_srodki_wlasne_zl_os": 1088.79
+  },
+  {
+   "teryt": "0401",
+   "nazwa": "aleksandrowski",
+   "rok": 2025,
+   "ludnosc": 52556,
+   "jst_socjal_zl_os": 2045.51,
+   "jst_srodki_wlasne_zl_os": 816.63
+  },
+  {
+   "teryt": "0402",
+   "nazwa": "brodnicki",
+   "rok": 2025,
+   "ludnosc": 77000,
+   "jst_socjal_zl_os": 1767.97,
+   "jst_srodki_wlasne_zl_os": 697.43
+  },
+  {
+   "teryt": "0403",
+   "nazwa": "bydgoski",
+   "rok": 2025,
+   "ludnosc": 129006,
+   "jst_socjal_zl_os": 1569.07,
+   "jst_srodki_wlasne_zl_os": 686.7
+  },
+  {
+   "teryt": "0404",
+   "nazwa": "chełmiński",
+   "rok": 2025,
+   "ludnosc": 48347,
+   "jst_socjal_zl_os": 2236.34,
+   "jst_srodki_wlasne_zl_os": 894.29
+  },
+  {
+   "teryt": "0405",
+   "nazwa": "golubsko-dobrzyński",
+   "rok": 2025,
+   "ludnosc": 42712,
+   "jst_socjal_zl_os": 1883.81,
+   "jst_srodki_wlasne_zl_os": 670.72
+  },
+  {
+   "teryt": "0406",
+   "nazwa": "grudziądzki",
+   "rok": 2025,
+   "ludnosc": 39020,
+   "jst_socjal_zl_os": 1944.89,
+   "jst_srodki_wlasne_zl_os": 788.37
+  },
+  {
+   "teryt": "0407",
+   "nazwa": "inowrocławski",
+   "rok": 2025,
+   "ludnosc": 147387,
+   "jst_socjal_zl_os": 2160.64,
+   "jst_srodki_wlasne_zl_os": 1024.09
+  },
+  {
+   "teryt": "0408",
+   "nazwa": "lipnowski",
+   "rok": 2025,
+   "ludnosc": 61550,
+   "jst_socjal_zl_os": 2554.64,
+   "jst_srodki_wlasne_zl_os": 943.03
+  },
+  {
+   "teryt": "0409",
+   "nazwa": "mogileński",
+   "rok": 2025,
+   "ludnosc": 42862,
+   "jst_socjal_zl_os": 2176.47,
+   "jst_srodki_wlasne_zl_os": 937.98
+  },
+  {
+   "teryt": "0410",
+   "nazwa": "nakielski",
+   "rok": 2025,
+   "ludnosc": 81912,
+   "jst_socjal_zl_os": 2280.17,
+   "jst_srodki_wlasne_zl_os": 982.62
+  },
+  {
+   "teryt": "0411",
+   "nazwa": "radziejowski",
+   "rok": 2025,
+   "ludnosc": 36910,
+   "jst_socjal_zl_os": 2282.47,
+   "jst_srodki_wlasne_zl_os": 968.37
+  },
+  {
+   "teryt": "0412",
+   "nazwa": "rypiński",
+   "rok": 2025,
+   "ludnosc": 40464,
+   "jst_socjal_zl_os": 2119.4,
+   "jst_srodki_wlasne_zl_os": 770.81
+  },
+  {
+   "teryt": "0413",
+   "nazwa": "sępoleński",
+   "rok": 2025,
+   "ludnosc": 38284,
+   "jst_socjal_zl_os": 3320.05,
+   "jst_srodki_wlasne_zl_os": 1639.24
+  },
+  {
+   "teryt": "0414",
+   "nazwa": "świecki",
+   "rok": 2025,
+   "ludnosc": 93670,
+   "jst_socjal_zl_os": 2288.68,
+   "jst_srodki_wlasne_zl_os": 924.86
+  },
+  {
+   "teryt": "0415",
+   "nazwa": "toruński",
+   "rok": 2025,
+   "ludnosc": 115430,
+   "jst_socjal_zl_os": 1823.4,
+   "jst_srodki_wlasne_zl_os": 859.48
+  },
+  {
+   "teryt": "0416",
+   "nazwa": "tucholski",
+   "rok": 2025,
+   "ludnosc": 46525,
+   "jst_socjal_zl_os": 2166.96,
+   "jst_srodki_wlasne_zl_os": 856.46
+  },
+  {
+   "teryt": "0417",
+   "nazwa": "wąbrzeski",
+   "rok": 2025,
+   "ludnosc": 31866,
+   "jst_socjal_zl_os": 2512.55,
+   "jst_srodki_wlasne_zl_os": 944.86
+  },
+  {
+   "teryt": "0418",
+   "nazwa": "włocławski",
+   "rok": 2025,
+   "ludnosc": 81059,
+   "jst_socjal_zl_os": 2266.16,
+   "jst_srodki_wlasne_zl_os": 862.86
+  },
+  {
+   "teryt": "0419",
+   "nazwa": "żniński",
+   "rok": 2025,
+   "ludnosc": 66598,
+   "jst_socjal_zl_os": 2344.01,
+   "jst_srodki_wlasne_zl_os": 1199.16
+  },
+  {
+   "teryt": "0461",
+   "nazwa": "M.Bydgoszcz",
+   "rok": 2025,
+   "ludnosc": 321100,
+   "jst_socjal_zl_os": 1551.08,
+   "jst_srodki_wlasne_zl_os": 767.18
+  },
+  {
+   "teryt": "0462",
+   "nazwa": "M.Grudziądz",
+   "rok": 2025,
+   "ludnosc": 86811,
+   "jst_socjal_zl_os": 2525.52,
+   "jst_srodki_wlasne_zl_os": 1322.07
+  },
+  {
+   "teryt": "0463",
+   "nazwa": "M.Toruń",
+   "rok": 2025,
+   "ludnosc": 192784,
+   "jst_socjal_zl_os": 1486.37,
+   "jst_srodki_wlasne_zl_os": 802.01
+  },
+  {
+   "teryt": "0464",
+   "nazwa": "M.Włocławek",
+   "rok": 2025,
+   "ludnosc": 98038,
+   "jst_socjal_zl_os": 2176.83,
+   "jst_srodki_wlasne_zl_os": 1145.3
+  },
+  {
+   "teryt": "0601",
+   "nazwa": "bialski",
+   "rok": 2025,
+   "ludnosc": 103464,
+   "jst_socjal_zl_os": 1823.0,
+   "jst_srodki_wlasne_zl_os": 861.09
+  },
+  {
+   "teryt": "0602",
+   "nazwa": "biłgorajski",
+   "rok": 2025,
+   "ludnosc": 94173,
+   "jst_socjal_zl_os": 1740.62,
+   "jst_srodki_wlasne_zl_os": 703.43
+  },
+  {
+   "teryt": "0603",
+   "nazwa": "chełmski",
+   "rok": 2025,
+   "ludnosc": 72563,
+   "jst_socjal_zl_os": 2002.19,
+   "jst_srodki_wlasne_zl_os": 878.73
+  },
+  {
+   "teryt": "0604",
+   "nazwa": "hrubieszowski",
+   "rok": 2025,
+   "ludnosc": 55051,
+   "jst_socjal_zl_os": 1588.77,
+   "jst_srodki_wlasne_zl_os": 592.8
+  },
+  {
+   "teryt": "0605",
+   "nazwa": "janowski",
+   "rok": 2025,
+   "ludnosc": 41878,
+   "jst_socjal_zl_os": 1678.18,
+   "jst_srodki_wlasne_zl_os": 702.76
+  },
+  {
+   "teryt": "0606",
+   "nazwa": "krasnostawski",
+   "rok": 2025,
+   "ludnosc": 57639,
+   "jst_socjal_zl_os": 2543.13,
+   "jst_srodki_wlasne_zl_os": 1445.66
+  },
+  {
+   "teryt": "0607",
+   "nazwa": "kraśnicki",
+   "rok": 2025,
+   "ludnosc": 87278,
+   "jst_socjal_zl_os": 1872.76,
+   "jst_srodki_wlasne_zl_os": 898.39
+  },
+  {
+   "teryt": "0608",
+   "nazwa": "lubartowski",
+   "rok": 2025,
+   "ludnosc": 82779,
+   "jst_socjal_zl_os": 1465.66,
+   "jst_srodki_wlasne_zl_os": 657.7
+  },
+  {
+   "teryt": "0609",
+   "nazwa": "lubelski",
+   "rok": 2025,
+   "ludnosc": 166000,
+   "jst_socjal_zl_os": 1337.08,
+   "jst_srodki_wlasne_zl_os": 553.89
+  },
+  {
+   "teryt": "0610",
+   "nazwa": "łęczyński",
+   "rok": 2025,
+   "ludnosc": 55323,
+   "jst_socjal_zl_os": 1545.84,
+   "jst_srodki_wlasne_zl_os": 674.83
+  },
+  {
+   "teryt": "0611",
+   "nazwa": "łukowski",
+   "rok": 2025,
+   "ludnosc": 99410,
+   "jst_socjal_zl_os": 1475.68,
+   "jst_srodki_wlasne_zl_os": 658.16
+  },
+  {
+   "teryt": "0612",
+   "nazwa": "opolski",
+   "rok": 2025,
+   "ludnosc": 54468,
+   "jst_socjal_zl_os": 1614.39,
+   "jst_srodki_wlasne_zl_os": 649.51
+  },
+  {
+   "teryt": "0613",
+   "nazwa": "parczewski",
+   "rok": 2025,
+   "ludnosc": 31487,
+   "jst_socjal_zl_os": 1657.67,
+   "jst_srodki_wlasne_zl_os": 730.25
+  },
+  {
+   "teryt": "0614",
+   "nazwa": "puławski",
+   "rok": 2025,
+   "ludnosc": 105022,
+   "jst_socjal_zl_os": 1700.39,
+   "jst_srodki_wlasne_zl_os": 628.21
+  },
+  {
+   "teryt": "0615",
+   "nazwa": "radzyński",
+   "rok": 2025,
+   "ludnosc": 53953,
+   "jst_socjal_zl_os": 1376.47,
+   "jst_srodki_wlasne_zl_os": 572.12
+  },
+  {
+   "teryt": "0616",
+   "nazwa": "rycki",
+   "rok": 2025,
+   "ludnosc": 50430,
+   "jst_socjal_zl_os": 1619.88,
+   "jst_srodki_wlasne_zl_os": 720.71
+  },
+  {
+   "teryt": "0617",
+   "nazwa": "świdnicki",
+   "rok": 2025,
+   "ludnosc": 68606,
+   "jst_socjal_zl_os": 1730.72,
+   "jst_srodki_wlasne_zl_os": 851.85
+  },
+  {
+   "teryt": "0618",
+   "nazwa": "tomaszowski",
+   "rok": 2025,
+   "ludnosc": 75040,
+   "jst_socjal_zl_os": 1584.9,
+   "jst_srodki_wlasne_zl_os": 650.87
+  },
+  {
+   "teryt": "0619",
+   "nazwa": "włodawski",
+   "rok": 2025,
+   "ludnosc": 34506,
+   "jst_socjal_zl_os": 2470.31,
+   "jst_srodki_wlasne_zl_os": 1094.95
+  },
+  {
+   "teryt": "0620",
+   "nazwa": "zamojski",
+   "rok": 2025,
+   "ludnosc": 99042,
+   "jst_socjal_zl_os": 1582.55,
+   "jst_srodki_wlasne_zl_os": 717.57
+  },
+  {
+   "teryt": "0661",
+   "nazwa": "M.Biała Podlaska",
+   "rok": 2025,
+   "ludnosc": 53470,
+   "jst_socjal_zl_os": 1396.26,
+   "jst_srodki_wlasne_zl_os": 624.3
+  },
+  {
+   "teryt": "0662",
+   "nazwa": "M.Chełm",
+   "rok": 2025,
+   "ludnosc": 55661,
+   "jst_socjal_zl_os": 1573.78,
+   "jst_srodki_wlasne_zl_os": 557.11
+  },
+  {
+   "teryt": "0663",
+   "nazwa": "M.Lublin",
+   "rok": 2025,
+   "ludnosc": 326685,
+   "jst_socjal_zl_os": 1581.62,
+   "jst_srodki_wlasne_zl_os": 872.12
+  },
+  {
+   "teryt": "0664",
+   "nazwa": "M.Zamość",
+   "rok": 2025,
+   "ludnosc": 56844,
+   "jst_socjal_zl_os": 1551.63,
+   "jst_srodki_wlasne_zl_os": 599.37
+  },
+  {
+   "teryt": "0801",
+   "nazwa": "gorzowski",
+   "rok": 2025,
+   "ludnosc": 74190,
+   "jst_socjal_zl_os": 2074.71,
+   "jst_srodki_wlasne_zl_os": 961.33
+  },
+  {
+   "teryt": "0802",
+   "nazwa": "krośnieński",
+   "rok": 2025,
+   "ludnosc": 51767,
+   "jst_socjal_zl_os": 1969.68,
+   "jst_srodki_wlasne_zl_os": 891.62
+  },
+  {
+   "teryt": "0803",
+   "nazwa": "międzyrzecki",
+   "rok": 2025,
+   "ludnosc": 53821,
+   "jst_socjal_zl_os": 2795.98,
+   "jst_srodki_wlasne_zl_os": 1473.62
+  },
+  {
+   "teryt": "0804",
+   "nazwa": "nowosolski",
+   "rok": 2025,
+   "ludnosc": 81382,
+   "jst_socjal_zl_os": 1930.66,
+   "jst_srodki_wlasne_zl_os": 942.02
+  },
+  {
+   "teryt": "0805",
+   "nazwa": "słubicki",
+   "rok": 2025,
+   "ludnosc": 45445,
+   "jst_socjal_zl_os": 1780.79,
+   "jst_srodki_wlasne_zl_os": 817.93
+  },
+  {
+   "teryt": "0806",
+   "nazwa": "strzelecko-drezdenecki",
+   "rok": 2025,
+   "ludnosc": 45740,
+   "jst_socjal_zl_os": 2433.28,
+   "jst_srodki_wlasne_zl_os": 1045.1
+  },
+  {
+   "teryt": "0807",
+   "nazwa": "sulęciński",
+   "rok": 2025,
+   "ludnosc": 32923,
+   "jst_socjal_zl_os": 2631.31,
+   "jst_srodki_wlasne_zl_os": 1477.25
+  },
+  {
+   "teryt": "0808",
+   "nazwa": "świebodziński",
+   "rok": 2025,
+   "ludnosc": 53376,
+   "jst_socjal_zl_os": 2096.73,
+   "jst_srodki_wlasne_zl_os": 1087.49
+  },
+  {
+   "teryt": "0809",
+   "nazwa": "zielonogórski",
+   "rok": 2025,
+   "ludnosc": 74539,
+   "jst_socjal_zl_os": 2102.52,
+   "jst_srodki_wlasne_zl_os": 971.47
+  },
+  {
+   "teryt": "0810",
+   "nazwa": "żagański",
+   "rok": 2025,
+   "ludnosc": 72213,
+   "jst_socjal_zl_os": 2097.27,
+   "jst_srodki_wlasne_zl_os": 779.32
+  },
+  {
+   "teryt": "0811",
+   "nazwa": "żarski",
+   "rok": 2025,
+   "ludnosc": 89397,
+   "jst_socjal_zl_os": 2175.52,
+   "jst_srodki_wlasne_zl_os": 1061.75
+  },
+  {
+   "teryt": "0812",
+   "nazwa": "wschowski",
+   "rok": 2025,
+   "ludnosc": 36763,
+   "jst_socjal_zl_os": 1625.88,
+   "jst_srodki_wlasne_zl_os": 605.34
+  },
+  {
+   "teryt": "0861",
+   "nazwa": "M.Gorzów Wielkopolski",
+   "rok": 2025,
+   "ludnosc": 113569,
+   "jst_socjal_zl_os": 1934.84,
+   "jst_srodki_wlasne_zl_os": 1029.51
+  },
+  {
+   "teryt": "0862",
+   "nazwa": "M.Zielona Góra",
+   "rok": 2025,
+   "ludnosc": 138476,
+   "jst_socjal_zl_os": 1901.94,
+   "jst_srodki_wlasne_zl_os": 1005.34
+  },
+  {
+   "teryt": "1001",
+   "nazwa": "bełchatowski",
+   "rok": 2025,
+   "ludnosc": 107246,
+   "jst_socjal_zl_os": 1535.27,
+   "jst_srodki_wlasne_zl_os": 801.16
+  },
+  {
+   "teryt": "1002",
+   "nazwa": "kutnowski",
+   "rok": 2025,
+   "ludnosc": 88749,
+   "jst_socjal_zl_os": 2197.78,
+   "jst_srodki_wlasne_zl_os": 1116.24
+  },
+  {
+   "teryt": "1003",
+   "nazwa": "łaski",
+   "rok": 2025,
+   "ludnosc": 48227,
+   "jst_socjal_zl_os": 1420.05,
+   "jst_srodki_wlasne_zl_os": 612.55
+  },
+  {
+   "teryt": "1004",
+   "nazwa": "łęczycki",
+   "rok": 2025,
+   "ludnosc": 45581,
+   "jst_socjal_zl_os": 1865.89,
+   "jst_srodki_wlasne_zl_os": 799.48
+  },
+  {
+   "teryt": "1005",
+   "nazwa": "łowicki",
+   "rok": 2025,
+   "ludnosc": 72675,
+   "jst_socjal_zl_os": 1232.78,
+   "jst_srodki_wlasne_zl_os": 595.28
+  },
+  {
+   "teryt": "1006",
+   "nazwa": "łódzki wschodni",
+   "rok": 2025,
+   "ludnosc": 75473,
+   "jst_socjal_zl_os": 1700.89,
+   "jst_srodki_wlasne_zl_os": 786.02
+  },
+  {
+   "teryt": "1007",
+   "nazwa": "opoczyński",
+   "rok": 2025,
+   "ludnosc": 70604,
+   "jst_socjal_zl_os": 1805.97,
+   "jst_srodki_wlasne_zl_os": 804.54
+  },
+  {
+   "teryt": "1008",
+   "nazwa": "pabianicki",
+   "rok": 2025,
+   "ludnosc": 118418,
+   "jst_socjal_zl_os": 1751.47,
+   "jst_srodki_wlasne_zl_os": 950.12
+  },
+  {
+   "teryt": "1009",
+   "nazwa": "pajęczański",
+   "rok": 2025,
+   "ludnosc": 47555,
+   "jst_socjal_zl_os": 1443.89,
+   "jst_srodki_wlasne_zl_os": 747.84
+  },
+  {
+   "teryt": "1010",
+   "nazwa": "piotrkowski",
+   "rok": 2025,
+   "ludnosc": 89132,
+   "jst_socjal_zl_os": 1390.03,
+   "jst_srodki_wlasne_zl_os": 617.16
+  },
+  {
+   "teryt": "1011",
+   "nazwa": "poddębicki",
+   "rok": 2025,
+   "ludnosc": 38872,
+   "jst_socjal_zl_os": 1618.56,
+   "jst_srodki_wlasne_zl_os": 643.24
+  },
+  {
+   "teryt": "1012",
+   "nazwa": "radomszczański",
+   "rok": 2025,
+   "ludnosc": 104608,
+   "jst_socjal_zl_os": 1838.06,
+   "jst_srodki_wlasne_zl_os": 882.52
+  },
+  {
+   "teryt": "1013",
+   "nazwa": "rawski",
+   "rok": 2025,
+   "ludnosc": 45239,
+   "jst_socjal_zl_os": 1662.87,
+   "jst_srodki_wlasne_zl_os": 725.04
+  },
+  {
+   "teryt": "1014",
+   "nazwa": "sieradzki",
+   "rok": 2025,
+   "ludnosc": 109627,
+   "jst_socjal_zl_os": 1622.98,
+   "jst_srodki_wlasne_zl_os": 892.38
+  },
+  {
+   "teryt": "1015",
+   "nazwa": "skierniewicki",
+   "rok": 2025,
+   "ludnosc": 37569,
+   "jst_socjal_zl_os": 1230.01,
+   "jst_srodki_wlasne_zl_os": 442.09
+  },
+  {
+   "teryt": "1016",
+   "nazwa": "tomaszowski",
+   "rok": 2025,
+   "ludnosc": 108638,
+   "jst_socjal_zl_os": 1778.01,
+   "jst_srodki_wlasne_zl_os": 826.76
+  },
+  {
+   "teryt": "1017",
+   "nazwa": "wieluński",
+   "rok": 2025,
+   "ludnosc": 71401,
+   "jst_socjal_zl_os": 1577.39,
+   "jst_srodki_wlasne_zl_os": 772.93
+  },
+  {
+   "teryt": "1018",
+   "nazwa": "wieruszowski",
+   "rok": 2025,
+   "ludnosc": 41271,
+   "jst_socjal_zl_os": 1678.45,
+   "jst_srodki_wlasne_zl_os": 874.75
+  },
+  {
+   "teryt": "1019",
+   "nazwa": "zduńskowolski",
+   "rok": 2025,
+   "ludnosc": 62478,
+   "jst_socjal_zl_os": 1607.89,
+   "jst_srodki_wlasne_zl_os": 797.83
+  },
+  {
+   "teryt": "1020",
+   "nazwa": "zgierski",
+   "rok": 2025,
+   "ludnosc": 165354,
+   "jst_socjal_zl_os": 1403.64,
+   "jst_srodki_wlasne_zl_os": 711.93
+  },
+  {
+   "teryt": "1021",
+   "nazwa": "brzeziński",
+   "rok": 2025,
+   "ludnosc": 29969,
+   "jst_socjal_zl_os": 2098.25,
+   "jst_srodki_wlasne_zl_os": 1158.18
+  },
+  {
+   "teryt": "1061",
+   "nazwa": "M.Łódź",
+   "rok": 2025,
+   "ludnosc": 639890,
+   "jst_socjal_zl_os": 1636.52,
+   "jst_srodki_wlasne_zl_os": 905.12
+  },
+  {
+   "teryt": "1062",
+   "nazwa": "M.Piotrków Trybunalski",
+   "rok": 2025,
+   "ludnosc": 65435,
+   "jst_socjal_zl_os": 2093.64,
+   "jst_srodki_wlasne_zl_os": 1118.73
+  },
+  {
+   "teryt": "1063",
+   "nazwa": "M.Skierniewice",
+   "rok": 2025,
+   "ludnosc": 44814,
+   "jst_socjal_zl_os": 1779.52,
+   "jst_srodki_wlasne_zl_os": 927.73
+  },
+  {
+   "teryt": "1201",
+   "nazwa": "bocheński",
+   "rok": 2025,
+   "ludnosc": 106926,
+   "jst_socjal_zl_os": 1207.79,
+   "jst_srodki_wlasne_zl_os": 615.03
+  },
+  {
+   "teryt": "1202",
+   "nazwa": "brzeski",
+   "rok": 2025,
+   "ludnosc": 90942,
+   "jst_socjal_zl_os": 1130.1,
+   "jst_srodki_wlasne_zl_os": 565.12
+  },
+  {
+   "teryt": "1203",
+   "nazwa": "chrzanowski",
+   "rok": 2025,
+   "ludnosc": 116781,
+   "jst_socjal_zl_os": 1501.36,
+   "jst_srodki_wlasne_zl_os": 833.51
+  },
+  {
+   "teryt": "1204",
+   "nazwa": "dąbrowski",
+   "rok": 2025,
+   "ludnosc": 56975,
+   "jst_socjal_zl_os": 1333.15,
+   "jst_srodki_wlasne_zl_os": 584.23
+  },
+  {
+   "teryt": "1205",
+   "nazwa": "gorlicki",
+   "rok": 2025,
+   "ludnosc": 103725,
+   "jst_socjal_zl_os": 1865.76,
+   "jst_srodki_wlasne_zl_os": 880.35
+  },
+  {
+   "teryt": "1206",
+   "nazwa": "krakowski",
+   "rok": 2025,
+   "ludnosc": 304885,
+   "jst_socjal_zl_os": 1221.63,
+   "jst_srodki_wlasne_zl_os": 593.07
+  },
+  {
+   "teryt": "1207",
+   "nazwa": "limanowski",
+   "rok": 2025,
+   "ludnosc": 131480,
+   "jst_socjal_zl_os": 1286.21,
+   "jst_srodki_wlasne_zl_os": 562.7
+  },
+  {
+   "teryt": "1208",
+   "nazwa": "miechowski",
+   "rok": 2025,
+   "ludnosc": 45898,
+   "jst_socjal_zl_os": 1817.92,
+   "jst_srodki_wlasne_zl_os": 869.14
+  },
+  {
+   "teryt": "1209",
+   "nazwa": "myślenicki",
+   "rok": 2025,
+   "ludnosc": 129979,
+   "jst_socjal_zl_os": 1217.39,
+   "jst_srodki_wlasne_zl_os": 611.17
+  },
+  {
+   "teryt": "1210",
+   "nazwa": "nowosądecki",
+   "rok": 2025,
+   "ludnosc": 214457,
+   "jst_socjal_zl_os": 1312.45,
+   "jst_srodki_wlasne_zl_os": 514.31
+  },
+  {
+   "teryt": "1211",
+   "nazwa": "nowotarski",
+   "rok": 2025,
+   "ludnosc": 189704,
+   "jst_socjal_zl_os": 1008.71,
+   "jst_srodki_wlasne_zl_os": 392.98
+  },
+  {
+   "teryt": "1212",
+   "nazwa": "olkuski",
+   "rok": 2025,
+   "ludnosc": 103887,
+   "jst_socjal_zl_os": 1298.89,
+   "jst_srodki_wlasne_zl_os": 664.44
+  },
+  {
+   "teryt": "1213",
+   "nazwa": "oświęcimski",
+   "rok": 2025,
+   "ludnosc": 146696,
+   "jst_socjal_zl_os": 1388.41,
+   "jst_srodki_wlasne_zl_os": 650.23
+  },
+  {
+   "teryt": "1214",
+   "nazwa": "proszowicki",
+   "rok": 2025,
+   "ludnosc": 41647,
+   "jst_socjal_zl_os": 1692.08,
+   "jst_srodki_wlasne_zl_os": 849.69
+  },
+  {
+   "teryt": "1215",
+   "nazwa": "suski",
+   "rok": 2025,
+   "ludnosc": 82252,
+   "jst_socjal_zl_os": 1400.89,
+   "jst_srodki_wlasne_zl_os": 520.26
+  },
+  {
+   "teryt": "1216",
+   "nazwa": "tarnowski",
+   "rok": 2025,
+   "ludnosc": 196521,
+   "jst_socjal_zl_os": 1420.41,
+   "jst_srodki_wlasne_zl_os": 715.42
+  },
+  {
+   "teryt": "1217",
+   "nazwa": "tatrzański",
+   "rok": 2025,
+   "ludnosc": 66181,
+   "jst_socjal_zl_os": 1237.37,
+   "jst_srodki_wlasne_zl_os": 582.78
+  },
+  {
+   "teryt": "1218",
+   "nazwa": "wadowicki",
+   "rok": 2025,
+   "ludnosc": 156502,
+   "jst_socjal_zl_os": 1544.45,
+   "jst_srodki_wlasne_zl_os": 760.22
+  },
+  {
+   "teryt": "1219",
+   "nazwa": "wielicki",
+   "rok": 2025,
+   "ludnosc": 146697,
+   "jst_socjal_zl_os": 1134.11,
+   "jst_srodki_wlasne_zl_os": 545.09
+  },
+  {
+   "teryt": "1261",
+   "nazwa": "M.Kraków",
+   "rok": 2025,
+   "ludnosc": 816614,
+   "jst_socjal_zl_os": 1460.46,
+   "jst_srodki_wlasne_zl_os": 979.87
+  },
+  {
+   "teryt": "1262",
+   "nazwa": "M.Nowy Sącz",
+   "rok": 2025,
+   "ludnosc": 79416,
+   "jst_socjal_zl_os": 1927.49,
+   "jst_srodki_wlasne_zl_os": 1073.86
+  },
+  {
+   "teryt": "1263",
+   "nazwa": "M.Tarnów",
+   "rok": 2025,
+   "ludnosc": 101177,
+   "jst_socjal_zl_os": 1846.91,
+   "jst_srodki_wlasne_zl_os": 937.65
+  },
+  {
+   "teryt": "1401",
+   "nazwa": "białobrzeski",
+   "rok": 2025,
+   "ludnosc": 32181,
+   "jst_socjal_zl_os": 1525.11,
+   "jst_srodki_wlasne_zl_os": 770.65
+  },
+  {
+   "teryt": "1402",
+   "nazwa": "ciechanowski",
+   "rok": 2025,
+   "ludnosc": 84004,
+   "jst_socjal_zl_os": 1827.03,
+   "jst_srodki_wlasne_zl_os": 1003.58
+  },
+  {
+   "teryt": "1403",
+   "nazwa": "garwoliński",
+   "rok": 2025,
+   "ludnosc": 104889,
+   "jst_socjal_zl_os": 1140.26,
+   "jst_srodki_wlasne_zl_os": 492.06
+  },
+  {
+   "teryt": "1404",
+   "nazwa": "gostyniński",
+   "rok": 2025,
+   "ludnosc": 41313,
+   "jst_socjal_zl_os": 1988.72,
+   "jst_srodki_wlasne_zl_os": 1025.92
+  },
+  {
+   "teryt": "1405",
+   "nazwa": "grodziski",
+   "rok": 2025,
+   "ludnosc": 108342,
+   "jst_socjal_zl_os": 1233.51,
+   "jst_srodki_wlasne_zl_os": 617.47
+  },
+  {
+   "teryt": "1406",
+   "nazwa": "grójecki",
+   "rok": 2025,
+   "ludnosc": 96346,
+   "jst_socjal_zl_os": 1444.0,
+   "jst_srodki_wlasne_zl_os": 850.51
+  },
+  {
+   "teryt": "1407",
+   "nazwa": "kozienicki",
+   "rok": 2025,
+   "ludnosc": 56260,
+   "jst_socjal_zl_os": 1614.7,
+   "jst_srodki_wlasne_zl_os": 924.62
+  },
+  {
+   "teryt": "1408",
+   "nazwa": "legionowski",
+   "rok": 2025,
+   "ludnosc": 134180,
+   "jst_socjal_zl_os": 1157.35,
+   "jst_srodki_wlasne_zl_os": 688.32
+  },
+  {
+   "teryt": "1409",
+   "nazwa": "lipski",
+   "rok": 2025,
+   "ludnosc": 30793,
+   "jst_socjal_zl_os": 2039.21,
+   "jst_srodki_wlasne_zl_os": 733.28
+  },
+  {
+   "teryt": "1410",
+   "nazwa": "łosicki",
+   "rok": 2025,
+   "ludnosc": 28058,
+   "jst_socjal_zl_os": 1355.92,
+   "jst_srodki_wlasne_zl_os": 554.7
+  },
+  {
+   "teryt": "1411",
+   "nazwa": "makowski",
+   "rok": 2025,
+   "ludnosc": 40903,
+   "jst_socjal_zl_os": 1461.82,
+   "jst_srodki_wlasne_zl_os": 602.04
+  },
+  {
+   "teryt": "1412",
+   "nazwa": "miński",
+   "rok": 2025,
+   "ludnosc": 159677,
+   "jst_socjal_zl_os": 1267.11,
+   "jst_srodki_wlasne_zl_os": 659.68
+  },
+  {
+   "teryt": "1413",
+   "nazwa": "mławski",
+   "rok": 2025,
+   "ludnosc": 68042,
+   "jst_socjal_zl_os": 1660.2,
+   "jst_srodki_wlasne_zl_os": 657.52
+  },
+  {
+   "teryt": "1414",
+   "nazwa": "nowodworski",
+   "rok": 2025,
+   "ludnosc": 79139,
+   "jst_socjal_zl_os": 1467.49,
+   "jst_srodki_wlasne_zl_os": 807.28
+  },
+  {
+   "teryt": "1415",
+   "nazwa": "ostrołęcki",
+   "rok": 2025,
+   "ludnosc": 87044,
+   "jst_socjal_zl_os": 1461.85,
+   "jst_srodki_wlasne_zl_os": 575.69
+  },
+  {
+   "teryt": "1416",
+   "nazwa": "ostrowski",
+   "rok": 2025,
+   "ludnosc": 67316,
+   "jst_socjal_zl_os": 1235.15,
+   "jst_srodki_wlasne_zl_os": 452.37
+  },
+  {
+   "teryt": "1417",
+   "nazwa": "otwocki",
+   "rok": 2025,
+   "ludnosc": 126308,
+   "jst_socjal_zl_os": 1354.79,
+   "jst_srodki_wlasne_zl_os": 750.79
+  },
+  {
+   "teryt": "1418",
+   "nazwa": "piaseczyński",
+   "rok": 2025,
+   "ludnosc": 220309,
+   "jst_socjal_zl_os": 1276.86,
+   "jst_srodki_wlasne_zl_os": 738.02
+  },
+  {
+   "teryt": "1419",
+   "nazwa": "płocki",
+   "rok": 2025,
+   "ludnosc": 108492,
+   "jst_socjal_zl_os": 2100.59,
+   "jst_srodki_wlasne_zl_os": 1087.66
+  },
+  {
+   "teryt": "1420",
+   "nazwa": "płoński",
+   "rok": 2025,
+   "ludnosc": 82829,
+   "jst_socjal_zl_os": 1305.71,
+   "jst_srodki_wlasne_zl_os": 571.65
+  },
+  {
+   "teryt": "1421",
+   "nazwa": "pruszkowski",
+   "rok": 2025,
+   "ludnosc": 182585,
+   "jst_socjal_zl_os": 1243.17,
+   "jst_srodki_wlasne_zl_os": 633.87
+  },
+  {
+   "teryt": "1422",
+   "nazwa": "przasnyski",
+   "rok": 2025,
+   "ludnosc": 48151,
+   "jst_socjal_zl_os": 2111.48,
+   "jst_srodki_wlasne_zl_os": 881.34
+  },
+  {
+   "teryt": "1423",
+   "nazwa": "przysuski",
+   "rok": 2025,
+   "ludnosc": 37869,
+   "jst_socjal_zl_os": 1336.24,
+   "jst_srodki_wlasne_zl_os": 468.81
+  },
+  {
+   "teryt": "1424",
+   "nazwa": "pułtuski",
+   "rok": 2025,
+   "ludnosc": 49899,
+   "jst_socjal_zl_os": 2652.1,
+   "jst_srodki_wlasne_zl_os": 1423.91
+  },
+  {
+   "teryt": "1425",
+   "nazwa": "radomski",
+   "rok": 2025,
+   "ludnosc": 151058,
+   "jst_socjal_zl_os": 1682.62,
+   "jst_srodki_wlasne_zl_os": 669.88
+  },
+  {
+   "teryt": "1426",
+   "nazwa": "siedlecki",
+   "rok": 2025,
+   "ludnosc": 80483,
+   "jst_socjal_zl_os": 1137.38,
+   "jst_srodki_wlasne_zl_os": 464.42
+  },
+  {
+   "teryt": "1427",
+   "nazwa": "sierpecki",
+   "rok": 2025,
+   "ludnosc": 47302,
+   "jst_socjal_zl_os": 1721.51,
+   "jst_srodki_wlasne_zl_os": 912.46
+  },
+  {
+   "teryt": "1428",
+   "nazwa": "sochaczewski",
+   "rok": 2025,
+   "ludnosc": 82524,
+   "jst_socjal_zl_os": 1398.14,
+   "jst_srodki_wlasne_zl_os": 603.25
+  },
+  {
+   "teryt": "1429",
+   "nazwa": "sokołowski",
+   "rok": 2025,
+   "ludnosc": 49067,
+   "jst_socjal_zl_os": 1668.29,
+   "jst_srodki_wlasne_zl_os": 750.92
+  },
+  {
+   "teryt": "1430",
+   "nazwa": "szydłowiecki",
+   "rok": 2025,
+   "ludnosc": 36861,
+   "jst_socjal_zl_os": 1970.39,
+   "jst_srodki_wlasne_zl_os": 849.22
+  },
+  {
+   "teryt": "1432",
+   "nazwa": "warszawski zachodni",
+   "rok": 2025,
+   "ludnosc": 137587,
+   "jst_socjal_zl_os": 1316.4,
+   "jst_srodki_wlasne_zl_os": 712.61
+  },
+  {
+   "teryt": "1433",
+   "nazwa": "węgrowski",
+   "rok": 2025,
+   "ludnosc": 61047,
+   "jst_socjal_zl_os": 1309.66,
+   "jst_srodki_wlasne_zl_os": 555.82
+  },
+  {
+   "teryt": "1434",
+   "nazwa": "wołomiński",
+   "rok": 2025,
+   "ludnosc": 279836,
+   "jst_socjal_zl_os": 1093.57,
+   "jst_srodki_wlasne_zl_os": 495.84
+  },
+  {
+   "teryt": "1435",
+   "nazwa": "wyszkowski",
+   "rok": 2025,
+   "ludnosc": 72954,
+   "jst_socjal_zl_os": 1621.04,
+   "jst_srodki_wlasne_zl_os": 667.12
+  },
+  {
+   "teryt": "1436",
+   "nazwa": "zwoleński",
+   "rok": 2025,
+   "ludnosc": 33812,
+   "jst_socjal_zl_os": 1687.6,
+   "jst_srodki_wlasne_zl_os": 792.22
+  },
+  {
+   "teryt": "1437",
+   "nazwa": "żuromiński",
+   "rok": 2025,
+   "ludnosc": 34687,
+   "jst_socjal_zl_os": 1476.77,
+   "jst_srodki_wlasne_zl_os": 583.37
+  },
+  {
+   "teryt": "1438",
+   "nazwa": "żyrardowski",
+   "rok": 2025,
+   "ludnosc": 74788,
+   "jst_socjal_zl_os": 1800.48,
+   "jst_srodki_wlasne_zl_os": 993.49
+  },
+  {
+   "teryt": "1461",
+   "nazwa": "M.Ostrołęka",
+   "rok": 2025,
+   "ludnosc": 47351,
+   "jst_socjal_zl_os": 1746.18,
+   "jst_srodki_wlasne_zl_os": 896.51
+  },
+  {
+   "teryt": "1462",
+   "nazwa": "M.Płock",
+   "rok": 2025,
+   "ludnosc": 108772,
+   "jst_socjal_zl_os": 1901.0,
+   "jst_srodki_wlasne_zl_os": 1028.49
+  },
+  {
+   "teryt": "1463",
+   "nazwa": "M.Radom",
+   "rok": 2025,
+   "ludnosc": 191819,
+   "jst_socjal_zl_os": 1906.99,
+   "jst_srodki_wlasne_zl_os": 897.25
+  },
+  {
+   "teryt": "1464",
+   "nazwa": "M.Siedlce",
+   "rok": 2025,
+   "ludnosc": 74251,
+   "jst_socjal_zl_os": 1461.63,
+   "jst_srodki_wlasne_zl_os": 666.4
+  },
+  {
+   "teryt": "1465",
+   "nazwa": "M.Warszawa",
+   "rok": 2025,
+   "ludnosc": 1866729,
+   "jst_socjal_zl_os": 1292.96,
+   "jst_srodki_wlasne_zl_os": 923.46
+  },
+  {
+   "teryt": "1601",
+   "nazwa": "brzeski",
+   "rok": 2025,
+   "ludnosc": 85002,
+   "jst_socjal_zl_os": 1919.75,
+   "jst_srodki_wlasne_zl_os": 951.96
+  },
+  {
+   "teryt": "1602",
+   "nazwa": "głubczycki",
+   "rok": 2025,
+   "ludnosc": 41510,
+   "jst_socjal_zl_os": 3231.44,
+   "jst_srodki_wlasne_zl_os": 2168.25
+  },
+  {
+   "teryt": "1603",
+   "nazwa": "kędzierzyńsko-kozielski",
+   "rok": 2025,
+   "ludnosc": 84590,
+   "jst_socjal_zl_os": 1642.93,
+   "jst_srodki_wlasne_zl_os": 970.25
+  },
+  {
+   "teryt": "1604",
+   "nazwa": "kluczborski",
+   "rok": 2025,
+   "ludnosc": 59791,
+   "jst_socjal_zl_os": 1876.16,
+   "jst_srodki_wlasne_zl_os": 823.94
+  },
+  {
+   "teryt": "1605",
+   "nazwa": "krapkowicki",
+   "rok": 2025,
+   "ludnosc": 58868,
+   "jst_socjal_zl_os": 1648.64,
+   "jst_srodki_wlasne_zl_os": 894.68
+  },
+  {
+   "teryt": "1606",
+   "nazwa": "namysłowski",
+   "rok": 2025,
+   "ludnosc": 41603,
+   "jst_socjal_zl_os": 1439.99,
+   "jst_srodki_wlasne_zl_os": 716.64
+  },
+  {
+   "teryt": "1607",
+   "nazwa": "nyski",
+   "rok": 2025,
+   "ludnosc": 125830,
+   "jst_socjal_zl_os": 2289.11,
+   "jst_srodki_wlasne_zl_os": 814.13
+  },
+  {
+   "teryt": "1608",
+   "nazwa": "oleski",
+   "rok": 2025,
+   "ludnosc": 60378,
+   "jst_socjal_zl_os": 1361.67,
+   "jst_srodki_wlasne_zl_os": 639.37
+  },
+  {
+   "teryt": "1609",
+   "nazwa": "opolski",
+   "rok": 2025,
+   "ludnosc": 120731,
+   "jst_socjal_zl_os": 1200.96,
+   "jst_srodki_wlasne_zl_os": 668.94
+  },
+  {
+   "teryt": "1610",
+   "nazwa": "prudnicki",
+   "rok": 2025,
+   "ludnosc": 50374,
+   "jst_socjal_zl_os": 1997.08,
+   "jst_srodki_wlasne_zl_os": 952.67
+  },
+  {
+   "teryt": "1611",
+   "nazwa": "strzelecki",
+   "rok": 2025,
+   "ludnosc": 70296,
+   "jst_socjal_zl_os": 1701.14,
+   "jst_srodki_wlasne_zl_os": 993.77
+  },
+  {
+   "teryt": "1661",
+   "nazwa": "M.Opole",
+   "rok": 2025,
+   "ludnosc": 124563,
+   "jst_socjal_zl_os": 1639.32,
+   "jst_srodki_wlasne_zl_os": 985.93
+  },
+  {
+   "teryt": "1801",
+   "nazwa": "bieszczadzki",
+   "rok": 2025,
+   "ludnosc": 20215,
+   "jst_socjal_zl_os": 2432.5,
+   "jst_srodki_wlasne_zl_os": 1243.41
+  },
+  {
+   "teryt": "1802",
+   "nazwa": "brzozowski",
+   "rok": 2025,
+   "ludnosc": 62409,
+   "jst_socjal_zl_os": 2009.88,
+   "jst_srodki_wlasne_zl_os": 714.72
+  },
+  {
+   "teryt": "1803",
+   "nazwa": "dębicki",
+   "rok": 2025,
+   "ludnosc": 131510,
+   "jst_socjal_zl_os": 1556.75,
+   "jst_srodki_wlasne_zl_os": 691.7
+  },
+  {
+   "teryt": "1804",
+   "nazwa": "jarosławski",
+   "rok": 2025,
+   "ludnosc": 114380,
+   "jst_socjal_zl_os": 2015.33,
+   "jst_srodki_wlasne_zl_os": 831.53
+  },
+  {
+   "teryt": "1805",
+   "nazwa": "jasielski",
+   "rok": 2025,
+   "ludnosc": 107200,
+   "jst_socjal_zl_os": 1962.44,
+   "jst_srodki_wlasne_zl_os": 667.55
+  },
+  {
+   "teryt": "1806",
+   "nazwa": "kolbuszowski",
+   "rok": 2025,
+   "ludnosc": 60684,
+   "jst_socjal_zl_os": 1527.9,
+   "jst_srodki_wlasne_zl_os": 454.26
+  },
+  {
+   "teryt": "1807",
+   "nazwa": "krośnieński",
+   "rok": 2025,
+   "ludnosc": 107318,
+   "jst_socjal_zl_os": 1460.57,
+   "jst_srodki_wlasne_zl_os": 534.32
+  },
+  {
+   "teryt": "1808",
+   "nazwa": "leżajski",
+   "rok": 2025,
+   "ludnosc": 65827,
+   "jst_socjal_zl_os": 1941.58,
+   "jst_srodki_wlasne_zl_os": 698.09
+  },
+  {
+   "teryt": "1809",
+   "nazwa": "lubaczowski",
+   "rok": 2025,
+   "ludnosc": 51386,
+   "jst_socjal_zl_os": 2217.23,
+   "jst_srodki_wlasne_zl_os": 820.42
+  },
+  {
+   "teryt": "1810",
+   "nazwa": "łańcucki",
+   "rok": 2025,
+   "ludnosc": 80597,
+   "jst_socjal_zl_os": 1532.41,
+   "jst_srodki_wlasne_zl_os": 610.0
+  },
+  {
+   "teryt": "1811",
+   "nazwa": "mielecki",
+   "rok": 2025,
+   "ludnosc": 131874,
+   "jst_socjal_zl_os": 1599.3,
+   "jst_srodki_wlasne_zl_os": 706.24
+  },
+  {
+   "teryt": "1812",
+   "nazwa": "niżański",
+   "rok": 2025,
+   "ludnosc": 62651,
+   "jst_socjal_zl_os": 2055.62,
+   "jst_srodki_wlasne_zl_os": 715.65
+  },
+  {
+   "teryt": "1813",
+   "nazwa": "przemyski",
+   "rok": 2025,
+   "ludnosc": 70161,
+   "jst_socjal_zl_os": 1959.29,
+   "jst_srodki_wlasne_zl_os": 573.21
+  },
+  {
+   "teryt": "1814",
+   "nazwa": "przeworski",
+   "rok": 2025,
+   "ludnosc": 74856,
+   "jst_socjal_zl_os": 1888.3,
+   "jst_srodki_wlasne_zl_os": 589.02
+  },
+  {
+   "teryt": "1815",
+   "nazwa": "ropczycko-sędziszowski",
+   "rok": 2025,
+   "ludnosc": 74037,
+   "jst_socjal_zl_os": 1760.39,
+   "jst_srodki_wlasne_zl_os": 737.42
+  },
+  {
+   "teryt": "1816",
+   "nazwa": "rzeszowski",
+   "rok": 2025,
+   "ludnosc": 177760,
+   "jst_socjal_zl_os": 1511.67,
+   "jst_srodki_wlasne_zl_os": 653.62
+  },
+  {
+   "teryt": "1817",
+   "nazwa": "sanocki",
+   "rok": 2025,
+   "ludnosc": 88358,
+   "jst_socjal_zl_os": 1714.18,
+   "jst_srodki_wlasne_zl_os": 631.93
+  },
+  {
+   "teryt": "1818",
+   "nazwa": "stalowowolski",
+   "rok": 2025,
+   "ludnosc": 99235,
+   "jst_socjal_zl_os": 2076.14,
+   "jst_srodki_wlasne_zl_os": 837.36
+  },
+  {
+   "teryt": "1819",
+   "nazwa": "strzyżowski",
+   "rok": 2025,
+   "ludnosc": 58399,
+   "jst_socjal_zl_os": 2049.54,
+   "jst_srodki_wlasne_zl_os": 894.42
+  },
+  {
+   "teryt": "1820",
+   "nazwa": "tarnobrzeski",
+   "rok": 2025,
+   "ludnosc": 50104,
+   "jst_socjal_zl_os": 1635.53,
+   "jst_srodki_wlasne_zl_os": 665.12
+  },
+  {
+   "teryt": "1821",
+   "nazwa": "leski",
+   "rok": 2025,
+   "ludnosc": 25007,
+   "jst_socjal_zl_os": 1780.99,
+   "jst_srodki_wlasne_zl_os": 632.95
+  },
+  {
+   "teryt": "1861",
+   "nazwa": "M.Krosno",
+   "rok": 2025,
+   "ludnosc": 43274,
+   "jst_socjal_zl_os": 1929.61,
+   "jst_srodki_wlasne_zl_os": 1020.03
+  },
+  {
+   "teryt": "1862",
+   "nazwa": "M.Przemyśl",
+   "rok": 2025,
+   "ludnosc": 54352,
+   "jst_socjal_zl_os": 2526.43,
+   "jst_srodki_wlasne_zl_os": 1055.83
+  },
+  {
+   "teryt": "1863",
+   "nazwa": "M.Rzeszów",
+   "rok": 2025,
+   "ludnosc": 199436,
+   "jst_socjal_zl_os": 1595.55,
+   "jst_srodki_wlasne_zl_os": 993.44
+  },
+  {
+   "teryt": "1864",
+   "nazwa": "M.Tarnobrzeg",
+   "rok": 2025,
+   "ludnosc": 42730,
+   "jst_socjal_zl_os": 1601.42,
+   "jst_srodki_wlasne_zl_os": 770.28
+  },
+  {
+   "teryt": "2001",
+   "nazwa": "augustowski",
+   "rok": 2025,
+   "ludnosc": 53486,
+   "jst_socjal_zl_os": 1633.49,
+   "jst_srodki_wlasne_zl_os": 701.79
+  },
+  {
+   "teryt": "2002",
+   "nazwa": "białostocki",
+   "rok": 2025,
+   "ludnosc": 160686,
+   "jst_socjal_zl_os": 1761.36,
+   "jst_srodki_wlasne_zl_os": 886.41
+  },
+  {
+   "teryt": "2003",
+   "nazwa": "bielski",
+   "rok": 2025,
+   "ludnosc": 49258,
+   "jst_socjal_zl_os": 1615.16,
+   "jst_srodki_wlasne_zl_os": 790.12
+  },
+  {
+   "teryt": "2004",
+   "nazwa": "grajewski",
+   "rok": 2025,
+   "ludnosc": 43344,
+   "jst_socjal_zl_os": 1717.28,
+   "jst_srodki_wlasne_zl_os": 641.04
+  },
+  {
+   "teryt": "2005",
+   "nazwa": "hajnowski",
+   "rok": 2025,
+   "ludnosc": 37621,
+   "jst_socjal_zl_os": 1967.88,
+   "jst_srodki_wlasne_zl_os": 880.07
+  },
+  {
+   "teryt": "2006",
+   "nazwa": "kolneński",
+   "rok": 2025,
+   "ludnosc": 35045,
+   "jst_socjal_zl_os": 1449.99,
+   "jst_srodki_wlasne_zl_os": 525.65
+  },
+  {
+   "teryt": "2007",
+   "nazwa": "łomżyński",
+   "rok": 2025,
+   "ludnosc": 49249,
+   "jst_socjal_zl_os": 1227.92,
+   "jst_srodki_wlasne_zl_os": 365.33
+  },
+  {
+   "teryt": "2008",
+   "nazwa": "moniecki",
+   "rok": 2025,
+   "ludnosc": 36548,
+   "jst_socjal_zl_os": 1634.4,
+   "jst_srodki_wlasne_zl_os": 732.64
+  },
+  {
+   "teryt": "2009",
+   "nazwa": "sejneński",
+   "rok": 2025,
+   "ludnosc": 18210,
+   "jst_socjal_zl_os": 1836.96,
+   "jst_srodki_wlasne_zl_os": 722.06
+  },
+  {
+   "teryt": "2010",
+   "nazwa": "siemiatycki",
+   "rok": 2025,
+   "ludnosc": 39677,
+   "jst_socjal_zl_os": 1685.46,
+   "jst_srodki_wlasne_zl_os": 799.34
+  },
+  {
+   "teryt": "2011",
+   "nazwa": "sokólski",
+   "rok": 2025,
+   "ludnosc": 59827,
+   "jst_socjal_zl_os": 1634.69,
+   "jst_srodki_wlasne_zl_os": 670.23
+  },
+  {
+   "teryt": "2012",
+   "nazwa": "suwalski",
+   "rok": 2025,
+   "ludnosc": 34446,
+   "jst_socjal_zl_os": 1896.87,
+   "jst_srodki_wlasne_zl_os": 807.19
+  },
+  {
+   "teryt": "2013",
+   "nazwa": "wysokomazowiecki",
+   "rok": 2025,
+   "ludnosc": 52442,
+   "jst_socjal_zl_os": 1464.92,
+   "jst_srodki_wlasne_zl_os": 669.58
+  },
+  {
+   "teryt": "2014",
+   "nazwa": "zambrowski",
+   "rok": 2025,
+   "ludnosc": 40819,
+   "jst_socjal_zl_os": 1487.74,
+   "jst_srodki_wlasne_zl_os": 655.26
+  },
+  {
+   "teryt": "2061",
+   "nazwa": "M.Białystok",
+   "rok": 2025,
+   "ludnosc": 289217,
+   "jst_socjal_zl_os": 1649.63,
+   "jst_srodki_wlasne_zl_os": 904.51
+  },
+  {
+   "teryt": "2062",
+   "nazwa": "M.Łomża",
+   "rok": 2025,
+   "ludnosc": 58925,
+   "jst_socjal_zl_os": 1667.9,
+   "jst_srodki_wlasne_zl_os": 744.77
+  },
+  {
+   "teryt": "2063",
+   "nazwa": "M.Suwałki",
+   "rok": 2025,
+   "ludnosc": 67879,
+   "jst_socjal_zl_os": 1872.81,
+   "jst_srodki_wlasne_zl_os": 920.99
+  },
+  {
+   "teryt": "2201",
+   "nazwa": "bytowski",
+   "rok": 2025,
+   "ludnosc": 75760,
+   "jst_socjal_zl_os": 1952.58,
+   "jst_srodki_wlasne_zl_os": 631.57
+  },
+  {
+   "teryt": "2202",
+   "nazwa": "chojnicki",
+   "rok": 2025,
+   "ludnosc": 95255,
+   "jst_socjal_zl_os": 2095.22,
+   "jst_srodki_wlasne_zl_os": 702.26
+  },
+  {
+   "teryt": "2203",
+   "nazwa": "człuchowski",
+   "rok": 2025,
+   "ludnosc": 52358,
+   "jst_socjal_zl_os": 2758.31,
+   "jst_srodki_wlasne_zl_os": 1293.42
+  },
+  {
+   "teryt": "2204",
+   "nazwa": "gdański",
+   "rok": 2025,
+   "ludnosc": 135241,
+   "jst_socjal_zl_os": 1334.38,
+   "jst_srodki_wlasne_zl_os": 583.84
+  },
+  {
+   "teryt": "2205",
+   "nazwa": "kartuski",
+   "rok": 2025,
+   "ludnosc": 156845,
+   "jst_socjal_zl_os": 1688.09,
+   "jst_srodki_wlasne_zl_os": 614.44
+  },
+  {
+   "teryt": "2206",
+   "nazwa": "kościerski",
+   "rok": 2025,
+   "ludnosc": 72030,
+   "jst_socjal_zl_os": 1900.52,
+   "jst_srodki_wlasne_zl_os": 767.79
+  },
+  {
+   "teryt": "2207",
+   "nazwa": "kwidzyński",
+   "rok": 2025,
+   "ludnosc": 79101,
+   "jst_socjal_zl_os": 2329.44,
+   "jst_srodki_wlasne_zl_os": 1059.6
+  },
+  {
+   "teryt": "2208",
+   "nazwa": "lęborski",
+   "rok": 2025,
+   "ludnosc": 63178,
+   "jst_socjal_zl_os": 2800.08,
+   "jst_srodki_wlasne_zl_os": 976.47
+  },
+  {
+   "teryt": "2209",
+   "nazwa": "malborski",
+   "rok": 2025,
+   "ludnosc": 59955,
+   "jst_socjal_zl_os": 2399.65,
+   "jst_srodki_wlasne_zl_os": 1065.83
+  },
+  {
+   "teryt": "2210",
+   "nazwa": "nowodworski",
+   "rok": 2025,
+   "ludnosc": 33072,
+   "jst_socjal_zl_os": 2407.94,
+   "jst_srodki_wlasne_zl_os": 1239.36
+  },
+  {
+   "teryt": "2211",
+   "nazwa": "pucki",
+   "rok": 2025,
+   "ludnosc": 92854,
+   "jst_socjal_zl_os": 1704.28,
+   "jst_srodki_wlasne_zl_os": 814.96
+  },
+  {
+   "teryt": "2212",
+   "nazwa": "słupski",
+   "rok": 2025,
+   "ludnosc": 95395,
+   "jst_socjal_zl_os": 2594.44,
+   "jst_srodki_wlasne_zl_os": 1328.28
+  },
+  {
+   "teryt": "2213",
+   "nazwa": "starogardzki",
+   "rok": 2025,
+   "ludnosc": 124329,
+   "jst_socjal_zl_os": 2189.55,
+   "jst_srodki_wlasne_zl_os": 879.95
+  },
+  {
+   "teryt": "2214",
+   "nazwa": "tczewski",
+   "rok": 2025,
+   "ludnosc": 109936,
+   "jst_socjal_zl_os": 2492.87,
+   "jst_srodki_wlasne_zl_os": 1209.57
+  },
+  {
+   "teryt": "2215",
+   "nazwa": "wejherowski",
+   "rok": 2025,
+   "ludnosc": 232280,
+   "jst_socjal_zl_os": 1910.47,
+   "jst_srodki_wlasne_zl_os": 726.16
+  },
+  {
+   "teryt": "2216",
+   "nazwa": "sztumski",
+   "rok": 2025,
+   "ludnosc": 37358,
+   "jst_socjal_zl_os": 2188.42,
+   "jst_srodki_wlasne_zl_os": 892.5
+  },
+  {
+   "teryt": "2261",
+   "nazwa": "M.Gdańsk",
+   "rok": 2025,
+   "ludnosc": 489328,
+   "jst_socjal_zl_os": 1524.75,
+   "jst_srodki_wlasne_zl_os": 856.81
+  },
+  {
+   "teryt": "2262",
+   "nazwa": "M.Gdynia",
+   "rok": 2025,
+   "ludnosc": 238712,
+   "jst_socjal_zl_os": 1486.31,
+   "jst_srodki_wlasne_zl_os": 827.63
+  },
+  {
+   "teryt": "2263",
+   "nazwa": "M.Słupsk",
+   "rok": 2025,
+   "ludnosc": 84217,
+   "jst_socjal_zl_os": 1941.92,
+   "jst_srodki_wlasne_zl_os": 998.04
+  },
+  {
+   "teryt": "2264",
+   "nazwa": "M.Sopot",
+   "rok": 2025,
+   "ludnosc": 31205,
+   "jst_socjal_zl_os": 2594.93,
+   "jst_srodki_wlasne_zl_os": 1667.07
+  },
+  {
+   "teryt": "2401",
+   "nazwa": "będziński",
+   "rok": 2025,
+   "ludnosc": 142556,
+   "jst_socjal_zl_os": 1420.94,
+   "jst_srodki_wlasne_zl_os": 805.05
+  },
+  {
+   "teryt": "2402",
+   "nazwa": "bielski",
+   "rok": 2025,
+   "ludnosc": 165607,
+   "jst_socjal_zl_os": 1085.26,
+   "jst_srodki_wlasne_zl_os": 441.1
+  },
+  {
+   "teryt": "2403",
+   "nazwa": "cieszyński",
+   "rok": 2025,
+   "ludnosc": 172899,
+   "jst_socjal_zl_os": 1516.0,
+   "jst_srodki_wlasne_zl_os": 768.48
+  },
+  {
+   "teryt": "2404",
+   "nazwa": "częstochowski",
+   "rok": 2025,
+   "ludnosc": 130415,
+   "jst_socjal_zl_os": 1499.16,
+   "jst_srodki_wlasne_zl_os": 707.05
+  },
+  {
+   "teryt": "2405",
+   "nazwa": "gliwicki",
+   "rok": 2025,
+   "ludnosc": 112687,
+   "jst_socjal_zl_os": 1211.85,
+   "jst_srodki_wlasne_zl_os": 661.46
+  },
+  {
+   "teryt": "2406",
+   "nazwa": "kłobucki",
+   "rok": 2025,
+   "ludnosc": 80836,
+   "jst_socjal_zl_os": 1264.7,
+   "jst_srodki_wlasne_zl_os": 578.95
+  },
+  {
+   "teryt": "2407",
+   "nazwa": "lubliniecki",
+   "rok": 2025,
+   "ludnosc": 73974,
+   "jst_socjal_zl_os": 1898.58,
+   "jst_srodki_wlasne_zl_os": 961.44
+  },
+  {
+   "teryt": "2408",
+   "nazwa": "mikołowski",
+   "rok": 2025,
+   "ludnosc": 99980,
+   "jst_socjal_zl_os": 1285.1,
+   "jst_srodki_wlasne_zl_os": 707.27
+  },
+  {
+   "teryt": "2409",
+   "nazwa": "myszkowski",
+   "rok": 2025,
+   "ludnosc": 66492,
+   "jst_socjal_zl_os": 1639.42,
+   "jst_srodki_wlasne_zl_os": 578.16
+  },
+  {
+   "teryt": "2410",
+   "nazwa": "pszczyński",
+   "rok": 2025,
+   "ludnosc": 110561,
+   "jst_socjal_zl_os": 1165.75,
+   "jst_srodki_wlasne_zl_os": 595.85
+  },
+  {
+   "teryt": "2411",
+   "nazwa": "raciborski",
+   "rok": 2025,
+   "ludnosc": 97995,
+   "jst_socjal_zl_os": 1684.33,
+   "jst_srodki_wlasne_zl_os": 822.17
+  },
+  {
+   "teryt": "2412",
+   "nazwa": "rybnicki",
+   "rok": 2025,
+   "ludnosc": 76118,
+   "jst_socjal_zl_os": 1218.27,
+   "jst_srodki_wlasne_zl_os": 677.41
+  },
+  {
+   "teryt": "2413",
+   "nazwa": "tarnogórski",
+   "rok": 2025,
+   "ludnosc": 138341,
+   "jst_socjal_zl_os": 1674.31,
+   "jst_srodki_wlasne_zl_os": 822.69
+  },
+  {
+   "teryt": "2414",
+   "nazwa": "bieruńsko-lędziński",
+   "rok": 2025,
+   "ludnosc": 59272,
+   "jst_socjal_zl_os": 1353.11,
+   "jst_srodki_wlasne_zl_os": 585.77
+  },
+  {
+   "teryt": "2415",
+   "nazwa": "wodzisławski",
+   "rok": 2025,
+   "ludnosc": 148409,
+   "jst_socjal_zl_os": 1334.38,
+   "jst_srodki_wlasne_zl_os": 640.08
+  },
+  {
+   "teryt": "2416",
+   "nazwa": "zawierciański",
+   "rok": 2025,
+   "ludnosc": 109044,
+   "jst_socjal_zl_os": 1438.73,
+   "jst_srodki_wlasne_zl_os": 757.54
+  },
+  {
+   "teryt": "2417",
+   "nazwa": "żywiecki",
+   "rok": 2025,
+   "ludnosc": 147341,
+   "jst_socjal_zl_os": 1186.69,
+   "jst_srodki_wlasne_zl_os": 466.65
+  },
+  {
+   "teryt": "2461",
+   "nazwa": "M.Bielsko-Biała",
+   "rok": 2025,
+   "ludnosc": 163164,
+   "jst_socjal_zl_os": 1487.98,
+   "jst_srodki_wlasne_zl_os": 720.72
+  },
+  {
+   "teryt": "2462",
+   "nazwa": "M.Bytom",
+   "rok": 2025,
+   "ludnosc": 144598,
+   "jst_socjal_zl_os": 1669.85,
+   "jst_srodki_wlasne_zl_os": 850.61
+  },
+  {
+   "teryt": "2463",
+   "nazwa": "M.Chorzów",
+   "rok": 2025,
+   "ludnosc": 98418,
+   "jst_socjal_zl_os": 1872.46,
+   "jst_srodki_wlasne_zl_os": 1031.49
+  },
+  {
+   "teryt": "2464",
+   "nazwa": "M.Częstochowa",
+   "rok": 2025,
+   "ludnosc": 201439,
+   "jst_socjal_zl_os": 1595.55,
+   "jst_srodki_wlasne_zl_os": 805.68
+  },
+  {
+   "teryt": "2465",
+   "nazwa": "M.Dąbrowa Górnicza",
+   "rok": 2025,
+   "ludnosc": 111309,
+   "jst_socjal_zl_os": 1207.41,
+   "jst_srodki_wlasne_zl_os": 726.59
+  },
+  {
+   "teryt": "2466",
+   "nazwa": "M.Gliwice",
+   "rok": 2025,
+   "ludnosc": 166942,
+   "jst_socjal_zl_os": 1377.69,
+   "jst_srodki_wlasne_zl_os": 828.19
+  },
+  {
+   "teryt": "2467",
+   "nazwa": "M.Jastrzębie-Zdrój",
+   "rok": 2025,
+   "ludnosc": 80527,
+   "jst_socjal_zl_os": 1225.91,
+   "jst_srodki_wlasne_zl_os": 616.15
+  },
+  {
+   "teryt": "2468",
+   "nazwa": "M.Jaworzno",
+   "rok": 2025,
+   "ludnosc": 85253,
+   "jst_socjal_zl_os": 1723.08,
+   "jst_srodki_wlasne_zl_os": 891.43
+  },
+  {
+   "teryt": "2469",
+   "nazwa": "M.Katowice",
+   "rok": 2025,
+   "ludnosc": 277415,
+   "jst_socjal_zl_os": 1425.61,
+   "jst_srodki_wlasne_zl_os": 901.79
+  },
+  {
+   "teryt": "2470",
+   "nazwa": "M.Mysłowice",
+   "rok": 2025,
+   "ludnosc": 70160,
+   "jst_socjal_zl_os": 1325.39,
+   "jst_srodki_wlasne_zl_os": 719.05
+  },
+  {
+   "teryt": "2471",
+   "nazwa": "M.Piekary Śląskie",
+   "rok": 2025,
+   "ludnosc": 51030,
+   "jst_socjal_zl_os": 1859.42,
+   "jst_srodki_wlasne_zl_os": 1184.1
+  },
+  {
+   "teryt": "2472",
+   "nazwa": "M.Ruda Śląska",
+   "rok": 2025,
+   "ludnosc": 127601,
+   "jst_socjal_zl_os": 1667.81,
+   "jst_srodki_wlasne_zl_os": 895.27
+  },
+  {
+   "teryt": "2473",
+   "nazwa": "M.Rybnik",
+   "rok": 2025,
+   "ludnosc": 128788,
+   "jst_socjal_zl_os": 1580.96,
+   "jst_srodki_wlasne_zl_os": 941.34
+  },
+  {
+   "teryt": "2474",
+   "nazwa": "M.Siemianowice Śląskie",
+   "rok": 2025,
+   "ludnosc": 62311,
+   "jst_socjal_zl_os": 1732.08,
+   "jst_srodki_wlasne_zl_os": 962.4
+  },
+  {
+   "teryt": "2475",
+   "nazwa": "M.Sosnowiec",
+   "rok": 2025,
+   "ludnosc": 182971,
+   "jst_socjal_zl_os": 1557.81,
+   "jst_srodki_wlasne_zl_os": 881.17
+  },
+  {
+   "teryt": "2476",
+   "nazwa": "M.Świętochłowice",
+   "rok": 2025,
+   "ludnosc": 44621,
+   "jst_socjal_zl_os": 2249.27,
+   "jst_srodki_wlasne_zl_os": 1162.52
+  },
+  {
+   "teryt": "2477",
+   "nazwa": "M.Tychy",
+   "rok": 2025,
+   "ludnosc": 120081,
+   "jst_socjal_zl_os": 1162.99,
+   "jst_srodki_wlasne_zl_os": 605.94
+  },
+  {
+   "teryt": "2478",
+   "nazwa": "M.Zabrze",
+   "rok": 2025,
+   "ludnosc": 150780,
+   "jst_socjal_zl_os": 1557.49,
+   "jst_srodki_wlasne_zl_os": 870.95
+  },
+  {
+   "teryt": "2479",
+   "nazwa": "M.Żory",
+   "rok": 2025,
+   "ludnosc": 61857,
+   "jst_socjal_zl_os": 1213.6,
+   "jst_srodki_wlasne_zl_os": 633.14
+  },
+  {
+   "teryt": "2601",
+   "nazwa": "buski",
+   "rok": 2025,
+   "ludnosc": 66483,
+   "jst_socjal_zl_os": 1878.58,
+   "jst_srodki_wlasne_zl_os": 632.19
+  },
+  {
+   "teryt": "2602",
+   "nazwa": "jędrzejowski",
+   "rok": 2025,
+   "ludnosc": 79700,
+   "jst_socjal_zl_os": 1643.87,
+   "jst_srodki_wlasne_zl_os": 666.43
+  },
+  {
+   "teryt": "2603",
+   "nazwa": "kazimierski",
+   "rok": 2025,
+   "ludnosc": 31082,
+   "jst_socjal_zl_os": 2164.0,
+   "jst_srodki_wlasne_zl_os": 1066.34
+  },
+  {
+   "teryt": "2604",
+   "nazwa": "kielecki",
+   "rok": 2025,
+   "ludnosc": 211250,
+   "jst_socjal_zl_os": 1747.9,
+   "jst_srodki_wlasne_zl_os": 631.11
+  },
+  {
+   "teryt": "2605",
+   "nazwa": "konecki",
+   "rok": 2025,
+   "ludnosc": 71893,
+   "jst_socjal_zl_os": 2183.1,
+   "jst_srodki_wlasne_zl_os": 892.6
+  },
+  {
+   "teryt": "2606",
+   "nazwa": "opatowski",
+   "rok": 2025,
+   "ludnosc": 47190,
+   "jst_socjal_zl_os": 3188.53,
+   "jst_srodki_wlasne_zl_os": 1829.83
+  },
+  {
+   "teryt": "2607",
+   "nazwa": "ostrowiecki",
+   "rok": 2025,
+   "ludnosc": 97420,
+   "jst_socjal_zl_os": 2116.7,
+   "jst_srodki_wlasne_zl_os": 832.68
+  },
+  {
+   "teryt": "2608",
+   "nazwa": "pińczowski",
+   "rok": 2025,
+   "ludnosc": 35844,
+   "jst_socjal_zl_os": 1736.95,
+   "jst_srodki_wlasne_zl_os": 679.02
+  },
+  {
+   "teryt": "2609",
+   "nazwa": "sandomierski",
+   "rok": 2025,
+   "ludnosc": 70175,
+   "jst_socjal_zl_os": 2077.19,
+   "jst_srodki_wlasne_zl_os": 774.97
+  },
+  {
+   "teryt": "2610",
+   "nazwa": "skarżyski",
+   "rok": 2025,
+   "ludnosc": 66304,
+   "jst_socjal_zl_os": 2062.3,
+   "jst_srodki_wlasne_zl_os": 1063.3
+  },
+  {
+   "teryt": "2611",
+   "nazwa": "starachowicki",
+   "rok": 2025,
+   "ludnosc": 81873,
+   "jst_socjal_zl_os": 2232.71,
+   "jst_srodki_wlasne_zl_os": 856.6
+  },
+  {
+   "teryt": "2612",
+   "nazwa": "staszowski",
+   "rok": 2025,
+   "ludnosc": 67168,
+   "jst_socjal_zl_os": 1830.05,
+   "jst_srodki_wlasne_zl_os": 719.33
+  },
+  {
+   "teryt": "2613",
+   "nazwa": "włoszczowski",
+   "rok": 2025,
+   "ludnosc": 42074,
+   "jst_socjal_zl_os": 1493.43,
+   "jst_srodki_wlasne_zl_os": 673.45
+  },
+  {
+   "teryt": "2661",
+   "nazwa": "M.Kielce",
+   "rok": 2025,
+   "ludnosc": 178837,
+   "jst_socjal_zl_os": 2676.43,
+   "jst_srodki_wlasne_zl_os": 1478.82
+  },
+  {
+   "teryt": "2801",
+   "nazwa": "bartoszycki",
+   "rok": 2025,
+   "ludnosc": 51335,
+   "jst_socjal_zl_os": 2928.6,
+   "jst_srodki_wlasne_zl_os": 1474.13
+  },
+  {
+   "teryt": "2802",
+   "nazwa": "braniewski",
+   "rok": 2025,
+   "ludnosc": 36315,
+   "jst_socjal_zl_os": 2495.67,
+   "jst_srodki_wlasne_zl_os": 1066.4
+  },
+  {
+   "teryt": "2803",
+   "nazwa": "działdowski",
+   "rok": 2025,
+   "ludnosc": 60424,
+   "jst_socjal_zl_os": 1671.86,
+   "jst_srodki_wlasne_zl_os": 854.5
+  },
+  {
+   "teryt": "2804",
+   "nazwa": "elbląski",
+   "rok": 2025,
+   "ludnosc": 53315,
+   "jst_socjal_zl_os": 2294.61,
+   "jst_srodki_wlasne_zl_os": 913.67
+  },
+  {
+   "teryt": "2805",
+   "nazwa": "ełcki",
+   "rok": 2025,
+   "ludnosc": 87671,
+   "jst_socjal_zl_os": 1925.14,
+   "jst_srodki_wlasne_zl_os": 995.8
+  },
+  {
+   "teryt": "2806",
+   "nazwa": "giżycki",
+   "rok": 2025,
+   "ludnosc": 52791,
+   "jst_socjal_zl_os": 1845.33,
+   "jst_srodki_wlasne_zl_os": 900.4
+  },
+  {
+   "teryt": "2807",
+   "nazwa": "iławski",
+   "rok": 2025,
+   "ludnosc": 88994,
+   "jst_socjal_zl_os": 2019.69,
+   "jst_srodki_wlasne_zl_os": 968.01
+  },
+  {
+   "teryt": "2808",
+   "nazwa": "kętrzyński",
+   "rok": 2025,
+   "ludnosc": 55474,
+   "jst_socjal_zl_os": 2206.56,
+   "jst_srodki_wlasne_zl_os": 928.82
+  },
+  {
+   "teryt": "2809",
+   "nazwa": "lidzbarski",
+   "rok": 2025,
+   "ludnosc": 37313,
+   "jst_socjal_zl_os": 2198.89,
+   "jst_srodki_wlasne_zl_os": 857.09
+  },
+  {
+   "teryt": "2810",
+   "nazwa": "mrągowski",
+   "rok": 2025,
+   "ludnosc": 46636,
+   "jst_socjal_zl_os": 2091.15,
+   "jst_srodki_wlasne_zl_os": 924.52
+  },
+  {
+   "teryt": "2811",
+   "nazwa": "nidzicki",
+   "rok": 2025,
+   "ludnosc": 29923,
+   "jst_socjal_zl_os": 2357.26,
+   "jst_srodki_wlasne_zl_os": 1049.07
+  },
+  {
+   "teryt": "2812",
+   "nazwa": "nowomiejski",
+   "rok": 2025,
+   "ludnosc": 41430,
+   "jst_socjal_zl_os": 1951.09,
+   "jst_srodki_wlasne_zl_os": 647.63
+  },
+  {
+   "teryt": "2813",
+   "nazwa": "olecki",
+   "rok": 2025,
+   "ludnosc": 31451,
+   "jst_socjal_zl_os": 2600.84,
+   "jst_srodki_wlasne_zl_os": 1111.53
+  },
+  {
+   "teryt": "2814",
+   "nazwa": "olsztyński",
+   "rok": 2025,
+   "ludnosc": 131015,
+   "jst_socjal_zl_os": 1923.41,
+   "jst_srodki_wlasne_zl_os": 1016.11
+  },
+  {
+   "teryt": "2815",
+   "nazwa": "ostródzki",
+   "rok": 2025,
+   "ludnosc": 97412,
+   "jst_socjal_zl_os": 2037.81,
+   "jst_srodki_wlasne_zl_os": 775.14
+  },
+  {
+   "teryt": "2816",
+   "nazwa": "piski",
+   "rok": 2025,
+   "ludnosc": 51114,
+   "jst_socjal_zl_os": 1700.29,
+   "jst_srodki_wlasne_zl_os": 680.48
+  },
+  {
+   "teryt": "2817",
+   "nazwa": "szczycieński",
+   "rok": 2025,
+   "ludnosc": 65732,
+   "jst_socjal_zl_os": 2310.11,
+   "jst_srodki_wlasne_zl_os": 1004.76
+  },
+  {
+   "teryt": "2818",
+   "nazwa": "gołdapski",
+   "rok": 2025,
+   "ludnosc": 24365,
+   "jst_socjal_zl_os": 1714.84,
+   "jst_srodki_wlasne_zl_os": 684.09
+  },
+  {
+   "teryt": "2819",
+   "nazwa": "węgorzewski",
+   "rok": 2025,
+   "ludnosc": 20306,
+   "jst_socjal_zl_os": 3159.87,
+   "jst_srodki_wlasne_zl_os": 1729.97
+  },
+  {
+   "teryt": "2861",
+   "nazwa": "M.Elbląg",
+   "rok": 2025,
+   "ludnosc": 111089,
+   "jst_socjal_zl_os": 1833.04,
+   "jst_srodki_wlasne_zl_os": 896.57
+  },
+  {
+   "teryt": "2862",
+   "nazwa": "M.Olsztyn",
+   "rok": 2025,
+   "ludnosc": 165393,
+   "jst_socjal_zl_os": 1710.31,
+   "jst_srodki_wlasne_zl_os": 830.52
+  },
+  {
+   "teryt": "3001",
+   "nazwa": "chodzieski",
+   "rok": 2025,
+   "ludnosc": 44507,
+   "jst_socjal_zl_os": 1799.8,
+   "jst_srodki_wlasne_zl_os": 888.71
+  },
+  {
+   "teryt": "3002",
+   "nazwa": "czarnkowsko-trzcianecki",
+   "rok": 2025,
+   "ludnosc": 82191,
+   "jst_socjal_zl_os": 2003.43,
+   "jst_srodki_wlasne_zl_os": 881.11
+  },
+  {
+   "teryt": "3003",
+   "nazwa": "gnieźnieński",
+   "rok": 2025,
+   "ludnosc": 139882,
+   "jst_socjal_zl_os": 1568.4,
+   "jst_srodki_wlasne_zl_os": 715.01
+  },
+  {
+   "teryt": "3004",
+   "nazwa": "gostyński",
+   "rok": 2025,
+   "ludnosc": 72504,
+   "jst_socjal_zl_os": 1735.12,
+   "jst_srodki_wlasne_zl_os": 921.11
+  },
+  {
+   "teryt": "3005",
+   "nazwa": "grodziski",
+   "rok": 2025,
+   "ludnosc": 51358,
+   "jst_socjal_zl_os": 1362.65,
+   "jst_srodki_wlasne_zl_os": 500.04
+  },
+  {
+   "teryt": "3006",
+   "nazwa": "jarociński",
+   "rok": 2025,
+   "ludnosc": 69365,
+   "jst_socjal_zl_os": 1704.9,
+   "jst_srodki_wlasne_zl_os": 749.96
+  },
+  {
+   "teryt": "3007",
+   "nazwa": "kaliski",
+   "rok": 2025,
+   "ludnosc": 81689,
+   "jst_socjal_zl_os": 1352.86,
+   "jst_srodki_wlasne_zl_os": 486.74
+  },
+  {
+   "teryt": "3008",
+   "nazwa": "kępiński",
+   "rok": 2025,
+   "ludnosc": 55598,
+   "jst_socjal_zl_os": 1622.31,
+   "jst_srodki_wlasne_zl_os": 880.82
+  },
+  {
+   "teryt": "3009",
+   "nazwa": "kolski",
+   "rok": 2025,
+   "ludnosc": 80042,
+   "jst_socjal_zl_os": 1747.43,
+   "jst_srodki_wlasne_zl_os": 598.27
+  },
+  {
+   "teryt": "3010",
+   "nazwa": "koniński",
+   "rok": 2025,
+   "ludnosc": 128238,
+   "jst_socjal_zl_os": 1958.26,
+   "jst_srodki_wlasne_zl_os": 712.82
+  },
+  {
+   "teryt": "3011",
+   "nazwa": "kościański",
+   "rok": 2025,
+   "ludnosc": 76478,
+   "jst_socjal_zl_os": 1722.66,
+   "jst_srodki_wlasne_zl_os": 735.39
+  },
+  {
+   "teryt": "3012",
+   "nazwa": "krotoszyński",
+   "rok": 2025,
+   "ludnosc": 73985,
+   "jst_socjal_zl_os": 1626.02,
+   "jst_srodki_wlasne_zl_os": 805.45
+  },
+  {
+   "teryt": "3013",
+   "nazwa": "leszczyński",
+   "rok": 2025,
+   "ludnosc": 61121,
+   "jst_socjal_zl_os": 1205.1,
+   "jst_srodki_wlasne_zl_os": 475.99
+  },
+  {
+   "teryt": "3014",
+   "nazwa": "międzychodzki",
+   "rok": 2025,
+   "ludnosc": 35303,
+   "jst_socjal_zl_os": 2649.41,
+   "jst_srodki_wlasne_zl_os": 1542.87
+  },
+  {
+   "teryt": "3015",
+   "nazwa": "nowotomyski",
+   "rok": 2025,
+   "ludnosc": 74955,
+   "jst_socjal_zl_os": 1235.45,
+   "jst_srodki_wlasne_zl_os": 578.01
+  },
+  {
+   "teryt": "3016",
+   "nazwa": "obornicki",
+   "rok": 2025,
+   "ludnosc": 58471,
+   "jst_socjal_zl_os": 1395.46,
+   "jst_srodki_wlasne_zl_os": 615.63
+  },
+  {
+   "teryt": "3017",
+   "nazwa": "ostrowski",
+   "rok": 2025,
+   "ludnosc": 157102,
+   "jst_socjal_zl_os": 1856.57,
+   "jst_srodki_wlasne_zl_os": 911.32
+  },
+  {
+   "teryt": "3018",
+   "nazwa": "ostrzeszowski",
+   "rok": 2025,
+   "ludnosc": 54046,
+   "jst_socjal_zl_os": 2134.58,
+   "jst_srodki_wlasne_zl_os": 1182.11
+  },
+  {
+   "teryt": "3019",
+   "nazwa": "pilski",
+   "rok": 2025,
+   "ludnosc": 128650,
+   "jst_socjal_zl_os": 1789.26,
+   "jst_srodki_wlasne_zl_os": 900.82
+  },
+  {
+   "teryt": "3020",
+   "nazwa": "pleszewski",
+   "rok": 2025,
+   "ludnosc": 60536,
+   "jst_socjal_zl_os": 2536.95,
+   "jst_srodki_wlasne_zl_os": 1182.4
+  },
+  {
+   "teryt": "3021",
+   "nazwa": "poznański",
+   "rok": 2025,
+   "ludnosc": 459392,
+   "jst_socjal_zl_os": 891.23,
+   "jst_srodki_wlasne_zl_os": 426.08
+  },
+  {
+   "teryt": "3022",
+   "nazwa": "rawicki",
+   "rok": 2025,
+   "ludnosc": 58042,
+   "jst_socjal_zl_os": 1787.58,
+   "jst_srodki_wlasne_zl_os": 934.62
+  },
+  {
+   "teryt": "3023",
+   "nazwa": "słupecki",
+   "rok": 2025,
+   "ludnosc": 56688,
+   "jst_socjal_zl_os": 2084.98,
+   "jst_srodki_wlasne_zl_os": 928.9
+  },
+  {
+   "teryt": "3024",
+   "nazwa": "szamotulski",
+   "rok": 2025,
+   "ludnosc": 91642,
+   "jst_socjal_zl_os": 1617.98,
+   "jst_srodki_wlasne_zl_os": 785.92
+  },
+  {
+   "teryt": "3025",
+   "nazwa": "średzki",
+   "rok": 2025,
+   "ludnosc": 60144,
+   "jst_socjal_zl_os": 1498.72,
+   "jst_srodki_wlasne_zl_os": 554.7
+  },
+  {
+   "teryt": "3026",
+   "nazwa": "śremski",
+   "rok": 2025,
+   "ludnosc": 60745,
+   "jst_socjal_zl_os": 1656.54,
+   "jst_srodki_wlasne_zl_os": 763.15
+  },
+  {
+   "teryt": "3027",
+   "nazwa": "turecki",
+   "rok": 2025,
+   "ludnosc": 79971,
+   "jst_socjal_zl_os": 1722.51,
+   "jst_srodki_wlasne_zl_os": 643.93
+  },
+  {
+   "teryt": "3028",
+   "nazwa": "wągrowiecki",
+   "rok": 2025,
+   "ludnosc": 68670,
+   "jst_socjal_zl_os": 1687.8,
+   "jst_srodki_wlasne_zl_os": 763.45
+  },
+  {
+   "teryt": "3029",
+   "nazwa": "wolsztyński",
+   "rok": 2025,
+   "ludnosc": 56260,
+   "jst_socjal_zl_os": 1271.75,
+   "jst_srodki_wlasne_zl_os": 509.87
+  },
+  {
+   "teryt": "3030",
+   "nazwa": "wrzesiński",
+   "rok": 2025,
+   "ludnosc": 77999,
+   "jst_socjal_zl_os": 1409.74,
+   "jst_srodki_wlasne_zl_os": 641.89
+  },
+  {
+   "teryt": "3031",
+   "nazwa": "złotowski",
+   "rok": 2025,
+   "ludnosc": 66431,
+   "jst_socjal_zl_os": 1838.09,
+   "jst_srodki_wlasne_zl_os": 840.27
+  },
+  {
+   "teryt": "3061",
+   "nazwa": "M.Kalisz",
+   "rok": 2025,
+   "ludnosc": 91059,
+   "jst_socjal_zl_os": 2282.29,
+   "jst_srodki_wlasne_zl_os": 1188.35
+  },
+  {
+   "teryt": "3062",
+   "nazwa": "M.Konin",
+   "rok": 2025,
+   "ludnosc": 65233,
+   "jst_socjal_zl_os": 2216.18,
+   "jst_srodki_wlasne_zl_os": 900.41
+  },
+  {
+   "teryt": "3063",
+   "nazwa": "M.Leszno",
+   "rok": 2025,
+   "ludnosc": 58766,
+   "jst_socjal_zl_os": 1641.08,
+   "jst_srodki_wlasne_zl_os": 841.94
+  },
+  {
+   "teryt": "3064",
+   "nazwa": "M.Poznań",
+   "rok": 2025,
+   "ludnosc": 534239,
+   "jst_socjal_zl_os": 1355.23,
+   "jst_srodki_wlasne_zl_os": 888.33
+  },
+  {
+   "teryt": "3201",
+   "nazwa": "białogardzki",
+   "rok": 2025,
+   "ludnosc": 43526,
+   "jst_socjal_zl_os": 2541.07,
+   "jst_srodki_wlasne_zl_os": 1169.67
+  },
+  {
+   "teryt": "3202",
+   "nazwa": "choszczeński",
+   "rok": 2025,
+   "ludnosc": 43632,
+   "jst_socjal_zl_os": 2396.11,
+   "jst_srodki_wlasne_zl_os": 1050.57
+  },
+  {
+   "teryt": "3203",
+   "nazwa": "drawski",
+   "rok": 2025,
+   "ludnosc": 52484,
+   "jst_socjal_zl_os": 2476.34,
+   "jst_srodki_wlasne_zl_os": 1187.6
+  },
+  {
+   "teryt": "3204",
+   "nazwa": "goleniowski",
+   "rok": 2025,
+   "ludnosc": 81016,
+   "jst_socjal_zl_os": 1970.97,
+   "jst_srodki_wlasne_zl_os": 972.72
+  },
+  {
+   "teryt": "3205",
+   "nazwa": "gryficki",
+   "rok": 2025,
+   "ludnosc": 55547,
+   "jst_socjal_zl_os": 2447.49,
+   "jst_srodki_wlasne_zl_os": 1398.67
+  },
+  {
+   "teryt": "3206",
+   "nazwa": "gryfiński",
+   "rok": 2025,
+   "ludnosc": 75912,
+   "jst_socjal_zl_os": 2032.85,
+   "jst_srodki_wlasne_zl_os": 1088.76
+  },
+  {
+   "teryt": "3207",
+   "nazwa": "kamieński",
+   "rok": 2025,
+   "ludnosc": 43351,
+   "jst_socjal_zl_os": 1690.92,
+   "jst_srodki_wlasne_zl_os": 960.16
+  },
+  {
+   "teryt": "3208",
+   "nazwa": "kołobrzeski",
+   "rok": 2025,
+   "ludnosc": 76285,
+   "jst_socjal_zl_os": 1698.97,
+   "jst_srodki_wlasne_zl_os": 1022.32
+  },
+  {
+   "teryt": "3209",
+   "nazwa": "koszaliński",
+   "rok": 2025,
+   "ludnosc": 64245,
+   "jst_socjal_zl_os": 2930.99,
+   "jst_srodki_wlasne_zl_os": 1643.55
+  },
+  {
+   "teryt": "3210",
+   "nazwa": "myśliborski",
+   "rok": 2025,
+   "ludnosc": 61226,
+   "jst_socjal_zl_os": 2203.89,
+   "jst_srodki_wlasne_zl_os": 1113.84
+  },
+  {
+   "teryt": "3211",
+   "nazwa": "policki",
+   "rok": 2025,
+   "ludnosc": 87407,
+   "jst_socjal_zl_os": 1101.91,
+   "jst_srodki_wlasne_zl_os": 634.77
+  },
+  {
+   "teryt": "3212",
+   "nazwa": "pyrzycki",
+   "rok": 2025,
+   "ludnosc": 35630,
+   "jst_socjal_zl_os": 1758.34,
+   "jst_srodki_wlasne_zl_os": 932.8
+  },
+  {
+   "teryt": "3213",
+   "nazwa": "sławieński",
+   "rok": 2025,
+   "ludnosc": 51893,
+   "jst_socjal_zl_os": 2029.1,
+   "jst_srodki_wlasne_zl_os": 1102.27
+  },
+  {
+   "teryt": "3214",
+   "nazwa": "stargardzki",
+   "rok": 2025,
+   "ludnosc": 118725,
+   "jst_socjal_zl_os": 1708.92,
+   "jst_srodki_wlasne_zl_os": 867.95
+  },
+  {
+   "teryt": "3215",
+   "nazwa": "szczecinecki",
+   "rok": 2025,
+   "ludnosc": 71481,
+   "jst_socjal_zl_os": 2083.67,
+   "jst_srodki_wlasne_zl_os": 945.21
+  },
+  {
+   "teryt": "3216",
+   "nazwa": "świdwiński",
+   "rok": 2025,
+   "ludnosc": 42233,
+   "jst_socjal_zl_os": 2533.75,
+   "jst_srodki_wlasne_zl_os": 1248.32
+  },
+  {
+   "teryt": "3217",
+   "nazwa": "wałecki",
+   "rok": 2025,
+   "ludnosc": 48912,
+   "jst_socjal_zl_os": 1896.15,
+   "jst_srodki_wlasne_zl_os": 1032.06
+  },
+  {
+   "teryt": "3218",
+   "nazwa": "łobeski",
+   "rok": 2025,
+   "ludnosc": 32619,
+   "jst_socjal_zl_os": 2631.32,
+   "jst_srodki_wlasne_zl_os": 1414.84
+  },
+  {
+   "teryt": "3261",
+   "nazwa": "M.Koszalin",
+   "rok": 2025,
+   "ludnosc": 104582,
+   "jst_socjal_zl_os": 1568.31,
+   "jst_srodki_wlasne_zl_os": 945.09
+  },
+  {
+   "teryt": "3262",
+   "nazwa": "M.Szczecin",
+   "rok": 2025,
+   "ludnosc": 383786,
+   "jst_socjal_zl_os": 1493.06,
+   "jst_srodki_wlasne_zl_os": 907.75
+  },
+  {
+   "teryt": "3263",
+   "nazwa": "M.Świnoujście",
+   "rok": 2025,
+   "ludnosc": 38188,
+   "jst_socjal_zl_os": 1535.76,
+   "jst_srodki_wlasne_zl_os": 970.61
+  }
+ ]
+}

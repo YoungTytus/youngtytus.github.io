@@ -217,7 +217,32 @@ def push_changes(message):
     print('Zmiany wysłane. Stan publikacji: https://github.com/YoungTytus/youngtytus.github.io/actions')
 
 
+LICZBY = ROOT / 'data' / 'liczby' / 'liczby.json'
+LICZBY_POLA = ('meta', 'licznik_2025', 'bez_emerytur_zus_2025', 'suma', 'platnicy_2022_2025_mld', 'programy',
+               'na_mieszkanca', 'dzialy_budzetu', 'fundusz_solidarnosciowy', 'wojewodztwa', 'powiaty')
+
+
+def refresh_numbers(args):
+    """Kopiuje liczby.json z projektu raportu do data/liczby (podstrona /liczby/), jeśli plik istnieje i się zmienił."""
+    source = Path(args.liczby).expanduser().resolve() if getattr(args, 'liczby', None) else (
+        ROOT.parent / 'Raport_Socjal_Wydatki' / 'Strona' / 'liczby.json')
+    if not source.is_file():
+        if getattr(args, 'liczby', None):
+            raise UpdateError('Nie znaleziono pliku --liczby: ' + str(source))
+        return
+    data = load_json(source)
+    missing = [k for k in LICZBY_POLA if k not in data]
+    if missing:
+        raise UpdateError('liczby.json: brak pól ' + ', '.join(missing))
+    if LICZBY.is_file() and LICZBY.read_bytes() == source.read_bytes():
+        return
+    LICZBY.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(source, LICZBY)
+    print('Zaktualizowano dane podstrony Liczby z ' + str(source))
+
+
 def update(args):
+    refresh_numbers(args)
     if not SNAPSHOT.resolve().is_relative_to(ROOT.resolve()) or SNAPSHOT.is_symlink():
         raise UpdateError('Folder danych projektu nie może prowadzić poza projekt.')
     config = load_json(ROOT / 'pages.json')
@@ -304,6 +329,7 @@ def main():
     parser.add_argument('--eksport', '--exkort', help='Gotowy eksport (starszy tryb). Nie używaj razem z --socjal.')
     parser.add_argument('--socjal', help='Folder projektu Socjal (Obsidian). Domyślnie folder Socjal obok repozytorium.')
     parser.add_argument('--na-dzien', help='Data odcięcia dla importera Socjal, np. 2026-10-20.')
+    parser.add_argument('--liczby', help='Plik liczby.json podstrony /liczby/. Domyślnie Raport_Socjal_Wydatki/Strona/liczby.json obok repozytorium.')
     parser.add_argument('--push', action='store_true', help='Po poprawnym zbudowaniu wykonaj commit i git push do main.')
     parser.add_argument('--message', help='Własny opis commita.')
     parser.add_argument('--site-url', help='Adres serwera HTTPS, bez podścieżki.')

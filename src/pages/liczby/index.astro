@@ -1,0 +1,694 @@
+---
+// Podstrona „Liczby”: ile państwo wydaje na socjal. Dane wyłącznie z data/liczby/liczby.json
+// (koncept: Raport_Socjal_Wydatki/Strona/Koncept podstrony Liczby.md). Wykresy rysowane przy budowaniu
+// jako SVG, bez biblioteki; interakcje (licznik, kalkulator, mapa, ranking) w małym skrypcie na dole.
+import Uklad from '../../layouts/Uklad.astro';
+import Ikona from '../../components/Ikona.astro';
+import { korzyscPoId } from '../../lib/model.mjs';
+import {
+  KARTY_PROGRAMOW, kodProgramu, mapaPowiatow, kratki, liczba, liczby, mediana, mld, nazwaKrotka, naMieszkanca, proc,
+  sumaRok, treemap, wzrostCen, zl,
+} from '../../lib/liczby.mjs';
+
+const d = liczby();
+if (!d) return Astro.redirect('/');
+
+const ROK = 2025;
+const s25 = sumaRok(d, ROK);
+const s20 = sumaRok(d, 2020);
+const naOs = naMieszkanca(d, ROK);
+const ceny = wzrostCen(d);
+const esc = (s: string) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const krotko = (v: number) => v >= 1e9 ? `${liczba(v / 1e9, 1)} mld zł` : v >= 1e6 ? `${liczba(v / 1e6)} mln zł` : `${liczba(v / 1e3)} tys. zł`;
+
+// ---------- S3: pięć lat ----------
+const lata = d.suma.map((s: any) => s.rok);
+const wzrostNom = (s25.transfery_mld / s20.transfery_mld - 1) * 100;
+const wzrostReal = ceny ? ((s25.transfery_mld / s20.transfery_mld) / ceny.czynnik - 1) * 100 : null;
+const tylkoInflacja = ceny ? s20.transfery_mld * ceny.czynnik : null;
+const pelneLata = d.suma.filter((s: any) => s.razem_z_uslugami_jst_mld != null);
+const zgodnosc = d.suma.filter((s: any) => s.razem_z_uslugami_jst_mld != null && s.cofog10_sektor_mld != null)
+  .map((s: any) => ({ rok: s.rok, proc: (s.razem_z_uslugami_jst_mld / s.cofog10_sektor_mld) * 100 }));
+const zgMin = Math.min(...zgodnosc.map((z: any) => z.proc)), zgMax = Math.max(...zgodnosc.map((z: any) => z.proc));
+
+const KOL = { navy: '#0b1f3a', navy2: '#24497a', navy3: '#6f8db5', akcent: '#b7791f', siatka: '#dde4ec', tekst: '#4f5a6b' };
+function wykresLinii() {
+  const W = 760, H = 340, L = 60, R = 150, T = 20, B = 40;
+  const ymax = Math.max(...d.suma.map((s: any) => Math.max(s.budzet_panstwa_mld ?? 0, s.razem_z_uslugami_jst_mld ?? 0, s.transfery_mld ?? 0))) * 1.08;
+  const X = (r: number) => L + ((r - lata[0]) / (lata[lata.length - 1] - lata[0])) * (W - L - R);
+  const Y = (v: number) => T + (1 - v / ymax) * (H - T - B);
+  const cz: string[] = [];
+  const krok = ymax > 600 ? 200 : 100;
+  for (let v = 0; v <= ymax; v += krok) cz.push(`<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="${KOL.siatka}"/><text x="${L - 8}" y="${Y(v) + 4}" text-anchor="end" font-size="12" fill="${KOL.tekst}">${v}</text>`);
+  lata.forEach((r: number) => cz.push(`<text x="${X(r)}" y="${H - B + 22}" text-anchor="middle" font-size="12" fill="${KOL.tekst}">${r}</text>`));
+  cz.push(`<text x="${L - 8}" y="${T - 6}" text-anchor="end" font-size="11" fill="${KOL.tekst}">mld zł</text>`);
+  const linia = (pkt: [number, number][], kolor: string, przer = false, gr = 3) =>
+    `<polyline points="${pkt.map(([r, v]) => `${X(r)},${Y(v)}`).join(' ')}" fill="none" stroke="${kolor}" stroke-width="${gr}" ${przer ? 'stroke-dasharray="6 6"' : ''} stroke-linejoin="round"/>`;
+  const kropki = (pkt: [number, number][], kolor: string) => pkt.map(([r, v]) => `<circle cx="${X(r)}" cy="${Y(v)}" r="4.5" fill="${kolor}" stroke="#fff" stroke-width="1.5"/>`).join('');
+  const bud = d.suma.filter((s: any) => s.budzet_panstwa_mld != null).map((s: any) => [s.rok, s.budzet_panstwa_mld] as [number, number]);
+  const tr = d.suma.map((s: any) => [s.rok, s.transfery_mld] as [number, number]);
+  const przybl = d.suma.filter((s: any) => /przybli/i.test(s.metoda)).map((s: any) => s.rok);
+  const ostPrzybl = Math.max(...przybl);
+  const raz = pelneLata.map((s: any) => [s.rok, s.razem_z_uslugami_jst_mld] as [number, number]);
+  cz.push(linia(bud, KOL.akcent, false, 2.5), kropki(bud, KOL.akcent));
+  cz.push(linia(tr.filter(([r]) => r <= ostPrzybl + 1), KOL.navy3, true), linia(tr.filter(([r]) => r > ostPrzybl), KOL.navy3), kropki(tr, KOL.navy3));
+  cz.push(linia(raz, KOL.navy, false, 3.5), kropki(raz, KOL.navy));
+  if (tylkoInflacja) {
+    cz.push(`<line x1="${X(lata[0])}" y1="${Y(s20.transfery_mld)}" x2="${X(ROK)}" y2="${Y(tylkoInflacja)}" stroke="${KOL.tekst}" stroke-width="1.5" stroke-dasharray="2 5"/>`,
+      `<circle cx="${X(ROK)}" cy="${Y(tylkoInflacja)}" r="4" fill="#fff" stroke="${KOL.tekst}" stroke-width="2"/>`);
+  }
+  const podpisy = [
+    { y: Y(bud[bud.length - 1][1]), t: `budżet ${liczba(bud[bud.length - 1][1])}`, k: KOL.akcent },
+    { y: Y(raz[raz.length - 1][1]), t: `socjal ${liczba(raz[raz.length - 1][1])}`, k: KOL.navy },
+    { y: Y(tr[tr.length - 1][1]), t: `transfery ${liczba(tr[tr.length - 1][1])}`, k: KOL.navy2 },
+    ...(tylkoInflacja ? [{ y: Y(tylkoInflacja), t: `z inflacją ${liczba(tylkoInflacja)}`, k: KOL.tekst }] : []),
+  ].sort((a, b) => a.y - b.y);
+  podpisy.forEach((p, i) => { if (i && p.y - podpisy[i - 1].y < 16) p.y = podpisy[i - 1].y + 16; });
+  podpisy.forEach((p) => cz.push(`<text x="${W - R + 10}" y="${p.y + 4}" font-size="12.5" font-weight="700" fill="${p.k}">${esc(p.t)}</text>`));
+  return { svg: cz.join(''), W, H, przybl };
+}
+const linie = wykresLinii();
+
+// ---------- S4: kto płaci ----------
+const platnicy = Object.entries(d.platnicy_2022_2025_mld) as [string, Record<string, number>][];
+const lataP = Object.keys(platnicy[0][1]).map(Number).sort();
+const nazwaPlatnika = (n: string) => n.replace(/^FUS: .*/, 'ZUS: emerytury, renty, zasiłki (FUS)').replace(/^FER \(KRUS\).*/, 'KRUS (FER)').replace(/^FEP: .*/, 'Emerytury pomostowe (FEP)')
+  .replace(/^Fundusz Solidarnościowy.*/, 'Fundusz Solidarnościowy').replace(/^Fundusz Pracy.*/, 'Fundusz Pracy').replace(/^Budżet państwa.*/, 'Budżet państwa: świadczenia')
+  .replace(/^JST: świadczenia.*/, 'Samorządy: świadczenia').replace(/^JST: usługi.*/, 'Samorządy: usługi (OPS, DPS, żłobki)');
+const KOL_P = ['#0b1f3a', '#2c5282', '#4a6fa5', '#7b9bc8', '#a9bfdd', '#b7791f', '#3f6b5c', '#86b1a0'];
+const krotkaPlatnika = (n: string) => nazwaPlatnika(n).replace(/^ZUS: .*/, 'ZUS').replace(/^Emerytury pomostowe.*/, 'Pomostowe (FEP)').replace(/^Budżet państwa: .*/, 'Budżet państwa')
+  .replace(/^Samorządy: usługi.*/, 'Samorządy: usługi');
+const platnicyKol = platnicy.map(([n, v], i) => ({ n, nazwa: nazwaPlatnika(n), krotka: krotkaPlatnika(n), v, kolor: /^Budżet/.test(n) ? KOL.akcent : KOL_P[i % KOL_P.length] }));
+const sumaP = (r: number) => platnicy.reduce((a, [, v]) => a + (v[String(r)] ?? 0), 0);
+const budzetP = platnicy.find(([n]) => /^Budżet/.test(n))?.[1][String(ROK)] ?? null;
+const pozaBudzetem = budzetP != null ? (1 - budzetP / sumaP(ROK)) * 100 : null;
+function wykresWarstw() {
+  const W = 760, H = 340, L = 60, R = 210, T = 20, B = 40;
+  const ymax = Math.max(...lataP.map(sumaP)) * 1.05;
+  const X = (r: number) => L + ((r - lataP[0]) / (lataP[lataP.length - 1] - lataP[0])) * (W - L - R);
+  const Y = (v: number) => T + (1 - v / ymax) * (H - T - B);
+  const cz: string[] = [];
+  for (let v = 0; v <= ymax; v += 200) cz.push(`<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="${KOL.siatka}"/><text x="${L - 8}" y="${Y(v) + 4}" text-anchor="end" font-size="12" fill="${KOL.tekst}">${v}</text>`);
+  lataP.forEach((r) => cz.push(`<text x="${X(r)}" y="${H - B + 22}" text-anchor="middle" font-size="12" fill="${KOL.tekst}">${r}</text>`));
+  cz.push(`<text x="${L - 8}" y="${T - 6}" text-anchor="end" font-size="11" fill="${KOL.tekst}">mld zł</text>`);
+  const dol = Object.fromEntries(lataP.map((r) => [r, 0]));
+  const podpisy: any[] = [];
+  platnicyKol.forEach((p) => {
+    const gora = lataP.map((r) => dol[r] + (p.v[String(r)] ?? 0));
+    const pts = [...lataP.map((r, i) => `${X(r)},${Y(gora[i])}`), ...[...lataP].reverse().map((r) => `${X(r)},${Y(dol[r])}`)];
+    cz.push(`<polygon points="${pts.join(' ')}" fill="${p.kolor}" stroke="#fff" stroke-width="1"/>`);
+    const ost = lataP[lataP.length - 1];
+    podpisy.push({ y: Y((dol[ost] + gora[gora.length - 1]) / 2), t: `${p.krotka} ${liczba(p.v[String(ost)], 1)}`, k: p.kolor });
+    lataP.forEach((r, i) => { dol[r] = gora[i]; });
+  });
+  podpisy.sort((a, b) => a.y - b.y).forEach((p, i, t) => { if (i && p.y - t[i - 1].y < 15) p.y = t[i - 1].y + 15; });
+  podpisy.forEach((p) => cz.push(`<rect x="${W - R + 8}" y="${p.y - 5}" width="10" height="10" fill="${p.k}"/><text x="${W - R + 24}" y="${p.y + 4}" font-size="12" fill="#121a2a">${esc(p.t)}</text>`));
+  return { svg: cz.join(''), W, H };
+}
+const warstwy = wykresWarstw();
+
+// ---------- S5: na co idą pieniądze (treemap) ----------
+const sumaProgramow = d.programy.reduce((a: number, p: any) => a + (p.mld[String(ROK)] ?? 0), 0);
+const pozostale = s25.razem_z_uslugami_jst_mld - sumaProgramow;
+const programy = d.programy.map((p: any, i: number) => ({
+  ...p, i, krotka: nazwaKrotka(p.nazwa), kod: kodProgramu(p.nazwa),
+  karty: (KARTY_PROGRAMOW as Record<string, string[]>)[p.nazwa]?.map((id) => korzyscPoId(id)).filter(Boolean) ?? [],
+}));
+const TM_W = 760, TM_H = 420;
+const prostokaty = treemap([
+  ...programy.filter((p: any) => (p.mld[String(ROK)] ?? 0) > 0).map((p: any) => ({ id: `program-${p.i}`, nazwa: p.krotka, wartosc: p.mld[String(ROK)] })),
+  ...(pozostale > 0 ? [{ id: 'program-pozostale', nazwa: 'Pozostałe: usługi samorządów i inne świadczenia', wartosc: pozostale }] : []),
+].sort((a, b) => b.wartosc - a.wartosc), TM_W, TM_H);
+const TM_KOL = ['#0b1f3a', '#15345c', '#24497a', '#2c5282', '#3d6496', '#4a6fa5', '#5d80b3', '#7b9bc8'];
+const lataProg = Object.keys(d.programy[0].mld).sort();
+
+// ---------- S6: inflacja ----------
+const hantle = programy.filter((p: any) => p.wzrost_nominalny_proc != null && p.wzrost_realny_proc != null)
+  .sort((a: any, b: any) => b.wzrost_realny_proc - a.wzrost_realny_proc);
+const hMin = Math.min(0, ...hantle.map((p: any) => p.wzrost_realny_proc)) - 10;
+const hMax = Math.max(...hantle.map((p: any) => p.wzrost_nominalny_proc)) + 10;
+const hX = (v: number) => ((v - hMin) / (hMax - hMin)) * 100;
+const program = (re: RegExp) => programy.find((p: any) => re.test(p.nazwa));
+const p13 = program(/^13\./), pMund = program(/mundur/i), p800 = program(/800/), pRodz = program(/rodzinne/i), pBezr = program(/bezrobotn/i);
+
+// ---------- S7: budżet państwa ----------
+const dzialy = [...d.dzialy_budzetu].sort((a: any, b: any) => b.udzial_2025_proc - a.udzial_2025_proc);
+const SOCJALNE = new Set(['753', '855', '852']);
+const pokazane = dzialy.slice(0, 6);
+const resztaUdz = 100 - pokazane.reduce((a: number, x: any) => a + x.udzial_2025_proc, 0);
+const kategorie = [...pokazane.map((x: any) => ({ nazwa: x.nazwa, kod: x.kod, udz: x.udzial_2025_proc, mld: x['2025_mld'] })), { nazwa: 'Pozostałe działy', kod: null, udz: resztaUdz, mld: null }];
+const KOL_W = { socjal: ['#0b1f3a', '#2c5282', '#5d80b3'], inne: ['#b7791f', '#8a6d3b', '#a3a9b3', '#c9ced6', '#e1e5ea'] };
+let iS = 0, iI = 0;
+const katKol = kategorie.map((k: any) => ({ ...k, socjal: SOCJALNE.has(k.kod), kolor: SOCJALNE.has(k.kod) ? KOL_W.socjal[iS++ % 3] : KOL_W.inne[Math.min(iI++, 4)] }));
+const ileKratek = kratki(katKol.map((k: any) => k.udz));
+const waffle = katKol.flatMap((k: any, i: number) => Array.from({ length: ileKratek[i] }, () => k));
+const udzSocjal = dzialy.filter((x: any) => SOCJALNE.has(x.kod)).reduce((a: number, x: any) => a + x.udzial_2025_proc, 0);
+const dlug = d.dzialy_budzetu.find((x: any) => x.kod === '757');
+const cofogOst = [...d.suma].reverse().find((s: any) => s.cofog10_proc_pkb != null);
+
+// ---------- S8: mapa i ranking ----------
+const latMapy = [...new Set(d.powiaty.map((p: any) => p.rok))].sort() as number[];
+const rokMapy = latMapy[latMapy.length - 1];
+const medianaPow = mediana(d.powiaty.filter((p: any) => p.rok === rokMapy).map((p: any) => p.jst_socjal_zl_os));
+const jstRazem = (platnicy.filter(([n]) => /^JST/.test(n)).reduce((a, [, v]) => a + (v[String(ROK)] ?? 0), 0));
+const daneMapy = {
+  woj: d.wojewodztwa.map((w: any) => [w.teryt, w.nazwa, w.rok, w.jst_socjal_zl_os, w.jst_swiadczenia_gotowka_zl_os ?? null, w.jst_srodki_wlasne_zl_os, w.ludnosc]),
+  pow: d.powiaty.map((p: any) => [p.teryt, p.nazwa, p.rok, p.jst_socjal_zl_os, null, p.jst_srodki_wlasne_zl_os, p.ludnosc]),
+  // mediany do dymka: klucz rok (powiaty) albo w+rok (województwa), potem numer miary
+  mediana: Object.fromEntries(latMapy.flatMap((r) => [
+    [String(r), { 3: mediana(d.powiaty.filter((p: any) => p.rok === r).map((p: any) => p.jst_socjal_zl_os)), 5: mediana(d.powiaty.filter((p: any) => p.rok === r).map((p: any) => p.jst_srodki_wlasne_zl_os)) }],
+    [`w${r}`, { 3: mediana(d.wojewodztwa.filter((w: any) => w.rok === r).map((w: any) => w.jst_socjal_zl_os)), 4: mediana(d.wojewodztwa.filter((w: any) => w.rok === r).map((w: any) => w.jst_swiadczenia_gotowka_zl_os)), 5: mediana(d.wojewodztwa.filter((w: any) => w.rok === r).map((w: any) => w.jst_srodki_wlasne_zl_os)) }],
+  ])),
+};
+const wojLista = d.wojewodztwa.filter((w: any) => w.rok === rokMapy).sort((a: any, b: any) => a.nazwa.localeCompare(b.nazwa, 'pl'));
+const mapa = mapaPowiatow(1000);
+
+// ---------- S1: liczby do licznika i przełącznika ----------
+const bez = d.bez_emerytur_zus_2025;
+const licz = d.licznik_2025;
+const daneKlienta = { naOs, bezNaOs: bez.zl_na_mieszkanca, zlNaSek: licz.zl_na_sekunde };
+
+const opisSeo = `Ile państwo wydaje na socjal: ${mld(s25.razem_z_uslugami_jst_mld)} w ${ROK} r., ${zl(naOs)} na mieszkańca. Kto płaci, na co idą pieniądze, co wygrało z inflacją i ile wydaje Twój powiat.`;
+---
+<Uklad tytul="Liczby: ile państwo wydaje na socjal" opis={opisSeo.replace(/ /g, ' ')} sekcja="liczby">
+  <div class="hero-outer">
+    <div class="wrap">
+      <section class="hero lz-hero" aria-labelledby="lz-tytul">
+        <p class="eyebrow">Liczby · rok {ROK}</p>
+        <h1 id="lz-tytul" class="sr-only">Ile państwo wydaje na socjal</h1>
+        <p class="lz-wielka" aria-hidden="true"><span data-pelna>{liczba(s25.razem_z_uslugami_jst_mld, 1)}</span><span data-bez hidden>{liczba(bez.mld, 1)}</span> <small>mld zł</small></p>
+        <p class="lz-podtytul">
+          <span data-pelna>Tyle w {ROK} r. państwo wydało na socjal: emerytury, renty, zasiłki, 800+ i usługi samorządów.</span>
+          <span data-bez hidden>Tyle zostaje po odjęciu emerytur i rent z ZUS. Sam ZUS dostał w {ROK} r. {mld(bez.dotacja_budzetu_do_FUS_mld)} dotacji z budżetu, bo składki nie wystarczają.</span>
+        </p>
+        <p class="lz-naos"><strong data-pelna>{zl(naOs)}</strong><strong data-bez hidden>{zl(bez.zl_na_mieszkanca)}</strong> na każdego mieszkańca Polski</p>
+        <label class="lz-przelacznik"><input type="checkbox" id="bez-zus" /> <span>Pokaż bez emerytur i rent ZUS</span></label>
+        <p class="lz-hint">Często słyszymy, że emerytury to nie socjal, bo opłacają je składki. Przełącznik pokazuje, ile zostaje bez nich.</p>
+        <div class="lz-licznik" aria-describedby="lz-tempo">
+          <p>Od otwarcia tej strony państwo wydało na socjal:</p>
+          <p class="lz-licznik-liczba"><span id="licznik" aria-hidden="true">0</span> zł</p>
+          <p id="lz-tempo" class="lz-tempo">Co sekundę {krotko(licz.zl_na_sekunde)}. Co godzinę {krotko(licz.zl_na_godzine)}. Co dzień {krotko(licz.zl_na_dzien)}.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="section wrap lz-sekcja" aria-labelledby="lz-rodzina">
+    <p class="kicker">Twoja rodzina</p>
+    <h2 id="lz-rodzina">Ile to na Twoje gospodarstwo domowe?</h2>
+    <div class="lz-kalk">
+      <label for="osoby">Liczba osób w gospodarstwie</label>
+      <select id="osoby">{Array.from({ length: 8 }, (_, i) => <option value={i + 1} selected={i === 3}>{i + 1}</option>)}</select>
+      <p class="lz-kalk-wynik" aria-live="polite"><span id="kalk-wynik">{zl(4 * naOs)}</span> rocznie</p>
+    </div>
+    <p class="summary-note">Liczba osób × {zl(naOs)} (wydatki na socjal na mieszkańca w {ROK} r.). To średnia na osobę, a nie kwota, którą Twoja rodzina dostaje.</p>
+  </section>
+
+  <section class="section section-soft" aria-labelledby="lz-piec">
+    <div class="wrap">
+      <p class="kicker">Pięć lat</p>
+      <h2 id="lz-piec">Wydatki na socjal rosną szybciej niż ceny.</h2>
+      <p class="lz-lead">Same wypłaty dla ludzi (transfery) wzrosły z {mld(s20.transfery_mld)} w {lata[0]} r. do {mld(s25.transfery_mld)} w {ROK} r., czyli o {proc(wzrostNom)}.{wzrostReal != null && <> Po odjęciu wzrostu cen to nadal {proc(wzrostReal, 0, true)}. Gdyby rosły tylko razem z cenami, w {ROK} r. byłoby to {mld(tylkoInflacja!)}.</>}</p>
+      <figure class="chart">
+        <ul class="legend" aria-label="Legenda">
+          <li><svg viewBox="0 0 26 12" aria-hidden="true"><line x1="0" x2="26" y1="6" y2="6" stroke={KOL.navy} stroke-width="3.5" /></svg>Socjal razem z usługami samorządów</li>
+          <li><svg viewBox="0 0 26 12" aria-hidden="true"><line x1="0" x2="26" y1="6" y2="6" stroke={KOL.navy3} stroke-width="3" /></svg>Same transfery do ludzi</li>
+          <li><svg viewBox="0 0 26 12" aria-hidden="true"><line x1="0" x2="26" y1="6" y2="6" stroke={KOL.akcent} stroke-width="2.5" /></svg>Wydatki budżetu państwa (dla skali)</li>
+          {ceny && <li><svg viewBox="0 0 26 12" aria-hidden="true"><line x1="0" x2="26" y1="6" y2="6" stroke={KOL.tekst} stroke-width="1.5" stroke-dasharray="2 4" /></svg>Gdyby transfery rosły jak ceny</li>}
+        </ul>
+        <div class="chart-scroll" tabindex="0" role="group" aria-label="Wykres, przewiń w poziomie na małym ekranie">
+          <svg viewBox={`0 0 ${linie.W} ${linie.H}`} role="img" aria-label={`Wydatki na socjal ${lata[0]}–${ROK} w mld zł; pełne dane w tabeli pod wykresem.`} set:html={linie.svg} />
+        </div>
+        <figcaption>Linia przerywana ({linie.przybl.join(' i ')}): przybliżenie, bo dla tych lat nie ma sprawozdań samorządów; zamiast ich wydatków liczymy dotacje z budżetu. Budżet państwa pokazujemy dla skali, nie jako udział: ponad połowa socjalu płynie poza budżetem.</figcaption>
+      </figure>
+      <details class="lz-tabela">
+        <summary>Pokaż tabelę</summary>
+        <div class="table-wrap" tabindex="0"><table>
+          <thead><tr><th scope="col">Rok</th><th scope="col">Transfery</th><th scope="col">Razem z usługami samorządów</th><th scope="col">Budżet państwa</th><th scope="col">Ochrona socjalna wg MF (COFOG 10)</th><th scope="col">Metoda</th></tr></thead>
+          <tbody>{d.suma.map((s: any) => <tr><th scope="row">{s.rok}</th><td>{mld(s.transfery_mld, 2)}</td><td>{s.razem_z_uslugami_jst_mld != null ? mld(s.razem_z_uslugami_jst_mld, 2) : '—'}</td><td>{mld(s.budzet_panstwa_mld, 2)}</td><td>{s.cofog10_sektor_mld != null ? `${mld(s.cofog10_sektor_mld)} (${liczba(s.cofog10_proc_pkb, 1)}% PKB)` : '—'}</td><td>{s.metoda}</td></tr>)}</tbody>
+        </table></div>
+        {ceny && <p class="summary-note">Wzrost cen {lata[0]}–{ROK}: ×{liczba(ceny.czynnik, 3)}, odczytany z danych o wzroście nominalnym i realnym programów (GUS CPI). Plik nie podaje inflacji rok po roku, dlatego nie rysujemy całej linii w cenach stałych.</p>}
+      </details>
+    </div>
+  </section>
+
+  <section class="section wrap lz-sekcja" aria-labelledby="lz-kto">
+    <p class="kicker">Kto płaci</p>
+    <h2 id="lz-kto">{pozaBudzetem != null ? `${liczba(pozaBudzetem)}% socjalu płynie poza budżetem państwa.` : 'Kto wypłaca pieniądze.'}</h2>
+    <p class="lz-lead">Największym płatnikiem jest ZUS. Budżet państwa wypłaca bezpośrednio {budzetP != null && mld(budzetP)} z {mld(sumaP(ROK))}. Dotacji, które budżet przekazuje do ZUS i samorządów, nie liczymy drugi raz.</p>
+    <figure class="chart">
+      <div class="chart-scroll" tabindex="0" role="group" aria-label="Wykres, przewiń w poziomie na małym ekranie">
+        <svg viewBox={`0 0 ${warstwy.W} ${warstwy.H}`} role="img" aria-label={`Wydatki na socjal według płatnika ${lataP[0]}–${lataP[lataP.length - 1]}; dane w tabeli pod wykresem.`} set:html={warstwy.svg} />
+      </div>
+      <figcaption>Warstwy sumują się do całych wydatków na socjal w danym roku (mld zł).</figcaption>
+    </figure>
+    <details class="lz-tabela">
+      <summary>Pokaż tabelę</summary>
+      <div class="table-wrap" tabindex="0"><table>
+        <thead><tr><th scope="col">Płatnik</th>{lataP.map((r) => <th scope="col">{r}</th>)}</tr></thead>
+        <tbody>
+          {platnicyKol.map((p) => <tr><th scope="row"><span class="lz-kwadrat" style={`background:${p.kolor}`} aria-hidden="true"></span>{p.nazwa}</th>{lataP.map((r) => <td>{liczba(p.v[String(r)], 2)}</td>)}</tr>)}
+          <tr class="lz-suma"><th scope="row">Razem</th>{lataP.map((r) => <td>{liczba(sumaP(r), 2)}</td>)}</tr>
+        </tbody>
+      </table></div>
+    </details>
+  </section>
+
+  <section class="section section-soft" aria-labelledby="lz-naco">
+    <div class="wrap">
+      <p class="kicker">Na co idą pieniądze</p>
+      <h2 id="lz-naco">Ponad połowa to emerytury i renty z ZUS.</h2>
+      <p class="lz-lead">Wielkość prostokąta to wydatki w {ROK} r. Kliknij program, żeby zobaczyć, jak zmieniał się od {lataProg[0]} r., i przejść do jego karty.</p>
+      <figure class="chart lz-treemap">
+        <svg viewBox={`0 0 ${TM_W} ${TM_H}`} role="img" aria-label={`Podział wydatków na socjal w ${ROK} r.; lista programów z kwotami pod wykresem.`}>
+          {prostokaty.map((p: any, i: number) => {
+            const duzy = p.w > 110 && p.h > 46;
+            return (
+              <a href={`#${p.id}`} aria-label={`${p.nazwa}: ${mld(p.wartosc)}`}>
+                <rect x={p.x} y={p.y} width={p.w} height={p.h} fill={TM_KOL[Math.min(i, TM_KOL.length - 1)]} stroke="#fff" stroke-width="2" />
+                {duzy && <text x={p.x + 10} y={p.y + 22} font-size="13" font-weight="700" fill="#fff">{p.nazwa.length > p.w / 7.5 ? `${p.nazwa.slice(0, Math.floor(p.w / 7.5) - 1)}…` : p.nazwa}</text>}
+                {duzy && <text x={p.x + 10} y={p.y + 40} font-size="12.5" fill="#dbe5f3">{mld(p.wartosc)} · {liczba((p.wartosc / s25.razem_z_uslugami_jst_mld) * 100)}%</text>}
+              </a>
+            );
+          })}
+        </svg>
+        <figcaption>Razem {mld(s25.razem_z_uslugami_jst_mld)}. „Pozostałe” to różnica między sumą a wymienionymi programami ({mld(pozostale)}).</figcaption>
+      </figure>
+      <ol class="lz-programy">
+        {[...programy].sort((a: any, b: any) => (b.mld[String(ROK)] ?? 0) - (a.mld[String(ROK)] ?? 0)).map((p: any) => (
+          <li><details id={`program-${p.i}`}>
+            <summary><span>{p.krotka}{p.kod && /^\d/.test(p.kod) && <span class="muted"> · rozdział {p.kod}</span>}</span><strong>{mld(p.mld[String(ROK)] ?? 0)}</strong></summary>
+            <div class="lz-program">
+              <div class="table-wrap" tabindex="0"><table>
+                <thead><tr>{lataProg.map((r) => <th scope="col">{r}</th>)}</tr></thead>
+                <tbody><tr>{lataProg.map((r) => <td>{p.mld[r] ? liczba(p.mld[r], 2) : '—'}</td>)}</tr></tbody>
+              </table></div>
+              <p>{p.wzrost_nominalny_proc != null ? <>Od {lataProg[0]} do {ROK} r.: <strong>{proc(p.wzrost_nominalny_proc, 0, true)}</strong> nominalnie, <strong>{proc(p.wzrost_realny_proc, 0, true)}</strong> po uwzględnieniu cen.</> : <>Program nie istniał przez cały okres {lataProg[0]}–{ROK}, więc nie liczymy wzrostu.</>}</p>
+              {p.karty.length > 0 && <p>Karty świadczeń: {p.karty.map((k: any, i: number) => <>{i > 0 && ', '}<a class="link" href={`/korzysc/${k.id}/`}>{k.nazwa}</a></>)}</p>}
+            </div>
+          </details></li>
+        ))}
+        {pozostale > 0 && <li><details id="program-pozostale"><summary><span>Pozostałe: usługi samorządów i inne świadczenia</span><strong>{mld(pozostale)}</strong></summary><div class="lz-program"><p>Różnica między sumą wydatków na socjal a programami wymienionymi wyżej. Największa część to usługi samorządów: ośrodki pomocy, domy pomocy społecznej, piecza zastępcza, żłobki.</p></div></details></li>}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section wrap lz-sekcja" aria-labelledby="lz-inflacja">
+    <p class="kicker">Co przegoniło inflację</p>
+    <h2 id="lz-inflacja">Emeryci i służby wygrali z inflacją. Rodziny z dziećmi nie.</h2>
+    <p class="lz-lead">
+      {p13 && <>13. i 14. emerytura: {proc(p13.wzrost_realny_proc, 0, true)} ponad wzrost cen. </>}
+      {pMund && <>Emerytury mundurowe: {proc(pMund.wzrost_realny_proc, 0, true)}. </>}
+      {p800 && <>800+: tylko {proc(p800.wzrost_realny_proc, 0, true)}. </>}
+      {pRodz && <>Świadczenia rodzinne: {proc(pRodz.wzrost_realny_proc, 0, true)}. </>}
+      {pBezr && <>Zasiłki dla bezrobotnych: {proc(pBezr.wzrost_realny_proc, 0, true)}.</>}
+    </p>
+    <div class="lz-hantle" role="table" aria-label={`Wzrost wydatków ${lataProg[0]}–${ROK}: nominalny i po uwzględnieniu cen`}>
+      <div class="lz-h-leg" aria-hidden="true"><span><i class="lz-k lz-k-nom"></i>wzrost nominalny</span><span><i class="lz-k lz-k-real"></i>po uwzględnieniu cen</span></div>
+      <div role="row" class="sr-only"><span role="columnheader">Program</span><span role="columnheader">Nominalnie</span><span role="columnheader">Realnie</span></div>
+      {hantle.map((p: any) => {
+        const a = hX(Math.min(p.wzrost_realny_proc, p.wzrost_nominalny_proc)), b = hX(Math.max(p.wzrost_realny_proc, p.wzrost_nominalny_proc));
+        return (
+          <div class="lz-h-wiersz" role="row">
+            <span class="lz-h-nazwa" role="rowheader"><a class="link" href={`#program-${p.i}`}>{p.krotka}</a></span>
+            <span class="lz-h-tor" aria-hidden="true">
+              <span class="lz-h-zero" style={`left:${hX(0)}%`}></span>
+              <span class="lz-h-linia" style={`left:${a}%;width:${b - a}%`}></span>
+              <span class="lz-k lz-k-nom" style={`left:${hX(p.wzrost_nominalny_proc)}%`}></span>
+              <span class:list={['lz-k lz-k-real', { ujemny: p.wzrost_realny_proc < 0 }]} style={`left:${hX(p.wzrost_realny_proc)}%`}></span>
+            </span>
+            <span class="lz-h-liczby"><span role="cell">{proc(p.wzrost_nominalny_proc, 0, true)}</span> <span role="cell"><strong>{proc(p.wzrost_realny_proc, 0, true)}</strong></span></span>
+          </div>
+        );
+      })}
+    </div>
+    <p class="summary-note">Pokazujemy programy, które istniały przez cały okres {lataProg[0]}–{ROK}. Pionowa kreska to zero. Wzrost „po uwzględnieniu cen” jest liczony średnioroczną inflacją GUS.</p>
+
+    <aside class="lz-sledztwo" aria-labelledby="lz-fs">
+      <p class="kicker">Z bliska</p>
+      <h3 id="lz-fs">Fundusz Solidarnościowy: dodatkowe emerytury na kredyt</h3>
+      <p>{d.fundusz_solidarnosciowy.opis}</p>
+      <ul>
+        {d.fundusz_solidarnosciowy.pozyczki.map((p: any) => <li><strong>{p.rok}:</strong> pożyczka {mld(p.tys_zl / 1e6, 1)} od: {p.od} <span class="muted">({p.zrodlo})</span></li>)}
+        {Object.entries(d.fundusz_solidarnosciowy.stan_funduszu_mld).map(([k, v]) => <li>Stan funduszu ({k}): <strong>{mld(v as number)}</strong></li>)}
+        {Object.entries(d.fundusz_solidarnosciowy.zobowiazania_z_pozyczek_mld).map(([k, v]) => <li>Zobowiązania z pożyczek ({k}): <strong>{mld(v as number)}</strong></li>)}
+      </ul>
+    </aside>
+  </section>
+
+  <section class="section section-soft" aria-labelledby="lz-tlo">
+    <div class="wrap">
+      <p class="kicker">Socjal na tle państwa</p>
+      <h2 id="lz-tlo">Budżet państwa w {ROK} r. w stu kratkach.</h2>
+      <p class="lz-lead">Każda kratka to 1% wydatków budżetu państwa ({mld(s25.budzet_panstwa_mld)}). Działy związane z socjalem (ubezpieczenia społeczne, rodzina, pomoc społeczna) to razem {proc(udzSocjal, 1)}.{dlug && <> Obsługa długu wzrosła {liczba(dlug['2025_mld'] / dlug['2020_mld'], 1)} raza w pięć lat: z {mld(dlug['2020_mld'])} do {mld(dlug['2025_mld'])}.</>}</p>
+      <div class="lz-waffle-uklad">
+        <div class="lz-waffle" role="img" aria-label={katKol.map((k: any) => `${k.nazwa} ${liczba(k.udz, 1)}%`).join(', ')}>
+          {waffle.map((k: any) => <span style={`background:${k.kolor}`}></span>)}
+        </div>
+        <ul class="lz-waffle-leg">
+          {katKol.map((k: any, i: number) => <li><span class="lz-kwadrat" style={`background:${k.kolor}`} aria-hidden="true"></span><span>{k.nazwa}{k.socjal && <em> · socjal</em>}</span><strong>{liczba(k.udz, 1)}%</strong><span class="muted">{ileKratek[i]} kr.</span></li>)}
+        </ul>
+      </div>
+      {cofogOst && <p class="summary-note">Cały sektor publiczny (nie tylko budżet) wydał w {cofogOst.rok} r. na ochronę socjalną {mld(cofogOst.cofog10_sektor_mld)}, czyli {liczba(cofogOst.cofog10_proc_pkb, 1)}% PKB (MF, klasyfikacja COFOG 10).</p>}
+    </div>
+  </section>
+
+  <section class="section wrap lz-sekcja" aria-labelledby="lz-mapa">
+    <p class="kicker">Mapa</p>
+    <h2 id="lz-mapa">Ile na socjal wydaje Twój samorząd?</h2>
+    <p class="lz-lead">Najwięcej na mieszkańca wydają powiaty na peryferiach, najmniej powiaty wokół dużych miast. Mediana kraju w {rokMapy} r.: {zl(medianaPow!)} na mieszkańca.</p>
+    <div class="lz-mapa-sterowanie">
+      <label>Miara
+        <select id="mapa-miara">
+          <option value="3">Wydatki samorządów na socjal</option>
+          <option value="4">w tym świadczenia w gotówce (tylko województwa)</option>
+          <option value="5">Z własnych pieniędzy samorządów</option>
+        </select>
+      </label>
+      <label>Rok
+        <select id="mapa-rok">{latMapy.map((r) => <option value={r} selected={r === rokMapy}>{r}</option>)}</select>
+      </label>
+      <label>Województwo
+        <select id="mapa-woj"><option value="">cała Polska</option>{wojLista.map((w: any) => <option value={w.teryt}>{w.nazwa}</option>)}</select>
+      </label>
+    </div>
+    <div class="lz-mapa-uklad">
+      <div class="lz-mapa-szukaj">
+        <label for="szukaj-powiat">Znajdź swój powiat</label>
+        <input type="search" id="szukaj-powiat" placeholder="np. poznański, Kraków" autocomplete="off" />
+        <p id="powiat-filtr" class="summary-note" hidden></p>
+        <ol id="ranking" class="lz-ranking" aria-live="polite"></ol>
+        <p class="summary-note"><span id="ranking-ile"></span> <button type="button" class="btn btn-sm" id="ranking-wiecej">Pokaż wszystkie</button></p>
+      </div>
+      {mapa && (
+        <div>
+          <p class="lz-mapa-poziom" id="mapa-poziom" aria-live="polite"></p>
+          <div class="lz-mapa-plotno">
+            <svg id="mapa" viewBox={`0 0 ${mapa.szer} ${mapa.wys}`} data-pelny={`0 0 ${mapa.szer} ${mapa.wys}`} role="img" aria-label="Mapa wydatków samorządów na socjal na mieszkańca. Te same dane są w rankingu obok.">
+              <g id="mapa-pow">{mapa.powiaty.map((p: any) => <path d={p.d} data-t={p.teryt} vector-effect="non-scaling-stroke" />)}</g>
+              <path id="mapa-granica" d={mapa.granica} fill="none" vector-effect="non-scaling-stroke" />
+            </svg>
+            <div id="dymek" class="lz-dymek" role="tooltip" hidden></div>
+          </div>
+          <ul class="lz-skala" id="skala" aria-label="Legenda: przedziały w zł na mieszkańca"></ul>
+          <p class="summary-note">Kliknij województwo, żeby zobaczyć jego powiaty. Kolor: pięć przedziałów, w każdym podobna liczba jednostek. Granice: PRG, GUGiK (dane otwarte, pobrane {mapa.meta.pobrano}), uproszczone do {liczba(mapa.meta.tolerancja_m)} m.</p>
+        </div>
+      )}
+    </div>
+    <p class="lz-uwaga"><Ikona n="tarcza" />Mapa pokazuje wydatki samorządów ({mld(jstRazem, 0)} z {mld(s25.razem_z_uslugami_jst_mld, 0)}). Emerytury ZUS i 800+ są wypłacane centralnie i nie mają podziału na powiaty.</p>
+    <script type="application/json" id="dane-mapy" set:html={JSON.stringify(daneMapy)} />
+  </section>
+
+  <section class="section section-soft" aria-labelledby="lz-sprawdz">
+    <div class="wrap">
+      <p class="kicker">Sprawdź nas</p>
+      <h2 id="lz-sprawdz">Każda liczba ma źródło.</h2>
+      <p class="lz-lead">Naszą sumę porównujemy z niezależną liczbą Ministerstwa Finansów: wydatkami na ochronę socjalną (COFOG 10). Zgodność w latach {zgodnosc.map((z: any) => z.rok).join(', ')}: {liczba(zgMin)}–{liczba(zgMax)}%.</p>
+      <div class="lz-dwie">
+        <div>
+          <h3>Jak liczymy</h3>
+          <ol class="lz-metoda">
+            <li>Liczymy wypłaty u faktycznego płatnika: ZUS, KRUS, fundusze, budżet państwa, samorządy.</li>
+            <li>Dotacji przekazywanych między nimi nie liczymy drugi raz.</li>
+            <li>Źródła: sprawozdania MF z wykonania budżetu, sprawozdania samorządów, ludność i inflacja z GUS.</li>
+            <li>Wynik porównujemy z liczbą MF dla ochrony socjalnej (COFOG 10).</li>
+            <li>Suma jest dolną granicą: nie obejmuje NFZ, funduszy BGK ani ulg podatkowych.</li>
+          </ol>
+          <h3>Zastrzeżenia</h3>
+          <ul>{d.meta.zastrzezenia.map((z: string) => <li>{z}</li>)}</ul>
+        </div>
+        <div>
+          <h3>Źródła</h3>
+          <ul>{d.meta.zrodla.map((z: string) => <li>{z}</li>)}</ul>
+          <h3>Pobierz dane</h3>
+          <p><a class="btn btn-sm" href="/dane/liczby.json" download="liczby.json"><Ikona n="pobierz" />liczby.json</a> <a class="btn btn-sm" href="/dane/liczby-programy.csv" download><Ikona n="pobierz" />Programy (CSV)</a> <a class="btn btn-sm" href="/dane/liczby-powiaty.csv" download><Ikona n="pobierz" />Powiaty (CSV)</a></p>
+          <p class="summary-note">Wersja danych {d.meta.wersja}, wygenerowano {d.meta.wygenerowano}. SHA-256 pliku: <code class="lz-sha">{d._sha256}</code></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/json" id="dane-liczb" set:html={JSON.stringify(daneKlienta)} />
+</Uklad>
+
+<script>
+  const NBSP = ' ';
+  const fmt = (v: number) => Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g, NBSP);
+  const dane = JSON.parse(document.getElementById('dane-liczb')!.textContent!);
+
+  // licznik: od otwarcia strony, tempo z pliku; bez ciasteczek
+  const start = performance.now();
+  const el = document.getElementById('licznik')!;
+  const tik = () => { el.textContent = fmt(((performance.now() - start) / 1000) * dane.zlNaSek); };
+  setInterval(tik, matchMedia('(prefers-reduced-motion: reduce)').matches ? 1000 : 100);
+
+  // przełącznik „bez emerytur ZUS”
+  const bez = document.getElementById('bez-zus') as HTMLInputElement;
+  const osoby = document.getElementById('osoby') as HTMLSelectElement;
+  const wynik = document.getElementById('kalk-wynik')!;
+  const kalk = () => { wynik.textContent = `${fmt(Number(osoby.value) * (bez.checked ? dane.bezNaOs : dane.naOs))}${NBSP}zł`; };
+  bez.addEventListener('change', () => {
+    document.querySelectorAll<HTMLElement>('[data-pelna]').forEach((e) => { e.hidden = bez.checked; });
+    document.querySelectorAll<HTMLElement>('[data-bez]').forEach((e) => { e.hidden = !bez.checked; });
+    kalk();
+  });
+  osoby.addEventListener('change', kalk);
+
+  // mapa powiatów (granice PRG) i ranking; poziom województw albo powiatów
+  type Wiersz = [string, string, number, number | null, number | null, number | null, number];
+  const m = JSON.parse(document.getElementById('dane-mapy')!.textContent!) as { woj: Wiersz[]; pow: Wiersz[]; mediana: Record<string, Record<string, number>> };
+  const miara = document.getElementById('mapa-miara') as HTMLSelectElement;
+  const rok = document.getElementById('mapa-rok') as HTMLSelectElement;
+  const wojSel = document.getElementById('mapa-woj') as HTMLSelectElement;
+  const szukaj = document.getElementById('szukaj-powiat') as HTMLInputElement;
+  const ranking = document.getElementById('ranking')!;
+  const ile = document.getElementById('ranking-ile')!;
+  const wiecej = document.getElementById('ranking-wiecej') as HTMLButtonElement;
+  const filtrInfo = document.getElementById('powiat-filtr')!;
+  const skala = document.getElementById('skala');
+  const mapa = document.getElementById('mapa') as SVGSVGElement | null;
+  const poziomInfo = document.getElementById('mapa-poziom');
+  const dymek = document.getElementById('dymek');
+  const sciezki = mapa ? [...mapa.querySelectorAll<SVGPathElement>('#mapa-pow path')] : [];
+  const KOLORY = ['#e3eaf3', '#b9cbe2', '#7f9fc7', '#3d6496', '#0b1f3a'];
+  let wojFiltr: string | null = null;
+  let wszystkie = false;
+  let stan: Record<string, { nazwa: string; v: number | null; miejsce: number; z: number; wojNazwa?: string }> = {};
+  let medianaTeraz = 0;
+  const norm = (s: string) => s.toLocaleLowerCase('pl').replace(/ł/g, 'l').normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const progi = (w: number[]) => { const s = [...w].sort((a, b) => a - b); return [1, 2, 3, 4].map((i) => s[Math.floor((i * s.length) / 5)]); };
+  const klasa = (v: number, p: number[]) => p.filter((x) => v >= x).length;
+  const nazwaWoj = (t: string) => m.woj.find((w) => w[0] === t)?.[1] ?? t;
+
+  function zoom() {
+    if (!mapa) return;
+    if (!wojFiltr) { mapa.setAttribute('viewBox', mapa.dataset.pelny!); return; }
+    const b = sciezki.filter((p) => p.dataset.t!.startsWith(wojFiltr!)).map((p) => p.getBBox());
+    const x0 = Math.min(...b.map((r) => r.x)), y0 = Math.min(...b.map((r) => r.y));
+    const x1 = Math.max(...b.map((r) => r.x + r.width)), y1 = Math.max(...b.map((r) => r.y + r.height));
+    const pad = Math.max(x1 - x0, y1 - y0) * 0.06;
+    mapa.setAttribute('viewBox', `${x0 - pad} ${y0 - pad} ${x1 - x0 + 2 * pad} ${y1 - y0 + 2 * pad}`);
+  }
+
+  function rysuj() {
+    const k = Number(miara.value), r = Number(rok.value);
+    const kp = k === 4 ? 3 : k; // „gotówka” jest tylko dla województw
+    const poziomPow = !!wojFiltr && k !== 4;
+    const woj = m.woj.filter((w) => w[2] === r && w[k] != null).sort((a, b) => (b[k] as number) - (a[k] as number));
+    const pow = m.pow.filter((x) => x[2] === r && x[kp] != null).sort((a, b) => (b[kp] as number) - (a[kp] as number));
+    const pWoj = progi(woj.map((w) => w[k] as number));
+    const pPow = progi(pow.map((x) => x[kp] as number));
+    stan = {};
+    woj.forEach((w, i) => { stan[`w${w[0]}`] = { nazwa: w[1], v: w[k] as number, miejsce: i + 1, z: woj.length }; });
+    pow.forEach((x, i) => { stan[x[0]] = { nazwa: x[1], v: x[kp] as number, miejsce: i + 1, z: pow.length, wojNazwa: nazwaWoj(x[0].slice(0, 2)) }; });
+    medianaTeraz = poziomPow ? m.mediana[String(r)][String(kp)] : m.mediana[`w${r}`][String(k)];
+
+    const q = norm(szukaj.value.trim());
+    sciezki.forEach((p) => {
+      const t = p.dataset.t!;
+      const s = poziomPow ? stan[t] : stan[`w${t.slice(0, 2)}`];
+      const c = s?.v == null ? -1 : klasa(s.v, poziomPow ? pPow : pWoj);
+      p.style.fill = c < 0 ? '#f3f5f8' : KOLORY[c];
+      p.style.stroke = poziomPow ? '#ffffff' : p.style.fill;
+      p.classList.toggle('poza', !!wojFiltr && !t.startsWith(wojFiltr));
+      p.classList.toggle('trafiony', !!q && norm(stan[t]?.nazwa ?? '').includes(q));
+    });
+    if (skala) {
+      const w = poziomPow ? pow.filter((x) => x[0].startsWith(wojFiltr!)).map((x) => x[kp] as number) : woj.map((x) => x[k] as number);
+      const g = [Math.min(...(poziomPow ? pow.map((x) => x[kp] as number) : w)), ...(poziomPow ? pPow : pWoj), Math.max(...(poziomPow ? pow.map((x) => x[kp] as number) : w))];
+      skala.innerHTML = KOLORY.map((c, i) => `<li><span style="background:${c}"></span>${fmt(g[i])}–${fmt(g[i + 1])}${NBSP}zł</li>`).join('');
+    }
+    if (poziomInfo) poziomInfo.innerHTML = wojFiltr
+      ? `Województwo ${nazwaWoj(wojFiltr)}${poziomPow ? ': powiaty (przedziały liczone dla całego kraju)' : ''}. <button type="button" class="link lz-wyczysc">Cała Polska</button>`
+      : 'Cała Polska: województwa. Kliknij, żeby zobaczyć powiaty.';
+    zoom();
+
+    const lista = pow.map((x, i) => ({ x, miejsce: i + 1 }))
+      .filter(({ x }) => (!wojFiltr || x[0].startsWith(wojFiltr)) && (!q || norm(x[1]).includes(q)));
+    const pokaz = wszystkie || q || wojFiltr ? lista : lista.slice(0, 10).concat(lista.length > 15 ? lista.slice(-5) : []);
+    ranking.innerHTML = pokaz.map(({ x, miejsce }) => `<li data-t="${x[0]}"><span class="lz-r-m">${miejsce}.</span><span class="lz-r-k" style="background:${KOLORY[klasa(x[kp] as number, pPow)]}"></span><span class="lz-r-n">${x[1]}</span><strong>${fmt(x[kp] as number)}${NBSP}zł</strong></li>`).join('')
+      || '<li class="lz-r-pusto">Nie znaleziono powiatu.</li>';
+    ile.textContent = `${pokaz.length} z ${pow.length} powiatów.${k === 4 ? ' Dla powiatów pokazujemy wszystkie wydatki samorządów na socjal.' : ''}`;
+    wiecej.hidden = wszystkie || !!q || !!wojFiltr;
+    filtrInfo.hidden = !wojFiltr;
+    if (wojFiltr) filtrInfo.innerHTML = `Powiaty województwa ${nazwaWoj(wojFiltr)}. <button type="button" class="link lz-wyczysc">Wszystkie powiaty</button>`;
+    wojSel.value = wojFiltr ?? '';
+  }
+
+  const ustawWoj = (t: string | null) => { wojFiltr = t; rysuj(); };
+  wojSel.addEventListener('change', () => ustawWoj(wojSel.value || null));
+  document.addEventListener('click', (e) => { if ((e.target as HTMLElement).classList?.contains('lz-wyczysc')) ustawWoj(null); });
+  wiecej.addEventListener('click', () => { wszystkie = true; rysuj(); });
+  [miara, rok].forEach((s) => s.addEventListener('change', rysuj));
+  szukaj.addEventListener('input', rysuj);
+
+  if (mapa && dymek) {
+    const opis = (t: string) => {
+      const poziomPow = !!wojFiltr && miara.value !== '4';
+      const s = poziomPow ? stan[t] : stan[`w${t.slice(0, 2)}`];
+      if (!s) return null;
+      const roznica = s.v != null && medianaTeraz ? Math.round((s.v / medianaTeraz - 1) * 100) : null;
+      return `<strong>${poziomPow ? `${s.nazwa} <span>(${s.wojNazwa})</span>` : s.nazwa}</strong>`
+        + `<b>${s.v == null ? 'brak danych' : `${fmt(s.v)}${NBSP}zł na mieszkańca`}</b>`
+        + `<span>${s.miejsce}. miejsce z ${s.z}${roznica != null ? ` · ${roznica >= 0 ? '+' : '−'}${Math.abs(roznica)}% wobec mediany` : ''}</span>`;
+    };
+    mapa.addEventListener('mousemove', (e) => {
+      const p = (e.target as Element).closest('path[data-t]') as SVGPathElement | null;
+      const h = p ? opis(p.dataset.t!) : null;
+      if (!h) { dymek.hidden = true; return; }
+      dymek.innerHTML = h;
+      dymek.hidden = false;
+      const r = mapa.parentElement!.getBoundingClientRect();
+      const x = e.clientX - r.left, y = e.clientY - r.top;
+      dymek.style.left = `${Math.max(4, Math.min(x + 14, r.width - dymek.offsetWidth - 4))}px`;
+      dymek.style.top = `${Math.max(y - dymek.offsetHeight - 12, 4)}px`;
+    });
+    mapa.addEventListener('mouseleave', () => { dymek.hidden = true; });
+    mapa.addEventListener('click', (e) => {
+      const p = (e.target as Element).closest('path[data-t]') as SVGPathElement | null;
+      if (!p) return;
+      const w = p.dataset.t!.slice(0, 2);
+      if (wojFiltr !== w) ustawWoj(w);
+    });
+    ranking.addEventListener('mouseover', (e) => {
+      const li = (e.target as Element).closest('li[data-t]') as HTMLElement | null;
+      sciezki.forEach((p) => p.classList.toggle('wskazany', !!li && p.dataset.t === li.dataset.t));
+    });
+    ranking.addEventListener('mouseleave', () => sciezki.forEach((p) => p.classList.remove('wskazany')));
+  }
+  rysuj();
+</script>
+
+<style is:global>
+  /* style podstrony /liczby/ (globalne, bo ranking i legenda mapy są wstawiane skryptem); wszystkie klasy z przedrostkiem lz- */
+  .lz-hero { padding: 56px 56px 48px; }
+  .lz-wielka { font: 600 clamp(3.4rem, 9vw, 6.5rem)/1 var(--serif); margin-top: 18px; letter-spacing: -.02em; }
+  .lz-wielka small { font-size: .38em; font-family: var(--sans); font-weight: 600; color: var(--navy-300); }
+  .lz-podtytul { max-width: 720px; margin-top: 16px; font-size: var(--fs-md); color: #dbe5f3; }
+  .lz-naos { margin-top: 20px; font-size: var(--fs-md); color: #dbe5f3; }
+  .lz-naos strong { font: 600 var(--fs-xl) var(--serif); color: #fff; margin-right: 6px; }
+  .lz-przelacznik { display: inline-flex; gap: 10px; align-items: center; margin-top: 24px; min-height: 44px; padding: 8px 16px; border: 1px solid rgba(157, 180, 214, .45); border-radius: 999px; cursor: pointer; font-weight: 600; }
+  .lz-przelacznik input { width: 18px; height: 18px; accent-color: var(--red); }
+  .lz-hint { margin-top: 8px; font-size: var(--fs-sm); color: var(--navy-300); max-width: 640px; }
+  .lz-licznik { margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(157, 180, 214, .25); }
+  .lz-licznik p:first-child { color: #dbe5f3; }
+  .lz-licznik-liczba { font: 600 var(--fs-2xl) var(--serif); font-variant-numeric: tabular-nums; margin-top: 4px; }
+  .lz-tempo { color: var(--navy-300); font-size: var(--fs-sm); margin-top: 4px; }
+  .lz-lead { max-width: 820px; margin-top: 14px; font-size: var(--fs-md); color: var(--ink-2); }
+  section[aria-labelledby^="lz-"] h2 { max-width: 900px; }
+  .lz-kalk { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 24px; }
+  .lz-kalk label { font-weight: 600; }
+  .lz-kalk select, .lz-mapa-sterowanie select, .lz-mapa-szukaj input { min-height: 44px; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); padding: 8px 12px; font: inherit; background: var(--surface); }
+  .lz-kalk-wynik { font-size: var(--fs-md); }
+  .lz-kalk-wynik span { font: 600 var(--fs-xl) var(--serif); color: var(--navy-800); }
+  .lz-tabela { margin-top: 14px; }
+  .lz-tabela summary { cursor: pointer; font-weight: 600; color: var(--navy-700); min-height: 44px; display: flex; align-items: center; }
+  .lz-kwadrat { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 8px; vertical-align: -1px; flex-shrink: 0; }
+  .lz-suma th, .lz-suma td { font-weight: 700; }
+  .lz-treemap svg { min-width: 0; }
+  .lz-treemap a rect { transition: opacity .15s; }
+  .lz-treemap a:hover rect, .lz-treemap a:focus rect { opacity: .85; }
+  .lz-treemap a:focus { outline: none; }
+  .lz-treemap a:focus-visible rect { stroke: var(--red); stroke-width: 4; }
+  .lz-programy { list-style: none; margin: 22px 0 0; padding: 0; border-top: 1px solid var(--line); }
+  .lz-programy > li { border-bottom: 1px solid var(--line); }
+  .lz-programy summary { display: flex; justify-content: space-between; gap: 16px; padding: 12px 4px; cursor: pointer; min-height: 44px; align-items: center; }
+  .lz-programy summary strong { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .lz-programy details[open] summary { color: var(--navy-700); }
+  .lz-programy :target, .lz-programy details:target { background: var(--surface); }
+  .lz-program { padding: 0 4px 18px; }
+  .lz-program p { margin-top: 12px; }
+  .lz-hantle { margin-top: 26px; }
+  .lz-h-leg { display: flex; gap: 22px; font-size: var(--fs-sm); color: var(--ink-2); margin-bottom: 8px; }
+  .lz-h-leg span { display: inline-flex; gap: 8px; align-items: center; }
+  .lz-h-leg .lz-k { position: static; transform: none; }
+  .lz-h-wiersz { display: grid; grid-template-columns: minmax(180px, 280px) 1fr 130px; gap: 16px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .lz-h-nazwa { font-size: var(--fs-sm); }
+  .lz-h-tor { position: relative; height: 22px; }
+  .lz-h-zero { position: absolute; top: -4px; bottom: -4px; width: 1px; background: var(--line-strong); }
+  .lz-h-linia { position: absolute; top: 10px; height: 2px; background: var(--line-strong); }
+  .lz-k { position: absolute; top: 11px; width: 14px; height: 14px; border-radius: 50%; transform: translate(-50%, -50%); display: inline-block; }
+  .lz-k-nom { background: var(--surface); border: 2.5px solid var(--navy-300); }
+  .lz-k-real { background: var(--navy-800); }
+  .lz-k-real.ujemny { background: var(--surface); border: 3px solid var(--navy-800); }
+  .lz-h-liczby { font-size: var(--fs-sm); text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+  .lz-sledztwo { margin-top: 40px; padding: 28px; background: var(--soft); border-radius: var(--radius); border-left: 4px solid var(--navy-800); max-width: 860px; }
+  .lz-sledztwo h3 { font: 600 var(--fs-lg) var(--serif); margin-bottom: 10px; }
+  .lz-sledztwo ul { margin: 14px 0 0; padding-left: 20px; }
+  .lz-sledztwo li { margin-top: 6px; }
+  .lz-waffle-uklad { display: grid; grid-template-columns: minmax(240px, 380px) 1fr; gap: 36px; margin-top: 28px; align-items: start; }
+  .lz-waffle { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; }
+  .lz-waffle span { aspect-ratio: 1; border-radius: 3px; }
+  .lz-waffle-leg { list-style: none; margin: 0; padding: 0; }
+  .lz-waffle-leg li { display: grid; grid-template-columns: 20px 1fr auto 52px; gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: var(--fs-sm); }
+  .lz-waffle-leg em { font-style: normal; color: var(--red); font-weight: 700; }
+  .lz-waffle-leg .muted { text-align: right; font-size: var(--fs-xs); }
+  .lz-mapa-sterowanie { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+  .lz-mapa-sterowanie label, .lz-mapa-szukaj label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: var(--fs-sm); }
+  .lz-mapa-uklad { display: grid; grid-template-columns: minmax(280px, 400px) 1fr; gap: 36px; margin-top: 24px; align-items: start; }
+  .lz-mapa-szukaj input { width: 100%; margin-top: 6px; }
+  .lz-mapa-uklad > *, .lz-waffle-uklad > *, .lz-dwie > * { min-width: 0; }
+  .lz-mapa-sterowanie label { max-width: 100%; }
+  .lz-mapa-sterowanie select { max-width: 100%; }
+  .lz-ranking { list-style: none; margin: 14px 0 0; padding: 0; max-height: 520px; overflow-y: auto; border-top: 1px solid var(--line); }
+  .lz-ranking li { display: grid; grid-template-columns: 38px 12px 1fr auto; gap: 10px; align-items: center; padding: 8px 4px; border-bottom: 1px solid var(--line); font-size: var(--fs-sm); }
+  .lz-r-m { color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+  .lz-r-k { width: 12px; height: 12px; border-radius: 2px; border: 1px solid var(--line-strong); }
+  .lz-ranking strong { font-variant-numeric: tabular-nums; }
+  .lz-r-pusto { display: block !important; color: var(--muted); }
+  .lz-mapa-poziom { font-size: var(--fs-sm); color: var(--ink-2); margin: 0 0 10px; min-height: 1.6em; }
+  .lz-mapa-plotno { position: relative; }
+  #mapa { width: 100%; height: auto; display: block; max-height: 640px; }
+  #mapa-pow path { stroke-width: .6; stroke-linejoin: round; cursor: pointer; transition: fill .2s, opacity .2s; }
+  #mapa-pow path.poza { opacity: .18; }
+  #mapa-pow path.trafiony, #mapa-pow path.wskazany { stroke: var(--red) !important; stroke-width: 2.5; }
+  #mapa-pow path:hover { opacity: .85; }
+  #mapa-granica { stroke: #071528; stroke-width: 1.1; pointer-events: none; }
+  .lz-dymek { position: absolute; z-index: 5; pointer-events: none; background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--radius-sm); box-shadow: 0 10px 30px -12px rgba(11, 31, 58, .45); padding: 10px 12px; font-size: var(--fs-sm); line-height: 1.4; max-width: 260px; }
+  .lz-dymek strong, .lz-dymek b, .lz-dymek > span { display: block; }
+  .lz-dymek strong span { font-weight: 400; color: var(--muted); }
+  .lz-dymek b { font-size: var(--fs-md); color: var(--navy-800); margin-top: 2px; }
+  .lz-dymek > span { color: var(--ink-2); font-size: var(--fs-xs); margin-top: 2px; }
+  .lz-skala { display: flex; flex-wrap: wrap; gap: 6px 14px; list-style: none; margin: 14px 0 0; padding: 0; font-size: var(--fs-xs); color: var(--ink-2); }
+  .lz-skala li { display: inline-flex; gap: 6px; align-items: center; }
+  .lz-skala span { width: 14px; height: 14px; border-radius: 2px; border: 1px solid var(--line-strong); }
+  .lz-uwaga { display: flex; gap: 10px; align-items: flex-start; margin-top: 26px; padding: 14px 18px; background: var(--soft); border-radius: var(--radius-sm); font-size: var(--fs-sm); color: var(--ink-2); max-width: 860px; }
+  .lz-uwaga svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px; color: var(--navy-700); }
+  .lz-wyczysc { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; }
+  .lz-dwie { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 28px; }
+  .lz-dwie h3 { font: 600 var(--fs-lg) var(--serif); margin: 22px 0 10px; }
+  .lz-dwie h3:first-child { margin-top: 0; }
+  .lz-dwie ul, .lz-metoda { padding-left: 20px; margin: 0; }
+  .lz-dwie li { margin-top: 6px; }
+  .lz-dwie .btn { margin: 4px 6px 4px 0; }
+  .lz-sha { word-break: break-all; font-size: var(--fs-xs); }
+  @media (max-width: 900px) {
+    .lz-mapa-uklad, .lz-waffle-uklad, .lz-dwie { grid-template-columns: 1fr; }
+    .lz-waffle { max-width: 360px; }
+  }
+  @media (max-width: 640px) {
+    .lz-hero { padding: 32px 22px; }
+    .lz-h-wiersz { grid-template-columns: 1fr 110px; }
+    .lz-h-tor { grid-column: 1 / -1; grid-row: 2; }
+  }
+</style>
