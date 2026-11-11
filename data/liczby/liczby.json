@@ -32,52 +32,124 @@
   {
    "rok": 2020,
    "transfery_mld": 386.4,
-   "razem_z_uslugami_jst_mld": null,
+   "razem_z_uslugami_jst_mld": 406.12,
+   "razem_metoda": "wydatki JST 852+853+855 z MF Informacji o wykonaniu budżetów JST 2021, Tablica 13",
+   "mnoznik_do_cen_2025": 1.4376,
+   "transfery_ceny_2025_mld": 555.48,
+   "razem_z_uslugami_jst_ceny_2025_mld": 583.83,
+   "pkb_mld": 2337.67,
+   "pkb_zrodlo": "Aneks statystyczny IV kw. 2022, Tab. 1",
+   "razem_proc_pkb": 17.37,
+   "transfery_proc_pkb": 16.53,
+   "razem_proc_cofog10": 96.12,
+   "cofog10_proc_wydatkow_sektora": 37.46,
+   "transfery_metoda_jednolita_mld": 386.4,
+   "transfery_metoda_jednolita_ceny_2025_mld": 555.48,
    "metoda": "przybliżenie: dotacje budżetu do JST zamiast wydatków JST",
    "budzet_panstwa_mld": 493.14,
-   "cofog10_sektor_mld": null,
-   "cofog10_proc_pkb": null
+   "cofog10_sektor_mld": 422.5,
+   "cofog10_proc_pkb": 17.9
   },
   {
    "rok": 2021,
    "transfery_mld": 415.0,
-   "razem_z_uslugami_jst_mld": null,
+   "razem_z_uslugami_jst_mld": 435.63,
+   "razem_metoda": "wydatki JST 852+853+855 z MF Informacji o wykonaniu budżetów JST 2021, Tablica 13",
+   "mnoznik_do_cen_2025": 1.3678,
+   "transfery_ceny_2025_mld": 567.65,
+   "razem_z_uslugami_jst_ceny_2025_mld": 595.86,
+   "pkb_mld": 2631.3,
+   "pkb_zrodlo": "Aneks statystyczny IV kw. 2023, Tab. 1",
+   "razem_proc_pkb": 16.56,
+   "transfery_proc_pkb": 15.77,
+   "razem_proc_cofog10": 95.77,
+   "cofog10_proc_wydatkow_sektora": 39.23,
+   "transfery_metoda_jednolita_mld": 415.0,
+   "transfery_metoda_jednolita_ceny_2025_mld": 567.65,
    "metoda": "przybliżenie: dotacje budżetu do JST zamiast wydatków JST",
    "budzet_panstwa_mld": 513.6,
-   "cofog10_sektor_mld": 454.9,
-   "cofog10_proc_pkb": 17.3
+   "cofog10_sektor_mld": 454.87,
+   "cofog10_proc_pkb": 17.1
   },
   {
    "rok": 2022,
    "transfery_mld": 460.66,
    "razem_z_uslugami_jst_mld": 490.0,
+   "razem_metoda": "Rb-28S (wydatki JST z sum per JST)",
+   "mnoznik_do_cen_2025": 1.1957,
+   "transfery_ceny_2025_mld": 550.79,
+   "razem_z_uslugami_jst_ceny_2025_mld": 585.87,
+   "pkb_mld": 3100.85,
+   "pkb_zrodlo": "Aneks statystyczny IV kw. 2024, Tab. 1",
+   "razem_proc_pkb": 15.8,
+   "transfery_proc_pkb": 14.86,
+   "razem_proc_cofog10": 94.73,
+   "cofog10_proc_wydatkow_sektora": 38.57,
+   "transfery_metoda_jednolita_mld": 449.51,
+   "transfery_metoda_jednolita_ceny_2025_mld": 537.46,
    "metoda": "pełna z JST (Rb-28S)",
    "budzet_panstwa_mld": 517.4,
-   "cofog10_sektor_mld": 517.3,
-   "cofog10_proc_pkb": 16.9
+   "cofog10_sektor_mld": 517.27,
+   "cofog10_proc_pkb": 16.7
   },
   {
    "rok": 2023,
    "transfery_mld": 520.83,
    "razem_z_uslugami_jst_mld": 552.23,
+   "razem_metoda": "Rb-28S (wydatki JST z sum per JST)",
+   "mnoznik_do_cen_2025": 1.0733,
+   "transfery_ceny_2025_mld": 559.0,
+   "razem_z_uslugami_jst_ceny_2025_mld": 592.71,
+   "pkb_mld": 3415.27,
+   "pkb_zrodlo": "Aneks statystyczny IV kw. 2025, Tab. 1",
+   "razem_proc_pkb": 16.17,
+   "transfery_proc_pkb": 15.25,
+   "razem_proc_cofog10": 96.0,
+   "cofog10_proc_wydatkow_sektora": 35.95,
+   "transfery_metoda_jednolita_mld": 522.8,
+   "transfery_metoda_jednolita_ceny_2025_mld": 561.12,
    "metoda": "pełna z JST (Rb-28S)",
    "budzet_panstwa_mld": 659.59,
-   "cofog10_sektor_mld": 575.2,
-   "cofog10_proc_pkb": 16.9
+   "cofog10_sektor_mld": 575.25,
+   "cofog10_proc_pkb": 16.8
   },
   {
    "rok": 2024,
    "transfery_mld": 608.89,
    "razem_z_uslugami_jst_mld": 644.21,
+   "razem_metoda": "Rb-28S (wydatki JST z sum per JST)",
+   "mnoznik_do_cen_2025": 1.036,
+   "transfery_ceny_2025_mld": 630.81,
+   "razem_z_uslugami_jst_ceny_2025_mld": 667.4,
+   "pkb_mld": 3669.53,
+   "pkb_zrodlo": "Aneks statystyczny IV kw. 2025, Tab. 1",
+   "razem_proc_pkb": 17.56,
+   "transfery_proc_pkb": 16.59,
+   "razem_proc_cofog10": 96.32,
+   "cofog10_proc_wydatkow_sektora": 37.02,
+   "transfery_metoda_jednolita_mld": 612.52,
+   "transfery_metoda_jednolita_ceny_2025_mld": 634.57,
    "metoda": "pełna z JST (Rb-28S)",
    "budzet_panstwa_mld": 834.24,
-   "cofog10_sektor_mld": 668.8,
+   "cofog10_sektor_mld": 668.85,
    "cofog10_proc_pkb": 18.3
   },
   {
    "rok": 2025,
    "transfery_mld": 665.63,
    "razem_z_uslugami_jst_mld": 707.28,
+   "razem_metoda": "Rb-28S (wydatki JST z sum per JST)",
+   "mnoznik_do_cen_2025": 1.0,
+   "transfery_ceny_2025_mld": 665.63,
+   "razem_z_uslugami_jst_ceny_2025_mld": 707.28,
+   "pkb_mld": 3912.67,
+   "pkb_zrodlo": "Aneks statystyczny IV kw. 2025, Tab. 1 (wstępne)",
+   "razem_proc_pkb": 18.08,
+   "transfery_proc_pkb": 17.01,
+   "razem_proc_cofog10": null,
+   "cofog10_proc_wydatkow_sektora": null,
+   "transfery_metoda_jednolita_mld": 670.86,
+   "transfery_metoda_jednolita_ceny_2025_mld": 670.86,
    "metoda": "pełna z JST (Rb-28S)",
    "budzet_panstwa_mld": 870.14,
    "cofog10_sektor_mld": null,
@@ -7066,15 +7138,17 @@
  ],
  "fakty": [
   {
-   "id": "dlug_vs_800",
-   "teza": "Odsetki i obsługa długu kosztują więcej niż 800+ oraz 13. i 14. emerytura razem.",
+   "id": "odsetki_vs_800",
+   "teza": "Obsługa długu Skarbu Państwa (odsetki i koszty) kosztowała w 2025 r. więcej niż 800+.",
    "liczby": {
-    "obsluga_dlugu_mld": 107.49,
-    "800plus_mld": 62.92,
-    "13_14_mld": 29.75,
-    "suma_800_13_14_mld": 92.67
+    "obsluga_dlugu_SP_mld": 72.83,
+    "obsluga_dlugu_SP_2020_mld": 29.3,
+    "krotnosc_2020_2025": 2.49,
+    "zmiana_realna_proc": 72.9,
+    "800plus_mld": 62.92
    },
-   "zrodlo": "MF sprawozdanie 2025: tab. 011 dział 757; rozdz. 85501; Omówienie s. 162"
+   "zrodlo": "MF sprawozdanie 2025, tab. 011, kolumna Wydatki na obsługę długu Skarbu Państwa (część 79, rozdz. 75701 i 75703); rozdz. 85501",
+   "uwaga": "Dział 757 w 2025 r. (107,49 mld zł) zawiera dodatkowo 34,66 mld zł na obligacje PFR z Tarcz Finansowych (33,675 mld zł wykup kapitału, 0,987 mld zł odsetki; Omówienie MF 2025, s. 159). To nie są koszty obsługi długu SP."
   },
   {
    "id": "kredyt_13",
@@ -7981,28 +8055,45 @@
   "dotacja do FUS (ZUS)": 64.37,
   "dotacje do JST na zadania 852/855": 27.51
  },
+ "wzrost_2020_2025": {
+  "razem_nominalnie_proc": 74.16,
+  "razem_realnie_proc": 21.15,
+  "transfery_jednolita_nominalnie_proc": 73.62,
+  "transfery_jednolita_realnie_proc": 20.77
+ },
  "cofog10": {
+  "2020": {
+   "mld": 422.5,
+   "proc_pkb": 17.9,
+   "proc_wydatkow_sektora": 37.46
+  },
   "2021": {
-   "mld": 454.9,
-   "proc_pkb": 17.3,
-   "proc_wydatkow_sektora": 39.2
+   "mld": 454.87,
+   "proc_pkb": 17.1,
+   "proc_wydatkow_sektora": 39.23
   },
   "2022": {
-   "mld": 517.3,
-   "proc_pkb": 16.9,
-   "proc_wydatkow_sektora": 38.4
+   "mld": 517.27,
+   "proc_pkb": 16.7,
+   "proc_wydatkow_sektora": 38.57
   },
   "2023": {
-   "mld": 575.2,
-   "proc_pkb": 16.9,
-   "proc_wydatkow_sektora": 35.9
+   "mld": 575.25,
+   "proc_pkb": 16.8,
+   "proc_wydatkow_sektora": 35.95
   },
   "2024": {
-   "mld": 668.8,
+   "mld": 668.85,
    "proc_pkb": 18.3,
-   "proc_wydatkow_sektora": 37.0
+   "proc_wydatkow_sektora": 37.02
   },
-  "zrodlo": "MF Informacja kwartalna IV kw. 2022-2025, tab. 5 (COFOG, ESA 2010)"
+  "zrodlo": "MF Informacja kwartalna IV kw. 2025, Aneks statystyczny, Tab. 5 (najnowsza wersja danych; starsze wydania podawały inne % PKB)"
+ },
+ "dzial_757_rozbicie_2025_mld": {
+  "obsluga_dlugu_SP": 72.83,
+  "obligacje_PFR_tarcze_wykup_i_odsetki": 34.66,
+  "razem_dzial_757": 107.49,
+  "zrodlo": "MF 2025 tab. 011 i 012 (część 79 oraz część 20 rozdz. 75704); Omówienie s. 159"
  },
  "kontrole": {
   "dzialy_socjalne_2025_udzial_bp_proc": 32.15

@@ -20,11 +20,21 @@ const naOs = naMieszkanca(d, ROK);
 const bez = d.bez_emerytur_zus_2025;
 const ceny = wzrostCen(d);
 const fakt = (id: string) => d.fakty.find((f: any) => f.id === id);
-const M1realnie = ceny ? ((s25.transfery_mld / s20.transfery_mld) / ceny.czynnik - 1) * 100 : null;
+// wzrost 2020-2025 z pliku (M2, jedna metoda dla obu lat; weryfikacja 11.11.2026, B6)
+const wzrost = d.wzrost_2020_2025 ?? {};
+const M2realnie = wzrost.razem_realnie_proc ?? null;
+const M2nominalnie = wzrost.razem_nominalnie_proc ?? null;
+// lata, w których realne wydatki stały w miejscu (wszystkie przed ostatnimi dwoma rokami)
+const realneM2 = d.suma.filter((x: any) => x.razem_z_uslugami_jst_ceny_2025_mld != null);
+const okresStaly = realneM2.slice(0, -2);
+const stalyMin = Math.min(...okresStaly.map((x: any) => x.razem_z_uslugami_jst_ceny_2025_mld));
+const stalyMax = Math.max(...okresStaly.map((x: any) => x.razem_z_uslugami_jst_ceny_2025_mld));
 const cofogLata = Object.keys(d.cofog10).filter((k) => /^\d{4}$/.test(k)).sort();
 const cofogOst = cofogLata.length ? { rok: cofogLata[cofogLata.length - 1], ...d.cofog10[cofogLata[cofogLata.length - 1]] } : null;
-const zgodnosc = d.suma.filter((s: any) => s.razem_z_uslugami_jst_mld && s.cofog10_sektor_mld).map((s: any) => (s.razem_z_uslugami_jst_mld / s.cofog10_sektor_mld) * 100);
-const dlug = fakt('dlug_vs_800');
+const zgodnosc = d.suma.filter((s: any) => s.razem_proc_cofog10 != null).map((s: any) => s.razem_proc_cofog10);
+// koszt obsługi długu Skarbu Państwa bez obligacji PFR (weryfikacja 11.11.2026, B1-B2)
+const odsetki = fakt('odsetki_vs_800');
+const d757 = d.dzial_757_rozbicie_2025_mld ?? null;
 const rozp = fakt('rozpietosc_powiatow');
 const jst = d.jst_bilans_mld;
 const wlasne = jst['środki własne JST (wydatki - transfery)'];
@@ -56,28 +66,28 @@ const rZero = (-rMin / (rMax - rMin)) * 100;
 const KOL = { navy: '#0b1f3a', nieb: '#15345c', nieb2: '#6f8db5', pom: '#c8102e', siatka: '#dde4ec', tekst: '#4f5a6b' };
 const lata = d.suma.map((s: any) => s.rok);
 const przybl = d.suma.filter((s: any) => /przybli/i.test(s.metoda)).map((s: any) => s.rok);
-const tylkoCeny = ceny ? s20.transfery_mld * ceny.czynnik : null;
 function wykres1() {
-  const W = 760, H = 330, L = 52, R = 170, T = 32, B = 36;
-  const ymax = Math.ceil(Math.max(...d.suma.map((s: any) => Math.max(s.transfery_mld, s.razem_z_uslugami_jst_mld ?? 0))) / 100) * 100;
+  const W = 760, H = 330, L = 52, R = 150, T = 32, B = 36;
+  const m2 = realneM2.map((x: any) => [x.rok, x.razem_z_uslugami_jst_ceny_2025_mld]);
+  const m1 = d.suma.filter((x: any) => x.transfery_ceny_2025_mld != null).map((x: any) => [x.rok, x.transfery_ceny_2025_mld]);
+  const ymax = Math.ceil(Math.max(...m2.map((x: number[]) => x[1]), ...m1.map((x: number[]) => x[1])) / 100) * 100;
   const X = (r: number) => L + ((r - lata[0]) / (lata[lata.length - 1] - lata[0])) * (W - L - R);
   const Y = (v: number) => T + (1 - v / ymax) * (H - T - B);
   const cz: string[] = [];
   for (let v = 0; v <= ymax; v += 100) cz.push(`<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="${KOL.siatka}"/><text x="${L - 8}" y="${Y(v) + 4}" text-anchor="end" font-size="12" fill="${KOL.tekst}">${v}</text>`);
   lata.forEach((r: number) => cz.push(`<text x="${X(r)}" y="${H - B + 22}" text-anchor="middle" font-size="12" fill="${KOL.tekst}">${r}</text>`));
-  cz.push(`<text x="${L - 8}" y="${T - 16}" text-anchor="end" font-size="11" fill="${KOL.tekst}">mld zł</text>`);
+  cz.push(`<text x="${L - 30}" y="${T - 16}" text-anchor="start" font-size="11" fill="${KOL.tekst}">mld zł, ceny ${ROK}</text>`);
   const linia = (pkt: number[][], k: string, przer: boolean, gr = 3) => `<polyline points="${pkt.map(([r, v]) => `${X(r)},${Y(v)}`).join(' ')}" fill="none" stroke="${k}" stroke-width="${gr}" ${przer ? 'stroke-dasharray="6 6"' : ''} stroke-linejoin="round"/>`;
   const kropki = (pkt: number[][], k: string) => pkt.map(([r, v]) => `<circle cx="${X(r)}" cy="${Y(v)}" r="4" fill="${k}" stroke="#fff" stroke-width="1.5"/>`).join('');
-  const m1 = d.suma.map((s: any) => [s.rok, s.transfery_mld]);
   const ostP = Math.max(...przybl);
-  const m2 = d.suma.filter((s: any) => s.razem_z_uslugami_jst_mld != null).map((s: any) => [s.rok, s.razem_z_uslugami_jst_mld]);
-  if (tylkoCeny) cz.push(linia([[lata[0], s20.transfery_mld], [ROK, tylkoCeny]], KOL.pom, true, 2), `<circle cx="${X(ROK)}" cy="${Y(tylkoCeny)}" r="4" fill="#fff" stroke="${KOL.pom}" stroke-width="2"/>`);
+  // poziom z 2020 r.: gdyby wydatki rosły tylko razem z cenami, linia byłaby pozioma
+  cz.push(linia([[lata[0], m2[0][1]], [ROK, m2[0][1]]], KOL.pom, true, 1.5));
   cz.push(linia(m1.filter(([r]: number[]) => r <= ostP + 1), KOL.nieb2, true), linia(m1.filter(([r]: number[]) => r > ostP), KOL.nieb2, false), kropki(m1, KOL.nieb2));
   cz.push(linia(m2, KOL.navy, false, 3.5), kropki(m2, KOL.navy));
   const podp = [
     { y: Y(m2[m2.length - 1][1]), t: `M2: ${liczba(m2[m2.length - 1][1], 1)}`, k: KOL.navy },
     { y: Y(m1[m1.length - 1][1]), t: `M1: ${liczba(m1[m1.length - 1][1], 1)}`, k: KOL.nieb2 },
-    ...(tylkoCeny ? [{ y: Y(tylkoCeny), t: `jak ceny: ${liczba(tylkoCeny, 1)}`, k: KOL.pom }] : []),
+    { y: Y(m2[0][1]), t: `poziom ${lata[0]}: ${liczba(m2[0][1], 1)}`, k: KOL.pom },
   ].sort((a, b) => a.y - b.y);
   podp.forEach((p, i) => { if (i && p.y - podp[i - 1].y < 16) p.y = podp[i - 1].y + 16; });
   podp.forEach((p) => cz.push(`<text x="${W - R + 10}" y="${p.y + 4}" font-size="12.5" font-weight="700" fill="${p.k}">${esc(p.t)}</text>`));
@@ -95,7 +105,8 @@ const resztaWiersz: any = {
   '2020_mld': reszta.reduce((a: number, x: any) => a + x['2020_mld'], 0), '2025_mld': reszta.reduce((a: number, x: any) => a + x['2025_mld'], 0),
   udzial_2025_proc: reszta.reduce((a: number, x: any) => a + x.udzial_2025_proc, 0), zmiana_realna_2020_2025_proc: null,
 };
-if (ceny && resztaWiersz['2020_mld'] > 0) resztaWiersz.zmiana_realna_2020_2025_proc = (resztaWiersz['2025_mld'] / resztaWiersz['2020_mld'] / ceny.czynnik - 1) * 100;
+const mnoznik2020 = s20.mnoznik_do_cen_2025 ?? ceny?.czynnik;
+if (mnoznik2020 && resztaWiersz['2020_mld'] > 0) resztaWiersz.zmiana_realna_2020_2025_proc = (resztaWiersz['2025_mld'] / resztaWiersz['2020_mld'] / mnoznik2020 - 1) * 100;
 const dz = (kod: string) => d.dzialy_budzetu.find((x: any) => x.kod === kod);
 const udzSocjal = d.kontrole.dzialy_socjalne_2025_udzial_bp_proc;
 
@@ -169,7 +180,7 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
   <div class="wrap">
     <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span aria-current="page">Liczby</span></nav>
     <h1>Ile kosztuje socjal w Polsce</h1>
-    <p class="lead">{tp(`W ${ROK} r. na świadczenia i usługi socjalne wydano co najmniej ${mld(s25.razem_z_uslugami_jst_mld)}. W latach ${lata[0]}-${ROK} transfery pieniężne do ludzi wzrosły realnie o ${proc(M1realnie)}. Część wypłat (13. i 14. emerytura w latach 2020-2023) finansowano z funduszu, który zadłużał się pożyczkami.`)}</p>
+    <p class="lead">{tp(`W ${ROK} r. na świadczenia i usługi socjalne wydano co najmniej ${mld(s25.razem_z_uslugami_jst_mld)}. W latach ${lata[0]}-${ROK} wydatki te wzrosły realnie o ${proc(M2realnie)}. Część wypłat (13. i 14. emerytura w latach 2020-2023) finansowano z funduszu, który zadłużał się pożyczkami.`)}</p>
     <p class="legal-status lz-stan"><span>{tp(`Wykonanie budżetu i sprawozdania samorządów za ${lata[0]}-${ROK}. Dane z ${d.meta.wygenerowano.split('-').reverse().join('.')}.`)} <a class="link" href="#dane">Skąd liczby</a></span></p>
   </div>
 </div>
@@ -186,7 +197,7 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
     <p class="amount-date lz-zakres-przel">Przełącznik zmienia tylko dwie liczby w tym panelu. Pozostałe wskaźniki, tabele i wykresy dotyczą całej sumy, z emeryturami ZUS.</p>
   </div>
   <div class="lz-statystyki">
-    <div class="lz-stat"><span class="type">Realny wzrost transferów</span><strong>{proc(M1realnie, 1, true)}</strong><span>{lata[0]}-{ROK}, w cenach {ROK}</span></div>
+    <div class="lz-stat"><span class="type">Realny wzrost wydatków</span><strong>{proc(M2realnie, 1, true)}</strong><span>{lata[0]}-{ROK}, w cenach {ROK}; nominalnie {proc(M2nominalnie, 1, true)}</span></div>
     {cofogOst && <div class="lz-stat"><span class="type">Ochrona socjalna</span><strong>{proc(cofogOst.proc_pkb)} PKB</strong><span>{proc(cofogOst.proc_wydatkow_sektora, 0)} wydatków publicznych, {cofogOst.rok}</span></div>}
     <div class="lz-stat"><span class="type">Tempo wydatków</span><strong>{liczba(d.licznik_2025.zl_na_sekunde)} zł</strong><span>na sekundę; od otwarcia strony: <span id="licznik" data-tempo={d.licznik_2025.zl_na_sekunde}>0</span> zł</span></div>
   </div>
@@ -204,50 +215,49 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
         <h2 id="h-skrot">Cztery najważniejsze ustalenia</h2>
         <div class="lz-wnioski">
           <div class="principle"><span class="principle-num">01</span><div><h3>{tp(`Co najmniej ${mld(s25.razem_z_uslugami_jst_mld)} w ${ROK} r., czyli ${zl(naOs)} na mieszkańca.`)}</h3><p>{tp(`Bez emerytur i rent ZUS: ${mld(bez.mld)} (${zl(bez.zl_na_mieszkanca)} na mieszkańca).`)}</p></div></div>
-          <div class="principle"><span class="principle-num">02</span><div><h3>{tp(`Transfery wzrosły realnie o ${proc(M1realnie)} w pięć lat.`)}</h3><p>{tp(`Wśród największych programów najszybciej rosły wydatki w pozycjach: ${duze.map((p: any) => `${/^\d/.test(p.krotka) ? p.krotka : p.krotka.charAt(0).toLocaleLowerCase('pl') + p.krotka.slice(1)} (${proc(p.wzrost_realny_proc, 0, true)})`).join(', ')}. To wydatki ogółem, nie kwota świadczenia na osobę.`)}</p></div></div>
-          <div class="principle"><span class="principle-num">03</span><div><h3>{cofogOst && tp(`Ochrona socjalna to ${proc(cofogOst.proc_wydatkow_sektora, 0)} wszystkich wydatków publicznych i ${proc(cofogOst.proc_pkb)} PKB (COFOG, ${cofogOst.rok}).`)}</h3><p>{dlug && tp(`W budżecie państwa obsługa długu (${mld(dlug.liczby.obsluga_dlugu_mld)}) kosztuje więcej niż 800+ i 13. i 14. emerytura razem (${mld(dlug.liczby.suma_800_13_14_mld)}).`)}</p></div></div>
+          <div class="principle"><span class="principle-num">02</span><div><h3>{tp(`Wydatki wzrosły realnie o ${proc(M2realnie)} w pięć lat, ale cały wzrost przypadł na lata ${okresStaly.length ? okresStaly[okresStaly.length - 1].rok + 1 : ''}-${ROK}.`)}</h3><p>{tp(`Wśród największych programów najszybciej rosły wydatki w pozycjach: ${duze.map((p: any) => `${/^\d/.test(p.krotka) ? p.krotka : p.krotka.charAt(0).toLocaleLowerCase('pl') + p.krotka.slice(1)} (${proc(p.wzrost_realny_proc, 0, true)})`).join(', ')}. To wydatki ogółem, nie kwota świadczenia na osobę.`)}</p></div></div>
+          <div class="principle"><span class="principle-num">03</span><div><h3>{cofogOst && tp(`Ochrona socjalna to ${proc(cofogOst.proc_wydatkow_sektora, 0)} wszystkich wydatków publicznych i ${proc(cofogOst.proc_pkb)} PKB (COFOG, ${cofogOst.rok}).`)}</h3><p>{odsetki && tp(`W budżecie państwa obsługa długu Skarbu Państwa kosztowała w ${ROK} r. ${mld(odsetki.liczby.obsluga_dlugu_SP_mld)}, więcej niż 800+ (${mld(odsetki.liczby['800plus_mld'])}).`)}</p></div></div>
           <div class="principle"><span class="principle-num">04</span><div><h3>{rozp && tp(`W powiecie o najwyższych wydatkach samorządy wydają na socjal ${liczba(rozp.liczby.max_zl_os / rozp.liczby.min_zl_os, 1)} raza więcej na mieszkańca niż w powiecie o najniższych.`)}</h3><p>{tp(`Własne pieniądze samorządów na socjal wzrosły w latach ${lataJst[0]}-${lataJst[lataJst.length - 1]} z ${mld(wlasne[lataJst[0]])} do ${mld(wlasne[lataJst[lataJst.length - 1]])}.`)}</p></div></div>
         </div>
 
         <aside class="lz-ramka">
-          <p><strong>O danych:</strong> {tp(`Suma jest dolną granicą: nie obejmuje NFZ, funduszy BGK ani ulg podatkowych. Pokazujemy dwie liczby, z emeryturami i rentami ZUS i bez nich, bo emerytury są świadczeniem składkowym. Nasza suma to ${liczba(Math.min(...zgodnosc))}-${liczba(Math.max(...zgodnosc))} % wydatków na ochronę socjalną według MF (COFOG 10).`)}</p>
+          <p><strong>O danych:</strong> {tp(`Suma jest dolną granicą: nie obejmuje NFZ, funduszy BGK ani ulg podatkowych. Pokazujemy dwie liczby, z emeryturami i rentami ZUS i bez nich, bo emerytury są świadczeniem składkowym. Nasza suma to ${liczba(Math.min(...zgodnosc), 1)}-${liczba(Math.max(...zgodnosc), 1)} % wydatków na ochronę socjalną według MF (COFOG 10).`)}</p>
         </aside>
       </section>
 
       <section id="czas" class="detail-section lz-sek" aria-labelledby="h-czas">
         <p class="kicker">Całość w czasie</p>
         <h2 id="h-czas">Jak szybko rosną wydatki?</h2>
-        <p class="lz-akapit">{tp(`Transfery pieniężne do ludzi (M1) wzrosły z ${mld(s20.transfery_mld)} w ${lata[0]} r. do ${mld(s25.transfery_mld)} w ${ROK} r. Gdyby rosły tylko razem z cenami, wyniosłyby ${mld(tylkoCeny)}. Wydatki razem z usługami samorządów (M2) liczymy od 2022 r.`)}</p>
+        <p class="lz-akapit">{tp(`Wydatki socjalne razem z usługami samorządów (M2) wzrosły z ${mld(s20.razem_z_uslugami_jst_mld)} w ${lata[0]} r. do ${mld(s25.razem_z_uslugami_jst_mld)} w ${ROK} r., czyli nominalnie o ${proc(M2nominalnie)}, a po uwzględnieniu cen o ${proc(M2realnie)}. W latach ${okresStaly[0]?.rok}-${okresStaly[okresStaly.length - 1]?.rok} realne wydatki stały w miejscu (${liczba(stalyMin, 0)}-${liczba(stalyMax, 0)} mld zł w cenach ${ROK}). Cały realny wzrost przypadł na lata ${okresStaly[okresStaly.length - 1]?.rok + 1}-${ROK}.`)}</p>
         <figure class="lz-obiekt">
-          <figcaption class="lz-tytul">Wykres 1. Wydatki socjalne {lata[0]}-{ROK}, mld zł, ceny bieżące</figcaption>
+          <figcaption class="lz-tytul">Wykres 1. Wydatki socjalne {lata[0]}-{ROK}, mld zł w cenach {ROK}</figcaption>
           <ul class="lz-legenda" aria-hidden="true">
             <li><i style={`background:${KOL.navy}`}></i>M2: transfery i usługi samorządów</li>
             <li><i style={`background:${KOL.nieb2}`}></i>M1: transfery pieniężne</li>
-            <li><i class="przer" style={`border-color:${KOL.pom}`}></i>M1 z {lata[0]} r., gdyby rosło jak ceny</li>
+            <li><i class="przer" style={`border-color:${KOL.pom}`}></i>Poziom M2 z {lata[0]} r. (wzrost tylko razem z cenami)</li>
           </ul>
           <div class="chart-scroll lz-przewin" tabindex="0" role="group" aria-label="Wykres 1, przewiń w poziomie na małym ekranie">
-            <svg viewBox={`0 0 ${w1.W} ${w1.H}`} role="img" aria-label="Wykres 1: wydatki socjalne w mld zł; wartości w Tabeli 1." set:html={w1.svg} />
+            <svg viewBox={`0 0 ${w1.W} ${w1.H}`} role="img" aria-label={`Wykres 1: wydatki socjalne w mld zł w cenach ${ROK}; wartości w Tabeli 1.`} set:html={w1.svg} />
           </div>
-          <p class="lz-zrodlo">{tp(`Lata ${przybl.join(' i ')} linią przerywaną: przybliżenie (dotacje budżetu zamiast wydatków samorządów). Źródło: ${ZR.mf} ${lata[0]}-${ROK}; ${ZR.rb} 2022-${ROK}; ${ZR.gus}; obliczenia własne.`)}</p>
+          <p class="lz-zrodlo">{tp(`M1 w latach ${przybl.join(' i ')} linią przerywaną: przybliżenie (dotacje budżetu zamiast wydatków samorządów). M2 dla wszystkich lat z wydatków samorządów. Źródło: ${ZR.mf} ${lata[0]}-${ROK}; ${ZR.rb} 2022-${ROK}; ${ZR.gus}; obliczenia własne.`)}</p>
         </figure>
         <figure class="lz-obiekt">
-          <figcaption class="lz-tytul">Tabela 1. Wydatki socjalne i ochrona socjalna według MF</figcaption>
-          <div class="table-wrap lz-tabela" tabindex="0"><table>
-            <thead><tr><th scope="col">Rok</th><th scope="col">M1, mld zł</th><th scope="col">M1 w cenach {ROK}</th><th scope="col">M2, mld zł</th><th scope="col">COFOG 10, mld zł</th><th scope="col">% PKB</th><th scope="col">% wydatków sektora</th><th scope="col">Metoda</th></tr></thead>
+          <figcaption class="lz-tytul">Tabela 1. Wydatki socjalne i ochrona socjalna według MF, {lata[0]}-{ROK}</figcaption>
+          <div class="table-wrap lz-tabela lz-przyklej" tabindex="0"><table>
+            <thead><tr><th scope="col">Rok</th><th scope="col">M1, mld zł</th><th scope="col">M2, mld zł</th><th scope="col">M2 w cenach {ROK}</th><th scope="col">M2, % PKB</th><th scope="col">COFOG 10, mld zł</th><th scope="col">COFOG 10, % PKB</th><th scope="col">% wydatków sektora</th></tr></thead>
             <tbody>{d.suma.map((s: any) => {
               const c = d.cofog10[String(s.rok)];
-              const real = ceny && s.rok === lata[0] ? s.transfery_mld * ceny.czynnik : s.rok === ROK ? s.transfery_mld : null;
-              return <tr><th scope="row">{s.rok}</th><td>{liczba(s.transfery_mld, 1)}</td><td>{liczba(real, 1)}</td><td>{liczba(s.razem_z_uslugami_jst_mld, 1)}</td><td>{liczba(c?.mld, 1)}</td><td>{liczba(c?.proc_pkb, 1)}</td><td>{liczba(c?.proc_wydatkow_sektora, 1)}</td><td class="tekst">{tp(s.metoda)}</td></tr>;
+              return <tr><th scope="row">{s.rok}{przybl.includes(s.rok) && <sup>*</sup>}</th><td>{liczba(s.transfery_mld, 1)}</td><td>{liczba(s.razem_z_uslugami_jst_mld, 1)}</td><td>{liczba(s.razem_z_uslugami_jst_ceny_2025_mld, 1)}</td><td>{liczba(s.razem_proc_pkb, 1)}</td><td>{liczba(c?.mld ?? s.cofog10_sektor_mld, 1)}</td><td>{liczba(c?.proc_pkb ?? s.cofog10_proc_pkb, 1)}</td><td>{liczba(c?.proc_wydatkow_sektora ?? s.cofog10_proc_wydatkow_sektora, 1)}</td></tr>;
             })}</tbody>
           </table></div>
-          <p class="lz-zrodlo">{tp(`„M1 w cenach ${ROK}” tylko dla ${lata[0]} i ${ROK}: plik danych podaje skumulowany wzrost cen ${lata[0]}-${ROK} (x${liczba(ceny?.czynnik, 4)}), bez inflacji dla lat pośrednich. „-” oznacza brak danych. Źródło: ${ZR.mf}; ${ZR.rb}; ${ZR.cofog}; ${ZR.gus}; obliczenia własne.`)}</p>
+          <p class="lz-zrodlo">{tp(`* M1 w latach ${przybl.join(' i ')}: przybliżenie (dotacje budżetu do samorządów zamiast ich wydatków). M2: wydatki samorządów w działach 852, 853 i 855; w latach ${przybl.join(' i ')} z Informacji MF o wykonaniu budżetów JST, od 2022 r. ze sprawozdań Rb-28S. % PKB w latach ${przybl.join(' i ')} liczony z PKB z wydań z 2022 i 2023 r., a COFOG z nowszej wersji PKB, stąd różnica ok. 0,5 pkt proc. COFOG 10 za ${ROK} r. MF jeszcze nie opublikował („-”). Źródło: ${ZR.mf}; ${ZR.rb}; ${ZR.cofog}; ${ZR.gus}; obliczenia własne.`)}</p>
         </figure>
       </section>
 
       <section id="panstwo" class="detail-section lz-sek" aria-labelledby="h-panstwo">
         <p class="kicker">Na tle państwa</p>
         <h2 id="h-panstwo">Jaką część państwa to stanowi?</h2>
-        <p class="lz-akapit">{cofogOst && tp(`W całym sektorze publicznym ochrona socjalna to ${proc(cofogOst.proc_wydatkow_sektora)} wszystkich wydatków (${cofogOst.rok}, COFOG). W budżecie państwa działy socjalne (753, 852, 853, 854, 855) to ${proc(udzSocjal)} wydatków w ${ROK} r. Realnie od ${lata[0]} r. najszybciej rosły: obsługa długu (${proc(dz('757')?.zmiana_realna_2020_2025_proc, 0, true)}), obrona (${proc(dz('752')?.zmiana_realna_2020_2025_proc, 0, true)}), ubezpieczenia społeczne (${proc(dz('753')?.zmiana_realna_2020_2025_proc, 0, true)}) i rodzina (${proc(dz('855')?.zmiana_realna_2020_2025_proc, 0, true)}).`)}</p>
+        <p class="lz-akapit">{cofogOst && tp(`W całym sektorze publicznym ochrona socjalna to ${proc(cofogOst.proc_wydatkow_sektora)} wszystkich wydatków (${cofogOst.rok}, COFOG). W budżecie państwa działy socjalne (753, 852, 853, 854, 855) to ${proc(udzSocjal)} wydatków w ${ROK} r. Realnie od ${lata[0]} r. najszybciej rosły: obsługa długu Skarbu Państwa (${proc(odsetki?.liczby.zmiana_realna_proc, 0, true)}, ${liczba(odsetki?.liczby.krotnosc_2020_2025, 1)} raza nominalnie), obrona (${proc(dz('752')?.zmiana_realna_2020_2025_proc, 0, true)}), ubezpieczenia społeczne (${proc(dz('753')?.zmiana_realna_2020_2025_proc, 0, true)}) i rodzina (${proc(dz('855')?.zmiana_realna_2020_2025_proc, 0, true)}).`)}</p>
         <figure class="lz-obiekt">
           <figcaption class="lz-tytul">Tabela 2. Największe działy budżetu państwa, {lata[0]} i {ROK}</figcaption>
           <div class="table-wrap lz-tabela" tabindex="0"><table>
@@ -259,16 +269,15 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
               </tr>)}
             </tbody>
           </table></div>
-          <p class="lz-zrodlo">{tp(`Wyróżnione: działy socjalne. Zmiana realna w cenach ${ROK}. Źródło: ${ZR.mf} ${lata[0]} i ${ROK}, tab. 011; ${ZR.gus}; „pozostałe”: obliczenia własne.`)}</p>
+          <p class="lz-zrodlo">{tp(`Wyróżnione: działy socjalne. Zmiana realna w cenach ${ROK}.${d757 ? ` Dział 757 w ${ROK} r. obejmuje ${mld(d757.obsluga_dlugu_SP)} kosztów obsługi długu Skarbu Państwa i ${mld(d757.obligacje_PFR_tarcze_wykup_i_odsetki)} na obligacje PFR z tarcz finansowych (wykup i odsetki); zmiana realna działu zawiera te obligacje.` : ''} Źródło: ${ZR.mf} ${lata[0]} i ${ROK}, tab. 011; ${ZR.gus}; „pozostałe”: obliczenia własne.`)}</p>
         </figure>
-        {dlug && <figure class="lz-obiekt">
-          <figcaption class="lz-tytul">{tp('Wykres 2. Obsługa długu kosztuje więcej niż 800+ i 13. i 14. emerytura razem')}</figcaption>
+        {odsetki && <figure class="lz-obiekt">
+          <figcaption class="lz-tytul">{tp(`Wykres 2. Obsługa długu Skarbu Państwa kosztowała w ${ROK} r. więcej niż 800+`)}</figcaption>
           <div class="lz-slupki">
-            <div class="lz-s"><span class="lz-s-n">Obsługa długu publicznego</span><span class="lz-s-tor"><i style={`width:100%;background:${KOL.pom}`}></i></span><span class="lz-s-v">{mld(dlug.liczby.obsluga_dlugu_mld)}</span></div>
-            <div class="lz-s"><span class="lz-s-n">{tp('800+ oraz 13. i 14. emerytura')}</span><span class="lz-s-tor"><i style={`width:${(dlug.liczby['800plus_mld'] / dlug.liczby.obsluga_dlugu_mld) * 100}%;background:${KOL.nieb}`}></i><i style={`width:${(dlug.liczby['13_14_mld'] / dlug.liczby.obsluga_dlugu_mld) * 100}%;background:#9db4d6`}></i></span><span class="lz-s-v">{mld(dlug.liczby.suma_800_13_14_mld)}</span></div>
+            <div class="lz-s"><span class="lz-s-n">Obsługa długu Skarbu Państwa</span><span class="lz-s-tor"><i style={`width:100%;background:${KOL.pom}`}></i></span><span class="lz-s-v">{mld(odsetki.liczby.obsluga_dlugu_SP_mld)}</span></div>
+            <div class="lz-s"><span class="lz-s-n">800+ (rozdział 85501)</span><span class="lz-s-tor"><i style={`width:${(odsetki.liczby['800plus_mld'] / odsetki.liczby.obsluga_dlugu_SP_mld) * 100}%;background:${KOL.nieb}`}></i></span><span class="lz-s-v">{mld(odsetki.liczby['800plus_mld'])}</span></div>
           </div>
-          <ul class="lz-legenda lz-legenda-pod"><li><i style={`background:${KOL.nieb}`}></i>800+: {mld(dlug.liczby['800plus_mld'])}</li><li><i style="background:#9db4d6"></i>{tp('13. i 14. emerytura')}: {mld(dlug.liczby['13_14_mld'])}</li></ul>
-          <p class="lz-zrodlo">{tp(`Budżet państwa ${ROK}. Źródło: ${dlug.zrodlo}.`)}</p>
+          <p class="lz-zrodlo">{tp(`Budżet państwa ${ROK}. Obsługa długu bez ${d757 ? mld(d757.obligacje_PFR_tarcze_wykup_i_odsetki) : 'wydatków'} na obligacje PFR z tarcz finansowych, które MF ujmuje w dziale 757, ale nie są kosztem obsługi długu Skarbu Państwa. Od ${lata[0]} r. koszt wzrósł ${liczba(odsetki.liczby.krotnosc_2020_2025, 1)} raza (realnie ${proc(odsetki.liczby.zmiana_realna_proc, 0, true)}). Źródło: ${odsetki.zrodlo}.`)}</p>
         </figure>}
       </section>
 
@@ -283,7 +292,7 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
               <thead><tr><th scope="col">Płatnik</th>{lataP.map((r) => <th scope="col">{r}</th>)}<th scope="col">Udział {ROK}</th></tr></thead>
               <tbody>
                 {platnicy.map(([n, v]) => <tr><th scope="row">{tp(nazwaPlatnika(n))}</th>{lataP.map((r) => <td>{liczba(v[r], 1)}</td>)}<td>{proc(d.udzialy_platnikow_2025_proc[n])}</td></tr>)}
-                <tr class="lz-odn"><th scope="row">Razem (M2)</th>{lataP.map((r) => <td>{liczba(sumaP(r), 1)}</td>)}<td>{proc(sumaUdzialow)}</td></tr>
+                <tr class="lz-odn"><th scope="row">Razem (M2)</th>{lataP.map((r) => <td>{liczba(sumaRok(d, Number(r))?.razem_z_uslugami_jst_mld ?? sumaP(r), 1)}</td>)}<td>{proc(sumaUdzialow)}</td></tr>
               </tbody>
             </table></div>
             <p class="lz-zrodlo">{tp(`Źródło: ${ZR.mf} 2022-${ROK}, tab. 040; ${ZR.rb}.`)}</p>
@@ -307,14 +316,14 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
           <div class="lz-slupki">
             {wg2025.map((p: any) => <div class="lz-s"><span class="lz-s-n">{tp(p.krotka)}</span><span class="lz-s-tor"><i style={`width:${((p.mld[String(ROK)] ?? 0) / maxProg) * 100}%;background:${KOL.nieb}`}></i></span><span class="lz-s-v">{liczba(p.mld[String(ROK)], 1)}</span></div>)}
           </div>
-          <p class="lz-zrodlo">{tp(`Wspólna skala dla wszystkich programów. Źródło: ${ZR.mf} ${ROK}.`)}</p>
+          <p class="lz-zrodlo">{tp(`Wspólna skala dla wszystkich programów. To lista programów, a nie rozkład sumy ${mld(s25.razem_z_uslugami_jst_mld)}: świadczenia rodzinne (rozdział 85502) i pomoc społeczna (dział 852) to pieniądze budżetu wypłacane przez samorządy, więc w sumie są w warstwie samorządów (Tabela 3). Źródło: ${ZR.mf} ${ROK}.`)}</p>
         </figure>
         <figure class="lz-obiekt">
           <figcaption class="lz-tytul">Tabela 4. Wydatki na programy {lataProg[0]}-{ROK}, mld zł</figcaption>
           <div class="table-wrap lz-tabela lz-przyklej" tabindex="0"><table>
             <thead><tr><th scope="col">Program</th>{lataProg.map((r) => <th scope="col">{r}</th>)}<th scope="col">Zmiana nominalna</th><th scope="col">Zmiana realna</th><th scope="col">Karta</th></tr></thead>
             <tbody>{wg2025.map((p: any) => <tr>
-              <th scope="row">{tp(p.krotka)}{p.kod && /^\d/.test(p.kod) && <span class="lz-kod2">{p.kod}</span>}</th>
+              <th scope="row">{tp(p.krotka)}{p.kod && /^\d/.test(p.kod) && <>{' '}<span class="lz-kod2">rozdział {p.kod}</span></>}</th>
               {lataProg.map((r) => <td>{p.mld[r] == null ? '-' : p.mld[r] === 0 ? <span class="lz-zero-w">0,00</span> : liczba(p.mld[r], 2)}</td>)}
               <td>{proc(p.wzrost_nominalny_proc, 1, true)}</td>
               <td class:list={[p.wzrost_realny_proc == null ? '' : p.wzrost_realny_proc >= 0 ? 'plus' : 'minus']}>{proc(p.wzrost_realny_proc, 1, true)}</td>
@@ -724,7 +733,7 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
   .lz-tabela thead th[aria-sort='descending'] button::after { content: ' ↓'; white-space: pre; }
   .lz-tabela thead th[aria-sort='ascending'] button::after { content: ' ↑'; white-space: pre; }
   .lz-kod { display: inline-block; min-width: 52px; color: var(--muted); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
-  .lz-kod2 { margin-left: 6px; color: var(--muted); font-size: var(--fs-xs); }
+  .lz-kod2 { color: var(--muted); font-size: var(--fs-xs); }
   .lz-woj { color: var(--muted); font-size: var(--fs-xs); }
   .lz-przyklej tbody th, .lz-przyklej thead th:first-child { position: sticky; left: 0; z-index: 1; }
   .lz-przyklej tbody th { background: var(--surface); }
