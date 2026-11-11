@@ -2,17 +2,24 @@
 // Cytat przepisu z oznaczeniem aktu i linkiem do źródła. Treść cytatu bez zmian.
 // Stan prawny strony jest w nagłówku karty; przy cytacie data tylko, gdy inna (np. tekst ogłoszony aktu wykonawczego).
 import Ikona from './Ikona.astro';
-import { dataPL, krotkiTytul, typo } from '../lib/format.mjs';
-import { aktPoEli } from '../lib/model.mjs';
+import { dataPL, eliSlug, krotkiTytul, posortujPliki, typo } from '../lib/format.mjs';
+import { aktPoEli, maStroneAktu } from '../lib/model.mjs';
 interface Props { dowod: { eli: string; przepis: string; cytat: string; url: string; data_stanu: string | null }; id?: string; stanStrony?: string | null }
 const { dowod, id, stanStrony = null } = Astro.props;
 const akt = aktPoEli(dowod.eli);
+// „Tekst aktu” = czytelny dokument: PDF tekstu ujednoliconego albo jednolitego (cytaty pochodzą z obecnego brzmienia);
+// bez nich strona aktu w witrynie (pliki, wersje, link do źródła). Nie metadane JSON z API.
+const pdf = akt ? posortujPliki(akt.pliki).find((p: any) => (p.rodzaj === 'U' || p.rodzaj === 'TJ') && /\.pdf$/i.test(p.url_zrodla ?? '')) : null;
+// bez tekstu ujednoliconego: strona aktu (jeśli ma korzyści), potem PDF ogłoszony (np. obwieszczenia), na końcu adres z dowodu
+const ogloszony = akt ? posortujPliki(akt.pliki).find((p: any) => /\.pdf$/i.test(p.url_zrodla ?? '')) : null;
+const urlTekstu = pdf?.url_zrodla ?? (maStroneAktu(dowod.eli) ? `/akt/${eliSlug(dowod.eli)}/` : ogloszony?.url_zrodla ?? dowod.url);
+const zewnetrzny = /^https?:/.test(urlTekstu);
 const stan = stanStrony && dowod.data_stanu && dowod.data_stanu !== stanStrony ? dataPL(dowod.data_stanu) : null;
 ---
 <figure class="quote" id={id}>
   <figcaption class="proof-title">
     <span>{typo(dowod.przepis)} · {akt ? krotkiTytul(akt.tytul, dowod.eli) : dowod.eli}</span>
-    <a href={dowod.url} target="_blank" rel="noopener">Tekst aktu<Ikona n="zewn" /><span class="sr-only"> ({dowod.eli}, otwiera się w nowej karcie)</span></a>
+    <a href={urlTekstu} target={zewnetrzny ? '_blank' : undefined} rel={zewnetrzny ? 'noopener' : undefined}>Tekst aktu{(pdf || /\.pdf$/i.test(urlTekstu)) && ' (PDF)'}{zewnetrzny && <Ikona n="zewn" />}<span class="sr-only"> ({dowod.eli}{zewnetrzny && ', otwiera się w nowej karcie'})</span></a>
   </figcaption>
   <blockquote lang="pl">{typo(dowod.cytat)}</blockquote>
   {stan && <p class="proof-date">Stan tekstu: {stan}.</p>}

@@ -125,9 +125,9 @@ export const KOLEJNOSC_TERMINOW = ['okres_kwoty', 'termin_wniosku', 'granica_prz
 
 export const OPIS_TERMINU = {
   termin_dokumentu: 'Termin dostarczenia dokumentów wskazanych w przepisie.',
-  termin_organu: 'Termin czynności organu wskazany w danych źródłowych.',
-  termin_inny: 'Pozostały termin: znaczenie wynika z cytowanego przepisu.',
-  wejscie_w_zycie: 'Data wejścia w życie wskazana w danych źródłowych.',
+  termin_organu: 'Termin, w którym organ ma coś zrobić, np. wydać decyzję albo wypłacić świadczenie.',
+  termin_inny: 'Inny termin z przepisu; jego znaczenie wyjaśnia cytat na karcie.',
+  wejscie_w_zycie: 'Dzień, od którego przepis obowiązuje.',
   okres_kwoty: 'Od kiedy do kiedy obowiązuje dana kwota.',
   termin_wniosku: 'Do kiedy złożyć wniosek i co się dzieje po terminie.',
   granica_przepisu: 'Od kiedy albo do kiedy obowiązuje sam przepis lub jego brzmienie.',
@@ -139,6 +139,7 @@ export const OPIS_TERMINU = {
 export const wielka = (s) => (s ? s.charAt(0).toLocaleUpperCase('pl') + s.slice(1) : s);
 /** „Ustawa z dnia 12 marca 2004 r. o pomocy społecznej” → „O pomocy społecznej”; kodeksy zostają z nazwą. */
 export function krotkiTytul(tytul, eli) {
+  if (/^Akt (?:prawny\s|ogłoszony w )/.test(String(tytul ?? ''))) return eliDziennik(eli);
   const t = String(tytul ?? '').replace(/^\s*(?:ustawa|rozporządzenie|obwieszczenie)\s+z\s+dnia\s+\d{1,2}\s+\S+\s+\d{4}\s*r\.\s*[–-]?\s*/i, '').replace(/\.$/, '').trim();
   return t ? wielka(t) : eli;
 }

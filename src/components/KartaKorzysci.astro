@@ -1,16 +1,16 @@
 ---
 import Ikona from './Ikona.astro';
 import Status from './Status.astro';
-import { czyKwotaWyliczona, etykieta, kwotaPrezentowana, limitPrezentowany } from '../lib/model.mjs';
+import { czyKwotaWyliczona, etykieta, kwotaArchiwalna, kwotaPrezentowana, limitPrezentowany } from '../lib/model.mjs';
 import { kwotaPL, typo, etykietaWariantu, opisUprawnionych } from '../lib/format.mjs';
 interface Props { k: any; naglowek?: 'h2' | 'h3' }
 const { k, naglowek = 'h3' } = Astro.props;
 const H = naglowek;
-const a = kwotaPrezentowana(k);
+const a = kwotaPrezentowana(k) ?? kwotaArchiwalna(k)?.wpis ?? null;
 const limit = limitPrezentowany(k);
 const niepieniezne = k.forma === 'niepieniezne' && !a && !limit;
 const indywidualna = k.nieustalone?.find((n: any) => n.pole === 'ile.kwota_indywidualna');
-const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.status === 'zamknieta' ? 'Kwota (archiwalna)'
+const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.status === 'zamknieta' ? 'Ostatnia kwota (archiwalna)'
   : limit ? (limit._rodzaj === 'maksimum' ? 'Kwota najwyżej' : 'Kwota co najmniej') : niepieniezne ? 'Forma pomocy' : 'Aktualna kwota';
 ---
 <article class="card" data-id={k.id}>
@@ -19,6 +19,7 @@ const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.stat
       <span class="type">{etykieta('rodzaj_korzysci', k.rodzaj_korzysci)}{k.forma && k.forma !== 'nieustalona' && <> · {k.forma === 'pieniezne' ? 'pieniężne' : 'niepieniężne'}</>}</span>
       <Status status={k.status} />
       {k.flagi?.some((f: string) => f.startsWith('Analiza częściowa')) && <span class="tag">Analiza częściowa</span>}
+      {k.flagi?.some((f: string) => f.startsWith('Kandydat automatyczny')) && <span class="tag tag-kandydat" title="Pozycja znaleziona automatycznie w ustawie, jeszcze niesprawdzona ręcznie.">Do weryfikacji</span>}
     </div>
     <H><a href={`/korzysc/${k.id}/`} class="first-up">{k.nazwa}</a></H>
     {k.opis_prosty && <p class="opis">{typo(k.opis_prosty)}</p>}
@@ -35,7 +36,7 @@ const etykietaWartosci = czyKwotaWyliczona(k) ? 'Wyliczenie pomocnicze' : k.stat
       )}
       {!a && limit && <span class="kwota-kafelek">{kwotaPL(limit.wartosc)}</span>}
       {niepieniezne && <span class="forma-pomocy">Bez kwoty: rzecz, usługa albo miejsce</span>}
-      {!a && !limit && !niepieniezne && <span class="muted">{indywidualna ? `Kwota indywidualna: ${indywidualna.powod}` : k.ile.regula ? 'Zależy od sytuacji osoby' : 'Nie ustaliliśmy jeszcze kwoty'}</span>}
+      {!a && !limit && !niepieniezne && <span class="muted">{indywidualna ? `Kwota indywidualna: ${indywidualna.powod}` : k.ile.regula ? 'Kwota z reguły w przepisie (na karcie)' : 'Nie ustaliliśmy jeszcze kwoty'}</span>}
     </div>
   </div>
   <div class="card-bottom" aria-hidden="true"><span>Warunki, historia i źródła</span><Ikona n="strzalka" /></div>

@@ -35,6 +35,8 @@
   --shadow-card: 0 24px 60px -28px rgba(11, 31, 58, .35), 0 0 0 1px rgba(21, 52, 92, .07);
   /* skala typograficzna (audyt 1.11.2026): 12 / 14 / 16 / 18 / 22 / 28 / 32 / 44 px; tylko te wielkości na stronie */
   --fs-xs: .75rem; --fs-sm: .875rem; --fs-base: 1rem; --fs-md: 1.125rem; --fs-lg: 1.375rem; --fs-xl: 1.75rem; --fs-2xl: 2rem; --fs-3xl: 2.75rem;
+  /* liczby (kwoty, wskaźniki, daty terminów): jeden krój bezszeryfowy, cyfry wyrównane i równej szerokości */
+  --num: var(--sans);
   --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --sans: 'DM Sans Variable', 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, 'Cascadia Mono', Consolas, monospace;
@@ -42,7 +44,14 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 96px; -webkit-text-size-adjust: 100%; }
-body { margin: 0; color: var(--ink); background: var(--surface); font: 400 16px/1.65 var(--sans); }
+body { margin: 0; color: var(--ink); background: var(--surface); font: 400 16px/1.65 var(--sans); font-feature-settings: 'lnum' 1; }
+/* cyfry: zawsze wyrównane do linii (Playfair domyślnie ma cyfry nautyczne, „krzywe”); w tabelach i zestawieniach także równej szerokości */
+/* font-feature-settings dziedziczy się i nie zeruje go skrót „font:” (w przeciwieństwie do font-variant-numeric) */
+table, .kwota, .kzd, .amount-panel, .card-value { font-feature-settings: 'lnum' 1, 'tnum' 1; }
+/* tekst ciągły wyjustowany z dzieleniem wyrazów (lang="pl"); etykiety, tabele, przyciski i nawigacja bez zmian */
+:where(p, li, dd, blockquote, figcaption) { text-align: justify; hyphens: auto; -webkit-hyphens: auto; text-wrap: pretty; }
+:where(nav, table, .btn, .breadcrumb, .legend, .type, .tag, .kicker, .eyebrow, .pill, .trust, .categories, .search-help, .resultbar) :where(p, li, dd, figcaption),
+:where(.nav, .breadcrumb, .legend, .categories, .trust-inner, .footer-col) li { text-align: left; hyphens: manual; }
 h1, h2, h3, p { margin: 0; }
 h1, h2, .serif { font-family: var(--serif); font-weight: 600; line-height: 1.12; letter-spacing: -.01em; }
 h1 { font-size: clamp(2.4rem, 5vw, 4.1rem); }
@@ -139,7 +148,7 @@ img, svg { max-width: 100%; }
 .search-help a { color: var(--navy-700); text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- kafelki sytuacji ---------- */
-.categories { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 30px; }
+.categories { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
 .category { border: 1px solid var(--line); padding: 20px 18px; border-radius: var(--radius); min-height: 124px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; font-size: var(--fs-base); font-weight: 600; background: var(--surface); transition: transform .18s, border-color .18s, box-shadow .18s; }
 .category:hover { border-color: var(--navy-600); transform: translateY(-3px); text-decoration: none; box-shadow: var(--shadow-card); }
 .category svg { width: 26px; height: 26px; color: var(--navy-700); }
@@ -159,6 +168,7 @@ img, svg { max-width: 100%; }
 .badge.zamknieta { background: var(--closed-bg); color: var(--closed-ink); }
 .badge.do_ustalenia { background: var(--pending-bg); color: var(--pending-ink); }
 .tag { font-size: var(--fs-xs); font-weight: 600; background: var(--soft-2); color: var(--navy-700); padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.tag-kandydat { background: var(--pending-bg); color: var(--pending-ink); }
 .card h3 { font: 600 var(--fs-xl)/1.18 var(--serif); letter-spacing: -.005em; }
 .card h3 a::after { content: ''; position: absolute; inset: 0; }
 .card { position: relative; }
@@ -168,7 +178,7 @@ img, svg { max-width: 100%; }
 .card-sit { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
 .card-value { margin-top: auto; padding-top: 22px; }
 .card-value .label { font-size: var(--fs-xs); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 4px; border-top: 1px solid var(--line); padding-top: 18px; }
-.card-value .kwota, .card-value .kwota-kafelek { font: 600 var(--fs-xl)/1.2 var(--serif); color: var(--navy-800); display: inline-block; white-space: nowrap; }
+.card-value .kwota, .card-value .kwota-kafelek { font: 700 var(--fs-xl)/1.2 var(--num); letter-spacing: -.015em; color: var(--navy-800); display: inline-block; white-space: nowrap; }
 .card-value .warianty .sep { margin: 0 8px 0 2px; color: var(--muted); font-weight: 400; }
 .card-value .warianty { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
 .card-bottom { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding: 15px 26px; font-size: var(--fs-sm); font-weight: 700; color: var(--navy-700); background: #fbfcfe; }
@@ -247,7 +257,7 @@ img, svg { max-width: 100%; }
 .amount-panel::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 100% 0%, rgba(56, 102, 158, .5), transparent 60%); pointer-events: none; }
 .amount-panel > * { position: relative; z-index: 1; }
 .amount-panel .eyebrow { margin-bottom: 12px; color: #d3deeb; }
-.amount-panel .kwota { font: 600 var(--fs-3xl)/1.15 var(--serif); }
+.amount-panel .kwota { font: 700 var(--fs-3xl)/1.1 var(--num); letter-spacing: -.02em; }
 .amount-panel .dowod { color: #d3deeb; text-decoration-color: rgba(211, 222, 235, .5); font-size: var(--fs-sm); }
 .amount-panel .dowod:hover { color: #fff; }
 .amount-date { font-size: var(--fs-sm); margin-top: 12px; color: #d3deeb; }
@@ -296,7 +306,7 @@ td .muted, .muted { color: var(--muted); }
 .termin:first-of-type { padding-top: 0; }
 .termin h3 { margin: 0 0 4px; font-size: var(--fs-sm); text-transform: uppercase; letter-spacing: .1em; color: var(--red); }
 .termin .termin-opis { color: var(--muted); font-size: var(--fs-sm); }
-.termin .termin-data { font: 600 var(--fs-lg) var(--serif); margin-top: 10px; color: var(--navy-800); }
+.termin .termin-data { font: 700 var(--fs-lg) var(--num); margin-top: 10px; color: var(--navy-800); }
 .termin .skutek { margin-top: 8px; font-size: var(--fs-base); display: flex; gap: 8px; }
 .termin .skutek svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--red); margin-top: 3px; }
 .termin.is-empty { display: grid; grid-template-columns: 240px 1fr; gap: 12px; align-items: baseline; }
@@ -416,7 +426,8 @@ code { font-family: var(--mono); font-size: .88em; }
   .searchbox input { font-size: var(--fs-base); flex-basis: calc(100% - 40px); }
   .searchbox .btn { width: 100%; }
   .search-help { padding-left: 4px; }
-  .categories { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .categories { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .category .cat-row > span:first-child { min-width: 0; overflow-wrap: anywhere; hyphens: auto; }
   .category { min-height: 104px; }
   .cards { grid-template-columns: 1fr; gap: 16px; }
   .card-body { padding: 22px; }
@@ -455,3 +466,7 @@ code { font-family: var(--mono); font-size: .88em; }
 .card .komu { margin-top: 10px; }
 .card .opis, .card p.komu { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
 .card-value .muted { display: block; font-size: var(--fs-base); line-height: 1.5; color: var(--ink-2); }
+
+/* wąskie ekrany (do 320 px): długie wyrazy w tytułach kart i znacznikach zawijają się zamiast wychodzić poza kafelek */
+.card h2, .card h3, .card .first-up { overflow-wrap: anywhere; hyphens: auto; -webkit-hyphens: auto; }
+@media (max-width: 420px) { .tag { white-space: normal; overflow-wrap: anywhere; } }

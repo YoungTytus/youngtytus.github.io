@@ -24,6 +24,7 @@ const inne = Object.entries(dane().slowniki.sytuacje).filter(([k]) => k !== kod)
     </div>
   </div>
   <div class="wrap section">
+    {lista.length > 0 && <p class="sytuacja-filtry"><a class="text-link" href={`/korzysci/?sytuacja=${kod}`}>Szukaj i filtruj w tej sytuacji ({lista.length}) <Ikona n="strzalka" /></a></p>}
     {lista.length ? (
       <div class="cards">{lista.map((k) => <KartaKorzysci k={k} />)}</div>
     ) : (
@@ -38,3 +39,7 @@ const inne = Object.entries(dane().slowniki.sytuacje).filter(([k]) => k !== kod)
     </ul>
   </div>
 </Uklad>
+
+<style>
+  .sytuacja-filtry { margin: 0 0 24px; }
+</style>

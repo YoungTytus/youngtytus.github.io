@@ -3,14 +3,14 @@ import Uklad from '../../layouts/Uklad.astro';
 import Ikona from '../../components/Ikona.astro';
 import UwagaDanych from '../../components/UwagaDanych.astro';
 import { dane, plikiDanych } from '../../lib/model.mjs';
-import { rozmiar } from '../../lib/format.mjs';
+import { rozmiar, dataPL } from '../../lib/format.mjs';
 const d = dane();
 const OPISY: Record<string, string> = {
   'manifest.json': 'Wersja kontraktu, data wygenerowania, wersja kodu, sumy SHA-256 plików paczki.',
   'korzysci.json': 'Wszystkie rekordy korzyści: komu, ile, oś czasu kwot, terminy, trasa dowodowa, braki.',
   'akty.json': 'Rekordy aktów prawnych z aktami wykonawczymi i opisem plików tekstów.',
   'slowniki.json': 'Etykiety: rodzaje korzyści, rodzaje terminów, statusy, sytuacje życiowe.',
-  'socjal.json': 'Dane źródłowe nowego projektu: mapy przepisów, powiązania świadczeń, proweniencja i historia parametrów FUS.',
+  'socjal.json': 'Dane źródłowe analizy: mapy przepisów, powiązania świadczeń, pochodzenie każdego ustalenia i historia parametrów FUS.',
   'liczby.json': 'Wydatki państwa na socjal 2020–2025 (podstrona Liczby): sumy, płatnicy, programy, budżet, województwa i powiaty, z listą źródeł.',
   'liczby-programy.csv': 'Wydatki na programy socjalne 2020–2025 w mld zł, ze wzrostem nominalnym i realnym.',
   'liczby-powiaty.csv': 'Wydatki samorządów na socjal w powiatach (zł na mieszkańca), 2024 i 2025.',
@@ -31,7 +31,7 @@ const liczbaPdf = d.akty.reduce((s: number, a: any) => s + a.pliki.length, 0);
   </div>
   <div class="wrap section prose" style="max-width:1000px">
     <h2 style="margin-top:0">Pliki do pobrania</h2>
-    <p>Wersja kontraktu <strong>{d.manifest.kontrakt}</strong>, kod <code>{d.manifest.wersja_kodu}</code>, wygenerowano {d.manifest.wygenerowano}.</p>
+    <p>Wersja kontraktu <strong>{d.manifest.kontrakt}</strong>, kod <code>{d.manifest.wersja_kodu}</code>, wygenerowano {dataPL(d.manifest.wygenerowano.slice(0, 10)) ?? d.manifest.wygenerowano}</p>
     {pliki.map((p) => (
       <div class="file-row">
         <div>
@@ -49,7 +49,7 @@ const liczbaPdf = d.akty.reduce((s: number, a: any) => s + a.pliki.length, 0);
     <p>Źródło tekstów: Kancelaria Sejmu, Internetowy System Aktów Prawnych (API ELI). Teksty aktów normatywnych i urzędowe dokumenty nie są przedmiotem prawa autorskiego (art.&nbsp;4 pkt&nbsp;1 i&nbsp;2 ustawy o prawie autorskim i prawach pokrewnych).</p>
 
     <h2>Licencja</h2>
-    <p class="todo"><strong>Do decyzji fundacji.</strong> Proponowana licencja danych: <a href="https://creativecommons.org/licenses/by/4.0/deed.pl" rel="license noopener" target="_blank">CC BY 4.0</a> (uznanie autorstwa). Do czasu decyzji dane udostępniamy do wglądu i weryfikacji.</p>
+    <p class="todo">Licencja danych nie jest jeszcze ustalona; proponujemy <a href="https://creativecommons.org/licenses/by/4.0/deed.pl" rel="license noopener" target="_blank">CC BY 4.0</a> (uznanie autorstwa). Do czasu decyzji dane udostępniamy do wglądu i weryfikacji.</p>
 
     <h2>Jak sprawdzić sumę kontrolną</h2>
     <p>Windows (PowerShell): <code>Get-FileHash .\korzysci.json -Algorithm SHA256</code><br />Linux, macOS: <code>sha256sum korzysci.json</code></p>

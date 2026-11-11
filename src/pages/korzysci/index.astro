@@ -54,6 +54,7 @@ const opcje = (o: Record<string, string>) => Object.entries(o);
     </div>
     <p class="summary-note" id="nota-kwota" hidden>Sortowanie po kwocie bierze pod uwagę tylko pojedynczą aktualną kwotę; korzyści z kwotą w wariantach albo bez ustalonej kwoty są na końcu.</p>
 
+    <h2 class="sr-only">Wyniki wyszukiwania</h2>
     <div class="cards" data-wyniki>
       {lista.map((k) => <KartaKorzysci k={k} />)}
       <div class="empty" id="pusto" hidden>

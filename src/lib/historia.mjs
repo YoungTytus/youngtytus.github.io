@@ -30,6 +30,7 @@ const JEDNOSTKI = {
   PLN_jednorazowo: 'jednorazowo',
   PLN_miesiecznego_dochodu_na_osobe: 'miesięcznego dochodu na osobę',
   PLN_krok_zaokraglenia_w_gore: 'krok zaokrąglenia w górę',
+  procent_przecietnego_wynagrodzenia: 'przeciętnego wynagrodzenia',
 };
 const zKlucza = (k) => wielka(String(k ?? '').replaceAll('_', ' '));
 

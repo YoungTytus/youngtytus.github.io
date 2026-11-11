@@ -1,13 +1,35 @@
 // Widoki na dane eksportu używane przez strony. Tylko wyszukiwanie i grupowanie rekordów.
 import { readFileSync } from 'node:fs';
 import { eksport, sha256 } from './eksport.mjs';
-import { czyData, liczbaZKwoty, posortujPliki } from './format.mjs';
+import { czyData, eliDziennik, liczbaZKwoty, posortujPliki, wielka } from './format.mjs';
 import { SCIEZKA_LICZB, liczby } from './liczby.mjs';
 
-export const dane = () => eksport();
+/** Dane eksportu; nazwy korzyści zawsze z wielkiej litery (część kart ma w źródle „lokal”, „dodatek …”). */
+export const dane = () => {
+  const d = eksport();
+  if (!d._nazwyZWielkiej) {
+    for (const k of d.korzysci) k.nazwa = wielka(k.nazwa);
+    for (const [kod, n] of Object.entries(d.slowniki.sytuacje ?? {})) d.slowniki.sytuacje[kod] = wielka(n);
+    // akt bez tytułu w danych („Akt prawny DU/2006/903”) → „Akt ogłoszony w Dz.U. 2006 poz. 903”
+    const bezTytulu = (x) => { if (/^Akt prawny\s/.test(String(x.tytul ?? ''))) x.tytul = `Akt ogłoszony w ${eliDziennik(x.eli)}`; };
+    for (const a of d.akty) { bezTytulu(a); (a.wykonawcze ?? []).forEach(bezTytulu); }
+    for (const [kod, n] of Object.entries(d.slowniki.sytuacje ?? {})) d.slowniki.sytuacje[kod] = wielka(n);
+    d._nazwyZWielkiej = true;
+  }
+  return d;
+};
 
 export const korzyscPoId = (id) => dane().korzysci.find((k) => k.id === id) ?? null;
 export const aktPoEli = (eli) => dane().akty.find((a) => a.eli === eli) ?? null;
+/** Akt ma własną stronę i pozycję na liście tylko wtedy, gdy wiąże się z co najmniej jedną korzyścią. */
+/** Korzyści aktu: z listy aktu i z kart, których przepis przyznający jest w tym akcie (lista aktu bywa niepełna). */
+export function korzysciAktu(eli) {
+  const a = aktPoEli(eli);
+  const id = new Set([...(a?.korzysci ?? []), ...dane().korzysci.filter((k) => k.przepis.eli === eli).map((k) => k.id)]);
+  return [...id].filter((x) => korzyscPoId(x));
+}
+export const maStroneAktu = (eli) => korzysciAktu(eli).length > 0;
+export const aktyZeStrona = () => dane().akty.filter((a) => maStroneAktu(a.eli));
 export const etykieta = (slownik, kod) => dane().slowniki[slownik]?.[kod] ?? kod;
 
 export const KOLEJNOSC_STATUSU = { obowiazuje: 0, do_ustalenia: 1, zamknieta: 2 };
@@ -30,6 +52,16 @@ export function dowodyWyliczenia(wyliczenie) {
 export function kwotaPrezentowana(k) {
   const w = k.ile.wyliczenie;
   return k.ile.aktualna ?? (w?.wartosc || w?.warianty?.length ? w : null);
+}
+
+/** Świadczenie zakończone bez kwoty aktualnej: ostatni wpis historii z kwotą (do pokazania jako kwota archiwalna). */
+export function kwotaArchiwalna(k) {
+  if (k.status !== 'zamknieta' || k.ile.aktualna) return null;
+  let wynik = null;
+  k.ile.os_czasu.forEach((w, i) => {
+    if ((w.wartosc || w.warianty?.length) && (!wynik || String(w.od ?? '') >= String(wynik.wpis.od ?? ''))) wynik = { wpis: w, i };
+  });
+  return wynik && { ...wynik, href: `#wpis-${wynik.i}`, etykieta: `${wynik.wpis.dowod.eli} · ${wynik.wpis.dowod.przepis}` };
 }
 
 export const czyKwotaWyliczona = (k) => !k.ile.aktualna && kwotaPrezentowana(k) !== null;

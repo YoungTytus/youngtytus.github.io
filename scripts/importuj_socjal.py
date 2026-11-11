@@ -722,6 +722,32 @@ def przenies_wyliczenia(socjal, benefits, wielkosci, dzien):
                 break
 
 
+def bez_uwag_warsztatowych(o, klucz=None):
+    """„nie ustalono w tej partii (analizy)” to uwaga warsztatowa; odbiorcy piszemy „w naszych danych”.
+    Cała karta oprócz cytatów przepisów i adresów (te zostają dosłowne)."""
+    if isinstance(o, dict):
+        for k2, v in o.items():
+            if k2 in ('cytat', 'przepis', 'url', 'dowod'):
+                continue
+            o[k2] = bez_uwag_warsztatowych(v, k2)
+        return o
+    if isinstance(o, list):
+        return [bez_uwag_warsztatowych(v, klucz) for v in o]
+    if isinstance(o, str):
+        return re.sub(r'\b([Ww]) tej partii(?: analizy)?\b', lambda m: m[1] + ' naszych danych', o)
+    return o
+
+
+MIESIACE = ('stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września',
+            'października', 'listopada', 'grudnia')
+
+
+def data_pl(v):
+    """„2024-01-01” → „1 stycznia 2024 r.”; inny zapis bez zmian."""
+    m = re.fullmatch(r'(\d{4})-(\d{2})-(\d{2})', str(v or ''))
+    return '{} {} {} r.'.format(int(m[3]), MIESIACE[int(m[2]) - 1], m[1]) if m else str(v)
+
+
 def zastosuj_standard(socjal, benefits):
     """Ujednolicone nazwy, opisy i „komu” (Dane/Mapa/standard_kart.json, kontrola: `python Skrypty/mapa.py standard`).
     Cytat przepisu zostaje w polu `przepis`, pierwotne „komu” w `_komu_zrodlowe`."""
@@ -857,7 +883,10 @@ def uporzadkuj_prezentacje(benefits, na_dzien):
         for pole in ('opis_prosty', 'komu'):
             if k.get(pole):
                 t = re.sub(r'\b(?:w\s+)?(?:odczytanym\s+)?(?:tekście\s+)?U(?:-\d{4}-\d{2}-\d{2})?\b(?=[\s:;,)]|\.(?!\w))', 'w obecnym tekście ustawy', k[pole])
-                k[pole] = re.sub(r'\bNominał\b', 'Kwota nominalna', t)
+                t = re.sub(r'\bNominał\b', 'Kwota nominalna', t)
+                # „nie ustalono w tej partii (analizy)” to uwaga warsztatowa; odbiorcy mówimy „w naszych danych”
+                k[pole] = t
+        bez_uwag_warsztatowych(k)
         # Opis nie powtarza nazwy („Aktywni rodzice w pracy. 1500 zł…” → „1500 zł…”).
         opis = k.get('opis_prosty') or ''
         if opis.casefold().startswith(k['nazwa'].casefold()) and len(opis) > len(k['nazwa']) + 3:
@@ -1141,13 +1170,14 @@ def karty_analiz_eli(socjal, na_dzien, benefits, extra_karty, akty_meta, pomijan
                         if o.get(f): row[f] = data_tekstu(o[f])
                     k['do_kiedy'].append(row)
                 else:
-                    k['powiazane'].append({'typ': 'warunek', 'cytat': '{}: {}'.format(o.get('rodzaj'), o.get('tresc'))})
+                    k['powiazane'].append({'typ': 'warunek', 'cytat': o.get('tresc') if re.fullmatch(r'[a-z0-9_]+', str(o.get('rodzaj') or '')) else '{}: {}'.format(o.get('rodzaj'), o.get('tresc'))})
             if koniec:
                 k['do_kiedy'].append({'rodzaj': 'granica_przepisu', 'data': koniec, 'opis': 'Świadczenie przysługiwało do {}.'.format(koniec),
                                       'skutek': None, 'dowod': prz})
             for v in [v for v in wersje if v.get('swiadczenie') == s['id']]:
-                k['powiazane'].append({'typ': 'warunek', 'cytat': '{}: {} (od {} do {})'.format(
-                    v.get('element'), v.get('tresc'), v.get('od') or '?', v.get('do') or 'nadal')})
+                # bez wewnętrznego klucza pola (np. „warunki_biezace_co_komu_ile”) i bez „od ?”: okres tylko ze znanych dat
+                okres = ' (od {}{})'.format(data_pl(v['od']), ' do {}'.format(data_pl(v['do'])) if v.get('do') else '') if v.get('od')                     else ' (do {})'.format(data_pl(v['do'])) if v.get('do') else ''
+                k['powiazane'].append({'typ': 'warunek', 'cytat': '{}{}'.format(v.get('tresc'), okres)})
             for w in [w for w in warianty if w.get('swiadczenie') == s['id']]:
                 k['powiazane'].append({'typ': 'warunek', 'cytat': 'Wariant: {}'.format(w.get('nazwa'))})
             benefits.append(k)

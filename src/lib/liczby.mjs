@@ -9,6 +9,14 @@ const KATALOG_STRONY = process.env.STRONA_KATALOG ?? process.cwd();
 export const SCIEZKA_LICZB = path.resolve(KATALOG_STRONY, 'data', 'liczby', 'liczby.json');
 const NBSP = ' ';
 
+/** Nazwa województwa lub powiatu z wielkiej litery; „M.Białystok” (miasto na prawach powiatu) → „Białystok (miasto)”. */
+export function nazwaJednostki(n) {
+  const s = String(n ?? '').trim();
+  const m = /^M\.\s*(.+)$/.exec(s);
+  if (m) return `${m[1]} (miasto)`;
+  return s ? s.charAt(0).toLocaleUpperCase('pl') + s.slice(1) : s;
+}
+
 /** Pola wymagane przez stronę (koncept v3); ta sama lista jest w aktualizuj_strone.py. */
 export const POLA_LICZB = ['meta', 'licznik_2025', 'bez_emerytur_zus_2025', 'suma', 'platnicy_2022_2025_mld', 'programy',
   'na_mieszkanca', 'dzialy_budzetu', 'fundusz_solidarnosciowy', 'wojewodztwa', 'powiaty', 'fakty', 'jst_bilans_mld',
@@ -24,6 +32,7 @@ export function liczby() {
   const brak = POLA_LICZB.filter((k) => !(k in d));
   if (brak.length) throw new Error(`data/liczby/liczby.json: brak pól ${brak.join(', ')}`);
   d._sha256 = createHash('sha256').update(bajty).digest('hex');
+  for (const x of [...d.wojewodztwa, ...d.powiaty]) x.nazwa = nazwaJednostki(x.nazwa);
   pamiec = d;
   return d;
 }

@@ -1,10 +1,10 @@
 {
   "kontrakt": "strona-0.4",
-  "wygenerowano": "2026-11-11T10:11:48.765798+00:00",
+  "wygenerowano": "2026-11-11T19:10:09.697311+00:00",
   "wersja_kodu": "importuj_socjal-1.6",
   "na_dzien": "2026-11-11",
   "pliki": {
-    "korzysci.json": "68e1ac51f320b03f0d13b5ef801599a00d8c5fcb9fbac9144216f5d70997262b",
+    "korzysci.json": "4a2969f3ee3451ddd8b0a2f89843ef25c3a1a97cd80a7521ed232c2a3807d20b",
     "akty.json": "8df862601da15847adee68a7ff95d0138d6050d6c95418dc5f96c9a7b0778002",
     "slowniki.json": "e65c38c134f437cef1168b37d1c2c31b123e3cbfc6c1b0ff705e59dfc57fc3fd",
     "akty/SHA256SUMS": "2f6dd5daaee7834ff31c2436fe92473ed1ea94e60553480d782ddbbe9e665b11",

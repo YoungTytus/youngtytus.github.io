@@ -1,6 +1,7 @@
 ---
 // Bezpośrednie odnośniki do plików w API Sejmu; witryna nie przechowuje PDF-ów.
 import Ikona from './Ikona.astro';
+import { maStroneAktu } from '../lib/model.mjs';
 import { dataPL, eliDziennik, eliSlug, etykietaPliku, posortujPliki, rozmiar } from '../lib/format.mjs';
 
 interface Props { eli: string; akt: any | null; naglowek?: boolean }
@@ -11,7 +12,7 @@ const urlEli = akt?.url_eli ?? `https://api.sejm.gov.pl/eli/acts/${eli}`;
 <div class="akt-pliki">
   {naglowek && (
     <>
-      <h3>{akt ? <a href={`/akt/${eliSlug(eli)}/`}>{akt.tytul}</a> : eli}</h3>
+      <h3>{akt && maStroneAktu(eli) ? <a href={`/akt/${eliSlug(eli)}/`}>{akt.tytul}</a> : akt ? akt.tytul : eli}</h3>
       <p class="meta">{eli} · {eliDziennik(eli)}{akt && ` · ${akt.typ}`}</p>
     </>
   )}
@@ -35,7 +36,6 @@ const urlEli = akt?.url_eli ?? `https://api.sejm.gov.pl/eli/acts/${eli}`;
             <p class="checksum">{p.sha256}</p>
             <p class="checksum">Plik u źródła: {p.url_zrodla}</p>
           </details>
-          <p class="muted">Plik w systemie Sejmu może się zmienić. Suma kontrolna dotyczy wersji, z której korzystaliśmy.</p>
           {p.warstwa_tekstowa === 'uszkodzona_naprawiona' && <p class="muted">Kopiowanie tekstu z tego PDF daje błędne znaki. Poprawiony tekst do czytania i kopiowania: <a class="link" href={`/teksty/${eliSlug(eli)}-${p.rodzaj}-do-kopiowania.txt`} download>Tekst ogłoszony, wersja do kopiowania (TXT)</a>. Jest to plik pochodny przygotowany w eksporcie.</p>}
           {p.warstwa_tekstowa === 'uszkodzona' && <p class="muted">Kopiowanie tekstu z tego PDF daje błędne znaki; do cytowania użyj tekstu ujednoliconego.</p>}
         </div>

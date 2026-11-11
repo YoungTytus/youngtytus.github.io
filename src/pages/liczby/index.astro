@@ -33,7 +33,7 @@ const jstWydatki = jst['wydatki 852+853+855'];
 const esc = (s: string) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const ZR = {
   mf: 'MF, Sprawozdanie z wykonania budżetu państwa',
-  rb: 'MF, sprawozdania Rb-28S i Rb-27S samorządów, IV kw.',
+  rb: 'MF, sprawozdania Rb-28S i Rb-27S samorządów (IV kwartał)',
   cofog: d.cofog10.zrodlo ?? 'MF, Informacja kwartalna o stanie finansów publicznych (COFOG 10)',
   gus: 'GUS, CPI średnioroczne',
 };
@@ -179,10 +179,11 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
     <p class="eyebrow" data-kpi="2">{kpi.pelna[2]}</p>
     <p class="lz-glowna-liczba" data-kpi="0">{kpi.pelna[0]}</p>
     <p class="lz-glowna-os"><strong data-kpi="1">{kpi.pelna[1]}</strong> na mieszkańca</p>
-    <div class="lz-segment" role="group" aria-label="Definicja socjalu">
+    <div class="lz-segment" role="group" aria-label="Definicja socjalu dla dwóch liczb w tym panelu">
       <button type="button" aria-pressed="true" data-wariant="pelna">z emeryturami ZUS</button>
       <button type="button" aria-pressed="false" data-wariant="bez">bez emerytur i rent ZUS</button>
     </div>
+    <p class="amount-date lz-zakres-przel">Przełącznik zmienia tylko dwie liczby w tym panelu. Pozostałe wskaźniki, tabele i wykresy dotyczą całej sumy, z emeryturami ZUS.</p>
   </div>
   <div class="lz-statystyki">
     <div class="lz-stat"><span class="type">Realny wzrost transferów</span><strong>{proc(M1realnie, 1, true)}</strong><span>{lata[0]}-{ROK}, w cenach {ROK}</span></div>
@@ -314,13 +315,13 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
             <thead><tr><th scope="col">Program</th>{lataProg.map((r) => <th scope="col">{r}</th>)}<th scope="col">Zmiana nominalna</th><th scope="col">Zmiana realna</th><th scope="col">Karta</th></tr></thead>
             <tbody>{wg2025.map((p: any) => <tr>
               <th scope="row">{tp(p.krotka)}{p.kod && /^\d/.test(p.kod) && <span class="lz-kod2">{p.kod}</span>}</th>
-              {lataProg.map((r) => <td>{p.mld[r] ? liczba(p.mld[r], 2) : '-'}</td>)}
+              {lataProg.map((r) => <td>{p.mld[r] == null ? '-' : p.mld[r] === 0 ? <span class="lz-zero-w">0,00</span> : liczba(p.mld[r], 2)}</td>)}
               <td>{proc(p.wzrost_nominalny_proc, 1, true)}</td>
               <td class:list={[p.wzrost_realny_proc == null ? '' : p.wzrost_realny_proc >= 0 ? 'plus' : 'minus']}>{proc(p.wzrost_realny_proc, 1, true)}</td>
               <td class="tekst">{p.karty.length ? p.karty.map((k: any, i: number) => <>{i > 0 && ', '}<a class="link" href={`/korzysc/${k.id}/`}>{tp(k.nazwa)}</a></>) : '-'}</td>
             </tr>)}</tbody>
           </table></div>
-          <p class="lz-zrodlo">{tp(`„-” w latach: program nie istniał albo nie miał wydatków. Zmiany liczone dla programów istniejących przez cały okres. Źródło: ${ZR.mf} ${lataProg[0]}-${ROK}; ${ZR.gus}.`)}</p>
+          <p class="lz-zrodlo">{tp(`„0,00”: w tym rozdziale klasyfikacji budżetowej nie zapisano wydatków w danym roku; program mógł jeszcze nie istnieć albo jego wypłaty były ujęte w innej pozycji. „-”: brak danych. Zmiany liczone dla programów istniejących przez cały okres. Źródło: ${ZR.mf} ${lataProg[0]}-${ROK}; ${ZR.gus}.`)}</p>
         </figure>
         <figure class="lz-obiekt">
           <figcaption class="lz-tytul">Wykres 4. Zmiana realna wydatków na programy, {lataProg[0]}-{ROK}</figcaption>
@@ -339,7 +340,7 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
       <section id="samorzady" class="detail-section lz-sek" aria-labelledby="h-samorzady">
         <p class="kicker">Samorządy</p>
         <h2 id="h-samorzady">Ile dokładają gminy i powiaty?</h2>
-        <p class="lz-akapit">{tp(`Gminy, powiaty i województwa wydały na pomoc społeczną, politykę społeczną i rodzinę ${mld(jstWydatki[String(ROK)])} w ${ROK} r. Większość tych pieniędzy dostają od państwa i innych instytucji. Z własnych pieniędzy dokładają ${mld(wlasne[String(ROK)])} (w ${lataJst[0]} r.: ${mld(wlasne[lataJst[0]])}).`)}</p>
+        <p class="lz-akapit">{tp(`Gminy, powiaty i województwa wydały na pomoc społeczną, politykę społeczną i rodzinę ${mld(jstWydatki[String(ROK)])} w ${ROK} r. Transfery od państwa i innych instytucji pokryły ${mld(transfery[String(ROK)])} (${proc(transfery[String(ROK)] / jstWydatki[String(ROK)] * 100, 0)}), a z własnych pieniędzy samorządy wydały ${mld(wlasne[String(ROK)])} (${proc(wlasne[String(ROK)] / jstWydatki[String(ROK)] * 100, 0)}). W ${lataJst[0]} r. własne pieniądze to było ${mld(wlasne[lataJst[0]])}.`)}</p>
         <figure class="lz-obiekt">
           <figcaption class="lz-tytul">Tabela 5. Bilans wydatków socjalnych samorządów, mld zł</figcaption>
           <div class="table-wrap lz-tabela" tabindex="0"><table>
@@ -671,16 +672,18 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
   .lz-start { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 22px; padding-top: 36px; align-items: stretch; }
   .lz-glowna { margin: 0; display: flex; flex-direction: column; justify-content: center; }
   .lz-glowna .eyebrow { margin-bottom: 14px; }
-  .lz-glowna-liczba { font: 600 clamp(2.6rem, 5vw, 3.6rem)/1.05 var(--serif); font-variant-numeric: tabular-nums; }
+  .lz-glowna-liczba { font: 700 clamp(2.4rem, 4.6vw, 3.3rem)/1.05 var(--num); letter-spacing: -.02em; }
   .lz-glowna-os { margin-top: 10px; color: #d3deeb; font-size: var(--fs-base); }
-  .lz-glowna-os strong { font: 600 var(--fs-lg) var(--serif); color: #fff; margin-right: 4px; }
+  .lz-glowna-os strong { font: 700 var(--fs-lg) var(--num); color: #fff; margin-right: 4px; }
   .lz-segment { display: inline-flex; flex-wrap: wrap; gap: 4px; margin-top: 22px; padding: 4px; border: 1px solid rgba(157, 180, 214, .45); border-radius: 999px; align-self: flex-start; }
+  .lz-zakres-przel { max-width: 420px; }
+  .lz-zero-w { color: var(--muted); }
   .lz-segment button { border: 0; background: none; color: #d3deeb; font: 600 var(--fs-sm) var(--sans); padding: 8px 16px; min-height: 40px; border-radius: 999px; cursor: pointer; transition: background-color .18s, color .18s; }
   .lz-segment button:hover { color: #fff; }
   .lz-segment button[aria-pressed='true'] { background: #fff; color: var(--navy-800); }
   .lz-statystyki { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-  .lz-stat { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 24px; display: flex; flex-direction: column; gap: 8px; }
-  .lz-stat strong { font: 600 var(--fs-xl)/1.1 var(--serif); color: var(--navy-800); font-variant-numeric: tabular-nums; margin-top: auto; }
+  .lz-stat { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 24px; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+  .lz-stat strong { font: 700 var(--fs-xl)/1.15 var(--num); letter-spacing: -.015em; color: var(--navy-800); }
   .lz-stat > span:last-child { font-size: var(--fs-sm); color: var(--muted); line-height: 1.45; }
   .lz-stat #licznik { font-variant-numeric: tabular-nums; }
 
@@ -767,7 +770,7 @@ const opisSeo = tp(`Ile kosztuje socjal w Polsce: co najmniej ${mld(s25.razem_z_
   .lz-dymek { position: absolute; z-index: 5; pointer-events: none; background: var(--surface); border-radius: var(--radius-sm); box-shadow: var(--shadow-card); padding: 12px 14px; font-size: var(--fs-sm); line-height: 1.4; max-width: 260px; }
   .lz-dymek strong, .lz-dymek b, .lz-dymek > span { display: block; }
   .lz-dymek strong span { font-weight: 400; color: var(--muted); }
-  .lz-dymek b { font: 600 var(--fs-md) var(--serif); color: var(--navy-800); margin-top: 2px; }
+  .lz-dymek b { font: 700 var(--fs-md) var(--num); color: var(--navy-800); margin-top: 2px; }
   .lz-dymek > span { color: var(--muted); font-size: var(--fs-xs); margin-top: 2px; }
   .lz-skala { display: flex; flex-wrap: wrap; gap: 6px 14px; list-style: none; margin: 12px 0 0; padding: 0; font-size: var(--fs-xs); color: var(--ink-2); }
   .lz-skala li { display: inline-flex; gap: 6px; align-items: center; }

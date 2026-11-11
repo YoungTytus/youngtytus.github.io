@@ -12,7 +12,7 @@ import Wykres from '../../components/Wykres.astro';
 import Progi from '../../components/Progi.astro';
 import Wyliczenie from '../../components/Wyliczenie.astro';
 import Zwijana from '../../components/Zwijana.astro';
-import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta, korzyscPoId, limitPrezentowany } from '../../lib/model.mjs';
+import { aktPoEli, aktyDoPobrania, dane, dataEksportu, dowodAktualnej, etykieta, korzyscPoId, kwotaArchiwalna, limitPrezentowany, maStroneAktu } from '../../lib/model.mjs';
 import { kartaSocjal } from '../../lib/socjal.mjs';
 import {
   KOLEJNOSC_TERMINOW, OPIS_TERMINU, czyData, czyZaslepka, dataLubBrak, liczbaZKwoty, dataPL, eliSlug, etapZaslepki,
@@ -26,7 +26,11 @@ export function getStaticPaths() {
   const archiwum = existsSync(plik) ? JSON.parse(readFileSync(plik, 'utf8')).adresy ?? {} : {};
   const ids = new Set(obecne.map((p: any) => p.params.id));
   const dawne = Object.entries(archiwum).filter(([id, w]: any) => !ids.has(id) && w.cel)
-    .map(([id, w]: any) => ({ params: { id }, props: { przekierowanie: w.cel } }));
+    .map(([id, w]: any) => {
+      // cel na stronie aktu, która już nie powstaje (akt bez korzyści) → lista ustaw
+      const eli = /^\/akt\/((?:DU|MP)-\d{4}-\d+)\/$/.exec(w.cel)?.[1]?.replace(/-/g, '/');
+      return { params: { id }, props: { przekierowanie: eli && !maStroneAktu(eli) ? '/akty/' : w.cel } };
+    });
   return [...obecne, ...dawne];
 }
 
@@ -36,9 +40,10 @@ const sc = kartaSocjal(k.id);
 const ile = k.ile;
 // wykres historii kwot: wystarczy jedna kwota z datą (linia od tej daty do dnia danych)
 const maWykres = ile.os_czasu.some((w: any) => czyData(w.od) && [w.wartosc, ...(w.warianty ?? []).map((v: any) => v.wartosc)].some((x: any) => liczbaZKwoty(x) !== null));
-const a = ile.aktualna;
+const archiwalna = kwotaArchiwalna(k);
+const a = ile.aktualna ?? archiwalna?.wpis ?? null;
 const kwotyWariantow = new Map((ile.wyliczenie?.warianty ?? []).map((w: any) => [JSON.stringify([w.etykieta, w.udzial]), w.wartosc]));
-const dowodA = dowodAktualnej(k);
+const dowodA = archiwalna ?? dowodAktualnej(k);
 const limit = limitPrezentowany(k);
 const indywidualna = k.nieustalone.find((n: any) => n.pole === 'ile.kwota_indywidualna');
 const zamknieta = k.status === 'zamknieta';
@@ -110,7 +115,7 @@ const dowodNominalnej = nominalnyKrok >= 0
       <p class="legal-status"><Ikona n="waga" /><span>Stan prawny na {stan}, tekst ujednolicony (informacyjny). Wiążący jest tekst w Dzienniku Ustaw.</span></p>
       {k.obowiazuje_od?.data && <p class="summary-note">Obowiązuje od <a class="link" href={k.obowiazuje_od.url} target="_blank" rel="noopener">{dataPL(k.obowiazuje_od.data)}</a> (wejście ustawy w życie). {k.obowiazuje_od.uwaga}</p>}
       {zamknieta && (
-        <p class="notice closed"><strong>Korzyść zakończona.</strong> Zostawiamy ją jako informację historyczną.{terminWniosku && <> Termin złożenia wniosku: {dataLubBrak(terminWniosku.data)}.{terminWniosku.skutek && ` ${terminWniosku.skutek}`} <a class="link" href="#terminy">Szczegóły i przepis</a>.</>}</p>
+        <p class="notice closed"><strong>Korzyść zamknięta.</strong> Nie przysługuje już na nowo; zostawiamy ją jako informację historyczną.{terminWniosku && <> Termin złożenia wniosku: {dataLubBrak(terminWniosku.data)}.{terminWniosku.skutek && ` ${terminWniosku.skutek}`} <a class="link" href="#terminy">Szczegóły i przepis</a>.</>}</p>
       )}
       <UwagaDanych />
       {k.flagi?.length > 0 && <aside class="notice"><ul>{k.flagi.map((f: string) => <li>{typo(f)}</li>)}</ul></aside>}
@@ -138,7 +143,7 @@ const dowodNominalnej = nominalnyKrok >= 0
         <p class="kicker">Ile</p>
         <h2 id="h-ile">Kwota i historia zmian</h2>
         <div class="amount-panel">
-          <p class="eyebrow">{zamknieta ? 'Kwota (archiwalna)' : 'Aktualna kwota według danych'}</p>
+          <p class="eyebrow">{archiwalna ? 'Ostatnia kwota (archiwalna)' : zamknieta ? 'Kwota (archiwalna)' : 'Aktualna kwota według danych'}</p>
           {a?.wartosc && <div><Kwota wartosc={a.wartosc} href={dowodA.href} etykieta={dowodA.etykieta} blok /></div>}
           {!a?.wartosc && a?.warianty?.length && a.warianty.map((w: any, i: number) => (
             <div class="amount-variant"><span>{wielka(etykietaWariantu(w, i))}</span><Kwota wartosc={w.wartosc} href={dowodA.href} etykieta={dowodA.etykieta} blok /></div>

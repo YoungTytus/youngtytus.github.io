@@ -37,17 +37,18 @@ if (mozna) {
   const prawa = czyData(dzis) ? dzien(dzis!) : Math.max(...xs);
   const x0 = Math.min(...xs), x1 = Math.max(prawa, ...xs);
   const ys = wszystkie.map((p: any) => p.y);
-  let y0 = Math.min(...ys), y1 = Math.max(...ys);
-  const zapas = (y1 - y0 || y1 * 0.1 || 1) * 0.18;
-  y0 = Math.max(0, y0 - zapas); y1 = y1 + zapas;
+  // oś od zera z okrągłym krokiem (1, 2, 2,5 albo 5 × 10^n), żeby podziałka nie miała wartości typu 393 zł
+  const maks = Math.max(...ys) || 1;
+  const potega = 10 ** Math.floor(Math.log10(maks / 4));
+  const krokOsi = [1, 2, 2.5, 5, 10].map((m) => m * potega).find((k) => maks * 1.08 / k <= 5) ?? 10 * potega;
+  const y0 = 0, y1 = Math.ceil((maks * 1.08) / krokOsi) * krokOsi;
   const X = (d: number) => L + ((d - x0) / (x1 - x0 || 1)) * (W - L - R);
   const Y = (v: number) => T + (1 - (v - y0) / (y1 - y0 || 1)) * (H - T - B);
-  const fmt = (v: number) => v.toLocaleString('pl-PL', { maximumFractionDigits: 0 });
+  const fmt = (v: number) => v.toLocaleString('pl-PL', { maximumFractionDigits: krokOsi < 1 ? 2 : 0 });
 
   const czesci: string[] = [];
-  // siatka: 4 poziome linie z wartościami
-  for (let g = 0; g <= 3; g++) {
-    const v = y0 + ((y1 - y0) * g) / 3;
+  // siatka: poziome linie co krok osi, z wartościami
+  for (let v = y0; v <= y1 + 1e-9; v += krokOsi) {
     czesci.push(`<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#dde4ec" />`,
       `<text x="${L - 10}" y="${Y(v) + 4}" text-anchor="end" font-size="12" fill="#4f5a6b">${fmt(v)} zł</text>`);
   }

@@ -2,10 +2,12 @@
 // Zmiany w danych (SPEC 4.6). Kontrakt strona-0.1 nie przenosi jeszcze historii wersji paczki,
 // więc pokazujemy bieżącą wersję z manifestu; lista wydłuży się z kolejnymi paczkami.
 import Uklad from '../../layouts/Uklad.astro';
-import { dane } from '../../lib/model.mjs';
+import { aktyZeStrona, dane } from '../../lib/model.mjs';
 import { dataPL } from '../../lib/format.mjs';
 const d = dane();
 const m = d.manifest;
+const nUstaw = m.zakres.length;
+const ustawy = nUstaw === 1 ? 'ustawa' : nUstaw % 10 >= 2 && nUstaw % 10 <= 4 && (nUstaw % 100 < 10 || nUstaw % 100 >= 20) ? 'ustawy' : 'ustaw';
 const przyklady = d.korzysci.filter((k: any) => k._przyklad || k.ile.os_czasu.some((w: any) => w._przyklad)).length;
 ---
 <Uklad tytul="Zmiany w danych" opis="Wersje danych Mapy Polskiego Socjalu: data wygenerowania, zakres i podsumowanie zmian." sekcja="zmiany">
@@ -13,7 +15,7 @@ const przyklady = d.korzysci.filter((k: any) => k._przyklad || k.ile.os_czasu.so
     <div class="wrap">
       <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span aria-current="page">Zmiany w danych</span></nav>
       <h1>Zmiany w danych</h1>
-      <p class="lead">Każda wersja danych ma datę, wersję kodu i opis zmian. Dzięki temu wiadomo, od kiedy na stronie jest dana kwota.</p>
+      <p class="lead">Z kiedy są dane na stronie i jaki mają zakres. Dziennika zmian między wersjami jeszcze nie publikujemy.</p>
     </div>
   </div>
   <div class="wrap section">
@@ -21,22 +23,22 @@ const przyklady = d.korzysci.filter((k: any) => k._przyklad || k.ile.os_czasu.so
     <h2>Dane z {dataPL(m.wygenerowano.slice(0, 10)) ?? m.wygenerowano}</h2>
     <div class="cards zmiany-liczby">
       <div class="zmiany-stat"><span class="type">Korzyści</span><strong>{d.korzysci.length}</strong><span>kart świadczeń i pomocy</span></div>
-      <div class="zmiany-stat"><span class="type">Akty prawne</span><strong>{d.akty.length}</strong><span>ustaw i rozporządzeń z tekstami</span></div>
+      <div class="zmiany-stat"><span class="type">Akty prawne</span><strong>{aktyZeStrona().length}</strong><span>aktów, z których pochodzi co najmniej jedna karta</span></div>
       <div class="zmiany-stat"><span class="type">Wersja</span><strong>{m.kontrakt}</strong><span>kod <code>{m.wersja_kodu}</code>{d.tryb === 'przyklad' && ', dane przykładowe'}</span></div>
     </div>
     {przyklady > 0 && <p class="summary-note">Rekordy z wartościami przykładowymi (jeszcze niewyliczonymi): {przyklady}.</p>}
     <details class="zmiany-zakres">
-      <summary>Zakres: {m.zakres.length} aktów prawnych (lista oznaczeń)</summary>
+      <summary>Zakres analizy: {nUstaw} {ustawy} (lista oznaczeń)</summary>
       <p>{m.zakres.join(', ')}</p>
     </details>
-    <p class="summary-note">Na razie pokazujemy tylko bieżącą wersję danych. Zestawienie, co dodano, zmieniono i usunięto między wersjami, pojawi się tutaj przy kolejnych aktualizacjach.</p>
+    <p class="summary-note">Zakres analizy to ustawy, które przeanalizowaliśmy; nie z każdej powstała karta. W danych jest też {d.akty.length} aktów łącznie z powiązanymi (m.in. akty, z których pochodzą kwoty i terminy), ale stronę ma tylko akt z co najmniej jedną kartą. Na razie pokazujemy tylko bieżącą wersję danych. Zestawienie, co dodano, zmieniono i usunięto między wersjami, pojawi się tutaj przy kolejnych aktualizacjach.</p>
   </div>
 </Uklad>
 
 <style>
   .zmiany-liczby { margin-top: 24px; }
   .zmiany-stat { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 24px; display: flex; flex-direction: column; gap: 6px; }
-  .zmiany-stat strong { font: 600 var(--fs-xl) var(--serif); color: var(--navy-800); }
+  .zmiany-stat strong { font: 700 var(--fs-xl) var(--num); letter-spacing: -.015em; color: var(--navy-800); }
   .zmiany-stat > span:last-child { font-size: var(--fs-sm); color: var(--muted); }
   .zmiany-zakres { margin-top: 28px; max-width: 900px; }
   .zmiany-zakres summary { cursor: pointer; font-weight: 700; color: var(--navy-700); min-height: 44px; display: flex; align-items: center; }

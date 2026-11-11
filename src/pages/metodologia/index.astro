@@ -2,11 +2,11 @@
 // Metodologia: jak powstają dane (proces z 25.10–31.10.2026), statusy, terminy, sposób ustalania kwot.
 // Słowniki i definicje rodzajów terminów pochodzą z kontraktu danych.
 import Uklad from '../../layouts/Uklad.astro';
-import { dane } from '../../lib/model.mjs';
+import { aktyZeStrona, dane } from '../../lib/model.mjs';
 import { KOLEJNOSC_TERMINOW, OPIS_TERMINU, etykietaRozwiazania, wielka } from '../../lib/format.mjs';
 const d = dane();
 const OPIS_STATUSU: Record<string, string> = {
-  obowiazuje: 'Przepis przyznający obowiązuje w dniu stanu tekstu, a korzyść można uzyskać.',
+  obowiazuje: 'Przepis przyznający obowiązuje w dniu stanu tekstu. Nie zawsze oznacza to, że można złożyć nowy wniosek: nabór mógł się zakończyć, a wypłaty trwają dla osób, które już mają prawo. Szczegóły są w terminach na karcie.',
   zamknieta: 'Korzyść już nie przysługuje (np. minął termin wniosku albo przepis uchylono). Zostaje na stronie jako informacja historyczna.',
   do_ustalenia: 'Dane nie pozwalają jeszcze rozstrzygnąć, czy korzyść obowiązuje. Strona nie zgaduje.',
 };
@@ -31,7 +31,7 @@ const OPIS_STATUSU: Record<string, string> = {
       <li><strong>Analiza.</strong> Każdą ustawę rozbieramy na przepisy: co przysługuje, komu, ile i do kiedy. Kwoty bierzemy z ustawy albo z rozporządzeń i obwieszczeń, które je ogłaszają. Każde ustalenie ma cytat, stronę dokumentu i sumę kontrolną pliku, więc da się je sprawdzić.</li>
       <li><strong>Kontrola.</strong> Program porównuje każdy cytat z tekstem źródłowym i sprawdza kompletność karty. Karta z niepełną analizą ma oznaczenie „analiza częściowa”.</li>
     </ol>
-    <p>Na stronie jest teraz {d.korzysci.length} kart z {d.akty.length} aktów prawnych. <a class="link" href="/akty/">Lista ustaw</a>. Dane aktualizujemy po każdej partii analiz; data wersji jest w stopce.</p>
+    <p>Na stronie jest teraz {d.korzysci.length} kart z {aktyZeStrona().length} aktów prawnych. <a class="link" href="/akty/">Lista ustaw</a>. Dane aktualizujemy po każdej serii analiz; data wersji jest w stopce.</p>
 
     <h2>Statusy korzyści</h2>
     <dl>
@@ -49,6 +49,7 @@ const OPIS_STATUSU: Record<string, string> = {
         kwota_w_ustawie: 'Kwota stoi wprost w przepisie ustawy.',
         kwota_z_aktu_wykonawczego: 'Ustawa podaje kwotę bazową, a aktualną ogłasza rozporządzenie albo komunikat. Pokazujemy przepis ustawy i akt z kwotą.',
         regula_procentowa: 'Kwota jest częścią innej kwoty (np. „220 % renty socjalnej”). Pokazujemy regułę i link do kwoty bazowej, a gdy ją znamy, także wynik w złotych z oznaczeniem „wyliczenie”.',
+        formula: 'Przepis podaje sposób obliczenia (np. procent dochodu albo wynagrodzenia), więc kwota zależy od danych osoby. Pokazujemy regułę z przepisu.',
         odeslanie: 'Przepis odsyła do innego przepisu, który wyznacza kwotę.',
         nieustalone: 'Nie udało się ustalić kwoty. Powód jest podany w sekcji „Nie ustalono”.',
       }[k]}</dd></>)}
