@@ -9,6 +9,11 @@ const KATALOG_STRONY = process.env.STRONA_KATALOG ?? process.cwd();
 export const SCIEZKA_LICZB = path.resolve(KATALOG_STRONY, 'data', 'liczby', 'liczby.json');
 const NBSP = ' ';
 
+/** Pola wymagane przez stronę (koncept v3); ta sama lista jest w aktualizuj_strone.py. */
+export const POLA_LICZB = ['meta', 'licznik_2025', 'bez_emerytur_zus_2025', 'suma', 'platnicy_2022_2025_mld', 'programy',
+  'na_mieszkanca', 'dzialy_budzetu', 'fundusz_solidarnosciowy', 'wojewodztwa', 'powiaty', 'fakty', 'jst_bilans_mld',
+  'jst_rozdzialy_mld', 'udzialy_platnikow_2025_proc', 'przeplywy_budzetu_2025_mld', 'cofog10', 'kontrole'];
+
 let pamiec = null;
 /** Dane albo null, gdy pliku nie ma (wtedy strona /liczby/ nie powstaje). */
 export function liczby() {
@@ -16,24 +21,29 @@ export function liczby() {
   if (!existsSync(SCIEZKA_LICZB)) { pamiec = false; return null; }
   const bajty = readFileSync(SCIEZKA_LICZB);
   const d = JSON.parse(bajty.toString('utf8'));
-  const brak = ['meta', 'licznik_2025', 'bez_emerytur_zus_2025', 'suma', 'platnicy_2022_2025_mld', 'programy',
-    'na_mieszkanca', 'dzialy_budzetu', 'fundusz_solidarnosciowy', 'wojewodztwa', 'powiaty'].filter((k) => !(k in d));
+  const brak = POLA_LICZB.filter((k) => !(k in d));
   if (brak.length) throw new Error(`data/liczby/liczby.json: brak pól ${brak.join(', ')}`);
   d._sha256 = createHash('sha256').update(bajty).digest('hex');
   pamiec = d;
   return d;
 }
 
-// ---------- formaty (polskie: twarda spacja tysięcy, przecinek dziesiętny) ----------
+// ---------- formaty (koncept v3: przecinek dziesiętny, twarda spacja w liczbach od 10 000 i przed
+// jednostką oraz „%”, bez pauzy, półpauzy i znaku minus: brak wartości „-”, liczba ujemna z łącznikiem) ----------
 
 export function liczba(v, miejsca = 0) {
-  if (v == null || Number.isNaN(v)) return '—';
-  const [c, u] = Math.abs(v).toFixed(miejsca).split('.');
-  return `${v < 0 ? '−' : ''}${c.replace(/\B(?=(\d{3})+(?!\d))/g, NBSP)}${u ? `,${u}` : ''}`;
+  if (v == null || Number.isNaN(v)) return '-';
+  // zaokrąglenie połówek w górę także dla 32,15 (toFixed daje 32,1 przez zapis binarny)
+  const f = 10 ** miejsca;
+  const [c, u] = (Math.round(Math.abs(v) * f * (1 + 1e-12)) / f).toFixed(miejsca).split('.');
+  const cale = c.length > 4 ? c.replace(/\B(?=(\d{3})+(?!\d))/g, NBSP) : c;
+  return `${v < 0 && Number(v.toFixed(miejsca)) !== 0 ? '-' : ''}${cale}${u ? `,${u}` : ''}`;
 }
-export const mld = (v, miejsca = 1) => `${liczba(v, miejsca)}${NBSP}mld${NBSP}zł`;
-export const zl = (v) => `${liczba(v)}${NBSP}zł`;
-export const proc = (v, miejsca = 0, znak = false) => `${znak && v > 0 ? '+' : ''}${liczba(v, miejsca)}${NBSP}%`;
+export const mld = (v, miejsca = 1) => (v == null ? '-' : `${liczba(v, miejsca)}${NBSP}mld${NBSP}zł`);
+export const zl = (v) => (v == null ? '-' : `${liczba(v)}${NBSP}zł`);
+export const proc = (v, miejsca = 1, znak = false) => (v == null ? '-' : `${znak && v > 0 ? '+' : ''}${liczba(v, miejsca)}${NBSP}%`);
+/** Tekst: twarda spacja po jednoliterowych spójnikach i przyimkach; pauza i półpauza zamienione na łącznik. */
+export const tp = (s) => String(s ?? '').replace(/[–—−]/g, '-').replace(/(^|\s)([aiouwzAIOUWZ])\s/g, `$1$2${NBSP}`);
 
 // ---------- wielkości wyprowadzone z pól pliku ----------
 
@@ -85,48 +95,6 @@ export const mediana = (wartosci) => {
   const m = Math.floor(w.length / 2);
   return w.length % 2 ? w[m] : (w[m - 1] + w[m]) / 2;
 };
-
-/** Udziały w 100 kratkach metodą największych reszt (suma zawsze 100). */
-export function kratki(udzialy) {
-  const s = udzialy.reduce((a, b) => a + b, 0);
-  const surowe = udzialy.map((u) => (u / s) * 100);
-  const cale = surowe.map(Math.floor);
-  let reszta = 100 - cale.reduce((a, b) => a + b, 0);
-  surowe.map((v, i) => [v - cale[i], i]).sort((a, b) => b[0] - a[0]).forEach(([, i]) => { if (reszta > 0) { cale[i]++; reszta--; } });
-  return cale;
-}
-
-/** Treemap „squarified” (Bruls i in.) w prostokącie W×H; elementy posortowane malejąco. */
-export function treemap(elementy, W, H) {
-  const suma = elementy.reduce((a, e) => a + e.wartosc, 0);
-  const pola = elementy.map((e) => ({ ...e, pole: (e.wartosc / suma) * W * H }));
-  const wynik = [];
-  let x = 0, y = 0, w = W, h = H, rzad = [];
-  const najgorszy = (r, bok) => {
-    const s = r.reduce((a, e) => a + e.pole, 0);
-    const mx = Math.max(...r.map((e) => e.pole)), mn = Math.min(...r.map((e) => e.pole));
-    return Math.max((bok * bok * mx) / (s * s), (s * s) / (bok * bok * mn));
-  };
-  const uloz = (r) => {
-    const s = r.reduce((a, e) => a + e.pole, 0);
-    if (w >= h) {
-      const sz = s / h; let yy = y;
-      r.forEach((e) => { const hh = e.pole / sz; wynik.push({ ...e, x, y: yy, w: sz, h: hh }); yy += hh; });
-      x += sz; w -= sz;
-    } else {
-      const wy = s / w; let xx = x;
-      r.forEach((e) => { const ww = e.pole / wy; wynik.push({ ...e, x: xx, y, w: ww, h: wy }); xx += ww; });
-      y += wy; h -= wy;
-    }
-  };
-  for (const e of pola) {
-    const bok = Math.min(w, h);
-    if (!rzad.length || najgorszy([...rzad, e], bok) <= najgorszy(rzad, bok)) rzad.push(e);
-    else { uloz(rzad); rzad = [e]; }
-  }
-  if (rzad.length) uloz(rzad);
-  return wynik;
-}
 
 // ---------- mapa powiatów (granice PRG GUGiK, scripts/granice_powiatow.py) ----------
 

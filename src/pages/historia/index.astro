@@ -1,9 +1,52 @@
 ---
 import Uklad from '../../layouts/Uklad.astro';
+import Ikona from '../../components/Ikona.astro';
 import { socjal } from '../../lib/socjal.mjs';
-const grupy = socjal()?.historia ?? {};
+import { dataPL } from '../../lib/format.mjs';
+import { nazwaParametru, opisJednostki, ostatni, wartosc } from '../../lib/historia.mjs';
+const grupy = Object.entries(socjal()?.historia ?? {}) as [string, any[]][];
+const lata = (l: any[]) => {
+  const r = l.map((x) => String(x.od).slice(0, 4)).filter((x) => /^\d{4}$/.test(x)).sort();
+  return r.length ? (r[0] === r[r.length - 1] ? r[0] : `${r[0]}-${r[r.length - 1]}`) : null;
+};
 ---
-<Uklad tytul="Historia kwot" opis="Archiwum wartości świadczeń oraz źródeł historycznych z projektu Socjal.">
- <div class="page-head"><div class="wrap"><nav class="breadcrumb"><a href="/">Strona główna</a><span>/</span><span>Historia</span></nav><h1>Historia kwot</h1><p class="lead">Dane pochodzą z opracowanych zestawień FUS. Wpis historyczny nie oznacza dostępności świadczenia dziś.</p></div></div>
- <div class="wrap section"><div class="cards">{Object.entries(grupy).map(([id, list]) => <div class="related"><h2><a class="link" href={`/historia/${id}/`}>{id.replaceAll('_',' ')}</a></h2><p>{(list as any[]).length} wpisów</p></div>)}</div></div>
+<Uklad tytul="Historia kwot" opis="Archiwum kwot świadczeń i parametrów z datami i przepisami, z których pochodzą.">
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span aria-current="page">Historia kwot</span></nav>
+      <h1>Historia kwot</h1>
+      <p class="lead">Jak zmieniały się kwoty wybranych świadczeń i parametrów. Przy każdym wpisie podajemy przepis i cytat. Wpis historyczny nie oznacza, że świadczenie przysługuje dziś.</p>
+    </div>
+  </div>
+  <div class="wrap section">
+    <div class="cards">
+      {grupy.map(([id, lista]) => {
+        const o = ostatni(lista);
+        return (
+          <a class="card historia-karta" href={`/historia/${id}/`}>
+            <div class="card-body">
+              <p class="type">{lista.length} {lista.length === 1 ? 'wpis' : lista.length < 5 ? 'wpisy' : 'wpisów'}{lata(lista) && ` · ${lata(lista)}`}</p>
+              <h2>{nazwaParametru(id)}</h2>
+              <div class="card-value">
+                <span class="type">Ostatni wpis{o?.od && `, od ${dataPL(o.od)}`}</span>
+                <strong>{o ? wartosc(o) : '-'}</strong>
+                {o && opisJednostki(o.jednostka) && <span class="muted">{opisJednostki(o.jednostka)}</span>}
+              </div>
+            </div>
+            <span class="card-link">Wszystkie wpisy i źródła <Ikona n="strzalka" /></span>
+          </a>
+        );
+      })}
+    </div>
+  </div>
 </Uklad>
+
+<style>
+  .historia-karta { color: inherit; }
+  .historia-karta:hover { text-decoration: none; }
+  .historia-karta h2 { font-size: var(--fs-lg); line-height: 1.25; margin: 10px 0 18px; }
+  .historia-karta .card-value { margin-top: auto; display: flex; flex-direction: column; gap: 4px; }
+  .historia-karta .card-value strong { font: 600 var(--fs-xl) var(--serif); color: var(--navy-800); }
+  .card-link { display: flex; justify-content: space-between; align-items: center; padding: 16px 26px; border-top: 1px solid var(--line); font-size: var(--fs-sm); font-weight: 700; color: var(--navy-700); }
+  .card-link :global(svg) { width: 18px; height: 18px; color: var(--red); }
+</style>

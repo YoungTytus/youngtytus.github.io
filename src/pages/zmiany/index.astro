@@ -3,6 +3,7 @@
 // więc pokazujemy bieżącą wersję z manifestu; lista wydłuży się z kolejnymi paczkami.
 import Uklad from '../../layouts/Uklad.astro';
 import { dane } from '../../lib/model.mjs';
+import { dataPL } from '../../lib/format.mjs';
 const d = dane();
 const m = d.manifest;
 const przyklady = d.korzysci.filter((k: any) => k._przyklad || k.ile.os_czasu.some((w: any) => w._przyklad)).length;
@@ -15,14 +16,29 @@ const przyklady = d.korzysci.filter((k: any) => k._przyklad || k.ile.os_czasu.so
       <p class="lead">Każda wersja danych ma datę, wersję kodu i opis zmian. Dzięki temu wiadomo, od kiedy na stronie jest dana kwota.</p>
     </div>
   </div>
-  <div class="wrap section prose">
-    <div class="version">
-      <p class="kicker">Bieżąca wersja</p>
-      <h2 style="margin:0">{m.wygenerowano}</h2>
-      <p>Kontrakt {m.kontrakt} · kod <code>{m.wersja_kodu}</code>{d.tryb === 'przyklad' && ' · dane przykładowe'}</p>
-      <p>Korzyści: {d.korzysci.length} · akty: {d.akty.length} · zakres: {m.zakres.join(', ')}</p>
-      {przyklady > 0 && <p>Rekordy z wartościami przykładowymi (jeszcze niewyliczonymi): {przyklady}.</p>}
+  <div class="wrap section">
+    <p class="kicker">Bieżąca wersja</p>
+    <h2>Dane z {dataPL(m.wygenerowano.slice(0, 10)) ?? m.wygenerowano}</h2>
+    <div class="cards zmiany-liczby">
+      <div class="zmiany-stat"><span class="type">Korzyści</span><strong>{d.korzysci.length}</strong><span>kart świadczeń i pomocy</span></div>
+      <div class="zmiany-stat"><span class="type">Akty prawne</span><strong>{d.akty.length}</strong><span>ustaw i rozporządzeń z tekstami</span></div>
+      <div class="zmiany-stat"><span class="type">Wersja</span><strong>{m.kontrakt}</strong><span>kod <code>{m.wersja_kodu}</code>{d.tryb === 'przyklad' && ', dane przykładowe'}</span></div>
     </div>
-    <p class="todo"><strong>Do uzgodnienia z zespołem danych:</strong> podsumowanie różnic między wersjami (dodane, zmienione i usunięte rekordy) wymaga pola w manifeście albo osobnego pliku w paczce. Do tego czasu strona pokazuje tylko bieżącą wersję.</p>
+    {przyklady > 0 && <p class="summary-note">Rekordy z wartościami przykładowymi (jeszcze niewyliczonymi): {przyklady}.</p>}
+    <details class="zmiany-zakres">
+      <summary>Zakres: {m.zakres.length} aktów prawnych (lista oznaczeń)</summary>
+      <p>{m.zakres.join(', ')}</p>
+    </details>
+    <p class="summary-note">Na razie pokazujemy tylko bieżącą wersję danych. Zestawienie, co dodano, zmieniono i usunięto między wersjami, pojawi się tutaj przy kolejnych aktualizacjach.</p>
   </div>
 </Uklad>
+
+<style>
+  .zmiany-liczby { margin-top: 24px; }
+  .zmiany-stat { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 24px; display: flex; flex-direction: column; gap: 6px; }
+  .zmiany-stat strong { font: 600 var(--fs-xl) var(--serif); color: var(--navy-800); }
+  .zmiany-stat > span:last-child { font-size: var(--fs-sm); color: var(--muted); }
+  .zmiany-zakres { margin-top: 28px; max-width: 900px; }
+  .zmiany-zakres summary { cursor: pointer; font-weight: 700; color: var(--navy-700); min-height: 44px; display: flex; align-items: center; }
+  .zmiany-zakres p { font-size: var(--fs-sm); color: var(--muted); line-height: 1.7; overflow-wrap: anywhere; }
+</style>

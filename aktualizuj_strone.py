@@ -219,7 +219,9 @@ def push_changes(message):
 
 LICZBY = ROOT / 'data' / 'liczby' / 'liczby.json'
 LICZBY_POLA = ('meta', 'licznik_2025', 'bez_emerytur_zus_2025', 'suma', 'platnicy_2022_2025_mld', 'programy',
-               'na_mieszkanca', 'dzialy_budzetu', 'fundusz_solidarnosciowy', 'wojewodztwa', 'powiaty')
+               'na_mieszkanca', 'dzialy_budzetu', 'fundusz_solidarnosciowy', 'wojewodztwa', 'powiaty', 'fakty',
+               'jst_bilans_mld', 'jst_rozdzialy_mld', 'udzialy_platnikow_2025_proc', 'przeplywy_budzetu_2025_mld',
+               'cofog10', 'kontrole')
 
 
 def refresh_numbers(args):
